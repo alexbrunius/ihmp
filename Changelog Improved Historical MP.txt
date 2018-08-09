@@ -1,6 +1,7 @@
 ﻿﻿0.3
 - Removed SOV claim on Petsamo after Winter War and add AI Finland strategies.
 - Buffed 250 PP theorists to give 0.08 XP.
+- Buffed TAC strat bombing in doctrines from 10% to 20%, added agility for TAC in Battlefield support.
 
 0.3
 - Added unique Motti tactics to Finland ( -30% width and very strong )
@@ -41,11 +42,14 @@
 - Changed Closed Economy to still export 10% of your resources, so some will always be available for trade.
 - Lowered manpower gained from Conscription laws "Extensive Conscription" and above, as well as added another level called "Massed Draft" between Service by Requirement and All Adults Serve
 
+<<<<<<< HEAD
 For complete previous changelog. See file in mod.
 Many thanks for CrouchingLemur for his great mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=710273161]More Unit Levels[/url]
 Many thanks for Chondrite for his great mods [url=https://steamcommunity.com/sharedfiles/filedetails/?id=704963980]Strategic View Adjustments[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1368202826] Allied Construction Projects[/url]
 Thanks for feedback, suggestions and bugspotting to the active MP groups I play with as well as the WPO group and for modding help from Myzael, Kallar, Beethoven and SpeedKat.
 
+=======
+>>>>>>> 33f1479... Buff TAC bombing in doctrines from 10% to 20%
 AlexMPMod 1.5.4 Changelog
  
 - Added AI strategy plans for Sweden, Portugal and Turkey to focus on exporting resources and be less attractive to conquer.
@@ -100,9 +104,6 @@ AlexMPMod 1.5.3 Changelog
 - Attempt to fix Carrier wing wipe bug by making naval aircombat less lethal.
 - Attempt to fix Carrier wing wipe bug by making Air AI value efficiency more and naval strike less.
 - Fixed some personality traits not affecting stats for historical leaders
-
-
-
 
 Key previous features of AlexMPMod:
 - Lowered maximum battalions per division from 25 to 12 ( 24 width max for infantry/tanks ).
