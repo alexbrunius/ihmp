@@ -83,6 +83,7 @@ sub_units = {
 		active = yes
 		type = { tactical_bomber }
 		need = { tac_bomber_equipment = 1 }
+		categories = { category_tac }
 	}
 	
 	jet_tac_bomber = {
@@ -91,6 +92,7 @@ sub_units = {
 		active = yes
 		type = { tactical_bomber }
 		need = { jet_tac_bomber_equipment = 1 }
+		categories = { category_tac }
 	}
 	
 	heavy_fighter = {
