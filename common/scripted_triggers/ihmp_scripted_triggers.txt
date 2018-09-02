@@ -1,0 +1,55 @@
+vichy_state = {
+	OR = {
+		state = 1 # Corsica
+		
+		state = 20 # Rhone
+		state = 21 # Provence
+		state = 22 # Languedoc
+		state = 25 # Limousin
+		state = 26 # Auvergne
+		state = 31 # Midi Pyrenees
+		state = 32 # Alpes
+		state = 33 # Centre-Sud
+		state = 735 # Savoy
+
+		state = 461 # Casablanca
+		state = 462 # Marrakech
+		state = 458 # Tunisia
+		state = 459 # Algiers
+		state = 460 # Constantine
+		state = 513 # Tlemcen
+		state = 665 # Gabes
+		state = 514 # North Africa
+		state = 515 # Central Africa
+		state = 272 # Senegal
+		state = 556 # Ivory Coast
+		state = 557 # Mauritania
+		state = 660 # Equatorial Africa
+		state = 665 # Gabes
+
+		state = 543 # Madagascar
+		state = 706 # Reunion
+		state = 708 # Comoro Islands
+		state = 713 # Kerguelen
+
+		state = 268 # Djibouti
+
+		state = 320 # French India
+
+		state = 635 # Nouvelle Calédonie
+		state = 641 # Tahiti
+		state = 734 # Nendo
+
+		state = 286 # Indochina
+		state = 670 # Laos
+		state = 671 # Tonkin
+		state = 741 # Annam
+
+		state = 310 # Guinée
+		state = 730 # St Pierre et Miquelon
+
+		state = 694 # French Caribbean
+
+		state = 728 # Guangzhouwan
+	}
+}

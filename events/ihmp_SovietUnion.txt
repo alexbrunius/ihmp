@@ -1,0 +1,95 @@
+﻿###########################
+# Alex Multi Mod Soviet Events
+###########################
+
+add_namespace = amm_soviet
+
+
+
+country_event = {
+	id = amm_soviet.1
+	title = amm_soviet.1.t
+	desc = amm_soviet.1.d
+	picture = GFX_report_event_dead_soldiers
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		has_war = yes
+		SOV = { has_war_with = GER }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = amm_soviet.1.a
+		ai_chance = { factor = 100 }
+		add_political_power = -10
+		add_timed_idea = {
+				idea = state_of_chock
+				days = 90
+		}
+		hidden_effect = {
+			country_event = { id = amm_soviet.2 days = 30 }
+		}
+		effect_tooltip = {
+		}
+	}
+}
+
+country_event = {
+	id = amm_soviet.2
+	title = amm_soviet.2.t
+	desc = amm_soviet.2.d
+	picture = GFX_report_event_dead_soldiers
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	trigger = {	has_idea = state_of_chock }
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = state_of_chock
+			add_timed_idea = {
+				idea = state_of_chock_2
+				days = 60
+			}
+			country_event = { id = amm_soviet.3 days = 30 }
+		}
+	}
+	
+	option = { 
+		name = amm_soviet.2.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = amm_soviet.2.a_tt
+	}
+}
+
+country_event = {
+	id = amm_soviet.3
+	title = amm_soviet.3.t
+	desc = amm_soviet.3.d
+	picture = GFX_report_event_dead_soldiers
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	trigger = {	has_idea = state_of_chock_2 }
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = state_of_chock_2
+			add_timed_idea = {
+				idea = state_of_chock_3
+				days = 30
+			}
+		}
+	}
+	
+	option = { 
+		name = amm_soviet.3.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = amm_soviet.3.a_tt
+	}
+}

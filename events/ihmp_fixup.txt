@@ -1,0 +1,43 @@
+﻿###########################
+# Alex Multi Mod Fixup Events
+###########################
+
+add_namespace = amm_fixup
+
+country_event = {
+	id = amm_fixup.1
+	title = amm_fixup.1.t
+	desc = amm_fixup.1.d
+	picture = GFX_report_event_dead_soldiers
+	fire_only_once = yes
+
+	trigger = {
+		tag = HAI
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = amm_fixup.1.a
+		ai_chance = { factor = 100 }
+		every_country = {
+			every_army_leader = {
+				if = {
+					limit = { has_trait = brilliant_strategist }
+					add_attack = 1
+					add_planning = 1
+				}
+				else_if = {
+					limit = { has_trait = inflexible_strategist }
+					add_defense = 1
+					add_logistics = 1
+				}
+				else_if = {
+					limit = { has_trait = harsh_leader }
+					add_attack = 1
+				}
+			}
+		}
+	}
+}

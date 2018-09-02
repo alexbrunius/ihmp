@@ -1,0 +1,372 @@
+economy_decisions = {
+	infrastructure_building_slot_amm_USA = {
+
+		icon = generic_construction
+
+        allowed = {
+            always = yes
+			original_tag = USA
+        }
+
+		available = {
+			any_state = {
+				is_core_of = USA
+			}
+		}
+		
+        cost = 30
+        fire_only_once = no
+
+        days_re_enable = 30
+
+        available = {
+			has_war = yes
+            any_state = {
+            	NOT = { has_state_flag = infrastructure_building_slot_amm_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
+            }
+        }
+
+        visible = {
+			has_war = yes
+			any_state = {
+            	NOT = { has_state_flag = infrastructure_building_slot_amm_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
+            }
+		}
+
+        complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+            		free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+					NOT = { has_state_flag = infrastructure_building_slot_amm_flag }
+				}
+				add_extra_state_shared_building_slots = 3
+				set_state_flag = infrastructure_building_slot_amm_flag
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				any_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
+			}
+		}
+    }
+	
+	infrastructure_building_slot_amm_SOV = {
+
+		icon = generic_construction
+
+        allowed = {
+            always = yes
+			original_tag = SOV
+        }
+
+		available = {
+			any_state = {
+				is_core_of = SOV
+			}
+		}
+		
+        cost = 30
+        fire_only_once = no
+
+        days_re_enable = 30
+
+        available = {
+			has_war = yes
+            any_state = {
+            	NOT = { has_state_flag = infrastructure_building_slot_amm_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				is_core_of = SOV
+				free_building_slots = {
+					building = infrastructure
+					size < 4
+				}
+            }			
+        }
+
+        visible = {
+			has_war = yes
+			any_state = {			
+            	NOT = { has_state_flag = infrastructure_building_slot_amm_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				is_core_of = SOV
+				free_building_slots = {
+					building = infrastructure
+					size < 4
+				}
+            }
+		}
+
+        complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					is_core_of = SOV
+            		free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					free_building_slots = {
+						building = infrastructure
+						size < 4
+					}
+					NOT = { has_state_flag = infrastructure_building_slot_amm_flag }
+				}
+				add_extra_state_shared_building_slots = 3
+				set_state_flag = infrastructure_building_slot_amm_flag
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				any_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
+			}
+		}
+    }
+}	
+
+operations = {
+	syria_lebanon_campaign = {
+
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		cancel_if_not_visible = yes
+
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			NOT = { has_war_with = VIC }
+			OR = {
+				553 = { is_owned_by = VIC } # Lebanon
+				554 = { is_owned_by = VIC } # Damascus
+				677 = { is_owned_by = VIC } # Aleppo
+				680 = { is_owned_by = VIC } # Deir-az-Zur
+			}
+			OR = {
+				divisions_in_state = { state = 454 size > 2 } # Palestine
+				FRA = {
+					divisions_in_state = { state = 454 size > 2 } # Palestine
+				}
+			}
+		}
+
+		cost = 25
+
+		days_remove = 30
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			tag = ENG
+			has_war_with = GER
+			VIC = { exists = yes }
+			NOT = { has_war_with = VIC }
+			#NOT = { has_country_flag = syria_lebanon_campaign }
+		}
+		
+		remove_effect = {
+			if = {
+				limit = { }
+			}
+			FRA = { transfer_state = 553 } # Lebanon
+			FRA = { transfer_state = 554 } # Damascus
+			FRA = { transfer_state = 677 } # Aleppo
+			FRA = { transfer_state = 680 } # Deir-az-Zur
+			army_experience = 20
+			#hidden_effect = { set_country_flag = syria_lebanon_campaign }
+		}
+	}
+
+	operation_ironclad = {
+
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		cancel_if_not_visible = yes
+
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			NOT = { has_war_with = VIC }
+			OR = {
+				543 = { is_owned_by = VIC } # Madagascar
+				706 = { is_owned_by = VIC } # Reunion
+				713 = { is_owned_by = VIC } # Kerguelen
+				708 = { is_owned_by = VIC } # Comoro Islands
+				268 = { is_owned_by = VIC } # French Somaliland
+			}
+			OR = {
+				divisions_in_state = { state = 719 size > 2 } # Durban
+				FRA = {
+					divisions_in_state = { state = 719 size > 2 } # Durban
+				}
+			}
+		}
+
+		cost = 25
+
+		days_remove = 30
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			tag = ENG
+			has_war_with = GER
+			VIC = { exists = yes }
+			NOT = { has_war_with = VIC }
+			NOT = { has_country_flag = operation_ironclad }
+		}
+		
+		remove_effect = {
+			FRA = { transfer_state = 543 } # Madagascar
+			FRA = { transfer_state = 706 } # Reunion
+			FRA = { transfer_state = 713 } # Kerguelen
+			FRA = { transfer_state = 708 } # Comoro Islands
+			FRA = { transfer_state = 268 } # French Somaliland
+			army_experience = 20
+			hidden_effect = { set_country_flag = operation_ironclad }
+		}
+	}
+
+	battle_of_gabon = {
+
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		cancel_if_not_visible = yes
+
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			NOT = { has_war_with = VIC }
+			OR = {
+				515 = { is_owned_by = VIC } # Southern Sahara
+				556 = { is_owned_by = VIC } # French West Africa
+				557 = { is_owned_by = VIC } # Mauritania
+				272 = { is_owned_by = VIC } # Senegal
+			}
+			OR = {
+				divisions_in_state = { state = 539 size > 1 } # Gabon
+				FRA = {
+					divisions_in_state = { state = 539 size > 1 } # Gabon
+				}
+			}
+		}
+
+		cost = 5
+
+		days_remove = 30
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			tag = ENG
+			has_war_with = GER
+			VIC = { exists = yes }
+			NOT = { has_war_with = VIC }
+			NOT = { has_country_flag = battle_of_gabon }
+		}
+		
+		remove_effect = {
+			FRA = { transfer_state = 515 } # Southern Sahara
+			FRA = { transfer_state = 556 } # French West Africa
+			FRA = { transfer_state = 557 } # Mauritania
+			FRA = { transfer_state = 272 } # Senegal
+			hidden_effect = { set_country_flag = battle_of_gabon }
+		}
+	}
+
+	operation_torch = {
+
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			VIC = { exists = yes }
+			NOT = { has_war_with = VIC }
+		}
+
+		cost = 25
+
+		days_remove = 60
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			tag = ENG
+			has_war_with = GER
+			VIC = { exists = yes }
+			NOT = { has_war_with = VIC }
+		}
+		
+		remove_effect = {
+			create_wargoal = {
+				target = VIC
+				type = annex_everything
+			}
+		}
+	}
+}
