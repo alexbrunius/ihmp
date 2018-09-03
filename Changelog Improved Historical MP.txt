@@ -7,7 +7,8 @@
 - Lowered overall move speed by 12.5% ( to help model more historical marching times for infantry )
 - Doubled convoys needed to transport supply
 - Added a total of about 100 VPs spread over 19 different Western Soviet states to give Soviet partisans more teeth ( should require about 24 extra Axis divisions to suppress this ).
-- Added a total of about 50 VPs beyond the Urals to compensate the above impact on Soviet Surrender.
+- Added a total of about 35 VPs beyond the Urals to compensate the above impact on Soviet Surrender.
+- Moved the Infra Soviet get in random states from NFs to specific states behind Moscow so unlucky "RNG" won't help Axis logistics.
 - Removed org regain and reinforce rate penalties on Soviet Shock Penalty Spirit.
 - Lowered Air attack penalties on Soviet Shock Penalty Spirit from -40% to -30%.
 - Increased planning penalty on Soviet Shock Penalty Spirit from 50% to 60%

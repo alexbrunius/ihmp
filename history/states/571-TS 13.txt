@@ -12,7 +12,7 @@ state={
 			arms_factory = 1
 		}
 		victory_points = {
-			10696 15 # was 3
+			10696 10 # was 3
 		}
 		add_core_of = SOV
 		1939.1.1 = {

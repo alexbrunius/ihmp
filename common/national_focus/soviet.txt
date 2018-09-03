@@ -401,108 +401,49 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = infrastructure
-						size < 3
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = SOV_infrastructure_effort_3Inf }
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
-			if = {
-				limit = {
-					all_owned_state = {
-						NOT = { infrastructure < 5 }
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 2
+			custom_effect_tooltip = SOV_infrastructure_effort_tt
+			hidden_effect = {
+				253 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
 						}
 					}
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes						
-					}
-					set_state_flag = SOV_infrastructure_effort_3Inf
 				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 2
+				651 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
 						}
 					}
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
+				}
+				252 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
 					}
-					set_state_flag = SOV_infrastructure_effort_3Inf
-				}				
-			}
-			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 5
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
-			}
-			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 5
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
-			}
-			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 5
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
-			}
-			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 5
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
+				249 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}	
 			}
 		}
 	}
@@ -807,61 +748,49 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = SOV_improve_railway_3Inf }
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { 
-					free_building_slots = {
-						building = infrastructure
-						size > 2
+			custom_effect_tooltip = SOV_improve_railway_tt
+			hidden_effect = {
+				573 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
 					}
-					state_population > 1000000
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = SOV_improve_railway_3Inf
-			}
-			random_owned_controlled_state = {
-				limit = { 
-					free_building_slots = {
-						building = infrastructure
-						size > 2
+				653 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
 					}
-					state_population > 1000000
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = SOV_improve_railway_3Inf
-			}
-			random_owned_controlled_state = {
-				limit = { 
-					free_building_slots = {
-						building = infrastructure
-						size > 2
+				403 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
 					}
-					state_population > 1000000
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = SOV_improve_railway_3Inf
+				571 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}	
 			}
 		}
 	}
