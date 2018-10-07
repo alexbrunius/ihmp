@@ -1,6 +1,7 @@
 ﻿Improved Historical MP 0.1.1 Changelog
 
 - Removed SOV claim on Petsamo after Winter War and add AI Finland strategies.
+- Buffed 250 PP theorists to give 0.08 XP.
 
 Improved Historical MP 0.1 Changelog
 
