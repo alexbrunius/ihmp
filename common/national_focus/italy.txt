@@ -2336,9 +2336,7 @@ focus_tree = {
 			}
 			custom_trigger_tooltip = {
 			 tooltip = ITA_claims_on_france_tt
-				any_other_country = {
-					original_tag = FRA
-					has_government = fascism
+				VIC = {
 					owns_state = 735
 					controls_state = 735
 					owns_state = 1
@@ -2371,9 +2369,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { 
-					any_other_country = {
-						original_tag = FRA
-						has_government = fascism
+					VIC = {
 						owns_state = 735
 					}
 				}
@@ -2381,9 +2377,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { 
-					any_other_country = {
-						original_tag = FRA
-						has_government = fascism
+					VIC = {
 						owns_state = 1
 					}
 				}

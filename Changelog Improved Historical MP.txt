@@ -1,4 +1,10 @@
-﻿0.1
+﻿Improved Historical MP 0.1.1 Changelog
+
+- Removed SOV claim on Petsamo after Winter War and add AI Finland strategies.
+- Buffed 250 PP theorists to give 0.08 XP.
+- Buffed TAC strat bombing in doctrines from 10% to 20%, added agility for TAC in Battlefield support.
+
+Improved Historical MP 0.1 Changelog
 
 - Added a Chinese state in Central America with 90 VP to prevent them from surrendering ( Japan needs to keep suppressing partisans )
 - Changed Neutrality Spirit ( Sweden and Switzerland ) to make justifying war against them prohibitivley expensive ( allows removing houserule )
@@ -28,7 +34,6 @@
 - Increased PP cost of Harsh and Harshest occupation by 0.01 each, and increased manpower from Gentlest and Gentle to make them more attractive.
 - Changed Closed Economy to still export 10% of your resources, so some will always be available for trade.
 - Lowered manpower gained from Conscription laws "Extensive Conscription" and above, as well as added another level called "Massed Draft" between Service by Requirement and All Adults Serve
-
 
 AlexMPMod 1.5.4 Changelog
  
@@ -84,9 +89,6 @@ AlexMPMod 1.5.3 Changelog
 - Attempt to fix Carrier wing wipe bug by making naval aircombat less lethal.
 - Attempt to fix Carrier wing wipe bug by making Air AI value efficiency more and naval strike less.
 - Fixed some personality traits not affecting stats for historical leaders
-
-
-
 
 Key previous features of AlexMPMod:
 - Lowered maximum battalions per division from 25 to 12 ( 24 width max for infantry/tanks ).

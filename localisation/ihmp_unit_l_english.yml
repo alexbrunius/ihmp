@@ -7,3 +7,5 @@
  motorized_anti_air_brigade_desc:0 "Anti Air towed by Trucks"
  mec_marine:0 "Mechanized Marines"
  mec_marine_desc:0 "Mechanized Marines equiped with LVT ( Landing Vehicle Tracked ) to quickly move across exposed beaches after Landing. Their vehicles are lighter armored and equipped with machine guns or Autocannons"
+ mec_marine_desc:0 "Mechanized Marines equiped with LVT ( Landing Vehicle Tracked ) to quickly move across exposed beaches after Landing. Their vehicles are lighter armored and equipped with machine guns or Autocannons"
+ category_tac:0 "Tactical Bomber"
