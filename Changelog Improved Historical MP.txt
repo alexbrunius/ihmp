@@ -1,5 +1,6 @@
-﻿0.3
+﻿﻿0.3
 - Removed SOV claim on Petsamo after Winter War and add AI Finland strategies.
+- Buffed 250 PP theorists to give 0.08 XP.
 
 0.3
 - Added unique Motti tactics to Finland ( -30% width and very strong )
