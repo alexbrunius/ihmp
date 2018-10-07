@@ -1,4 +1,8 @@
-﻿0.1
+﻿﻿Improved Historical MP 0.1.1 Changelog
+
+- Buffed 250 PP theorists to give 0.08 XP.
+
+Improved Historical MP 0.1 Changelog
 
 - Added a Chinese state in Central America with 90 VP to prevent them from surrendering ( Japan needs to keep suppressing partisans )
 - Changed Neutrality Spirit ( Sweden and Switzerland ) to make justifying war against them prohibitivley expensive ( allows removing houserule )
