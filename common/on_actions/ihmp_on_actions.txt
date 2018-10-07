@@ -1,0 +1,13 @@
+on_actions = {
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = SOV }
+					ROOT = { tag = GER }
+				}
+				SOV = { country_event = { id = amm_soviet.1 } }
+			}
+		}
+	}
+}
