@@ -1,4 +1,5 @@
-﻿The goal of the mod is to allow historically plausible multiplayer with a minimal of houserules and imbalances.
+﻿0.3
+- Removed SOV claim on Petsamo after Winter War and add AI Finland strategies.
 
 0.3
 - Added unique Motti tactics to Finland ( -30% width and very strong )
