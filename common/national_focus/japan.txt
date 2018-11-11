@@ -1226,20 +1226,20 @@ focus_tree = {
 			CHI = {
 				surrender_progress > 0.3
 			}
-			has_war_with = USA
+			OR = {
+				has_war_with = USA
+				NOT = { JAP_has_idea_JAP_intervene_in_china = yes }
+			}	
 		}
 
 		bypass = {
-			OR = {
-				NOT = { JAP_has_idea_JAP_intervene_in_china = yes }
 				CHI = { has_capitulated = yes }
-			}
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		complete_tooltip = {
 
 		}
@@ -1249,6 +1249,11 @@ focus_tree = {
 			add_named_threat = { threat = 15 name = JAP_secure_china }		
 			USA = { add_war_support = 0.05 }	
 			unlock_decision_tooltip = JAP_ichi_go
+			
+			swap_ideas = {
+				remove_idea = JAP_guide_the_zaibatsus
+				add_idea = JAP_guide_the_zaibatsus_china		
+			}
 		}
 	}
 
@@ -1384,7 +1389,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SOV = { country_event = { id = wtt_japan.11 } }
+			SOV = { country_event = { id = wtt_japan.11 } }			
+			add_political_power = 50
 		}
 	}
 
@@ -1753,6 +1759,8 @@ focus_tree = {
 				NOT = { GER = { is_in_faction_with = ITA } }
 			}
 		}
+		
+		
 
 		available = {
 			any_country = {
@@ -1813,6 +1821,8 @@ focus_tree = {
 				}
 				country_event = { id = wtt_japan.109 days = 1 }
 			}
+			
+			add_political_power = 100
 		}
 	}
 

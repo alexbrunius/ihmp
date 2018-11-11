@@ -1,5 +1,10 @@
-﻿0.1
+﻿The goal of the mod is to allow historically plausible multiplayer with a minimal of houserules and imbalances.
 
+0.2
+- Added 150 PP from NFs and a changed Zaibatsus effect for Japan to compensate the unintended changes to PP and factory output from permanent war with China.
+- Increased plane losses from Kamikaze mission by 20% and reduced Kamikaze damage by 25%
+
+0.1 ( Changes from Alex MP mod 1.5.4 )
 - Added a Chinese state in Central America with 90 VP to prevent them from surrendering ( Japan needs to keep suppressing partisans )
 - Changed Neutrality Spirit ( Sweden and Switzerland ) to make justifying war against them prohibitivley expensive ( allows removing houserule )
 - Added Neutrality Spirit to Turkey
@@ -29,6 +34,10 @@
 - Changed Closed Economy to still export 10% of your resources, so some will always be available for trade.
 - Lowered manpower gained from Conscription laws "Extensive Conscription" and above, as well as added another level called "Massed Draft" between Service by Requirement and All Adults Serve
 
+For complete previous changelog. See file in mod.
+Many thanks for CrouchingLemur for his great mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=710273161]More Unit Levels[/url]
+Many thanks for Chondrite for his great mods [url=https://steamcommunity.com/sharedfiles/filedetails/?id=704963980]Strategic View Adjustments[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1368202826] Allied Construction Projects[/url]
+Thanks for feedback, suggestions and bugspotting to the active MP groups I play with as well as the WPO group and for modding help from Myzael, Kallar, Beethoven and SpeedKat.
 
 AlexMPMod 1.5.4 Changelog
  
@@ -104,10 +113,7 @@ Key previous features of AlexMPMod:
 - Rebalanced CAS to do less damage ( especially in bad terrain ), but have higher bonuses.
 - Japanese NFs The Divine Wind and NF Imperial Glory (Kamikazes) have more sensible requirements and effects.
 
-For complete previous changelog. See file in mod.
-Many thanks for CrouchingLemur for his great mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=710273161]More Unit Levels[/url]
-Many thanks for Chondrite for his great mods [url=https://steamcommunity.com/sharedfiles/filedetails/?id=704963980]Strategic View Adjustments[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1368202826] Allied Construction Projects[/url]
-Thanks for feedback, suggestions and bugspotting to the active MP groups I play with and for modding help from Myzael, Kallar, Beethoven and SpeedKat.
+Initial Changes:
 
 Land:
 - Lowered maximum brigades per division from 25 to 12 ( 24 width max for infantry/tanks )
