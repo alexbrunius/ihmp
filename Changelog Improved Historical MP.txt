@@ -1,5 +1,10 @@
 ﻿The goal of the mod is to allow historically plausible multiplayer with a minimal of houserules and imbalances.
 
+0.3
+- Added unique Motti tactics to Finland ( -30% width and very strong )
+- Changed widht of bridge and withdrawal tactic phases to 2x-20% instead of 2x-25% ( -40% total )
+- Scrambled width from alot of other various tactics to provice between -15% and +10% combat width, to make width less predictible
+
 0.2
 - Added 150 PP from NFs and a changed Zaibatsus effect for Japan to compensate the unintended changes to PP and factory output from permanent war with China.
 - Increased plane losses from Kamikaze mission by 20% and reduced Kamikaze damage by 25%
