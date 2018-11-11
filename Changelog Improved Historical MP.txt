@@ -2,7 +2,8 @@
 - Removed SOV claim on Petsamo after Winter War and add AI Finland strategies.
 - Buffed 250 PP theorists to give 0.08 XP.
 - Buffed TAC strat bombing in doctrines from 10% to 20%, added agility for TAC in Battlefield support.
-﻿- Allow UK's Shadow Scheme after 1937.07.01
+﻿- Allow UK's Shadow Scheme after 1937.07.01.
+- Added Italian Atlantic fleet designer gated by Atlantic Fleet NF and switched the existing CRDA designer to coastal defence.
 
 0.3
 - Added unique Motti tactics to Finland ( -30% width and very strong )
