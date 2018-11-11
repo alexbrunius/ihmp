@@ -1,4 +1,5 @@
 ﻿﻿﻿0.3
+- Removed the German reichskommisariat decisions in the East
 - Moved 10 VP from Sicily to Milan ( to ensure Italy's capital end up in the North in face Sicily is bypassed ).
 - Moved 5 VP from Vladivostok to Sverdlovsk ( to ensure Soviet's capital end up in the Urals instead of Vladivostok if Moscow, Leningrad and Stalingrad falls ).
 - Lowered the port level of Vladivostok to prevent supply from being shipped there.
