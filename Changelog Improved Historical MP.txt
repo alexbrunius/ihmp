@@ -1,4 +1,7 @@
 ﻿﻿﻿0.3
+- Split Carrier NAV and NAV to be different techs instead of subtech.
+- Moved NAV to the Bomber tree and Heavy Fighters to the Fighter tree.
+- Added research connections between Fighters - Heavy Fighters and Tactical - Strategic Bombers.
 - Removed the German reichskommisariat decisions in the East
 - Moved 10 VP from Sicily to Milan ( to ensure Italy's capital end up in the North in face Sicily is bypassed ).
 - Moved 5 VP from Vladivostok to Sverdlovsk ( to ensure Soviet's capital end up in the Urals instead of Vladivostok if Moscow, Leningrad and Stalingrad falls ).

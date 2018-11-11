@@ -1140,8 +1140,22 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SOV_naval_bomber3_medium"
 		texturefile = "gfx/interface/technologies/SOV_naval_bomber3.dds"
-	}	
+	}
 
+	SpriteType = {
+		name = "GFX_SOV_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber3.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_SOV_fighter1_medium"
@@ -1384,6 +1398,21 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ITA_naval_bomber3_medium"
 		texturefile = "gfx/interface/technologies/ITA_naval_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/ITA_naval_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ITA_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/ITA_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ITA_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/ITA_naval_bomber3.dds"
 	}	
 
 	
@@ -1490,7 +1519,22 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_FRA_naval_bomber3_medium"
 		texturefile = "gfx/interface/technologies/FRA_naval_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/FRA_naval_bomber1.dds"
 	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/FRA_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/FRA_naval_bomber3.dds"
+	}
 
 	
 	SpriteType = {
@@ -2466,6 +2510,21 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
+		name = "GFX_ENG_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber1.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_ENG_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber2.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_ENG_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber3.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_ENG_strategic_bomber1_medium"
 		texturefile = "gfx/interface/technologies/ENG_strategic_bomber1.dds"
 	}	
@@ -3258,6 +3317,16 @@ spriteTypes = {
 		name = "GFX_USA_naval_bomber2_medium"
 		texturefile = "gfx/interface/technologies/USA_naval_bomber2.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_USA_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/USA_naval_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/USA_naval_bomber2.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_USA_naval_bomber1_medium"
@@ -3526,6 +3595,21 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/naval_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/naval_bomber2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/naval_bomber3.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_tactical_bomber3_medium"
 		texturefile = "gfx/interface/technologies/tactical_bomber3.dds"
 	}
@@ -3660,7 +3744,21 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GER_naval_bomber3_medium"
 		texturefile = "gfx/interface/technologies/GER_naval_bomber3.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/GER_naval_bomber1.dds"
 	}	
+	
+	SpriteType = {
+		name = "GFX_GER_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/GER_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_GER_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/GER_naval_bomber3.dds"
+	}		
 	
 	SpriteType = {
 		name = "GFX_GER_strategic_bomber1_medium"
@@ -4126,6 +4224,21 @@ spriteTypes = {
 		
 	SpriteType = {
 		name = "GFX_commonwealth_2d_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_commonwealth_2d_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber1.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_commonwealth_2d_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber2.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_commonwealth_2d_cv_naval_bomber3_medium"
 		texturefile = "gfx/interface/technologies/ENG_naval_bomber3.dds"
 	}	
 	
