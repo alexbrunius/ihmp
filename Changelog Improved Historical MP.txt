@@ -1,4 +1,5 @@
 ﻿﻿﻿0.3
+- Added some starting technology to USA ( Trucks, 1934 Light Tanks and Basic machine Tools )
 - Split Carrier NAV and NAV to be different techs instead of subtech.
 - Moved NAV to the Bomber tree and Heavy Fighters to the Fighter tree.
 - Added research connections between Fighters - Heavy Fighters and Tactical - Strategic Bombers.
