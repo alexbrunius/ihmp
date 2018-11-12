@@ -51,7 +51,7 @@ NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.9		-- was -0.8 -- speed impac
 NDefines.NMilitary.LOW_ORG_FOR_ATTACK = 0.6                      -- was 0.5 -- at what org % we start affecting speed when doign hostile moves. scales down ZERO_ORG_MOVEMENT_MODIFIER
 NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.25              -- was 0.2 -- percentage of (max) org loss on takign enemy province
 
-NDefines.NMilitary.AIR_SUPPORT_BASE = 0.40                        -- was 0.3 but broken (in practice gives just half ) - base ground bonus to troops when active planes helping them
+NDefines.NMilitary.AIR_SUPPORT_BASE = 0.30                        -- was 0.3 but broken (in practice gives just half ) - base ground bonus to troops when active planes helping them
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.025    -- was 0.04 -- air global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.03    -- was 0.04 -- global damage modifier
 
