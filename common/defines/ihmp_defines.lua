@@ -95,6 +95,8 @@ NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_NAVAL_BOMBER = 4.44		-- was 0.
 NDefines.NAI.AIR_MISSION_MIN_COVEREAGE = 0.7					-- was 0.2 -- Between 0 and 1, limit for % coverage for air mission to be considered
 NDefines.NAI.NAVAL_STRIKE_PLANES_PER_SHIP = 2					-- was 20 -- Amount of bombers requested per enemy ship
 NDefines.NAI.PORT_STRIKE_PLANES_PER_SHIP = 1					-- was 10 -- Amount of bombers request per enemy ship in the port
+
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.7				-- was 0.8	-- Anti Air Gun Damage factor
 	
 -- SHIP STUFF
 NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 64						-- was 24		-- Before we resign chasing enemy, give them some minimum time so the combat doesn't end instantly.
