@@ -7,7 +7,7 @@
 - Split Carrier NAV and NAV to be different techs instead of subtech.
 - Moved NAV to the Bomber tree and Heavy Fighters to the Fighter tree.
 - Added research connections between Fighters - Heavy Fighters and Tactical - Strategic Bombers.
-- Removed the German reichskommisariat decisions in the East
+- Removed the German reichskommisariat decisions in the East.
 - Moved 10 VP from Sicily to Milan ( to ensure Italy's capital end up in the North in face Sicily is bypassed ).
 - Moved 5 VP from Vladivostok to Sverdlovsk ( to ensure Soviet's capital end up in the Urals instead of Vladivostok if Moscow, Leningrad and Stalingrad falls ).
 - Lowered the port level of Vladivostok to prevent supply from being shipped there.
@@ -17,9 +17,10 @@
 - Buffed TAC strat bombing in doctrines from 10% to 20%, added agility for TAC in Battlefield support.
 ﻿- Allow UK's Shadow Scheme after 1937.07.01.
 - Added Italian Atlantic fleet designer gated by Atlantic Fleet NF and switched the existing CRDA designer to coastal defence.
-- Added unique Motti tactics to Finland ( -30% width and very strong )
-- Changed widht of bridge and withdrawal tactic phases to 2x-20% instead of 2x-25% ( -40% total )
-- Scrambled width from alot of other various tactics to provice between -15% and +10% combat width, to make width less predictible
+- Added unique Motti tactics to Finland ( -30% width and very strong ).
+- Changed widht of bridge and withdrawal tactic phases to 2x-20% instead of 2x-25% ( -40% total ).
+- Scrambled width from alot of other various tactics to provice between -15% and +10% combat width, to make width less predictible.
+- Fixed Atlantikwall not building in puppets.
 
 0.2
 - Added 150 PP from NFs and a changed Zaibatsus effect for Japan to compensate the unintended changes to PP and factory output from permanent war with China.

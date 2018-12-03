@@ -151,7 +151,13 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_full_control_of_state = 19
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 19
+						}
 					}
 					19 = {
 						#Fortify naval bases
@@ -177,7 +183,13 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 23
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 23
+						}
 					}
 					23 = {
 						#Fortify naval bases
@@ -203,7 +215,13 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 30
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 30
+						}
 					}
 					30 = {
 						#Fortify naval bases
@@ -229,7 +247,13 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 14
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 14
+						}
 					}
 					14 = {
 						#Fortify naval bases
@@ -255,7 +279,13 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 15
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 15
+						}
 					}
 					15 = {
 						#Fortify naval bases a bit extra close to Calais
@@ -281,7 +311,13 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 29
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 29
+						}
 					}
 					29 = {
 						#Fortify naval bases
@@ -319,7 +355,13 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 6
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 6
+						}
 					}
 					6 = {
 						#Fortify naval bases
@@ -345,7 +387,13 @@ focus_tree = {
 				}	
 				if = {
 					limit = {
-						has_full_control_of_state = 7
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 7
+						}
 					}
 					7 = {
 						#Fortify naval bases a bit extra close to Calais
@@ -371,7 +419,13 @@ focus_tree = {
 				}	
 				if = {
 					limit = {
-						has_full_control_of_state = 36
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 36
+						}
 					}	
 					36 = {
 						#Fortify naval bases
@@ -397,7 +451,13 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 56
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 56
+						}
 					}		
 					56 = {
 						#Fortify naval bases
@@ -423,7 +483,13 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 59
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 59
+						}
 					}		
 					59 = {
 						#Fortify naval bases
@@ -449,7 +515,13 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 58
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 58
+						}
 					}		
 					58 = {
 						#Fortify naval bases
@@ -475,7 +547,13 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 99
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 99
+						}
 					}		
 					99 = {
 						#Fortify naval bases
@@ -501,7 +579,13 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 110
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 110
+						}
 					}		
 					110 = {
 						#Fortify naval bases
@@ -527,7 +611,13 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 142
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 142
+						}
 					}		
 					142 = {
 						#Fortify naval bases
@@ -553,7 +643,13 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 143
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 143
+						}
 					}		
 					143 = {
 						#Fortify naval bases
@@ -579,7 +675,13 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 144
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 144
+						}
 					}		
 					144 = {
 						#Fortify naval bases
