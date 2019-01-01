@@ -21,6 +21,7 @@
 - Changed widht of bridge and withdrawal tactic phases to 2x-20% instead of 2x-25% ( -40% total ).
 - Scrambled width from alot of other various tactics to provice between -15% and +10% combat width, to make width less predictible.
 - Fixed Atlantikwall not building in puppets.
+- Disabled blow Suez/Panama decisions for the AI.
 
 0.2
 - Added 150 PP from NFs and a changed Zaibatsus effect for Japan to compensate the unintended changes to PP and factory output from permanent war with China.
