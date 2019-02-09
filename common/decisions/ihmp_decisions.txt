@@ -370,3 +370,39 @@ operations = {
 		}
 	}
 }
+
+ai_decisions = {
+	no_ai_planes_toggle = {
+
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			always = yes
+		}
+		
+		available = {
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			always = yes
+		}
+		
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = no_ai_air }
+				custom_effect_tooltip = enable_ai_air_tt
+				clr_global_flag = no_ai_air
+			} 
+			else = {
+				custom_effect_tooltip = disable_ai_air_tt
+				set_global_flag = no_ai_air
+			}
+		}
+	}
+}

@@ -1,6 +1,7 @@
 ﻿0.4
 - Vichy ceding fleet to UK on Operation Catapult allows Case Anton.
-- Fix Case Anton possible after Italian Claims on France NF.
+- Fixed Case Anton being possible after Italian Claims on France NF.
+- Disabled plane production and research for AI (barring Spains for SCW)
 
 ﻿﻿0.3
 - Lowered static Anti Air damage by ~10%.
