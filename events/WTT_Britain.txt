@@ -66,6 +66,7 @@ country_event = {
 			news_event = { id = news.332 days = 1 }
 		}
 		transfer_navy = { target = ENG }
+		GER = { set_country_flag = VIC_navy_transferred }
 	}
 	#decline
 	option = {

@@ -4569,6 +4569,9 @@ country_event = {
 			has_global_flag = ITA_claims_on_france_1
 		}
 		clr_global_flag = ITA_claims_on_france_1
+		735 = {
+			remove_core_of = VIC
+		}
 		VIC = {
 			country_event = france.27
 		}
@@ -4585,7 +4588,10 @@ country_event = {
 		}
 		VIC = {
 			country_event = france.27
-		}		
+		}
+		1 = {
+			remove_core_of = VIC
+		}
 		ITA = { country_event = { id = italy.15 hours = 2 } }
 	}
 
@@ -4597,10 +4603,13 @@ country_event = {
 			has_global_flag = ITA_claims_on_france_735
 			NOT = { has_global_flag = ITA_claims_on_france_1 }
 		}
+		735 = {
+			remove_core_of = VIC
+		}
 		VIC = {
 			country_event = france.27
-		}				
-		ITA = { country_event = { id = italy.15 hours = 2 } }		
+		}
+		ITA = { country_event = { id = italy.15 hours = 2 } }
 	}
 
 	# Italy gets Savoy and Corsica
@@ -4613,7 +4622,13 @@ country_event = {
 		}
 		VIC = {
 			country_event = france.27
-		}				
+		}
+		735 = {
+			remove_core_of = VIC
+		}
+		1 = {
+			remove_core_of = VIC
+		}
 		ITA = { country_event = { id = italy.15 hours = 2 } }
 	}
 

@@ -24,3 +24,4 @@
  syria_lebanon_campaign_desc:0 ""
  operation_torch:0 "Operation Torch"
  operation_torch_desc:0 ""
+ VIC_navy_transferred_tt:0 "§H[VIC.GetNameDef]§! has transferred their navy to §H[ENG.GetNameDef]§!"

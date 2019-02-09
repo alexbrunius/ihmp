@@ -1,5 +1,9 @@
-﻿﻿﻿0.3
-- Lowered static Anti Air damage by ~10%
+﻿0.4
+- Vichy ceding fleet to UK on Operation Catapult allows Case Anton.
+- Fix Case Anton possible after Italian Claims on France NF.
+
+﻿﻿0.3
+- Lowered static Anti Air damage by ~10%.
 - Lowered Air Defense of Strategic Bombers by -10/20/30% for 36/40/44 model.
 - Rebalanced Air Doctrines so that BF Support get a ~10-15% advantage early war in aircombat while the other two later catch up and have ~15-25% advantage when doctrines are completed.
 - Increased the research cost of air doctrines by +25% for all levels except the first.

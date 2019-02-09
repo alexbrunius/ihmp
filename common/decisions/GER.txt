@@ -286,6 +286,10 @@ GER_case_anton_category = {
 				}
 			}
 			OR = {
+				custom_trigger_tooltip = {
+					tooltip = VIC_navy_transferred_tt
+					has_country_flag = VIC_navy_transferred
+				}
 				VIC = { has_war = yes }
 				ITA = { has_capitulated = yes }
 				ITA = { is_in_faction_with = ENG }
@@ -306,6 +310,7 @@ GER_case_anton_category = {
 							NOT = {
 								OR = {
 									tag = ROOT
+									tag = VIC
 									is_subject_of = ROOT
 									is_in_faction_with = ROOT
 								}
