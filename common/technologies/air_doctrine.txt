@@ -1442,6 +1442,7 @@ technologies = {
 
 		# EFFECT ########
 		strategic_bomb_visibility = -0.5 #Strat bombers are harder to detect, both in night and day.
+		air_strategic_bomber_night_penalty = -0.5
 		###########
 		
 		path = {
@@ -1520,6 +1521,9 @@ technologies = {
 
 		# EFFECT ########
 		air_strategic_bomber_defence_factor = 0.2
+		tac_bomber = {
+			air_bombing = 0.20
+		}
 		###########
 		
 		
