@@ -87,8 +87,7 @@ NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.01				-- was 0.02	-- Global speed m
 NDefines.NAir.DETECT_CHANCE_FROM_RADARS = 0.3							-- was 0.5 -- How much the radars in area affects detection chance.
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 2000 		-- was 3000 -- Max amount of aircrafts in region to give full detection bonus.
 
-NDefines.NAir.AIR_NAVAL_KAMIKAZE_DAMAGE_MULT = 30.0				-- was 20 -- Balancing value to increase usual damage to Strength for Kamikaze
-NDefines.NAir.AIR_NAVAL_KAMIKAZE_LOSSES_MULT = 6.0          	--
+NDefines.NAir.AIR_NAVAL_KAMIKAZE_LOSSES_MULT = 7.0          	--
 -- ( broken Nav fix stuff )
 NDefines.NAir.NAVAL_STRIKE_AIR_VS_AIR_PASS_CHANCE = 0.95		-- was 0.5
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_NAVAL_BOMBER = 4.44		-- was 0.192 -- How much efficiency to regain per day. Gain applied hourly.	

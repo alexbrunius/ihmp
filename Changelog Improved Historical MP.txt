@@ -3,6 +3,7 @@
 - Fixed Case Anton being possible after Italian Claims on France NF.
 - Disabled plane production and research for AI (barring Spains for SCW)
 - Rebalanced Airdoctrines again to reduce the difference between OI and BS.
+- Heavy Fighters Naval attack values brought inline with other fighters to not make them OP at Kamikaze.
 
 ﻿﻿0.3
 - Lowered static Anti Air damage by ~10%.
