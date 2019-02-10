@@ -117,7 +117,7 @@ technologies = {
 	naval_strike_tactics = {
 
 		# EFFECT ########
-		air_nav_efficiency = 0.15
+		air_nav_efficiency = 0.10
 		###########
 		
 		path = {
@@ -157,7 +157,7 @@ technologies = {
 	fighter_sweeps = {
 
 		# EFFECT ########
-		air_intercept_efficiency = 0.1
+		air_intercept_efficiency = 0.2
 		###########
 		
 		xor={
@@ -196,7 +196,7 @@ technologies = {
 	dogfighting_experience = {
 
 		# EFFECT ########
-		air_superiority_efficiency = 0.1
+		air_superiority_efficiency = 0.2
 		###########
 		
 		xor={
@@ -242,8 +242,6 @@ technologies = {
 			category_heavy_fighter = {
 				air_agility = 0.05
 			}
-			air_intercept_efficiency = 0.1
-			air_superiority_efficiency = 0.1
 		#}
 		###########
 		
@@ -517,10 +515,10 @@ technologies = {
 		# EFFECT ########
 		army_bonus_air_superiority_factor = 0.15
 		category_fighter = {
-				air_agility = 0.20
+				air_agility = 0.1
 		}
 		category_heavy_fighter = {
-				air_agility = 0.20
+				air_agility = 0.1
 		}
 		###########
 
@@ -1066,6 +1064,12 @@ technologies = {
 
 		# EFFECT ########
 		air_interception_detect_factor = 0.15
+		category_fighter = {
+				air_agility = 0.05
+			}
+		category_heavy_fighter = {
+				air_agility = 0.05
+			}
 		###########
 				
 		doctrine = yes	
@@ -1286,10 +1290,10 @@ technologies = {
 
 		# EFFECT ########
 			category_fighter = {
-				air_agility = 0.2
+				air_agility = 0.1
 			}
 			category_heavy_fighter = {
-				air_agility = 0.2
+				air_agility = 0.1
 			}
 		###########
 		
@@ -1326,7 +1330,7 @@ technologies = {
 
 		#same as naval_strike_torpedo_tactics
 		# EFFECT ########
-		air_nav_efficiency = 0.1
+		air_nav_efficiency = 0.15
 		###########
 
 		path = {
