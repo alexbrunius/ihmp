@@ -405,4 +405,277 @@ ai_decisions = {
 			}
 		}
 	}
+
+	make_ai_join_allies = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			always = yes
+		}
+		
+		available = {
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+			FROM = { is_in_faction = no }
+		}
+
+		target_trigger = {
+			FROM = {
+				is_in_faction = no
+				has_war = no
+			}
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+		}
+		
+		complete_effect = {
+			ENG = { add_to_faction = FROM }
+		}
+	}
+
+	make_ai_join_axis = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			always = yes
+		}
+		
+		available = {
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+			FROM = { is_in_faction = no }
+		}
+
+		target_trigger = {
+			FROM = {
+				is_in_faction = no
+				has_war = no
+			}
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+		}
+		
+		complete_effect = {
+			GER = { add_to_faction = FROM }
+		}
+	}
+
+	make_ai_join_comintern = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			always = yes
+		}
+		
+		available = {
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+			FROM = { is_in_faction = no }
+		}
+
+		target_trigger = {
+			FROM = {
+				is_in_faction = no
+				has_war = no
+			}
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+		}
+		
+		complete_effect = {
+			SOV = { add_to_faction = FROM }
+		}
+	}
+
+	make_ai_join_allies_puppet = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			always = yes
+		}
+		
+		available = {
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+			FROM = { is_in_faction = no }
+		}
+
+		target_trigger = {
+			FROM = {
+				is_in_faction = no
+				has_war = no
+			}
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+		}
+		
+		complete_effect = {
+			ENG = {
+				add_to_faction = FROM
+				puppet = FROM
+			}
+		}
+	}
+
+	make_ai_join_axis_puppet = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			always = yes
+		}`
+		
+		available = {
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+			FROM = { is_in_faction = no }
+		}
+
+		target_trigger = {
+			FROM = {
+				is_in_faction = no
+				has_war = no
+			}
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+		}
+		
+		complete_effect = {
+			GER = {
+				add_to_faction = FROM
+				puppet = FROM
+			}
+		}
+	}
+
+	make_ai_join_comintern_puppet = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			always = yes
+		}
+		
+		available = {
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+			FROM = { is_in_faction = no }
+		}
+
+		target_trigger = {
+			FROM = {
+				is_in_faction = no
+				has_war = no
+			}
+			OR = {
+				ROOT = { has_wargoal_against = FROM }
+				ROOT = { is_justifying_wargoal_against = FROM }
+			}
+		}
+		
+		complete_effect = {
+			SOV = {
+				add_to_faction = FROM
+				puppet = FROM
+			}
+		}
+	}
 }

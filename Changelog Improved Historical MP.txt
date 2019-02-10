@@ -5,6 +5,7 @@
 - Rebalanced Airdoctrines again to reduce the difference between OI and BS.
 - Heavy Fighters Naval attack values brought inline with other fighters to not make them OP at Kamikaze.
 - Modern tanks speed also lowered same as other tanks were in 0.1.
+- Added experimental feature for preventing illogical AI faction auto-join.
 
 ﻿﻿0.3
 - Lowered static Anti Air damage by ~10%.
