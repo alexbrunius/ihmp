@@ -590,7 +590,7 @@ ai_decisions = {
 
 		allowed = {
 			always = yes
-		}`
+		}
 		
 		available = {
 			OR = {
