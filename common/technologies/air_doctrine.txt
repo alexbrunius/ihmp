@@ -6,7 +6,11 @@ technologies = {
 		air_superiority_detect_factor = 0.1
 		###########
 
-	xor = { force_rotation formation_flying }
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		
+		xor = { force_rotation formation_flying }
 		
 		path = {
 			leads_to_tech = infrastructure_destruction
@@ -19,7 +23,7 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		research_cost = 2.25
 		
 		categories = {
 			air_doctrine
@@ -34,6 +38,14 @@ technologies = {
 				
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -47,7 +59,9 @@ technologies = {
 		# EFFECT ########
 		air_cas_present_factor = 0.1
 		###########
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		
 		path = {
 			leads_to_tech = naval_strike_tactics
@@ -55,7 +69,7 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -70,6 +84,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -89,9 +111,11 @@ technologies = {
 			leads_to_tech = naval_strike_tactics
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -106,6 +130,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -129,9 +161,11 @@ technologies = {
 			leads_to_tech = dogfighting_experience
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -146,6 +180,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -158,6 +200,7 @@ technologies = {
 
 		# EFFECT ########
 		air_intercept_efficiency = 0.2
+		air_mission_xp_gain_factor = 0.1
 		###########
 		
 		xor={
@@ -168,9 +211,11 @@ technologies = {
 			leads_to_tech = multialtitude_flying
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -185,6 +230,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -197,6 +250,7 @@ technologies = {
 
 		# EFFECT ########
 		air_superiority_efficiency = 0.2
+		air_mission_xp_gain_factor = 0.1
 		###########
 		
 		xor={
@@ -207,9 +261,11 @@ technologies = {
 			leads_to_tech = multialtitude_flying
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -224,6 +280,18 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -249,9 +317,11 @@ technologies = {
 			leads_to_tech = logistical_bombing
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -266,6 +336,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -290,9 +368,11 @@ technologies = {
 			leads_to_tech = day_bombing
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -307,6 +387,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -330,9 +418,11 @@ technologies = {
 			leads_to_tech = massed_bomber_formations
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -347,6 +437,22 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				tag = ENG
+				factor = 1.5
+			}
+			modifier = {
+				tag = USA
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -370,9 +476,11 @@ technologies = {
 			leads_to_tech = air_offense
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -387,6 +495,22 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				tag = ENG
+				factor = 0.5
+			}
+			modifier = {
+				tag = USA
+				factor = 1.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -407,9 +531,11 @@ technologies = {
 			leads_to_tech = flying_fortress
 			research_cost_coeff = 1
 		}
-
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -424,6 +550,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 3
+			}
 		}
 		
 		ai_research_weights = {
@@ -443,9 +577,11 @@ technologies = {
 			leads_to_tech = flying_fortress
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -460,6 +596,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -484,9 +628,11 @@ technologies = {
 			leads_to_tech = mass_destruction
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -501,6 +647,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 3
+			}
 		}
 		
 		ai_research_weights = {
@@ -522,9 +676,11 @@ technologies = {
 		}
 		###########
 
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -539,6 +695,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -552,9 +716,11 @@ technologies = {
 		# EFFECT ########
 		air_strategic_bomber_bombing_factor = 0.2
 		###########
-			
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00	
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -569,6 +735,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -586,9 +760,11 @@ technologies = {
 
 		xor = { force_rotation air_superiority }
 
+		xp_research_type = air
+		
 		# EFFECT ########
 		air_superiority_detect_factor = 0.15
-		
+		air_mission_xp_gain_factor = 0.1
 		category_fighter = {
 				air_agility = 0.1
 		}
@@ -601,9 +777,11 @@ technologies = {
 			leads_to_tech = dive_bombing
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 1.5
+		research_cost = 2.25
 		
 		categories = {
 			air_doctrine
@@ -623,6 +801,18 @@ technologies = {
 				factor = 0
 				tag = USA
 			}
+			modifier = {
+				tag = SOV
+				factor = 4
+			}
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -633,6 +823,8 @@ technologies = {
 
 	dive_bombing = {
 
+		xp_research_type = air
+		
 		# EFFECT ########
 		air_cas_efficiency = 0.20
 		###########
@@ -641,9 +833,11 @@ technologies = {
 			leads_to_tech = direct_ground_support
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -658,6 +852,19 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
+
+			modifier = {
+				tag = GER
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -682,9 +889,11 @@ technologies = {
 			leads_to_tech = fighter_ace_initiative
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -699,6 +908,18 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				tag = GER
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -711,7 +932,8 @@ technologies = {
 	formation_fighting = {
 
 		# EFFECT ########
-		air_superiority_efficiency = 0.10
+		air_superiority_efficiency = 0.15
+		air_mission_xp_gain_factor = 0.1
 		###########
 		
 		xor = {
@@ -722,9 +944,11 @@ technologies = {
 			leads_to_tech = hunt_and_destroy
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -738,7 +962,19 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 10
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				tag = GER
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -751,6 +987,7 @@ technologies = {
 
 		# EFFECT ########
 		air_ace_generation_chance_factor = 0.25
+		air_mission_xp_gain_factor = 0.1
 		###########
 
 		xor = {
@@ -761,9 +998,11 @@ technologies = {
 			leads_to_tech = hunt_and_destroy
 			research_cost_coeff = 1
 		}		
-
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -778,6 +1017,18 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				tag = GER
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -796,9 +1047,11 @@ technologies = {
 			leads_to_tech = combat_unit_destruction
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -813,6 +1066,18 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				tag = GER
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -848,9 +1113,11 @@ technologies = {
 			leads_to_tech = ground_support_integration
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -865,6 +1132,18 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				tag = GER
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -885,9 +1164,11 @@ technologies = {
 			leads_to_tech = naval_strike_torpedo_tactics
 			research_cost_coeff = 1
 		}
-
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -902,6 +1183,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -915,7 +1204,7 @@ technologies = {
 
 		# EFFECT ########
 		tac_bomber = {
-			air_bombing = 0.20
+			air_bombing = 0.10
 		}
 		###########
 		
@@ -924,9 +1213,11 @@ technologies = {
 			leads_to_tech = naval_strike_torpedo_tactics
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -942,6 +1233,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -961,9 +1260,11 @@ technologies = {
 			leads_to_tech = naval_strike_torpedo_tactics
 			research_cost_coeff = 1
 		}		
-			
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00	
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -978,6 +1279,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -997,9 +1306,11 @@ technologies = {
 			leads_to_tech = strategic_destruction
 			research_cost_coeff = 1
 		}		
-			
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00	
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -1014,6 +1325,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -1034,9 +1353,11 @@ technologies = {
 			leads_to_tech = forward_interception
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -1071,9 +1392,11 @@ technologies = {
 				air_agility = 0.05
 			}
 		###########
-				
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00		
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -1102,19 +1425,24 @@ technologies = {
 
 	force_rotation = {
 
+		xp_research_type = air
+		
 		xor = { formation_flying air_superiority }	
 
 		# EFFECT ########
 		air_interception_detect_factor = 0.20
+		air_mission_xp_gain_factor = 0.1
 		###########
 		
 		path = {
 			leads_to_tech = fighter_baiting
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 1.5
+		research_cost = 2.25
 		
 		categories = {
 			air_doctrine
@@ -1134,6 +1462,14 @@ technologies = {
 				factor = 0
 				tag = USA
 			}
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 5
+			}
 		}
 	}
 	
@@ -1148,9 +1484,11 @@ technologies = {
 			leads_to_tech = low_echelon_support
 			research_cost_coeff = 1
 		}
-		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -1165,6 +1503,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -1185,8 +1531,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -1201,6 +1550,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -1221,8 +1578,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -1237,6 +1597,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -1261,8 +1629,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -1277,6 +1648,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -1295,6 +1674,7 @@ technologies = {
 			category_heavy_fighter = {
 				air_agility = 0.1
 			}
+			air_training_xp_gain_factor = 0.1
 		###########
 		
 		path = {
@@ -1302,8 +1682,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -1318,6 +1701,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -1338,8 +1729,11 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 			
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -1354,6 +1748,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -1368,6 +1770,7 @@ technologies = {
 
 		# EFFECT ########
 		air_cas_efficiency = 0.15
+		air_training_xp_gain_factor = 0.1
 		###########
 		
 		path = {
@@ -1375,8 +1778,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -1391,6 +1797,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -1404,7 +1818,7 @@ technologies = {
 
 		# EFFECT ########
 		tac_bomber = {
-			air_bombing = 0.20
+			air_bombing = 0.2
 		}
 		###########
 		
@@ -1413,8 +1827,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -1429,6 +1846,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -1450,8 +1875,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -1466,6 +1894,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -1478,7 +1914,7 @@ technologies = {
 	air_skirmish = {
 
 		# EFFECT ########
-		air_superiority_efficiency = 0.20
+		air_superiority_efficiency = 0.2
 		air_ace_generation_chance_factor = 0.1
 		category_fighter = {
 				air_agility = 0.1
@@ -1493,8 +1929,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -1509,6 +1948,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -1527,8 +1974,11 @@ technologies = {
 		###########
 		
 		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2.5
+		research_cost = 3
 		
 		categories = {
 			air_doctrine
@@ -1600,7 +2050,7 @@ technologies = {
 #		}
 #		
 #		doctrine = yes	
-#		research_cost = 2.5
+#		research_cost = 2
 #		
 #		categories = {
 #			air_doctrine
@@ -1630,7 +2080,7 @@ technologies = {
 #		###########
 #		
 #		doctrine = yes	
-#		research_cost = 2.5
+#		research_cost = 2
 #		
 #		categories = {
 #			air_doctrine
@@ -1665,7 +2115,7 @@ technologies = {
 #		}
 #		
 #		doctrine = yes	
-#		research_cost = 2.5
+#		research_cost = 2
 #		
 #		categories = {
 #			air_doctrine
@@ -1695,7 +2145,7 @@ technologies = {
 #		###########
 #		
 #		doctrine = yes	
-#		research_cost = 2.5
+#		research_cost = 2
 #		
 #		categories = {
 #			air_doctrine
@@ -1730,7 +2180,7 @@ technologies = {
 #		}
 #		
 #		doctrine = yes	
-#		research_cost = 2.5
+#		research_cost = 2
 #		
 #		categories = {
 #			air_doctrine
@@ -1762,7 +2212,7 @@ technologies = {
 #		###########
 #			
 #		doctrine = yes	
-#		research_cost = 2.5
+#		research_cost = 2
 #		
 #		categories = {
 #			air_doctrine
@@ -1797,7 +2247,7 @@ technologies = {
 #		}
 #		
 #		doctrine = yes	
-#		research_cost = 2.5
+#		research_cost = 2
 #		
 #		categories = {
 #			air_doctrine

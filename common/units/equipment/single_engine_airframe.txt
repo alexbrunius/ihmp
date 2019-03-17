@@ -45,12 +45,13 @@ equipments = {
 		
 		build_cost_ic = 22
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 2
 			rubber = 1
 		}
 		
 		manpower = 20
+		fuel_consumption = 0.21
 	}
 
 	cv_fighter_equipment = {
@@ -91,12 +92,13 @@ equipments = {
 		
 		build_cost_ic = 22
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 2
 			rubber = 1
 		}
 		
 		manpower = 20
+		fuel_consumption = 0.21
 	}
 	
 	CAS_equipment = {
@@ -135,12 +137,13 @@ equipments = {
 		
 		build_cost_ic = 22
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 2
 			rubber = 1
 		}
 		
 		manpower = 20
+		fuel_consumption = 0.26
 	}
 
 	cv_CAS_equipment = {
@@ -180,12 +183,13 @@ equipments = {
 		
 		build_cost_ic = 22
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 2
 			rubber = 1
 		}
 		
 		manpower = 20
+		fuel_consumption = 0.26
 	}
 	
 	nav_bomber_equipment = {
@@ -221,12 +225,13 @@ equipments = {
 		
 		build_cost_ic = 26
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 2
 			rubber = 1
 		}
 		
 		manpower = 20
+		fuel_consumption = 0.28
 	}
 
 	cv_nav_bomber_equipment = {
@@ -264,12 +269,13 @@ equipments = {
 		
 		build_cost_ic = 26
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 2
 			rubber = 1
 		}
 		
 		manpower = 20
+		fuel_consumption = 0.28
 	}
 	
 	jet_fighter_equipment = {
@@ -311,6 +317,7 @@ equipments = {
 		}
 		
 		manpower = 40
+		fuel_consumption = 0.42
 	}
 	
 
@@ -349,7 +356,7 @@ equipments = {
 				
 		build_cost_ic = 24
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 3
 			rubber = 1
 		}
@@ -375,7 +382,7 @@ equipments = {
 				
 		build_cost_ic = 28
 		resources = {
-			oil = 2
+			#oil = 2
 			aluminium = 3
 			rubber = 1
 		}
@@ -401,7 +408,7 @@ equipments = {
 				
 		build_cost_ic = 32
 		resources = {
-			oil = 2
+			#oil = 2
 			aluminium = 4
 			rubber = 1
 		}
@@ -484,7 +491,7 @@ equipments = {
 		
 		build_cost_ic = 28 # cv_version costs 20% more of base archetype
 		resources = {
-			oil = 2
+			#oil = 1
 			aluminium = 3
 			rubber = 1
 		}
@@ -509,7 +516,7 @@ equipments = {
 
 		build_cost_ic = 32 # cv_version costs 20% more of base archetype
 		resources = {
-			oil = 3
+			#oil = 2
 			aluminium = 2
 			rubber = 1
 		}
@@ -533,7 +540,7 @@ equipments = {
 		
 		build_cost_ic = 37 # cv_version costs 20% more of base archetype
 		resources = {
-			oil = 3
+			#oil = 2
 			aluminium = 3
 			rubber = 1
 		}
@@ -577,7 +584,7 @@ equipments = {
 		
 		build_cost_ic = 25
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 3
 			rubber = 1
 		}
@@ -603,7 +610,7 @@ equipments = {
 		
 		build_cost_ic = 29
 		resources = {
-			oil = 2
+			#oil = 2
 			aluminium = 3
 			rubber = 1
 		}		
@@ -650,7 +657,7 @@ equipments = {
 		
 		build_cost_ic = 30 # cv_version costs 20% more of base archetype
 		resources = {
-			oil = 2
+			#oil = 1
 			aluminium = 3
 			rubber = 1
 		}
@@ -676,7 +683,7 @@ equipments = {
 		
 		build_cost_ic = 35 # cv_version costs 20% more of base archetype
 		resources = {
-			oil = 3
+			#oil = 2
 			aluminium = 3
 			rubber = 1
 		}
@@ -692,15 +699,15 @@ equipments = {
 		archetype = nav_bomber_equipment
 		priority = 60
 
-		air_range = 4000 #was 850
-		maximum_speed = 230 
-		air_agility = 30
+		air_range = 2400
+		maximum_speed = 430
+		air_agility =20
 		air_attack = 6
-		air_defence = 8
+		air_defence = 12
 		naval_strike_attack = 6
 		naval_strike_targetting = 7.5
 		
-		build_cost_ic = 26
+		build_cost_ic = 37
 
 	}
 	# Improved nav_bomber
@@ -711,17 +718,17 @@ equipments = {
 		parent = nav_bomber_equipment_1
 		priority = 60
 
-		air_range = 4000 #was 930
-		maximum_speed = 300 
-		air_agility = 35
+		air_range = 2500
+		maximum_speed = 440 
+		air_agility = 25
 		air_attack = 10 
-		air_defence = 10
+		air_defence = 16
 		naval_strike_attack = 8
 		naval_strike_targetting = 10
 		
-		build_cost_ic = 30
+		build_cost_ic = 43
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 3
 			rubber = 1
 		}
@@ -735,17 +742,17 @@ equipments = {
 		parent = nav_bomber_equipment_2
 		priority = 60
 
-		air_range = 4000 #was 1100
-		maximum_speed = 400
-		air_agility = 40
+		air_range = 3000
+		maximum_speed = 480
+		air_agility = 30
 		air_attack = 14
-		air_defence = 11
+		air_defence = 21
 		naval_strike_attack = 10
 		naval_strike_targetting = 12.5
 	
-		build_cost_ic = 34
+		build_cost_ic = 49
 		resources = {
-			oil = 2
+			#oil = 2
 			aluminium = 3
 			rubber = 1
 		}	
@@ -788,7 +795,7 @@ equipments = {
 		naval_strike_targetting = 10
 		build_cost_ic = 36 # cv_version costs 20% more of base archetype
 		resources = {
-			oil = 2
+			#oil = 1
 			aluminium = 3
 			rubber = 1
 		}
@@ -811,7 +818,7 @@ equipments = {
 		naval_strike_targetting = 12.5
 		build_cost_ic = 41 # cv_version costs 20% more of base archetype
 		resources = {
-			oil = 3
+			#oil = 2
 			aluminium = 3
 			rubber = 1
 		}
@@ -830,6 +837,7 @@ equipments = {
 		group_by = archetype
 		sprite = light_plane
 		air_map_icon_frame = 5
+		manpower = 5
 		
 		interface_category = interface_category_air
 
@@ -933,13 +941,14 @@ equipments = {
 		group_by = archetype
 		sprite = light_plane
 		air_map_icon_frame = 5
+		manpower = 15
 		
 		interface_category = interface_category_air
 
 		upgrades = {
 		}
 
-		build_cost_ic = 33
+		build_cost_ic = 47
 		resources = {
 			aluminium = 2
 			tungsten = 2
@@ -959,11 +968,11 @@ equipments = {
 		archetype = suicide_craft_equipment
 		priority = 90
 
-		air_range = 1500
+		air_range = 2000
 		maximum_speed = 440  #was 1150 using stats from 1940 TAC carrying them
 		air_agility = 25 #was 50 using stats from 1940 TAC carrying them
 		air_attack = 0
-		air_defence = 12	
+		air_defence = 10 #TAC bombers carrying giant rocket bombs make big boom
 		reliability = 0.8
 		
 		naval_strike_attack = 5 #was 20

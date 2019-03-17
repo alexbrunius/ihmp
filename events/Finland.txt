@@ -169,6 +169,11 @@ country_event = {
 				amount = 250
 			}
 		}
+		add_ai_strategy = {
+			type = support
+			id = FIN
+			value = 100
+		}
 		FIN = {
 			country_event = { id = finland.5 days = 3 }
 		}
@@ -380,6 +385,14 @@ country_event = {
 				id = "SOV"			
 				value = 200
 			}
+		}
+		if = {
+			limit = {
+				GER = {
+					is_subject = no
+					not = { is_in_faction_with = SOV}
+				}
+			}
 			add_ai_strategy = {
 				type = alliance
 				id = "GER"			
@@ -389,6 +402,13 @@ country_event = {
 				type = befriend
 				id = "GER"			
 				value = 200
+			}
+			GER = {
+				add_ai_strategy = {
+					type = alliance
+					id = "FIN"			
+					value = 200
+				}
 			}
 		}
 	}

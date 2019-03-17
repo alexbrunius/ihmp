@@ -41,12 +41,13 @@ technologies = {
 			destroyer_2
 		}
 		
+		
 		path = {
 			leads_to_tech = improved_destroyer 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 		
 		start_year = 1936
 
@@ -81,7 +82,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1940
 		
@@ -111,7 +112,7 @@ technologies = {
 			destroyer_4
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1944
 		
@@ -141,7 +142,6 @@ technologies = {
 		enable_equipments = { 
 			light_cruiser_1
 		}
-		
 		path = {
 			leads_to_tech = basic_light_cruiser 
 			research_cost_coeff = 1
@@ -197,7 +197,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 		
 		start_year = 1936
 		
@@ -241,7 +241,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1940
 		
@@ -281,7 +281,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1944
 		
@@ -362,7 +362,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 		
 		start_year = 1936
 		
@@ -396,7 +396,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1940
 		
@@ -426,7 +426,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1944
 		
@@ -488,7 +488,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1940
 		
@@ -553,7 +553,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 1936
 		
 		folder = {
@@ -586,7 +586,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 1940
 		
 		folder = {
@@ -615,7 +615,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 1944
 		
 		folder = {
@@ -645,7 +645,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 1936
 		
 		folder = {
@@ -669,7 +669,7 @@ technologies = {
 			SH_battleship_2
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1944
 		
@@ -740,18 +740,13 @@ technologies = {
 		invasion_preparation = -0.5
 		amphibious_invasion_defence = 0.15
 		naval_invasion_capacity = 40
-		
+
 		path = {
 			leads_to_tech = tank_landing_craft 
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = lvt_landing_craft 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 1940
 		
 		folder = {
@@ -776,6 +771,21 @@ technologies = {
 				factor = 2
 				tag = JAP
 			}
+
+			modifier = {
+				factor = 50
+				tag = JAP
+				OR = {
+					has_war_with = USA
+					CHI = {  
+						OR = { 
+							has_capitulated = yes 
+							exists = no
+		                    is_subject_of = JAP
+						}
+					}
+				}
+			}
 			
 			modifier = {
 				factor = 2
@@ -794,10 +804,9 @@ technologies = {
 		amphibious_invasion = 0.25
 		amphibious_invasion_defence = 0.5
 		naval_invasion_capacity = 100
-	
-		research_cost = 1.5
+
+		research_cost = 2
 		start_year = 1944
-		
 		folder = {
 			name = naval_folder
 			position = { x = 0 y = 19 }
@@ -831,52 +840,6 @@ technologies = {
 			naval_equipment
 			tp_tech
 		}
-	}
-	
-	lvt_landing_craft = {
-		
-		path = {
-			leads_to_tech = lvt_landing_craft_2 
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			marines2 = 1
-			mechanised_infantry = 1
-		}
-		
-		enable_equipments = { 
-			lvt_equipment_1
-		}
-		research_cost = 1.5
-		start_year = 1940
-		
-		folder = {
-			name = naval_folder
-			position = { x = 2 y = 13 }
-		}
-	
-	}
-	
-	lvt_landing_craft_2 = {
-		
-		path = {
-			leads_to_tech = lvt_landing_craft_2 
-			research_cost_coeff = 1
-		}
-		
-		enable_equipments = { 
-			lvt_equipment_2
-		}
-		
-		research_cost = 1.5
-		start_year = 1944
-		
-		folder = {
-			name = naval_folder
-			position = { x = 2 y = 19 }
-		}
-	
 	}
 	
 	early_carrier = {
@@ -930,7 +893,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 1936
 		
 		folder = {
@@ -969,7 +932,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1940
 		
@@ -1005,7 +968,7 @@ technologies = {
 		}
 
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1944
 		
@@ -1080,7 +1043,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 1936
 
 		folder = {
@@ -1114,7 +1077,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1940
 		
@@ -1144,7 +1107,7 @@ technologies = {
 			submarine_4
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1944
 		
@@ -1167,6 +1130,8 @@ technologies = {
 			ss_tech
 		}
 	}
+
+	
 
 	######## JAPAN FOCUS TREE UNLOCK ########
 	torpedo_cruiser = {

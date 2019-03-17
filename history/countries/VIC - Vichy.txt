@@ -146,35 +146,55 @@ create_field_marshal = {
 
 create_navy_leader = {
 	name = "François Darlan"
-	picture = "Portrait_Vichy_Francois_Darlan.dds"
-	traits = { superior_tactician }
+		picture = "Portrait_France_Francois_Darlan.dds"
+	traits = { naval_lineage bold superior_tactician }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
 }
 
 create_navy_leader = {
 	name = "Jean-Marie Charles Abrial"
-	picture = "Portrait_Vichy_Jean-Marie_Charles_Abrial.dds"
-	traits = { superior_tactician }
+		picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
+	traits = { chief_engineer superior_tactician }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Jean-Pierre Esteva"
-	picture = "Portrait_Vichy_Jean-Pierre_Esteva.dds"
-	traits = { seawolf }
+		picture = "Portrait_France_Jean-Pierre_Esteva.dds"
+	traits = { aviation_enthusiast }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "René-Émile Godfroy"
-	picture = "Portrait_Vichy_Rene-Emile_Godfroy.dds"
-	traits = { old_guard_navy spotter }
+		picture = "Portrait_France_Rene-Emile_Godfroy.dds"
+	traits = { gentlemanly battleship_adherent old_guard_navy spotter }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Jean de Laborde"
-	picture = "Portrait_Vichy_Jean_de_Laborde.dds"
-	traits = {  }
+	picture = "Portrait_France_Jean_de_Laborde.dds"
+	traits = { naval_lineage aviation_enthusiast }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
 }

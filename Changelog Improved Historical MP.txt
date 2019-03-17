@@ -1,4 +1,7 @@
-﻿0.4
+﻿0.5
+- Updated files to be compatible with MtG / Patch 1.6
+
+0.4
 - Vichy ceding fleet to UK on Operation Catapult allows Case Anton.
 - Fixed Case Anton being possible after Italian Claims on France NF.
 - Disabled plane production and research for AI (barring Spains for SCW)
