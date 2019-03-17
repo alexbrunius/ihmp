@@ -104,8 +104,10 @@ focus_tree = {
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
+		
+		
 		available = {
-
+			not = { is_historical_focus_on = yes } 			
 		}
 		
 		bypass = {
