@@ -21,6 +21,10 @@ NDefines.NCountry.RESISTANCE_STRENGTH_FROM_NEIGHBORS = 0.8 		-- was 0.5 -- Multi
 NDefines.NCountry.ATTACHE_XP_SHARE = 0.05							-- was 0.2 -- Country received xp from attaches
 NDefines.NCountry.SUPPLY_CONVOY_FACTOR = 0.5					-- was 0.25-- How many convoys each supply needs
 
+-- Technology
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3		-- was 2 -- Base year ahead penalty
+
+
 -- MILITARY STUFF
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 4			-- Max width of regiments in division designer.
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 3		-- Max height of regiments in division designer.
@@ -117,7 +121,7 @@ NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.35									-- was 0.25
 
 -- PRODUCTION STUFF
 NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 10					-- was 15 -- Max number of factories that can be assigned a single production line.
-NDefines.NProduction.MAX_NAV_FACTORIES_PER_LINE = 6						-- was 15
+NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 30						-- was 15
 
 NDefines.NProduction.BASE_FACTORY_EFFICIENCY_GAIN = 0.9		-- was 1 -- Base efficiency factor.
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4 				-- was 5 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
