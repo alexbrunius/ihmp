@@ -87,13 +87,9 @@ NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.01				-- was 0.02	-- Global speed m
 NDefines.NAir.DETECT_CHANCE_FROM_RADARS = 0.3							-- was 0.5 -- How much the radars in area affects detection chance.
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 2000 		-- was 3000 -- Max amount of aircrafts in region to give full detection bonus.
 
-NDefines.NAir.AIR_NAVAL_KAMIKAZE_LOSSES_MULT = 7.0          	--
--- ( broken Nav fix stuff )
-NDefines.NAir.NAVAL_STRIKE_AIR_VS_AIR_PASS_CHANCE = 0.95		-- was 0.5
-NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_NAVAL_BOMBER = 4.44		-- was 0.192 -- How much efficiency to regain per day. Gain applied hourly.	
-NDefines.NAI.AIR_MISSION_MIN_COVEREAGE = 0.7					-- was 0.2 -- Between 0 and 1, limit for % coverage for air mission to be considered
-NDefines.NAI.NAVAL_STRIKE_PLANES_PER_SHIP = 2					-- was 20 -- Amount of bombers requested per enemy ship
-NDefines.NAI.PORT_STRIKE_PLANES_PER_SHIP = 1					-- was 10 -- Amount of bombers request per enemy ship in the port
+NDefines.NAir.AIR_NAVAL_KAMIKAZE_LOSSES_MULT = 7.0          		--
+NDefines.NAir.AIR_WING_XP_LEVELS = { 20, 40, 60, 80, 100, 140, 180, 220, 260, 300, 360, 420, 480, 540, 600, 660, 720, 780, 840, 900 } 			--Experience needed to progress to the next level
+-- 0.02, 0.04, 0.06, 0.08, 0.1, 0.14, 0.18, 0.22, 0.26, 0.3, 0.36, 0.42, 0.48, 0.54, 0.6, 0.66, 0.72, 0.78, 0.84, 0.9
 
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.7				-- was 0.8	-- Anti Air Gun Damage factor
 	

@@ -230,8 +230,8 @@ equipments = {
 			rubber = 1
 		}
 		
-		manpower = 20
-		fuel_consumption = 0.28
+		manpower = 40
+		fuel_consumption = 0.36
 	}
 
 	cv_nav_bomber_equipment = {
