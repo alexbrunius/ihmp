@@ -65,6 +65,7 @@ technologies = {
 			mot_anti_air_brigade
 			mot_artillery_brigade
 			mot_anti_tank_brigade
+			mot_rocket_artillery_brigade
 		}
 		research_cost = 0.5
 		start_year = 1940
