@@ -1222,13 +1222,7 @@ technologies = {
 	improved_oil_processing = {
 		
 		fuel_gain_factor_from_states = 0.5
-		on_research_complete = {
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = oil
-				amount = 1
-			}
-		}
+
 
 		path = {
 			leads_to_tech = advanced_oil_processing
@@ -1347,13 +1341,6 @@ technologies = {
 	modern_oil_processing = {
 
 		fuel_gain_factor_from_states = 0.5
-		on_research_complete = {
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = oil
-				amount = 2
-			}
-		}
 		
 		research_cost = 1.5
 		start_year = 1943
