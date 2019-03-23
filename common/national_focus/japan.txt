@@ -1325,6 +1325,16 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = JAP_strike_south_doctrine_DY1
+				}
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+			}
 
 		}
 
@@ -1334,6 +1344,31 @@ focus_tree = {
 				bonus = 1.0
 				uses = 2
 				category = naval_doctrine	
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT	
+					not = {
+						OR = {
+							state = 646
+							state = 645
+							state = 555
+						}
+					}				
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = JAP_strike_south_doctrine_DY1
 			}
 			unlock_decision_tooltip = JAP_pressure_france
 		}
@@ -5140,6 +5175,16 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			random_state = {
+				limit = {
+					has_state_flag = JAP_new_naval_estimates_DY3
+				}
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 
 		completion_reward = {
@@ -5206,6 +5251,31 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = JAP_new_naval_estimates_DY2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT	
+					not = {
+						OR = {
+							state = 646
+							state = 645
+							state = 555
+						}
+					}				
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = JAP_new_naval_estimates_DY3
 			}
 		}
 	}
