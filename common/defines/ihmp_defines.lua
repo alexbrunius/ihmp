@@ -15,8 +15,8 @@ NDefines.NCountry.SUPPLY_BASE_MULT = 0.25							-- was 1 -- multiplier on supply
 NDefines.NCountry.SUPPLY_BONUS_FROM_INPUT = 0.50					-- was 0.25 -- % of supply bonus from input area.
 NDefines.NCountry.SUPPLY_FROM_DAMAGED_INFRA = 0.4                -- was 0.3 -- damaged infrastructure counts as this in supply calcs
 
-NDefines.NCountry.RESISTANCE_STRENGTH_FROM_VP = 0.002			-- was 0.001 -- How much strength ticking speed gives each VP score.
-NDefines.NCountry.RESISTANCE_STRENGTH_FROM_NEIGHBORS = 0.8 		-- was 0.5 -- Multiplies how much resistance can spread from one state to its neighbors, a state will spread whatever is highest of its victorypoints resistance increase or half of any of its neighbors spread, multiplied by this
+NDefines.NCountry.RESISTANCE_STRENGTH_FROM_VP = 0.0017			-- was 0.001 -- How much strength ticking speed gives each VP score.
+NDefines.NCountry.RESISTANCE_STRENGTH_FROM_NEIGHBORS = 0.4 		-- was 0.5 -- Multiplies how much resistance can spread from one state to its neighbors, a state will spread whatever is highest of its victorypoints resistance increase or half of any of its neighbors spread, multiplied by this
 
 NDefines.NCountry.ATTACHE_XP_SHARE = 0.05							-- was 0.2 -- Country received xp from attaches
 NDefines.NCountry.SUPPLY_CONVOY_FACTOR = 0.5					-- was 0.25-- How many convoys each supply needs
@@ -79,6 +79,17 @@ NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.035                    -- was 0.05 --
 NDefines.NMilitary.ACCLIMATIZATION_SPEED_GAIN = 0.08			-- was 0.15	-- A variable used to balance the overall speed of gaining the acclimatization
 NDefines.NMilitary.ACCLIMATIZATION_LOSS_SPEED_FACTOR = 1.0		-- was 2.0 -- Loosing one acclimatization while being under affect of the opposite climate should cause it to drop down much faster than gaining.
 
+-- LAND/ARMY FUEL
+NDefines.NMilitary.FUEL_PENALTY_START_RATIO = 0.33								-- was 0.25 -- ratio of fuel in an army to start getting penalties
+NDefines.NMilitary.SURPLUS_SUPPLY_RATIO_FOR_ZERO_FUEL_FLOW = 1.0		-- was 0.5 -- if a supply chunk has more supply needed than this ratio + 1 compared to its max supply flow, the units inside the chiunk will get no fuel 
+NDefines.NMilitary.ARMY_MAX_FUEL_FLOW_MULT = 0.4					-- was 2.0 -- max fuel ratio that an army can get per hour, multiplied by supply situation
+NDefines.NMilitary.ARMY_COMBAT_FUEL_MULT =   1.4				-- was 2.0	-- fuel consumption ratio in combat
+NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 0.67				-- was 1.0	-- fuel consumption ratio while training
+NDefines.NMilitary.ARMY_IDLE_FUEL_MULT = 0.2					-- was 0.0	-- fuel consumption ratio while just existing
+NDefines.NMilitary.ARMY_NAVAL_TRANSFER_FUEL_MULT = 0.2			-- was 0.0 -- fuel consumption ratio while naval transferring
+NDefines.NMilitary.ARMY_STRATEGIC_DEPLOYMENT_FUEL_MULT = 0.2		-- was 0.0 -- fuel consumption ratio while doing strategic deployment
+NDefines.NMilitary.OUT_OF_FUEL_EQUIPMENT_MULT = 0.25				-- was 0.1 -- ratio of the stats that you get from equipments that uses fuel and you lack it
+NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 168              -- was 96 -- default capacity if not specified
 
 -- PLANE STUFF
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2.0						-- was 3.0 - How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
@@ -94,27 +105,31 @@ NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 2000 		-- was 3000 
 NDefines.NAir.AIR_NAVAL_KAMIKAZE_LOSSES_MULT = 7.0          		--
 NDefines.NAir.AIR_WING_XP_LEVELS = { 20, 40, 60, 80, 100, 140, 180, 220, 260, 300, 360, 420, 480, 540, 600, 660, 720, 780, 840, 900 } 			--Experience needed to progress to the next level
 -- 0.02, 0.04, 0.06, 0.08, 0.1, 0.14, 0.18, 0.22, 0.26, 0.3, 0.36, 0.42, 0.48, 0.54, 0.6, 0.66, 0.72, 0.78, 0.84, 0.9
+NDefines.NAir.AIR_WING_XP_TRAINING_MAX = 100.0 							-- was 300		--Max average XP achieved with training.
 
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.7				-- was 0.8	-- Anti Air Gun Damage factor
+NDefines.NAir.BOMBING_TARGETING_RANDOM_FACTOR = 0.40						-- was 0.25	-- % of picking the wrong target
+NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
+		0.0, -- AIR_SUPERIORITY
+		0.0, -- CAS		
+		0.0, -- INTERCEPTION	
+		0.0, -- STRATEGIC_BOMBER
+		0.0, -- NAVAL_BOMBER	
+		0.0, -- DROP_NUKE		
+		0.0, -- PARADROP		
+		0.0, -- NAVAL_KAMIKAZE	
+        0.0, -- PORT_STRIKE		
+		0.1, -- AIR_SUPPLY		was 0.3
+		0.05, -- TRAINING			was 0.0
+		0.0, -- NAVAL_MINES_PLANTING
+		0.0, -- NAVAL_MINES_SWEEPING
+	}
+NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.010 				-- was 0.005	--Factor on country Air XP gained from wing training
 	
 -- SHIP STUFF
-NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 64						-- was 24		-- Before we resign chasing enemy, give them some minimum time so the combat doesn't end instantly.
-NDefines.NNavy.COMBAT_MIN_DURATION = 24									-- was 8	-- Min combat duration before we can retreat. It's a balancing variable so it's not possible to always run with our weak ships agains big flotillas.
-
-NDefines.NNavy.DETECTION_CHANCE_MULT_BASE = 0.01							-- was 0.04	-- base multiplier value for detection chance. Later the chance is an average between our detection and enemy visibility, mult by surface/sub detection chance in the following defines.
-NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.2				-- was 0.9 -- Multiplier for the surface/sub visiblity when the heavily damaged fleet is returning to the home base for reparation. 1.0 = no bonus. 0.0 = invisible.
-
 NDefines.NNavy.COMBAT_BASE_CRITICAL_CHANCE = 0.03								-- was 0.1 -- Base chance for receiving a critical chance. It get's scaled down with ship reliability.
 NDefines.NNavy.COMBAT_CRITICAL_DAMAGE_MULT = 50.0								-- was 5.0 -- Multiplier for the critical damage. Scaled down with the ship reliability.
 NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0.8								-- random factor in damage. So if max damage is fe. 10, and randomness is 30%, then damage will be between 7-10.
-
-NDefines.NNavy.COMBAT_MAX_DISTANCE_TO_ARRIVE = 200							-- was 80 -- Max distance to arrive. When ships are on their way, their distance will never exceed this value.
-
-NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 0.1									-- base chance for hit
-NDefines.NNavy.COMBAT_TORPEDO_ATTACK_MAX_RANGE = 6.0						-- was 4.0	-- max range for torpedo attack
-NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.1							-- was 0.2 -- chance for critical hit from torpedo.
-NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_DAMAGE_MULT = 8.0					-- was 2.0	-- multiplier to damage when got critical hit from torpedo. (Critical hits are devastating as usualy torpedo_attack are pretty high base values).
-NDefines.NNavy.MAX_EVASION_BONUS = 0.12										-- was 0.1 -- largest evasion penalty to hitting
 
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.35									-- was 0.25
 

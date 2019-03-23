@@ -146,7 +146,7 @@ buildings = {
 		
 		show_modifier = yes
 		max_fuel_building = 100.0 #k
-		damage_factor = 0.5
+		damage_factor = 0.2
 	}
 	synthetic_refinery_rubber = {
 		show_on_map = 1

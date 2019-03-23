@@ -1,5 +1,5 @@
 ﻿0.5
-- Updated files to be compatible with MtG / Patch 1.6.
+- Updated files to be compatible with MtG / Patch 1.6.2
 - Increased ahead of time penalty to 300% per year.
 - Increased amount of dockyards that can be put on convoys from 15 to 30.
 - Added a custom game rule to disable alt-history NFs.
@@ -7,9 +7,25 @@
 - Added 6 more fuel Silos to USA in 1936 scenario as well as slots for them.
 - Restrict Arsenal of Democracy and Two Oceans Navy Act until Germany is in offensive war or 1940.
 - Made US Congress Small and Medium lobbying run for 60 days and be re-enabled in 30 days after finishing ( max 4 per year ).
-- Limited Intervention and Fair Labor Standards act causes Large congress opposition instead of medium
-- 90% fuel from oil from Isolation for USA instead of 60%
+- Limited Intervention and Fair Labor Standards act causes Large congress opposition instead of medium.
+- 90% fuel from oil from Isolation for USA instead of 60%.
+- Fuel silos now have 80% damage reduction from bombing instead of 0%.
 - Gave some starting Japanese Carrier Airwings experience ( 2 Fleet CVs Seasoned, 2 Elite ), Should have roughly same number of planes as previously.
+- Increased chance for Strategic Bombing to miss selected target from 25% to 40%.
+- Lowered command power cost of Airsupply missions from 0.3 per plane to 0.1 per plane.
+- Added a Command power cost of 0.05 per plane to train airplanes ( 1000 CP limits to 2000 planes at once )
+- Increased Air XP (national) from Excersising airwings to double.
+- Air can only be trained at most to recruit level experience now by using exercise.
+- Army units now consume 20% fuel instead of 0% if idle, strategic redeploying or transporting via ship.
+- Increased default fuel capacity of Fuel using divisions from 96 hours to 168 hours.
+- Reduced rate which fuel flows to units significantly ( so at slightly above max supply capacity units require significant time to refuel )
+- Changed fuel needed for Training to 67% and Combat to 140%, Movement remains at 100%.
+- Reduced penalty for being out of fuel from -90% combat stats to -75% stats.
+- Changed limit when fuel supply is cut off totally from 50% above supply capacity to 100% above supply capacity.
+- Lowered resistance from neighboring states from 0.8 max to 0.4.
+- Lowered reistance from VPs by 15%.
+- Removed all defines dealing with naval combat except for Critical hit/Randomness of damage ( Paradox kept them the same in 1.6 as in 1.5 ).
+
 
 
 0.4

@@ -753,28 +753,28 @@ air_wings = {
 			owner = "JAP" 
 			amount = 30
 		}
-		start_experience_factor =  0.88
+		start_experience_factor =  0.9
 		name = "Akagi Sentokitai"
 		# 13 Kokutai -- Mitsubishi B2M2
 		cv_nav_bomber_equipment_1 = {
 			owner = "JAP" 
 			amount = 30
 		}
-		start_experience_factor = 0.88
+		start_experience_factor = 0.9
 		name = "Akagi Kogekikitai"
 		# -- Nakajima A4N1
 		cv_fighter_equipment_0 = {
 			owner = "JAP" 
 			amount = 30
 		}
-		start_experience_factor = 0.88
+		start_experience_factor = 0.9
 		name = "Kaga Sentokitai"
 		# -- Mitsubishi B2M2
 		cv_nav_bomber_equipment_1 = {
 			owner = "JAP" 
 			amount = 30
 		}
-		start_experience_factor = 0.88
+		start_experience_factor = 0.9
 		name = "Kaga Kogekikitai"
 	}
 }
