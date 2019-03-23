@@ -1241,7 +1241,7 @@ focus_tree = {
 			USA_great_depression_level_down = yes
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
-			USA_congress_medium_opposition = yes
+			USA_congress_large_opposition = yes
 		}
 	}
 	focus = {
@@ -1463,7 +1463,7 @@ focus_tree = {
 				}
 			}
 			add_ideas = USA_limited_intervention
-			USA_congress_medium_opposition = yes
+			USA_congress_large_opposition = yes
 			if = {
 				limit = {
 					has_war_support < 0.4
@@ -1890,7 +1890,12 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			democratic > 0.95
+			OR = {
+				GER = {
+					has_offensive_war = yes
+					}
+				date > 1940.1.1
+			}
 		}
 		bypass = {
 			AND = {
@@ -5363,6 +5368,12 @@ focus_tree = {
 			}
 			else = {
 				congress_low_support_trigger = yes
+			}
+			OR = {
+				GER = {
+					has_offensive_war = yes
+					}
+				date > 1940.1.1
 			}
 			controls_state = 378
 			controls_state = 358
