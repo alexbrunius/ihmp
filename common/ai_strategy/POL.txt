@@ -60,7 +60,7 @@ POL_template_design = {
 	ai_strategy = {
 		type = template_prio
 		id = light_armor
-		value = 40
+		value = -40
 	}
 
 	ai_strategy = {
@@ -85,5 +85,24 @@ POL_template_design = {
 		type = template_prio
 		id = infantry
 		value = 75
+	}
+}
+
+dont_you_fucking_dare = {
+
+	enable = {
+		original_tag = FRA
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = general
+		value = -9999
 	}
 }
