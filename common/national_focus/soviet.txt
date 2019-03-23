@@ -2518,6 +2518,7 @@ focus_tree = {
 			}
 			has_government = communism
 			has_civil_war = no
+			has_game_rule = { rule = ALT_HISTORY_FOCUS option = ALLOWED }
 		}
 		x = 19
 		y = 0
