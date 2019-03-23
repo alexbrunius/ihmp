@@ -2409,6 +2409,7 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
+			has_game_rule = { rule = ALT_HISTORY_FOCUS option = ALLOWED }
 		}
 
 		available = { 
@@ -9069,6 +9070,7 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
+			has_game_rule = { rule = ALT_HISTORY_FOCUS option = ALLOWED }
 		}
 
 		available = {

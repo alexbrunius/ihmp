@@ -1,7 +1,8 @@
 ﻿0.5
-- Updated files to be compatible with MtG / Patch 1.6
-- Increased ahead of time penalty to 300% per year
-- Increased amount of dockyards that can be put on convoys from 15 to 30
+- Updated files to be compatible with MtG / Patch 1.6.
+- Increased ahead of time penalty to 300% per year.
+- Increased amount of dockyards that can be put on convoys from 15 to 30.
+- Added a custom game rule to disable alt-history NFs.
 
 0.4
 - Vichy ceding fleet to UK on Operation Catapult allows Case Anton.

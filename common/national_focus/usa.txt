@@ -14,7 +14,7 @@ focus_tree = {
 			original_tag = USA
 		}
 	}
-	continuous_focus_position = { x = 50 y = 1600 }
+	continuous_focus_position = { x = 50 y = 1200 }
 	default = no
 #	focus = {
 #		id = USA_
@@ -103,6 +103,7 @@ focus_tree = {
 		}
 		allow_branch = {
 			has_dlc = "Man the Guns"
+			has_game_rule = { rule = ALT_HISTORY_FOCUS option = ALLOWED }
 		}
 		
 		
@@ -2651,6 +2652,7 @@ focus_tree = {
 		}
 		allow_branch = {
 			has_dlc = "Man the Guns"
+			has_game_rule = { rule = ALT_HISTORY_FOCUS option = ALLOWED }
 		}
 		available = {
 
