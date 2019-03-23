@@ -3,6 +3,14 @@
 - Increased ahead of time penalty to 300% per year.
 - Increased amount of dockyards that can be put on convoys from 15 to 30.
 - Added a custom game rule to disable alt-history NFs.
+- Gave Japan 4 Fuelsilos, 2 from Early Navy NF and 2 from strike south NF.
+- Added 6 more fuel Silos to USA in 1936 scenario as well as slots for them.
+- Restrict Arsenal of Democracy and Two Oceans Navy Act until Germany is in offensive war or 1940.
+- Made US Congress Small and Medium lobbying run for 60 days and be re-enabled in 30 days after finishing ( max 4 per year ).
+- Limited Intervention and Fair Labor Standards act causes Large congress opposition instead of medium
+- 90% fuel from oil from Isolation for USA instead of 60%
+- Gave some starting Japanese Carrier Airwings experience ( 2 Fleet CVs Seasoned, 2 Elite ), Should have roughly same number of planes as previously.
+
 
 0.4
 - Vichy ceding fleet to UK on Operation Catapult allows Case Anton.
