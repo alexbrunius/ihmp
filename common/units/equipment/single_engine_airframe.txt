@@ -1,13 +1,5 @@
 equipments = {
 
-#
-# Alex MP Mod Changes:
-# Land based naval_strike_targeting lowered to 40% (if capable of naval or port strike mission)
-# Carrier NAV naval_strike_targeting lowered to 80%
-# Carrier CAS Naval_strike_attack set to 75% of CV NAV & Targeting higher then NAV.
-# Land based plane Naval Attack lowered by -60%
-# Carrier based NAV Naval Attack lowered by -40%
-
 
 	fighter_equipment = {
 		year = 1933
@@ -226,7 +218,7 @@ equipments = {
 		build_cost_ic = 26
 		resources = {
 			#oil = 1
-			aluminium = 2
+			aluminium = 3
 			rubber = 1
 		}
 		
@@ -729,7 +721,7 @@ equipments = {
 		build_cost_ic = 43
 		resources = {
 			#oil = 1
-			aluminium = 3
+			aluminium = 4
 			rubber = 1
 		}
 		
@@ -753,7 +745,7 @@ equipments = {
 		build_cost_ic = 49
 		resources = {
 			#oil = 2
-			aluminium = 3
+			aluminium = 5
 			rubber = 1
 		}	
 	}
