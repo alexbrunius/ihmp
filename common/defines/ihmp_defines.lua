@@ -133,6 +133,8 @@ NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0.8								-- random factor in damage.
 
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.35									-- was 0.25
 
+NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.75	-- was 0.5 -- damage reduction for incoming air attacks is clamped to this value at maximum.
+NDefines.NNavy.MIN_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.02			-- was 0.2 -- Minimum fraction of an equipment type's base industry capacity cost to use when converting a naval equipment, such as through ship refitting.
 
 -- PRODUCTION STUFF
 NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 10					-- was 15 -- Max number of factories that can be assigned a single production line.
