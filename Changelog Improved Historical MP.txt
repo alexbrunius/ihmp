@@ -81,6 +81,13 @@
 - Added 150 PP from NFs and a changed Zaibatsus effect for Japan to compensate the unintended changes to PP and factory output from permanent war with China.
 - Increased plane losses from Kamikaze mission by 20% and reduced Kamikaze damage by 25%
 
+
+For complete previous changelog. See file in mod.
+Many thanks for CrouchingLemur for his great mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=710273161]More Unit Levels[/url]
+Many thanks for Chondrite for his great mods [url=https://steamcommunity.com/sharedfiles/filedetails/?id=704963980]Strategic View Adjustments[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1368202826] Allied Construction Projects[/url]
+Thanks for feedback, suggestions and bugspotting to the active MP groups I play with as well as the WPO group and for modding help from Myzael, Kallar, Beethoven and SpeedKat.
+
+
 0.1 ( Changes from Alex MP mod 1.5.4 )
 - Added a Chinese state in Central America with 90 VP to prevent them from surrendering ( Japan needs to keep suppressing partisans )
 - Changed Neutrality Spirit ( Sweden and Switzerland ) to make justifying war against them prohibitivley expensive ( allows removing houserule )
@@ -110,13 +117,6 @@
 - Increased PP cost of Harsh and Harshest occupation by 0.01 each, and increased manpower from Gentlest and Gentle to make them more attractive.
 - Changed Closed Economy to still export 10% of your resources, so some will always be available for trade.
 - Lowered manpower gained from Conscription laws "Extensive Conscription" and above, as well as added another level called "Massed Draft" between Service by Requirement and All Adults Serve
-
-
-For complete previous changelog. See file in mod.
-Many thanks for CrouchingLemur for his great mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=710273161]More Unit Levels[/url]
-Many thanks for Chondrite for his great mods [url=https://steamcommunity.com/sharedfiles/filedetails/?id=704963980]Strategic View Adjustments[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1368202826] Allied Construction Projects[/url]
-Thanks for feedback, suggestions and bugspotting to the active MP groups I play with as well as the WPO group and for modding help from Myzael, Kallar, Beethoven and SpeedKat.
-
 
 
 AlexMPMod 1.5.4 Changelog
