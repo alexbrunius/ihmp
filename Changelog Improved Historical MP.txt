@@ -1,6 +1,7 @@
 ﻿0.5
 - Updated files to be compatible with MtG / Patch 1.6.2
 - Increased research ahead of time penalty from 200% to 300% per year.
+- Added one Research slot to all 6 Major nations
 - Increased amount of dockyards that can be put on convoys from 15 to 30.
 - Added a custom game rule to disable alt-history NFs.
 - Gave Japan 4 Fuelsilos, 2 from Early Navy NF and 2 from strike south NF.
@@ -34,6 +35,13 @@
 - Removed all defines dealing with naval combat except for Critical hit/Randomness of damage ( Paradox kept them the same in 1.6 as in 1.5 ).
 - Ship & Fleet together AA can reduce damage taken when bombed by up to 75% instead of 50%.
 - 20% minimum ship refit cost reduced to 2% base ship cost.
+- Add ability for Super Heavy Battleships to be armed with ordinary Battleship Heavy Battery modules.
+- Limit Heavy Battery to at most 3 modules per Battleship and 4 modules per Super Heavy Battleship.
+- Limit Super Heavy Battery to at most 3 modules per Super Heavy Battleship.
+- Limit Medium Battery to at most 3 modules per Heavy Cruiser.
+- Changed all Heavy Battery modules to give same speed penalty ( -12% ).
+- Lowered speed bonus of 1940 and 44 Heavy Engines modules by 5% each to compensate.
+
 
 0.4
 - Vichy ceding fleet to UK on Operation Catapult allows Case Anton.
