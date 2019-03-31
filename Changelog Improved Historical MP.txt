@@ -43,7 +43,8 @@
 - Lowered speed bonus of 1940 and 44 Heavy Engines modules by 5% each to compensate.
 - Imported research speed changes from spirits, technology and decisions from latest 1.6.2 beta.
 - Imported submarine balance changes from latest 1.6.2 beta ( naval terrain ) as well as Atlantic designer giving Carrier armor HP.
-- Imported changes to UK starting OOB from latest 1.6.2 beta. 
+- Imported changes to UK starting OOB from latest 1.6.2 beta.
+- Disabled UK focus "Invoke the Alliance of 1373" that brings Portugal to allies as it can cut Germany's tungsten without warning.
 
 
 
