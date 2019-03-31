@@ -26,10 +26,10 @@
 - Decreased Naval XP (national) from Excersising ships to half. 
 - Army units now consume 20% fuel instead of 0% if idle, strategic redeploying or transporting via ship.
 - Increased default fuel capacity of Fuel using divisions from 96 hours to 168 hours.
-- Reduced rate which fuel flows to units significantly ( so at slightly above max supply capacity units require significant time to refuel )
+- Reduced rate which fuel flows to units ( As soon as above supply capacity fuel should start to be slowly lost on offensives )
 - Changed fuel needed for Training to 67% and Combat to 140%, Movement remains at 100%.
 - Reduced penalty for being out of fuel from -90% combat stats to -75% stats.
-- Changed limit when fuel supply is cut off totally from 50% above supply capacity to 100% above supply capacity.
+- Changed limit when fuel supply is cut off totally from 50% above supply capacity to 150% above supply capacity.
 - Lowered resistance from neighboring states from 0.8 max to 0.4.
 - Lowered resistance from VPs by 15%.
 - Removed all defines dealing with naval combat except for Critical hit/Randomness of damage ( Paradox kept them the same in 1.6 as in 1.5 ).
@@ -41,6 +41,10 @@
 - Limit Medium Battery to at most 3 modules per Heavy Cruiser.
 - Changed all Heavy Battery modules to give same speed penalty ( -12% ).
 - Lowered speed bonus of 1940 and 44 Heavy Engines modules by 5% each to compensate.
+- Imported research speed changes from spirits, technology and decisions from latest 1.6.2 beta.
+- Imported submarine balance changes from latest 1.6.2 beta ( naval terrain ) as well as Atlantic designer giving Carrier armor HP.
+- Imported changes to UK starting OOB from latest 1.6.2 beta. 
+
 
 
 0.4
