@@ -33,7 +33,6 @@
 - Lowered resistance from neighboring states from 0.8 max to 0.4.
 - Lowered resistance from VPs by 15%.
 - Removed all defines dealing with naval combat except for Critical hit/Randomness of damage ( Paradox kept them the same in 1.6 as in 1.5 ).
-- Ship & Fleet together AA can reduce damage taken when bombed by up to 75% instead of 50%.
 - 20% minimum ship refit cost reduced to 2% base ship cost.
 - Add ability for Super Heavy Battleships to be armed with ordinary Battleship Heavy Battery modules.
 - Limit Heavy Battery to at most 3 modules per Battleship and 4 modules per Super Heavy Battleship.
@@ -45,7 +44,8 @@
 - Imported submarine balance changes from latest 1.6.2 beta ( naval terrain ) as well as Atlantic designer giving Carrier armor HP.
 - Imported changes to UK starting OOB from latest 1.6.2 beta.
 - Disabled UK focus "Invoke the Alliance of 1373" that brings Portugal to allies as it can cut Germany's tungsten without warning.
-
+- Ship & Fleet together AA can reduce damage taken when bombed by up to 75% instead of 50%.
+- Tweaked AA defines so the above mentioned 75% cap actually is possible to reach too.
 
 
 0.4
