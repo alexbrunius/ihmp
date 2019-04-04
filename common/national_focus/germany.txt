@@ -3183,6 +3183,7 @@ focus_tree = {
 		will_lead_to_war_with = POL
 		available = {
 			is_puppet = no
+			date > 1938.09.01
 			has_army_manpower = { size > 949999 } #100 div			
 			#Make custom trigger tooltip here
 			85 = {
@@ -3410,6 +3411,7 @@ focus_tree = {
 		prerequisite = { focus = GER_danzig_or_war focus = GER_poland_friend}
 		
 		available = {
+			date > 1939.05.01
 			OR = {
 				NOT = { HOL = { is_in_faction_with = GER } }
 				NOT = { BEL = { is_in_faction_with = GER } }
@@ -4107,6 +4109,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_danzig_or_war }
 		available = {
 			is_puppet = no
+			date > 1938.09.01
 			OR = {
 				SLO = {
 					exists = yes
