@@ -46,6 +46,7 @@
 - Disabled UK focus "Invoke the Alliance of 1373" that brings Portugal to allies as it can cut Germany's tungsten without warning.
 - Ship & Fleet together AA can reduce damage taken when bombed by up to 75% instead of 50%.
 - Tweaked AA defines so the above mentioned 75% cap actually is possible to reach too.
+- Added dates limiting Danzig and Around Maginot to be taken at most 1 year before historical completion.
 
 
 0.4

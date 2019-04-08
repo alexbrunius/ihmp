@@ -1897,7 +1897,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { NOT = { has_idea = neutrality_idea } }
-				add_ideas = neutrality_idea
+				#add_ideas = neutrality_idea
 			}
 			add_political_power = 150
 		}
