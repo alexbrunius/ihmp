@@ -1049,7 +1049,7 @@ create_equipment_variant = {
 	type = tac_bomber_equipment_0
 	upgrades = {
 		plane_tac_bomb_upgrade = 5
-		plane_range_upgrade = 5
+		heavy_plane_range_upgrade = 5
 		plane_engine_upgrade = 5
 		plane_reliability_upgrade = 10
 	}
@@ -1061,7 +1061,7 @@ create_equipment_variant = {
 	type = tac_bomber_equipment_0
 	upgrades = {
 		plane_tac_bomb_upgrade = 5
-		plane_range_upgrade = 1
+		heavy_plane_range_upgrade = 1
 		plane_engine_upgrade = 1
 		plane_reliability_upgrade = 5
 	}
