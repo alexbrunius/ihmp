@@ -17,7 +17,9 @@ equipment_modules = {
 			lg_attack = 1
 			build_cost_ic = 90	
 		}
-		
+		multiply_stats = {
+			reliability = -0.05
+		}
 		add_average_stats = {
 			lg_armor_piercing = 1
 		}
@@ -40,7 +42,9 @@ equipment_modules = {
 			build_cost_ic = 120
 			
 		}
-		
+		multiply_stats = {
+			reliability = -0.05
+		}
 		add_average_stats = {
 			lg_armor_piercing = 2
 		}
@@ -66,7 +70,9 @@ equipment_modules = {
 			lg_attack = 2
 			build_cost_ic = 150			
 		}
-		
+		multiply_stats = {
+			reliability = -0.05
+		}
 		add_average_stats = {
 			lg_armor_piercing = 2.5
 		}
@@ -91,6 +97,9 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 2.5
 			build_cost_ic = 175	
+		}
+		multiply_stats = {
+			reliability = -0.05
 		}
 		build_cost_resources = {
 			steel = 1
@@ -119,6 +128,9 @@ equipment_modules = {
 			lg_attack = 3
 			anti_air_attack = 3
 			build_cost_ic = 300
+		}
+		multiply_stats = {
+			reliability = -0.05
 		}
 		build_cost_resources = {
 			steel = 1
@@ -155,6 +167,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.12
+			reliability = -0.1
 		}		
 		add_average_stats = {
 			hg_armor_piercing = 31
@@ -181,6 +194,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.12
+			reliability = -0.1
 		}
 		add_average_stats = {
 			hg_armor_piercing = 36
@@ -212,6 +226,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.12
+			reliability = -0.1
 		}
 		add_average_stats = {
 			hg_armor_piercing = 40
@@ -245,6 +260,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.12
+			reliability = -0.1
 		}
 		add_average_stats = {
 			hg_armor_piercing = 43
@@ -281,6 +297,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.12
+			reliability = -0.12
 		}
 		add_average_stats = {
 			hg_armor_piercing = 50
@@ -308,6 +325,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.05
 			max_strength = 0.4
+			reliability = -0.08
 		}
 		add_average_stats = {
 			hg_armor_piercing = 11
@@ -339,6 +357,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.075
 			max_strength = 0.4
+			reliability = -0.08
 		}
 		add_average_stats = {
 			hg_armor_piercing = 12
@@ -370,6 +389,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.1
 			max_strength = 0.4
+			reliability = -0.08
 		}
 		add_average_stats = {
 			hg_armor_piercing = 13
@@ -407,6 +427,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.125
 			max_strength = 0.4
+			reliability = -0.08
 		}
 		add_average_stats = {
 			hg_armor_piercing = 14
@@ -439,6 +460,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.025
+			reliability = -0.08
 		}
 		add_average_stats = {
 			lg_armor_piercing = 5.5
@@ -462,6 +484,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.05
+			reliability = -0.08
 		}
 		add_average_stats = {
 			lg_armor_piercing = 7.0
@@ -493,6 +516,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.075
+			reliability = -0.08
 		}
 		add_average_stats = {
 			lg_armor_piercing = 8
@@ -527,6 +551,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.1
+			reliability = -0.08
 		}
 		add_average_stats = {
 			lg_armor_piercing = 9
@@ -566,7 +591,9 @@ equipment_modules = {
 			lg_attack = 3
 			build_cost_ic = 180
 		}
-		
+		multiply_stats = {
+			reliability = -0.08
+		}
 		add_average_stats = {
 			lg_armor_piercing = 5.5
 		}
@@ -587,7 +614,9 @@ equipment_modules = {
 			lg_attack = 4
 			build_cost_ic = 240
 		}
-		
+		multiply_stats = {
+			reliability = -0.04
+		}
 		add_average_stats = {
 			lg_armor_piercing = 7
 		}
@@ -608,7 +637,9 @@ equipment_modules = {
 			anti_air_attack = 2.5
 			build_cost_ic = 290
 		}
-		
+		multiply_stats = {
+			reliability = -0.04
+		}
 		add_average_stats = {
 			lg_armor_piercing = 8
 		}
@@ -642,6 +673,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.025
 			anti_air_attack = 0.1
+			reliability = -0.04
 		}
 
 		can_convert_from = {
@@ -662,9 +694,9 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = -0.025
 			build_cost_ic = 0.025
 			anti_air_attack = 0.1
+			reliability = -0.04
 		}
 
 		can_convert_from = {
@@ -688,9 +720,9 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = -0.025
 			build_cost_ic = 0.025
 			anti_air_attack = 0.125
+			reliability = -0.04
 		}
 
 		can_convert_from = {
@@ -718,6 +750,7 @@ equipment_modules = {
 			naval_speed = -0.05
 			build_cost_ic = 0.025
 			anti_air_attack = 0.15
+			reliability = -0.04
 		}
 
 		can_convert_from = {
@@ -768,7 +801,6 @@ equipment_modules = {
 			lg_attack = 0.1
 			hg_attack = 0.1
 			anti_air_attack = 0.1
-			reliability = -0.1
 		}
 
 		can_convert_from = {
@@ -789,7 +821,6 @@ equipment_modules = {
 			lg_attack = 0.15
 			hg_attack = 0.15
 			anti_air_attack = 0.15
-			reliability = -0.15
 		}
 		can_convert_from = {
 			module = ship_fire_control_system_1
@@ -813,7 +844,6 @@ equipment_modules = {
 			lg_attack = 0.2
 			hg_attack = 0.2
 			anti_air_attack = 0.2
-			reliability = -0.2
 		}
 		can_convert_from = {
 			module = ship_fire_control_system_2
@@ -929,7 +959,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			reliability = -0.2
 		}
 		
 		can_convert_from = {
@@ -953,7 +982,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.3
-			reliability = -0.2
 		}
 		
 		can_convert_from = {
@@ -981,7 +1009,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.4
-			reliability = -0.2
 		}
 		
 		can_convert_from = {
@@ -1008,7 +1035,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.45
-			reliability = -0.2
 		}
 		
 		can_convert_from = {
@@ -1034,8 +1060,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.05
-			reliability = -0.2
-
 		}
 
 		
@@ -1059,7 +1083,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.1
-			reliability = -0.2
 			sub_visibility = -0.05
 		}
 		
@@ -1088,7 +1111,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.15
-			reliability = -0.2
 			sub_visibility = -0.1
 		}
 		
@@ -1116,7 +1138,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			reliability = -0.2
 			sub_visibility = -0.15
 		}
 		
@@ -1143,7 +1164,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			reliability = -0.2
 		}
 		
 		can_convert_from = {
@@ -1166,7 +1186,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.3
-			reliability = -0.2
 		}
 		
 		can_convert_from = {
@@ -1194,7 +1213,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.35
-			reliability = -0.2
 		}
 		
 		can_convert_from = {
@@ -1221,7 +1239,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.4
-			reliability = -0.2
 		}
 		
 		can_convert_from = {
@@ -1247,7 +1264,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			reliability = -0.2
 		}
 		
 		can_convert_from = {
@@ -1270,7 +1286,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.3
-			reliability = -0.2
 		}
 		
 		can_convert_from = {
@@ -1297,9 +1312,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.35
-			reliability = -0.2
-			
+			naval_speed = 0.35			
 		}
 		
 		can_convert_from = {
@@ -1325,9 +1338,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.40
-			reliability = -0.2
-			
+			naval_speed = 0.40			
 		}
 		
 		can_convert_from = {
@@ -1353,7 +1364,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			reliability = -0.2
 		}
 		
 		can_convert_from = {
@@ -1376,7 +1386,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.3
-			reliability = -0.2
 		}
 		
 		can_convert_from = {
@@ -1404,7 +1413,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.4
-			reliability = -0.2
 		}
 		
 		can_convert_from = {
@@ -1431,7 +1439,6 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.45
-			reliability = -0.2
 		}
 		
 		can_convert_from = {
@@ -1465,7 +1472,9 @@ equipment_modules = {
 			torpedo_attack = 18
 			build_cost_ic = 90
 		}
-		
+		multiply_stats = {
+			reliability = -0.1
+		}
 		build_cost_resources = {
 			steel = 0
 		}
@@ -1482,7 +1491,9 @@ equipment_modules = {
 			torpedo_attack = 27
 			build_cost_ic = 120
 		}
-		
+		multiply_stats = {
+			reliability = -0.1
+		}
 		build_cost_resources = {
 			steel = 0
 		}
@@ -1512,7 +1523,9 @@ equipment_modules = {
 			torpedo_attack = 36
 			build_cost_ic = 150
 		}
-		
+		multiply_stats = {
+			reliability = -0.1
+		}
 		dismantle_cost_ic = 60
 
 		can_convert_from = {
@@ -1532,7 +1545,9 @@ equipment_modules = {
 			torpedo_attack = 45
 			build_cost_ic = 180
 		}
-		
+		multiply_stats = {
+			reliability = -0.1
+		}
 		dismantle_cost_ic = 60
 
 		can_convert_from = {
@@ -1551,7 +1566,9 @@ equipment_modules = {
 			torpedo_attack = 14
 			build_cost_ic = 80
 		}
-		
+		multiply_stats = {
+			reliability = -0.1
+		}
 		build_cost_resources = {
 			steel = 0
 		}
@@ -1568,7 +1585,9 @@ equipment_modules = {
 			torpedo_attack = 18
 			build_cost_ic = 100
 		}
-		
+		multiply_stats = {
+			reliability = -0.1
+		}
 		build_cost_resources = {
 			steel = 0
 		}
@@ -1589,6 +1608,9 @@ equipment_modules = {
 			torpedo_attack = 23
 			build_cost_ic = 120
 		}
+		multiply_stats = {
+			reliability = -0.1
+		}
 		can_convert_from = {
 			module_category = ship_torpedo_sub
 			convert_cost_ic = 60
@@ -1605,6 +1627,9 @@ equipment_modules = {
 		add_stats = {
 			torpedo_attack = 30
 			build_cost_ic = 140
+		}
+		multiply_stats = {
+			reliability = -0.1
 		}
 		can_convert_from = {
 			module_category = ship_torpedo_sub
@@ -1631,6 +1656,9 @@ equipment_modules = {
 			mines_planting = 1
 			build_cost_ic = 90
 		}
+		multiply_stats = {
+			reliability = -0.08
+		}
 	}
 
 	ship_mine_layer_sub = {
@@ -1640,6 +1668,9 @@ equipment_modules = {
 		add_stats = {
 			mines_planting = 1
 			build_cost_ic = 90
+		}
+		multiply_stats = {
+			reliability = -0.08
 		}
 	}
 
@@ -1680,7 +1711,9 @@ equipment_modules = {
 			sub_attack = 8
 			build_cost_ic = 90
 		}
-
+		multiply_stats = {
+			reliability = -0.08
+		}
 		can_convert_from = {
 			module_category = ship_depth_charge
 			convert_cost_ic = 60
@@ -1696,7 +1729,9 @@ equipment_modules = {
 			sub_attack = 12
 			build_cost_ic = 120
 		}
-
+		multiply_stats = {
+			reliability = -0.08
+		}
 		can_convert_from = {
 			module_category = ship_depth_charge
 			convert_cost_ic = 90
@@ -1712,7 +1747,9 @@ equipment_modules = {
 			sub_attack = 16
 			build_cost_ic = 150
 		}
-
+		multiply_stats = {
+			reliability = -0.08
+		}
 		can_convert_from = {
 			module_category = ship_depth_charge
 			convert_cost_ic = 120
@@ -1728,7 +1765,9 @@ equipment_modules = {
 			sub_attack = 20
 			build_cost_ic = 180
 		}
-
+		multiply_stats = {
+			reliability = -0.08
+		}
 		can_convert_from = {
 			module_category = ship_depth_charge
 			convert_cost_ic = 150
@@ -1788,6 +1827,9 @@ equipment_modules = {
 			sub_detection = 2.5
 			build_cost_ic = 150
 		}
+		multiply_stats = {
+			reliability = -0.08
+		}
 	}
 	ship_airplane_launcher_2 = {
 		category = ship_airplane_launcher
@@ -1797,6 +1839,9 @@ equipment_modules = {
 			surface_detection = 10
 			sub_detection = 3.5
 			build_cost_ic = 170
+		}
+		multiply_stats = {
+			reliability = -0.08
 		}
 		can_convert_from = {
 			module_category = ship_airplane_launcher
@@ -1821,6 +1866,7 @@ equipment_modules = {
 		manpower = 500 #outside the add_stats section for code reasons
 		multiply_stats = {
 			naval_speed = -0.05
+			reliability = -0.08
 		}
 		build_cost_resources = {
 			steel = 1
@@ -1892,6 +1938,7 @@ equipment_modules = {
 			build_cost_ic = 0.2
 			naval_speed = -0.2
 			max_strength = 0.05
+			reliability = 0.1
 		}
 		build_cost_resources = {
 			steel = 1
@@ -1911,6 +1958,7 @@ equipment_modules = {
 			build_cost_ic = 0.075
 			naval_speed = -0.1
 			max_strength = 0.05
+			reliability = 0.05
 		}
 
 		add_stats = {
@@ -1928,6 +1976,7 @@ equipment_modules = {
 			build_cost_ic = 0.2
 			naval_speed = -0.2
 			max_strength = 0.1
+			reliability = 0.15
 		}
 		build_cost_resources = {
 			steel = 1
@@ -1947,6 +1996,7 @@ equipment_modules = {
 			build_cost_ic = 0.075
 			naval_speed = -0.1
 			max_strength = 0.1
+			reliability = 0.05
 		}
 		build_cost_resources = {
 			steel = 1
@@ -1965,6 +2015,7 @@ equipment_modules = {
 			build_cost_ic = 0.2
 			naval_speed = -0.2
 			max_strength = 0.15
+			reliability = 0.2
 		}
 		build_cost_resources = {
 			steel = 2
@@ -1985,6 +2036,7 @@ equipment_modules = {
 			build_cost_ic = 0.075
 			naval_speed = -0.1
 			max_strength = 0.15
+			reliability = 0.1
 		}
 		build_cost_resources = {
 			steel = 1
@@ -2005,6 +2057,7 @@ equipment_modules = {
 			build_cost_ic = 0.25
 			naval_speed = -0.25
 			max_strength = 0.1
+			reliability = 0.2
 		}
 		build_cost_resources = {
 			steel = 2
@@ -2024,6 +2077,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.1
 			naval_speed = -0.05
+			reliability = 0.05
 		}
 		dismantle_cost_ic = 2500
 		
@@ -2039,6 +2093,7 @@ equipment_modules = {
 			build_cost_ic = 0.15
 			naval_speed = -0.075
 			max_strength = 0.05
+			reliability = 0.05
 		}
 		dismantle_cost_ic = 3000
 		
@@ -2057,6 +2112,7 @@ equipment_modules = {
 			build_cost_ic = 0.2
 			naval_speed = -0.1
 			max_strength = 0.1
+			reliability = 0.1
 		}
 		dismantle_cost_ic = 3500
 		
@@ -2076,6 +2132,7 @@ equipment_modules = {
 			build_cost_ic = 0.25
 			naval_speed = -0.125
 			max_strength = 0.15
+			reliability = 0.15
 		}
 		dismantle_cost_ic = 4000
 		
@@ -2093,6 +2150,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			build_cost_ic = 0.1
+			reliability = 0.15
 		}
 		build_cost_resources = {
 			steel = 1

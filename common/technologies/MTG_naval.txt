@@ -2711,6 +2711,13 @@ early_ship_hull_carrier = {
 		}
 		critical_receive_chance = -0.1
 		naval_critical_effect_factor = -0.1
+		carrier = { reliability = 0.05 }
+		battleship = { reliability = 0.05 }
+		battle_cruiser = { reliability = 0.05 }
+		heavy_cruiser = { reliability = 0.05 }
+		light_cruiser = { reliability = 0.05 }
+		destroyer = { reliability = 0.05 }
+		submarine = { reliability = 0.05 }
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
@@ -2750,6 +2757,13 @@ early_ship_hull_carrier = {
 		}
 		critical_receive_chance = -0.1
 		naval_critical_effect_factor = -0.1
+		carrier = { reliability = 0.05 }
+		battleship = { reliability = 0.05 }
+		battle_cruiser = { reliability = 0.05 }
+		heavy_cruiser = { reliability = 0.05 }
+		light_cruiser = { reliability = 0.05 }
+		destroyer = { reliability = 0.05 }
+		submarine = { reliability = 0.05 }
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
@@ -2785,6 +2799,13 @@ early_ship_hull_carrier = {
 		research_cost = 2.5
 		critical_receive_chance = -0.1
 		naval_critical_effect_factor = -0.1
+		carrier = { reliability = 0.05 }
+		battleship = { reliability = 0.05 }
+		battle_cruiser = { reliability = 0.05 }
+		heavy_cruiser = { reliability = 0.05 }
+		light_cruiser = { reliability = 0.05 }
+		destroyer = { reliability = 0.05 }
+		submarine = { reliability = 0.05 }
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
