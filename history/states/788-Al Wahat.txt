@@ -2,7 +2,7 @@
 state={
 	id=788
 	name="STATE_788" #Al Wahat
-	manpower = 0
+	manpower = 4231
 	
 	state_category = wasteland
 	impassable = yes
