@@ -213,6 +213,7 @@ technologies = {
 	improved_equipment_conversion = {
 	
 		equipment_conversion_speed = 0.40
+		refit_speed = 0.2
 
 		allow_branch = {
 			has_dlc = "Death or Dishonor"
@@ -253,6 +254,7 @@ technologies = {
 	advanced_equipment_conversion = {
 		
 		equipment_conversion_speed = 0.40
+		refit_speed = 0.2
 
 		research_cost = 1.5
 		start_year = 1939

@@ -21,6 +21,8 @@ NDefines.NCountry.RESISTANCE_STRENGTH_FROM_NEIGHBORS = 0.4 		-- was 0.5 -- Multi
 NDefines.NCountry.ATTACHE_XP_SHARE = 0.05							-- was 0.2 -- Country received xp from attaches
 NDefines.NCountry.SUPPLY_CONVOY_FACTOR = 0.5					-- was 0.25-- How many convoys each supply needs
 
+NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0015				-- was 0.0005 -- num convoys needed per fuel land lease 
+
 -- Technology
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3		-- was 2 -- Base year ahead penalty
 

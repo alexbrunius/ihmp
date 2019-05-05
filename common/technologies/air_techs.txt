@@ -807,6 +807,10 @@ technologies = {
 			leads_to_tech = naval_bomber2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = tactical_bomber1
+			research_cost_coeff = 0.5
+		}
 		
 		research_cost = 2
 		start_year = 1936
@@ -915,6 +919,10 @@ technologies = {
 		path = {
 			leads_to_tech = naval_bomber3
 			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tactical_bomber2
+			research_cost_coeff = 0.5
 		}
 		
 		research_cost = 2
@@ -1028,6 +1036,10 @@ technologies = {
 		path = {
 			leads_to_tech = jet_tactical_bomber1
 			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tactical_bomber3
+			research_cost_coeff = 0.5
 		}
 		
 		research_cost = 2
@@ -1270,6 +1282,10 @@ technologies = {
 			leads_to_tech = strategic_bomber1
 			research_cost_coeff = 0.5
 		}
+		path = {
+			leads_to_tech = naval_bomber1
+			research_cost_coeff = 0.5
+		}
 
 		research_cost = 2
 		start_year = 1936
@@ -1328,6 +1344,10 @@ technologies = {
 			leads_to_tech = strategic_bomber2
 			research_cost_coeff = 0.5
 		}
+		path = {
+			leads_to_tech = naval_bomber2
+			research_cost_coeff = 0.5
+		}
 		
 		research_cost = 2
 		start_year = 1940
@@ -1383,6 +1403,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = strategic_bomber3
+			research_cost_coeff = 0.5
+		}
+		path = {
+			leads_to_tech = naval_bomber3
 			research_cost_coeff = 0.5
 		}
 
