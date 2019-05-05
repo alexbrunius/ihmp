@@ -14,3 +14,5 @@
  make_ai_join_allies_puppet:0 "Make AI [From.GetName] join §M[ENG.GetFactionName]§! and have [ENG.GetName] puppet them"
  make_ai_join_axis_puppet:0 "Make AI [From.GetName] join §g[GER.GetFactionName]§! and have [GER.GetName] puppet them"
  make_ai_join_comintern_puppet:0 "Make AI [From.GetName] join §R[SOV.GetFactionName]§! and have [SOV.GetName] puppet them"
+ operation_sabine:0 "Operation Sabine"
+ operation_sabine_desc:0 "The British invasion of Iraq"
