@@ -2610,7 +2610,7 @@ technologies = {
 		}
 		
 		land_reinforce_rate = 0.02
-		minimum_training_level = -0.1		
+		minimum_training_level = -0.3		
 
 		doctrine = yes	
 		research_cost = 2.25
