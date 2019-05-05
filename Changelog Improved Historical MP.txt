@@ -1,4 +1,31 @@
-﻿0.5
+﻿0.6
+- Reduced minimum manpower in recruit & deploy to 30k from 100k and changed the minimum factor to 30% of Army from 75%.
+- Minimum training to deploy divisions changed from 20% trained to 40%, and Mass Assault bonus increased so they still can deploy when 10% trained.
+- Increased convoys needed for fuel LL to be x3 times as much ( since it’s otherwise 3 times more efficiency to send LL vs trade fuel ).
+- Added ship refit speed boost to conversion techs. +20% per tech added.
+- Submarine minelayer lowered cost by 33% and lowered minelaying speed by 60%.
+- Made it possible to equip minelayers in all custom (upper) cruiser slots.
+- Rebalanced reliability penalties of ships ( Removed from FC/Engines and added to everything explosive or combustable ).
+- Armor modules and damage control techs now also increase ship reliability.
+- NAV/CV_NAV can now fly the same missions as TAC ( added Close Air Support and Strategic Bombing ), although they won't be good at it.
+- Added a research connection between TAC and NAV bombers.
+- Tanks and SP versions got defensive terrain penalties 10% lower than their offensive penalties, except for TDs that get 20% lower defensive terrain penalties.
+- Added Operation Sabine, UK invasion of Iraq ( unlocked if Cairo falls to the Axis )
+- Added Operation Polarfuchs, German invasion of Sweden ( unlocked if Soviet doesn’t sign historical deal with Finland ).
+- UK get resource rights to some of the oil in Iran/Iraq ( Historical Anglo Iranian Oil company and Iraq Petroleum Company ).
+- Military police support companies now also give +1 suppression in addition to the % bonus which makes them a good choice if you can afford the tech.
+- Field hospital support companies changed from 0.2 morale to 0.35 morale ( faster org regain ).
+- Signal support companies changed from 20 max org to 70 org, also increased equipment cost to double amount of trucks to compensate.
+- Japan can now get 150 more Naval XP and 100 PP from NFs since they were short on both without crippling oil imports or reducing occupation in China from harshest.
+- Added reduced General command capacity to assignable General traits, giving you a tradeoff to choose between quantity and quality leaders.
+- Reduced cost of leaders from 5 PP per Army leader already in service to 2 PP.
+- Special Forces now can get a total of +30% breakthrough if you get all techs.
+- Added 3 Urban provinces in front of Moscow and two near Berlin and Stalingrad.
+- Added alot of impassable terrain to Norway.
+- Rebalanced Gibraltar map to have two provinces and not be possible to attack from 3 directions from Spain.
+- Rebalanced North African map adding over 20 provinces to allow for more room to manouver as well as added supply- & airzones to improve the theater.
+
+0.5
 - Updated files to be compatible with MtG / Patch 1.6.2
 - Increased research ahead of time penalty from 200% to 300% per year.
 - Added one Research slot to all 6 Major nations

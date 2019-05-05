@@ -27,7 +27,7 @@ NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0015				-- was 0.0005 -- num convo
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3		-- was 2 -- Base year ahead penalty
 
 -- Politics
-NDefines.NTechnology.ARMY_LEADER_COST = 2					-- was 5 -- cost for recruiting new leaders, 'this value' * number_of_existing_leaders_of_type
+NDefines.NPolitics.ARMY_LEADER_COST = 2						-- was 5 -- cost for recruiting new leaders, 'this value' * number_of_existing_leaders_of_type
 
 -- MILITARY STUFF
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 4			-- Max width of regiments in division designer.
