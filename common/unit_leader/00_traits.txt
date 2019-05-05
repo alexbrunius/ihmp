@@ -583,6 +583,8 @@ leader_traits = {
 			terrain_penalty_reduction = 0.3
 			acclimatization_cold_climate_gain_factor = 0.1
 			acclimatization_hot_climate_gain_factor = 0.1
+			experience_gain_factor = 0.30
+			max_commander_army_size = -6
 		}
 		
 		ai_will_do = {
@@ -875,6 +877,8 @@ leader_traits = {
 		cost = 1000
 		modifier = {
 			army_armor_defence_factor = 0.15 
+			experience_gain_factor = 0.30
+			max_commander_army_size = -6
 		}
 		
 		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE
@@ -902,6 +906,8 @@ leader_traits = {
 			motorized_defence_factor = 0.15
 			mechanized_attack_factor = 0.10
 			mechanized_defence_factor = 0.15
+			experience_gain_factor = 0.15
+			max_commander_army_size = -3
 		}
 		
 		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE
@@ -958,6 +964,8 @@ leader_traits = {
 			fort = {
 				attack = 0.2
 			}
+			experience_gain_factor = 0.15
+			max_commander_army_size = -3
 		}
 		enable_ability = siege_artillery
 		
@@ -980,6 +988,8 @@ leader_traits = {
 		cost = 500
 		modifier = {
 			equipment_capture = 0.03
+			experience_gain_factor = 0.15
+			max_commander_army_size = -3
 		}
 		
 		ai_will_do = {
@@ -1001,6 +1011,8 @@ leader_traits = {
 		cost = 500
 		modifier = {
 			army_infantry_attack_factor = 0.15
+			experience_gain_factor = 0.15
+			max_commander_army_size = -3
 		}
 		
 		ai_will_do = {
@@ -1023,6 +1035,8 @@ leader_traits = {
 		modifier = {
 			max_dig_in = 10
 			recon_factor_while_entrenched = 0.25
+			experience_gain_factor = 0.15
+			max_commander_army_size = -3
 		}
 		
 		ai_will_do = {
@@ -1044,6 +1058,8 @@ leader_traits = {
 		cost = 500
 		modifier = {
 			extra_marine_supply_grace = 240
+			experience_gain_factor = 0.30
+			max_commander_army_size = -6
 		}
 		
 		enable_ability = faster_naval_invasion_planning
@@ -1065,6 +1081,8 @@ leader_traits = {
 		cost = 500
 		modifier = {
 			shore_bombardment_bonus = 0.25
+			experience_gain_factor = 0.30
+			max_commander_army_size = -6
 		}
 		
 		ai_will_do = {
@@ -1084,6 +1102,9 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
+			experience_gain_factor = 0.15
+			max_commander_army_size = -3
+			defence = 0.10
 		}
 		
 		ai_will_do = {
@@ -1106,6 +1127,8 @@ leader_traits = {
 		cost = 500
 		modifier = {
 			extra_paratrooper_supply_grace = 240
+			experience_gain_factor = 0.60
+			max_commander_army_size = -9
 		}
 		
 		enable_ability = glider_planes
@@ -1130,6 +1153,8 @@ leader_traits = {
 		modifier = {
 			cas_damage_reduction = 0.5
 			air_superiority_bonus_in_combat = -0.5
+			experience_gain_factor = 0.15
+			max_commander_army_size = -3
 		}
 		
 		ai_will_do = {
@@ -1173,6 +1198,8 @@ leader_traits = {
 			marsh = {
 				movement = 0.1
 			}
+			experience_gain_factor = 0.30
+			max_commander_army_size = -6
 		}
 		
 		override_effect_tooltip = expert_improviser_movement_bonus_on_land
@@ -1201,6 +1228,8 @@ leader_traits = {
 		cost = 500
 		modifier = {
 			dig_in_speed_factor = 0.25
+			experience_gain_factor = 0.15
+			max_commander_army_size = -3
 		}
 		
 		ai_will_do = {

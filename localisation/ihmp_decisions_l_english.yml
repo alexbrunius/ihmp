@@ -16,3 +16,6 @@
  make_ai_join_comintern_puppet:0 "Make AI [From.GetName] join §R[SOV.GetFactionName]§! and have [SOV.GetName] puppet them"
  operation_sabine:0 "Operation Sabine"
  operation_sabine_desc:0 "The British invasion of Iraq"
+ operation_polarfuchs:0 "Operation Polarfuchs"
+ operation_polarfuchs_desc:0 "The German invasion of Sweden"
+

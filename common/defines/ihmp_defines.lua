@@ -24,6 +24,8 @@ NDefines.NCountry.SUPPLY_CONVOY_FACTOR = 0.5					-- was 0.25-- How many convoys 
 -- Technology
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3		-- was 2 -- Base year ahead penalty
 
+-- Politics
+NDefines.NTechnology.ARMY_LEADER_COST = 2					-- was 5 -- cost for recruiting new leaders, 'this value' * number_of_existing_leaders_of_type
 
 -- MILITARY STUFF
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 4			-- Max width of regiments in division designer.

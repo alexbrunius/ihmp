@@ -165,6 +165,7 @@ equipments = {
 					ship_light_battery
 					ship_medium_battery
 					ship_anti_air
+					ship_mine_layer
 				}
 			}
 			
@@ -228,6 +229,7 @@ equipments = {
 					ship_anti_air
 					ship_light_battery
 					ship_medium_battery
+					ship_mine_layer
 				}
 			}
 			
@@ -240,6 +242,7 @@ equipments = {
 					ship_medium_battery
 					ship_secondaries
 					ship_airplane_launcher
+					ship_mine_layer
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -303,6 +306,7 @@ equipments = {
 					ship_anti_air
 					ship_light_battery
 					ship_medium_battery
+					ship_mine_layer
 				}
 			}
 			
@@ -315,6 +319,7 @@ equipments = {
 					ship_medium_battery
 					ship_secondaries
 					ship_airplane_launcher
+					ship_mine_layer
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot

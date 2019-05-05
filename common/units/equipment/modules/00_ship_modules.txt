@@ -1666,8 +1666,8 @@ equipment_modules = {
 		gfx = ship_mine_layer_sub
 		
 		add_stats = {
-			mines_planting = 1
-			build_cost_ic = 90
+			mines_planting = 0.4
+			build_cost_ic = 60
 		}
 		multiply_stats = {
 			reliability = -0.08
