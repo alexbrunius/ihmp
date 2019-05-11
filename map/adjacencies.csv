@@ -6,6 +6,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8857;2284;sea;7617;1560;1009;1556;1016;PANAMA_CANAL;Panama
 2729;2408;sea;6257;2949;1598;2962;1612;KIEL_CANAL;Kiel
 5388;803;sea;1155;-1;-1;-1;-1;SUEZ_CANAL;Suez
+1434;209;sea;3151;-1;-1;-1;-1;STALIN_CANAL;Baltic - White Sea Canal
 299;211;sea;2282;-1;-1;-1;-1;;Småland-Öland
 6345;6287;sea;2382;-1;-1;-1;-1;;Skåne-Sjaelland
 3260;3325;;2408;-1;-1;-1;-1;;Sjaelland-Fyn
@@ -212,6 +213,58 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3145;6055;impassable;-1;-1;-1;-1;-1;;norway
 6130;6055;impassable;-1;-1;-1;-1;-1;;norway
 6130;9083;impassable;-1;-1;-1;-1;-1;;norway
+9181;3133;impassable;-1;-1;-1;-1;-1;;finland
+9181;11046;impassable;-1;-1;-1;-1;-1;;finland
+9181;11156;impassable;-1;-1;-1;-1;-1;;finland
+6210;11156;impassable;-1;-1;-1;-1;-1;;finland
+6210;2998;impassable;-1;-1;-1;-1;-1;;finland
+6210;80;impassable;-1;-1;-1;-1;-1;;finland
+3185;80;impassable;-1;-1;-1;-1;-1;;finland
+6045;9074;impassable;-1;-1;-1;-1;-1;;finland
+3073;9074;impassable;-1;-1;-1;-1;-1;;finland
+3073;6175;impassable;-1;-1;-1;-1;-1;;finland
+7;6175;impassable;-1;-1;-1;-1;-1;;finland
+7;6134;impassable;-1;-1;-1;-1;-1;;finland
+6098;6175;impassable;-1;-1;-1;-1;-1;;finland
+6098;9119;impassable;-1;-1;-1;-1;-1;;finland
+11054;9119;impassable;-1;-1;-1;-1;-1;;finland
+6045;9158;impassable;-1;-1;-1;-1;-1;;finland
+6128;11085;impassable;-1;-1;-1;-1;-1;;finland
+11030;11085;impassable;-1;-1;-1;-1;-1;;finland
+6128;74;impassable;-1;-1;-1;-1;-1;;finland
+6128;6183;impassable;-1;-1;-1;-1;-1;;finland
+3097;6183;impassable;-1;-1;-1;-1;-1;;finland
+9116;6183;impassable;-1;-1;-1;-1;-1;;finland
+11128;9039;impassable;-1;-1;-1;-1;-1;;finland
+11128;178;impassable;-1;-1;-1;-1;-1;;finland
+6181;178;impassable;-1;-1;-1;-1;-1;;finland
+9201;11088;impassable;-1;-1;-1;-1;-1;;finland
+9201;3012;impassable;-1;-1;-1;-1;-1;;finland
+6172;9078;impassable;-1;-1;-1;-1;-1;;finland
+2994;9078;impassable;-1;-1;-1;-1;-1;;finland
+2994;40;impassable;-1;-1;-1;-1;-1;;finland
+9118;40;impassable;-1;-1;-1;-1;-1;;finland
+11096;11054;impassable;-1;-1;-1;-1;-1;;finland
+11096;6096;impassable;-1;-1;-1;-1;-1;;finland
+11096;134;impassable;-1;-1;-1;-1;-1;;finland
+9162;176;impassable;-1;-1;-1;-1;-1;;finland
+9198;176;impassable;-1;-1;-1;-1;-1;;finland
+3067;176;impassable;-1;-1;-1;-1;-1;;finland
+3067;36;impassable;-1;-1;-1;-1;-1;;finland
+6076;203;impassable;-1;-1;-1;-1;-1;;finland
+6076;167;impassable;-1;-1;-1;-1;-1;;finland
+2992;167;impassable;-1;-1;-1;-1;-1;;finland
+2992;3069;impassable;-1;-1;-1;-1;-1;;finland
+2992;103;impassable;-1;-1;-1;-1;-1;;finland
+3115;82;impassable;-1;-1;-1;-1;-1;;finland
+3115;3026;impassable;-1;-1;-1;-1;-1;;finland
+3115;3153;impassable;-1;-1;-1;-1;-1;;finland
+3115;3073;impassable;-1;-1;-1;-1;-1;;finland
+3012;11088;impassable;-1;-1;-1;-1;-1;;finland
+9059;11088;impassable;-1;-1;-1;-1;-1;;finland
+9059;9165;impassable;-1;-1;-1;-1;-1;;finland
+9059;98;impassable;-1;-1;-1;-1;-1;;finland
+6140;98;impassable;-1;-1;-1;-1;-1;;finland
 12370;1766;impassable;-1;-1;-1;-1;-1;;pamir mountains
 12370;12119;impassable;-1;-1;-1;-1;-1;;pamir mountains
 5062;12119;impassable;-1;-1;-1;-1;-1;;pamir mountains

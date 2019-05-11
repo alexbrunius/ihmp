@@ -22,6 +22,8 @@
 - Special Forces now can get a total of +30% breakthrough if you get all techs.
 - Added 3 Urban provinces in front of Moscow and two near Berlin and Stalingrad.
 - Added alot of impassable terrain to Norway.
+- Added alot of impassable terrain to Finland and nearby Soviet territory.
+- Added the Soviet White Sea - Baltic Canal which allows submarines to travel between them.
 - Rebalanced Gibraltar map to have two provinces and not be possible to attack from 3 directions from Spain.
 - Rebalanced North African map adding over 20 provinces to allow for more room to manouver as well as added supply- & airzones to improve the theater.
 
@@ -75,6 +77,10 @@
 - Tweaked AA defines so the above mentioned 75% cap actually is possible to reach too.
 - Added dates limiting Danzig and Around Maginot to be taken at most 1 year before historical completion.
 
+For complete previous changelog. See file in mod.
+Many thanks for CrouchingLemur for his great mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=710273161]More Unit Levels[/url]
+Many thanks for Chondrite for his great mods [url=https://steamcommunity.com/sharedfiles/filedetails/?id=704963980]Strategic View Adjustments[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1368202826] Allied Construction Projects[/url]
+Thanks for feedback, suggestions and bugspotting to the active MP groups I play with as well as the WPO group and for modding help from Myzael, Kallar, Beethoven and SpeedKat.
 
 0.4
 - Vichy ceding fleet to UK on Operation Catapult allows Case Anton.
@@ -113,13 +119,6 @@
 0.2
 - Added 150 PP from NFs and a changed Zaibatsus effect for Japan to compensate the unintended changes to PP and factory output from permanent war with China.
 - Increased plane losses from Kamikaze mission by 20% and reduced Kamikaze damage by 25%
-
-
-For complete previous changelog. See file in mod.
-Many thanks for CrouchingLemur for his great mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=710273161]More Unit Levels[/url]
-Many thanks for Chondrite for his great mods [url=https://steamcommunity.com/sharedfiles/filedetails/?id=704963980]Strategic View Adjustments[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1368202826] Allied Construction Projects[/url]
-Thanks for feedback, suggestions and bugspotting to the active MP groups I play with as well as the WPO group and for modding help from Myzael, Kallar, Beethoven and SpeedKat.
-
 
 0.1 ( Changes from Alex MP mod 1.5.4 )
 - Added a Chinese state in Central America with 90 VP to prevent them from surrendering ( Japan needs to keep suppressing partisans )
