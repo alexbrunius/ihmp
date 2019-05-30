@@ -422,6 +422,10 @@ country_event = {
 			set_state_controller = 29
 		}
 		if = {
+			limit = { 785 = { owner = { original_tag = FRA } } }
+			set_state_controller = 785
+		}
+		if = {
 			limit = { 15 = { owner = { original_tag = FRA } } }
 			set_state_controller = 15
 		}
@@ -669,22 +673,14 @@ country_event = {
 			VIC = {
 				set_politics = {
 
-					parties = {
-						neutrality = { 
-							popularity = 30
-						}
-						fascism = {
-							popularity = 60
-						}
-						democratic = {
-							popularity = 8
-						}
-						communism = {
-							popularity = 2
-						}
-					}
 					ruling_party = fascism
 					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 8
+					fascism = 60
+					communism = 2
+					neutrality = 30
 				}
 
 				create_country_leader = {
@@ -995,22 +991,12 @@ country_event = {
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no
-				parties = {
-					democratic = { 
-						popularity = 22
-					}
-
-					neutrality = {
-						popularity = 60
-					}
-					fascism = {
-						popularity = 16
-					}
-					
-					communism = {
-						popularity = 2
-					}
-				}
+			}
+			set_popularities = {
+				democratic = 22
+				neutrality = 60
+				fascism = 16
+				communism = 2
 			}
 			# FRA Player Switches to Vichy
 			if = {
@@ -1661,8 +1647,8 @@ country_event = {
         	expire = "1965.1.1"
         	ideology = liberalism
         	traits = {
-        	      }
             }
+        }
         set_country_flag = daladier_resigned
       }
 }
@@ -1745,20 +1731,11 @@ country_event = {
 					set_politics = {
 						ruling_party = democratic
 						elections_allowed = yes
-						parties = {
-							democratic = { 
-								popularity = 60
-							}
-							neutrality = {
-								popularity = 0
-							}
-							fascism = {
-								popularity = 20
-							}
-							communism = {
-								popularity = 20
-							}
-						}
+					}
+					set_popularities = {
+						democratic = 60
+						fascism = 20
+						communism = 20
 					}
 				}
 			}
@@ -1770,20 +1747,11 @@ country_event = {
 					set_politics = {
 						ruling_party = fascism
 						elections_allowed = no
-						parties = {
-							democratic = { 
-								popularity = 20
-							}
-							neutrality = {
-								popularity = 0
-							}
-							fascism = {
-								popularity = 60
-							}
-							communism = {
-								popularity = 20
-							}
-						}
+					}
+					set_popularities = {
+						democratic = 20
+						fascism = 60
+						communism = 20
 					}
 				}
 			}
@@ -1795,20 +1763,11 @@ country_event = {
 					set_politics = {
 						ruling_party = communism
 						elections_allowed = no
-						parties = {
-							democratic = { 
-								popularity = 20
-							}
-							neutrality = {
-								popularity = 0
-							}
-							fascism = {
-								popularity = 20
-							}
-							communism = {
-								popularity = 60
-							}
-						}
+					}
+					set_popularities = {
+						democratic = 20
+						fascism = 20
+						communism = 60
 					}
 				}
 			}
@@ -1820,20 +1779,12 @@ country_event = {
 					set_politics = {
 						ruling_party = neutrality
 						elections_allowed = no
-						parties = {
-							democratic = { 
-								popularity = 15
-							}
-							neutrality = {
-								popularity = 55
-							}
-							fascism = {
-								popularity = 15
-							}
-							communism = {
-								popularity = 15
-							}
-						}
+					}
+					set_popularities = {
+						democratic = 15
+						neutrality = 55
+						fascism = 15
+						communism = 15
 					}
 				}
 			}

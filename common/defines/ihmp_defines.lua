@@ -85,6 +85,8 @@ NDefines.NMilitary.ACCLIMATIZATION_LOSS_SPEED_FACTOR = 1.0		-- was 2.0 -- Loosin
 
 NDefines.NMilitary.MIN_DIVISION_DEPLOYMENT_TRAINING = 0.4			-- was 0.2 -- Min level of division training
 
+NDefines.NMilitary.UNIT_UPKEEP_ATTRITION = 0.01					-- was 0.00		--Constant attrition value applied to armies.
+
 -- LAND/ARMY FUEL
 NDefines.NMilitary.FUEL_PENALTY_START_RATIO = 0.33								-- was 0.25 -- ratio of fuel in an army to start getting penalties
 NDefines.NMilitary.SURPLUS_SUPPLY_RATIO_FOR_ZERO_FUEL_FLOW = 1.5		-- was 0.5 -- if a supply chunk has more supply needed than this ratio + 1 compared to its max supply flow, the units inside the chiunk will get no fuel 
@@ -142,6 +144,8 @@ NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.35									-- was 0.25
 NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE					= 0.42	-- was 0.2 -- received air damage is calculated using following: 1 - ( (ship_anti_air + fleet_anti_air * SHIP_TO_FLEET_ANTI_AIR_RATIO )^ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE ) * ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE
 NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE					= 0.10  -- was 0.15
 NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.75	-- was 0.5 -- damage reduction for incoming air attacks is clamped to this value at maximum.
+
+NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 9                                -- was 6 -- base speed of units on water being transported
 
 -- PRODUCTION STUFF
 NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 10					-- was 15 -- Max number of factories that can be assigned a single production line.

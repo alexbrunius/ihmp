@@ -97,7 +97,7 @@ FRA_vichy_france = {
 				}
 				GER = { news_event = { id = wtt_news.23 hours = 6 } }
 			}
-			else_if = {
+			if = {
 				limit = {
 					has_country_flag = scuttled_fleet
 				}

@@ -1,6 +1,5 @@
 equipments = {
 
-
 	fighter_equipment = {
 		year = 1933
 
@@ -76,7 +75,7 @@ equipments = {
 		reliability = 0.8
 
 		# Air vs Navy - low damage / high hit chance / easy to hurt
-		naval_strike_attack = 1
+		naval_strike_attack = 2
 		naval_strike_targetting = 10
 
 		#Space taken in convoy
@@ -279,7 +278,7 @@ equipments = {
 		is_buildable = no
 		type = fighter
 		group_by = archetype
-		sprite = light_plane
+		sprite = jet_plane
 		air_map_icon_frame = 4
 		
 		interface_category = interface_category_air
@@ -851,7 +850,7 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		build_cost_ic = 16
+		build_cost_ic = 14
 		resources = {
 			aluminium = 2
 			tungsten = 2
@@ -878,7 +877,7 @@ equipments = {
 		air_defence = 5		
 		reliability = 0.3
 		
-		build_cost_ic = 18
+		build_cost_ic = 16
 		resources = {
 			aluminium = 3
 			tungsten = 2
@@ -900,7 +899,7 @@ equipments = {
 		air_attack = 56
 		air_defence = 7	
 		reliability = 0.5
-		build_cost_ic = 21
+		build_cost_ic = 18
 		resources = {
 			aluminium = 3
 			tungsten = 3
@@ -922,7 +921,7 @@ equipments = {
 		air_attack = 60
 		air_defence = 10	
 		reliability = 0.8
-		build_cost_ic = 24
+		build_cost_ic = 20
 		resources = {
 			aluminium = 3
 			tungsten = 3

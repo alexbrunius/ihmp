@@ -1106,8 +1106,6 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = light_fighter
-				technology = jet_fighter1
-				technology = jet_fighter2
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
@@ -1327,8 +1325,6 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = light_fighter
-				technology = jet_fighter1
-				technology = jet_fighter2
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
@@ -1616,15 +1612,15 @@ focus_tree = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
 					limit = { ROOT = { has_government = fascism } }
-					add_ideas = fascist_influence
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 				}
 				if = {
 					limit = { ROOT = { has_government = democratic } }
-					add_ideas = democratic_influence
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 				}
 				if = {
 					limit = { ROOT = { has_government = communism } }
-					add_ideas = communist_influence
+					add_timed_idea = { idea = communist_influence days = 1095 }
 				}
 				country_event = { id = generic.1 }
 			}
@@ -1736,15 +1732,15 @@ focus_tree = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
 					limit = { ROOT = { has_government = fascism } }
-					add_ideas = fascist_influence
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 				}
 				if = {
 					limit = { ROOT = { has_government = democratic } }
-					add_ideas = democratic_influence
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 				}
 				if = {
 					limit = { ROOT = { has_government = communism } }
-					add_ideas = communist_influence
+					add_timed_idea = { idea = communist_influence days = 1095 }
 				}
 				country_event = { id = generic.1 }
 			}
@@ -2024,15 +2020,15 @@ focus_tree = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
 					limit = { ROOT = { has_government = fascism } }
-					add_ideas = fascist_influence
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 				}
 				if = {
 					limit = { ROOT = { has_government = democratic } }
-					add_ideas = democratic_influence
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 				}
 				if = {
 					limit = { ROOT = { has_government = communism } }
-					add_ideas = communist_influence
+					add_timed_idea = { idea = communist_influence days = 1095 }
 				}
 				country_event = { id = generic.1 }
 			}
@@ -2118,15 +2114,13 @@ focus_tree = {
 		prerequisite = { focus = ITA_support_nationalist_spain }
 		mutually_exclusive = { focus = ITA_demand_balearic_islands }
 		available = {
+			is_in_faction = yes
 			any_other_country = {
 				original_tag = SPR
 				has_government = fascism
 				has_civil_war = no
 				NOT = { has_war_with = ROOT }
-				OR = {
-					is_in_faction = no
-					is_in_faction_with = ROOT
-				}
+				is_in_faction = no
 			}
 			FRA = {
 				OR = {
@@ -2158,7 +2152,7 @@ focus_tree = {
 				}
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				add_ideas = fascist_influence 
-				country_event = { id = generic.2 }           
+				country_event = { id = generic.5 }           
 			}
 		}
 	}
@@ -2176,6 +2170,7 @@ focus_tree = {
 		}
 
 		available = {
+			is_in_faction = yes
 			country_exists = POR
 			NOT = {
 				has_war_with = POR
@@ -2187,17 +2182,17 @@ focus_tree = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
 					limit = { ROOT = { has_government = fascism } }
-					add_ideas = fascist_influence
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 				}
 				if = {
 					limit = { ROOT = { has_government = democratic } }
-					add_ideas = democratic_influence
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 				}
 				if = {
 					limit = { ROOT = { has_government = communism } }
-					add_ideas = communist_influence
+					add_timed_idea = { idea = communist_influence days = 1095 }
 				}
-				country_event = { id = generic.2 }
+				country_event = { id = generic.5 }
 			}
 		}
 	}
@@ -2263,15 +2258,15 @@ focus_tree = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
 					limit = { ROOT = { has_government = fascism } }
-					add_ideas = fascist_influence
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 				}
 				if = {
 					limit = { ROOT = { has_government = democratic } }
-					add_ideas = democratic_influence
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 				}
 				if = {
 					limit = { ROOT = { has_government = communism } }
-					add_ideas = communist_influence
+					add_timed_idea = { idea = communist_influence days = 1095 }
 				}
 				country_event = { id = generic.1 }
 			}
@@ -2412,15 +2407,15 @@ focus_tree = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
 					limit = { ROOT = { has_government = fascism } }
-					add_ideas = fascist_influence
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 				}
 				if = {
 					limit = { ROOT = { has_government = democratic } }
-					add_ideas = democratic_influence
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 				}
 				if = {
 					limit = { ROOT = { has_government = communism } }
-					add_ideas = communist_influence
+					add_timed_idea = { idea = communist_influence days = 1095 }
 				}
 				country_event = { id = generic.1 }
 			}

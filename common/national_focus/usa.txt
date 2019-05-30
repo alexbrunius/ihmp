@@ -741,7 +741,8 @@ focus_tree = {
 		}
 
 		available = {
-			not = {
+			OR = {
+				has_government = democratic
 				has_government = communism
 			}
 		}
@@ -904,7 +905,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			communism > 0.3
 		}
 		
 		bypass = {
@@ -924,6 +925,7 @@ focus_tree = {
 				limit = {
 					ENG = {
 						not = { has_government = communism }
+						not = { is_in_faction_with = ROOT }
 					}
 				}
 				create_wargoal = {
@@ -938,6 +940,7 @@ focus_tree = {
 							has_completed_focus = GER_return_of_the_kaiser
 							has_completed_focus = GER_the_monarchy_compromise
 						}
+						not = { is_in_faction_with = ROOT }
 					}
 				}
 				create_wargoal = {
@@ -949,6 +952,7 @@ focus_tree = {
 				limit = {
 					HUN = {
 						has_cosmetic_tag = HUN_EMPIRE
+						not = { is_in_faction_with = ROOT }
 					}
 				}
 				create_wargoal = {
@@ -961,6 +965,7 @@ focus_tree = {
 					JAP = {
 						not = { has_government = communism }
 						not = { has_government = democratic }
+						not = { is_in_faction_with = ROOT }
 					}
 				}
 				create_wargoal = {
@@ -972,6 +977,7 @@ focus_tree = {
 				limit = {
 					MAN = {
 						has_completed_focus = MAN_imperial_divinity
+						not = { is_in_faction_with = ROOT }
 					}
 				}
 				create_wargoal = {
@@ -999,11 +1005,13 @@ focus_tree = {
 				ENG = {
 					exists = yes
 					not = { has_war_with = ROOT }
+					not = { is_in_faction_with = ROOT }
 					not = { has_completed_focus = ENG_decolonization }
 				}
 				ITA = {
 					exists = yes
 					not = { has_war_with = ROOT }
+					not = { is_in_faction_with = ROOT }
 					any_state = {
 						is_controlled_by = ITA
 						not = { is_core_of = ITA }
@@ -1012,6 +1020,7 @@ focus_tree = {
 				FRA = {
 					exists = yes
 					not = { has_war_with = ROOT }
+					not = { is_in_faction_with = ROOT }
 					any_state = {
 						is_controlled_by = FRA
 						not = { is_core_of = FRA }
@@ -1020,6 +1029,7 @@ focus_tree = {
 				GER = {
 					exists = yes
 					not = { has_war_with = ROOT }
+					not = { is_in_faction_with = ROOT }
 					any_state = {
 						is_controlled_by = GER
 						not = { is_core_of = GER }
@@ -1042,6 +1052,7 @@ focus_tree = {
 					ENG = {
 						exists = yes
 						not = { has_war_with = ROOT }
+						not = { is_in_faction_with = ROOT }
 						not = { has_completed_focus = ENG_decolonization }
 					}
 				}
@@ -1065,6 +1076,7 @@ focus_tree = {
 					ITA = {
 						exists = yes
 						not = { has_war_with = ROOT }
+						not = { is_in_faction_with = ROOT }
 						any_state = {
 							is_controlled_by = ITA
 							not = { is_core_of = ITA }
@@ -1091,6 +1103,7 @@ focus_tree = {
 					FRA = {
 						exists = yes
 						not = { has_war_with = ROOT }
+						not = { is_in_faction_with = ROOT }
 						any_state = {
 							is_controlled_by = FRA
 							not = { is_core_of = FRA }
@@ -1117,6 +1130,7 @@ focus_tree = {
 					GER = {
 						exists = yes
 						not = { has_war_with = ROOT }
+						not = { is_in_faction_with = ROOT }
 						any_state = {
 							is_controlled_by = GER
 							not = { is_core_of = GER }
@@ -1922,9 +1936,9 @@ focus_tree = {
 			}
 		}
 		complete_tooltip = {
-			air_experience = 50
 			navy_experience = 50
-			army_experience = 10
+			army_experience = 50
+			air_experience = 10
 			every_state = {
 				limit = { has_state_flag = USA_arsenal_of_democracy_3AF }
 				add_extra_state_shared_building_slots = 3
@@ -3179,6 +3193,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = USA_war_powers_act
+			set_rule = {
+				can_create_factions = yes
+			}
 			hidden_effect = {
 				news_event = { id = mtg_news.5 days = 3 random = 6 }
 			}
@@ -3318,12 +3335,12 @@ focus_tree = {
 		bypass = {
 			OR = {
 				AND = {
-					owns_state = 473
-					owns_state = 471
+					controls_state = 473
+					controls_state = 471
 				}
 				AND = {
-					473 = { CONTROLLER = { has_war_with = ROOT } }
-					471 = { CONTROLLER = { has_war_with = ROOT } }
+					473 = { OWNER = { has_war_with = ROOT } }
+					471 = { OWNER = { has_war_with = ROOT } }
 				}
 			}
 		}
@@ -4238,6 +4255,7 @@ focus_tree = {
 			ENG = {
 				has_government = ROOT
 				has_war = yes
+				not = { has_war_with = ROOT }
 				any_enemy_country = {
 					is_major = yes
 				}
@@ -5564,6 +5582,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_advanced_mahanian_doctrine
 				bonus = 1.0
+				uses = 1
 				category = cat_base_strike
 			}
 		}

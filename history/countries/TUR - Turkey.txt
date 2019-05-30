@@ -131,31 +131,14 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes #default is no
-		}
-		
-		neutrality = { 
-			popularity = 100
-		}
-	}
-	
 	ruling_party = neutrality
 	last_election = "1935.2.8"
 	election_frequency = 48
 	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 10
+	neutrality = 90
 }
 
 set_convoys = 20
@@ -163,28 +146,7 @@ set_stability = 0.55
 
 1939.1.1 = {
 	set_politics = {
-
-		parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes #default is no
-		}
-		
-		neutrality = { 
-			popularity = 100
-		}
-	}
-	
-	ruling_party = neutrality
+		ruling_party = neutrality
 		last_election = "1939.2.8"
 		election_frequency = 48
 		elections_allowed = yes
@@ -199,6 +161,13 @@ set_stability = 0.55
 		traits = {
 			#
 		}
+	}
+
+	if = {
+		limit = { 
+			has_unit_leader = 59
+		}
+		remove_unit_leader = 59
 	}
 
 }
@@ -256,18 +225,6 @@ create_country_leader = {
 	traits = {
 		#
 	}
-}
-
-create_field_marshal = {
-	name = "Mustafa Kemal Atatürk"
-	picture = "Portrait_Turkey_Mustafa_Kemal_Ataturk.dds"
-	traits = { brilliant_strategist war_hero infantry_officer trickster desert_fox hill_fighter }
-	skill = 4
-	id = 59
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 2
 }
 
 create_corps_commander = {

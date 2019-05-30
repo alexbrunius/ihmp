@@ -1,4 +1,9 @@
-﻿0.6
+﻿0.7
+- Made compatible with 1.7.0 beta as of 5/30/2019
+- Added a base attrition of 1% to all land units.
+- Increased speed of troop transfer and invasion convoys from 9 knots to 14 knots. This should mean crossing the Atlantic takes ~20 days.
+
+0.6
 - Reduced minimum manpower in recruit & deploy to 30k from 100k and changed the minimum factor to 30% of Army from 75%.
 - Minimum training to deploy divisions changed from 20% trained to 40%, and Mass Assault bonus increased so they still can deploy when 10% trained.
 - Increased convoys needed for fuel LL to be x3 times as much ( since it’s otherwise 3 times more efficiency to send LL vs trade fuel ).

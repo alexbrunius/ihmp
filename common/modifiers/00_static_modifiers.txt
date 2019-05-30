@@ -272,7 +272,7 @@ stability_bad_modifier = {
 }
 
 war_support_good_modifier = {
-	mobilization_speed = 0.50 #in 1/1000 of 1 %
+	mobilization_speed = 0.30 #in 1/1000 of 1 %
 	army_core_attack_factor = 0.1
 	army_core_defence_factor = 0.1
 	command_power_gain_mult = 0.5
@@ -295,7 +295,7 @@ attache_sent = {
 
 diff_very_easy_player = {
 	production_factory_max_efficiency_factor = 0.3
-	research_speed_factor = 0.1
+	research_speed_factor = 0.15
 	political_power_factor = 0.5
 	production_lack_of_resource_penalty_factor = -0.8
 	army_fuel_consumption_factor = -0.5
@@ -305,7 +305,7 @@ diff_very_easy_player = {
 
 diff_easy_player = {
 	production_factory_max_efficiency_factor = 0.2
-	research_speed_factor = 0.05
+	research_speed_factor = 0.07
 	political_power_factor = 0.25
 	production_lack_of_resource_penalty_factor = -0.3
 	army_fuel_consumption_factor = -0.25
@@ -318,13 +318,13 @@ diff_normal_player = {
 
 diff_hard_player = {
 	production_factory_max_efficiency_factor = -0.2
-	research_speed_factor = -0.10
+	research_speed_factor = -0.15
 	political_power_factor = -0.1
 }
 
 diff_very_hard_player = {
 	production_factory_max_efficiency_factor = -0.3
-	research_speed_factor = -0.2
+	research_speed_factor = -0.30
 	political_power_factor = -0.15
 }
 

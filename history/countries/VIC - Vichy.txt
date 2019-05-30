@@ -104,22 +104,15 @@ set_convoys = 50
 
 set_politics = {
 
-	parties = {
-		neutrality = { 
-			popularity = 30
-		}
-		fascism = {
-			popularity = 60
-		}
-		democratic = {
-			popularity = 8
-		}
-		communism = {
-			popularity = 2
-		}
-	}
 	ruling_party = fascism
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 8
+	neutrality = 30
+	fascism = 60
+	communism = 2
 }
 
 create_country_leader = {
