@@ -264,9 +264,14 @@ sub_units = {
 		supply_consumption = 0.06
 
 		can_be_parachuted = yes
-	
+		essential = {
+			infantry_equipment
+			support_equipment
+		}
+		
 		need = {
-			infantry_equipment = 130
+			infantry_equipment = 140
+			support_equipment = 20
 		}
 	}
 

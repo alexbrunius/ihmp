@@ -3,10 +3,14 @@
 - Added a base attrition of 1% to all land units.
 - Added attrition to all terrains 4% to Plains and Urban, 8% to Forest and Hills, 
 - Lowered base reliability of all Tanks to 60% and all Mot/Mec to 70%
+- Increased cost of paratroopers by adding support equipment
 - Increased speed of troop transfer and invasion convoys from 9 knots to 14 knots. This should mean crossing the Atlantic takes ~20 days.
 - Reduced naval speed penalty from maximum mines from -80% to -50%.
 - Changed Screen to Capital ratio for full screening from 4 to 3 Screens per Capital ship.
 - Gave UK resource rights for all fuel in Iran/Iraq.
+- Increased army/land fuel consumption by 40%
+- Tweaked fuel so that it's now very slowly lost in green supply when moving or attacking.
+- Increased fuel capacity on units to 9 days of full movement consumption and 6.5 days full offensive combat consumption ( about 30% increase ).
 
 0.6
 - Reduced minimum manpower in recruit & deploy to 30k from 100k and changed the minimum factor to 30% of Army from 75%.
