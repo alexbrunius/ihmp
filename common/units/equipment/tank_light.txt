@@ -23,7 +23,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 6.7
-		reliability = 0.8
+		reliability = 0.6
 
 		#Defensive Abilities
 		defense = 4
@@ -62,7 +62,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 4
-		reliability = 0.8
+		reliability = 0.6
 
 		#Defensive Abilities
 		defense = 4
@@ -174,7 +174,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 6.7
-		reliability = 0.8
+		reliability = 0.6
 
 		#Defensive Abilities
 		defense = 4
@@ -303,7 +303,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 6.7
-		reliability = 0.8
+		reliability = 0.6
 
 		#Defensive Abilities
 		defense = 4
@@ -436,7 +436,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 6.7
-		reliability = 0.8
+		reliability = 0.6
 
 		#Defensive Abilities
 		defense = 2
