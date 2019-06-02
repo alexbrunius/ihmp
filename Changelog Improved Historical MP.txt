@@ -11,6 +11,7 @@
 - Increased army/land fuel consumption by 40%
 - Tweaked fuel so that it's now very slowly lost in green supply when moving or attacking.
 - Increased fuel capacity on units to 9 days of full movement consumption and 6.5 days full offensive combat consumption ( about 30% increase ).
+- Added a feature that destroys and damages Soviet infrastructure (amount depending on infrastructure level) when they lose control of states to simulate different railway gauges.
 
 0.6
 - Reduced minimum manpower in recruit & deploy to 30k from 100k and changed the minimum factor to 30% of Army from 75%.
