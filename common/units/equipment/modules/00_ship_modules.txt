@@ -1584,7 +1584,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			torpedo_attack = 14
+			torpedo_attack = 6 #was 14
 			build_cost_ic = 80
 		}
 		multiply_stats = {
@@ -1603,7 +1603,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 18
+			torpedo_attack = 8 # was 18
 			build_cost_ic = 100
 		}
 		multiply_stats = {
@@ -1626,7 +1626,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 23
+			torpedo_attack = 10 #was 23
 			build_cost_ic = 120
 		}
 		multiply_stats = {
@@ -1646,7 +1646,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 30
+			torpedo_attack = 12 #was 30
 			build_cost_ic = 140
 		}
 		multiply_stats = {

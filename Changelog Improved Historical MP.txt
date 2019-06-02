@@ -7,6 +7,8 @@
 - Increased speed of troop transfer and invasion convoys from 9 knots to 14 knots. This should mean crossing the Atlantic takes ~20 days.
 - Reduced naval speed penalty from maximum mines from -80% to -50%.
 - Changed Screen to Capital ratio for full screening from 4 to 3 Screens per Capital ship.
+- Lowered submarine torpedo module damage from 14/18/23/30 to 6/8/10/12.
+- Increased DD strength from 25/40/50/60 to 35/50/65/75 to help make battles less of a screen slaughter.
 - Gave UK resource rights for all fuel in Iran/Iraq.
 - Increased air fuel consumption by ~15%
 - Increased army/land fuel consumption by 40%
