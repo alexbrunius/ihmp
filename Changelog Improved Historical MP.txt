@@ -8,9 +8,10 @@
 - Reduced naval speed penalty from maximum mines from -80% to -50%.
 - Changed Screen to Capital ratio for full screening from 4 to 3 Screens per Capital ship.
 - Gave UK resource rights for all fuel in Iran/Iraq.
+- Increased air fuel consumption by ~15%
 - Increased army/land fuel consumption by 40%
 - Tweaked fuel so that it's now very slowly lost in green supply when moving or attacking.
-- Increased fuel capacity on units to 9 days of full movement consumption and 6.5 days full offensive combat consumption ( about 30% increase ).
+- Increased fuel capacity on units to a max of 9 days of full movement consumption and 6.5 days full offensive combat consumption when completely cut off ( about 30% increase ).
 - Added a feature that destroys and damages Soviet infrastructure (amount depending on infrastructure level) when they lose control of states to simulate different railway gauges.
 
 0.6

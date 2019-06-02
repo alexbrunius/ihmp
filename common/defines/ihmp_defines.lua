@@ -103,7 +103,6 @@ NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 216              -- was 96 -- d
 -- PLANE STUFF
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2.0						-- was 3.0 - How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.10						-- was 0.05	- Base chance % (0 - 100) for accident to happen. Reduced with higher reliability stat.
-NDefines.NAir.COMBAT_ATTACK_PASSES_AT_ONCE = 0.02				-- was 0.1	-- Wing attack stat determines of many re-approaches in single combat they do. This is a scale of this amount to balance the gameplay. Less retries = less bloody combats, and less calculations for the CPU. ( Naval air combat only )
 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 10							-- was 5 -- Days to deploy one air wing
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.01				-- was 0.02	-- Global speed multiplier for airplanes (affects fe.transferring to another base)
@@ -134,6 +133,8 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 		0.0, -- NAVAL_MINES_SWEEPING
 	}
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.010 				-- was 0.005	--Factor on country Air XP gained from wing training
+
+NDefines.NAir.FUEL_COST_MULT = 0.40 	-- was 0.35 -- fuel multiplier for all air missions
 	
 -- SHIP STUFF
 NDefines.NNavy.COMBAT_BASE_CRITICAL_CHANCE = 0.03								-- was 0.1 -- Base chance for receiving a critical chance. It get's scaled down with ship reliability.
