@@ -4,6 +4,7 @@ bitmapfonts = {
 #		path = "gfx/fonts/hoi_20bsSVA"
 		fontfiles = { 
 			"gfx/fonts/hoi_20bsSVA"
+			"gfx/fonts/hoi_20bs_cryllic"
 		}		
 		color = 0xffffffff
 

@@ -1044,14 +1044,14 @@ guiTypes = {
 			quadTextureSprite = "GFX_mapicon_naval_mission_patrol"
 			position = { x=0 y=0 }
 		}
-		
+
 		instantTextboxType = {
 			name = "count"
 			position = { x=7 y=33 }
 			font = "hoi_16mbs"
 			maxWidth = 32
 			maxHeight = 14
-			format = center	
+			format = center
 			text = "1/2"
 		}
 
@@ -1070,7 +1070,7 @@ guiTypes = {
 			format = center
 			text = "100%"
 		}
-		
+
 		iconType = {
 			name = "pride"
 			position = {x=-5 y=-5}
@@ -1105,7 +1105,7 @@ guiTypes = {
 				format = left
 				spacing = 1.0
 			}
-			
+
 			@unit_counters_pos_y = 100
 			
 			gridBoxType = {
@@ -1137,7 +1137,7 @@ guiTypes = {
 				add_horizontal = no
 				format = "UPPER_LEFT"
 			}
-			
+
 			@small_status_icon_pos_y = 65
 			
 			containerWindowType = {
@@ -1652,7 +1652,6 @@ guiTypes = {
 		instantTextboxType = {
 			name = "cost_text"
 			position = { x = -34 y = 37 }
-			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = { x = 0 y = 0 }
 			text = "999"
@@ -1672,8 +1671,8 @@ guiTypes = {
 		iconType = {
 			name ="timer_icon"
 			quadTextureSprite = "GFX_decision_timer_icon_strip"
-			position = { x=-4 y=26 }
-			scale = 0.6
+			position = { x=-10 y=22 }
+			scale = 0.8
 			frame = 2
 		}
 	}
