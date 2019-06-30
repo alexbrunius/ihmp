@@ -1100,7 +1100,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.1
-			sub_visibility = -0.05
+			sub_visibility = -0.02
 		}
 		
 		can_convert_from = {
@@ -1128,7 +1128,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.15
-			sub_visibility = -0.1
+			sub_visibility = -0.04
 		}
 		
 		can_convert_from = {
@@ -1155,7 +1155,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			sub_visibility = -0.15
+			sub_visibility = -0.06
 		}
 		
 		can_convert_from = {
