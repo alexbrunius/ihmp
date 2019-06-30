@@ -1,4 +1,15 @@
-﻿0.7
+﻿0.8
+- Merged in changes from patch 1.7.1 where suitable.
+- Added 1 NFs each for JAP/UK/USA for Emergency Convoy Shipbuilding if their free convoys stockpile drop low which gives 3/6/9 dockyards and 100/200/300 extra convoys.
+- Lowered how many % of convoys on a route that submarines will generally spot when attacking to be 1/10:th as many ( should normally be around 15-35% of total still )
+- Lowered how many regions each convoy raiding taskforce can cover to 1.
+- Increased how many convoys each ship can defend with escorting efficiency 100% from 5 to 9 ( This is also increased by doctrines ).
+- Doubled submarine chance to be revealed when firing torpedoes from 4% to 8%
+- Lowered the maximum penalty to screening from bad positioning from -50% to -30% ( for example if there are more screens than submarines in combat ).
+- Lowered submarine visibility reduction from engines from -5% per step to -2% per step.
+- Increased submarine visibility for 1936/1940/1944 level by +2/+4/+2 so they are easier to spot.
+
+0.7
 - Made compatible with 1.7.0 beta as of 5/30/2019
 - Added a base attrition of 1% to all land units.
 - Added attrition to all terrains 4% to Plains and Urban, 8% to Forest and Hills, 
