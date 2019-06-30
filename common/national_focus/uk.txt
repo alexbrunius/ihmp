@@ -1108,7 +1108,7 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		icon = GFX_focus_eng_chiefs_of_staff_committee
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = air_rearmament_focus
 		cost = 10
@@ -1152,7 +1152,7 @@ focus_tree = {
 		id = bomber_command_focus
 		prerequisite = { focus = air_rearmament_focus }
 		icon = GFX_goal_generic_air_bomber
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = air_rearmament_focus
 		cost = 10
@@ -1475,6 +1475,88 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = british_convoy_discount
+		}
+	}
+	
+	focus = {
+		id = uk_convoy_focus_2
+		prerequisite = { focus = naval_rearmament_focus }
+		available = {
+			has_war_with = GER
+			has_equipment = { convoy_1 < 200 }
+		}
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = -2
+		y = 1
+		relative_position_id = naval_rearmament_focus
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = no
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 200
+				producer = ENG			
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_uk_convoy_focus_2_2dockyard
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_uk_convoy_focus_2_2dockyard
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_uk_convoy_focus_2_2dockyard
+			}
 		}
 	}
 

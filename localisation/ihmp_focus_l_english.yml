@@ -1,4 +1,10 @@
 ﻿l_english:
-SOV_infrastructure_effort_tt:0 "Add §Y3 Infrastructure§! in §YIvanovo§!, §YGorki§!, §YKazan§! and §YUfa§!"
-SOV_improve_railway_tt:0 "Add §Y3 Infrastructure§! in §YZlatoust§!, §YSverdlovsk§!, §YTyumen§! and §YOmsk§!"
+ SOV_infrastructure_effort_tt:0 "Add §Y3 Infrastructure§! in §YIvanovo§!, §YGorki§!, §YKazan§! and §YUfa§!"
+ SOV_improve_railway_tt:0 "Add §Y3 Infrastructure§! in §YZlatoust§!, §YSverdlovsk§!, §YTyumen§! and §YOmsk§!"
+ uk_convoy_focus_2:0 "Emergency Convoy building program"
+ uk_convoy_focus_2_desc:0 "Alarming losses in convoys have forced us to enact emergency measures to speed up convoy building"
+ JAP_convoy_focus_2:0 "Emergency Convoy building program"
+ JAP_convoy_focus_2_desc:0 "Alarming losses in convoys have forced us to enact emergency measures to speed up convoy building"
+ USA_convoy_focus_2:0 "Emergency Convoy building program"
+ USA_convoy_focus_2_desc:0 "Alarming losses in convoys have forced us to enact emergency measures to speed up convoy building"
 
