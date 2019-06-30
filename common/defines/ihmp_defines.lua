@@ -150,6 +150,13 @@ NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.75	-- wa
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 9                                -- was 6 -- base speed of units on water being transported
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 3.0			-- was 4.0 -- this screen ratio to num capital/carriers is needed for full screening beyond screen line
 
+-- SUBMARINE BALANCE TWEAKS
+NDefines.NNavy.COMBAT_DETECTED_CONVOYS_FROM_SURFACE_DETECTION_STAT 				= 0.01		-- was 0.1 -- Each 1.0 of surface_detection that ship has (equipment stat), gives x% of convoys discovered from total travelling along the route.
+NDefines.NNavy.CONVOY_RAID_MAX_REGION_TO_TASKFORCE_RATIO						= 1.0		-- was 1.5 -- each taskforce in convoy raid mission can at most cover this many regions without losing efficiency
+NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO							= 9.0		-- was 5.0 -- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
+NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE 							= 0.08		-- was 0.04 -- Chance of a submarine being revealed when it fires. 1.0 is 100%. this chance is then multiplied with modifier created by comparing firer's visibiility and target's detection
+NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				= 0.3  		-- was 0.5 -- screening efficiency (screen to capital ratio) at 0% positioning
+
 -- PRODUCTION STUFF
 NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 10					-- was 15 -- Max number of factories that can be assigned a single production line.
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 30						-- was 15
