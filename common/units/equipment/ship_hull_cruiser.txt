@@ -76,6 +76,11 @@ equipments = {
 		}
 		
 		module_count_limit = {
+			category = ship_depth_charge
+			count < 2
+		}
+		
+		module_count_limit = {
 			category = ship_medium_battery
 			count < 4
 		}

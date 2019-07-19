@@ -66,6 +66,11 @@ equipments = {
 			count < 2
 		}
 		
+		module_count_limit = {
+			category = ship_depth_charge
+			count < 2
+		}
+		
 		default_modules = {
 			fixed_ship_battery_slot = empty
 			fixed_ship_anti_air_slot = empty
@@ -84,7 +89,7 @@ equipments = {
 		hg_attack = 0
 		
 		torpedo_attack = 0
-		sub_attack = 1
+		sub_attack = 10
 		
 		anti_air_attack = 0
 		

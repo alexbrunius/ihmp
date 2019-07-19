@@ -105,9 +105,6 @@ equipment_modules = {
 		multiply_stats = {
 			reliability = -0.05
 		}
-		build_cost_resources = {
-			steel = 1
-		}
 		multiply_stats = {
 			naval_speed = -0.02
 		}
@@ -139,9 +136,6 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.01
 			reliability = -0.05
-		}
-		build_cost_resources = {
-			steel = 1
 		}
 		add_average_stats = {
 			lg_armor_piercing = 2.0
@@ -1732,7 +1726,7 @@ equipment_modules = {
 		
 		
 		add_stats = {
-			sub_attack = 8
+			sub_attack = 100
 			build_cost_ic = 90
 		}
 		multiply_stats = {
@@ -1750,7 +1744,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			sub_attack = 12
+			sub_attack = 150
 			build_cost_ic = 120
 		}
 		multiply_stats = {
@@ -1768,7 +1762,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			sub_attack = 16
+			sub_attack = 200
 			build_cost_ic = 150
 		}
 		multiply_stats = {
@@ -1786,7 +1780,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			sub_attack = 20
+			sub_attack = 250
 			build_cost_ic = 180
 		}
 		multiply_stats = {
