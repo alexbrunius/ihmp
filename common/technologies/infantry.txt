@@ -803,6 +803,10 @@ technologies = {
 			leads_to_tech = improved_special_forces
 			research_cost_coeff = 1
 		}
+		
+		xp_research_type = army
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 
 		research_cost = 1.5
 		start_year = 1938
@@ -839,6 +843,10 @@ technologies = {
 			leads_to_tech = extreme_environment_training
 			research_cost_coeff = 1
 		}
+		
+		xp_research_type = army
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 
 		research_cost = 1
 		start_year = 1940
@@ -870,6 +878,10 @@ technologies = {
 			leads_to_tech = survival_training
 			research_cost_coeff = 1
 		}
+		
+		xp_research_type = army
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 
 		research_cost = 1
 		start_year = 1940
@@ -904,6 +916,10 @@ technologies = {
 			leads_to_tech = elite_forces
 			research_cost_coeff = 1
 		}
+		
+		xp_research_type = army
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 
 		research_cost = 1
 		start_year = 1942
@@ -930,6 +946,10 @@ technologies = {
 			acclimatization_hot_climate_gain_factor = 0.20
 			acclimatization_cold_climate_gain_factor = 0.20
 		}
+		
+		xp_research_type = army
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 		
 		special_forces_out_of_supply_factor = -0.1
 		
@@ -965,6 +985,10 @@ technologies = {
 			soft_attack = 0.05
 			breakthrough = 0.1
 		}
+		
+		xp_research_type = army
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 		
 		special_forces_no_supply_grace = 48
 

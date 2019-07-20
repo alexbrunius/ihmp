@@ -16,6 +16,7 @@
 - Removed steel resource cost from dual purpose guns and light guns lvl 4.
 - Reduced naval supremacy per ship from 100 to 1, meaning ships costing more IC/manpower like BBs will be much better for supremacy/sending through invasions than submarine or DD spam.
 - Adjusted the emergency convoy shipbuilding NFs requirements added in 0.8 to take into account that convoys in use are also considered "in stockpile" by the Paradox game logic.
+- Special forces techs can now be boosted by using army XP.
 
 0.8
 - Merged in changes from patch 1.7.1 where suitable.
