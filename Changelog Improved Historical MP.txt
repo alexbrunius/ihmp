@@ -14,7 +14,7 @@
 - Added a bit of Anti Air to submarines to reduce damage they take from NAV/TAC bombing ( this will result in NAVs getting shot down, not ideal but I think reasonable for balancing ).
 - Tweaked the Anti Air damage reduction formula to put more emphasis on the ship getting targeted than fleet total. This should both help smaller submarine fleets survival and discourage doomstacks.
 - Increased submarines reliability significantly to reduce chance of sinking from NAV/TAC bombing critical hits.
-- Changed spotting speed of unit transfers and invasions to be 2 and 4 times the spotting speed of regular convoys respectively instead of 50? ( not sure how defines interact ) times as high.
+- Changed spotting speed of unit transfers and invasions to be 2 and 4 times the spotting speed of regular convoys respectively instead of 50?+ ( not sure how defines interact ) times as high.
 - Removed steel resource cost from dual purpose guns and light guns lvl 4.
 - Reduced naval supremacy per ship from 100 to 1, meaning ships costing more IC/manpower like BBs will be much better for supremacy/sending through invasions than submarine or DD spam.
 - Adjusted the emergency convoy shipbuilding NFs requirements added in 0.8 to take into account that convoys in use are also considered "in stockpile" by the Paradox game logic.
@@ -53,6 +53,11 @@
 - Increased fuel capacity on units to a max of 9 days of full movement consumption and 6.5 days full offensive combat consumption when completely cut off ( about 30% increase ).
 - Added a feature that destroys and damages Soviet infrastructure (amount depending on infrastructure level) when they lose control of states to simulate different railway gauges.
 
+For complete previous changelog. See file in mod.
+Many thanks for CrouchingLemur for his great mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=710273161]More Unit Levels[/url]
+Many thanks for Chondrite for his great mods [url=https://steamcommunity.com/sharedfiles/filedetails/?id=704963980]Strategic View Adjustments[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1368202826] Allied Construction Projects[/url]
+Thanks for feedback, suggestions and bugspotting to the active MP groups I play with as well as the WPO group and for modding help from Myzael, Kallar, Beethoven and SpeedKat.
+
 0.6
 - Reduced minimum manpower in recruit & deploy to 30k from 100k and changed the minimum factor to 30% of Army from 75%.
 - Minimum training to deploy divisions changed from 20% trained to 40%, and Mass Assault bonus increased so they still can deploy when 10% trained.
@@ -81,12 +86,6 @@
 - Added the Soviet White Sea - Baltic Canal which allows submarines to travel between them.
 - Rebalanced Gibraltar map to have two provinces and not be possible to attack from 3 directions from Spain.
 - Rebalanced North African map adding over 20 provinces to allow for more room to manouver as well as added supply- & airzones to improve the theater.
-
-
-For complete previous changelog. See file in mod.
-Many thanks for CrouchingLemur for his great mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=710273161]More Unit Levels[/url]
-Many thanks for Chondrite for his great mods [url=https://steamcommunity.com/sharedfiles/filedetails/?id=704963980]Strategic View Adjustments[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1368202826] Allied Construction Projects[/url]
-Thanks for feedback, suggestions and bugspotting to the active MP groups I play with as well as the WPO group and for modding help from Myzael, Kallar, Beethoven and SpeedKat.
 
 0.5
 - Updated files to be compatible with MtG / Patch 1.6.2
