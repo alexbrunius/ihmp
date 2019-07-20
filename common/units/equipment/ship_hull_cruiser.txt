@@ -89,18 +89,7 @@ equipments = {
 			category = ship_medium_battery
 			count < 4
 		}
-		
-		default_modules = {
-			fixed_ship_battery_slot = empty
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			mid_1_custom_slot = empty
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-		
+				
 		lg_armor_piercing = 0
 		lg_attack = 0
 		
@@ -203,10 +192,6 @@ equipments = {
 					ship_medium_battery
 				}
 			}
-		}
-
-		default_modules = {
-			front_1_custom_slot = empty
 		}
 	}
 

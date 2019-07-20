@@ -223,6 +223,7 @@ focus_tree = {
 				uses = 1
 				category = motorized_equipment
 			}
+			army_experience = 15
 		}
 	}
 	focus = {
@@ -700,6 +701,7 @@ focus_tree = {
 			add_ideas = ENG_special_air_service_idea
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ENG_david_stirling
+			army_experience = 15
 		}
 	}
 	
@@ -8001,6 +8003,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = ENG_the_war_to_end_all_wars
 			set_rule = { can_send_volunteers = yes }
+			army_experience = 25
 		}
 	}
 

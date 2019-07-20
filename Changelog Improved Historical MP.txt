@@ -1,15 +1,17 @@
 ﻿0.9
 - Fixed back the reduced General command capacity to assignable General traits that was accidentally removed in 0.8
+- Skilled staffer can be gained if you have 18 or more divisions in an army instead of 24.
 - Gave submarines 5 times as much hitpoints ( to help them survive vs Naval bombers and make the Battle of the Atlantic more of an attritional fight ).
-- Gave DD depth charges 5 times as much sub_attack and limited them to 1 module per DD to promote refitting / using older DDs for ASW duties ( as historical ), and to make it more feasible to use in fleet Destroyers.
-- Increased DD base sub_attack from 1 to 5 ( for same resons as above )
+- Gave DD depth charges ~5 times as much sub_attack and limited them to 1 module per DD to promote refitting / using older DDs for ASW duties ( as historical ), make balancing easier, and to make fleet Destroyers with good ASW feasible.
+- Increased DD base sub_attack from 1 to 5 ( for same resons as above ).
 - Lowered hit chance of depth charges significantly.
-- Lowered the time that submarines remain detected for from 20 to 6 hours.
+- Lowered the time that submarines remain detected for from 20 to 8 hours.
 - Added back half of the torpedo attack values that was removed from 1922 and 1936 submarine torpedo modules in version 0.7 of the mod.
 - Limited floatplanes modules to a maximum of 2 per Cruiser.
+- Removed the 3:ed Torpedo slot from 1940 submarines to make them easier to balance ( 1944 model still has it ).
 - Reduced radar max range by 40% to make it harder to cover entire Atlantic and Pacific seazones with radar early on.
 - Reduced the range of all levels of TAC and NAV bombers by 200 km.
-- Added significant Anti Air to submarines to reduce damage they take from NAV/TAC bombing ( this will result in NAVs getting shot down, not ideal but I think reasonable for balancing ).
+- Added a bit of Anti Air to submarines to reduce damage they take from NAV/TAC bombing ( this will result in NAVs getting shot down, not ideal but I think reasonable for balancing ).
 - Tweaked the Anti Air damage reduction formula to put more emphasis on the ship getting targeted than fleet total. This should both help smaller submarine fleets survival and discourage doomstacks.
 - Increased submarines reliability significantly to reduce chance of sinking from NAV/TAC bombing critical hits.
 - Changed spotting speed of unit transfers and invasions to be 2 and 4 times the spotting speed of regular convoys respectively instead of 50? ( not sure how defines interact ) times as high.
@@ -17,6 +19,10 @@
 - Reduced naval supremacy per ship from 100 to 1, meaning ships costing more IC/manpower like BBs will be much better for supremacy/sending through invasions than submarine or DD spam.
 - Adjusted the emergency convoy shipbuilding NFs requirements added in 0.8 to take into account that convoys in use are also considered "in stockpile" by the Paradox game logic.
 - Special forces techs can now be boosted by using army XP.
+- Added some Army XP to UK NFs ( They only get a total of 15 Army XP in vanilla ), and a few trucks to their tank template.
+- Removed about 20 airbase levels in total from Southern and Central UK, if you want to run a large bombing campaign you need to build them up yourself as was done historically!
+- Removed all default modules from 1922 and 1936 ships ( no more Battlecruisers with BB armor and lvl 1 engines ).
+
 
 0.8
 - Merged in changes from patch 1.7.1 where suitable.

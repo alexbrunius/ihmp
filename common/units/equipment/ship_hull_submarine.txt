@@ -39,13 +39,7 @@ equipments = {
 		module_count_limit = {
 			category = ship_radar
 			count < 2
-		}
-		
-		default_modules = {
-			fixed_ship_torpedo_slot = empty
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
+		}		
 		
 		lg_armor_piercing = 0
 		lg_attack = 0
@@ -159,13 +153,6 @@ equipments = {
 					ship_sub_snorkel
 				}
 			}
-			rear_1_custom_slot = front_1_custom_slot
-		}
-
-		default_modules = {
-			front_1_custom_slot = empty
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
 		}
 		
 		sub_visibility = 18
@@ -272,12 +259,6 @@ equipments = {
 				}
 			}
 		}
-
-		default_modules = {
-			front_1_custom_slot = empty
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
 		
 		sub_visibility = 20
 		naval_speed = 11
@@ -304,12 +285,6 @@ equipments = {
 		priority = 2500
 		
 		module_slots = inherit
-		
-		default_modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
 
 		lg_armor_piercing = 0
 		lg_attack = 0 # Their main weapon is torpedo_attack.
@@ -350,12 +325,7 @@ equipments = {
 		priority = 2500
 		parent = submarine_1
 		module_slots = inherit
-		
-		default_modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_torpedo_sub_1
-		}
+
 		lg_armor_piercing = 0
 		lg_attack = 0
 		torpedo_attack = 0
@@ -395,12 +365,7 @@ equipments = {
 		priority = 2500
 		parent = submarine_2
 		module_slots = inherit
-		
-		default_modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_torpedo_sub_1
-		}
+
 		lg_armor_piercing = 0
 		lg_attack = 0
 		torpedo_attack = 12
