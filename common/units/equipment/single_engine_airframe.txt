@@ -690,7 +690,7 @@ equipments = {
 		archetype = nav_bomber_equipment
 		priority = 60
 
-		air_range = 1800
+		air_range = 1600
 		maximum_speed = 430
 		air_agility =20
 		air_attack = 6
@@ -711,7 +711,7 @@ equipments = {
 		parent = nav_bomber_equipment_1
 		priority = 60
 
-		air_range = 2200
+		air_range = 2000
 		maximum_speed = 440 
 		air_agility = 25
 		air_attack = 10 
@@ -737,7 +737,7 @@ equipments = {
 		parent = nav_bomber_equipment_2
 		priority = 60
 
-		air_range = 2600
+		air_range = 2400
 		maximum_speed = 480
 		air_agility = 30
 		air_attack = 14

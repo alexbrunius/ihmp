@@ -1,11 +1,21 @@
 ﻿0.9
 - Fixed back the reduced General command capacity to assignable General traits that was accidentally removed in 0.8
-- Gave submarines 5 times as much hitpoints ( to help them survive vs Naval bombers ).
-- Gave DD depth charges 12.5 times as much sub_attack and limited them to 1 per DD to promote refitting / using older DDs for ASW duties ( as historical ), and to make it easier/cheaper to defend combat fleets from subs.
-- Increased DD base sub_attack from 1 to 10 ( for same resons as above )
+- Gave submarines 5 times as much hitpoints ( to help them survive vs Naval bombers and make the Battle of the Atlantic more of an attritional fight ).
+- Gave DD depth charges 5 times as much sub_attack and limited them to 1 module per DD to promote refitting / using older DDs for ASW duties ( as historical ), and to make it more feasible to use in fleet Destroyers.
+- Increased DD base sub_attack from 1 to 5 ( for same resons as above )
+- Lowered hit chance of depth charges significantly.
+- Lowered the time that submarines remain detected for from 20 to 6 hours.
+- Added back half of the torpedo attack values that was removed from 1922 and 1936 submarine torpedo modules in version 0.7 of the mod.
+- Limited floatplanes modules to a maximum of 2 per Cruiser.
+- Reduced radar max range by 40% to make it harder to cover entire Atlantic and Pacific seazones with radar early on.
+- Reduced the range of all levels of TAC and NAV bombers by 200 km.
+- Added significant Anti Air to submarines to reduce damage they take from NAV/TAC bombing ( this will result in NAVs getting shot down, not ideal but I think reasonable for balancing ).
+- Tweaked the Anti Air damage reduction formula to put more emphasis on the ship getting targeted than fleet total. This should both help smaller submarine fleets survival and discourage doomstacks.
+- Increased submarines reliability significantly to reduce chance of sinking from NAV/TAC bombing critical hits.
+- Changed spotting speed of unit transfers and invasions to be 2 and 4 times the spotting speed of regular convoys respectively instead of 50? ( not sure how defines interact ) times as high.
 - Removed steel resource cost from dual purpose guns and light guns lvl 4.
-
-
+- Reduced naval supremacy per ship from 100 to 1, meaning ships costing more IC/manpower like BBs will be much better for supremacy/sending through invasions than submarine or DD spam.
+- Adjusted the emergency convoy shipbuilding NFs requirements added in 0.8 to take into account that convoys in use are also considered "in stockpile" by the Paradox game logic.
 
 0.8
 - Merged in changes from patch 1.7.1 where suitable.

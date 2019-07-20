@@ -1,11 +1,12 @@
 
 
 -- BUILDING STUFF
-NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100		-- was 200 -- Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100			-- was 200 -- Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
 NDefines.NBuildings.BASE_FACTORY_REPAIR = 0.2			-- was 0.3 -- Default repair rate before factories are taken into account
 NDefines.NBuildings.BASE_FACTORY_REPAIR_FACTOR = 3.0	-- was 2.0 -- Factory speed modifier when repairing.
-NDefines.NBuildings.INFRA_TO_SUPPLY = 1.4					-- was 2
+NDefines.NBuildings.INFRA_TO_SUPPLY = 1.4				-- was 2
 NDefines.NBuildings.MAX_SHARED_SLOTS = 30				-- was 25 -- Max slots shared by factories
+NDefines.NBuildings.RADAR_RANGE_MAX = 120				-- was 200 -- Range is interpolated between building levels 1-15.
 
 
 -- COUNTRY STUFF
@@ -143,9 +144,10 @@ NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0.8								-- random factor in damage.
 
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.35									-- was 0.25
 
-NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE					= 0.42	-- was 0.2 -- received air damage is calculated using following: 1 - ( (ship_anti_air + fleet_anti_air * SHIP_TO_FLEET_ANTI_AIR_RATIO )^ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE ) * ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE
-NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE					= 0.10  -- was 0.15
+NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE					= 0.46	-- was 0.2 -- received air damage is calculated using following: 1 - ( (ship_anti_air + fleet_anti_air * SHIP_TO_FLEET_ANTI_AIR_RATIO )^ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE ) * ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE
+NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE					= 0.12  -- was 0.15
 NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.75	-- was 0.5 -- damage reduction for incoming air attacks is clamped to this value at maximum.
+NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO							= 0.05	-- was 0.2 -- total sum of fleet's anti air will be multiplied with this ratio and added to calculations anti-air of individual ships while air damage reduction
 
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 9                                -- was 6 -- base speed of units on water being transported
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 3.0			-- was 4.0 -- this screen ratio to num capital/carriers is needed for full screening beyond screen line
@@ -154,8 +156,41 @@ NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 3.0			-- was 4.0 -
 NDefines.NNavy.COMBAT_DETECTED_CONVOYS_FROM_SURFACE_DETECTION_STAT 				= 0.01		-- was 0.1 -- Each 1.0 of surface_detection that ship has (equipment stat), gives x% of convoys discovered from total travelling along the route.
 NDefines.NNavy.CONVOY_RAID_MAX_REGION_TO_TASKFORCE_RATIO						= 1.0		-- was 1.5 -- each taskforce in convoy raid mission can at most cover this many regions without losing efficiency
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO							= 9.0		-- was 5.0 -- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
+
+NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT 											= 6		-- was 20 -- Amount of in-game-hours that takes the submarine (with position unrevealed), to hide.
+NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT 										= 8		-- was 16 -- Amount of in-game-hours that makes the submarine visible if it is on the defender side.
+NDefines.NNavy.SUBMARINE_REVEAL_BASE_CHANCE 									= 6		-- was 12 -- Base factor for submarine detection. It's modified by the difference of a spotter's submarines detection vs submarine visibility. Use this variable for game balancing. setting this too low will cause bad spotting issues.
 NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE 							= 0.08		-- was 0.04 -- Chance of a submarine being revealed when it fires. 1.0 is 100%. this chance is then multiplied with modifier created by comparing firer's visibiility and target's detection
 NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				= 0.3  		-- was 0.5 -- screening efficiency (screen to capital ratio) at 0% positioning
+
+NDefines.NNavy.ESCAPE_SPEED_SUB_BASE 											= 0.12		-- was 0.08 -- subs get faster escape speed. gets replaced by hidden version below if hidden
+NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB 											= 0.27  	-- was 0.18 -- hidden subs get faster escape speed
+
+-- SUBMARINE BALANCE TWEAKS 0.9
+	
+NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
+		90.0,						-- was 90 -- big guns
+		135.0,						-- was 145 -- torpedos
+		40.0,						-- was 40 -- small guns
+	}
+
+NDefines.NNavy.DEPTH_CHARGES_HIT_CHANCE_MULT 				= 0.6 			-- was 1.1	-- multiplies hit chance of small guns
+NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE 					= 130.0			-- was 100 -- hit profile for depth charges
+NDefines.NNavy.DEPTH_CHARGES_DAMAGE_MULT 					= 1.1 			-- was 0.7 -- multiplies damage of depth charges
+
+NDefines.NNavy.CONVOY_SPOTTING_SPEED_MULT 					= 1.2			-- was 1.0 -- spotting speed mult against convoys
+NDefines.NNavy.UNIT_TRANSFER_SPOTTING_SPEED_MULT 			= 2.0			-- was 2.0 -- spotting speed mult against unit transfers
+NDefines.NNavy.NAVAL_INVASION_SPOTTING_SPEED_MULT 			= 4.0			-- was 4.0 -- spotting speed mult against naval invasion armies
+
+NDefines.NNavy.UNIT_TRANSFER_DETECTION_CHANCE_BASE = 4.12						 -- was 8.0 now same as convoys -- unit transfer and naval invasion base chance detection percentage (if this fails, no detection is done on that tick)
+NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 0.05	 -- was 2.4 now same as convoys 	-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
+NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 0.50	 -- was 0.12 now same as convoys  -- same as SPOTTING_SPEED_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
+NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 0.05	 -- was 2.4 now same as convoys 	-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval invasion convoys
+NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 0.50  -- was 0.12 now same as convoys 	-- same as SPOTTING_SPEED_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval invasion convoys
+
+NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.05			-- was 0.05	unchanged			-- supremacy of a ship is calculated using its IC, manpower and a base define
+NDefines.NNavy.SUPREMACY_PER_SHIP_PER_IC = 0.01					-- was 0.005
+NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 1.0					-- was 100
 
 -- PRODUCTION STUFF
 NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 10					-- was 15 -- Max number of factories that can be assigned a single production line.

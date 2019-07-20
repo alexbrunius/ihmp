@@ -5919,7 +5919,7 @@ focus_tree = {
 		prerequisite = { focus = USA_liberty_ships }
 		available = {
 			has_war_with = JAP
-			has_equipment = { convoy_1 < 200 }
+			has_equipment = { convoy_1 < 400 }
 		}
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 0
