@@ -1,0 +1,33 @@
+###########################
+# Improved Historical Multiplayer Turkey Events
+###########################
+
+add_namespace = ihmp_turkey
+
+country_event = {
+	id = ihmp_turkey.1
+	title = ihmp_turkey.1.t
+	desc = ihmp_turkey.1.d
+	picture = GFX_report_event_dead_soldiers
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+		tag = TUR
+		OR = {
+			gives_military_access_to = GER
+			gives_military_access_to = ITA
+			gives_military_access_to = SOV
+		}
+		has_idea = neutrality_idea
+	}
+
+	option = { 
+		name = ihmp_turkey.1.a
+		ai_chance = { factor = 100 }
+		remove_ideas = neutrality_idea
+	}
+}
