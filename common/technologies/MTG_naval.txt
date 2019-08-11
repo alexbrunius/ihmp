@@ -3024,6 +3024,10 @@ early_ship_hull_carrier = {
 				factor = 6
 			}
 			modifier = {
+				tag = ROM
+				factor = 0
+			}
+			modifier = {
 				has_war = yes
 				factor = 2
 			}
@@ -3070,6 +3074,10 @@ early_ship_hull_carrier = {
 					tag = SOV
 				}
 				factor = 6
+			}
+			modifier = {
+				tag = ROM
+				factor = 0
 			}
 		}
 		

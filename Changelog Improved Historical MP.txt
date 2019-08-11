@@ -1,4 +1,7 @@
-﻿0.9
+﻿0.10
+- Removed mining capabilities and research priorities from Romania to prevent the Black Sea being 100% mined when Barbarossa starts.
+
+0.9
 - Fixed back the reduced General command capacity to assignable General traits that was accidentally removed in 0.8
 - Skilled staffer can be gained if you have 18 or more divisions in an army instead of 24.
 - Gave submarines 5 times as much hitpoints ( to help them survive vs Naval bombers and make the Battle of the Atlantic more of an attritional fight ).
