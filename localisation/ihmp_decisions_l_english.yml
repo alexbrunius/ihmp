@@ -18,4 +18,6 @@
  operation_sabine_desc:0 "The British invasion of Iraq"
  operation_polarfuchs:0 "Operation Polarfuchs"
  operation_polarfuchs_desc:0 "The German invasion of Sweden"
-
+ operation_valentine:0 "Operation Valentine"
+ operation_valentine_desc:0 "British occupation of the Faroe Islands"
+ 
