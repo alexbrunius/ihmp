@@ -1,5 +1,6 @@
 ﻿0.10
 - Removed mining capabilities and research priorities from Romania to prevent the Black Sea being 100% mined when Barbarossa starts.
+- Included Bermuda in Destroyers for Bases NF.
 
 0.9
 - Fixed back the reduced General command capacity to assignable General traits that was accidentally removed in 0.8
