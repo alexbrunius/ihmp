@@ -153,3 +153,65 @@ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 		}
 	}
 }
+
+DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_volunteers
+				option = FREE
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_volunteers
+				option = LIMITED
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_volunteers
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_VOLUNTEERS_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_volunteers
+				option = HISTORICAL
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_VOLUNTEERS_HISTORICAL_TT
+			OR = {
+				tag = GER
+				tag = ITA
+				tag = SOV
+				tag = USA
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_volunteers
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_VOLUNTEERS_BLOCKED_TT
+			always = no
+		}
+	}
+}

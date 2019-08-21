@@ -6,6 +6,7 @@
 - Changed Operation Fork to annex Iceland with a WS penalty for UK.
 - Soviet Claim the Straits NF now gives a wargoal against Turkey.
 - Added new licensing rule allowing licensing within faction and between Allies and Soviets if they are at war with Germany, Italy or Japan.
+- Added new volunteer rule allowing them only to Germany, Italy, USA or Japan.
 
 0.9
 - Fixed back the reduced General command capacity to assignable General traits that was accidentally removed in 0.8

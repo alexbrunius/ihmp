@@ -180,6 +180,11 @@ allow_volunteers = {
 		name = "LIMITED"
 		text = "RULE_OPTION_LIMITED"
 		desc = "RULE_ALLOW_VOLUNTEERS_LIMITED_DESC"
+	}	
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "RULE_ALLOW_VOLUNTEERS_HISTORICAL_DESC"
 	}
 	option = {
 		name = SAME_IDEOLOGY

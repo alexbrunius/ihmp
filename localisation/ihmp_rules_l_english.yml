@@ -1,7 +1,8 @@
 ﻿l_english:
  ALT_HISTORY_FOCUS:0 "Alternative History National Focus"
  ALT_HISTORY_ALLOWED_DESC:0 "Alternative History National Focuses are allowed"
- ALT_HISTORY_BLOCKED_DESC:0 "Alternative History National Focuses are blocked"
  RULE_OPTION_SAME_FACTION_SOVIET_ALLIES:0 "Same Faction & Soviet-Allies v Axis"
  RULE_ALLOW_LICENSING_SAME_FACTION_SOVIET_ALLIES_DESC:0 "Countries may only acquire production licenses from countries in the same faction or between the Soviet Union and Allies if both are at war with the Axis."
  RULE_ALLOW_LICENSING_SAME_FACTION_SOVIET_ALLIES_TT:0 "Game Rule: §RCountries may only acquire production licenses from countries in the same faction or between the Soviet Union and Allies if both are at war with the Axis.§!"
+RULE_ALLOW_VOLUNTEERS_HISTORICAL_TT:0 "Game Rule: §ROnly Italy, Germany, USA and Soviet Union can send volunteers.§!"
+RULE_ALLOW_VOLUNTEERS_HISTORICAL_DESC:0 "Game Rule: Only Italy, Germany, USA and Soviet Union can send volunteers."
