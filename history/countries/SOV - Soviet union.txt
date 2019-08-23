@@ -1133,7 +1133,7 @@ if = {
 				fixed_ship_engine_slot = sub_ship_engine_3
 				front_1_custom_slot = ship_mine_layer_sub
 				mid_1_custom_slot = empty
-				rear_1_custom_slot = ship_torpedo_sub_2
+				#rear_1_custom_slot = ship_torpedo_sub_2
 			}
 		}
 		# Destroyers #
