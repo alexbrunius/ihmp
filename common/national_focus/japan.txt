@@ -5500,16 +5500,6 @@ focus_tree = {
 
 		}
 
-		bypass = {
-			OR = {
-				has_tech = ship_hull_super_heavy
-				AND = {
-					has_tech = heavy_battleship
-					has_tech = heavy_battleship2
-				}
-			}
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -5517,10 +5507,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = JAP_the_ultimate_battleship
-				bonus = 3.0
-				uses = 1
-				category = shbb_tech	
+				name = JAP_Ultimate_Battleship
+				bonus = 1.00
+				uses = 3
+				category = cat_fleet_in_being
 			}
 		}
 	}
