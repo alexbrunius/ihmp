@@ -7,6 +7,11 @@
 - Soviet Claim the Straits NF now gives a wargoal against Turkey.
 - Added new licensing rule allowing licensing within faction and between Allies and Soviets if they are at war with Germany, Italy or Japan.
 - Added new volunteer rule allowing them only to Germany, Italy, USA or Japan.
+- Japans NF "Ultimate Battleship" now gives 3 x 100% research bonuses to Fleet in Being
+- Gave USA back 2 starting techs that were accidentaly removed by failed merge in prior version.
+- Added 3 new twin engine Graphics / Names for UK Naval Bombers.
+- Updated commonwealth aircraft to match the above.
+- Added 6 new/tweaked Graphics for German Naval / Carrier Torpedo Bombers ( No more floatplanes ).
 
 0.9
 - Fixed back the reduced General command capacity to assignable General traits that was accidentally removed in 0.8
