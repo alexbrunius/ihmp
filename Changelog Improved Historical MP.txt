@@ -12,6 +12,7 @@
 - Added 3 new twin engine Graphics / Names for UK Naval Bombers.
 - Updated commonwealth aircraft to match the above.
 - Added 6 new/tweaked Graphics for German Naval / Carrier Torpedo Bombers ( No more floatplanes ).
+- Temporarily remove democratic influence on Coerce Spain due to the infuence bug.
 
 0.9
 - Fixed back the reduced General command capacity to assignable General traits that was accidentally removed in 0.8
