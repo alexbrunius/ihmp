@@ -13,6 +13,13 @@
 - Updated commonwealth aircraft to match the above.
 - Added 6 new/tweaked Graphics for German Naval / Carrier Torpedo Bombers ( No more floatplanes ).
 - Temporarily remove democratic influence on Coerce Spain due to the infuence bug.
+- Removed 3 dockyards from USA emergency convoy building NF.
+- Added a new USA NF "Second Vinson Act" available after Anschluss and Japan in war with China that gives 4 dockyards.
+- Moved USA NF Advanced Mahanian Doctrine to be available after "Second Vinson Act".
+- Moved USA NF Fund the Navy to below Maritime Commission, locked it behind being at war and added an additional +15% construction speed to dockyards ( 25% total with Maritime Commission ).
+- Added an extremly severe National Spirit to USA "Isolationist Navy and Pacific Defense" which gives severe penalties to Navy & Air Experience gain, Dockyard output and construction of Air bases, Naval bases, Land/Coastal Forts, Anti Air and Radar stations as well as a large penalty to Naval doctrine research.
+- The above National Spirit can be gradually lessened by taking the "Second Vinson Act" and "Two Oceans Navy Act", but not completely removed before USA goes to war. The intention here is to include our house rule that USA can't build forts into the mod in a more dynamic fashion.
+- Changed the Japanese NF "Secure the Philippines" to also give a war goal vs USA.
 
 0.9
 - Fixed back the reduced General command capacity to assignable General traits that was accidentally removed in 0.8

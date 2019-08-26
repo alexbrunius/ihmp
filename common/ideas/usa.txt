@@ -20,7 +20,6 @@ ideas = {
 				conscription_factor = -0.5
 				join_faction_tension = 0.20
 				local_resources_factor = -0.2
-				industrial_capacity_dockyard = -0.4
 				training_time_factor = 2.0
 			}
 		}
@@ -66,8 +65,97 @@ ideas = {
 				conscription_factor = -0.2
 				join_faction_tension = 0.20
 				local_resources_factor = -0.1
+				training_time_factor = 1.0
 			}
 		}
+		sleeping_navy = {
+			picture = generic_naval_manufacturer_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = -0.6
+				production_speed_air_base_factor = -1.05
+				production_speed_naval_base_factor = -1.05
+				production_speed_bunker_factor = -1.1
+				production_speed_coastal_bunker_factor = -1.1
+				production_speed_anti_air_building_factor = -1.1
+				production_speed_radar_station_factor = -1.1
+				experience_gain_destroyer_training_factor = -0.7
+				experience_gain_navy_factor = -0.7
+				experience_gain_air_factor = -0.3
+			}
+			research_bonus = {
+				naval_doctrine = -0.9
+			}
+		}
+		sleeping_navy_2 = {
+			picture = generic_naval_manufacturer_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = -0.4
+				production_speed_air_base_factor = -0.90
+				production_speed_naval_base_factor = -0.90
+				production_speed_bunker_factor = -1.05
+				production_speed_coastal_bunker_factor = -1.05
+				production_speed_anti_air_building_factor = -1.0
+				production_speed_radar_station_factor = -1.0
+				experience_gain_destroyer_training_factor = -0.47
+				experience_gain_navy_factor = -0.47
+				experience_gain_air_factor = -0.2
+			}
+			research_bonus = {
+				naval_doctrine = -0.6
+			}
+		}
+		sleeping_navy_3 = {
+			picture = generic_naval_manufacturer_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = -0.2
+				production_speed_air_base_factor = -0.75
+				production_speed_naval_base_factor = -0.75
+				production_speed_bunker_factor = -1.0
+				production_speed_coastal_bunker_factor = -1.0
+				production_speed_anti_air_building_factor = -0.9
+				production_speed_radar_station_factor = -0.9
+				experience_gain_destroyer_training_factor = -0.23
+				experience_gain_navy_factor = -0.23
+				experience_gain_air_factor = -0.1
+			}
+			research_bonus = {
+				naval_doctrine = -0.3
+			}
+		}
+		
 		USA_limited_intervention = {
 			picture = generic_production_bonus
 			
@@ -333,6 +421,22 @@ ideas = {
 			
 			modifier = {
 				production_speed_dockyard_factor = 0.1	
+			}
+		}
+		USA_maritime_commission_2 = {
+			picture = generic_sea_focused_navy
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.25
 			}
 		}
 		USA_us_air_force = {

@@ -1510,6 +1510,11 @@ focus_tree = {
 				type = puppet_wargoal_focus
 				expire = 0
 			}
+			create_wargoal = {
+				target = "USA"
+				type = annex_everything
+				expire = 0
+			}
 			add_ai_strategy = {
 				type = conquer
 				id = "PHI"

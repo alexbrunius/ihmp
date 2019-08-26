@@ -5363,13 +5363,128 @@ focus_tree = {
 #  # #  #  # #    #         # #   #  #  #   #  #  # #  # 
 #  # #  #   #     #       ##  ###  ##   #  ###  ##  #  # 
 
+	
 	focus = {
-		id = USA_two_ocean_navy_act
-		icon = GFX_focus_generic_navy_battleship2
+		id = USA_second_vinson_act
+		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 8
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			if = {
+				limit = {
+					threat < 0.5
+					has_war = no
+				}
+				congress_high_support_trigger = yes
+			}
+			else = {
+				congress_low_support_trigger = yes
+			}
+			AND = {
+				JAP = {
+					has_offensive_war = yes
+					}
+				GER = {
+					has_completed_focus = GER_anschluss
+				}
+			}
+			controls_state = 362
+			controls_state = 363
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			362 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			363 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					 has_war_support < 0.4 
+				}
+				USA_congress_medium_opposition = yes
+			}
+			if = { 
+				limit = { 
+					362 = {
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				362 = { 
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = { 
+				limit = { 
+					363 = {
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				363 = { 
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			swap_ideas = {
+					remove_idea = sleeping_navy
+					add_idea = sleeping_navy_2
+				}
+		}
+	}
+	focus = {
+		id = USA_two_ocean_navy_act
+		icon = GFX_focus_generic_navy_battleship2
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_second_vinson_act }
+		relative_position_id = USA_second_vinson_act
 		cost = 10
 
 		ai_will_do = {
@@ -5469,6 +5584,10 @@ focus_tree = {
 					}
 				}
 			}
+			swap_ideas = {
+					remove_idea = sleeping_navy_2
+					add_idea = sleeping_navy_3
+				}
 		}
 	}
 	focus = {
@@ -5567,10 +5686,10 @@ focus_tree = {
 	focus = {
 		id = USA_advanced_mahanian_doctrine
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = USA_battleship_primacy }
-		x = 0
+		prerequisite = { focus = USA_second_vinson_act }
+		x = 2
 		y = 1
-		relative_position_id = USA_battleship_primacy
+		relative_position_id = USA_second_vinson_act
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -5593,7 +5712,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_coastal
 		x = 0
 		y = 2
-		prerequisite = { focus = USA_advanced_mahanian_doctrine }
+		prerequisite = { focus = USA_battleship_primacy }
 		relative_position_id = USA_battleship_primacy
 		cost = 10
 
@@ -5816,7 +5935,7 @@ focus_tree = {
 		id = USA_unrestricted_submarine_warfare
 		icon = GFX_goal_generic_wolf_pack
 		x = 3
-		y = 2
+		y = 3
 		prerequisite = { focus = USA_fleet_submarines }
 		relative_position_id = USA_bureau_of_ships
 		cost = 10
@@ -5845,15 +5964,20 @@ focus_tree = {
 	focus = {
 		id = USA_fund_the_navy
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 7
-		y = 1
-		relative_position_id = USA_two_ocean_navy_act
+		x = 1
+		y = 2
+		relative_position_id = USA_maritime_commission
 		cost = 10
-		prerequisite = { focus = USA_two_ocean_navy_act }
+		prerequisite = { focus = USA_maritime_commission }
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = {
+			OR = { 
+				has_war_with = JAP
+				has_war_with = GER
+			}
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -5863,16 +5987,21 @@ focus_tree = {
 				bonus = 1.0
 				category = naval_doctrine
 			}
+			swap_ideas = {
+				remove_idea = USA_maritime_commission
+				add_idea = USA_maritime_commission_2
+			}
+			
 		}
 	}
 
 	focus = {
 		id = USA_expand_the_USMC
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = USA_fund_the_navy }
-		x = 0
+		prerequisite = { focus = USA_two_ocean_navy_act }
+		x = 6
 		y = 1
-		relative_position_id = USA_fund_the_navy
+		relative_position_id = USA_two_ocean_navy_act
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -5896,7 +6025,7 @@ focus_tree = {
 		icon = GFX_goal_generic_amphibious_assault
 		prerequisite = { focus = USA_expand_the_USMC }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = USA_expand_the_USMC
 		cost = 10
 		#ai_will_do = {
@@ -5923,7 +6052,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = USA_liberty_ships
 		cost = 10
 		ai_will_do = {
@@ -5949,10 +6078,10 @@ focus_tree = {
 					}
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = USA_convoy_focus_2_3dockyard
@@ -5967,10 +6096,10 @@ focus_tree = {
 					}
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = USA_convoy_focus_2_3dockyard
@@ -5985,10 +6114,10 @@ focus_tree = {
 					}
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = USA_convoy_focus_2_3dockyard

@@ -20,6 +20,39 @@ on_actions = {
 				}
 				ENG = { remove_resource_rights = 291 }
 			}
+			if = {
+				limit = {
+					FROM = { tag = USA }
+				}
+				USA = { country_event = { id = usa.70 } }
+			}
+			if = {
+				limit = {
+					FROM = { tag = PHI }
+					ROOT = { tag = JAP }
+				}
+				USA = { country_event = { id = usa.70 } }
+			}
+			if = {
+				limit = {
+					FROM = { tag = INS }
+					ROOT = { tag = JAP }
+				}
+				USA = { country_event = { id = usa.70 } }
+			}
+			if = {
+				limit = {
+					FROM = { tag = MAL }
+					ROOT = { tag = JAP }
+				}
+				USA = { country_event = { id = usa.70 } }
+			}
+			if = {
+				limit = {	
+					ROOT = { tag = USA }
+				}
+				USA = { country_event = { id = usa.70 } }
+			}
 		}
 	}
 	
