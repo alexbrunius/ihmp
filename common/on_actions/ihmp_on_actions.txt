@@ -1,4 +1,16 @@
 on_actions = {
+	#FROM is faction leader on join faction requests.
+	on_join_faction = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = ENG }
+					tag = USA
+				}
+				country_event = { id = usa.70 }
+			}
+		}
+	}
 	on_declare_war = {
 		effect = {
 			if = {
@@ -19,39 +31,6 @@ on_actions = {
 					FROM = { tag = IRQ }
 				}
 				ENG = { remove_resource_rights = 291 }
-			}
-			if = {
-				limit = {
-					FROM = { tag = USA }
-				}
-				USA = { country_event = { id = usa.70 } }
-			}
-			if = {
-				limit = {
-					FROM = { tag = PHI }
-					ROOT = { tag = JAP }
-				}
-				USA = { country_event = { id = usa.70 } }
-			}
-			if = {
-				limit = {
-					FROM = { tag = INS }
-					ROOT = { tag = JAP }
-				}
-				USA = { country_event = { id = usa.70 } }
-			}
-			if = {
-				limit = {
-					FROM = { tag = MAL }
-					ROOT = { tag = JAP }
-				}
-				USA = { country_event = { id = usa.70 } }
-			}
-			if = {
-				limit = {	
-					ROOT = { tag = USA }
-				}
-				USA = { country_event = { id = usa.70 } }
 			}
 		}
 	}
