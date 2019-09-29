@@ -20,6 +20,7 @@
 - Added an extremly severe National Spirit to USA "Isolationist Navy and Pacific Defense" which gives severe penalties to Navy & Air Experience gain, Dockyard output and construction of Air bases, Naval bases, Land/Coastal Forts, Anti Air and Radar stations as well as a large penalty to Naval doctrine research.
 - The above National Spirit can be gradually lessened by taking the "Second Vinson Act" and "Two Oceans Navy Act", but not completely removed before USA goes to war. The intention here is to include our house rule that USA can't build forts into the mod in a more dynamic fashion.
 - Changed the Japanese NF "Secure the Philippines" to also give a war goal vs USA.
+- Enabled Tizard Mission when US is at war.
 
 0.9
 - Fixed back the reduced General command capacity to assignable General traits that was accidentally removed in 0.8
