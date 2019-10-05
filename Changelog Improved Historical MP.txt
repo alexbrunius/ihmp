@@ -1,4 +1,5 @@
 ﻿0.11
+- Nerfed Marines river crossing (40->20%) and marsh (30->20%) terrain bonuses.
 - Republican Spain now joins Commintern when they win SCW.
 - Added events to transfer convoys from FRA/HOL/BEL/NOR/DEN when at war with Germany to prevent Axis having 1000 convoys for free.
 
