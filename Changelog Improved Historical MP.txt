@@ -1,4 +1,7 @@
-﻿0.10
+﻿0.11
+- Republican Spain now joins Commintern when they win SCW.
+
+0.10
 - Removed mining capabilities and research priorities from Romania to prevent the Black Sea being 100% mined when Barbarossa starts.
 - Included Bermuda in Destroyers for Bases NF.
 - Made Turkey lose neutrality when they give MA to Germany, Italy or Soviets.
