@@ -1,5 +1,6 @@
 ﻿0.11
 - Republican Spain now joins Commintern when they win SCW.
+- Added events to transfer convoys from FRA/HOL/BEL/NOR/DEN when at war with Germany to prevent Axis having 1000 convoys for free.
 
 0.10
 - Removed mining capabilities and research priorities from Romania to prevent the Black Sea being 100% mined when Barbarossa starts.

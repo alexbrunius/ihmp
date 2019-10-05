@@ -1,0 +1,62 @@
+﻿###########################
+# Improved Historical Multiplayer Turkey Events
+###########################
+
+add_namespace = ihmp_convoys
+
+country_event = {
+	id = ihmp_convoys.1
+	title = ihmp_convoys.1.t
+	desc = ihmp_convoys.1.d
+	picture = GFX_report_event_hol_polderen
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {
+		has_defensive_war_with = GER
+		is_ai = yes
+		has_capitulated = no
+		OR = {
+			tag = HOL
+			tag = BEL
+			tag = DEN
+			tag = NOR
+			tag = FRA
+		}
+		has_equipment = {
+			convoy_1 > 50
+		}
+	}
+
+	option = { 
+		name = ihmp_convoys.1.a
+		ai_chance = { factor = 100 }
+		add_equipment_to_stockpile = {
+			type = convoy_1
+			amount = -50
+		}
+		ENG = {
+			country_event = { id = ihmp_convoys.2 }
+		}
+	}
+}
+
+country_event = {
+	id = ihmp_convoys.2
+	title = ihmp_convoys.2.t
+	desc = ihmp_convoys.2.d
+	picture = GFX_report_event_hol_polderen
+	is_triggered_only = yes
+	
+	option = { 
+		name = ihmp_convoys.2.a
+		ai_chance = { factor = 100 }
+		add_equipment_to_stockpile = {
+			type = convoy_1
+			amount = 50
+		}
+	}
+}

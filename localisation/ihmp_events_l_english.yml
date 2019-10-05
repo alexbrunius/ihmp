@@ -3,7 +3,7 @@
  amm_soviet.1.d:0 "Due to the surprise, speed and ferocity of the Axis invaders our army and airforce is in a state of complete shock"
  amm_soviet.1.a:0 "The Soviet will endure!"
  amm_soviet.2.t:0 "Recovery from Shock"
- amm_soviet.2.d:0 "We are slowly starting to recover from the shock of Facist invaders, and our Leadership is starting to grasp the monumental task ahead of us if Soviet Union is to survive as a nation."
+ amm_soviet.2.d:0 "We are slowly starting to recover from the shock of Facist invaders, and our Leadership is starting to g`rasp the monumental task ahead of us if Soviet Union is to survive as a nation."
  amm_soviet.2.a:0 "The Soviet will endure!"
  amm_soviet.2.a_tt:0 "Our Divisions are now recieving maps of their current locations instead of maps of Germany.\n"
  amm_soviet.3.t:0 "Recovery from Shock"
@@ -18,4 +18,6 @@
  usa.70.desc:0 "With war declared and our Battleships burning the Navy and Politicians no longer see much reason to pursuit an isolationist path."
  usa.70.a:0 "Let's rearm and prepare!"
  usa.70.a_tt:0 "§YA date which will live in infamy!§!"
- 
+ ihmp_convoys.2.t:0 "[From.GetAdjective] convoys evacuated"
+ ihmp_convoys.2.d:0 "Facing German invasion [From.GetAdjective] government has started evacuating convoys to prevent them from being seized by the enemy."
+ ihmp_convoys.2.a:0 "Splendid"
