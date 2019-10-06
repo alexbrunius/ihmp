@@ -192,6 +192,8 @@ NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.05			-- was 0.05	unchanged			
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_IC = 0.01					-- was 0.005
 NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 1.0					-- was 100
 
+NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 10		-- was 100
+
 -- PRODUCTION STUFF
 NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 10					-- was 15 -- Max number of factories that can be assigned a single production line.
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 30						-- was 15
