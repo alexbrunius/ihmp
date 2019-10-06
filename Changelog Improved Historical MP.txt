@@ -8,6 +8,7 @@
 - US only gets 15% stability hit in defensive war.
 - Croatia now gets puppeted by Germany when they form.
 - Bhutan, Nepal and Tibet are now neutral.
+- Added decision for SOV to demand Bessarabia (to be used when GER NAP is active).
 
 0.10
 - Removed mining capabilities and research priorities from Romania to prevent the Black Sea being 100% mined when Barbarossa starts.
