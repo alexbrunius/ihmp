@@ -295,6 +295,14 @@ operations = {
 				556 = { is_owned_by = VIC } # French West Africa
 				557 = { is_owned_by = VIC } # Mauritania
 				272 = { is_owned_by = VIC } # Senegal
+				786 = { is_owned_by = VIC } # Mauritanian Desert
+				782 = { is_owned_by = VIC } # Tomboctou
+				781 = { is_owned_by = VIC } # Niger
+				776 = { is_owned_by = VIC } # Dahomey
+				777 = { is_owned_by = VIC } # Togo
+				778 = { is_owned_by = VIC } # Upper Volta
+				779 = { is_owned_by = VIC } # Ivory Coast
+				780 = { is_owned_by = VIC } # Guinea
 			}
 			OR = {
 				divisions_in_state = { state = 539 size > 1 } # Gabon
@@ -325,6 +333,14 @@ operations = {
 			FRA = { transfer_state = 556 } # French West Africa
 			FRA = { transfer_state = 557 } # Mauritania
 			FRA = { transfer_state = 272 } # Senegal
+			FRA = { transfer_state = 786 } # Mauritanian Desert
+			FRA = { transfer_state = 782 } # Tomboctou
+			FRA = { transfer_state = 781 } # Niger
+			FRA = { transfer_state = 776 } # Dahomey
+			FRA = { transfer_state = 777 } # Togo
+			FRA = { transfer_state = 778 } # Upper Volta
+			FRA = { transfer_state = 779 } # Ivory Coast
+			FRA = { transfer_state = 780 } # Guinea
 			hidden_effect = { set_country_flag = battle_of_gabon }
 		}
 	}

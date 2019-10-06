@@ -625,31 +625,10 @@ country_event = {
 					ideology = fascism
 					size = 0.9
 					capital = 26
-					states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 }
+					states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 776 777 778 779 780 781 782 786}
 					states_filter = {
 						owner = { original_tag = FRA }
-						OR = {		
-							# lets not involve syria or tunisia in civil war flip if occupied by other party
-							AND = {
-								OR = {
-									state = 554
-									state = 680
-									state = 677
-									state = 458
-								}
-								controller = { # FRA not controller
-									original_tag = FRA
-								}
-							}
-							NOT = {
-								OR = {
-									state = 554
-									state = 680
-									state = 677
-									state = 458
-								}
-							}
-						}
+						controller = { NOT = { original_tag = FRA } }
 					}
 				}
 			}
@@ -672,7 +651,6 @@ country_event = {
 
 			VIC = {
 				set_politics = {
-
 					ruling_party = fascism
 					elections_allowed = no
 				}
@@ -709,7 +687,7 @@ country_event = {
 					value = -300
 				}
 				add_ai_strategy = {
-					type = befriend
+					type = ignore
 					id = "GER"
 					value = 300
 				}
