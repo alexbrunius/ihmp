@@ -6,6 +6,7 @@
 - General motors buffed to 10% factory output and now gives -15% MOT cost.
 - Ford now gives 15% MOT cost.
 - US only gets 15% stability hit in defensive war.
+- Croatia now gets puppeted by Germany when they form.
 
 0.10
 - Removed mining capabilities and research priorities from Romania to prevent the Black Sea being 100% mined when Barbarossa starts.
