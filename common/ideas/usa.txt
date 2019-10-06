@@ -1076,6 +1076,7 @@ ideas = {
 				can_create_factions = yes
 			}
 			modifier = {
+				defensive_war_stability_factor = 0.15
 				drift_defence_factor = 0.2
 				ai_badass_factor = 0.03 # cares for 3% of normal threat
 			}
@@ -2370,8 +2371,13 @@ ideas = {
 				original_tag = USA
 			}
 			
+			equipment_bonus = {
+				motorized_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+			}
 
-			
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
@@ -2456,7 +2462,12 @@ ideas = {
 				has_completed_focus = USA_wartime_industry
 			}
 			
-
+			equipment_bonus = {
+				motorized_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+			}
 			
 			research_bonus = {
 				industry = 0.15
@@ -2465,7 +2476,7 @@ ideas = {
 			traits = { industrial_concern }
 			
 			modifier = {
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.10
 			}
 		}
 	}
