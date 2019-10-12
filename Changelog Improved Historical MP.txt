@@ -9,6 +9,10 @@
 - Croatia now gets puppeted by Germany when they form.
 - Bhutan, Nepal and Tibet are now neutral.
 - Added decision for SOV to demand Bessarabia (to be used when GER NAP is active).
+- Removed Air XP gain penalty from US Isolation Navy spirits.
+- Lowered Navy XP gain slightly from US Isolation Navy spirits ( from -70% max to -60% ).
+- Increased Consumer Goods needs of all Economic laws by 5% except for Undisturbed isolation ( No change ) and Total mobilization ( 10% more ), to prevent situations where nations have no gain of running war bonds or further reducing CG.
+- Blocked Total Mobilization Economy Law from being possible to take before 1941
 
 0.10
 - Removed mining capabilities and research priorities from Romania to prevent the Black Sea being 100% mined when Barbarossa starts.

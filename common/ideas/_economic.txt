@@ -46,7 +46,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.4
+				consumer_goods_factor = 0.45
 				production_speed_arms_factory_factor = -0.4
 				production_speed_dockyard_factor = -0.4
 				conversion_cost_civ_to_mil_factor= 0.4
@@ -76,7 +76,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.35
+				consumer_goods_factor = 0.40
 				production_speed_arms_factory_factor = -0.3
 				production_speed_dockyard_factor = -0.3
 				conversion_cost_civ_to_mil_factor= 0.3
@@ -125,7 +125,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.3
+				consumer_goods_factor = 0.35
 
 				production_speed_arms_factory_factor = -0.1
 				production_speed_dockyard_factor = -0.1
@@ -158,7 +158,7 @@ ideas = {
 		partial_economic_mobilisation = {
 			
 			available = {
-				has_war_support > 0.25
+				has_war_support > 0.3
 
 				if = {
 					limit = {
@@ -184,7 +184,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.30
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.1
 				conversion_cost_civ_to_mil_factor= -0.1
@@ -255,7 +255,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.25
 				production_speed_arms_factory_factor = 0.2
 				production_speed_dockyard_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
@@ -290,6 +290,7 @@ ideas = {
 			available = {
 				has_war = yes
 				has_war_support > 0.8
+				date > 1941.1.1
 				any_enemy_country = {
 					ic_ratio = { 
 						tag = ROOT 
@@ -378,7 +379,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.10
+				consumer_goods_factor = 0.20
 				conscription = -0.03
 				production_speed_arms_factory_factor = 0.3
 				production_speed_dockyard_factor = 0.3

@@ -90,8 +90,7 @@ ideas = {
 				production_speed_anti_air_building_factor = -1.1
 				production_speed_radar_station_factor = -1.1
 				experience_gain_destroyer_training_factor = -0.7
-				experience_gain_navy_factor = -0.7
-				experience_gain_air_factor = -0.3
+				experience_gain_navy_factor = -0.6
 			}
 			research_bonus = {
 				naval_doctrine = -0.9
@@ -119,8 +118,7 @@ ideas = {
 				production_speed_anti_air_building_factor = -1.0
 				production_speed_radar_station_factor = -1.0
 				experience_gain_destroyer_training_factor = -0.47
-				experience_gain_navy_factor = -0.47
-				experience_gain_air_factor = -0.2
+				experience_gain_navy_factor = -0.4
 			}
 			research_bonus = {
 				naval_doctrine = -0.6
@@ -148,8 +146,7 @@ ideas = {
 				production_speed_anti_air_building_factor = -0.9
 				production_speed_radar_station_factor = -0.9
 				experience_gain_destroyer_training_factor = -0.23
-				experience_gain_navy_factor = -0.23
-				experience_gain_air_factor = -0.1
+				experience_gain_navy_factor = -0.2
 			}
 			research_bonus = {
 				naval_doctrine = -0.3
