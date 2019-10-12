@@ -18,6 +18,11 @@
 - Added 1940 and 1942 Sonar techs / modules.
 - Changed Sonar Ship modules to also provide + 15/20/25/30% increased depth charge attack.
 - Changed Radar Ship modules to also provide + 0/5/10/15% increased depth charge attack.
+- Lowered Submarine AA to 1/1/1/0 instead of batshit insane values.
+- Lowered Submarine hp for 1944/40/cruiser to 3x instead of 5x unmodded, and older models a bit less.
+- Lowered Submarine base buildcost to roughly half.
+- Lowered Submarine torpedo damage to roughly half of unmodded, to compensate above change.
+- Lowered Destroyer base buildcost by 25%.
 
 0.10
 - Removed mining capabilities and research priorities from Romania to prevent the Black Sea being 100% mined when Barbarossa starts.
