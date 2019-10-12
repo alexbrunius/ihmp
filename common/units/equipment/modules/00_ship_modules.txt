@@ -1926,7 +1926,10 @@ equipment_modules = {
 		
 		add_stats = {
 			sub_detection = 4
-			build_cost_ic = 40
+			build_cost_ic = 30
+		}
+		multiply_stats = {
+			sub_attack = 0.15
 		}
 	}
 
@@ -1937,7 +1940,46 @@ equipment_modules = {
 		
 		add_stats = {
 			sub_detection = 7.0
+			build_cost_ic = 40
+		}
+		multiply_stats = {
+			sub_attack = 0.2
+		}
+		can_convert_from = {
+			module_category = ship_sonar
+			convert_cost_ic = 25
+		}
+	}
+	
+	ship_sonar_3 = {
+		category = ship_sonar
+		gfx = ship_sonar_3
+		sfx = sfx_ui_sd_module_sonar
+		
+		add_stats = {
+			sub_detection = 11.0
+			build_cost_ic = 50
+		}
+		multiply_stats = {
+			sub_attack = 0.25
+		}
+		can_convert_from = {
+			module_category = ship_sonar
+			convert_cost_ic = 25
+		}
+	}
+	
+	ship_sonar_4 = {
+		category = ship_sonar
+		gfx = ship_sonar_4
+		sfx = sfx_ui_sd_module_sonar
+		
+		add_stats = {
+			sub_detection = 14.0
 			build_cost_ic = 60
+		}
+		multiply_stats = {
+			sub_attack = 0.3
 		}
 		can_convert_from = {
 			module_category = ship_sonar

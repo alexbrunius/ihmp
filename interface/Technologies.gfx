@@ -4486,6 +4486,16 @@ spriteTypes = {
 		name = "GFX_improved_sonar_medium"
 		texturefile = "gfx/interface/technologies/improved_sonar.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_advanced_sonar_medium"
+		texturefile = "gfx/interface/technologies/advanced_sonar.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_latewar_sonar_medium"
+		texturefile = "gfx/interface/technologies/latewar_sonar.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_improved_light_shell_medium"
