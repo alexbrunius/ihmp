@@ -2,8 +2,6 @@
 - Nerfed Marines river crossing (40->20%) and marsh (30->20%) terrain bonuses.
 - Republican Spain now joins Commintern when they win SCW.
 - Added events to transfer convoys from FRA/HOL/BEL/NOR/DEN when at war with Germany to prevent Axis having 1000 convoys for free.
-- Added 1940 and 1942 Sonar techs.
-- Changed Sonar modules to provide +15/20/25/30% increased depth charge attack.
 - Changing PotF now costs 10 PP instead of 100.
 - General motors buffed to 10% factory output and now gives -15% MOT cost.
 - Ford now gives 15% MOT cost.
@@ -15,6 +13,11 @@
 - Lowered Navy XP gain slightly from US Isolation Navy spirits ( from -70% max to -60% ).
 - Increased Consumer Goods needs of all Economic laws by 5% except for Undisturbed isolation ( No change ) and Total mobilization ( 10% more ), to prevent situations where nations have no gain of running war bonds or further reducing CG.
 - Blocked Total Mobilization Economy Law from being possible to take before 1941.
+- Increased Light Naval Guns Hitprofiles from 40 to 50 ( lower accuracy ).
+- Lowered Heavy Naval Guns Hitprofiles from 90 to 80 ( increased accuracy ). 
+- Added 1940 and 1942 Sonar techs / modules.
+- Changed Sonar Ship modules to also provide + 15/20/25/30% increased depth charge attack.
+- Changed Radar Ship modules to also provide + 0/5/10/15% increased depth charge attack.
 
 0.10
 - Removed mining capabilities and research priorities from Romania to prevent the Black Sea being 100% mined when Barbarossa starts.

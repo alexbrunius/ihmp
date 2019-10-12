@@ -169,9 +169,9 @@ NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB 											= 0.27  	-- was 0.18 -- hidden
 -- SUBMARINE BALANCE TWEAKS 0.9
 	
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
-		90.0,						-- was 90 -- big guns
+		80.0,						-- was 90 -- big guns
 		135.0,						-- was 145 -- torpedos
-		40.0,						-- was 40 -- small guns
+		50.0,						-- was 40 -- small guns
 	}
 
 NDefines.NNavy.DEPTH_CHARGES_HIT_CHANCE_MULT 				= 0.6 			-- was 1.1	-- multiplies hit chance of small guns
