@@ -1739,7 +1739,7 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_depth_charge
-			convert_cost_ic = 60
+			convert_cost_ic = 30
 		}
 	}
 
@@ -1757,7 +1757,7 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_depth_charge
-			convert_cost_ic = 90
+			convert_cost_ic = 45
 		}
 	}
 
@@ -1775,7 +1775,7 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_depth_charge
-			convert_cost_ic = 120
+			convert_cost_ic = 60
 		}
 	}
 
@@ -1793,7 +1793,7 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_depth_charge
-			convert_cost_ic = 150
+			convert_cost_ic = 75
 		}
 	}
 

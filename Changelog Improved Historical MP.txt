@@ -23,6 +23,13 @@
 - Lowered Submarine base buildcost to roughly half.
 - Lowered Submarine torpedo damage to roughly half of unmodded, to compensate above change.
 - Lowered Destroyer base buildcost by 25%.
+- Lowered impact of Magnetic Detonator and Homing Torpedo technology from 20% each to 10% each.
+- Moved Submarine torpedoes from the submarine techs to the torpedo techs.
+- Halved the buildcost of Depth Charges modules.
+- Greatly increased research cost of 1940 and 1944 submarines.
+- Changed base submarine torpedo reveal change from 8% to 10%.
+- Lowered Convoy Route Efficiency loss and increased recover speed slightly.
+
 
 0.10
 - Removed mining capabilities and research priorities from Romania to prevent the Black Sea being 100% mined when Barbarossa starts.
