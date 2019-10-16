@@ -401,9 +401,12 @@ operations = {
 			has_government = democratic
 			has_war_with = ITA
 			date > 1939.01.01
-			446 = {
-				NOT = { is_controlled_by = ENG }
-			}			
+			OR = {
+				RAJ = { surrender_progress > 0.5 }
+				446 = {
+					NOT = { is_controlled_by = ENG }
+				}			
+			}		
 			divisions_in_state = { state = 656 size > 2 }
 			divisions_in_state = { state = 455 size > 2 }
 		}
@@ -529,8 +532,11 @@ operations = {
 			has_government = democratic
 			has_war_with = ITA
 			date > 1939.01.01
-			446 = {
-				NOT = { is_controlled_by = ENG }
+			OR = {
+				RAJ = { surrender_progress > 0.5 }
+				446 = {
+					NOT = { is_controlled_by = ENG }
+				}			
 			}			
 			divisions_in_state = { state = 291 size > 2 }
 			divisions_in_state = { state = 656 size > 2 }
@@ -573,9 +579,12 @@ operations = {
 			tag = SOV
 			ENG = { has_war_with = ITA }
 			date > 1939.01.01
-			446 = {
-				NOT = { is_controlled_by = ENG }
-			}			
+			OR = {
+				RAJ = { surrender_progress > 0.5 }
+				446 = {
+					NOT = { is_controlled_by = ENG }
+				}			
+			}
 			divisions_in_state = { state = 230 size > 2 }
 			divisions_in_state = { state = 229 size > 2 }
 			divisions_in_state = { state = 584 size > 4 }
