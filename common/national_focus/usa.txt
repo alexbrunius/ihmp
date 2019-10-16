@@ -5473,9 +5473,15 @@ focus_tree = {
 				}
 			}
 			swap_ideas = {
+				remove_idea = sleeping_navy
+				add_idea = sleeping_navy_2
+			}
+			PHI = {
+				swap_ideas = {
 					remove_idea = sleeping_navy
 					add_idea = sleeping_navy_2
 				}
+			}
 		}
 	}
 	focus = {
@@ -5585,9 +5591,15 @@ focus_tree = {
 				}
 			}
 			swap_ideas = {
+				remove_idea = sleeping_navy_2
+				add_idea = sleeping_navy_3
+			}
+			PHI = {
+				swap_ideas = {
 					remove_idea = sleeping_navy_2
 					add_idea = sleeping_navy_3
 				}
+			}
 		}
 	}
 	focus = {

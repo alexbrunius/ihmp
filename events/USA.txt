@@ -1945,5 +1945,12 @@ country_event = {
 			remove_ideas = sleeping_navy
 			remove_ideas = sleeping_navy_2
 		}
+		PHI = {
+			remove_ideas = sleeping_navy_3
+			hidden_effect = {
+				remove_ideas = sleeping_navy
+				remove_ideas = sleeping_navy_2
+			}
+		}
 	}
 }
