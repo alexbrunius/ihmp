@@ -431,7 +431,7 @@ operations = {
 	
 	operation_polarfuchs = {
 	
-	icon = generic_operation
+		icon = generic_operation
 
 		fire_only_once = yes
 
@@ -511,6 +511,99 @@ operations = {
 		remove_effect = {
 			set_country_flag = bessarabia_demand
 			ROM = { country_event = { id = romania.1 } }
+		}
+	}
+
+	operation_countenance_ENG = {
+		
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = ITA
+			date > 1939.01.01
+			446 = {
+				NOT = { is_controlled_by = ENG }
+			}			
+			divisions_in_state = { state = 291 size > 2 }
+			divisions_in_state = { state = 656 size > 2 }
+		}
+
+		cost = 25
+
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			tag = ENG
+			has_war_with = ITA
+			413 = { is_owned_by = PER } # Khuzestan
+			412 = { is_owned_by = PER } # Fars
+			421 = { is_owned_by = PER } # Kurdistan
+		}
+		
+		remove_effect = {
+			ENG = { transfer_state = 413 } # Khuzestan
+			ENG = { transfer_state = 412 } # Fars
+			ENG = { transfer_state = 421 } # Kurdistan
+		}
+	}
+
+	operation_countenance_SOV = {
+		
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		allowed = {
+			tag = SOV
+		}
+		
+		available = {
+			tag = SOV
+			ENG = { has_war_with = ITA }
+			date > 1939.01.01
+			446 = {
+				NOT = { is_controlled_by = ENG }
+			}			
+			divisions_in_state = { state = 230 size > 2 }
+			divisions_in_state = { state = 229 size > 2 }
+			divisions_in_state = { state = 584 size > 4 }
+		}
+
+		cost = 25
+
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			tag = SOV
+			ENG = { has_war_with = ITA }
+			266 = { is_owned_by = PER } # Tehran
+			419 = { is_owned_by = PER } # Tibriz
+			416 = { is_owned_by = PER } # Khorasan
+			420 = { is_owned_by = PER } # Gilan
+		}
+		
+		remove_effect = {
+			SOV = { transfer_state = 266 } # Tehran
+			SOV = { transfer_state = 419 } # Tibriz
+			SOV = { transfer_state = 416 } # Khorasan
+			SOV = { transfer_state = 420 } # Gilan
+			SOV = { puppet = PER }
 		}
 	}
 }

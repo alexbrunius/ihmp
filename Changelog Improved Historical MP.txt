@@ -30,7 +30,8 @@
 - Changed base submarine torpedo reveal change from 8% to 10%.
 - Lowered Convoy Route Efficiency loss and increased recover speed slightly.
 - Subs present in 1936 start get max torpedoes for the 5 Major naval powers.
-- Map tweaks in Africa ( Egypt and Ethiopia )
+- Map tweaks in Africa ( Egypt and Ethiopia ).
+- Added Operation Countenance for ENG and SOV.
 
 
 0.10
