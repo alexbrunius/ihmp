@@ -33,6 +33,7 @@
 - Map tweaks in Africa ( Egypt and Ethiopia ).
 - Added Operation Countenance for ENG and SOV.
 - Added the US navy malus to Philippines to prevent fort building exploit.
+- Japan now puppets Siam with their NF.
 
 
 0.10
