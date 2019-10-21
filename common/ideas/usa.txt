@@ -42,7 +42,6 @@ ideas = {
 				conscription_factor = -0.4
 				join_faction_tension = 0.20
 				local_resources_factor = -0.15
-				industrial_capacity_dockyard = -0.3
 				training_time_factor = 1.5
 			}
 		}
