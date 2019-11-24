@@ -9,16 +9,36 @@ GER_mefo_bills_category = {
 
 		available = {
 			NOT = { has_government = democratic }
-			GER_can_delay_mefo_payment = yes
-			has_political_power > 0
 		}
 
 		#cost = GER_mefo_bill_counter?10
 
+		activation = {
+			OR = {
+				has_idea = GER_mefo_bills_1
+				has_idea = GER_mefo_bills_2
+				has_idea = GER_mefo_bills_3
+				has_idea = GER_mefo_bills_4
+				has_idea = GER_mefo_bills_5
+				has_idea = GER_mefo_bills_6
+				has_idea = GER_mefo_bills_7
+				has_idea = GER_mefo_bills_8
+				has_idea = GER_mefo_bills_9
+				has_idea = GER_mefo_bills_10
+				has_idea = GER_mefo_bills_11
+				has_idea = GER_mefo_bills_12
+				has_idea = GER_mefo_bills_13
+				has_idea = GER_mefo_bills_14
+				has_idea = GER_mefo_bills_15
+				has_idea = GER_mefo_bills_16
+				has_idea = GER_mefo_bills_17
+				has_idea = GER_mefo_bills_18
+			}
+		}
 		selectable_mission = yes
 		days_mission_timeout = 180
-		is_good = no
-		fire_only_once = yes
+		#is_good = no
+		fire_only_once = no
 
 		cancel_trigger = {
 			hidden_trigger = {
@@ -30,7 +50,7 @@ GER_mefo_bills_category = {
 		}
 
 		days_remove = GER_extend_mefo_bills_days?0
-		remove_effect = {
+		timeout_effect = {
 			GER_mefo_bills_level_up = yes
 			if = {
 				limit = {
@@ -46,17 +66,6 @@ GER_mefo_bills_category = {
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = GER_mefo_bills_mission_tt
-			custom_effect_tooltip = GER_mefo_bills_effect_in_days
-			effect_tooltip = {
-				GER_mefo_bills_level_up = yes
-			}
-			hidden_effect = {
-				set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
-			}
-		}
-
-		timeout_effect = {
 			GER_remove_mefo_bills = yes
 			#1
 			if = {
@@ -212,7 +221,7 @@ GER_mefo_bills_category = {
 		}
 
 		ai_will_do = {
-			factor = 200
+			factor = 0
 		}
 	}
 }
