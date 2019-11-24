@@ -1,0 +1,11 @@
+﻿l_german:
+ mobile_support:0 "Mobile Support"
+ mobile_support_desc:0 "Flexible towing and training allowing fast relocations of Truck towed guns"
+ ARTILLERY_TITLE_MS:0 "MOBILE SUPPORT"
+ AIR_TITLE_CV_NAV:0 "Carrier Torpedo Bomber"
+ JAP_Ultimate_Battleship:0 "The Ultimate Battleship"
+ advanced_sonar:0 "Advanced Sonar"
+ advanced_sonar_desc:1 "Using modulated sound waves, this system can accurately measure bearing and distance to a submerged target.\n\nMounting this module in an §YElectronics Slot§! on §YLight Ships§! or §YCruisers§! will help them detect enemy §YSubmarines§!."
+ latewar_sonar:0 "Latewar Sonar"
+ latewar_sonar_desc:1 "Using modulated sound waves, this system can accurately measure bearing and distance to a submerged target.\n\nMounting this module in an §YElectronics Slot§! on §YLight Ships§! or §YCruisers§! will help them detect enemy §YSubmarines§!."
+

@@ -1,0 +1,6 @@
+﻿l_german:
+ ship_sonar_3:0 "Forschrittliches Sonar"
+ ship_sonar_3_desc:0 "An active noise emitter that sends a short 'ping' into the water, then listens for the echo from a submerged submarine hull."
+ ship_sonar_4:0 "Spätskriegs Sonar"
+ ship_sonar_4_desc:0 "An active noise emitter that sends a short 'ping' into the water, then listens for the echo from a submerged submarine hull."
+
