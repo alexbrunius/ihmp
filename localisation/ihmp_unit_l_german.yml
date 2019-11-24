@@ -1,0 +1,11 @@
+﻿l_german:
+ motorized_artillery_brigade:0 "Motorisierte Artillerie"
+ motorized_artillery_brigade_desc:0 "Artillerie gezogen durch Trucks"
+ motorized_anti_tank_brigade:0 "Motorisierte Panzerabwehr"
+ motorized_anti_tank_brigade_desc:0 "Panzerabwehr gezogen durch Trucks"
+ motorized_anti_air_brigade:0 "Motorisierte Flugabwehr"
+ motorized_anti_air_brigade_desc:0 "Flugabwehr gezogen durch Trucks"
+ mec_marine:0 "Mechanisierte Marines"
+ mec_marine_desc:0 "Mechanized Marines equiped with LVT ( Landing Vehicle Tracked ) to quickly move across exposed beaches after Landing. Their vehicles are lighter armored and equipped with machine guns or Autocannons"
+ mec_marine_desc:0 "Mechanized Marines equiped with LVT ( Landing Vehicle Tracked ) to quickly move across exposed beaches after Landing. Their vehicles are lighter armored and equipped with machine guns or Autocannons"
+ category_tac:0 "Taktischer Bomber"
