@@ -1975,7 +1975,13 @@ focus_tree = {
 				add_building_construction = {
 					type = bunker
 					level = 4
-					province = 4135
+					province = 1048
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 1048
 					instant_build = yes
 				}
 				add_building_construction = {
