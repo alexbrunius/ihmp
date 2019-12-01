@@ -34,6 +34,8 @@
 - Added Operation Countenance for ENG and SOV.
 - Added the US navy malus to Philippines to prevent fort building exploit.
 - Japan now puppets Siam with their NF.
+- Changed MEFO: If the missions runs out after 180 days, it just renews for higher pp cost. If you click the decision to complete the mission, you pay back the mefo bills for CG and PP
+
 
 
 0.10
