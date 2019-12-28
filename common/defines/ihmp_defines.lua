@@ -202,6 +202,19 @@ NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.05					-- was 0.04	-- How
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.006	-- was 1.0
 NDefines.NNavy.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.012  -- was 0.9
 
+NDefines.NNavy.MISSION_SPREADS = {  -- mission spreads in the case a ship join combat, whih defines their starting position
+		0.0, -- HOLD 
+		0.0, -- PATROL		
+		0.0, -- STRIKE FORCE 
+		0.0, -- CONVOY RAIDING
+		0.0, -- CONVOY ESCORT
+		0.0, -- MINES PLANTING	
+		0.0, -- MINES SWEEPING	
+		0.5, -- TRAIN
+		0.0, -- RESERVE_FLEET
+		0.0, -- NAVAL_INVASION_SUPPORT
+	}
+	
 -- PRODUCTION STUFF
 NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 10					-- was 15 -- Max number of factories that can be assigned a single production line.
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 30						-- was 15
