@@ -1,10 +1,11 @@
-version="1.8.1.0"
+version="1.8.1.1"
 tags={
 	"Fixes"
 	"Balance"
 	"Gameplay"
 	"Historical"
 }
-name="Improved Historical MP"
+name="Improved Historical MP 1.8.1.1"
 supported_version="1.8.1"
 path="C:/Users/Myzael/Documents/Paradox Interactive/Hearts of Iron IV/mod/ihmp"
+remote_file_id="1958144478"
