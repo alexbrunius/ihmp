@@ -1509,8 +1509,12 @@ leader_traits = {
 	hunter_killer = { 
 		type = navy
 		modifier = {
-			navy_submarine_detection_factor = 0.2
-			navy_submarine_attack_factor = 0.1
+			navy_submarine_detection_factor = 0.1
+		}
+		sub_unit_modifiers = {
+			destroyer = {
+				naval_speed_factor = 0.1
+			}
 		}
 				
 		ai_will_do = {
