@@ -1726,6 +1726,11 @@ technologies = {
 		enable_equipments = {
 			mechanized_equipment_2
 		}
+
+		mechanized = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
 		
 		path = {
 			leads_to_tech = mechanised_infantry3
@@ -1757,8 +1762,8 @@ technologies = {
 		}
 
 		mechanized = {
-			soft_attack = 0.15
-			hard_attack = 0.15
+			soft_attack = 0.10
+			hard_attack = 0.10
 		}
 
 		research_cost = 3
