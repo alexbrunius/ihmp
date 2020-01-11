@@ -2265,11 +2265,6 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
-			add_tech_bonus = {
-					bonus = 0.5
-					ahead_reduction = 1
-					technology = mobile_support
-				}
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = walther_von_brauchitsch			
 		}

@@ -871,20 +871,7 @@ guiTypes = {
 					maxHeight = 62
 					format = center
 					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "artillery_subtitle_mobile_support"
-					position = { x = -214 y = 130  }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARTILLERY_TITLE_MS"
-					maxWidth = 190
-					maxHeight = 162
-					format = center
-					Orientation = "UPPER_LEFT"
-				}				
+				}			
 				
 				instantTextBoxType = {
 					name = "artillery_subtitle_artillery"

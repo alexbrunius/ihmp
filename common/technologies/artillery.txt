@@ -24,10 +24,6 @@ technologies = {
 			leads_to_tech = interwar_antiair 
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = mobile_support 
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 1.5
 		
@@ -58,32 +54,6 @@ technologies = {
 				date > "1939.1.1"
 			}
 		}
-	}
-	
-	mobile_support = {
-	
-		enable_subunits = {
-			mot_anti_air_brigade
-			mot_artillery_brigade
-			mot_anti_tank_brigade
-			mot_rocket_artillery_brigade
-		}
-		research_cost = 0.5
-		start_year = 1940
-		
-		ai_will_do = {
-			factor = 1			
-		}
-		
-		categories = {
-			motorized_equipment
-			artillery
-		}
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -6 y = 6 }
-		}		
 	}
 	
 	interwar_artillery = {
