@@ -399,6 +399,9 @@ air_wing_experience_bonus_max = {
 	air_agility_factor = 0.3
 	air_night_penalty = -0.2
 	#air_weather_penalty = -0.3
+	air_strategic_bomber_bombing_factor = 0.15
+	naval_strike_targetting_factor = 0.15
+	ground_attack_factor = 0.08
 }
 
 air_wing_experience_malus_min = {
@@ -407,6 +410,9 @@ air_wing_experience_malus_min = {
 	air_agility_factor = -0.15
 	air_night_penalty = 0.15
 	#air_weather_penalty = 0.15
+	air_strategic_bomber_bombing_factor = -0.15
+	naval_strike_targetting_factor = -0.15
+	ground_attack_factor = 0.08
 }
 
 ship_experience_bonus_max = {
