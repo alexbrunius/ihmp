@@ -81,6 +81,7 @@ on_actions = {
 			if = { #destroys and damages Soviet infrastructure to simulate different railway gauges
 				limit = {
 					FROM = { original_tag = SOV }
+					FROM = { is_owned_by = SOV }
 					FROM.FROM = { NOT = { has_state_flag = sov_infra_destruction } }
 				}
 				FROM.FROM = {
