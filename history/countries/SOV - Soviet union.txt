@@ -272,6 +272,8 @@ set_popularities = {
 
 create_faction = Comintern
 add_to_faction = SOV
+puppet = MON
+puppet = TAN
 add_to_faction = MON
 add_to_faction = TAN
 
