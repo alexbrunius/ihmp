@@ -516,14 +516,36 @@ leader_traits = {
 	skilled_staffer = { 
 		type = corps_commander
 		gain_xp = {
-			check_variable = { num_units > 17 }
+			set_temp_variable = { temp = num_units }
+
+			set_temp_variable = { limit = 23 }
+
+			if = { limit = { has_trait = adaptable } subtract_from_temp_variable = { var = limit value = 6 } }
+			if = { limit = { has_trait = panzer_expert } subtract_from_temp_variable = { var = limit value = 6 } }
+			if = { limit = { has_trait = combined_arms_expert } subtract_from_temp_variable = { var = limit value = 3 } }
+			if = { limit = { has_trait = fortress_buster } subtract_from_temp_variable = { var = limit value = 3 } }
+			if = { limit = { has_trait = scavenger } subtract_from_temp_variable = { var = limit value = 3 } }
+			if = { limit = { has_trait = infantry_expert } subtract_from_temp_variable = { var = limit value = 3 } }
+			if = { limit = { has_trait = ambusher } subtract_from_temp_variable = { var = limit value = 3 } }
+			if = { limit = { has_trait = invader_ii } subtract_from_temp_variable = { var = limit value = 6 } }
+			if = { limit = { has_trait = naval_liason } subtract_from_temp_variable = { var = limit value = 6 } }
+			if = { limit = { has_trait = skirmisher } subtract_from_temp_variable = { var = limit value = 3 } }
+			if = { limit = { has_trait = paratrooper } subtract_from_temp_variable = { var = limit value = 9 } }
+			if = { limit = { has_trait = camouflage_expert } subtract_from_temp_variable = { var = limit value = 3 } }
+			if = { limit = { has_trait = expert_improviser } subtract_from_temp_variable = { var = limit value = 6 } }
+			if = { limit = { has_trait = guerilla_fighter } subtract_from_temp_variable = { var = limit value = 3 } }
+
+			clamp_temp_variable = { var = limit max = 23 min = 0 }
+
+			check_variable = { temp > limit }
 		}
-		custom_gain_xp_trigger_tooltip = fighting_with_at_least_23_units
+		custom_gain_xp_trigger_tooltip = fighting_with_max_capacity
 		
 		cost = 2000
 		
 		corps_commander_modifier = {
 			max_commander_army_size = 6
+			experience_gain_factor = -0.30
 		}
 		
 		ai_will_do = {
