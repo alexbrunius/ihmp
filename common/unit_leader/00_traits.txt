@@ -1010,7 +1010,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			equipment_capture = 0.03
+			equipment_capture = 0.05
 			experience_gain_factor = 0.15
 			max_commander_army_size = -3
 		}
