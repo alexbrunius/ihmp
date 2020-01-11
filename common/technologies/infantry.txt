@@ -494,6 +494,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		xp_research_type = army
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		
 		research_cost = 1
 		start_year = 1939
 		folder = {
@@ -532,6 +536,9 @@ technologies = {
 			breakthrough = 0.1
 		}
 		
+		xp_research_type = army
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 
 		research_cost = 1
 		start_year = 1943
@@ -631,6 +638,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		xp_research_type = army
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 
 		research_cost = 1
 		start_year = 1939
@@ -669,6 +679,10 @@ technologies = {
 			max_organisation = 5
 			breakthrough = 0.1
 		}
+
+		xp_research_type = army
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 
 		research_cost = 1
 		start_year = 1943
@@ -749,6 +763,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		xp_research_type = army
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 
 		research_cost = 1
 		start_year = 1939
@@ -772,6 +789,10 @@ technologies = {
 			max_organisation = 5
 			breakthrough = 0.1
 		}
+
+		xp_research_type = army
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 
 		research_cost = 1
 		start_year = 1943
