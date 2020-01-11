@@ -1,4 +1,56 @@
-﻿0.11
+﻿1.8.1.1
+- Guerilla fighter trait now also unlocks guerilla tactics
+- Scavenger buffed to 5% equipment capture ratio
+- Doctrine tweaks
+	GBP:
+	No longer penalizes planning speed.
+	Infiltration assault now also gives -5% org loss when moving.
+	Infiltration in depth now also gives -10 org loss when moving and 10% leg infantry breakthrough.
+	Grand Battle plan now gives 20% max planning.
+	C3I now also gives 12% signal company initiative.
+
+	SF:
+	Superior firepower SA bonus reduced to 10%
+	Dispersed support now also gives ART and MART -0.5 combat width.
+	Overwhelming firepower now also gives ART 30% breakthrough and 10% HA.
+	Forward observers now also give 25% recon bonus while entrenched.
+	Combined arms nerfed to 5% SA/HA.
+
+	MW:
+	Werwolf guerillas now also gives 25% entrenchment speed.
+	Blitzkrieg now also gives Tanks&ArmVariants 10% HA/SA.
+	Modern Blitzkrieg now also gives 10% Air Superiority bonus.
+
+	MA:
+	Infantry combat width now applies to all leg infantry.
+	Guerilla warfare OOS nerfed to 20%.
+	Infantry offensive recovery rate now applies to all leg infantry.
+	Breakthrough priority now gives 20% breakthrough to all artillery.
+- Defense of the Pacific now gives forts and ports in all pacific islands
+- Level 2&3 MAR/MTN/PARA techs are now XP-boostable
+- AMTRAC2 speed 10->8, now also gives 5% HA/SA to AMTRAC battalions
+- MECH3 steel cost 4->3
+- Marine techs now give the same bonuses to AMTRAC
+- Make War Plans NFs take 35 days each
+- Change skilled staffer to gain xp commanding max allowed no of divisions
+- Make hunter killer trait actually boost ASW capability
+- Add MAR and LARM starting templates for USA
+- Remove separate tech for motorized art/aa/at as it's obsolete
+- Split MECH3 15% HA/SA bonus to 5% on MECH2 and 10% on MECH3
+- Fix the railway re-gauge feature applying to states not owned by SOV
+- Make Tannu Tuva and Mongolia Soviet puppets
+- Scaled static AA cost from 2500 each to 1500/2000/2500/3000/3500
+- Bump mod version to 1.8.1.1
+- Add meaningful XP modifiers to non-fighter wings
+- Change fascist minors to non-aligned and nerf the generic manpower NFs
+- Fix Vichy formation event
+	States in syria, tunisia, algieria, morocco and somaliland are not flipped to Vichy if not controlled by France upon formation.
+- Updated France Air Regions
+- Fixed stategic regions in Africa
+	Everything what is unpassable terran is moved into Sahara Desert (parts from Egypt into Sahara Desert, West Africa from Sahara Desert out)
+Moved Western Africa into Sub-Saharan Africa Zone, so if fighting breaks out there, planes can use a fighting strategic zone, instead of the impassable terrain one.
+
+0.11
 - Nerfed Marines river crossing (40->20%) and marsh (30->20%) terrain bonuses.
 - Republican Spain now joins Commintern when they win SCW.
 - Added events to transfer convoys from FRA/HOL/BEL/NOR/DEN when at war with Germany to prevent Axis having 1000 convoys for free.
