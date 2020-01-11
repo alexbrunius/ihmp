@@ -620,6 +620,11 @@ technologies = {
 			soft_attack = 0.05
 			breakthrough = 0.1
 		}
+		amphibious_mechanized = {
+			max_organisation = 5
+			soft_attack = 0.05
+			breakthrough = 0.1
+		}
 		special_forces_cap = 0.02
 		path = {
 			leads_to_tech = marines3
@@ -656,6 +661,11 @@ technologies = {
 	marines3 = {
 
 		marine = {
+			max_organisation = 5
+			breakthrough = 0.1
+		}
+
+		amphibious_mechanized = {
 			max_organisation = 5
 			breakthrough = 0.1
 		}
