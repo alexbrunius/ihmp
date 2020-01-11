@@ -58,7 +58,7 @@ equipments = {
 		priority = 40
 		visual_level = 1
 
-		maximum_speed = 10
+		maximum_speed = 8
 
 		#Defensive Abilities
 		defense = 30
