@@ -1,3 +1,5 @@
 ﻿l_german:
  tactic_motti_tactic:0 "Motti Taktiken"
  fighting_with_max_capacity:0 "Controlling the maximum number of allowed divisions"
+ ALLOWS_GUERILLA_TACTIC:0 "Enables tactic: §YGuerilla Tactics§!"
+ tactic_guerrilla_tactics_general:0 "Guerilla Tactics"

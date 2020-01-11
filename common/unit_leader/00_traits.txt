@@ -1255,6 +1255,7 @@ leader_traits = {
 			experience_gain_factor = 0.15
 			max_commander_army_size = -3
 		}
+		custom_effect_tooltip = ALLOWS_GUERILLA_TACTIC
 		
 		ai_will_do = {
 			factor = 1

@@ -713,6 +713,23 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 	defender = -0.6
 }
 
+tactic_guerrilla_tactics_general = { #Guerilla General tactic.
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		has_trait = guerilla_fighter
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_guerrilla_tactics
+	
+	attacker = -0.7
+	defender = -0.6
+}
+
 tactic_human_wave_tactics = { #People's army attacker tactic
 	is_attacker = yes
 	trigger = {
