@@ -14,11 +14,10 @@
 	Dispersed support now also gives ART and MART -0.5 combat width.
 	Overwhelming firepower now also gives ART 30% breakthrough and 10% HA.
 	Forward observers now also give 25% recon bonus while entrenched.
-	Combined arms nerfed to 5% SA/HA.
 
 	MW:
 	Werwolf guerillas now also gives 25% entrenchment speed.
-	Blitzkrieg now also gives Tanks&ArmVariants 10% HA/SA.
+	Blitzkrieg now also gives Tanks&ArmVariants 5% HA/SA.
 	Modern Blitzkrieg now also gives 10% Air Superiority bonus.
 
 	MA:

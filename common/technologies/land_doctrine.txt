@@ -486,8 +486,8 @@ technologies = {
 
 		category_all_armor = {
 			default_morale = 0.03
-			hard_attack = 0.10
-			soft_attack = 0.10
+			hard_attack = 0.5
+			soft_attack = 0.5
 		}
 		
 		enable_tactic = tactic_breakthrough
@@ -1393,8 +1393,8 @@ technologies = {
 		xp_research_bonus = 1.00
 		
 		category_all_armor = {
-			hard_attack = 0.05
-			soft_attack = 0.05
+			hard_attack = 0.10
+			soft_attack = 0.10
 		}
 		
 		enable_tactic = tactic_breakthrough
