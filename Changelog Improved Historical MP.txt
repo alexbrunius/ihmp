@@ -7,6 +7,7 @@
 - Capital ship raiders: BCs: raiding coordination buffed 15%->35%.
 - Changed panay incident feature. Now Japanese refusal is no longer free 100PP but also gives US the option to run Two Ocean Navy Act quicker with high enough congress support.
 - Changed historical licensing game rule to allow licensing between USA and Allies if the former passes Lend Lease Act.
+- Imperial conference locked behing ahistorical NF game rule (thus, disabled by default).
 
 
 
