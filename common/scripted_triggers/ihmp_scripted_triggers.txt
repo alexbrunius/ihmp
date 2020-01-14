@@ -95,46 +95,70 @@ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 				option = SAME_FACTION_SOVIET_ALLIES
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_LICENSING_SAME_FACTION_SOVIET_ALLIES_TT
-			OR = {
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = RULE_ALLOW_LICENSING_SAME_FACTION_SOVIET_ALLIES_FACTION
 				is_in_faction_with = FROM
-				AND = {
-					ROOT = { tag = SOV }
-					FROM = {
-						OR = {
-							tag = USA
-							is_in_faction_with = USA
-							is_in_faction_with = ENG
-						}
-					}
+			}
+			custom_trigger_tooltip = {
+				tooltip = RULE_ALLOW_LICENSING_SAME_FACTION_SOVIET_ALLIES_SOV
+				ROOT = { tag = SOV }
+				FROM = {
 					OR = {
-						ROOT = { has_war_with = ITA }
-						ROOT = { has_war_with = GER }
-						ROOT = { has_war_with = JAP }
-						FROM = { has_war_with = ITA }
-						FROM = { has_war_with = GER }
-						FROM = { has_war_with = JAP }
+						tag = USA
+						is_in_faction_with = USA
+						is_in_faction_with = ENG
 					}
 				}
-				AND = {
-					ROOT = {
-						OR = {
-							tag = USA
-							is_in_faction_with = USA
-							is_in_faction_with = ENG
-						}
-					}
-					FROM = {
-						tag = SOV
-					}
+				OR = {
+					ROOT = { has_war_with = ITA }
+					ROOT = { has_war_with = GER }
+					ROOT = { has_war_with = JAP }
+					FROM = { has_war_with = ITA }
+					FROM = { has_war_with = GER }
+					FROM = { has_war_with = JAP }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = RULE_ALLOW_LICENSING_SAME_FACTION_SOVIET_ALLIES_ALLIED
+				OR = {
+					tag = USA
+					is_in_faction_with = USA
+					is_in_faction_with = ENG
+				}
+				FROM = {
+					tag = SOV
+				}
+				OR = {
+					ROOT = { has_war_with = ITA }
+					ROOT = { has_war_with = GER }
+					ROOT = { has_war_with = JAP }
+					FROM = { has_war_with = ITA }
+					FROM = { has_war_with = GER }
+					FROM = { has_war_with = JAP }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = RULE_ALLOW_LICENSING_SAME_FACTION_SOVIET_ALLIES_USA
+				ROOT = {
 					OR = {
-						ROOT = { has_war_with = ITA }
-						ROOT = { has_war_with = GER }
-						ROOT = { has_war_with = JAP }
-						FROM = { has_war_with = ITA }
-						FROM = { has_war_with = GER }
-						FROM = { has_war_with = JAP }
+						tag = USA
+						is_in_faction_with = USA
+						is_in_faction_with = ENG
+					}
+				}
+				FROM = {
+					OR = {
+						tag = USA
+						is_in_faction_with = USA
+						is_in_faction_with = ENG
+					}
+				}
+				USA = {
+					OR = {
+						has_idea = USA_lend_lease_act_li
+						has_idea = USA_lend_lease_act_na
+						has_idea = USA_lend_lease_act_dummy
 					}
 				}
 			}

@@ -1868,6 +1868,12 @@ focus_tree = {
 			}
 			if = {
 				limit = {
+					has_game_rule = { rule = allow_licensing option = SAME_FACTION_SOVIET_ALLIES }
+				}
+				custom_effect_tooltip = USA_LL_licensing
+			}
+			if = {
+				limit = {
 					has_war_support > 0.6
 					has_war = no
 				}
