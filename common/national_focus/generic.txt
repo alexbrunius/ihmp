@@ -918,6 +918,17 @@ focus_tree = {
 					num_of_controlled_states < 2
 				}				
 			}
+			modifier = {
+				factor = 0
+				OR = { 
+					tag = PER
+					tag = VEN
+					tag = COL
+					tag = CHL
+					num_of_controlled_states < 3
+				}
+				NOT = { tag = SIA }
+			}
 		}
 	}
 
