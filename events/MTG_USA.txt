@@ -4452,6 +4452,7 @@ country_event = {
 		}
 		add_political_power = 100
 		hidden_effect = { USA = { country_event = { id = panay_incident.5 days = 2 } } } #Delay added here and in earlier event so rest of the world doesn't get Panay Incident one day and War the next, unless US is particularly gung-ho in response to initial event.
+		custom_effect_tooltip = panay_incident.3.b.tt1
 	}
 }
 
@@ -4482,9 +4483,11 @@ country_event = {
 	option = {
 		name = panay_incident.5.a
 		ai_chance = { factor = 60 }
-		add_political_power = -10
+		add_political_power = -100
 		add_war_support = -0.02
 		add_stability = 0.05
+		set_country_flag = panay_refused
+		custom_effect_tooltip = panay_incident.5.a.tt
 	}
 	option = {
 		name = panay_incident.5.b

@@ -5,6 +5,7 @@
 - Combined operations raiding now gives the same bonus to BBs as to BC/CA/CLs.
 - Raider patrols: CA: visibility buffed -10%->-15%, raiding coordination 15%->25%.
 - Capital ship raiders: BCs: raiding coordination buffed 15%->35%.
+- Changed panay incident feature. Now Japanese refusal is no longer free 100PP but also gives US the option to run Two Ocean Navy Act quicker with high enough congress support.
 
 
 

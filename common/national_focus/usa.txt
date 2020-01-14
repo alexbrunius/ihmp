@@ -5569,13 +5569,18 @@ focus_tree = {
 				congress_high_support_trigger = yes
 			}
 			else = {
-				congress_low_support_trigger = yes
+				congress_medium_support_trigger = yes
 			}
 			OR = {
 				GER = {
 					has_offensive_war = yes
-					}
+				}
 				date > 1940.1.1
+				AND = {
+					date > 1938.7.1
+					has_country_flag = panay_refused
+					congress_high_support_trigger = yes
+				}
 			}
 			controls_state = 378
 			controls_state = 358

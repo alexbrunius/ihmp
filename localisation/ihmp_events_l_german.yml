@@ -21,3 +21,6 @@
  ihmp_convoys.2.t:0 "[From.GetAdjective] convoys evacuated"
  ihmp_convoys.2.d:0 "Facing German invasion [From.GetAdjective] government has started evacuating convoys to prevent them from being seized by the enemy."
  ihmp_convoys.2.a:0 "Splendid"
+ panay_refused:0 "Japan has refused to pay compensation for the Panay Incident"
+ panay_incident.3.b.tt1:0 "This will allow USA to pass Two Ocean Navy act with high congress support regardless of other requirements!"
+ panay_incident.5.a.tt:0 "This will allow us to pass Two Ocean Navy act with high congress support regardless of other requirements!"
