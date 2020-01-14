@@ -1,0 +1,858 @@
+SIA_MP_1 = {
+	name = "Siam Multiplayer 1"
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		aviation_effort
+		fighter_focus
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		infrastructure_effort
+		infrastructure_effort_2
+		extra_tech_slot
+		extra_tech_slot_2
+		construction_effort_3
+		political_effort
+		collectivist_ethos
+		nationalism_focus
+		aviation_effort_2
+		militarism
+		production_effort
+		production_effort_2
+		production_effort_3
+		military_youth
+		paramilitarism
+		ideological_fanaticism
+		technology_sharing
+		naval_effort
+	}
+
+	research = {
+		synth_resources = -1000
+		construction_tech = 1000
+		air_doctrine = -1000
+		naval_doctrine = -1000
+	}
+
+	ideas = {
+		SIA_kuang_abhayavongsa = 1000
+		SIA_phot_bhahalyodin = -1000
+		partial_economic_mobilisation = 50
+		war_economy = 100
+		generic_light_aircraft_manufacturer = 500
+		export_focus = 0
+		free_trade = 1000
+		generic_electronics_concern = 0
+		extensive_conscription = 10
+		SIA_manphya_khanphialong = 0
+		SIA_sawat_phutianands = 0
+	}
+	
+		
+	ai_strategy = {
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		equipment_effort = 0
+		motorization_effort = 0
+		mechanization_effort = 0
+		CAS_effort = 0
+		rocket_effort = 0
+		large_navy = 0
+		submarine_effort = 0
+		cruiser_effort = 0
+		nuclear_effort = 0
+	}
+}
+
+SIA_MP_No_Mil_1 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		NOT = { has_completed_focus = production_effort}
+	}
+
+	abort = {
+		has_completed_focus = production_effort 
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 1
+	}
+}
+
+SIA_MP_No_Mil_2 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		has_completed_focus = production_effort
+		NOT = { has_completed_focus = production_effort_2}
+	}
+
+	abort = {
+		has_completed_focus = production_effort_2
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 2
+	}
+}
+
+SIA_MP_No_Mil_3 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		has_completed_focus = production_effort_2
+		NOT = { has_completed_focus = production_effort_3}
+	}
+
+	abort = {
+		has_completed_focus = production_effort_3
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 3
+	}
+}
+
+SIA_MP_No_Mil_4 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		has_completed_focus = production_effort_3
+	}
+
+	abort = {
+		date > 1942.6.1
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 4
+	}
+}
+
+SIA_MP_Infrastructure_1 = {
+	name = "Siam Rubber in Northern Malay"
+	desc = "Build Level 10 Infrastructure for Rubber"
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		724 = {
+			is_controlled_by = SIA
+			infrastructure < 10
+		}
+	}
+
+	abort = {
+		724 = {
+			OR ={
+				NOT = { is_controlled_by = SIA }
+				NOT = { infrastructure < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 724
+		value = 10
+	}
+}
+
+SIA_MP_Infrastructure_2 = {
+	name = "Siam Rubber in Siam"
+	desc = "Build Level 10 Infrastructure for Rubber and Supply"
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		724 = {
+			is_controlled_by = SIA
+			NOT = { infrastructure < 7 }
+		}
+		289 = {
+			is_controlled_by = SIA
+			infrastructure < 10
+		}
+	}
+
+	abort = {
+		289 = {
+			OR ={
+				NOT = { is_controlled_by = SIA }
+				NOT = { infrastructure < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 289
+		value = 10
+	}
+}
+
+SIA_MP_Airbase_1 = {
+	name = "Airbase in Northern Malay"
+	desc = "Build Level 10 Airbase for Japan"
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		724 = {
+			is_controlled_by = SIA
+			NOT = { infrastructure < 10 }
+			air_base < 10
+		}
+		289 = {
+			is_controlled_by = SIA
+			NOT = { infrastructure < 10 }
+		}
+	}
+
+	abort = {
+		724 = {
+			OR ={
+				NOT = { is_controlled_by = SIA }
+				NOT = { air_base < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = air_base
+		target = 724
+		value = 10
+	}
+}
+
+SIA_MP_Airbase_2 = {
+	name = "Airbase in Siam"
+	desc = "Build Level 10 Airbase for Japan"
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		724 = {
+			is_controlled_by = SIA
+			NOT = {	infrastructure < 10 }
+			NOT = { air_base < 10 }
+		}
+		289 = {
+			is_controlled_by = SIA
+			NOT = { infrastructure < 10	}
+			air_base < 8
+		}
+	}
+
+	abort = {
+		289 = {
+			OR ={
+				NOT = { is_controlled_by = SIA }
+				NOT = { air_base < 8 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = air_base
+		target = 289
+		value = 10
+	}
+}
+
+SIA_MP_Infrastructure_3 = {
+	name = ""
+	desc = "Build Level 7 Infrastructure in Laos for Supply"
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		670 = {
+			is_controlled_by = SIA
+			infrastructure < 7
+		}
+		724 = {
+			is_controlled_by = SIA
+			NOT = { infrastructure < 10 }
+			NOT = { air_base < 10 }
+		}
+		289 = {
+			is_controlled_by = SIA
+			NOT = { infrastructure < 10 }
+		}
+	}
+
+	abort = {
+		670 = {
+			OR ={
+				NOT = { is_controlled_by = SIA }
+				NOT = { infrastructure < 7 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 670
+		value = 5
+	}
+}
+
+SIA_MP_Electronics_1 = {
+	name = "Siamese Multiplayer Plan Electronics 1"
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		NOT = { has_tech = electronic_mechanical_engineering }
+	}
+	
+	abort = {
+		has_tech = electronic_mechanical_engineering 
+	}
+
+	research = {
+		electronics = 10000
+		industry = -5000
+	}
+}
+
+SIA_MP_Electronics_2 = {
+	name = "Siamese Multiplayer Plan Electronics 2"
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		NOT = { has_tech = mechanical_computing }
+	}
+	
+	abort = {
+		has_tech = mechanical_computing 
+	}
+
+	research = {
+		computing_tech = 100000
+		industry = -5000
+	}
+}
+
+SIA_MP_Fighter3 = {
+	name = "Siamese Multiplayer Plan Fighter3"
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		NOT = { has_tech = fighter3 }
+	}
+	
+	abort = {
+		has_tech = fighter3 
+	}
+
+	research = {
+		light_fighter = 50000
+		air_doctrine = -5000
+	}
+}
+
+SIA_MP_Radio = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		has_tech = mechanical_computing
+		not = {
+			OR = {
+				has_tech = radio
+				is_researching_technology = radio
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			has_tech = radio
+			is_researching_technology = radio
+		}
+	}
+
+	research = {
+		electronics = 1000
+		industry = -1000
+	}
+}
+
+SIA_MP_Radar_Research_1 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		has_completed_focus = extra_tech_slot
+		NOT = { has_completed_focus = technology_sharing }
+	}
+
+	abort = {
+		has_completed_focus = technology_sharing
+	}
+
+	research = {
+		radar_tech = 10000
+		industry = -100
+	}
+}
+
+SIA_MP_Radar_Research_2 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		has_completed_focus = extra_tech_slot
+		has_completed_focus = technology_sharing
+		NOT = { has_tech = advanced_centimetric_radar }
+	}
+
+	abort = {
+		has_tech = advanced_centimetric_radar
+	}
+
+	research = {
+		radar_tech = 50000
+	}
+}
+
+SIA_MP_Radar_Construction = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		NOT = { has_war_with = ENG }
+		has_tech = improved_decimetric_radar
+		724 = {
+			is_controlled_by = SIA
+			radar_station < 6
+		}
+	}
+
+	abort = {
+		has_war_with = ENG
+		724 = {
+			OR ={
+				NOT = { is_controlled_by = SIA }
+				NOT = { radar_station < 6 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = radar_station
+		target = 724
+		value = 6
+	}
+}
+
+SIA_MP_AA_1 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		724 = {
+			is_controlled_by = SIA
+			anti_air_building < 5
+			NOT = {	infrastructure < 10 }
+			NOT = { air_base < 10 }
+		}
+		289 = {
+			is_controlled_by = SIA
+			NOT = { infrastructure < 10	}
+			NOT = { air_base < 10 }
+		}
+	}
+
+	abort = {
+		724 = {
+			OR ={
+				NOT = { is_controlled_by = SIA }
+				NOT = { anti_air_building < 5 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = anti_air_building
+		target = 724
+		value = 5
+	}
+}
+
+SIA_MP_AA_2 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		724 = {
+			is_controlled_by = SIA
+			NOT = { anti_air_building < 5 }
+			NOT = {	infrastructure < 10 }
+			NOT = { air_base < 10 }
+		}
+		289 = {
+			is_controlled_by = SIA
+			anti_air_building < 5
+			NOT = { infrastructure < 10	}
+			NOT = { air_base < 10 }
+		}
+	}
+
+	abort = {
+		289 = {
+			OR ={
+				NOT = { is_controlled_by = SIA }
+				NOT = { anti_air_building < 5 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = anti_air_building
+		target = 289
+		value = 5
+	}
+}
+
+SIA_MP_Civ = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		724 = {
+			is_controlled_by = SIA
+			NOT = { anti_air_building < 5 }
+			NOT = {	infrastructure < 10 }
+			NOT = { air_base < 10 }
+		}
+		289 = {
+			is_controlled_by = SIA
+			NOT = { anti_air_building < 5 }
+			NOT = { infrastructure < 10	}
+			NOT = { air_base < 10 }
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 20
+	}
+}
+
+Japan_Do_Ally = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		country_exists = JAP
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "JAP"			
+		value = 200
+	}	
+}
+
+Japan_Do_Befriend = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		country_exists = JAP
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = JAP			
+		value = 200
+	}	
+}
+
+Japan_Do_Befriend_But_No_PP = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = -200
+	}	
+}
+
+Germany_no_ally_script = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		country_exists = GER
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "GER"			
+		value = -200
+	}	
+}
+
+SIA_MP_Military = {
+	name = "Siamese Multiplayer Plan Military"
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		NOT = { date > 1941.1.1 }
+	}
+	
+	abort = {
+		date > 1941.1.1
+	}
+
+	research = {
+		land_doctrine = -10000
+	}
+	ideas = {
+		SIA_luang_phibunsongkhram = 0
+		SIA_phraya_chitnasongkhla = 0
+		SIA_phra_vechayanrangsarit = 0
+		SIA_phraya_chalermarkiart = 0
+		SIA_phraya_wichcitcholathai = 0
+		SIA_thawon_thamrongnawasawat = 0
+		SIA_tianliang_huntrakool = 0
+		SIA_sindhu_kamalanavin = 0
+		SIA_luang_sinthusongkhramchai = 0
+		SIA_phraya_thayarnpikart = 0
+		SIA_pridi_phanomyong = 0
+		SIA_phraya_preechacholayudha = 0
+		tank_manufacturer = 0
+		naval_manufacturer = 0
+		generic_motorized_equipment_manufacturer = 0
+		generic_artillery_manufacturer = 0
+	}
+	
+	ai_strategy = {
+		type = pp_spend_priority
+		id = general
+		value = -1000
+	}
+}
+
+SIA_MP_1_NoScreen = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = screen_ship
+		value = -100
+	
+	}
+}
+
+SIA_MP_1_NoCAS = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -10000
+	
+	}
+}

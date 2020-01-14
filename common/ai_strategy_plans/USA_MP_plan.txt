@@ -1,0 +1,89 @@
+USA_MP_1 = {
+	name = "USA_MP_1"
+	desc = "Mulitplayer script behavior for US"
+
+	enable = {
+		original_tag = USA
+		has_game_rule = {
+			rule = USA_ai_behavior
+			option = USA_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		USA_continue_the_new_deal
+		USA_wpa
+		USA_office_of_scientific_research_and_development
+		USA_agricultural_adjustment_act
+		USA_fair_labour_standards_act
+		USA_federal_housing_act
+		USA_neutrality_act
+		#1937
+		USA_arsenal_of_democracy
+		USA_the_giant_wakes
+		USA_scientist_haven
+		USA_war_department
+		USA_selective_training_act
+		USA_air_war_plans_division
+		#1938
+		USA_two_ocean_navy_act
+		USA_bureau_of_ships
+		USA_lend_lease_act
+		USA_escort_effort
+		USA_military_construction
+		#1939
+		USA_USACE_projects
+		USA_wartime_industry
+		USA_louisiana_maneuvers
+		USA_airborne_divisions
+		USA_army_of_the_united_states
+		#1940
+		USA_womens_armed_service_integration_act
+		USA_build_the_pentagon
+		USA_department_of_defense
+		#1941
+		#1942
+		#1943
+	}
+
+	focus_factors = {
+		USA_suspend_the_presecution = 0 # well done, not medium rare
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		USA_robert_taft = 1000
+		partial_economic_mobilisation = 400
+		war_economy = 500
+		USA_henry_morgenthau = 10
+		omar_bradley = 5
+
+	}
+	traits = {
+		war_industrialist = 5
+		financial_expert = 10
+		silent_workhorse = 25
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ENG"			
+		value = 200
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

@@ -1,0 +1,569 @@
+RAJ_MP_1 = {
+	name = "Indian Mulitplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = RAJ
+		has_dlc = "Together for Victory"
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		RAJ_provincial_elections
+		RAJ_indian_national_congress
+		RAJ_cripps_mission
+		RAJ_two_nation_theory
+		RAJ_quit_india_movement				
+		RAJ_great_indian_peninsula_railway
+		RAJ_industrial_expansion
+		RAJ_tata_steel										
+		RAJ_assam_oil										
+		RAJ_indian_institute_of_science
+		RAJ_east_india_railways								
+		RAJ_integrate_princely_railways						
+		RAJ_clamp_down_on_corruption
+		RAJ_princely_state_donations
+		RAJ_imperial_service_troops
+		RAJ_lessons_of_the_great_war
+		RAJ_indianisation_of_army
+		RAJ_british_army_support
+		RAJ_chindits
+		RAJ_ishapore_arsenal
+		RAJ_strengthen_ties_with_british_investors
+		RAJ_british_rail_investors							
+		RAJ_british_arms_investors	
+		RAJ_the_bangalore_torpedo
+		RAJ_royal_indian_artillery
+		RAJ_revive_the_screw_guns
+		RAJ_modernizing_army
+		RAJ_an_indian_sandhurst
+		RAJ_indian_gentlemen_officers
+		RAJ_indian_defense_research
+		RAJ_lions_of_the_great_war
+		RAJ_indian_gurkhas
+		RAJ_jungle_training
+		RAJ_vickers_berthier_gun							
+		RAJ_institute_of_fundamental_research
+		RAJ_expand_mazagon_dock											
+		RAJ_found_scindia_shipyard
+		RAJ_british_pilot_training
+		RAJ_expand_air_bases
+		RAJ_army_motorization
+		RAJ_indian_armor		
+		RAJ_red_eagle_division								
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		cat_mass_assault = 100
+		air_equipment = -1000
+		air_doctrine = -1000
+		naval_equipment = -1000
+		naval_doctrine = -1000
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 100
+		partial_economic_mobilisation = 200
+		war_economy = 300
+		RAJ_john_edward_golightly = 100
+		free_trade = 20000
+		RAJ_john_mathai = 30
+		RAJ_chakravarti_rajagopalachari = 20
+		RAJ_anyang_bhula = 0
+		RAJ_bahadur_jayla_of_khoch_bahur = 0
+		RAJ_homi_j_bhabha = 0
+		RAJ_bruce_w_mcpherson = 0
+		RAJ_subroto_mukherjee = 0
+		RAJ_ravindra_darshan_singh = 0
+		RAJ_louis_mountbatten = 0
+		RAJ_william_e_parry = 0
+		RAJ_bhaskar_soman = 0
+		RAJ_ram_dass_katari = 0
+		RAJ_arjan_singh_vibhusan = 0
+		RAJ_aspy_merwan_engineer = 0
+		RAJ_mehar_singh = 0
+		RAJ_w_h_gould_bradford = 0
+		mazagon_dock_limited = 0
+		garden_reach_shipbuilders = 0
+		scindia_shipyard = 0
+		generic_tank_manufacturer = 0
+		hindustan_aircraft = 0
+		generic_light_aircraft_manufacturer = 0
+		generic_medium_aircraft_manufacturer = 0
+		generic_heavy_aircraft_manufacturer = 0
+		generic_naval_aircraft_manufacturer = 0
+		generic_industrial_concern = 10
+		generic_electronics_concern = 0
+		generic_motorized_equipment_manufacturer = 0
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		RAJ_royal_indian_navy = 0
+		RAJ_fighter_effort = 0
+		RAJ_air_support_effort = 0
+	}
+
+}
+
+RAJ_MP_No_Generals = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+		date < 1940.1.1
+	}
+
+	abort = {
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = general
+		value = -1000
+	}
+}
+
+RAJ_MP_1_NoFighter1 = {
+	name = "Indian Mulitplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = -1000000
+	
+	}
+}
+
+RAJ_MP_1_NoFighter2 = {
+	name = "Indian Mulitplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = -1000000
+	}
+}
+
+RAJ_MP_1_NoFighter3 = {
+	name = "Indian Mulitplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = fighter_equipment
+		value = -1000000
+	}
+}
+
+RAJ_MP_1_NoCAS = {
+	name = "Indian Mulitplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -10000
+	
+	}
+}
+
+RAJ_MP_1_NoNav = {
+	name = "Indian Mulitplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -10000
+	
+	}
+}
+
+RAJ_MP_1_NoTac = {
+	name = "Indian Mulitplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		id = tactical_bomber
+		value = -10000
+	
+	}
+}
+
+RAJ_MP_1_NoStrat = {
+	name = "Indian Mulitplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -10000
+	
+	}
+}
+
+No_PP_For_Relation = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = -200
+	}	
+}
+
+RAJ_MP_Infrastructure_1 = {
+	name = "RAJ Infrastructure"
+	desc = "Build Level 10 for Supply and Buildspeed"
+
+	enable = {
+		tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+		439 = {
+			is_controlled_by = RAJ
+			infrastructure < 10
+		}
+	}
+
+	abort = {
+		439 = {
+			OR ={
+				NOT = { is_controlled_by = RAJ }
+				NOT = { infrastructure < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 439
+		value = 10
+	}
+}
+
+RAJ_MP_Infrastructure_2 = {
+	name = "RAJ Infrastructure"
+	desc = "Build Level 10 for Supply and Buildspeed"
+
+	enable = {
+		tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+		429 = {
+			is_controlled_by = RAJ
+			infrastructure < 10
+		}
+		OR = {
+			439 = {
+				is_controlled_by = RAJ
+				NOT = { infrastructure < 10 }
+			}
+			AND = {
+				439 = {
+					is_controlled_by = RAJ
+					infrastructure < 10
+				}
+				num_of_civilian_factories_available_for_projects > 15
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			429 = {
+				OR ={
+					NOT = { is_controlled_by = RAJ }
+					NOT = { infrastructure < 10 }
+				}
+			}
+			AND = {
+				num_of_civilian_factories_available_for_projects < 15
+				439 = {
+					is_controlled_by = RAJ
+					infrastructure < 10
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 429
+		value = 10
+	}
+}
+
+RAJ_MP_Civilian_1 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+		date < 1939.1.1
+		429 = {
+			NOT { infrastructure < 10 }
+		}
+		439 = {
+			is_controlled_by = RAJ
+			NOT = { infrastructure < 10 }
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = no
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			date > 1939.1.1
+			439 = {
+				OR ={
+					NOT = { is_controlled_by = RAJ }
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = no
+					}
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 439
+		value = 6
+	}
+}
+
+RAJ_MP_Civilian_2 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+		429 = {
+			is_controlled_by = RAJ
+			NOT = { infrastructure < 10 }
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = no
+			}
+		}
+		439 = {
+			is_controlled_by = RAJ
+			NOT = { infrastructure < 10 }
+		}
+		date < 1939.1.1
+	}
+
+	abort = {
+		OR = {
+			date > 1939.1.1
+			429 = {
+				OR ={
+					NOT = { is_controlled_by = RAJ }
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = no
+					}
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 429
+		value = 5
+	}
+}
+
+RAJ_MP_Civilian = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+		date > 1937.1.1
+		date < 1939.1.1
+	}
+
+	abort = {
+		OR = {
+			date > 1939.1.1
+		}
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 50
+	}
+}
+
+RAJ_MP_Airbase_1 = {
+	name = "RAJ Westbengal Airbase"
+	desc = "Build Level 10 Airbase"
+
+	enable = {
+		tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+		has_war = yes
+	}
+
+	abort = {
+		431 = {
+			OR ={
+				NOT = { is_controlled_by = RAJ }
+				NOT = { air_base < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = air_base
+		target = 431
+		value = 10
+	}
+}

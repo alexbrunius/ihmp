@@ -1,0 +1,361 @@
+HUN_MP_1 = {
+	name = "Hungary Multiplayer 1"
+	desc = "Horthy as Dictator, early Fighter"
+
+	enable = {
+		original_tag = HUN
+		has_dlc = "Death or Dishonor"
+		has_game_rule = {
+			rule = HUN_ai_behavior
+			option = HUN_MP_1
+		}
+	}
+		
+	abort = {
+	}
+
+	ai_national_focuses = {
+		HUN_economic_intervention
+		HUN_strengthen_fascists
+		HUN_renounce_the_treaty_of_trianon
+		HUN_trade_deal_with_germany
+		HUN_industrial_revitalization
+		HUN_reintegrate_the_railroads
+		HUN_support_domestic_industry
+		HUN_support_urbanization
+		HUN_institute_for_industrial_techniques
+		HUN_announce_the_gyor_program
+		HUN_domestic_arms_industry
+		HUN_aeronautic_technology_institute
+		HUN_secret_rearmament
+		HUN_theoretical_air_efforts
+		HUN_bled_agreement
+		HUN_boost_hungarian_aviation_industry
+		HUN_establish_the_air_force
+		HUN_indigenous_designs
+		HUN_light_fighter_effort
+		HUN_joint_aluminum_mining_company
+	}
+
+	research = {
+		armor = -100
+		light_fighter = 40
+		cat_mobile_warfare = -1000
+		cat_superior_firepower = -1000
+		cat_grand_battle_plan = -1000
+		cat_mass_assault = -1000
+		cat_strategic_destruction = -1000
+		cat_operational_integrity = -1000
+		synth_resources = -1000
+	}
+
+	ideas = {
+		HUN_zoltan_tildy = 100
+		free_trade = 15000
+		HUN_lajos_remenyi_schneller = 20
+		HUN_mavag = 10
+		mw_aircraft = 8
+		HUN_shvoy_kalman = -100
+		HUN_gyorgy_jendrassik = 3
+		war_economy = 100
+		extensive_conscription = 10
+	}
+
+	ai_strategy = {
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		HUN_claim_transylvania = 0
+		HUN_claim_overlordship_over_slovakia = 0
+	}
+
+}
+
+HUN_MP_2 = {
+	name = "Hungary Multiplayer 2"
+	desc = "Horthy as Dictator, get South Slovakia"
+
+	enable = {
+		original_tag = HUN
+		has_dlc = "Death or Dishonor"
+		has_game_rule = {
+			rule = HUN_ai_behavior
+			option = HUN_MP_2
+		}
+	}
+	
+	abort = {
+	}
+
+	ai_national_focuses = {
+		HUN_economic_intervention
+		HUN_strengthen_fascists
+		HUN_renounce_the_treaty_of_trianon
+		HUN_trade_deal_with_germany
+		HUN_industrial_revitalization
+		HUN_reintegrate_the_railroads
+		HUN_support_domestic_industry
+		HUN_support_urbanization
+		HUN_institute_for_industrial_techniques
+		HUN_reaffirm_territorial_claims
+		HUN_demand_southern_slovakia
+		HUN_announce_the_gyor_program
+		HUN_domestic_arms_industry
+		HUN_aeronautic_technology_institute
+		HUN_secret_rearmament
+		HUN_theoretical_air_efforts
+		HUN_bled_agreement
+		HUN_boost_hungarian_aviation_industry
+		HUN_establish_the_air_force
+		HUN_indigenous_designs
+		HUN_light_fighter_effort
+		HUN_joint_aluminum_mining_company
+	}
+
+	research = {
+		armor = -100
+		light_fighter = 40
+		cat_mobile_warfare = -1000
+		cat_superior_firepower = -1000
+		cat_grand_battle_plan = -1000
+		cat_mass_assault = -1000
+		cat_strategic_destruction = -1000
+		cat_battlefield_support = -1000
+		synth_resources = -1000
+	}
+
+	ideas = {
+		HUN_zoltan_tildy = 100
+		free_trade = 15000
+		HUN_lajos_remenyi_schneller = 20
+		HUN_mavag = 10
+		HUN_shvoy_kalman = -100
+		HUN_gyorgy_jendrassik = 3
+		war_economy = 100
+		limited_conscription = 10
+		extensive_conscription = 20
+	}
+
+	ai_strategy = {
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		HUN_claim_transylvania = 0
+		HUN_claim_overlordship_over_slovakia = 0
+	}
+
+}
+
+HUN_MP_3 = {
+	name = "Hungary Multiplayer 1"
+	desc = "Elect Fascist King"
+
+	enable = {
+		original_tag = HUN
+		has_dlc = "Death or Dishonor"
+		has_game_rule = {
+			rule = HUN_ai_behavior
+			option = HUN_MP_3
+		}
+	}
+	
+	abort = {
+	}
+
+	ai_national_focuses = {
+		HUN_balanced_budget
+		HUN_strengthen_the_monarchists
+		HUN_elect_a_king
+		HUN_elect_a_fascist_king
+		HUN_industrial_revitalization
+		HUN_reintegrate_the_railroads
+		HUN_support_domestic_industry
+		HUN_support_urbanization
+		HUN_institute_for_industrial_techniques
+		HUN_renounce_the_treaty_of_trianon
+		HUN_announce_the_gyor_program
+		HUN_domestic_arms_industry
+		HUN_aeronautic_technology_institute
+		HUN_secret_rearmament
+		HUN_theoretical_air_efforts
+		HUN_bled_agreement
+		HUN_boost_hungarian_aviation_industry
+		HUN_establish_the_air_force
+		HUN_indigenous_designs
+		HUN_light_fighter_effort
+		HUN_trade_deal_with_germany
+		HUN_joint_aluminum_mining_company
+		
+	}
+
+	research = {
+		armor = -100
+		light_fighter = 40
+		cat_mobile_warfare = -1000
+		cat_superior_firepower = -1000
+		cat_grand_battle_plan = -1000
+		cat_mass_assault = -1000
+		cat_strategic_destruction = -1000
+		cat_operational_integrity = -1000
+		synth_resources = -1000
+	}
+
+	ideas = {
+		HUN_zoltan_tildy = 100
+		free_trade = 15000
+		HUN_lajos_remenyi_schneller = 20
+		HUN_mavag = 10
+		mw_aircraft = 8
+		HUN_shvoy_kalman = -100
+		HUN_gyorgy_jendrassik = 3
+		war_economy = 100
+		extensive_conscription = 10
+	}
+
+	ai_strategy = {
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		HUN_claim_transylvania = 0
+		HUN_claim_overlordship_over_slovakia = 0
+	}
+
+}
+
+HUN_MP_Fighter2 = {
+	name = "Research Fighter 2 ASAP"
+	desc = "Let the AI of Hungary research Fighter 2 as soons as it is avaible"
+
+	enable = {
+		original_tag = HUN
+		OR = {
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_1
+			}
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_2
+			}
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_3
+			}
+		}
+		has_completed_focus = HUN_domestic_arms_industry
+		NOT = { has_tech = fighter2 }
+		}
+
+	abort = {
+		has_tech = fighter2
+	}
+	ideas = {
+		mw_aircraft = 1000
+	}
+
+	research = {
+		light_fighter = 10000
+	}
+
+}
+
+HUN_MP_Fighter3 = {
+	name = "Research Fighter 3 ASAP"
+	desc = "Let the AI of Hungary research Fighter 3 as soon as it has Light Fighter Effort"
+
+	enable = {
+		original_tag = HUN
+		OR = {
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_1
+			}
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_2
+			}
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_3
+			}
+		}
+		has_completed_focus = HUN_light_fighter_effort
+		NOT = { has_tech = fighter3 }
+		}
+
+	abort = {
+		has_tech = fighter3
+	}
+
+	research = {
+		light_fighter = 100000
+	}
+}
+
+HUN_MP_Alliance = {
+	name = "Hungarian-German Alliance"
+	desc = ""
+
+	enable = {
+		original_tag = HUN
+		OR = {
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_1
+			}
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_2
+			}
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_3
+			}
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = 400
+	}
+}

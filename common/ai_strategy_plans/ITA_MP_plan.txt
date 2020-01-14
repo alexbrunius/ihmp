@@ -1,0 +1,319 @@
+ITA_MP_1 = {
+	name = "ITA Mulitplayer Plan 1"
+	desc = "Focus on Fighter Research and take Yugo+Greece early"
+
+	enable = {
+		original_tag = ITA
+			has_game_rule = {
+				rule = ITA_ai_behavior
+				option = ITA_MP_1
+				}
+			}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		ITA_ethiopian_war_logistics				#March 10 1936	
+		ITA_industrial_effort							#May 20 1936	
+		ITA_army_primacy				#July 30 1936	
+		ITA_air_innovation						#October 10 1936
+		ITA_industrial_effort_2 					#October 10 1936	
+		ITA_extra_tech_slot 						#December 20 1936	
+		ITA_victoryinETH 							#February 30 1937	
+		ITA_slovenia_dalmatia_claims 				#May 10 1937
+		ITA_pact_of_steel							#July 20 1937	
+		ITA_greece_war_goal	 						#September 30 1937	
+		ITA_italian_highways 						#December 10 1937
+		ITA_mare_nostrum 	 						#February 20 1938	
+		ITA_carrier_effort							#April 30 1938	
+		ITA_naval_air_effort 						#July 10 1938	
+		ITA_air_innovation_2 						#September 20 1938
+		ITA_albania_war_goal						#November 30 1938
+		ITA_modernized_artillery 					#February 10 1939	
+		ITA_modernized_army							#April 20 1939	
+		ITA_prospect_for_oil 							#June 30 1939
+		ITA_libyan_infrastructure 						#September 10 1939	
+		#ITA_fortification_effort					#November 20 1939	
+		#ITA_romania_friend							#January 30 1940
+		#ITA_light_ship_effort  					#April 10 1940
+		#ITA_special_forces 						#June 20 1940	
+		#ITA_escort_effort						#August 30 1940
+		#ITA_german_rd_treaty 						#November 10 1940
+		#ITA_german_millitary_cooperation 			#January 20 1941	
+		#ITA_naval_air_effort 						#March 30 1941	
+		#ITA_atlantic_fleet 						#June 10 1941	
+		#ITA_marines_and_landing_craft 				#August 20 1941
+		#ITA_capital_ships 							#October 30 1941	
+ 		#ITA_armored_effort 						#January 10
+ 		#ITA_claims_on_france 						#March 20 1942
+ 		#ITA_sea_wolves 							#May 30 1942	
+ 		#ITA_secret_weapons 						#August 10 1942
+													#October 20 1942	
+ 		#ITA_submarine_effort 						#December 30 1942	
+ 		#ITA_libyan_refineries 						#March 10 1943
+ 		#					#May 20 1943	
+		 											#July 30 1943		
+	}				
+
+	research = {
+		cat_mobile_warfare = 40
+		synth_resources = -100
+		cat_grand_battle_plan = -10000
+		cat_strategic_destruction = -10000
+		cat_operational_integrity = -10000
+	}
+
+	ideas = {
+		war_economy = 1000
+		ITA_luigi_einaudi = 200
+		macchi = 150
+		danieli = 50
+		rodolfo_graziani = 0
+	}
+	
+	
+	ai_strategy = {
+		type = pp_spend_priority
+		id = general
+		value = -1000
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+
+
+ITA_MP_1_Fighter1 = {
+	name = "Research Fighter 1 ASAP"
+	desc = "Let the AI of Italy research Fighter 1 as his first research"
+
+	enable = {
+		original_tag = ITA
+			has_game_rule = {
+				rule = ITA_ai_behavior
+				option = ITA_MP_1
+				}
+			}
+
+	abort = {
+		has_tech = fighter1
+	}
+
+	research = {
+		light_fighter = 10000
+	}
+
+}
+
+ITA_MP_1_Fighter2 = {
+	name = "Research Fighter 2 ASAP"
+	desc = "Let the AI of Italy research Fighter 2 as soons as it is avaible"
+
+	enable = {
+		original_tag = ITA
+			has_game_rule = {
+				rule = ITA_ai_behavior
+				option = ITA_MP_1
+				}
+			has_completed_focus = ITA_air_innovation
+			}
+
+	abort = {
+		has_tech = fighter2
+	}
+
+	research = {
+		light_fighter = 10000
+	}	
+
+}
+
+ITA_MP_1_Fighter3 = {
+	name = "Research Fighter 3 ASAP"
+	desc = "Let the AI of Italy research Fighter 3 as it has Air Innovation II"
+
+	enable = {
+		original_tag = ITA
+			has_game_rule = {
+				rule = ITA_ai_behavior
+				option = ITA_MP_1
+				}
+			has_completed_focus = ITA_air_innovation_2
+			}
+
+	abort = {
+		has_tech = fighter3
+	}
+
+	research = {
+		light_fighter = 100000
+	}
+
+}
+
+ITA_MP_1_NoCAS = {
+	name = "Indian Mulitplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = ITA
+		has_dlc = "Together for Victory"
+		has_game_rule = {
+			rule = ITA_ai_behavior
+			option = ITA_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -100000
+	
+	}
+}
+
+ITA_MP_1_NoTac = {
+	name = "Indian Mulitplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = ITA
+		has_dlc = "Together for Victory"
+		has_game_rule = {
+			rule = ITA_ai_behavior
+			option = ITA_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -100000
+	
+	}
+}
+
+ITA_MP_1_NoStrat = {
+	name = "Indian Mulitplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = ITA
+		has_dlc = "Together for Victory"
+		has_game_rule = {
+			rule = ITA_ai_behavior
+			option = ITA_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -100000
+	
+	}
+}
+
+ITA_MP_1_CivBuildup = {
+	name = "Italian Civ Buildup"
+	desc = ""
+
+	enable = {
+		original_tag = ITA
+		has_game_rule = {
+			rule = ITA_ai_behavior
+			option = ITA_MP_1
+		}
+		date < 1937.9.15
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 80
+	
+	}
+}
+
+ITA_MP_Befriend_Germany = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = ITA
+		has_game_rule = {
+			rule = ITA_ai_behavior
+			option = ITA_MP_1
+		}
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = GER
+		value = 200
+	}
+}
+
+ITA_MP_Befriend_Japan = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = ITA
+		has_game_rule = {
+			rule = ITA_ai_behavior
+			option = ITA_MP_1
+		}
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = JAP
+		value = 200
+	}
+}
+
+Japan_Do_Befriend_But_No_PP = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = ITA
+		has_game_rule = {
+			rule = ITA_ai_behavior
+			option = ITA_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = -200
+	}	
+}

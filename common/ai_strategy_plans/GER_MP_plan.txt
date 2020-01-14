@@ -1,0 +1,286 @@
+GER_MP_1 = {
+	name = "GER_MP_1"
+	desc = "RULE_GER_MP_1_DESC"
+
+	enable = {
+		original_tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		GER_four_year_plan
+		GER_autarky
+		GER_hermann_goring_werke
+		GER_kdf_wagen
+		GER_extra_tech_slot
+		#1937
+		GER_army_innovation
+		GER_rhineland
+		GER_soviet_treaty
+		#GER_german_war_economy
+		GER_autobahn
+		GER_army_innovation_2
+		GER_anschluss
+		
+		#1938
+		GER_grosraumwirtschaft
+		GER_integrate_war_economies
+		GER_coal_liquidization
+		GER_synthetic_rubber		
+		GER_demand_sudetenland
+		GER_first_vienna_award
+		#1939
+		GER_end_of_czechoslovakia
+		GER_demand_memel
+		GER_west_wall
+		GER_mol_rib_pact
+		GER_danzig_or_war
+		#1940
+		GER_around_maginot
+		GER_weserubung
+		GER_war_with_france
+		GER_air_innovation
+		#1941
+		GER_tactical_air_effort
+		GER_air_innovation_2
+		GER_atlantikwall
+		GER_anti_comitern_pact
+		GER_second_vienna_award
+		GER_italy_ally
+		GER_ussr_war_goal
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		hjalmar_schacht = 60
+		heinrich_himmler = -100
+		martin_bormann = 100
+		walther_funk = 20
+		joseph_goebbels = 30
+		rudolf_hess = -100
+		messerschmitt = 5
+		krupp = 25
+		goering = 0.5
+		werner_von_fritsch = 0.3
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "ROM"
+		value = 100
+	}
+	
+
+	traits = {
+		captain_of_industry = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+GER_MP_1_NoWar = {
+	name = "Dont join war"
+	desc = ""
+
+	enable = {
+		original_tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = ITA
+		target_country = GRE
+		value = 500
+	}
+}
+
+GER_MP_Alliance_HUN = {
+	name = "German-Hungarian Alliance"
+	desc = ""
+
+	enable = {
+		original_tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "HUN"
+		value = 400
+	}
+}
+
+GER_MP_Alliance_ROM = {
+	name = "German-Romanian Alliance"
+	desc = ""
+
+	enable = {
+		original_tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "ROM"
+		value = 400
+	}
+}
+
+GER_MP_Conquer_Bulgaria = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = BUL
+		value = 200
+	}
+}
+
+GER_MP_Antagonize_Bulgaria = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = BUL
+		value = 200
+	}
+}
+
+GER_MP_Befriend_Italy = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = ITA
+		value = 200
+	}
+}
+
+GER_MP_Befriend_Japan = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = JAP
+		value = 200
+	}
+}
+
+Japan_Do_Befriend_But_No_PP = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = -200
+	}	
+}

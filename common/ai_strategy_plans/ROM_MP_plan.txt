@@ -1,0 +1,222 @@
+ROM_MP_1 = {
+	name = "Romanian Multiplayer 1"
+	desc = ""
+
+	enable = {
+		original_tag = ROM
+		has_dlc = "Death or Dishonor"
+		has_game_rule = {
+			rule = ROM_ai_behavior
+			option = ROM_MP_1
+				}
+			}
+
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		ROM_institute_royal_dictatorship
+		ROM_revise_the_constitution
+		ROM_the_royal_foundation
+		ROM_king_michaels_coup
+		ROM_flexible_foreign_policy
+		ROM_appoint_german_friendly_government
+		ROM_preserve_greater_romania
+		ROM_civil_works
+		ROM_agrarian_reform
+		ROM_danubian_transport_network
+		ROM_malaxa
+		ROM_hunedoara_steel_works
+		ROM_a_deal_with_the_devil
+		ROM_form_peasant_militias
+		ROM_invest_in_the_iar
+		ROM_expand_ploiesti_oil_production
+		ROM_expand_the_university_of_bucharest
+		ROM_expand_the_air_force
+		ROM_local_development
+		ROM_strategic_bomber_force
+		ROM_heavy_bombers
+		ROM_trade_treaty_with_germany
+		ROM_invite_german_advisors
+		ROM_join_axis
+		ROM_german_romanian_oil_exploitation_company
+		#ROM_army_maneuvers
+		#ROM_expand_the_air_force
+		#ROM_local_development
+		#ROM_air_superiority
+		#ROM_expand_the_galati_shipyards
+		#ROM_iar_80
+		#ROM_cas
+		#ROM_royal_guards_divisions
+		#ROM_the_zb_53
+		#ROM_vanatori_de_munte
+		#ROM_the_armored_division
+		#ROM_army_war_college
+		#ROM_acquire_modern_tanks
+		#ROM_artillery_modernization
+		#ROM_mobile_tank_destroyers
+		#ROM_mountain_artillery
+		#ROM_coastal_defense_navy
+		#ROM_modern_destroyers
+		#ROM_the_maresal
+	}
+
+	research = {
+	}
+
+	ideas = {
+		ROM_gheorghe_argeseanu = 100
+		ROM_nicolae_malaxa = 15
+		ROM_ROMLOC = 10
+		ROM_mihail_sturdza = 2
+		ROM_armand_calinescu = -1000
+		ROM_iuliu_maniu = -1000
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+		free_trade = 10000
+	}
+		
+	ai_strategy = {
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+ROM_MP_1_Infrastructure = {
+	name = "Romanian Multiplayer 1"
+	desc = "Build Level 10 Infrastructure for Oil"
+
+	enable = {
+		original_tag = ROM
+		has_game_rule = {
+			rule = ROM_ai_behavior
+			option = ROM_MP_1
+				}
+			46 = {
+		is_controlled_by = ROM
+		infrastructure < 10
+			}
+	}
+
+	abort = {
+		46 = {
+			OR ={
+				NOT = { is_controlled_by = ROM }
+				NOT = { infrastructure < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 46
+		value = 100
+	}
+}
+
+ROM_MP_1_Alliance = {
+	name = "Romanian-German Alliance"
+	desc = ""
+
+	enable = {
+		original_tag = ROM
+		has_game_rule = {
+			rule = ROM_ai_behavior
+			option = ROM_MP_1
+				}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = 200
+	}
+}
+
+ROM_MP_StratBomber1 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = ROM
+		has_game_rule = {
+			rule = ROM_ai_behavior
+			option = ROM_MP_1
+		}
+		has_completed_focus = ROM_expand_the_air_force
+		NOT = { has_tech = strategic_bomber1 }
+	}
+
+	abort = {
+		has_tech = strategic_bomber1
+	}
+
+	research = { cat_strategic_bomber = 1000
+	}
+}
+
+ROM_MP_StratBomber2 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = ROM
+		has_game_rule = {
+			rule = ROM_ai_behavior
+			option = ROM_MP_1
+		}
+		has_completed_focus = ROM_strategic_bomber_force
+		NOT = {	has_tech = strategic_bomber2 }
+	}
+
+	abort = {
+		has_tech = strategic_bomber2
+	}
+
+	research = { cat_strategic_bomber = 1000
+	}
+}
+
+ROM_MP_StratBomber3 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = ROM
+		has_game_rule = {
+			rule = ROM_ai_behavior
+			option = ROM_MP_1
+		}
+		has_completed_focus = ROM_heavy_bombers
+		NOT = { has_tech = strategic_bomber3 }
+	}
+
+	abort = {
+		has_tech = strategic_bomber3
+	}
+
+	research = { cat_strategic_bomber = 10000
+	}
+}

@@ -1,0 +1,149 @@
+SPR_MP_1 = {
+	name = "Spain Multiplayer 1"
+	desc = ""
+
+	enable = {
+		original_tag = SPR
+		has_government = fascism
+		has_game_rule = {
+			rule = SPR_ai_behavior
+			option = SPR_MP_1
+		}
+	}
+
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		political_effort
+		collectivist_ethos
+		nationalism_focus
+		militarism
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		infrastructure_effort
+		infrastructure_effort_2
+		extra_tech_slot
+		extra_tech_slot_2
+		construction_effort_3
+		production_effort
+		production_effort_2
+		production_effort_3
+		naval_effort
+		army_effort
+		doctrine_effort
+		doctrine_effort_2
+		aviation_effort
+		fighter_focus
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+	SPR_francisco_largo_caballero = 5
+	SPR_jose_miaja = 10
+	SPR_augusto_barcia_trelles = -1000
+	SPR_dolores_ibarruri = -1000
+	}
+	
+		
+	ai_strategy = {
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+SPR_MP_1_CivBuildup = {
+	name = "Spanish Civ Buildup"
+	desc = ""
+
+	enable = {
+		original_tag = SPR
+		has_game_rule = {
+			rule = SPR_ai_behavior
+			option = SPR_MP_1
+		}
+		date < 1939.1.1
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 50
+	
+	}
+}
+
+SPR_MP_1_Ignore_Soviet = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = SPR
+		has_game_rule = {
+			rule = SPR_ai_behavior
+			option = SPR_MP_1
+		}
+		is_in_faction_with = GER
+		has_war_with = SOV
+		
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = ignore
+		id = SOV
+		value = 600
+	
+	}
+}
+
+SPR_MP_1_Ignore_Romania = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = SPR
+		has_game_rule = {
+			rule = SPR_ai_behavior
+			option = SPR_MP_1
+		}
+		is_in_faction_with = GER
+		is_in_faction_with = ROM
+		has_war_with = SOV
+		
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ROM
+		value = 600
+	
+	}
+}

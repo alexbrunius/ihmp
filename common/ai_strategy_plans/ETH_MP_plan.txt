@@ -1,0 +1,136 @@
+ETH_MP_Free = {
+	name = "Ethopia Free 1"
+	desc = ""
+
+	enable = {
+		original_tag = ETH
+		has_game_rule = {
+			rule = ETH_ai_behavior
+			option = ETH_MP_1
+		}
+		ETH = {
+			NOT = { is_subject_of = ITA }
+		}
+	}
+
+	abort = {
+		ETH = {
+			is_subject_of = ITA
+		}
+	}
+	focus_factors = {
+		internationalism_focus = 0
+		liberty_ethos = 0
+		
+	}
+}
+
+ETH_MP_Subject = {
+	name = "Ethopia Subject 1"
+	desc = ""
+
+	enable = {
+		original_tag = ETH
+		has_game_rule = {
+			rule = ETH_ai_behavior
+			option = ETH_MP_1
+		}
+		ETH = {
+			is_subject_of = ITA
+		}
+	}
+
+	abort = {
+		ETH = {
+			NOT = {
+				is_subject_of = ITA
+			}
+		}
+	}
+
+	ai_national_focuses = {
+		political_effort
+		collectivist_ethos
+		nationalism_focus
+		militarism
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		infrastructure_effort
+		infrastructure_effort_2
+		extra_tech_slot
+		extra_tech_slot_2
+		construction_effort_3
+		production_effort
+		production_effort_2
+		production_effort_3
+		naval_effort
+		army_effort
+		doctrine_effort
+		doctrine_effort_2
+		aviation_effort
+		fighter_focus
+	}
+
+	research = {
+		air_equipment = -10000
+		air_doctrine = -10000
+		naval_equipment = -10000
+		naval_doctrine = -10000
+	}
+
+	ideas = {
+		war_economy = 100
+		extensive_conscription = 100
+	}
+	
+		
+	ai_strategy = {
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+ETH_MP_AT_Research = {
+	name = "Research Anti-Tank Guns"
+	desc = ""
+
+	enable = {
+		original_tag = ETH
+		has_game_rule = {
+			rule = ETH_ai_behavior
+			option = ETH_MP_1
+		}
+		date > 1937.04.01
+		ETH = {
+			is_subject_of = ITA
+		}
+	}
+
+	abort = {
+		ETH = {
+			NOT = { 
+				is_subject_of = ITA
+			}
+		}
+	}
+
+	research = {
+		cat_anti_tank = 10000
+	}
+
+}

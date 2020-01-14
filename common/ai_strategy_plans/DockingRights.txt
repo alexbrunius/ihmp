@@ -1,0 +1,165 @@
+Americas_MP_AntiGER = {
+	name = ""
+	desc = ""
+
+	enable = {
+		has_game_rule = {
+			rule = DR_ai_behavior
+			option = DR_1
+		}
+		has_government = fascism
+		capital_scope = {
+			OR = {
+				is_on_continent = north_america
+				is_on_continent = south_america
+			}
+		}
+	}
+
+	abort = {
+	}
+		
+	ai_strategy = {
+		type = antagonize       
+		id = GER           
+		value = 40
+	}
+}
+
+Americas_MP_AntiITA = {
+	name = ""
+	desc = ""
+
+	enable = {
+		has_game_rule = {
+			rule = DR_ai_behavior
+			option = DR_1
+		}
+		has_government = fascism
+		capital_scope = {
+			OR = {
+				is_on_continent = north_america
+				is_on_continent = south_america
+			}
+		}
+	}
+
+	abort = {
+	}
+	
+		
+	ai_strategy = {
+		type = antagonize       
+		id = ITA           
+		value = 40
+	}
+}
+
+Americas_MP_AntiJAP = {
+	name = ""
+	desc = ""
+
+	enable = {
+		has_game_rule = {
+			rule = DR_ai_behavior
+			option = DR_1
+		}
+		has_government = fascism
+		capital_scope = {
+			OR = {
+				is_on_continent = north_america
+				is_on_continent = south_america
+			}
+		}
+	}
+
+	abort = {
+	}
+	
+		
+	ai_strategy = {
+		type = antagonize       
+		id = JAP           
+		value = 40
+	}
+}
+
+SPR_MP_AntiGER = {
+	name = ""
+	desc = ""
+
+	enable = {
+		has_game_rule = {
+			rule = DR_ai_behavior
+			option = DR_1
+		}
+		original_tag = SPR
+		has_government = fascism
+
+		FRA = { has_capitulated = no }
+	}
+
+	abort = {
+		FRA = { has_capitulated = yes }
+	}
+		
+	ai_strategy = {
+		type = antagonize       
+		id = GER           
+		value = 40
+	}
+}
+
+SPR_MP_AntiITA = {
+	name = ""
+	desc = ""
+
+	enable = {
+		has_game_rule = {
+			rule = DR_ai_behavior
+			option = DR_1
+		}
+		original_tag = SPR
+		has_government = fascism
+
+		FRA = { has_capitulated = no }
+	}
+
+	abort = {
+		FRA = { has_capitulated = yes }
+	}
+	
+		
+	ai_strategy = {
+		type = antagonize       
+		id = ITA           
+		value = 40
+	}
+}
+
+SPR_MP_AntiJAP = {
+	name = ""
+	desc = ""
+
+	enable = {
+		has_game_rule = {
+			rule = DR_ai_behavior
+			option = DR_1
+		}
+		original_tag = SPR
+		has_government = fascism
+
+		FRA = { has_capitulated = no }
+	}
+
+	abort = {
+		FRA = { has_capitulated = yes }
+	}
+	
+		
+	ai_strategy = {
+		type = antagonize       
+		id = JAP           
+		value = 40
+	}
+}

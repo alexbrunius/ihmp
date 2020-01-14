@@ -1,0 +1,420 @@
+MAL_MP_1 = {
+	name = "Malaya Multiplayer 1"
+	desc = ""
+
+	enable = {
+		original_tag = MAL
+		has_game_rule = {
+			rule = MAL_ai_behavior
+			option = MAL_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		army_effort
+		motorization_effort
+		mechanization_effort
+		armor_effort
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		infrastructure_effort
+		infrastructure_effort_2
+		extra_tech_slot
+		extra_tech_slot_2
+		construction_effort_3
+		political_effort
+		liberty_ethos
+		neutrality_focus
+		deterrence
+		secret_weapons
+		production_effort
+		production_effort_2
+		production_effort_3
+		naval_effort
+		aviation_effort
+	}
+
+	research = {
+		synth_resources = -1000
+		construction_tech = 1000
+		land_doctrine = -10000
+		air_doctrine = -10000
+		naval_doctrine = -10000
+	}
+
+	ideas = {
+		free_trade = 100000
+		tank_manufacturer = 100
+		generic_captain_of_industry = 10
+		war_economy = 20
+		partial_economic_mobilisation = 10
+		extensive_conscription = 10
+		generic_industrial_concern = 5
+	}
+	
+		
+	ai_strategy = {
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+	}
+}
+
+MAL_MP_2 = {
+	name = "Malaya Multiplayer 2"
+	desc = ""
+
+	enable = {
+		original_tag = MAL
+		has_game_rule = {
+			rule = MAL_ai_behavior
+			option = MAL_MP_2
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		production_effort
+		production_effort_2
+		production_effort_3
+		army_effort
+		motorization_effort
+		mechanization_effort
+		armor_effort
+		infrastructure_effort
+		infrastructure_effort_2
+		extra_tech_slot
+		extra_tech_slot_2
+		construction_effort_3
+		political_effort
+		liberty_ethos
+		neutrality_focus
+		deterrence
+		secret_weapons
+		naval_effort
+		aviation_effort
+	}
+
+	research = {
+		synth_resources = -1000
+		construction_tech = 1000
+		land_doctrine = -10000
+		air_doctrine = -10000
+		naval_doctrine = -10000
+	}
+
+	ideas = {
+		free_trade = 100000
+		tank_manufacturer = 100
+		generic_captain_of_industry = 10
+		war_economy = 20
+		partial_economic_mobilisation = 10
+		extensive_conscription = 10
+		generic_industrial_concern = 5
+	}
+	
+		
+	ai_strategy = {
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+	}
+}
+
+
+MAL_MP_Airbase_1 = {
+	name = "Airbase in Malay"
+	desc = "Build Level 10 Airbase for UK"
+
+	enable = {
+		original_tag = MAL
+		OR = {
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_1
+			}
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_2
+			}
+		}
+		336 = {
+			is_controlled_by = MAL
+			air_base < 10
+		}
+	}
+
+	abort = {
+		336 = {
+			OR ={
+				NOT = { is_controlled_by = MAL }
+				NOT = { air_base < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = air_base
+		target = 336
+		value = 100
+	}
+}
+
+
+MAL_MP_Electronics_1 = {
+	name = "Malayan Multiplayer Plan Electronics 2"
+	desc = ""
+
+	enable = {
+		original_tag = MAL
+		OR = {
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_1
+			}
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_2
+			}
+		}
+		NOT = { has_tech = mechanical_computing }
+	}
+	
+	abort = {
+		has_tech = mechanical_computing 
+	}
+
+	research = {
+		computing_tech = 100000
+	}
+}
+
+MAL_MP_Heavy_Tank_1 = {
+	name = "Malayan Multiplayer Plan Heavy Tank"
+	desc = ""
+
+	enable = {
+		original_tag = MAL
+		OR = {
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_1
+			}
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_2
+			}
+		}
+		NOT = { has_tech = basic_heavy_tank }
+	
+	}
+	
+	abort = {
+		has_tech = basic_heavy_tank 
+	}
+
+	research = {
+		cat_heavy_armor = 50000
+	}
+}
+
+MAL_MP_Heavy_Tank_2 = {
+	name = "Malayan Multiplayer Plan Heavy Tank"
+	desc = ""
+
+	enable = {
+		original_tag = MAL
+		OR = {
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_1
+			}
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_2
+			}
+		}
+		NOT = { has_tech = advanced_heavy_tank }
+		has_completed_focus = armor_effort
+	}
+	
+	abort = {
+		has_tech = advanced_heavy_tank 
+	}
+
+	research = {
+		cat_heavy_armor = 500000
+	}
+}
+
+MAL_MP_Radar_Research = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = MAL
+		OR = {
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_1
+			}
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_2
+			}
+		}
+		has_completed_focus = extra_tech_slot
+	}
+
+	abort = {
+		has_tech = advanced_centimetric_radar
+	}
+
+	research = {
+		radar_tech = 50000
+	}
+}
+
+MAL_MP_Radar_Construction = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = MAL
+		OR = {
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_1
+			}
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_2
+			}
+		}
+		has_tech = radio_detection
+		336 = {
+			is_controlled_by = MAL
+			radar_station < 6
+		}
+	}
+
+	abort = {
+		336 = {
+			OR ={
+				NOT = { is_controlled_by = MAL }
+				NOT = { radar_station < 6 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = radar_station
+		target = 336
+		value = 100
+	}
+}
+
+MAL_MP_AA_Construction = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = MAL
+		OR = {
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_1
+			}
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_2
+			}
+		}
+		has_completed_focus = deterrence
+		336 = {
+			is_controlled_by = MAL
+			anti_air_building < 5
+		}
+	}
+
+	abort = {
+		336 = {
+			OR ={
+				NOT = { is_controlled_by = MAL }
+				NOT = { anti_air_building < 5 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = anti_air_building
+		target = 336
+		value = 100
+	}
+}
+
+MAL_MP_Doctrine = {
+	name = "Malayan Multiplayer Plan Doctinres"
+	desc = ""
+
+	enable = {
+		original_tag = MAL
+		OR = {
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_1
+			}
+			has_game_rule = {
+				rule = MAL_ai_behavior
+				option = MAL_MP_2
+			}
+		}
+		NOT = { date > 1940.1.1 }
+	}
+	
+	abort = {
+		date > 1940.1.1
+	}
+
+	research = {
+		land_doctrine = -10000
+		air_doctrine = -10000
+		naval_doctrine = -10000
+	}
+}

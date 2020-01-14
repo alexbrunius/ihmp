@@ -1,0 +1,1023 @@
+FRA_MP_1 = {
+	name = "France Multiplayer 1"
+	desc = "Political Reform First"
+
+	enable = {
+		original_tag = FRA
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+				}	
+			}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		FRA_initiate_government_reform #March 10 1936	
+		FRA_support_status_quo #May 20 1936	
+		FRA_go_with_britain #July 30 1936	
+		FRA_strengthen_government_support #October 10 1936
+		FRA_defensive_strategems #October 10 1936	
+		FRA_metropolitan_france #December 20 1936	
+		FRA_industrial_expansion #February 30 1937	
+		FRA_military_factories #May 10 1937	
+		FRA_extra_research_slot
+		FRA_defensive_focus
+		FRA_infantry_focus
+		FRA_artillery_focus 
+		FRA_heavy_armor_focus
+		FRA_army_reform	
+		FRA_algerie_france
+		FRA_colonial_industry
+		FRA_colonial_military_factories
+		FRA_fortification_focus
+		FRA_alpine_forts
+		FRA_extend_the_maginot_line
+		 #November 20 1939	
+		 #January 30 1940
+		 #April 10 1940
+		 #June 20 1940	
+		 #August 30 1940
+		 #November 10 1940
+		 #January 20 1941	
+		 #March 30 1941	
+		 #June 10 1941	
+		 #August 20 1941
+		 #October 30 1941	
+ 		 #January 10
+ 		 #March 20 1942
+ 		 #May 30 1942	
+ 		 #August 10 1942
+ 		 #October 20 1942	
+ 		 #December 30 1942	
+ 		 #March 10 1943
+ 		 #May 20 1943	
+		 #July 30 1943	
+	}
+
+	research = {
+		air_doctrine = -1000
+		naval_equipment = -1000
+		naval_doctrine = -1000
+	}
+
+	ideas = {
+		FRA_gaston_henry_haye = 1000
+		henri_giraud = 30
+		maxime_weygand = 20
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = general
+		value = -1000
+	}
+
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+FRA_MP_2 = {
+	name = "France Multiplayer 2"
+	desc = "Industry First"
+
+	enable = {
+		original_tag = FRA
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+				}	
+			}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		FRA_initiate_government_reform #March 10 1936	
+		FRA_metropolitan_france #May 20 1936	
+		FRA_industrial_expansion #July 30 1936	
+		FRA_military_factories #October 10 1936
+		FRA_algerie_france #October 10 1936	
+		FRA_colonial_industry #December 20 1936	
+		FRA_colonial_military_factories #February 30 1937	
+		FRA_extra_research_slot #May 10 1937	
+		FRA_support_status_quo #July 20 1937	
+		FRA_go_with_britain #September 30 1937	
+		FRA_strengthen_government_support #December 10 1937
+		FRA_defensive_strategems #February 20 1938	
+		FRA_defensive_focus #April 30 1938	
+		FRA_infantry_focus #July 10 1938	
+		FRA_artillery_focus #September 20 1938
+		FRA_heavy_armor_focus #November 30 1938
+		FRA_army_reform #February 10 1939	
+		FRA_fortification_focus #April 20 1939	
+		FRA_alpine_forts #June 30 1939
+		FRA_extend_the_maginot_line #September 10 1939	
+		 #November 20 1939	
+		 #January 30 1940
+		 #April 10 1940
+		 #June 20 1940	
+		 #August 30 1940
+		 #November 10 1940
+		 #January 20 1941	
+		 #March 30 1941	
+		 #June 10 1941	
+		 #August 20 1941
+		 #October 30 1941	
+ 		 #January 10
+ 		 #March 20 1942
+ 		 #May 30 1942	
+ 		 #August 10 1942
+ 		 #October 20 1942	
+ 		 #December 30 1942	
+ 		 #March 10 1943
+ 		 #May 20 1943	
+		 #July 30 1943	
+	}
+
+	research = {
+		air_doctrine = -1000
+		naval_equipment = -1000
+		naval_doctrine = -1000
+	}
+
+	ideas = {
+		FRA_gaston_henry_haye = 1000
+		henri_giraud = 30
+		maxime_weygand = 20
+	}
+
+	ai_strategy = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+FRA_MP_NoCAS = {
+	name = "NoCas"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -10000
+	
+	}
+}
+
+FRA_MP_NoNav = {
+	name = "Mulitplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -10000
+	
+	}
+}
+
+FRA_MP_NoTac = {
+	name = "Mulitplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -10000
+	
+	}
+}
+
+FRA_MP_NoStrat = {
+	name = "Mulitplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -10000
+	}
+}
+
+FRA_MP_NoLandDoctrine = {
+	name = "No Landdoctrine until Army reformed"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_idea = FRA_victors_of_wwi
+	}
+	
+	abort = {
+		NOT { has_idea = FRA_victors_of_wwi }
+	}
+	
+	research = {
+		land_doctrine = -10000
+	}
+}
+
+FRA_MP_AT_Research = {
+	name = "Research Anti-Tank Guns"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date > 1937.06.01
+	}
+
+	abort = {
+	}
+
+	research = {
+		cat_anti_tank = 10000
+	}
+
+}
+
+FRA_MP_AT_Production = {
+	name = "Produce Anti-Tank Guns"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_tech = antitank2
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = 200
+	}
+
+}
+
+FRA_MP_InfEquip_LessProduction = {
+	name = "Produce Less Inf Equip"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_tech = antitank2
+		stockpile_ratio = {
+			archetype = infantry_equipment
+			ratio > 1.0
+		}
+	}
+
+	abort = {
+		stockpile_ratio = {
+			archetype = infantry_equipment
+			ratio < 0.5
+		}
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = -50
+	}
+}
+
+FRA_MP_AT_MoreProduction = {
+	name = "Produce More AT Equip"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_tech = antitank2
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = -50
+	}
+}
+
+FRA_MP_LT_LessProduction = {
+	name = "Produce Less Light Tanks"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_tech = antitank2
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = anti_armor
+		value = 100
+	}
+}
+
+FRA_MP_Europe = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 10000
+	}
+}
+
+FRA_MP_NoAsia = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = -10000
+	}
+}
+
+FRA_MP_NoAfrica = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = -10000
+	}
+}
+
+FRA_MP_NoSuez = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = suez
+		value = -10000
+	}
+}
+
+FRA_MP_Brazil = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = BRA
+		value = 1000
+	
+	}
+}
+
+FRA_MP_Spain1 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = SPR
+		value = 1000
+	
+	}
+}
+
+FRA_MP_Spain2 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = D01
+		value = 1000
+	
+	}
+}
+
+FRA_MP_Libera = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = LIB
+		value = 1000
+	
+	}
+}
+
+FRA_MP_Turkey = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = TUR
+		value = 1000
+	
+	}
+}
+
+FRA_MP_Iraq = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = IRQ
+		value = 1000
+	
+	}
+}
+
+FRA_MP_Guangxi = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = GXC
+		value = 1000
+	
+	}
+}
+
+FRA_MP_Siam = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = SIA
+		value = 1000
+	
+	}
+}
+
+FRA_MP_Yunnan = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = YUN
+		value = 1000
+	
+	}
+}
+
+FRA_MP_Belgium = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = contain
+		id = BEL
+		value = 1000
+	
+	}
+}
+
+FRA_MP_Germany = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = GER
+		value = 400
+	
+	}
+}
+
+FRA_MP_Italy = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = ITA
+		value = 200
+	
+	}
+}
+
+FRA_MP_Romania = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = ROM
+		value = 200
+	
+	}
+}
+
+FRA_MP_Hungary = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = HUN
+		value = 200
+	
+	}
+}
+
+FRA_MP_Japan = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = JAP
+		value = 200
+	
+	}
+}

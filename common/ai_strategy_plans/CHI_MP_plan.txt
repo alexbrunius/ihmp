@@ -1,0 +1,327 @@
+CHI_MP_1_Fight = {
+	name = "Nationalist China Multiplayer Plan 1"
+	desc = "Fight again Japan"
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+	}
+
+	abort = {
+		CHI = {
+			is_subject = yes
+		}
+	}
+
+
+	ai_national_focuses = {
+		CHI_unified_industrial_planning
+		CHI_expand_the_academica_sinica
+		CHI_three_principles_of_the_people
+		CHI_democracy
+		CHI_executive_yuan
+		CHI_nationalism
+		CHI_foreign_threats
+		CHI_united_front
+		CHI_military_affairs_commission
+		CHI_army_reform
+		CHI_war_of_resistance
+		CHI_war_of_national_liberation
+		CHI_war_of_anti_imperialism
+		CHI_invite_foreign_investors
+		CHI_british_cooperation
+		CHI_burma_road
+		CHI_mission_to_the_us 
+		CHI_fighter_purchases
+		CHI_rural_reconstruction_movement
+		CHI_mining_commission
+		CHI_develop_the_hanyan_arsenal
+		CHI_financial_policy
+		CHI_price_controls
+		CHI_reform_the_national_bank
+		CHI_forced_loans
+		CHI_scorched_earth_tactics
+		CHI_welfare
+		CHI_refugee_relief_agency
+		CHI_invite_the_flying_tigers
+		CHI_purchase_tanks
+		CHI_experimental_mechanised_unit
+		CHI_land_tax_reform
+		CHI_forced_conscription
+		CHI_the_hump
+		CHI_chinese_expeditionary_force
+		CHI_sino_american_cooperative_organization
+		CHI_ledo_road
+		CHI_the_chu_x_po
+		CHI_new_life_movement
+		CHI_modern_logistics
+	}
+
+	research = {
+	cat_mass_assault = 10
+	infantry_weapons = 5
+	industry = 5
+	air_doctrine = -1000
+	}
+
+	ideas = {
+		CHI_soong_mei_ling = 10
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+CHI_MP_1_Alliance_1 = {
+	name = "Nationalist China Multiplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		CHI = {
+			is_subject = no
+		}
+	}
+
+	abort = {
+		CHI = {
+			is_subject = yes
+		}
+	}
+
+		ai_strategy = {
+			type = alliance
+			id = PRC
+			value = 200
+		}
+}
+
+CHI_MP_1_Alliance_2 = {
+	name = "Nationalist China Multiplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		CHI = {
+			is_subject = no
+		}
+	}
+
+	abort = {
+		CHI = {
+			is_subject = yes
+		}
+	}
+
+		ai_strategy = {
+			type = alliance
+			id = SHX
+			value = 200
+		}
+}
+
+CHI_MP_1_Alliance_3 = {
+	name = "Nationalist China Multiplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		CHI = {
+			is_subject = no
+		}
+	}
+
+	abort = {
+		CHI = {
+			is_subject = yes
+		}
+	}
+
+		ai_strategy = {
+			type = alliance
+			id = XSM
+			value = 200
+		}
+}
+
+CHI_MP_1_Alliance_4 = {
+	name = "Nationalist China Multiplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		CHI = {
+			is_subject = no
+		}
+	}
+
+	abort = {
+		CHI = {
+			is_subject = yes
+		}
+	}
+
+		ai_strategy = {
+			type = alliance
+			id = SIK
+			value = 200
+		}
+}
+
+CHI_MP_1_Alliance_5 = {
+	name = "Nationalist China Multiplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		CHI = {
+			is_subject = no
+		}
+	}
+
+	abort = {
+		CHI = {
+			is_subject = yes
+		}
+	}
+
+		ai_strategy = {
+			type = alliance
+			id = YUN
+			value = 200
+		}
+}
+
+CHI_MP_1_Alliance_6 = {
+	name = "Nationalist China Multiplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		CHI = {
+			is_subject = no
+		}
+	}
+
+	abort = {
+		CHI = {
+			is_subject = yes
+		}
+	}
+
+		ai_strategy = {
+			type = alliance
+			id = GXC
+			value = 200
+		}
+}
+
+CHI_MP_Electronics_1 = {
+	name = "Chinese Multiplayer Plan Radio"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		CHI = {
+			is_subject = no
+		}
+		has_completed_focus = CHI_expand_the_academica_sinica
+		NOT = { has_tech = radio }
+	}
+	
+	abort = {
+		CHI = {
+			is_subject = yes
+		}
+		has_tech = radio
+	}
+
+	research = {
+		electronics = 100000
+	}
+}
+
+
+CHI_MP_1_Puppet = {
+	name = "Nationalist China Multiplayer Plan 1"
+	desc = "Fight for Japan"
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		CHI = {
+			is_subject = yes
+		}
+	}
+
+	abort = {
+		CHI = {
+			is_subject = no
+		}
+	}
+
+
+	ai_national_focuses = {
+	}
+
+	research = {
+	cat_anti_tank = 20
+	cat_mass_assault = 100
+	}
+
+	ideas = {
+		extensive_conscription = 100
+		war_economy = 50
+		CHI_soong_mei_ling = 10
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
