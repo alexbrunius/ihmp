@@ -1,6 +1,12 @@
 ﻿1.8.1.2
 - Dispersed support now  gives ART and MART -1 combat width and 40% breaktrhough
 - Integrated support branch nerfed from 50% SA total to 40%
+- Floating fortress doctrine now affects BCs and CAs the same as BBs.
+- Combined operations raiding now gives the same bonus to BBs as to BC/CA/CLs.
+- Raider patrols: CA: visibility buffed -10%->-15%, raiding coordination 15%->25%.
+- Capital ship raiders: BCs: raiding coordination buffed 15%->35%.
+
+
 
 1.8.1.1
 - Guerilla fighter trait now also unlocks guerilla tactics
