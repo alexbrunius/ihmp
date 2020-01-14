@@ -1,4 +1,8 @@
-﻿1.8.1.1
+﻿1.8.1.2
+- Dispersed support now  gives ART and MART -1 combat width and 40% breaktrhough
+- Integrated support branch nerfed from 50% SA total to 40%
+
+1.8.1.1
 - Guerilla fighter trait now also unlocks guerilla tactics
 - Scavenger buffed to 5% equipment capture ratio
 - Doctrine tweaks
