@@ -1,0 +1,22 @@
+﻿###########################
+# Capitulation Events
+###########################
+
+add_namespace = capitulation
+
+# Zaire De Facto Independence
+country_event = {
+	id = capitulation.1
+	title = capitulation.1.t
+	desc = capitulation.1.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = capitulation.1.a
+		release = COG
+		release = BRD
+		release = RWA
+	}
+}
