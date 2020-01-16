@@ -928,6 +928,8 @@ focus_tree = {
 					num_of_controlled_states < 3
 				}
 				NOT = { tag = SIA }
+				NOT = { tag = ALB }
+				NOT = { tag = LUX }
 			}
 		}
 	}

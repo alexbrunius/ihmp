@@ -1,4 +1,7 @@
-﻿1.8.1.2
+﻿1.8.1.3
+- Removed Albania and Luxemburg AI being prevented from taking industry NFs at all.
+
+1.8.1.2
 - Dispersed support now  gives ART and MART -1 combat width and 40% breaktrhough
 - Integrated support branch nerfed from 50% SA total to 40%
 - Floating fortress doctrine now affects BCs and CAs the same as BBs.
