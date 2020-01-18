@@ -2,6 +2,7 @@
 - Removed Albania and Luxemburg AI being prevented from taking industry NFs at all.
 - Made AI never protest attaches.
 - Fixed naval doctrine changes from 1.8.1.2 not being properly applied.
+- Fixed low air wing XP boosting ground attack instead of lowering it.
 
 1.8.1.2
 - Dispersed support now  gives ART and MART -1 combat width and 40% breaktrhough
