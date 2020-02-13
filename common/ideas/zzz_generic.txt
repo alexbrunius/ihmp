@@ -198,25 +198,6 @@ ideas = {
 				democratic_acceptance = 85
 			}
 		}
-		democratic_acceptance = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-
-			picture = generic_democratic_drift_bonus
-			
-			modifier = {
-				democratic_acceptance = 85
-			}
-		}
 		neutrality_influence = {
 			allowed = {
 				always = no

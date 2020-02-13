@@ -2038,7 +2038,7 @@ focus_tree = {
 						original_tag = SPR
 					}
 					add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
-					add_ideas = democratic_acceptance
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 					country_event = { id = generic.1 }
 					every_other_country = {
 						limit = { 

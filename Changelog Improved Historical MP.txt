@@ -1,6 +1,7 @@
 ﻿1.8.2.0
 - Fixed US Navy Isolationism sometimes not being properly removed.
 - Made Indian Civil War only fire if Raj is free and at peace.
+- Revert Coerce Spain NF to vanilla as the influence bug is fixed.
 
 1.8.1.3
 - Removed Albania and Luxemburg AI being prevented from taking industry NFs at all.
