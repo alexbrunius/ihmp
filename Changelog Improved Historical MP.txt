@@ -1,4 +1,7 @@
-﻿1.8.1.3
+﻿1.8.2.0
+- Fixed US Navy Isolationism sometimes not being properly removed.
+
+1.8.1.3
 - Removed Albania and Luxemburg AI being prevented from taking industry NFs at all.
 - Made AI never protest attaches.
 - Fixed naval doctrine changes from 1.8.1.2 not being properly applied.
@@ -15,8 +18,6 @@
 - Changed historical licensing game rule to allow licensing between USA and Allies if the former passes Lend Lease Act.
 - Imperial conference locked behing ahistorical NF game rule (thus, disabled by default).
 - Blocked AI nations with less than 3 states (and Colombia, Venezuela, Peru and Chile, but not Siam) from taking industrial NFs.
-
-
 
 1.8.1.1
 - Guerilla fighter trait now also unlocks guerilla tactics

@@ -1,16 +1,4 @@
 on_actions = {
-	#FROM is faction leader on join faction requests.
-	on_join_faction = {
-		effect = {
-			if = {
-				limit = {
-					FROM = { tag = ENG }
-					tag = USA
-				}
-				country_event = { id = usa.70 }
-			}
-		}
-	}
 	on_declare_war = {
 		effect = {
 			if = {

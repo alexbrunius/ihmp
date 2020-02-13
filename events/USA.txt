@@ -1926,31 +1926,3 @@ country_event = {
 		clear_global_event_target = USA_congress_investment_state
 	}
 }
-#IHMP Remove Sleeping Navy
-country_event = {
-	id = usa.70
-	title = usa.70.t
-	desc = usa.70.desc
-	picture = GFX_report_event_ast_navy
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = { 
-		name = usa.70.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = usa.70.a_tt
-		remove_ideas = sleeping_navy_3
-		hidden_effect = {
-			remove_ideas = sleeping_navy
-			remove_ideas = sleeping_navy_2
-		}
-		PHI = {
-			remove_ideas = sleeping_navy_3
-			hidden_effect = {
-				remove_ideas = sleeping_navy
-				remove_ideas = sleeping_navy_2
-			}
-		}
-	}
-}
