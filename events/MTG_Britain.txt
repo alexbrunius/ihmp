@@ -4694,6 +4694,7 @@ country_event = {
 			}
 		}
 		is_subject = no
+		has_war = no
 		has_dlc = "Man the Guns"
 	}
 
