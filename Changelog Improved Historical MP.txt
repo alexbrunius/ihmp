@@ -1,4 +1,7 @@
-﻿1.8.2.0
+﻿1.8.2.1
+- Fixed Blitzkrieg doctrine incorrectly giving 50% bonus instead of 5%.
+
+1.8.2.0
 - Fixed US Navy Isolationism sometimes not being properly removed.
 - Made Indian Civil War only fire if Raj is free and at peace.
 - Revert Coerce Spain NF to vanilla as the influence bug is fixed.
