@@ -200,7 +200,7 @@ units = {
 
 	division = {			
 		name = "Brigada de Arma de Infantería"		
-		location = 4080  #Cádiz
+		location = 1048  #Cádiz
 		division_template = "Brigada de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8

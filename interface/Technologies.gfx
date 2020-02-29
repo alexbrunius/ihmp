@@ -63,6 +63,11 @@ spriteTypes = {
 	}		
 	
 	SpriteType = {
+		name = "GFX_archetype_armored_car_equipment_medium"
+		texturefile = "gfx/interface/archetypes/archetype_armored_car_equipment.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_archetype_motorized_rocket_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_motorized_rocket_equipment.dds"
 	}	
@@ -140,13 +145,13 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
-		name = "GFX_JAP_motorized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/JAP_motorized_equipment_1.dds"
+		name = "GFX_FRA_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/fra_motorized_equipment.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_SOV_motorized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/SOV_motorized_equipment_1.dds"
+		name = "GFX_JAP_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/JAP_motorized_equipment_1.dds"
 	}
 
 	SpriteType = {
@@ -1147,7 +1152,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/SOV_naval_bomber1.dds"
 	}	
 
-	
 	SpriteType = {
 		name = "GFX_SOV_cv_naval_bomber2_medium"
 		texturefile = "gfx/interface/technologies/SOV_naval_bomber2.dds"
@@ -2299,6 +2303,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ger_armored_car_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ger_armored_car_equipment_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ger_armored_car_equipment_3.dds"
+	}
+	
 
 	spriteType = {
 		name = "GFX_subtech_td"
@@ -2682,6 +2701,31 @@ spriteTypes = {
 
 	### FRE equipment	###
 	
+	SpriteType = {
+		name = "GFX_FRA_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/fra_motorized_equipment.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/fra_motorized_equipment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/fra_mechanized_equipment_3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FRA_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/fra_mechanized_equipment_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/fra_mechanized_equipment_1.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_FRA_rocket_artillery4_medium"
 		texturefile = "gfx/interface/technologies/Rocket_Art_2_allies.dds"
@@ -3759,6 +3803,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/jet_tactical_bomber1.dds"
 	}	
 	
+	SpriteType = {
+		name = "GFX_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/generic_scout_plane_1_1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/generic_scout_plane_2_2.dds"
+	}		
+	
 	### German Aircrafts ###
 
 	SpriteType = {
@@ -3989,11 +4043,6 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_mobile_infantry_medium"
-		texturefile = "gfx/interface/technologies/mobile_infantry.dds"
-		alwaystransparent = yes
-	}
-	SpriteType = {
-		name = "GFX_mobile_support_medium"
 		texturefile = "gfx/interface/technologies/mobile_infantry.dds"
 		alwaystransparent = yes
 	}

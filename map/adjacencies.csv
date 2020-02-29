@@ -130,7 +130,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
 4135;7153;impassable;-1;-1;-1;-1;-1;;Gibraltar
 4135;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
-1048;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
 2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas

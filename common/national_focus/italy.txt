@@ -25,6 +25,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		bypass = {
 			550 = { NOT = { is_owned_and_controlled_by = ITA } }
@@ -130,6 +131,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -272,6 +274,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -496,6 +499,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_research_slot = 1
@@ -514,6 +518,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
 		completion_reward = {
 			2 = {
 				if = {
@@ -632,6 +638,7 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		ai_will_do = {
 			factor = 1
@@ -669,6 +676,7 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		ai_will_do = {
 			factor = 1
@@ -708,6 +716,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			450  = {
@@ -777,6 +786,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			army_experience = 5
@@ -880,6 +890,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -905,6 +916,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			army_experience = 5
@@ -912,9 +924,10 @@ focus_tree = {
 				name = special_bonus
 				bonus = 1.0
 				uses = 1
-				technology = tech_recon
-				technology = tech_recon2
-				technology = tech_recon3
+				category = recon_tech
+				#technology = tech_recon
+				#technology = tech_recon2
+				#technology = tech_recon3
 			}
 			add_tech_bonus = {
 				name = land_doc_bonus
@@ -939,6 +952,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			army_experience = 5
@@ -946,14 +960,16 @@ focus_tree = {
 				name = special_bonus
 				bonus = 1.0
 				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
+				category = para_tech
+				#technology = paratroopers
+				#technology = paratroopers2
 			}
 			add_tech_bonus = {
 				name = special_bonus
 				ahead_reduction = 2
 				uses = 1
-				technology = tech_mountaineers2
+				category = mountaineers_tech
+				#technology = tech_mountaineers2
 			}
 		}
 	}
@@ -971,6 +987,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			army_experience = 5
@@ -994,6 +1011,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			navy_experience = 50
@@ -1098,6 +1116,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			air_experience = 25
@@ -1129,6 +1148,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1153,6 +1173,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			navy_experience = 25
@@ -1187,6 +1208,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 
@@ -1194,15 +1216,17 @@ focus_tree = {
 				name = ITA_bomber_effort
 				bonus = 1.0
 				uses = 1
-				technology = tactical_bomber2
-				technology = tactical_bomber3
+				category = tactical_bomber
+				#technology = tactical_bomber2
+				#technology = tactical_bomber3
 			}
 			add_tech_bonus = {
 				name = ITA_bomber_effort
 				bonus = 1.0
 				uses = 1
-				technology = CAS2
-				technology = CAS3
+				category = cas_bomber
+				#technology = CAS2
+				#technology = CAS3
 			}
 		}
 	}
@@ -1222,6 +1246,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			air_experience = 25
@@ -1230,9 +1255,10 @@ focus_tree = {
 				name = naval_air_effort
 				bonus = 1.0
 				uses = 1
-				technology = naval_bomber1
-				technology = naval_bomber2
-				technology = naval_bomber3
+				category = naval_bomber
+				#technology = naval_bomber1
+				#technology = naval_bomber2
+				#technology = naval_bomber3
 			}
 		}
 	}
@@ -1251,6 +1277,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			navy_experience = 25
@@ -1284,22 +1311,25 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_marines_and_landing_craft
 				bonus = 1.0
 				uses = 1
-				technology = marines
-				technology = marines2
+				category = marine_tech
+				#technology = marines
+				#technology = marines2
 			}
 			add_tech_bonus = {
 				name = ITA_marines_and_landing_craft
 				bonus = 1.0
 				uses = 1
-				technology = transport
-				technology = landing_craft
-				technology = tank_landing_craft
+				category = tp_tech
+				#technology = transport
+				#technology = landing_craft
+				#technology = tank_landing_craft
 			}
 		}
 	}
@@ -1318,6 +1348,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1348,6 +1379,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 		# Caproni Campini N.1
@@ -1355,8 +1387,9 @@ focus_tree = {
 				name = ITA_jet_engine_effort
 				bonus = 1.0
 				uses = 1
-				technology = jet_engines
-				technology = jet_fighter1
+				category = jet_technology
+				#technology = jet_engines
+				#technology = jet_fighter1
 			}
 		}
 	}
@@ -1372,6 +1405,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1384,9 +1418,10 @@ focus_tree = {
 				name = con_def_bonus
 				bonus = 1.0
 				uses = 1
-				technology = convoy_sailing
-				technology = convoy_sailing_ti
-				technology = convoy_sailing_bs
+				category = convoy_defense_tree
+				#technology = convoy_sailing
+				#technology = convoy_sailing_ti
+				#technology = convoy_sailing_bs
 			}
 		}
 	}
@@ -1402,6 +1437,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
 
@@ -1416,9 +1452,11 @@ focus_tree = {
 				name = ITA_escort_effort
 				bonus = 1.0
 				uses = 2
-				technology = convoy_escorts
-				technology = convoy_escorts_bs
-				technology = escort_carriers
+				category = convoy_defense_tree
+
+				#technology = convoy_escorts
+				#technology = convoy_escorts_bs
+				#technology = escort_carriers
 			}
 		}
 	}
@@ -1437,6 +1475,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1449,10 +1488,11 @@ focus_tree = {
 				name = sub_op_bonus
 				bonus = 1.0
 				uses = 2
-				technology = submarine_operations
-				technology = undersea_blockade
-				technology = convoy_interdiction
-				technology = submarine_offensive
+				category = submarine_doctrine
+				#technology = submarine_operations
+				#technology = undersea_blockade
+				#technology = convoy_interdiction
+				#technology = submarine_offensive
 			}
 		}
 	}
@@ -1474,6 +1514,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			navy_experience = 25
@@ -1501,6 +1542,11 @@ focus_tree = {
 				ETH = { is_puppet_of = ITA }
 			}
 		}
+		
+		bypass = {
+			ETH = { exists = yes }
+			NOT = { has_war_with = ETH }
+		}
 
 		available_if_capitulated = yes
 
@@ -1510,6 +1556,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
+
 		completion_reward = {
 			add_stability = 0.1
 			add_war_support = 0.1
@@ -1635,18 +1683,45 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = ITA_victoryinETH }
 		available = {
-			any_other_country = {
-				original_tag = SPR
-				has_government = fascism
-				has_volunteers_amount_from = {
-					tag = ITA
-					count > 1
+			if = {
+				limit = {
+					NOT = { has_dlc = "La Resistance" }
+				}
+				any_other_country = {
+					original_tag = SPR
+					has_government = fascism
+					has_volunteers_amount_from = {
+						tag = ITA
+						count > 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				SPA = {
+					has_volunteers_amount_from = {
+						tag = ITA
+						count > 1
+					}
 				}
 			}
 		}
 		cancel = {
-			SPR = {
-				has_civil_war = no
+			if = {
+				limit = {
+					NOT = { has_dlc = "La Resistance" }
+				}
+				SPR = {
+					has_civil_war = no
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				SPA = { has_civil_war = no }
 			}
 		}
 		cancel_if_invalid = no
@@ -1658,12 +1733,23 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			random_other_country = {
+			if = {
 				limit = {
-					original_tag = SPR
-					has_government = fascism
+					NOT = { has_dlc = "La Resistance" }
 				}
-				add_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
+				random_other_country = {
+					limit = {
+						original_tag = SPR
+						has_government = fascism
+					}
+					add_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				SPA = { add_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war } }
 			}
 		}
 	}
@@ -1674,18 +1760,44 @@ focus_tree = {
 		prerequisite = { focus = ITA_support_nationalist_spain }
 		mutually_exclusive = { focus = ITA_spanish_italian_faction }
 		available = {
-			any_other_country = {
-				original_tag = SPR
-				has_government = fascism
-				has_war = no
-				owns_state = 177
+			if = {
+				limit = {
+					NOT = { has_dlc = "La Resistance" }
+				}
+				any_other_country = {
+					original_tag = SPR
+					has_government = fascism
+					has_war = no
+					owns_state = 177
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				SPA = {
+					has_war = no
+					owns_state = 177
+				}
 			}
 			is_puppet = no
 		}
 		cancel = {
-			any_other_country = {
-				original_tag = SPR
-				has_government = fascism
+			if = {
+				limit = {
+					NOT = { has_dlc = "La Resistance" }
+				}
+				any_other_country = {
+					original_tag = SPR
+					has_government = fascism
+					has_war_with = ROOT
+					owns_state = 177
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
 				has_war_with = ROOT
 				owns_state = 177
 			}
@@ -1694,9 +1806,12 @@ focus_tree = {
 		y = 3
 		relative_position_id = ITA_support_nationalist_spain
 		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
 		ai_will_do = {
 			factor = 1
 		}	
+		
 		completion_reward = {
 			random_other_country = {
 				limit = {
@@ -1768,6 +1883,8 @@ focus_tree = {
 				date < 1937.1.1
 			}	
 		}	
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
 		completion_reward = {
 			ALB = { country_event = { id = italy.3 } }
 		}
@@ -1779,25 +1896,46 @@ focus_tree = {
 		prerequisite = { focus = ITA_bulgaria_friend }
 		mutually_exclusive = { focus = ITA_italy_first }
 		available = {
-			has_government = fascism
 			NOT = { has_war_with = GER }
-			OR = {
-				AND = {
-					has_government = fascism
-					GER = { 
-						has_government = fascism 
-						country_exists = GER
+			custom_trigger_tooltip = {
+				tooltip = ITA_germ_italy_same_tt
+				OR = {
+					AND = {
+						has_government = fascism
+						GER = { 
+							has_government = fascism 
+							country_exists = GER
+						}
 					}
-				}
-				AND = {
-					has_government = neutrality
-					GER = { 
+					AND = {
 						has_government = neutrality
-						country_exists = GER
+						GER = { 
+							has_government = neutrality
+							country_exists = GER
+						}
+					}
+					AND = {
+						has_government = communism
+						GER = { 
+							has_government = communism
+							country_exists = GER
+						}
+					}
+					AND = {
+						has_government = democratic
+						GER = { 
+							has_government = democratic
+							country_exists = GER
+						}
 					}
 				}
 			}
 			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
+			is_in_faction = no
+		}
+		bypass = {
+			is_in_faction = yes
+			is_in_faction_with = GER
 		}
 		x = -1
 		y = 1
@@ -1856,6 +1994,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}	
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
 		completion_reward = {
 			add_ideas = ITA_german_millitary_cooperation_focus
 		}
@@ -1881,10 +2021,11 @@ focus_tree = {
 				is_in_faction = no
 				is_subject = no
 			}
+			is_in_faction = no
 		}
 		bypass = {
-			FRA = { has_completed_focus = FRA_woo_italy }
-			is_in_faction_with = FRA
+			is_in_faction = yes
+			NOT = { is_in_faction_with = GER }
 		}
 		cancel = {
 			is_in_faction_with = GER
@@ -1911,6 +2052,7 @@ focus_tree = {
 				ai_irrationality > 35
 			}
 		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_political_power = 120
 			set_rule = { can_create_factions = yes }
@@ -1984,6 +2126,7 @@ focus_tree = {
 			create_wargoal = {
 				target = FRA
 				type = take_state_focus
+				expire = 0
 				generator = { 1 735 458 }
 			}
 		}
@@ -2052,6 +2195,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			GER = {
@@ -2094,6 +2238,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2220,6 +2365,7 @@ focus_tree = {
 			create_wargoal = {
 				type = take_state_focus
 				target = GRE
+				expire = 0
 				generator = { 47 } # Athens
 			}
 
@@ -2306,6 +2452,7 @@ focus_tree = {
 			create_wargoal = {
 			target = TUR
 			type = take_state_focus
+			expire = 0
 			generator = { 342 }
 			}
 
@@ -2328,7 +2475,9 @@ focus_tree = {
 			}
 			custom_trigger_tooltip = {
 			 tooltip = ITA_claims_on_france_tt
-				VIC = {
+				any_other_country = {
+					original_tag = FRA
+					has_government = fascism
 					owns_state = 735
 					controls_state = 735
 					owns_state = 1
@@ -2361,7 +2510,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { 
-					VIC = {
+					any_other_country = {
+						original_tag = FRA
+						has_government = fascism
 						owns_state = 735
 					}
 				}
@@ -2369,7 +2520,9 @@ focus_tree = {
 			}
 			if = {
 				limit = { 
-					VIC = {
+					any_other_country = {
+						original_tag = FRA
+						has_government = fascism
 						owns_state = 1
 					}
 				}
@@ -2468,6 +2621,7 @@ focus_tree = {
 			create_wargoal = {
 				type = take_state_focus
 				target = ENG
+				expire = 0
 				generator = { 118 453 116 183 } # Gibraltar, Suez, Malta, Cyprus
 			}
 		}

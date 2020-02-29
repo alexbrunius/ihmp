@@ -32,6 +32,7 @@ sub_units = {
 		weight = 2
 		supply_consumption = 0.4
 
+		suppression = 2
 
 		forest = {
 		    attack = -0.2
@@ -95,6 +96,7 @@ sub_units = {
 		weight = 2.5
 		supply_consumption = 0.44
 
+		suppression = 2
 
 		forest = {
 		    attack = -0.3
@@ -163,6 +165,7 @@ sub_units = {
 		weight = 3.0
 		supply_consumption = 0.6
 
+		suppression = 2
 
 		forest = {
 		    attack = -0.40
@@ -234,6 +237,7 @@ sub_units = {
 		weight = 3.5
 		supply_consumption = 0.8
 
+		suppression = 2
 
 		forest = {
 		    attack = -0.5
@@ -303,6 +307,8 @@ sub_units = {
 		training_time = 180
 		weight = 3.0
 		supply_consumption = 0.5
+
+		suppression = 2
 
 		forest = {
 		    attack = -0.3

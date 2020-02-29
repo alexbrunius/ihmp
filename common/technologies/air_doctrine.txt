@@ -2,6 +2,8 @@ technologies = {
 
 
 	air_superiority = {
+		doctrine_name = "TITLE_STRATEGIC_DESTRUCTION"
+		
 		# EFFECT ########
 		air_superiority_detect_factor = 0.1
 		###########
@@ -757,6 +759,7 @@ technologies = {
 	####################################
 
 	formation_flying = {
+		doctrine_name = "TITLE_BATTLEFIELD_SUPPORT"
 
 		xor = { force_rotation air_superiority }
 
@@ -1424,7 +1427,8 @@ technologies = {
 	####################################
 
 	force_rotation = {
-
+		doctrine_name = "TITLE_OPERATIONAL_INTEGRITY"
+		
 		xp_research_type = air
 		
 		xor = { formation_flying air_superiority }	

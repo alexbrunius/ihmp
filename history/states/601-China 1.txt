@@ -7,13 +7,18 @@ state={
 
 	history={
 		owner = CHI
-		victory_points = { 8041 5 }
 		add_core_of = CHI
 		add_core_of = TIB
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 1
 
+		}
+		victory_points = {
+			10856 1
+		}
+		victory_points = {
+			8041 5
 		}
 		1939.1.1 = {
 			buildings = {

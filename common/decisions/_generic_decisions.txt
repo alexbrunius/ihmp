@@ -1,4 +1,5 @@
 political_actions = {
+
 	
 	targeted_race_for_the_bomb = {
 
@@ -67,6 +68,14 @@ political_actions = {
 
 		available = {
 			has_stability < 1.0
+			if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
 		}
 
 		visible = {
@@ -96,6 +105,11 @@ political_actions = {
 				add = 1
 				has_stability < 0.6
 			}
+			modifier = {
+				factor = 0
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
 		}
 	}
 
@@ -107,6 +121,14 @@ political_actions = {
 			has_war = no
 			has_war_support > 0.2
 			has_stability < 1.0
+			if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
 		}
 
 		visible = {
@@ -141,6 +163,11 @@ political_actions = {
 				add = 1
 				has_stability < 0.4
 			}
+			modifier = {
+				factor = 0
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
 		}
 	}
 }
@@ -152,7 +179,7 @@ economy_decisions = {
 		icon = generic_construction
 
 		allowed = {
-			NOT = { OR = { tag = GER tag = FRA } }
+			NOT = { OR = { tag = GER tag = FRA original_tag = GER original_tag = FRA } }
 		}
 
 		cost = 50
@@ -235,6 +262,22 @@ propaganda_efforts = {
 			threat > 0.5
 			has_war_support < 0.5
 			has_offensive_war = no
+			if = {
+				limit = {
+					tag = SPR
+					has_dlc = "La Resistance"
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SPR
+					has_dlc = "La Resistance"
+				}
+				has_global_flag = scw_over
+			}
 		}
 
 		visible = {
@@ -285,6 +328,22 @@ propaganda_efforts = {
 					}
 					has_offensive_war = yes
 				}
+			}
+			if = {
+				limit = {
+					tag = SPR
+					has_dlc = "La Resistance"
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SPR
+					has_dlc = "La Resistance"
+				}
+				has_global_flag = scw_over
 			}
 		}
 
@@ -991,7 +1050,7 @@ operations = {
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 				factor = 0
 				NOT = {
@@ -1120,6 +1179,31 @@ operations = {
 		}
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				factor = 0 # Don't blow up the canal as USA. Ever.
+				tag = USA
+			}
+			modifier = {
+				factor = 0 # Don't blow up the canal if enemies have weak navies but you are a strong naval power
+				has_navy_size = {
+					size > 50
+				}
+				NOT = {
+					any_enemy_country = {
+						has_navy_size = {
+							size > 50
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 200 # Always blow up the canal as JAP or GER when at war with USA (priority)
+				OR = {
+					is_in_faction_with = JAP
+					is_in_faction_with = GER
+				}
+				has_war_with = USA
+			}
 		}
 	}
 }
@@ -1464,6 +1548,7 @@ war_measures = {
         }
         visible = {
             has_war = yes
+            NOT = { tag = SPC }
         }
 
         fire_only_once = no
@@ -1574,6 +1659,12 @@ foreign_politics = {
         	NOT = { has_war_with = FROM }
         	any_enemy_country = {
 				has_attache_from = FROM
+			}
+			NOT = {
+				AND = {
+					original_tag = SPR
+					has_completed_focus = SPR_regional_defense_council_of_aragon
+				}
 			}
 		}
 

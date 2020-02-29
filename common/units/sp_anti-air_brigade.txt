@@ -36,6 +36,8 @@ sub_units = {
 		#Tanks are awesome
 		soft_attack = 0.5
 
+		suppression = 2
+
 		forest = {
 		    attack = -0.2
 			movement = -0.4
@@ -101,6 +103,8 @@ sub_units = {
 
 		#Tanks are awesome
 		soft_attack = 0.5
+
+		suppression = 2
 
 		forest = {
 		    attack = -0.3
@@ -171,6 +175,8 @@ sub_units = {
 
 		#Tanks are awesome
 		soft_attack = 0.5
+
+		suppression = 2
 
 		forest = {
 		    attack = -0.40
@@ -243,6 +249,8 @@ sub_units = {
 		#Tanks are awesome
 		soft_attack = 0.5
 
+		suppression = 2
+
 		forest = {
 		    attack = -0.5
 			movement = -0.4
@@ -314,6 +322,8 @@ sub_units = {
 
 		#Tanks are awesome
 		soft_attack = 0.5
+
+		suppression = 2
 
 		forest = {
 		    attack = -0.3

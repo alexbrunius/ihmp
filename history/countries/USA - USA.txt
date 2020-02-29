@@ -51,7 +51,6 @@ set_technology = {
 	basic_machine_tools = 1
 }
 
-
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -96,9 +95,7 @@ if = {
 		mtg_transport = 1
 		improved_airplane_launcher = 1
 	}
-	add_ideas = { 
-		MTG_naval_treaty_adherent
-	}
+	add_ideas = MTG_naval_treaty_adherent
 }
 
 #Monroe Doctrine
@@ -676,6 +673,29 @@ create_navy_leader = {
 	defense_skill = 1
 	maneuvering_skill = 2
 	coordination_skill = 3
+}
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "Josephine Baker"
+		GFX = GFX_portrait_josephine_baker
+		traits = { operative_well_groomed }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { USA }
+	}
+
+	create_operative_leader = {
+		name = "Virginia Hall"
+		GFX = GFX_portrait_virginia_hall
+		traits = { operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { USA }
+	}
 }
 
 

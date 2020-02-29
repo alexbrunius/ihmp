@@ -49,7 +49,7 @@ NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.02, 0.04, 0.06, 0.08, 0.1, 0.14, 0.18, 
 -- OLD NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.3, 0.6, 0.9 }		-- was { 0.1, 0.3, 0.75, 0.9 } -- Experience needed to progress to the next level
 
 NDefines.NMilitary.PLANNING_DECAY = 0.02						-- was 0.01
-NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.02				-- was 0.08 -- Amount of planning lost due to player manual order
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.02				-- was 0.03 -- Amount of planning lost due to player manual order
 NDefines.NMilitary.COMBAT_MINIMUM_TIME = 0			-- was 4 --Shortest time possible for a combat in hours
 NDefines.NMilitary.SLOWEST_SPEED = 3				-- was 4
 
@@ -132,6 +132,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 		0.05, -- TRAINING			was 0.0
 		0.0, -- NAVAL_MINES_PLANTING
 		0.0, -- NAVAL_MINES_SWEEPING
+		0.0, -- MISSION_RECON
 	}
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.010 				-- was 0.005	--Factor on country Air XP gained from wing training
 
@@ -150,7 +151,6 @@ NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.75	-- wa
 NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO							= 0.05	-- was 0.2 -- total sum of fleet's anti air will be multiplied with this ratio and added to calculations anti-air of individual ships while air damage reduction
 
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 9                                -- was 6 -- base speed of units on water being transported
-NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 3.0			-- was 4.0 -- this screen ratio to num capital/carriers is needed for full screening beyond screen line
 
 -- SUBMARINE BALANCE TWEAKS
 NDefines.NNavy.COMBAT_DETECTED_CONVOYS_FROM_SURFACE_DETECTION_STAT 				= 0.01		-- was 0.1 -- Each 1.0 of surface_detection that ship has (equipment stat), gives x% of convoys discovered from total travelling along the route.
@@ -202,25 +202,12 @@ NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.05					-- was 0.04	-- How
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.006	-- was 1.0
 NDefines.NNavy.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.012  -- was 0.9
 
-NDefines.NNavy.MISSION_SPREADS = {  -- mission spreads in the case a ship join combat, whih defines their starting position
-		0.0, -- HOLD 
-		0.0, -- PATROL		
-		0.0, -- STRIKE FORCE 
-		0.0, -- CONVOY RAIDING
-		0.0, -- CONVOY ESCORT
-		0.0, -- MINES PLANTING	
-		0.0, -- MINES SWEEPING	
-		0.5, -- TRAIN
-		0.0, -- RESERVE_FLEET
-		0.0, -- NAVAL_INVASION_SUPPORT
-	}
-	
 -- PRODUCTION STUFF
 NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 10					-- was 15 -- Max number of factories that can be assigned a single production line.
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 30						-- was 15
 
 NDefines.NProduction.BASE_FACTORY_EFFICIENCY_GAIN = 0.9		-- was 1 -- Base efficiency factor.
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4 				-- was 5 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4 				-- was 4.5 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 
 NDefines.NProduction.EQUIPMENT_LEND_LEASE_WEIGHT_FACTOR = 0.001 -- was 0.01 -- Base equipment lend lease factor
 NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.02			-- was 0.2 -- Minimum fraction of an equipment type's base industry capacity cost to use when converting a naval equipment, such as through ship refitting.

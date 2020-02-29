@@ -2,6 +2,8 @@ technologies = {
 
 	mobile_warfare = {
 		
+		doctrine_name = "MOBILE_WARFARE_DOCTRINE"
+		
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
@@ -108,6 +110,9 @@ technologies = {
 		category_tanks = {
 			max_organisation = 2
 		}
+		armored_car = {
+			max_organisation = 2
+		}
 
 		category_all_armor = {
 			maximum_speed = 0.1
@@ -167,14 +172,21 @@ technologies = {
 			maximum_speed = 0.1
 			default_morale = 0.13
 		}
+		armored_car = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+		}
 		mot_artillery_brigade = {
 			maximum_speed = 0.1
+			default_morale = 0.13
 		}
 		mot_anti_tank_brigade = {
 			maximum_speed = 0.1
+			default_morale = 0.13
 		}
 		mot_anti_air_brigade = {
 			maximum_speed = 0.1
+			default_morale = 0.13
 		}
 		mechanized = {
 			maximum_speed = 0.1
@@ -304,6 +316,10 @@ technologies = {
 			max_organisation = 15
 		}
 		
+		armored_car = {
+			max_organisation = 3	
+		}
+
 		category_tanks = {
 			max_organisation = 6
 		}
@@ -489,11 +505,17 @@ technologies = {
 			hard_attack = 0.05
 			soft_attack = 0.05
 		}
-		
+		armored_car = {
+			default_morale = 0.1
+		}
+
 		enable_tactic = tactic_breakthrough
 		
 		motorized = {
 			max_organisation = 5
+		}
+		armored_car = {
+			max_organisation = 7
 		}
 		mechanized = {
 			max_organisation = 5
@@ -621,6 +643,9 @@ technologies = {
 		category_tanks = {
 			max_organisation = 4
 		}
+		armored_car = {
+			max_organisation = 2
+		}
 
 		
 		path = {
@@ -721,6 +746,11 @@ technologies = {
 
 		category_all_armor = {
 			default_morale = 0.06
+		}
+		armored_car = {
+			max_organisation = 3
+			default_morale = 0.2
+			breakthrough = 0.20
 		}
 
 		army_bonus_air_superiority_factor = 0.10
@@ -824,7 +854,6 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-
 		conscription_factor = 0.15
 
 		path = {
@@ -870,7 +899,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		#Increased Partisan effect on your land occupied by others
-		partisan_effect = 0.3 #30% more partisan effects
+		resistance_damage_to_garrison_on_our_occupied_states = 0.3 
 		dig_in_speed_factor = 0.25 #25% bonus
 
 		enable_tactic = tactic_guerrilla_tactics
@@ -907,7 +936,8 @@ technologies = {
 	}
 	
 	superior_firepower = {
-
+		doctrine_name = "SUPERIOR_FIREPOWER_DOCTRINE"
+		
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
@@ -1605,7 +1635,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		recon = {
+		category_recon = {
 			recon = 1
 		}
 		
@@ -1656,6 +1686,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
+		
 		category_all_infantry = {
 			max_organisation = 10
 			default_morale = 0.03
@@ -1666,6 +1697,10 @@ technologies = {
 
 		category_all_armor = {
 			default_morale = 0.02
+		}
+		armored_car = {
+			max_organisation = 2
+			default_morale = 0.05
 		}
 		
 		enable_tactic = tactic_tactical_withdrawal
@@ -1766,6 +1801,7 @@ technologies = {
 	
 	
 	trench_warfare = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
 
 		xp_research_type = army
 		xp_research_cost = 100
@@ -1975,6 +2011,9 @@ technologies = {
 		motorized = {
 			max_organisation = 5
 		}
+		armored_car = {
+			max_organisation = 5
+		}
 		mechanized = {
 			max_organisation = 5
 		}
@@ -2091,6 +2130,9 @@ technologies = {
 		}
 		category_tanks = {
 			max_organisation = 2
+		}
+		armored_car = {
+			max_organisation = 1
 		}
 		
 		path = {
@@ -2252,6 +2294,9 @@ technologies = {
 		category_tanks = {
 			max_organisation = 2
 		}
+		armored_car = {
+			max_organisation = 2
+		}
 		signal_company = {
 			initiative = 0.12
 		}
@@ -2360,6 +2405,10 @@ technologies = {
 		}
 		category_all_armor = {
 			default_morale = 0.03
+		}
+		armored_car = {
+			max_organisation = 2
+			default_morale = 0.05
 		}
 		
 		enable_tactic = tactic_blitz
@@ -2522,7 +2571,11 @@ technologies = {
 		}
 		category_tanks = {
 			max_organisation = 2
+		}	
+		armored_car = {
+			max_organisation = 1
 		}		
+
 		path = {
 			leads_to_tech = infiltration_in_depth 
 			research_cost_coeff = 1
@@ -2573,9 +2626,9 @@ technologies = {
 		land_reinforce_rate = 0.02
 		org_loss_when_moving = -0.1
 		
-		recon = { 
+		category_recon = { 
 			recon = 1 
-		}
+		} 
 		category_light_infantry = {
 			breakthrough = 0.1
 		}
@@ -2619,6 +2672,8 @@ technologies = {
 	}
 	
 	mass_assault = {
+		doctrine_name = "MASS_ASSAULT_DOCTRINE"
+		
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
@@ -2832,6 +2887,10 @@ technologies = {
 		category_tanks = {
 			max_organisation = 4
 		}
+		armored_car = {
+			max_organisation = 2
+		}
+
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
@@ -3007,6 +3066,10 @@ technologies = {
 			max_organisation = 5
 			breakthrough = 0.10
 		}
+		armored_car = {
+			max_organisation = 1
+			breakthrough = 0.10
+		}
 		category_artillery = {
 			breakthrough = 0.20
 		}
@@ -3065,7 +3128,11 @@ technologies = {
 		category_all_armor = {
 			default_morale = 0.03
 		}
-		
+		armored_car = {
+			max_organisation = 3
+			default_morale = 0.07
+		}	
+
 		mechanized = {
 			max_organisation = 10
 			default_morale = 0.07
@@ -3179,7 +3246,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		
 		#Increased Partisan effect on your land occupied by others
-		partisan_effect = 0.3 #30% more partisan effects
+		resistance_damage_to_garrison_on_our_occupied_states = 0.3 #30% more partisan effects 
 		#Land Units take less attrition
 		attrition = -0.1 #take 10% less attrition losses
 		
@@ -3295,6 +3362,9 @@ technologies = {
 		category_tanks = {
 			max_organisation = 4
 		}
+		armored_car = {
+			max_organisation = 2
+		}
 		
 		
 		path = {
@@ -3397,7 +3467,7 @@ technologies = {
 			default_morale = 0.13
 		}
 		
-		partisan_effect = 0.2
+		resistance_growth_on_our_occupied_states = 0.25 
 		
 		enable_tactic = tactic_guerrilla_tactics
 		

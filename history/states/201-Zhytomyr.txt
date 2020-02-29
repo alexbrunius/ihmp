@@ -7,8 +7,10 @@ state={
 	state_category = town
 
 	history={
+		victory_points = {
+			6593 5
+		}
 		owner = SOV
-		victory_points = { 6593 5 }
 		buildings = {
 			infrastructure = 3 # was 5
 			air_base = 3

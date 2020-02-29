@@ -105,6 +105,13 @@ ideas = {
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
 				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
+				}
 			}
 
 			modifier = {
@@ -187,8 +194,14 @@ ideas = {
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
 				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
+				}
 			}
-
 			ai_will_do = {
    				factor = 1
 				modifier = {
@@ -286,6 +299,13 @@ ideas = {
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
 				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
+				}
 			}
 
 			ai_will_do = {
@@ -314,6 +334,19 @@ ideas = {
 					tag = CHI
 					has_manpower < 200000
 				}
+
+				modifier = { # germany needs this before russia, badly
+					factor = 10
+
+					original_tag = GER
+					has_manpower < 2000000
+				}
+				modifier = {
+					factor = 1000
+					original_tag = SOV
+					check_variable = { manpower_k < 3000 }
+				}
+
 			}
 			
 			cost = 150
@@ -382,6 +415,21 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
+				}
 			}
 
 			ai_will_do = {
@@ -437,6 +485,12 @@ ideas = {
 					surrender_progress > 0
 				}
 				enemies_strength_ratio > 0.75
+				#any_enemy_country = {
+				#	strength_ratio = {
+				#		tag = ROOT 
+				#		ratio > 0.75
+				#	}
+				#}
 
 				if = {
 					limit = {
@@ -479,6 +533,13 @@ ideas = {
 						has_completed_focus = ENG_concessions_to_the_trade_unions
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
 				}
 			}
 
@@ -589,6 +650,13 @@ ideas = {
 						has_completed_focus = ENG_concessions_to_the_trade_unions
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
 				}
 			}
 

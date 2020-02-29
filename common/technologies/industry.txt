@@ -1225,7 +1225,6 @@ technologies = {
 		
 		fuel_gain_factor_from_states = 0.5
 
-
 		path = {
 			leads_to_tech = advanced_oil_processing
 			research_cost_coeff = 1
