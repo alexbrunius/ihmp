@@ -424,6 +424,45 @@ operations = {
 			}
 		}
 	}
+
+	occupy_greenland = {
+		
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		allowed = {
+			tag = USA
+		}
+		
+		available = {
+			tag = USA
+			has_war_with = GER
+			DEN = { has_capitulated = yes }
+			is_in_faction_with = DEN
+			101 = { is_controlled_by = DEN }
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			tag = USA
+			has_war_with = GER
+			is_in_faction_with = DEN
+		}
+		
+		complete_effect = {
+			if = { limit = { 101 = { is_controlled_by = DEN } } 
+				transfer_state = 101
+			}
+			add_war_support = -0.01
+			add_popularity = { ideology = democratic popularity = -0.01 }
+		}
+	}
 }
 
 ai_decisions = {
