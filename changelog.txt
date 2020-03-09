@@ -1,4 +1,4 @@
-﻿1.8.2.1
+1.8.2.1
 - Fixed Blitzkrieg doctrine incorrectly giving 50% bonus instead of 5%.
 
 1.8.2.0
