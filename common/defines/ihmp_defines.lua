@@ -216,3 +216,4 @@ NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 30000			-- was 100000 -- H
 NDefines.NProduction.MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 0.30	-- was 0.75 -- Ratio which % of army in field can be trained
 
 
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_MULT_DECAY = 0.980 -- was 0.995
