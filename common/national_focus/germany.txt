@@ -2502,6 +2502,9 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = GER_mol_rib_pact }
 		mutually_exclusive = { focus = GER_ussr_war_goal }
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
 		available = {
 			is_puppet = no
 			has_government = fascism
@@ -3531,7 +3534,8 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = GER_anschluss }
 		mutually_exclusive = { focus = GER_demand_sudetenland }
-		available = { 
+		available = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
 			has_army_manpower = { size > 749999 }
 			NOT = { has_war_with = CZE }
 			CZE = {
@@ -4152,7 +4156,9 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = GER_end_of_czechoslovakia }
 		mutually_exclusive = { focus = GER_danzig_or_war }
+
 		available = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
 			is_puppet = no
 			date > 1938.09.01
 			OR = {
