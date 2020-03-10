@@ -957,7 +957,10 @@ focus_tree = {
 			x = -8
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Waking the Tiger" }
+				OR = {
+					not = { has_dlc = "Man the Guns" }
+					NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+				}
 			}
 		}
 
@@ -4114,7 +4117,10 @@ focus_tree = {
 			x = -4
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Waking the Tiger" }
+				OR = {
+					not = { has_dlc = "Man the Guns" }
+					NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+				}
 			}
 		}
 

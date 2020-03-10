@@ -70,7 +70,10 @@ focus_tree = {
 			x = -12
 			y = 0
 			trigger = {
-				not = { has_dlc = "Man the Guns" }
+				OR = {
+					not = { has_dlc = "Man the Guns" }
+					NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+				}
 			}
 		}
 
@@ -2510,7 +2513,10 @@ focus_tree = {
 			x = -12
 			y = 0
 			trigger = {
-				not = { has_dlc = "Man the Guns" }
+				OR = {
+					not = { has_dlc = "Man the Guns" }
+					NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+				}
 			}
 		}
 		cost = 10
@@ -3932,7 +3938,10 @@ focus_tree = {
 			x = -26
 			y = 0
 			trigger = {
-				not = { has_dlc = "Man the Guns" }
+				OR = {
+					not = { has_dlc = "Man the Guns" }
+					NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+				}
 			}
 		}
 		
@@ -4762,7 +4771,10 @@ focus_tree = {
 			x = -26
 			y = 0
 			trigger = {
-				not = { has_dlc = "Man the Guns" }
+				OR = {
+					not = { has_dlc = "Man the Guns" }
+					NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+				}
 			}
 		}
 		cost = 10
