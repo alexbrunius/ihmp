@@ -34,9 +34,9 @@ sub_units = {
 		supply_consumption = 0.1
 
 		#Tanks are awesome
-		soft_attack = 0.5
+		#soft_attack = 0.5
 
-		suppression = 2
+		suppression = 0.625
 
 		forest = {
 		    attack = -0.2
@@ -102,9 +102,9 @@ sub_units = {
 		supply_consumption = 0.1
 
 		#Tanks are awesome
-		soft_attack = 0.5
+		#soft_attack = 0.5
 
-		suppression = 2
+		suppression = 0.6
 
 		forest = {
 		    attack = -0.3
@@ -174,9 +174,9 @@ sub_units = {
 		supply_consumption = 0.1
 
 		#Tanks are awesome
-		soft_attack = 0.5
+		#soft_attack = 0.5
 
-		suppression = 2
+		suppression = 0.5
 
 		forest = {
 		    attack = -0.40
@@ -247,9 +247,9 @@ sub_units = {
 		supply_consumption = 0.1
 
 		#Tanks are awesome
-		soft_attack = 0.5
+		#soft_attack = 0.5
 
-		suppression = 2
+		suppression = 0.66
 
 		forest = {
 		    attack = -0.5
@@ -321,9 +321,9 @@ sub_units = {
 		supply_consumption = 0.1
 
 		#Tanks are awesome
-		soft_attack = 0.5
+		#soft_attack = 0.5
 
-		suppression = 2
+		suppression = 0.6
 
 		forest = {
 		    attack = -0.3
