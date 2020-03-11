@@ -238,8 +238,9 @@ technologies = {
 			}
 
 			modifier = {
-				factor = -2
+				factor = 0
 				original_tag = GER
+				date < "1941.1.1"
 			}
 
 			modifier = {

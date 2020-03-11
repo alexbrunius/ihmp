@@ -985,8 +985,7 @@ operations = {
 		visible = {
 			has_war = yes
 			NOT = { has_global_flag = SUEZ_CANAL_BLOCKED }
-			any_state = {
-				is_controlled_by = ROOT
+			any_controlled_state = {
 				OR = {
 					region = 28
 					region = 128
@@ -1118,8 +1117,7 @@ operations = {
 		visible = {
 			has_war = yes
 			NOT = { has_global_flag = PANAMA_CANAL_BLOCKED }
-			any_state = {
-				is_controlled_by = ROOT
+			any_controlled_state = {
 				OR = {
 					region = 34
 					region = 124
@@ -1961,10 +1959,9 @@ foreign_support = {
 					}
 				}
 			}
-			any_country = {
+			any_other_country = {
 				check_variable = { CHI_burma_road_current_level > 0 }
 				NOT = { is_in_faction_with = ROOT }
-				NOT = { tag = ROOT }
 			}
 		}
 
@@ -2309,10 +2306,9 @@ foreign_support = {
 					}
 				}
 			}
-			any_country = {
+			any_other_country = {
 				check_variable = { CHI_ledo_road_current_level > 0 }
 				NOT = { is_in_faction_with = ROOT }
-				NOT = { tag = ROOT }
 			}
 		}
 
@@ -2649,10 +2645,9 @@ foreign_support = {
 					}
 				}
 			}
- 			any_country = {
+ 			any_other_country = {
  				check_variable = { CHI_the_hump_current_level > 0 }
  				NOT = { is_in_faction_with = ROOT }
- 				NOT = { tag = ROOT }
  			}
  		}
 
@@ -2950,10 +2945,9 @@ foreign_support = {
 					}
 				}
 			}
-			any_country = {
+			any_other_country = {
 				check_variable = { CHI_hanoi_route_current_level > 0 }
 				NOT = { is_in_faction_with = ROOT }
-				NOT = { tag = ROOT }
 			}
 		}
 
