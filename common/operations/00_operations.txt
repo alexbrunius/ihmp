@@ -1306,6 +1306,7 @@ operation_boost_resistance = { ### 8 2/40
 		FROM.FROM = {
 			add_resistance_target = {
 				amount = 10
+				days = 180
 				tooltip = intelligency_agency_resistance_boost_tt
 			}
 			subtract_from_variable = { boost_resistance_chance = 10 }
@@ -1317,6 +1318,7 @@ operation_boost_resistance = { ### 8 2/40
 				FROM.FROM = {
 					add_resistance_target = {
 						amount = 20
+						days = 180
 						tooltip = intelligency_agency_resistance_boost_tt
 					}
 					subtract_from_variable = { boost_resistance_chance = 10 }
@@ -1329,6 +1331,7 @@ operation_boost_resistance = { ### 8 2/40
 				FROM.FROM = {
 					add_resistance_target = {
 						amount = 20
+						days = 180
 						tooltip = intelligency_agency_resistance_boost_tt
 					}
 					subtract_from_variable = { boost_resistance_chance = 10 }
@@ -1341,6 +1344,7 @@ operation_boost_resistance = { ### 8 2/40
 		FROM.FROM = {
 			add_resistance_target = {
 				amount = 10
+				days = 180
 				tooltip = intelligency_agency_resistance_boost_tt
 			}
 		}
