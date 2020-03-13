@@ -3029,6 +3029,10 @@
 
 		cost = 10
 
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
+
 		ai_will_do = {
 			factor = 25
 			modifier = {
@@ -3382,6 +3386,10 @@
 		relative_position_id = CAN_patriation
 
 		cost = 10
+
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
 
 		ai_will_do = {
 			factor = 25
@@ -3746,6 +3754,13 @@
 		icon = GFX_goal_generic_build_airforce
 		x = 35
 		y = 0
+		offset = {
+			x = -8
+			y = 0
+			trigger = {
+				NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+			}
+		}
 
 		cost = 10
 
@@ -4254,6 +4269,13 @@
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 39
 		y = 0
+		offset = {
+			x = -8
+			y = 0
+			trigger = {
+				NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+			}
+		}
 
 		cost = 10
 
