@@ -303,7 +303,6 @@ ideas = {
 			
 			modifier = {
 				conscription_factor = 0.15
-				conscription = 0.01
 			}
 		}
 		
