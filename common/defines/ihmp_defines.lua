@@ -1,4 +1,5 @@
-
+-- GAME STUFF
+NDefines.NGame.GAME_SPEED_SECONDS = { 4.0, 2.0, 0.5, 0.2, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
 -- BUILDING STUFF
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100			-- was 200 -- Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
