@@ -13,3 +13,19 @@ IHMP_HISTORY = {
 		desc = "ALT_HISTORY_BLOCKED_DESC"
 	}
 }
+
+AI_PLANES = {
+	name = "AI_PLANES"
+	required_dlc = "Man the Guns"
+	group = "RULE_GROUP_GAME_SETUP"
+	option = {
+		name = ALLOWED
+		text = "RULE_OPTION_ALLOWED"
+		desc = "AI_PLANES_ALLOWED_DESC"
+	}
+	default = {
+		name = BLOCKED
+		text = "RULE_OPTION_BLOCKED"
+		desc = "AI_PLANES_BLOCKED_DESC"
+	}
+}

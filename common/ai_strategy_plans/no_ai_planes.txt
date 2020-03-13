@@ -3,12 +3,12 @@ no_ai_planes = {
 	desc = "Disable AI plane production and research"
 
 	enable = {
-		has_global_flag = no_ai_air
+		has_game_rule = { rule = AI_PLANES option = BLOCKED }
         NOT = { original_tag = SPR }
 	}
 
 	abort = {
-		NOT = { has_global_flag = no_ai_air }
+		has_game_rule = { rule = AI_PLANES option = ALLOWED }
 	}
 	research = {
 		air_equipment = -1000
