@@ -2209,7 +2209,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				electronics = 0.15
+				electronics = 0.25
 			}
 			
 			traits = { electronics_concern }
