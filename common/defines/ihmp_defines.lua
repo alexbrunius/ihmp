@@ -180,8 +180,8 @@ NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE 					= 130.0			-- was 100 -- hit profil
 NDefines.NNavy.DEPTH_CHARGES_DAMAGE_MULT 					= 1.1 			-- was 0.7 -- multiplies damage of depth charges
 
 NDefines.NNavy.CONVOY_SPOTTING_SPEED_MULT 					= 1.2			-- was 1.0 -- spotting speed mult against convoys
-NDefines.NNavy.UNIT_TRANSFER_SPOTTING_SPEED_MULT 			= 2.0			-- was 2.0 -- spotting speed mult against unit transfers
-NDefines.NNavy.NAVAL_INVASION_SPOTTING_SPEED_MULT 			= 4.0			-- was 4.0 -- spotting speed mult against naval invasion armies
+NDefines.NNavy.UNIT_TRANSFER_SPOTTING_SPEED_MULT 			= 2.0			-- was 5.0 -- spotting speed mult against unit transfers
+NDefines.NNavy.NAVAL_INVASION_SPOTTING_SPEED_MULT 			= 4.0			-- was 10.0 -- spotting speed mult against naval invasion armies
 
 NDefines.NNavy.UNIT_TRANSFER_DETECTION_CHANCE_BASE = 4.12						 -- was 8.0 now same as convoys -- unit transfer and naval invasion base chance detection percentage (if this fails, no detection is done on that tick)
 NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 0.05	 -- was 2.4 now same as convoys 	-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
@@ -196,6 +196,9 @@ NDefines.NNavy.SUPREMACY_PER_SHIP_PER_IC = 0.01					-- was 0.005
 NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 1.0					-- was 100
 
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 10		-- was 100
+
+NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 8                          -- was 4 hours from start of combat when only carriers, capitals and subs get to attack
+
 
 NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 0.8						-- was 1.25	-- How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 2						-- was 7 -- Convoy starts regaining it's efficiency after X days without any convoys being sink.
