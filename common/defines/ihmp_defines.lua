@@ -216,5 +216,17 @@ NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.02			-- w
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 30000			-- was 100000 -- How many deployment lines minimum can be training
 NDefines.NProduction.MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 0.30	-- was 0.75 -- Ratio which % of army in field can be trained
 
+-- OPERATIVES STUFF
+-- used for calculating how many operatives will a spy master gain from its faction members
+	-- first number in every now is number of operatives gained
+	-- second number is total factory needed (mil and civ) for giving previous ratio
+NDefines.NOperatives.OPERATIVE_SLOTS_FROM_FACTION_MEMBERS_FOR_SPY_MASTER = {
+		0.0, 	0.0, -- 0 operative for [0, 10)
+		0.25,  	10.0, -- 0.25 operative for [10, 20)
+		0.5, 	20.0, -- 0.5 operative for [20, 50)
+		0.75, 	50.0, -- 0.75 operative for [50, 100)
+		1.0, 	100.0, -- 1.0 operative for >= 100
+	}
 
+-- INTEL STUFF
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_MULT_DECAY = 0.980 -- was 0.995
