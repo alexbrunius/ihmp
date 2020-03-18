@@ -922,7 +922,8 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			remove_ideas = ENG_king_edward
-			add_ideas = ENG_george_vi		
+			add_ideas = ENG_george_vi
+			set_country_flag = ENG_edward_viii_abdicated
 		}
 	}
 

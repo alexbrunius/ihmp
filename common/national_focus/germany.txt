@@ -4156,7 +4156,6 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = GER_end_of_czechoslovakia }
 		mutually_exclusive = { focus = GER_danzig_or_war }
-
 		available = {
 			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
 			is_puppet = no
