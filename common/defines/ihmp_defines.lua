@@ -24,6 +24,8 @@ NDefines.NCountry.ATTACHE_XP_SHARE = 0.05							-- was 0.2 -- Country received x
 NDefines.NCountry.SUPPLY_CONVOY_FACTOR = 0.5					-- was 0.25-- How many convoys each supply needs
 
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0015				-- was 0.0005 -- num convoys needed per fuel land lease 
+NDefines.NCountry.GIE_EXILE_TROOPS_DEPLOY_TRAINING_MAX_LEVEL = 15
+NDefines.NCountry.GIE_EXILE_AIR_START_EXPERIENCE = 300
 
 -- Technology
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3		-- was 2 -- Base year ahead penalty
@@ -221,12 +223,12 @@ NDefines.NProduction.MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 0.30	-- was 0.75 -- 
 	-- first number in every now is number of operatives gained
 	-- second number is total factory needed (mil and civ) for giving previous ratio
 NDefines.NOperatives.OPERATIVE_SLOTS_FROM_FACTION_MEMBERS_FOR_SPY_MASTER = {
-		0.0, 	0.0, -- 0 operative for [0, 10)
-		0.25,  	10.0, -- 0.25 operative for [10, 20)
-		0.5, 	20.0, -- 0.5 operative for [20, 50)
-		0.75, 	50.0, -- 0.75 operative for [50, 100)
-		1.0, 	100.0, -- 1.0 operative for >= 100
-	}
+	0.0, 	0.0, -- 0 operative for [0, 10)
+	0.25,  	10.0, -- 0.25 operative for [10, 20)
+	0.5, 	20.0, -- 0.5 operative for [20, 50)
+	0.75, 	50.0, -- 0.75 operative for [50, 100)
+	1.0, 	100.0, -- 1.0 operative for >= 100
+}
 
 -- INTEL STUFF
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_MULT_DECAY = 0.980 -- was 0.995
