@@ -78,7 +78,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "infantry_subtitle_specialists"
-					position = { x = 40 y = 740 }
+					position = { x = 40 y = 1015 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
@@ -3954,18 +3954,18 @@ guiTypes = {
 				spriteType = "GFX_subtech_rocket"
 				alwaystransparent = yes
 			}
-		}		
+		}
 		containerWindowType = {
 			name = "sub_technology_slot_1"
 			position = { x=141 y=1 }
 			size = { width = 35 height = 26 }
 			clipping = no
-		
+			
 			background = {
 				name = "Background"
 				spriteType ="GFX_subtechnology_unavailable_item_bg"
-	}
-
+			}
+			
 			iconType = {
 				name = "picture"
 				position = { x=2 y=2 }
