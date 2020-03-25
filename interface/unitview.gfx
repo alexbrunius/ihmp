@@ -8,7 +8,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_div_designer_colonial_flag_frame2"
 		texturefile = "gfx/interface/div_designer_colonial_flag_frame2.dds"
-	}
+	} 
 
 	spriteType = {
 		name = "GFX_div_designer_exile_flag_frame2"
