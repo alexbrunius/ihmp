@@ -5,6 +5,6 @@ tags={
 	"Balance"
 	"Historical"
 }
-name="Improved Historical MP 1.9.1.0"
+name="Improved Historical MP"
 supported_version="1.9.*"
 remote_file_id="2017189237"
