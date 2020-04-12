@@ -232,3 +232,96 @@ NDefines.NOperatives.OPERATIVE_SLOTS_FROM_FACTION_MEMBERS_FOR_SPY_MASTER = {
 
 -- INTEL STUFF
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_MULT_DECAY = 0.980 -- was 0.995
+
+NDefines.NIntel.CIVILIAN_PRODUCTION_RANGE_INTEL_MIN = 0.2 -- was 0.1 -- minimum value to show fuzzy factory counts below this you will get ???
+NDefines.NIntel.CIVILIAN_PRODUCTION_RANGE_INTEL_MAX = 0.99 -- was 0.5 -- maximum value to show fuzzy factory counts. above this you will get full count
+NDefines.NIntel.CIVILIAN_PRODUCTION_INTEL_RANGE_AT_LOWEST_INTEL = 1.0  -- was 0.5 -- range of intel values at lowest intel
+
+NDefines.NIntel.CIVILIAN_FUEL_RANGE_INTEL_MAX = 0.99 -- was 0.7 -- maximum value to show fuzzy factory counts. above this you will get full count
+NDefines.NIntel.CIVILIAN_FUEL_INTEL_RANGE_AT_LOWEST_INTEL = 1.0  -- was 0.5 -- range of intel values at lowest intel
+
+NDefines.NIntel.CIVILIAN_MANPOWER_RANGE_INTEL_MIN = 0.2 -- was 0.1 -- minimum value to show fuzzy factory counts below this you will get ???
+NDefines.NIntel.CIVILIAN_MANPOWER_RANGE_INTEL_MAX = 0.99 -- was 0.7 -- maximum value to show fuzzy factory counts. above this you will get full count
+NDefines.NIntel.CIVILIAN_MANPOWER_INTEL_RANGE_AT_LOWEST_INTEL = 1.0  -- was 0.5 -- range of intel values at lowest intel
+
+NDefines.NIntel.CIVILIAN_CONVOYS_RANGE_INTEL_MIN = 0.2 -- was 0.1 -- minimum value to show fuzzy factory counts below this you will get ???
+NDefines.NIntel.CIVILIAN_CONVOYS_INTEL_RANGE_AT_LOWEST_INTEL = 0.8 -- was 0.5 -- range of intel values at lowest intel
+
+NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_ANTI_AIR_REDUCTION = 0.5 -- was 0.3 -- minimum value to show anti air damage reduction
+
+NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.4 -- was 0.3   -- min required intel to show currently focus
+
+NDefines.NIntel.INTEL_TO_SHOW_PREVIOUSLY_RESEARCHED = { 0.9, 0.7, 0.7, 0.7 } -- minimum value to show previously researched tech
+NDefines.NIntel.INTEL_TO_SHOW_CURRENTLY_RESEARCHED = { 1.0, 0.8, 0.8, 0.8 } -- minimum value to show currently being researched tech
+
+NDefines.NIntel.ARMY_ARMY_COUNT_RANGE_INTEL_MAX = 0.99 -- was 0.7
+NDefines.NIntel.ARMY_ARMY_COUNT_RANGE_INTEL_RANGE_AT_LOWEST_INTEL = 1.0  -- was 0.8
+
+NDefines.NIntel.ARMY_SPECIAL_FORCES_COUNT_RANGE_INTEL_RANGE_AT_LOWEST_INTEL = 1.0  -- was 0.7
+
+NDefines.NIntel.ARMY_DEPLOYED_MANPOWER_COUNT_RANGE_INTEL_MAX = 0.99 -- was 0.7
+NDefines.NIntel.ARMY_DEPLOYED_MANPOWER_COUNT_RANGE_INTEL_RANGE_AT_LOWEST_INTEL = 1.0  -- was 0.5
+
+NDefines.NIntel.ARMY_TEMPLATE_UNIT_COUNT_INTEL_MAX = 0.99 -- was 0.7
+
+NDefines.NIntel.ARMY_STOCKPILE_COUNT_INTEL_MAX = 0.99 -- was 0.7
+NDefines.NIntel.ARMY_STOCKPILE_COUNT_INTEL_RANGE_AT_LOWEST_INTEL = 1.0 -- was 0.5
+
+NDefines.NIntel.NAVY_FLEET_COUNT_INTEL_RANGE_AT_LOWEST_INTEL = 1.0 -- was 0.5
+
+NDefines.NIntel.NAVY_TASKFORCE_COUNT_INTEL_RANGE_AT_LOWEST_INTEL = 1.0 -- was 0.5
+
+NDefines.NIntel.NAVY_SHIP_COUNT_INTEL_RANGE_AT_LOWEST_INTEL = 1.0 -- was 0.5
+
+NDefines.NIntel.NAVY_SHIP_TYPE_COUNT_INTEL_RANGE_AT_LOWEST_INTEL = 1.0 -- was 0.5
+
+NDefines.NIntel.NAVY_DEPLOYED_MANPOWER_COUNT_RANGE_INTEL_MAX = 0.99 -- was 0.7
+NDefines.NIntel.NAVY_DEPLOYED_MANPOWER_COUNT_RANGE_INTEL_RANGE_AT_LOWEST_INTEL = 1.0 -- was 0.5
+
+NDefines.NIntel.AIR_AIRWING_COUNT_INTEL_MAX = 0.99 -- was 0.7
+NDefines.NIntel.AIR_AIRWING_COUNT_INTEL_RANGE_AT_LOWEST_INTEL = 1.0 -- was 0.5
+
+NDefines.NIntel.AIR_WING_TYPE_COUNT_INTEL_MAX = 0.99 -- was 0.7
+NDefines.NIntel.AIR_WING_TYPE_COUNT_INTEL_RANGE_AT_LOWEST_INTEL = 1.0 -- was 0.5
+
+NDefines.NIntel.AIR_DEPLOYED_MANPOWER_COUNT_RANGE_INTEL_MAX = 0.99 -- was 0.7
+NDefines.NIntel.AIR_DEPLOYED_MANPOWER_COUNT_RANGE_INTEL_RANGE_AT_LOWEST_INTEL = 1.0 -- was 0.5
+
+NDefines.NIntel.CIVILIAN_MAPICON_INDUSTRY_COUNT_INTEL_RANGE_AT_LOWEST_INTEL = 0.7
+
+NDefines.NIntel.NAVY_MAPICON_MISSION_COUNT_INTEL_MIN = 0.5  -- min intel to show assigned naval missions
+NDefines.NIntel.NAVY_MAPICON_MISSION_COUNT_INTEL_MAX = 0.8  -- min intel to show assigned naval missions with perfect accuracy, and taskforces count
+
+NDefines.NIntel.AIR_MAPICON_MISSION_COUNT_INTEL_MIN = {
+	0.3, -- AIR_SUPERIORITY
+	0.3, -- CAS		
+	0.3, -- INTERCEPTION	
+	0.3, -- STRATEGIC_BOMBER
+	0.3, -- NAVAL_BOMBER	
+	0.7, -- DROP_NUKE		
+	0.3, -- PARADROP		
+	0.3, -- NAVAL_KAMIKAZE	
+	0.3, -- PORT_STRIKE		
+	0.3, -- AIR_SUPPLY		
+	0.3, -- TRAINING
+	0.3, -- NAVAL_MINES_PLANTING
+	0.3, -- NAVAL_MINES_SWEEPING
+	0.6, -- was 0.3 -- MISSION_RECON
+}
+NDefines.NIntel.AIR_MAPICON_MISSION_COUNT_INTEL_MAX = {
+	0.6, -- AIR_SUPERIORITY
+	0.6, -- CAS		
+	0.6, -- INTERCEPTION	
+	0.6, -- STRATEGIC_BOMBER
+	0.6, -- NAVAL_BOMBER	
+	0.99, -- was 0.6 -- DROP_NUKE		
+	0.6, -- PARADROP		
+	0.6, -- NAVAL_KAMIKAZE	
+	0.6, -- PORT_STRIKE		
+	0.6, -- AIR_SUPPLY		
+	0.6, -- TRAINING
+	0.6, -- NAVAL_MINES_PLANTING
+	0.6, -- NAVAL_MINES_SWEEPING
+	0.9, -- was 0.6 -- MISSION_RECON
+}
+	
