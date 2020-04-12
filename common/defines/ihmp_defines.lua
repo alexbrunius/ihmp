@@ -205,6 +205,9 @@ NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.05					-- was 0.04	-- How
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.006	-- was 1.0
 NDefines.NNavy.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.012  -- was 0.9
 
+NDefines.NNavy.ESCAPE_SPEED_PER_COMBAT_DAY = 0.015							-- was 0.01 -- daily increase in escape speed during combat duration
+NDefines.NNavy.MAX_ESCAPE_SPEED_FROM_COMBAT_DURATION = 0.30					-- was 0.15 -- max escape speed that will be gained from combat duration
+
 -- PRODUCTION STUFF
 NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 10					-- was 15 -- Max number of factories that can be assigned a single production line.
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 30						-- was 15
