@@ -213,12 +213,7 @@ operations = {
 		available = {
 			tag = GER
 			date > 1939.01.01
-			OR = {
-				111 = {
-					NOT = { is_controlled_by = FIN }
-				}
-				FIN = { is_puppet_of = SOV }
-			}
+			has_global_flag = SOV_capitulated_FIN
 			divisions_in_state = { state = 110 size > 2 }
 			divisions_in_state = { state = 143 size > 2 }
 		}
