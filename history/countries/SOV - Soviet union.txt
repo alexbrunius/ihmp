@@ -257,6 +257,36 @@ if = {
 
 set_convoys = 50
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = MON
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = TAN
+		autonomous_state = autonomy_dominion
+	}
+}
+
+if = {
+	limit = { 
+		not = {
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = MON
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = TAN
+		autonomous_state = autonomy_puppet
+	}
+}
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1933.7.1"
@@ -1162,7 +1192,7 @@ if = {
 				fixed_ship_engine_slot = sub_ship_engine_3
 				front_1_custom_slot = ship_mine_layer_sub
 				mid_1_custom_slot = empty
-				#rear_1_custom_slot = ship_torpedo_sub_2
+				rear_1_custom_slot = ship_torpedo_sub_2
 			}
 		}
 		# Destroyers #
