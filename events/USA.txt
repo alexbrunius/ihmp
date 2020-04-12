@@ -286,7 +286,7 @@ country_event = {
 		USA_election_house = yes
 		USA_flip_support = yes
 		custom_effect_tooltip = usa_congress_elections_tt_good
-		add_political_power = 120
+		#add_political_power = 120
 		if = {
 			limit = {
 				has_idea = standard_oil_california
@@ -385,7 +385,7 @@ country_event = {
 		add_ideas = wilkies_new_deal
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.6 }
-		add_political_power = 120
+		#add_political_power = 120
 		USA_election_senate = yes
 		USA_election_house = yes
 		USA_flip_support = yes
@@ -465,7 +465,7 @@ country_event = {
 		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 		add_ideas = new_deal
 		retire_country_leader = yes
-		add_political_power = 120
+		#add_political_power = 120
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.6 }
 		USA_election_senate = yes
@@ -550,7 +550,7 @@ country_event = {
 		USA_election_senate = yes
 		USA_election_house = yes
 		USA_flip_support = yes
-		add_political_power = 120
+		#add_political_power = 120
 		custom_effect_tooltip = usa_congress_elections_tt_good
 		create_country_leader = {
 			name = "Thomas E. Dewey"
@@ -629,7 +629,7 @@ country_event = {
 		USA_election_senate = yes
 		USA_election_house = yes
 		USA_flip_support = yes
-		add_political_power = 120
+		#add_political_power = 120
 		custom_effect_tooltip = usa_congress_elections_tt_good
 		if = {
 			limit = { has_idea = wilkies_new_deal }
@@ -717,7 +717,7 @@ country_event = {
 		USA_election_senate = yes
 		USA_election_house = yes
 		USA_flip_support = yes
-		add_political_power = 120
+		#add_political_power = 120
 		custom_effect_tooltip = usa_congress_elections_tt_good
 		create_country_leader = {
 			name = "Douglas MacArthur"
