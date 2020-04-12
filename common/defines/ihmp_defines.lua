@@ -222,10 +222,10 @@ NDefines.NProduction.MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 0.30	-- was 0.75 -- 
 	-- second number is total factory needed (mil and civ) for giving previous ratio
 NDefines.NOperatives.OPERATIVE_SLOTS_FROM_FACTION_MEMBERS_FOR_SPY_MASTER = {
 	0.0, 	0.0, -- 0 operative for [0, 10)
-	0.25,  	10.0, -- 0.25 operative for [10, 20)
-	0.5, 	20.0, -- 0.5 operative for [20, 50)
-	0.75, 	50.0, -- 0.75 operative for [50, 100)
-	1.0, 	100.0, -- 1.0 operative for >= 100
+	0.25,  	20.0, -- 0.25 operative for [20, 40)
+	0.5, 	40.0, -- 0.5 operative for [40, 80)
+	0.75, 	80.0, -- 0.75 operative for [80, 120)
+	1.0, 	120.0, -- 1.0 operative for >= 120
 }
 
 -- INTEL STUFF
