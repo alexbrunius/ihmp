@@ -92,7 +92,7 @@ NDefines.NMilitary.MIN_DIVISION_DEPLOYMENT_TRAINING = 0.4			-- was 0.2 -- Min le
 NDefines.NMilitary.UNIT_UPKEEP_ATTRITION = 0.01					-- was 0.00		--Constant attrition value applied to armies.
 
 -- LAND/ARMY FUEL
-NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.7						-- was 0.5 -- fuel cost multiplier for all army related stuff
+NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.8						-- was 0.5 -- fuel cost multiplier for all army related stuff
 NDefines.NMilitary.FUEL_PENALTY_START_RATIO = 0.33								-- was 0.25 -- ratio of fuel in an army to start getting penalties
 NDefines.NMilitary.SURPLUS_SUPPLY_RATIO_FOR_ZERO_FUEL_FLOW = 1.5		-- was 0.5 -- if a supply chunk has more supply needed than this ratio + 1 compared to its max supply flow, the units inside the chiunk will get no fuel 
 NDefines.NMilitary.ARMY_MAX_FUEL_FLOW_MULT = 0.6					-- was 2.0 -- max fuel ratio that an army can get per hour, multiplied by supply situation
@@ -136,7 +136,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 	}
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.010 				-- was 0.005	--Factor on country Air XP gained from wing training
 
-NDefines.NAir.FUEL_COST_MULT = 0.40 	-- was 0.35 -- fuel multiplier for all air missions
+NDefines.NAir.FUEL_COST_MULT = 0.45 	-- was 0.35 -- fuel multiplier for all air missions
 	
 -- SHIP STUFF
 NDefines.NNavy.COMBAT_BASE_CRITICAL_CHANCE = 0.03								-- was 0.1 -- Base chance for receiving a critical chance. It get's scaled down with ship reliability.
@@ -186,6 +186,8 @@ NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 0.05	 -
 NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 0.50	 -- was 0.12 now same as convoys  -- same as SPOTTING_SPEED_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
 NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 0.05	 -- was 2.4 now same as convoys 	-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval invasion convoys
 NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 0.50  -- was 0.12 now same as convoys 	-- same as SPOTTING_SPEED_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval invasion convoys
+
+NDefines.NNavy.FUEL_COST_MULT = 0.12 	-- was 0.10 -- fuel multiplier for all naval missions
 
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.05			-- was 0.05	unchanged			-- supremacy of a ship is calculated using its IC, manpower and a base define
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_IC = 0.01					-- was 0.005
