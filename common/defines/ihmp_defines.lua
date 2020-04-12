@@ -108,9 +108,6 @@ NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 216              -- was 96 -- d
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2.0						-- was 3.0 - How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.10						-- was 0.05	- Base chance % (0 - 100) for accident to happen. Reduced with higher reliability stat.
 
-NDefines.NAir.AIR_DEPLOYMENT_DAYS = 10							-- was 5 -- Days to deploy one air wing
-NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.01				-- was 0.02	-- Global speed multiplier for airplanes (affects fe.transferring to another base)
-
 NDefines.NAir.DETECT_CHANCE_FROM_RADARS = 0.3							-- was 0.5 -- How much the radars in area affects detection chance.
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 2000 		-- was 3000 -- Max amount of aircrafts in region to give full detection bonus.
 
