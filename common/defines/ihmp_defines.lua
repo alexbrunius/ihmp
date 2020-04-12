@@ -122,6 +122,7 @@ NDefines.NAir.AIR_WING_XP_TRAINING_MAX = 100.0 							-- was 300		--Max average 
 
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.7				-- was 0.8	-- Anti Air Gun Damage factor
 NDefines.NAir.BOMBING_TARGETING_RANDOM_FACTOR = 0.40						-- was 0.25	-- % of picking the wrong target
+NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 4.0					-- was 8.0	-- multiplier on disruption damage to scale its effects on carrier vs carrier planes
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 		0.0, -- AIR_SUPERIORITY
 		0.0, -- CAS		
