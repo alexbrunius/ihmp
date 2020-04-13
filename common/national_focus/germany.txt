@@ -1698,12 +1698,15 @@ focus_tree = {
 
 		available = {
 			is_subject = no
+			has_war = yes
 			OR = {
 				HUN = {
+					has_war = yes
 					is_in_faction_with = ROOT
 					is_free_or_subject_of_root = yes
 				}
 				ROM = {
+					has_war = yes
 					is_in_faction_with = ROOT
 					is_free_or_subject_of_root = yes
 				}
