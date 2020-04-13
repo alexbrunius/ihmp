@@ -34,9 +34,15 @@ sub_units = {
 		supply_consumption = 0.02
 		can_be_parachuted = yes
 		
+		# Support nerfs to combat abilities
+		defense = -0.09
+		breakthrough = -0.5
+		soft_attack = -0.9
+		hard_attack = -0.9
+		
 		# Important Ability
 		suppression_factor = 0.20
-		suppression = 1
+		suppression = 0.5
 
 		essential = {
 			infantry_equipment
