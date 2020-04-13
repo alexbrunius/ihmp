@@ -33,6 +33,7 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.02
+		suppression = 0.5
 		recon = 1
 		can_be_parachuted = yes
 
@@ -116,6 +117,7 @@ sub_units = {
 		#Misc Abilities
 		weight 				= 0.1
 		supply_consumption 	= 0.02
+		suppression 		= 0.8
 		recon 				= 1.5
 		can_be_parachuted 	= yes
 
@@ -200,6 +202,7 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.02
+		suppression = 1
 		recon = 1.5
 		can_be_parachuted = no
 
@@ -280,6 +283,7 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.02
+		suppression = 1
 		recon = 2
 		can_be_parachuted = no
 
