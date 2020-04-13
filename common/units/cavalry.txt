@@ -39,7 +39,7 @@ sub_units = {
 		supply_consumption = 0.12
 
 		#Offensive Abilities
-		suppression = 1 #was 2
+		suppression = 1.5 #was 2
 	
 		need = {
 			infantry_equipment = 120
