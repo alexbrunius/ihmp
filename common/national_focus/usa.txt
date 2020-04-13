@@ -1436,12 +1436,9 @@ focus_tree = {
 				name = USA_rubber_reserve_company
 				bonus = 1.0
 				uses = 2
-				technology = rubber_processing
-				technology = improved_rubber_processing
-				technology = advanced_rubber_processing
-				technology = modern_rubber_processing
+				category = synth_resources
 			}
-				modify_building_resources = {
+			modify_building_resources = {
 				building = synthetic_refinery_rubber
 					resource = rubber
 					amount = 2
@@ -1459,7 +1456,6 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = USA_continue_the_new_deal focus = USA_reestablish_the_gold_standard }
 		mutually_exclusive = { focus = USA_neutrality_act }
-		continue_if_invalid = yes
 		x = 0
 		y = 1
 		relative_position_id = USA_continue_the_new_deal
@@ -2227,12 +2223,10 @@ focus_tree = {
 					371 = {
 						OR = {
 							NOT = { is_owned_and_controlled_by = USA }
-							AND = {
-								is_owned_and_controlled_by = USA
-								free_building_slots = {
-									building = infrastructure
-									size < 3
-								}
+							is_owned_and_controlled_by = USA
+							free_building_slots = {
+								building = infrastructure
+								size < 3
 							}
 						}
 					}
@@ -2280,12 +2274,10 @@ focus_tree = {
 					375 = {
 						OR = {
 							NOT = { is_owned_and_controlled_by = USA }
-							AND = {
-								is_owned_and_controlled_by = USA
-								free_building_slots = {
-									building = infrastructure
-									size < 3
-								}
+							is_owned_and_controlled_by = USA
+							free_building_slots = {
+								building = infrastructure
+								size < 3
 							}
 						}
 					}
@@ -2333,12 +2325,10 @@ focus_tree = {
 					378 = {
 						OR = {
 							NOT = { is_owned_and_controlled_by = USA }
-							AND = {
-								is_owned_and_controlled_by = USA
-								free_building_slots = {
-									building = infrastructure
-									size < 3
-								}
+							is_owned_and_controlled_by = USA
+							free_building_slots = {
+								building = infrastructure
+								size < 3
 							}
 						}
 					}
@@ -4880,16 +4870,10 @@ focus_tree = {
 				name = special_bonus
 				bonus = 1.0
 				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
-				technology = tech_engineers
-				technology = tech_engineers2
-				technology = tech_engineers3
-				technology = tech_recon
-				technology = tech_recon2
-				technology = tech_recon3
+				category = para_tech
+				category = mountaineers_tech
+				category = engineers_tech
+				category = recon_tech
 			}
 		}
 	}
@@ -5427,9 +5411,7 @@ focus_tree = {
 				name = USA_escort_fighters
 				bonus = 3.0
 				uses = 1
-				technology = heavy_fighter1
-				technology = heavy_fighter2
-				technology = heavy_fighter3
+				category = cat_heavy_fighter
 			}
 		}
 	}
@@ -6182,8 +6164,7 @@ focus_tree = {
 				name = USA_expand_the_USMC
 				bonus = 1.0
 				uses = 1
-				technology = marines2
-				technology = marines3
+				category = marine_tech
 			}
 		}
 	}
