@@ -70,6 +70,13 @@ focus_tree = {
 		mutually_exclusive = { focus = HUN_economic_intervention }
 		x = 5
 		y = 0
+		offset = {
+			x = -4
+			y = 0
+			trigger = {
+				NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+			}
+		}
 
 		cost = 10
 
@@ -177,6 +184,9 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = HUN_elect_a_king
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
 
 		cost = 10
 
@@ -215,9 +225,6 @@ focus_tree = {
 				picture = GFX_Portrait_hungary_otto_von_hapsburg
 				expire = "1965.1.1"
 				ideology = despotism
-				traits = {
-					
-				}
 			}
 			swap_ideas = {
 				add_idea = HUN_habsburg_restored
@@ -752,6 +759,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = HUN_elect_a_king
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
 
 		cost = 10
 
@@ -1113,6 +1123,13 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = HUN_elect_a_king
+		offset = {
+			x = -3
+			y = 0
+			trigger = {
+				NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+			}
+		}
 
 		cost = 10
 
@@ -1166,8 +1183,6 @@ focus_tree = {
 						picture = GFX_Portrait_hungary_friedrich_franz
 						expire = "1965.1.1"
 						ideology = nazism
-						traits = {
-						}
 						id = 502 #Nazi Franz
 					}
 				}
@@ -1178,8 +1193,6 @@ focus_tree = {
 						picture = GFX_Portrait_hungary_friedrich_franz
 						expire = "1965.1.1"
 						ideology = nazism
-						traits = {
-						}
 						id = 502 #Nazi Franz
 					}
 				}
@@ -1198,8 +1211,16 @@ focus_tree = {
 		id = HUN_economic_intervention
 		icon = GFX_goal_generic_demand_territory
 		mutually_exclusive = { focus = HUN_balanced_budget }
-		x = 15
+		relative_position_id = HUN_balanced_budget
+		x = 10
 		y = 0
+		offset = {
+			x = -8
+			y = 0
+			trigger = {
+				NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+			}
+		}
 
 		cost = 10
 
@@ -1239,6 +1260,13 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = HUN_economic_intervention
+		offset = {
+			x = 5
+			y = 0
+			trigger = {
+				NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+			}
+		}
 
 		cost = 10
 
@@ -1396,6 +1424,9 @@ focus_tree = {
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = HUN_strengthen_fascists }
 		mutually_exclusive = { focus = HUN_trade_deal_with_germany }
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
 		x = 2
 		y = 1
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
@@ -1605,16 +1636,13 @@ focus_tree = {
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 		available = {
 			NOT = { GER = { has_government = communism } }
+			NOT = { has_war_with = GER }
 		}
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 80
-		}
-
-		available = {
-			NOT = { has_war_with = GER }
 		}
 
 		bypass = {
@@ -2229,6 +2257,9 @@ focus_tree = {
 		prerequisite = { focus = HUN_economic_intervention }
 		mutually_exclusive = { focus = HUN_strengthen_fascists }
 		relative_position_id = HUN_economic_intervention
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
 		x = 2
 		y = 1
 
@@ -2265,7 +2296,6 @@ focus_tree = {
 		icon = GFX_focus_hun_assassinate_horthy
 		x = 0
 		y = 1
-		relative_position_id = HUN_economic_intervention
 		prerequisite = { focus = HUN_council_of_peoples_commissars }
 		relative_position_id = HUN_council_of_peoples_commissars
 
@@ -2445,8 +2475,6 @@ focus_tree = {
 						picture = GFX_Portrait_hungary_bela_kun
 						expire = "1965.1.1"
 						ideology = marxism
-						traits = {
-						}
 					}
 				}
 			}
@@ -2579,8 +2607,16 @@ focus_tree = {
 	focus = {
 		id = HUN_industrial_revitalization
 		icon = GFX_goal_generic_construction
-		x = 22
+		x = 7
 		y = 0
+		relative_position_id = HUN_economic_intervention
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+			}
+		}
 
 		cost = 10
 
@@ -3455,7 +3491,8 @@ focus_tree = {
 	focus = {
 		id = HUN_secret_rearmament
 		icon = GFX_focus_secret_rearmament
-		x = 33
+		relative_position_id = HUN_industrial_revitalization
+		x = 10
 		y = 0
 
 		cost = 10
@@ -4093,7 +4130,7 @@ focus_tree = {
 		id = HUN_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = HUN_bled_agreement }
-		x = 6
+		x = 5
 		y = 1
 		relative_position_id = HUN_bled_agreement
 
@@ -4678,7 +4715,7 @@ focus_tree = {
 		id = HUN_naval_warfare
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = HUN_secret_rearmament }
-		x = 12
+		x = 11
 		y = 1
 		relative_position_id = HUN_secret_rearmament
 
