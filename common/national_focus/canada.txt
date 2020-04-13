@@ -2141,18 +2141,9 @@
 				bonus = 1.0
 				uses = 1
 				category = motorized_equipment
-				technology = tech_field_hospital
-				technology = tech_field_hospital2
-				technology = tech_field_hospital3
-				technology = tech_field_hospital4
-				technology = tech_logistics_company
-				technology = tech_logistics_company2
-				technology = tech_logistics_company3
-				technology = tech_logistics_company4
-				technology = tech_signal_company
-				technology = tech_signal_company2
-				technology = tech_signal_company3
-				technology = tech_signal_company4
+				category = hospital_tech
+				category = logistics_tech
+				category = signal_company_tech
 			}
 		}
 	}
@@ -2684,11 +2675,7 @@
 				name = CAN_supply_the_empire
 				bonus = 1.0
 				uses = 3
-				technology = excavation1
-				technology = excavation2
-				technology = excavation3
-				technology = excavation4
-				technology = excavation5
+				category = excavation_tech
 			}
 		}
 	}
@@ -3858,10 +3845,7 @@
 				name = CAN_we_have_the_hurricane
 				bonus = 1.0
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
+				category = light_fighter
 			}
 		}
 	}

@@ -3164,27 +3164,12 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			#Give generic fighter bonus if fighter_2 already researched
-			if = {
-				limit = {
-					has_tech = fighter2
-				}
-				add_tech_bonus = {
-					name = ROM_iar_80
-					bonus = 1.0
-					ahead_reduction = 2
-					uses = 1
-					category = light_fighter
-				}
-				else = {
-					add_tech_bonus = {
-						name = ROM_iar_80
-						bonus = 1.0
-						ahead_reduction = 2
-						uses = 1
-						technology = fighter2
-					}
-				}
+			add_tech_bonus = {
+				name = ROM_iar_80
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				technology = fighter2
 			}
 		}
 	}
