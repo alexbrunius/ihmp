@@ -3453,6 +3453,9 @@
 		mutually_exclusive = { focus = AST_support_the_policy_of_appeasement }
 		x = 35
 		y = 0
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
 
 		cost = 10
 
