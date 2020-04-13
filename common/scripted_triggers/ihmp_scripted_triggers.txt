@@ -162,6 +162,29 @@ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 					}
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = RULE_ALLOW_LICENSING_SAME_FACTION_SOVIET_ALLIES_GER_JAP
+				ROOT = {
+					tag = GER
+				}
+				FROM = {
+					tag = JAP
+				}
+				has_global_flag = falkenhausen_recalled
+			}
+			custom_trigger_tooltip = {
+				tooltip = RULE_ALLOW_LICENSING_SAME_FACTION_SOVIET_ALLIES_JAP_GER_ITA
+				ROOT = {
+					tag = JAP
+				}
+				FROM = {
+					OR = {
+						tag = GER
+						tag = ITA
+					}
+				}
+				has_global_flag = tripartite_pact
+			}
 		}
 	}
 	if = {
