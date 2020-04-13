@@ -1162,11 +1162,7 @@ focus_tree = {
 				name = GER_autarky
 				bonus = 1.0
 				uses = 2
-				technology = excavation1
-				technology = excavation2
-				technology = excavation3
-				technology = excavation4
-				technology = excavation5
+				category = excavation_tech
 			}
 			add_ideas = GER_autarky_idea
 		}
@@ -4779,7 +4775,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
-				name = ti_bonus
 				name = GER_trade_interdiction
 				bonus = 1.0
 				uses = 2
@@ -4935,9 +4930,7 @@ focus_tree = {
 				name = tp_bonus
 				bonus = 1.0
 				uses = 2
-				technology = transport
-				technology = landing_craft
-				technology = tank_landing_craft
+				category = tp_tech
 			}			
 		}
 	}
