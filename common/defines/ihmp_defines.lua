@@ -10,6 +10,9 @@ NDefines.NBuildings.MAX_SHARED_SLOTS = 30				-- was 25 -- Max slots shared by fa
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1 -- was 0.5 --Scale factor of extra shared slots when state owner change.
 NDefines.NBuildings.RADAR_RANGE_MAX = 120				-- was 200 -- Range is interpolated between building levels 1-15.
 
+-- DIPLOMACY STUFF
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 50					-- was 100	-- Political power cost to send attache
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 25.0			-- was 50	-- Command Power sent attache usage cost
 
 -- COUNTRY STUFF
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.03	-- was 0.3 -- Modifier for army equipment reinforcement speed
@@ -35,7 +38,7 @@ NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3		-- was 2 -- Base year a
 NDefines.NPolitics.ARMY_LEADER_COST = 2						-- was 5 -- cost for recruiting new leaders, 'this value' * number_of_existing_leaders_of_type
 
 -- MILITARY STUFF
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 0			-- was 24 -- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = -1			-- was 24 -- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 4			-- Max width of regiments in division designer.
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 3			-- Max height of regiments in division designer.
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 14	-- was 20 --Base cost to unlock a regiment slot,
