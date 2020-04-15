@@ -2160,7 +2160,7 @@ equipment_modules = {
 			build_cost_ic = 0.15
 			naval_speed = -0.075
 			max_strength = 0.05
-			reliability = 0.05
+			reliability = 0.075
 		}
 		dismantle_cost_ic = 3000
 		
