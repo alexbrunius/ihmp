@@ -7,7 +7,6 @@ equipments = {
 		is_convertable = yes
 		picture = archetype_heavy_tank_equipment
 		is_buildable = no
-		is_convertable = yes
 		type = armor
 		group_by = archetype
 		
@@ -293,7 +292,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 14
 		
-		build_cost_ic = 25
+		build_cost_ic = 20
 		resources = {
 			#oil = 1
 			steel = 3
@@ -341,7 +340,7 @@ equipments = {
 		ap_attack = 140
 		air_attack = 0
 		
-		build_cost_ic = 29
+		build_cost_ic = 23.2
 		resources = {
 			#oil = 1
 			steel = 4
@@ -376,7 +375,7 @@ equipments = {
 		ap_attack = 160
 		air_attack = 0
 		
-		build_cost_ic = 33
+		build_cost_ic = 26.4
 		resources = {
 			#oil = 2
 			steel = 4
