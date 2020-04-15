@@ -1206,8 +1206,9 @@ technologies = {
 	keypoint_bombing = {
 
 		# EFFECT ########
+		air_strategic_bomber_defence_factor = 0.1
 		tac_bomber = {
-			air_bombing = 0.10
+			air_bombing = 0.20
 		}
 		###########
 		
@@ -1824,6 +1825,7 @@ technologies = {
 		tac_bomber = {
 			air_bombing = 0.2
 		}
+		air_strategic_bomber_bombing_factor = 0.05
 		###########
 		
 		path = {
