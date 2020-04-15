@@ -229,6 +229,7 @@ country_event = {
 			country_event = { days = 1 id = germany.12 }
 			effect_tooltip = {
 				add_opinion_modifier = { target = SOV modifier = MR_pact }# pact
+				add_timed_idea = { idea = GER_molotov_ribbentrop_pact days = 730 }
 			}
 		}
 		set_global_flag = sov_yes_pact
@@ -280,6 +281,7 @@ country_event = {
 		}
 		diplomatic_relation = { country = SOV relation = non_aggression_pact }
 		add_opinion_modifier = { target = SOV modifier = MR_pact }# pact
+		add_timed_idea = { idea = GER_molotov_ribbentrop_pact days = 730 }
 		USA = {
 			set_country_flag = { flag = USA_MR_window days = 60 value = 1 }
 		}
