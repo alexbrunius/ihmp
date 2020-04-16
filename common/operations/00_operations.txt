@@ -1726,7 +1726,10 @@ operation_coordinated_strike = { ### 11 2/70
 
 	available = {
 		NOT = {
-			has_war_with = FROM
+			OR = {
+				has_war_with = FROM
+				has_non_aggression_pact_with = FROM
+			}
 		}
 		has_wargoal_against = FROM
 		can_declare_war_on = FROM
