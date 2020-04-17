@@ -71,6 +71,17 @@ equipments = {
 			count < 2
 		}
 		
+		default_modules = {
+			fixed_ship_battery_slot = empty
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		
 		lg_armor_piercing = 0
 		lg_attack = 0
 		
@@ -146,6 +157,13 @@ equipments = {
 			rear_1_custom_slot = mid_1_custom_slot
 		}
 
+		default_modules = {
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+		}
+
+
 		reliability = 0.85
 		naval_range = 1800
 		max_strength = 50 #was 40
@@ -216,6 +234,12 @@ equipments = {
 		max_strength = 65 #was 50
 		build_cost_ic = 420 #was 550
 		manpower = 200
+
+		default_modules = {
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_3
+		}
 	}
 
 	ship_hull_light_4 = {
