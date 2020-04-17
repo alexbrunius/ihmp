@@ -2424,9 +2424,10 @@ focus_tree = {
 			add_tech_bonus = {
 				name = secret_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = nuclear
 				category = rocketry
+				category = electronics
 			}
 		}
 	}
