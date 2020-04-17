@@ -173,7 +173,7 @@ NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE 							= 0.10		-- was 0.04 -
 NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				= 0.3  		-- was 0.5 -- screening efficiency (screen to capital ratio) at 0% positioning
 
 NDefines.NNavy.ESCAPE_SPEED_SUB_BASE 											= 0.12		-- was 0.08 -- subs get faster escape speed. gets replaced by hidden version below if hidden
-NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB 											= 0.27  	-- was 0.18 -- hidden subs get faster escape speed
+NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB 											= 0.54  	-- was 0.18 -- hidden subs get faster escape speed
 
 -- SUBMARINE BALANCE TWEAKS 0.9
 	
