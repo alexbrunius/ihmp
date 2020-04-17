@@ -184,7 +184,7 @@ NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profi
 	}
 
 NDefines.NNavy.DEPTH_CHARGES_HIT_CHANCE_MULT 				= 0.6 			-- was 1.1	-- multiplies hit chance of small guns
-NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE 					= 130.0			-- was 100 -- hit profile for depth charges
+NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE 					= 110.0			-- was 100 -- hit profile for depth charges
 NDefines.NNavy.DEPTH_CHARGES_DAMAGE_MULT 					= 1.1 			-- was 0.7 -- multiplies damage of depth charges
 
 NDefines.NNavy.CONVOY_SPOTTING_SPEED_MULT 					= 1.2			-- was 1.0 -- spotting speed mult against convoys
