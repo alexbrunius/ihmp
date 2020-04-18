@@ -1,3 +1,43 @@
+1.9.1.0
+- Made mod compatible with 1.9.1 vanilla version.
+- Added changelog generation script.
+- Changed color of Portugal to make it differentiate from Italy better.
+- Buffed electronics concern to give 25% research speed, from 15%.
+- Changed planning bonus bar color to red instead of blue.
+- Reverted default army colours to, well, default.
+- Changed scout plane intel decay from 0.05% to 0.2%.
+- Fixed CV FTR2 requiring 2 aluminium instead of 3.
+- Reduced cost of generic building slot decisions and made them add 2 slots.
+- Add ahistorical choices in Manchuko NF tree to game rule.
+- Changed collaboration government operation: 30/50->20/30 effect.
+- Removed pre-LaR custom Vichy content.
+- Added decision for USA to occupy Greenland when at war with Germany.
+- Halved paratrooper width and stats meaning they take 2x the SF cap.
+- Made LARM/AC recon not paradroppable.
+- Made Tora Tora apply instantly when Japan is at war with HOL/ENG/USA/FRA.
+- Made US Navy getting out of isolation automatic when US is at war.
+- Pruned some German ahistorical focuses (under game rule).
+- Tweaked recon values: LARM 1->2, AC 2->1.5.
+- Pruned some Romanian ahistorical focuses (under game rule). Changed HM Loyal Government and the industry tree not to require the ahistorical branch.
+- Tweaked NF layouts to work with ahistorical focus game rule.
+- Prevented AI from creating collaboration governments like crazy.
+- Buffed concentrated industry branch: 20%->25% more slots with each level.
+- Rough balancing of ARM variant suppression values to get them in line with base model values. Also fixed an old outlier of SPAA getting free 50% SA.
+- Added forgotten port of vanilla buff to AMARM armor (10->20, 60->80).
+- Streamlined LSPAA cost to align them with base LARM costs to make them more worthwhile.
+- Brought AMARM speed to conform with the old mod version's overall division speed change.
+- Made support resistance effects last 180 days instead of being indefinite as a stopgap.
+- Made synthetic rubber and aluminum plant possible to sabotage.
+- Changed no AI planes feature into game rule.
+- Added speed 0.5 as a test, shifted all other speeds one bucket up (speed 5 still unbound).
+- Changed vanilla operative for faction member-IC scaling from 0/0.25/0.5<->0/10/50 to 0/0.25/0.5/0.75/1<->0/10/20/50/100.
+- Adjusted GiE airwing creation and division training XP levels to match extended number of XP levels in the mod.
+- Change production category of Armoured Cars to Infantry from Tanks.
+- Fixed wrongly positioned label of Special Forces in tech tree.
+- Remove collaboration government event spam (still possible to create collaboration governments by decision).
+- Update the mod name to not include version.
+- Remove friend/foe NATO counter coloring (so that NATO counter submod doesn't change the checksum).
+
 1.8.2.1
 - Fixed Blitzkrieg doctrine incorrectly giving 50% bonus instead of 5%.
 
@@ -475,7 +515,3 @@ Economy:
 - Economy laws now also modify Dockyard construction speed same way as Military Factories
 - Changed occupation laws increasing penalties for factories & resources ( Harshest same as Gentle had previously ), but reducing penalty to manpower
 - Reduced oil from Synthetic Refinery from 7 to 5 per level
-
-
-
-
