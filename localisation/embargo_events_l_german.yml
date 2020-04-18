@@ -1,0 +1,9 @@
+﻿l_german:
+ embargo.1.t:0 "Embargo gegen die [JAP.GetFactionName]"
+ embargo.1.d:0 "Wir wurden angefragt uns bei einem Handelsembargo gegen die [JAP.GetFactionName] zu beteiligen."
+ embargo.1.a:0 "Wir hören auch auf mit ihnen zu handeln."
+ embargo.1.b:0 "Wir handeln mit jedem."
+ embargo.2.t:0 "Embargo gegen die [GER.GetFactionName]"
+ embargo.2.d:0 "Wir wurden angefragt uns bei einem Handelsembargo gegen die [GER.GetFactionName] zu beteiligen."
+ embargo.2.a:0 "Wir hören auch auf mit ihnen zu handeln."
+ embargo.2.b:0 "Wir handeln mit jedem."
