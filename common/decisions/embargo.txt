@@ -1,0 +1,211 @@
+political_actions = {
+	USA_Embargo_JAP = {
+		icon = generic_political_discourse
+		available = {
+			tag = USA
+			JAP = {
+				has_completed_focus = JAP_secure_china
+			}
+		}
+		visible = {
+			tag = USA
+			NOT = { has_government = JAP }
+			NOT = { has_war_with = JAP }
+		}
+		cost = 75
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		complete_effect = {
+			USA = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = embargo
+				}
+				reverse_add_opinion_modifier = {
+					target = JAP
+					modifier = embargo
+				}
+				set_country_flag = USA_Embargo_JAP
+			}
+		}
+	}
+	Americas_Embargo_JAP = {
+		icon = generic_political_discourse
+		available = {
+			tag = USA
+			has_country_flag = USA_Embargo_JAP
+			JAP = {
+				has_completed_focus = JAP_secure_china
+			}
+		}
+		visible = {
+			tag = USA
+			has_country_flag = USA_Embargo_JAP
+			NOT = { has_government = JAP }
+		}
+		cost = 75
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		complete_effect = {
+			USA = {
+				every_other_country = {
+					limit = {
+						capital_scope = {
+							OR = {
+								is_on_continent = north_america
+								is_on_continent = south_america
+							}
+						}
+					}
+					country_event = {
+						id = embargo.1	
+						days = 2
+						random = 24
+					}
+				}
+			}
+		}
+	}
+
+	ENG_Embargo_JAP = {
+		icon = generic_political_discourse
+		available = {
+			tag = ENG
+			JAP = {
+				has_completed_focus = JAP_secure_china
+			}
+		}
+		visible = {
+			tag = ENG
+			NOT = { has_government = JAP }
+			NOT = { has_war_with = JAP }
+		}
+		cost = 75
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = embargo
+				}
+				reverse_add_opinion_modifier = {
+					target = JAP
+					modifier = embargo
+				}
+				set_country_flag = ENG_Embargo_JAP
+			}
+		}
+	}
+	Allies_Embargo_JAP = {
+		icon = generic_political_discourse
+		available = {
+			tag = ENG
+			has_country_flag = ENG_Embargo_JAP
+			JAP = {
+				has_completed_focus = JAP_secure_china
+			}
+		}
+		visible = {
+			tag = ENG
+			has_country_flag = ENG_Embargo_JAP
+			NOT = { has_government = JAP }
+		}
+		cost = 75
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				every_other_country = {
+					limit = {
+						is_in_faction_with = ROOT
+					}
+					country_event = {
+						id = embargo.1	
+						days = 2
+						random = 24
+					}
+				}
+			}
+		}
+	}
+	USA_Embargo_GER = {
+		icon = generic_political_discourse
+		available = {
+			tag = USA
+			GER = {
+				has_war_with = ENG
+			}
+		}
+		visible = {
+			tag = USA
+			NOT = { has_government = GER }
+			NOT = { has_war_with = GER }
+		}
+		cost = 75
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		complete_effect = {
+			USA = {
+				add_opinion_modifier = {
+					target = GER
+					modifier = embargo
+				}
+				reverse_add_opinion_modifier = {
+					target = GER
+					modifier = embargo
+				}
+				set_country_flag = USA_Embargo
+			}
+		}
+	}
+	Americas_Embargo_GER = {
+		icon = generic_political_discourse
+		available = {
+			tag = USA
+			has_country_flag = USA_Embargo_GER
+			GER = {
+				has_war_with = ENG
+			}
+		}
+		visible = {
+			tag = USA
+			has_country_flag = USA_Embargo_GER
+			NOT = { has_government = GER }
+		}
+		cost = 75
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		complete_effect = {
+			USA = {
+				every_other_country = {
+					limit = {
+						capital_scope = {
+							OR = {
+								is_on_continent = north_america
+								is_on_continent = south_america
+							}
+						}
+					}
+					country_event = {
+						id = embargo.1	
+						days = 2
+						random = 24
+					}
+				}
+			}
+		}
+	}
+}
