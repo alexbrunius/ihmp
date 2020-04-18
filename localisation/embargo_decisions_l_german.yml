@@ -1,0 +1,7 @@
+﻿l_german:
+ USA_Embargo_JAP:0 "[USA.GetName] startet ein Handelsembargo gegen [JAP.GetName]." 
+ Americas_Embargo_JAP:0 "[USA.GetName] fragt alle Amerikanische Nationen sich beim Embargo gegen [JAP.GetName] zu beteiligen."
+ ENG_Embargo_JAP:0 "[ENG.GetName] startet ein Handelsembargo gegen [JAP.GetName]."
+ Allies_Embargo_JAP:0 "[ENG.GetName] fragt alle seine allierten sich beim Embagro gegen [JAP.GetName] zu beteiligen."
+ USA_Embargo_GER:0 "[USA.GetName] startet ein Handelsembargo gegen [GER.GetName]."
+ Americas_Embargo_GER:0 "[USA.GetName] fragt alle Amerikanische Nationen sich beim Embargo gegen [GER.GetName] zu beteiligen."
