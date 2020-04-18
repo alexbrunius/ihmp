@@ -1,0 +1,7 @@
+﻿l_french:
+ USA_Embargo_JAP:0 "[USA.GetName] embargos all trade with [JAP.GetName]." 
+ Americas_Embargo_JAP:0 "[USA.GetName] asks all American Nations to follow it's Embargo on [JAP.GetName]."
+ ENG_Embargo_JAP:0 "[ENG.GetName] embargos any Trade with [JAP.GetName]."
+ Allies_Embargo_JAP:0 "[ENG.GetName] asks all its allies to follow it's Embargo on [JAP.GetName]."
+ USA_Embargo_GER:0 "[USA.GetName] embargos all trade with [GER.GetName]."
+ Americas_Embargo_GER:0 "[USA.GetName] asks all American Nations to follow it's Embargo on [GER.GetName]."

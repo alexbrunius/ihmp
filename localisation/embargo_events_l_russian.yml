@@ -1,0 +1,9 @@
+﻿l_russian:
+ embargo.1.t:0 "Embargo against the [JAP.GetFactionName]"
+ embargo.1.d:0 "We got asked to join an Embargo against the [JAP.GetFactionName]."
+ embargo.1.a:0 "We will stop trading with them aswell."
+ embargo.1.b:0 "We won't limit our Trade."
+ embargo.2.t:0 "Embargo against the [GER.GetFactionName]"
+ embargo.2.d:0 "We got asked to join an Embargo against [GER.GetFactionName]."
+ embargo.2.a:0 "We will stop trading with them aswell."
+ embargo.2.b:0 "We won't limit our Trade."
