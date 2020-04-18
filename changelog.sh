@@ -1,1 +1,1 @@
-echo -e "$(git log --reverse --pretty="* %s." $1..HEAD)\n\n$(cat changelog.txt)" > changelog.txt
+echo -e "$(git log --reverse --pretty="- %s." $1..HEAD)\n\n$(cat changelog.txt)" > changelog.txt
