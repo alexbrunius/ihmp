@@ -2366,6 +2366,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				name = mech_army_bonus
 				category = cat_mechanized_equipment
