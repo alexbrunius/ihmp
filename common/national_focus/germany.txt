@@ -2431,6 +2431,37 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = GER_tech_sharing
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { focus = GER_wunderwaffe }
+		x = 0
+		y = 1
+		relative_position_id = GER_wunderwaffe
+		available_if_capitulated = yes
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+        search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			GER = { add_to_tech_sharing_group = axis_research }
+			every_other_country = {
+				limit = {
+					is_in_faction_with = GER
+				}
+				add_to_tech_sharing_group = axis_research
+			}
+		}
+	}
 	
 	focus = { #should already be signed in 39
 		id = GER_mol_rib_pact
