@@ -2124,6 +2124,8 @@ leader_traits = {
 
 	aircraft_manufacturer = {
 		random = no
+
+		aircraft_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2146,6 +2148,8 @@ leader_traits = {
 				air_agility = 0.1 maximum_speed = 0.1
 			}
 		}
+
+		aircraft_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2162,6 +2166,8 @@ leader_traits = {
 				air_agility = 0.2 maximum_speed = 0.1
 			}
 		}
+
+		aircraft_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 2
@@ -2179,6 +2185,8 @@ leader_traits = {
 				air_ground_attack = 0.1 reliability = 0.1
 			}		
 		}
+
+		aircraft_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2200,6 +2208,8 @@ leader_traits = {
 				reliability = 0.2
 			}
 		}
+
+		aircraft_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2225,6 +2235,8 @@ leader_traits = {
 				reliability = 0.2
 			}
 		}
+
+		aircraft_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2239,6 +2251,8 @@ leader_traits = {
 				air_bombing = 0.1
 			}
 		}
+
+		aircraft_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2261,6 +2275,8 @@ leader_traits = {
 				air_range = 0.3 naval_strike_attack = 0.1 air_ground_attack = 0.1
 			}
 		}
+
+		aircraft_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2274,6 +2290,8 @@ leader_traits = {
 				maximum_speed = 0.05 reliability = 0.1 
 			}
 		}
+
+		tank_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2289,6 +2307,8 @@ leader_traits = {
 				hard_attack = 0.05
 			}
 		}
+
+		tank_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2303,6 +2323,8 @@ leader_traits = {
 				armor_value = 0.05
 			}
 		}
+
+		tank_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2316,6 +2338,8 @@ leader_traits = {
 				reliability = 0.05 soft_attack = 0.05
 			}
 		}
+
+		tank_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2329,6 +2353,8 @@ leader_traits = {
 				armor_value = 0.05 hard_attack = 0.05
 			}
 		}
+
+		tank_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2344,6 +2370,8 @@ leader_traits = {
 				reliability = 0.05
 			}
 		}
+
+		tank_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2366,6 +2394,8 @@ leader_traits = {
 				naval_range = 0.25
 			}
 		}
+
+		naval_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2390,6 +2420,8 @@ leader_traits = {
 			#	
 			#}
 		}
+
+		naval_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2408,6 +2440,8 @@ leader_traits = {
 				sub_detection = -0.25
 			}
 		}
+
+		naval_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2430,6 +2464,8 @@ leader_traits = {
 				sub_visibility = -0.1 surface_visibility = -0.1 naval_speed = 0.1
 			}
 		}
+
+		naval_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2443,6 +2479,8 @@ leader_traits = {
 				naval_range = 0.3 sub_detection = 0.1 naval_speed = 0.1 build_cost_ic = 0.1
 			}
 		}
+
+		naval_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2459,6 +2497,8 @@ leader_traits = {
 				naval_range = -0.25 naval_speed = 0.1 
 			}
 		}
+
+		naval_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2481,6 +2521,8 @@ leader_traits = {
 				build_cost_ic = -0.25 naval_range = -0.5
 			}
 		}
+
+		naval_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2490,6 +2532,8 @@ leader_traits = {
 	naval_manufacturer = {
 		random = no
 		#generic
+
+		naval_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2498,6 +2542,8 @@ leader_traits = {
 	
 	artillery_manufacturer = {
 		random = no
+
+		materiel_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2506,6 +2552,8 @@ leader_traits = {
 	
 	infantry_equipment_manufacturer = {
 		random = no
+
+		materiel_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2514,6 +2562,8 @@ leader_traits = {
 
 	support_equipment_manufacturer = {
 		random = no
+
+		materiel_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -2522,6 +2572,8 @@ leader_traits = {
 	
 	motorized_equipment_manufacturer = {
 		random = no
+
+		materiel_manufacturer_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
