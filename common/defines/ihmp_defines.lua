@@ -156,7 +156,6 @@ NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO							= 0.05	-- was 0.2 -- total sum
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 9                                -- was 6 -- base speed of units on water being transported
 
 -- SUBMARINE BALANCE TWEAKS
-NDefines.NNavy.COMBAT_DETECTED_CONVOYS_FROM_SURFACE_DETECTION_STAT 				= 0.01		-- was 0.1 -- Each 1.0 of surface_detection that ship has (equipment stat), gives x% of convoys discovered from total travelling along the route.
 NDefines.NNavy.CONVOY_RAID_MAX_REGION_TO_TASKFORCE_RATIO						= 1.0		-- was 1.5 -- each taskforce in convoy raid mission can at most cover this many regions without losing efficiency
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO							= 9.0		-- was 5.0 -- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
 
