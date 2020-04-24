@@ -47,7 +47,9 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 14	-- was 20 --Base cost t
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 7	-- was 5  --Base cost to change a regiment column.
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 7		-- was 10 --Base cost to unlock a support slot
 
-NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 70	     -- was 60 ( 70 = x3 instead of x4 dmg bonus if attack > DEF/BRK) - chance to avoid hit if no defences left.	
+NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 70	     -- was 60 ( 70 = x3 instead of x4 dmg bonus if attack > DEF/BRK) - chance to avoid hit if no defences left.
+	
+NDefines.NMilitary.SPEED_REINFORCEMENT_BONUS = 0.02          -- was 0.01    -- chance to join combat bonus by each 100% larger than infantry base (up to 200%)
 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.4          -- was -0.5 - effect on defense due to enemy air superiorty
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3     -- was -0.5 - effect on speed due to enemy air superiority
