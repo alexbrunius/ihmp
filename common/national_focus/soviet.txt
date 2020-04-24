@@ -717,6 +717,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = SOV_aviation_cult
 		cost = 10
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
 		ai_will_do = {
 			factor = 1
 		}
