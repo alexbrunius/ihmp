@@ -1,0 +1,435 @@
+CAN_MP_1 = {
+	name = "Canada MP Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = CAN
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+				}
+			}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		CAN_rowell_sirois_commission
+		CAN_rcaf_station_borden
+		CAN_we_have_the_hurricane
+		CAN_defence_of_canada_regulations
+		CAN_wartime_prices_and_trade_board
+		CAN_canada_wheat_board
+		CAN_national_resources_mobilization_act
+		CAN_fund_the_national_research_council
+		CAN_commit_to_the_war
+		CAN_war_bonds
+		CAN_crown_corporations
+		CAN_national_housing_act
+		CAN_strengthen_the_commonwealth_ties
+		CAN_shadow_factories
+		CAN_montreal_laboratory_collaboration
+		CAN_department_of_munitions_and_supply
+		CAN_victory_aircraft_limited
+		CAN_bits_and_pieces_program
+		CAN_john_inglis_and_company
+		CAN_if_day
+		CAN_mine_the_shield
+		CAN_alberta_coal_towns
+		CAN_national_steel_car
+		CAN_war_fueled_economy
+		CAN_halifax_shipyards
+		CAN_canada_pacific_railway
+		CAN_the_plan
+		CAN_camp_x
+		CAN_supply_the_empire
+		CAN_aluminium_company_of_canada
+		CAN_turner_valley_oilfield
+		CAN_army_modernization
+		CAN_cmp_truck
+		CAN_a_motorized_army
+		CAN_red_deer_training_camp
+		CAN_the_valentine_tank
+		CAN_canadian_infantry_corps
+		CAN_dollar_a_year_men
+		CAN_royal_regiment_of_canadian_artillery
+		CAN_retool_angus_shops	
+		CAN_imperial_oil
+		CAN_light_cruiser_effort
+		CAN_escort_fleet
+		CAN_trade_fleet
+		CAN_degauss_ship_hulls
+		CAN_united_shipyards		
+		#CAN_habakkuk_carrier
+		CAN_maritime_colonial_railway
+		
+		
+		
+	}
+
+	research = {
+		cat_battlefield_support = -1000
+		cat_operational_integrity = -1000
+		cat_superior_firepower = -1000
+		cat_grand_battle_plan = -1000
+		cat_mass_assault = -1000
+	}
+
+	ideas = {
+		civilian_economy = 0
+		CAN_r_b_bennett = 1000
+		CAN_harry_crerar = 100
+		canadian_car_foundry = 100
+		free_trade = 10000
+		export_focus = 0
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+CAN_MP_Buildup = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+		date < 1938.1.1
+	}
+
+	abort = {
+		date > 1938.1.1 
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		target = 276
+		value = 10
+	}
+}
+
+CAN_MP_AirDoctrine = {
+	name = "Air Doctrine Research"
+	desc = ""
+
+	enable = {
+		original_tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+	has_tech = logistical_bombing
+	}
+	abort = { 
+	}
+	
+	research = {
+		cat_strategic_destruction = -1000
+	}
+}
+
+CAN_MP_1_LessInfProd = {
+	name = "Fighter Production"
+	desc = ""
+
+	enable = {
+		original_tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+		has_tech = fighter1
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = -1000
+	
+	}
+}
+
+CAN_MP_1_NoScreen = {
+	name = "Fighter Production"
+	desc = ""
+
+	enable = {
+		original_tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = screen_ship
+		value = -100
+	
+	}
+}
+
+CAN_MP_1_Fighter_prod = {
+	name = "Fighter Production"
+	desc = ""
+
+	enable = {
+		original_tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+		has_tech = fighter1
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = air_factory_balance
+		value = 1000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = fighter_equipment
+		value = 100
+	}
+}
+
+CAN_MP_1_NoCAS = {
+	name = "No CAS Production"
+	desc = ""
+
+	enable = {
+		original_tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -10000
+	}
+}
+
+CAN_MP_Fighter1 = {
+	name = "Research Fighter"
+	desc = ""
+
+	enable = {
+		original_tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+		NOT = { has_tech = fighter1 }
+	}
+
+	abort = {
+		has_tech = fighter1
+	}
+
+	research = {
+		light_fighter = 10000
+	}
+
+}
+
+CAN_MP_Fighter2 = {
+	name = "Research Fighter"
+	desc = ""
+
+	enable = {
+		original_tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+		has_completed_focus = CAN_we_have_the_hurricane
+		NOT = { has_tech = fighter2 }
+	}
+
+	abort = {
+		has_tech = fighter2
+	}
+
+	research = {
+		light_fighter = 10000
+	}
+
+}
+
+CAN_MP_Fighter3 = {
+	name = "Research Fighter"
+	desc = ""
+
+	enable = {
+		original_tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+		has_tech = fighter2
+		NOT = { has_tech = fighter3 }
+	}
+
+	abort = {
+		has_tech = fighter3
+	}
+
+	research = {
+		light_fighter = 1000
+	}
+
+}
+
+No_PP_For_Relation = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = -200
+	}	
+}
+
+CAN_MP_No_Generals = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+		date < 1939.1.1
+	}
+
+	abort = {
+		date > 1939.1.1
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = general
+		value = -1000
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = -1000
+	}
+}
+
+CAN_MP_UK_Support = {
+	name = "Befriend UK to accept every request from them"
+	desc = ""
+
+	enable = {
+		original_tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = ENG
+		value = 200
+	}
+	ai_strategy = {
+		type = support
+		id = ENG
+		value = 1000
+	}
+
+}
+
+CAN_MP_USA_Support = {
+	name = "Support USA to accept every request from them"
+	desc = ""
+
+	enable = {
+		original_tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = USA
+		value = 200
+	}
+	ai_strategy = {
+		type = support
+		id = USA
+		value = 200
+	}
+
+}

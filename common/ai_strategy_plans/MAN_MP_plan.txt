@@ -1,0 +1,244 @@
+MAN_MP_1 = {
+	name = "Manchukuo Multiplayer Plan"
+	desc = "No Alliance with Kwantung"
+
+	enable = {
+		original_tag = MAN
+		has_game_rule = {
+			rule = MAN_ai_behavior
+			option = MAN_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		MAN_pacify_the_countryside
+		MAN_army_modernization
+		MAN_mukden_military_academy
+		MAN_law_university
+		MAN_research_and_education_department
+		MAN_obedience
+		MAN_first_five_year_plan
+		MAN_invite_japanese_investors
+		MAN_expand_the_railways
+		MAN_social_research_unit
+		MAN_invite_japanese_settlers
+		CHI_invite_foreign_investors
+		MAN_hoankyoku
+		MAN_develop_aluminum_sources
+		MAN_expand_showa_steel_works
+		MAN_trade_delegation
+		MAN_expand_the_textile_industry
+		MAN_mukden_arsenal
+		MAN_collective_farms
+		MAN_mamc
+	}
+
+	focus_factors = {
+		MAN_alliance_with_the_kwantung_army = 0
+		MAN_chinese_leadership = 0
+		MAN_vassalize_mengukuo = 0
+		MAN_national_cooperation_government = 0
+		MAN_the_two_emperors = 0
+		CHI_one_china_policy = 0
+	}
+
+	research = {
+		excavation_tech = 100
+		synth_resources = -1000
+		air_doctrine = -1000
+		naval_doctrine = -1000
+		air_equipment = -1000
+		naval_equipment = -1000
+	}
+
+	ideas = {
+	MAN_songgotu_zhanshan = 100
+	MAN_hung_zhehuang = 3
+	MAN_kyoiji_tomonaga = 2
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+MAN_MP_2 = {
+	name = "Manchukuo Multiplayer Plan"
+	desc = "Vassalize Menguko"
+
+	enable = {
+		original_tag = MAN
+			has_game_rule = {
+				rule = MAN_ai_behavior
+				option = MAN_MP_2
+				}
+			}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		MAN_pacify_the_countryside
+		MAN_army_modernization
+		MAN_mukden_military_academy
+		MAN_law_university
+		MAN_research_and_education_department
+		MAN_obedience
+		MAN_first_five_year_plan
+		MAN_invite_japanese_investors
+		MAN_alliance_with_the_kwantung_army
+		MAN_chinese_leadership
+		MAN_vassalize_mengukuo
+		MAN_expand_the_railways
+		MAN_social_research_unit
+		MAN_invite_japanese_settlers
+		CHI_invite_foreign_investors
+		MAN_hoankyoku
+		MAN_develop_aluminum_sources
+		MAN_expand_showa_steel_works
+		MAN_trade_delegation
+		MAN_expand_the_textile_industry
+		MAN_mukden_arsenal
+		MAN_collective_farms
+		MAN_mamc
+	}
+
+	focus_factors = {
+		MAN_national_cooperation_government = 0
+		MAN_the_two_emperors = 0
+		CHI_one_china_policy = 0
+	}
+
+	research = {
+		excavation_tech = 100
+		synth_resources = -1000
+		air_doctrine = -1000
+		naval_doctrine = -1000
+		air_equipment = -1000
+		naval_equipment = -1000
+	}
+
+	ideas = {
+	MAN_songgotu_zhanshan = 100
+	MAN_hung_zhehuang = 3
+	MAN_kyoiji_tomonaga = 2
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+MAN_MP_Industry_1 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = MAN
+		OR = {
+			has_game_rule = {
+				rule = MAN_ai_behavior
+				option = MAN_MP_1
+			}
+			has_game_rule = {
+				rule = MAN_ai_behavior
+				option = MAN_MP_2
+			}
+		}
+		has_completed_focus = MAN_social_research_unit
+		NOT = {
+			has_tech = excavation3
+		}
+	}
+
+	abort = {
+		is_researching_technology = excavation3
+	}
+
+	research = {
+		construction_tech = 10000
+	}
+}
+
+
+MAN_MP_Industry_2 = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = MAN
+		OR = {
+			has_game_rule = {
+				rule = MAN_ai_behavior
+				option = MAN_MP_1
+			}
+			has_game_rule = {
+				rule = MAN_ai_behavior
+				option = MAN_MP_2
+			}
+		}
+		has_completed_focus = MAN_trade_delegation
+	}
+
+	abort = {
+		is_researching_technology = excavation4
+	}
+
+	research = {
+		construction_tech = 10000
+	}
+}
+
+MAN_MP_Infrastructure = {
+	name = "Mandschuko Oil in Daqing"
+	desc = "Build Level 10 Infrastructure for Oil"
+
+	enable = {
+		original_tag = MAN
+		OR = {
+			has_game_rule = {
+				rule = MAN_ai_behavior
+				option = MAN_MP_1
+			}
+			has_game_rule = {
+				rule = MAN_ai_behavior
+				option = MAN_MP_2
+			}
+		}
+		714 = {
+			is_controlled_by = MAN
+			infrastructure < 10
+		}
+	}
+
+	abort = {
+		714 = {
+			OR ={
+				NOT = { is_controlled_by = MAN }
+				NOT = { infrastructure < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 714
+		value = 100
+	}
+}

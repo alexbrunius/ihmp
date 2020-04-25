@@ -1,0 +1,213 @@
+JAP_MP_1 = {
+	name = "JAP_MP_1"
+	desc = "RULE_OPTION_JAP_MP_1_DESC"
+
+	enable = {
+		original_tag = JAP
+		has_game_rule = {
+			rule = JAP_ai_behavior
+			option = JAP_MP_1
+		}
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		JAP_purge_the_kodoha_faction #March 10 1936	
+		JAP_guide_the_zaibatsus #May 20 1936	
+		JAP_national_mobilization_law #July 30 1936	
+		JAP_national_research_policy #October 10 1936	
+		JAP_nationalize_war_industry #December 20 1936	
+		#1937
+		JAP_national_defense_state #February 30 1937	
+		JAP_spiritual_mobilization #May 10 1937	
+		JAP_army_expansion_law #July 20 1937	
+		JAP_liaison_conference #September 30 1937	
+		JAP_greater_east_asian_co_prosperity_sphere #December 10 1937	
+		#1938
+		JAP_intervene_in_china #February 20 1938	
+		JAP_warrior_spirit #April 30 1938	
+		JAP_new_naval_estimates #July 10 1938	
+		JAP_small_arms_modernization #September 20 1938	
+		JAP_army_expansion 
+		JAP_fighter_modernization
+		#1939
+		JAP_agility_focus
+		JAP_carrier_warfare_experiments
+		JAP_cruiser_modernization
+		JAP_long_lance_torpedoes
+		JAP_first_air_fleet		
+		#1940
+		JAP_the_zero
+		JAP_modern_escorts
+		JAP_sign_tripartite_pact
+		JAP_strike_south_doctrine
+		JAP_non_aggression_pact_with_the_soviet_union
+		#1941
+		JAP_secure_the_philippines
+		JAP_strike_on_the_southern_resource_area
+	}
+	
+	
+
+
+
+	research = {
+		bb_tech = -500
+		cat_mobile_warfare = -1000
+		cat_grand_battle_plan = -1000
+		cat_mass_assault = -1000
+	}
+
+	ideas = {
+		JAP_mitsumasa_yonai = 1000
+		kawasaki = 40
+		hisaichi_terauchi = 30
+		mitsubishi = 50
+		JAP_chiune_sugihara = 0
+		closed_economy = 0
+	}
+
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+JAP_MP_IgnoreSoviet = {
+	name = "IgnoreSoviet"
+	desc = ""
+
+	enable = {
+		original_tag = JAP
+		has_game_rule = {
+			rule = JAP_ai_behavior
+			option = JAP_MP_1
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = SOV
+		value = 1000
+	
+	}
+}
+
+JAP_MP_Conquer_Shanxi = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = JAP
+		has_game_rule = {
+			rule = JAP_ai_behavior
+			option = JAP_MP_1
+		}
+		OR = {
+			NOT = { SHX =  {is_subject_of = JAP } }
+			NOT = { SHX = { is_in_faction_with = JAP } }
+		}
+	}
+
+	abort = {
+		OR = {
+			SHX =  {is_subject_of = JAP }
+			SHX = { is_in_faction_with = JAP }
+		}
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "SHX"
+		value = 200
+	
+	}
+}
+
+JAP_MP_Conquer_China = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = JAP
+		has_game_rule = {
+			rule = JAP_ai_behavior
+			option = JAP_MP_1
+		}
+		OR = {
+			NOT = { CHI =  {is_subject_of = JAP } }
+			NOT = { CHI = { is_in_faction_with = JAP } }
+		}
+	}
+
+	abort = {
+		OR = {
+			CHI =  {is_subject_of = JAP }
+			CHI = { is_in_faction_with = JAP }
+		}
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "CHI"
+		value = 200
+	
+	}
+}
+
+JAP_MP_Befriend_Germany = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = JAP
+		has_game_rule = {
+			rule = JAP_ai_behavior
+			option = JAP_MP_1
+		}
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = GER
+		value = 200
+	}
+}
+
+JAP_MP_Befriend_Italy = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = JAP
+		has_game_rule = {
+			rule = JAP_ai_behavior
+			option = JAP_MP_1
+		}
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = ITA
+		value = 200
+	}
+}
