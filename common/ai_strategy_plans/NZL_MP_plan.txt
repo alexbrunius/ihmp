@@ -1,4 +1,4 @@
-NZL_historical = {
+NZL_MP_plan = {
 	name = "New Zealand Multiplayer Plan 1"
 	desc = ""
 

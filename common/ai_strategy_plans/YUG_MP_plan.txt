@@ -1,5 +1,5 @@
-YUG_historical = {
-	name = "Yugoslavian historical plan"
+YUG_MP_plan = {
+	name = "Yugoslavian MP plan"
 	desc = "Small Buff for Italy, Yugo industrilizes earlier and gets Pannonian Oil"
 
 	enable = {
