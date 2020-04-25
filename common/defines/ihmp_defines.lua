@@ -15,6 +15,8 @@ NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 50					-- was 100	-- Political powe
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 25.0			-- was 50	-- Command Power sent attache usage cost
 
 -- COUNTRY STUFF
+NDefines.NCountry.BASE_STABILITY_PARTY_POPULARITY_FACTOR = 0.20	--was 0.15 -- Default stability rulling party popularity factor
+	
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.03	-- was 0.3 -- Modifier for army equipment reinforcement speed
 NDefines.NCountry.VP_TO_SUPPLY_BONUS_CONVERSION = 0.4			-- was 0.1 -- Bonus to supply local supplies from Victory Points, multiplied by this aspect and rounded to closest integer
 NDefines.NCountry.SUPPLY_BASE_MULT = 0.25							-- was 1 -- multiplier on supply base values
