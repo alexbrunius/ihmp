@@ -1,5 +1,5 @@
 SAF_MP_1 = {
-	name = "South African historical plan"
+	name = "South African Mulitplayer plan"
 	desc = ""
 
 	enable = {
@@ -42,7 +42,7 @@ SAF_MP_1 = {
 		SAF_suppress_the_stormjaers
 		SAF_desert_equipment
 		SAF_special_service_battalion
-		SAF_secure_the_cape_sea_routes
+		SAF_secure_the_cape_sea_route
 		SAF_seaward_defence_force
 		SAF_q_services_corps
 		SAF_sa_engineer_corps
@@ -272,29 +272,6 @@ SAF_MP_1_NAV2 = {
 
 	abort = {
 		has_tech = naval_bomber2
-	}
-
-	research = {
-		naval_bomber = 10000
-	}	
-}
-
-SAF_MP_1_NAV3 = {
-	name = "Research Naval Bomber 3"
-	desc = ""
-
-	enable = {
-		tag = SAF
-		has_game_rule = {
-			rule = SAF_ai_behavior
-			option = SAF_MP_1
-		}
-		has_completed_focus = SAF_secure_the_cape_sea_routesm
-		NOT = { has_tech = naval_bomber3 }
-	}
-
-	abort = {
-		has_tech = naval_bomber3
 	}
 
 	research = {
