@@ -18,4 +18,6 @@
  nonisolation_navy_desc:0 "With war declared and our Battleships burning the Navy and Politicians no longer see much reason to pursuit an isolationist path."
  occupy_greenland:0 "Occupy Greenland"
  occupy_greenland_desc:0 "We need to protect the shipping lanes in the Atlantic. Bases in Greenland are perfect for that."
+ SOV_capitulated_FIN:0 "Finland has capitulated to Soviets"
+ GER_case_anton_tt3:0 "Does not control a coastal state between Bordeaux and Jutland"
  
