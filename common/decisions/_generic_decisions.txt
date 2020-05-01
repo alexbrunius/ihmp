@@ -1708,55 +1708,58 @@ economy_decisions = {
             always = yes
         }
 
-        cost = 30
-        fire_only_once = no
+		cost = 30
+		fire_only_once = yes
+		
+		state_target = yes
 
-        days_re_enable = 30
+		on_map_mode = map_and_decisions_view
 
-	available = {
-		any_owned_state = {
-			NOT = { has_state_flag = infrastructure_building_slot_flag }
-			is_fully_controlled_by = ROOT
-			free_building_slots = {
-				building = infrastructure
-				size < 1
+		target_array = controlled_states
+
+		available = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
 			}
 		}
-	}
 
-	visible = {
-		any_owned_state = {
-			NOT = { has_state_flag = infrastructure_building_slot_flag }
-			is_fully_controlled_by = ROOT
-			free_building_slots = {
-				building = infrastructure
-				size < 1
+		visible = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
 			}
 		}
-	}
+
+		target_trigger = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+				is_owned_by = ROOT
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
+			}
+		}
 
         complete_effect = {
-			random_owned_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					is_owned_by = ROOT
-            		free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-					NOT = { has_state_flag = infrastructure_building_slot_flag }
-				}
+			FROM = {
 				add_extra_state_shared_building_slots = 2
-				set_state_flag = infrastructure_building_slot_flag
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 				factor = 10
 				any_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
@@ -1773,102 +1776,53 @@ economy_decisions = {
         }
 
         cost = 15
-        fire_only_once = no
+		fire_only_once = yes
+		
+		state_target = yes
+
+		on_map_mode = map_and_decisions_view
+
+		target_array = controlled_states
 
         available = {
             has_war = yes
-            any_owned_state = {
-            	NOT = { has_state_flag = war_building_slot_flag }
+            FROM = {
             	is_fully_controlled_by = ROOT
             }
         }
 
         visible = {
-			has_war = yes
-			any_owned_state = {
-				NOT = { has_state_flag = war_building_slot_flag }
+            has_war = yes
+            FROM = {
+            	is_fully_controlled_by = ROOT
+            }
+		}
+
+		target_trigger = {
+			FROM = {
 				is_fully_controlled_by = ROOT
+				is_owned_by = ROOT
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
 			}
 		}
 
         complete_effect = {
         	add_war_support = -0.025
 			add_stability = -0.025
-			if = {
-				limit = {
-					any_owned_state = {
-						is_fully_controlled_by = ROOT
-            			free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 8
-					}
-				}
-				random_owned_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-            			free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 8
-					}
-					add_extra_state_shared_building_slots = 2
-					set_state_flag = war_building_slot_flag
-				}
-			}
-			else_if = {
-				limit = {
-					any_owned_state = {
-						is_fully_controlled_by = ROOT
-            			free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 5
-					}
-				}
-				random_owned_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-            			free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 5
-					}
-					add_extra_state_shared_building_slots = 2
-					set_state_flag = war_building_slot_flag
-				}
-			}
-			else = {
-				random_owned_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-            			free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 8
-					}
-					add_extra_state_shared_building_slots = 2
-					set_state_flag = war_building_slot_flag
-				}
+			FROM = {
+				add_extra_state_shared_building_slots = 2
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 				factor = 10
 				all_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
