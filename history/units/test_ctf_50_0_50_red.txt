@@ -1,0 +1,80 @@
+﻿units = {
+	fleet = {
+		name = "Red Fleet"
+		naval_base = 7660
+		task_force = {
+			name = "Red TF"
+			location = 7660
+			
+			ship = { name = "Red CV1" definition = carrier start_experience_factor = 0.3 equipment = { carrier_3 = { amount = 1 version_name = "CV3" owner = DOM } } 
+				air_wings = {
+					cv_fighter_equipment_2 =  { owner = "DOM" amount = 40 }
+					cv_nav_bomber_equipment_2 =  { owner = "DOM" amount = 40 }
+				}
+			}
+			ship = { name = "Red CV2" definition = carrier start_experience_factor = 0.3 equipment = { carrier_3 = { amount = 1 version_name = "CV3" owner = DOM } } 
+				air_wings = {
+					cv_fighter_equipment_2 =  { owner = "DOM" amount = 40 }
+					cv_nav_bomber_equipment_2 =  { owner = "DOM" amount = 40 }
+				}
+			}
+			ship = { name = "Red CV3" definition = carrier start_experience_factor = 0.3 equipment = { carrier_3 = { amount = 1 version_name = "CV3" owner = DOM } } 
+				air_wings = {
+					cv_fighter_equipment_2 =  { owner = "DOM" amount = 40 }
+					cv_nav_bomber_equipment_2 =  { owner = "DOM" amount = 40 }
+				}
+			}
+			ship = { name = "Red CV4" definition = carrier start_experience_factor = 0.3 equipment = { carrier_3 = { amount = 1 version_name = "CV3" owner = DOM } } 
+				air_wings = {
+					cv_fighter_equipment_2 =  { owner = "DOM" amount = 40 }
+					cv_nav_bomber_equipment_2 =  { owner = "DOM" amount = 40 }
+				}
+			}
+
+			ship = { name = "Red BB1" definition = battleship start_experience_factor = 0.3 equipment = { battleship_3 = { amount = 1 version_name = "BB3" owner = DOM } } }
+			ship = { name = "Red BB2" definition = battleship start_experience_factor = 0.3 equipment = { battleship_3 = { amount = 1 version_name = "BB3" owner = DOM } } }
+			ship = { name = "Red BB3" definition = battleship start_experience_factor = 0.3 equipment = { battleship_3 = { amount = 1 version_name = "BB3" owner = DOM } } }
+			ship = { name = "Red BB4" definition = battleship start_experience_factor = 0.3 equipment = { battleship_3 = { amount = 1 version_name = "BB3" owner = DOM } } }
+
+			ship = { name = "Red CL1" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = DOM } } }
+			ship = { name = "Red CL2" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = DOM } } }
+			ship = { name = "Red CL3" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = DOM } } }
+			ship = { name = "Red CL4" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = DOM } } }
+			ship = { name = "Red CL5" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = DOM } } }
+			ship = { name = "Red CL6" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = DOM } } }
+			ship = { name = "Red CL7" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = DOM } } }
+			ship = { name = "Red CL8" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = DOM } } }
+
+			ship = { name = "Red DD01" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD02" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD03" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD04" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD05" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD06" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD07" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD08" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD09" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD10" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD11" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD12" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD13" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD14" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD15" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD16" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD17" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD18" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD19" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD20" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD21" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD22" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD23" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD24" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD25" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD26" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD27" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD28" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD29" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }
+			ship = { name = "Red DD30" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = DOM } } }	
+		}
+	}
+}

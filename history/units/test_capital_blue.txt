@@ -1,0 +1,59 @@
+﻿units = {
+	fleet = {
+		name = "Blue Fleet"
+		naval_base = 1550
+		task_force = {
+			name = "Blue TF"
+			location = 1550
+					
+			ship = { name = "Blue BB1" definition = battleship start_experience_factor = 0.3 equipment = { battleship_3 = { amount = 1 version_name = "BB3" owner = CUB } } }
+			ship = { name = "Blue BB2" definition = battleship start_experience_factor = 0.3 equipment = { battleship_3 = { amount = 1 version_name = "BB3" owner = CUB } } }
+			ship = { name = "Blue BB3" definition = battleship start_experience_factor = 0.3 equipment = { battleship_3 = { amount = 1 version_name = "BB3" owner = CUB } } }
+			ship = { name = "Blue BB4" definition = battleship start_experience_factor = 0.3 equipment = { battleship_3 = { amount = 1 version_name = "BB3" owner = CUB } } }
+			ship = { name = "Blue BB5" definition = battleship start_experience_factor = 0.3 equipment = { battleship_3 = { amount = 1 version_name = "BB3" owner = CUB } } }
+			ship = { name = "Blue BB6" definition = battleship start_experience_factor = 0.3 equipment = { battleship_3 = { amount = 1 version_name = "BB3" owner = CUB } } }
+			ship = { name = "Blue BB7" definition = battleship start_experience_factor = 0.3 equipment = { battleship_3 = { amount = 1 version_name = "BB3" owner = CUB } } }
+			ship = { name = "Blue BB8" definition = battleship start_experience_factor = 0.3 equipment = { battleship_3 = { amount = 1 version_name = "BB3" owner = CUB } } }
+
+			ship = { name = "Blue CL1" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = CUB } } }
+			ship = { name = "Blue CL2" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = CUB } } }
+			ship = { name = "Blue CL3" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = CUB } } }
+			ship = { name = "Blue CL4" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = CUB } } }
+			ship = { name = "Blue CL5" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = CUB } } }
+			ship = { name = "Blue CL6" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = CUB } } }
+			ship = { name = "Blue CL7" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = CUB } } }
+			ship = { name = "Blue CL8" definition = light_cruiser start_experience_factor = 0.3 equipment = { light_cruiser_3 = { amount = 1 version_name = "CL3" owner = CUB } } }
+
+			ship = { name = "Blue DD01" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD02" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD03" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD04" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD05" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD06" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD07" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD08" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD09" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD10" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD11" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD12" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD13" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD14" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD15" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD16" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD17" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD18" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD19" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD20" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD21" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD22" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD23" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD24" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD25" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD26" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD27" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD28" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD29" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }
+			ship = { name = "Blue DD30" definition = destroyer start_experience_factor = 0.3 equipment = { destroyer_3 = { amount = 1 version_name = "DD3" owner = CUB } } }	
+		}
+	}
+}
