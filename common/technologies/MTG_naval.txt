@@ -76,7 +76,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 		
 		start_year = 1936
 
@@ -121,7 +121,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 
 		start_year = 1940
 		
@@ -158,7 +158,7 @@ technologies = {
 			light_ship_engine_4
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 
 		start_year = 1944
 		
