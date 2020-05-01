@@ -1899,6 +1899,10 @@ early_ship_hull_carrier = {
 		on_research_complete = {
 			custom_effect_tooltip = snorkel_advice_tt
 		}
+
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 1
 
 		start_year = 1940
