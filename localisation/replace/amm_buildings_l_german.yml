@@ -2,3 +2,5 @@
  synthetic_refinery:0 "Synthetische Öl Raffernerie"
  synthetic_refinery_plural:0 "Synthetische Öl Raffernerien"
  synthetic_refinery_desc:0 "Eine Synthetische Öl Raffernerie welche Treibstoff produzieren kann."
+ war_building_slot:0 "Industrial Land Appropriation in [FROM.GetName]"
+ infrastructure_building_slot:0 "Region-wide Industrial Integration in [FROM.GetName]"
