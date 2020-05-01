@@ -1,0 +1,197 @@
+naval_test_tech_base = {
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		improved_ship_hull_light = 1
+		advanced_ship_hull_light = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		improved_depth_charges = 1
+		advanced_depth_charges = 1
+		modern_depth_charges = 1
+		sonar = 1
+		improved_sonar = 1
+		advanced_sonar = 1
+		latewar_sonar = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		improved_ship_hull_cruiser = 1
+		advanced_ship_hull_cruiser = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		improved_cruiser_armor_scheme = 1
+		advanced_cruiser_armor_scheme = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		ship_hull_super_heavy = 1
+		improved_ship_hull_heavy = 1
+		advanced_ship_hull_heavy = 1
+		basic_heavy_armor_scheme = 1
+		improved_heavy_armor_scheme = 1
+		basic_ship_hull_carrier = 1
+		improved_ship_hull_carrier = 1
+		advanced_ship_hull_carrier = 1
+		
+		basic_torpedo = 1
+		#magnetic_detonator = 1
+		#homing_torpedo = 1
+		#electric_torpedo = 1
+		
+		improved_ship_torpedo_launcher = 1
+		advanced_ship_torpedo_launcher = 1
+		modern_ship_torpedo_launcher = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		improved_ship_hull_submarine = 1
+		advanced_ship_hull_submarine = 1
+		basic_submarine_snorkel = 1
+		improved_submarine_snorkel = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		improved_light_battery = 1
+		advanced_light_battery = 1
+		
+		#basic_light_shell = 1
+		#improved_light_shell = 1
+		
+		basic_medium_battery = 1
+		improved_medium_battery = 1
+		advanced_medium_battery = 1
+		
+		#basic_medium_shell = 1
+		#improved_medium_shell = 1
+		
+		basic_heavy_battery = 1
+		improved_heavy_battery = 1
+		advanced_heavy_battery = 1
+		#basic_heavy_shell = 1
+		#improved_heavy_shell = 1
+		
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		dp_secondary_battery = 1
+		
+		#damage_control_1 = 1
+		#damage_control_2 = 1
+		#damage_control_3 = 1
+		#fire_control_methods_1 = 1
+		#fire_control_methods_2 = 1
+		#fire_control_methods_3 = 1
+		
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		improved_submarine_mine_laying = 1
+		improved_naval_mines = 1
+		degaussing = 1
+		advanced_naval_mines = 1
+		airdrop_mines = 1
+		modern_naval_mines = 1
+		airsweep_mines = 1
+		mtg_transport = 1
+		mtg_landing_craft = 1
+		mtg_tank_landing_craft = 1
+		panzerschiffe = 1
+		torpedo_cruiser_mtg = 1
+		pre_dreadnoughts = 1
+		coastal_defense_ships = 1
+		cruiser_submarines = 1
+
+		radio_detection = 1
+		decimetric_radar = 1
+		improved_decimetric_radar = 1
+		centimetric_radar = 1
+		improved_centimetric_radar = 1
+		advanced_centimetric_radar = 1
+		
+		basic_fire_control_system = 1
+		improved_fire_control_system = 1
+		advanced_fire_control_system = 1
+
+		cv_fighter1 = 1
+		cv_fighter2 = 1
+		cv_fighter3 = 1
+		cv_CAS1 = 1
+		cv_CAS2 = 1
+		cv_CAS3 = 1
+		cv_naval_bomber1 = 1
+		cv_naval_bomber2 = 1
+		cv_naval_bomber3 = 1
+	}
+	add_ideas = {
+		MTG_TEST_NAVAL_IDEA
+	}
+	add_fuel = 10000000
+	set_stability = 1
+	set_war_support = 1
+
+	create_equipment_variant = {
+		name = "CV3"
+		type = ship_hull_carrier_2
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_2
+			fixed_ship_secondaries_slot = empty
+			front_1_custom_slot = ship_deck_space
+			mid_1_custom_slot = ship_deck_space
+		}
+	}
+
+	create_equipment_variant = {
+		name = "BB3"
+		type = ship_hull_heavy_3
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_3
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_heavy_battery_3
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = dp_ship_secondaries
+			mid_3_custom_slot = empty
+			rear_1_custom_slot = ship_airplane_launcher_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "DD3"
+		type = ship_hull_light_3
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			mid_1_custom_slot = ship_torpedo_2
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}			
+	
+	create_equipment_variant = {
+		name = "CL3"
+		type = ship_hull_cruiser_3
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = dp_ship_secondaries
+			rear_1_custom_slot = ship_light_medium_battery_2
+			rear_2_custom_slot = ship_anti_air_1
+		}
+	}
+}
