@@ -311,8 +311,8 @@ NDefines.NIntel.AIR_DEPLOYED_MANPOWER_COUNT_RANGE_INTEL_RANGE_AT_LOWEST_INTEL = 
 
 NDefines.NIntel.CIVILIAN_MAPICON_INDUSTRY_COUNT_INTEL_RANGE_AT_LOWEST_INTEL = 0.7
 
-NDefines.NIntel.NAVY_MAPICON_MISSION_COUNT_INTEL_MIN = 0.5  -- min intel to show assigned naval missions
-NDefines.NIntel.NAVY_MAPICON_MISSION_COUNT_INTEL_MAX = 0.8  -- min intel to show assigned naval missions with perfect accuracy, and taskforces count
+NDefines.NIntel.NAVY_MAPICON_MISSION_COUNT_INTEL_MIN = 0.7	--was 0.5  -- min intel to show assigned naval missions
+NDefines.NIntel.NAVY_MAPICON_MISSION_COUNT_INTEL_MAX = 1.0  --was 0.8	-- min intel to show assigned naval missions with perfect accuracy, and taskforces count
 
 NDefines.NIntel.AIR_MAPICON_MISSION_COUNT_INTEL_MIN = {
 	0.3, -- AIR_SUPERIORITY
