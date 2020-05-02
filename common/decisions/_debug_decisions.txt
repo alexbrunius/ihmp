@@ -1,0 +1,83 @@
+category_test_decisions = {
+	capital_v_ctf_50_0_50 = {
+		icon = generic
+	
+		allowed = {
+			tag = CUB
+		}
+
+		available = {
+		
+		}
+	
+		cost = 0
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			naval_test_tech_base = yes
+			load_oob = "test_capital_blue"
+			DOM = {
+				naval_test_tech_base = yes
+				load_oob = "test_ctf_50_0_50_red"
+			}
+			declare_war_on = { target = DOM type = annex_everything }
+		}
+	}
+	Naval_Test_Japan = {
+		icon = generic
+	
+		allowed = {
+			tag = CUB
+		}
+
+		available = {
+		
+		}
+	
+		cost = 0
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			naval_test_tech_base_JAP = yes
+			load_oob = "test_blue_JAP"
+			DOM = {
+				naval_test_tech_base_JAP = yes
+				load_oob = "test_red_JAP"
+			}
+			declare_war_on = { target = DOM type = annex_everything }
+		}
+	}
+	Naval_Test_Japan_Refit = {
+		icon = generic
+	
+		allowed = {
+			tag = CUB
+		}
+
+		available = {
+		
+		}
+	
+		cost = 0
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			naval_test_tech_base_JAP_refit = yes
+			load_oob = "test_blue_JAP_refit"
+			DOM = {
+				naval_test_tech_base_JAP_refit = yes
+				load_oob = "test_red_JAP_refit"
+			}
+			declare_war_on = { target = DOM type = annex_everything }
+		}
+	}
+}
