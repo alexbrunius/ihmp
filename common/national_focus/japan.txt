@@ -1049,7 +1049,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 25
 			set_rule = { can_create_factions = yes }
 			create_faction = JAP_greater_east_asian_co_prosperity_sphere
 		}
@@ -1374,7 +1374,6 @@ focus_tree = {
 
 		completion_reward = {
 			SOV = { country_event = { id = wtt_japan.11 } }
-			add_political_power = 50
 		}
 	}
 
@@ -1896,7 +1895,6 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_political_power = 150
 			random_country = {
 				limit = {
 					original_tag = GER
