@@ -15,6 +15,7 @@ no_ai_planes = {
 		NOT = { tag = ITA }
 		NOT = { tag = JAP }
 		NOT = { tag = SOV }
+		NOT = { tag = FRA }
 	}
 
 	abort = {
@@ -138,11 +139,16 @@ no_ai_planes = {
 	}
 
 	ai_strategy = {
+		type = air_factory_balance
+		value = -10000
+	}
+
+	ai_strategy = {
 		type = unit_ratio
 		id = fighter
 		value = -1000
 	}
-	
+
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
@@ -178,13 +184,13 @@ no_ai_planes = {
 		id = fighter
 		value = -1000
 	}
-	
+
 	ai_strategy = {
 		type = equipment_production_factor
 		id = cas
 		value = -1000
 	}
-	
+
 	ai_strategy = {
 		type = equipment_production_factor
 		id = tactical_bomber
