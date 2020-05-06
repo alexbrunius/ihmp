@@ -1,0 +1,112 @@
+BUL_MP_1 = {
+	name = "Bulgarian Multiplayer 1"
+	desc = ""
+
+	enable = {
+		original_tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		production_effort
+		production_effort_2
+		production_effort_3
+		infrastructure_effort
+		infrastructure_effort_2
+		extra_tech_slot
+		extra_tech_slot_2
+		construction_effort_3
+		naval_effort
+		political_effort
+		collectivist_ethos
+		nationalism_focus
+		militarism
+		military_youth
+		paramilitarism
+		ideological_fanaticism
+		technology_sharing
+		army_effort
+		motorization_effort
+		mechanization_effort
+		armor_effort
+		aviation_effort
+	}
+
+	research = {
+		synth_resources = -1000
+		excavation_tech = -200
+		air_doctrine = -10000
+		naval_doctrine = -10000
+		cat_mobile_warfare = -1000
+		cat_superior_firepower = -1000
+		cat_grand_battle_plan = -1000
+	}
+
+	ideas = {
+		free_trade = 100000
+		export_focus = 0
+		BUL_dobri_bozhilov = 10
+		war_economy = 20
+		partial_economic_mobilisation = 10
+		extensive_conscription = 10
+		generic_industrial_concern = 5
+		BUL_konstantin_muraviev = 0
+		BUL_georgi_ivanov_kyoseivanov = 0
+	}
+	
+		
+	ai_strategy = {
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		CAS_effort = 0
+		rocket_effort = 0
+		large_navy = 0
+		flexible_navy = 0
+		nuclear_effort = 0
+	}
+}
+
+
+BUL_MP_Electronics_1 = {
+	name = "Bulgarian Multiplayer Plan Electronics 2"
+	desc = ""
+
+	enable = {
+		original_tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+		NOT = { has_tech = mechanical_computing }
+	}
+	
+	abort = {
+		has_tech = mechanical_computing 
+	}
+
+	research = {
+		computing_tech = 100000
+	}
+}

@@ -1,0 +1,57 @@
+MEN_MP_1 = {
+	name = "Mengokou Multiplayer 1"
+	desc = "Focus Industry"
+
+	enable = {
+		original_tag = MEN
+		has_game_rule = {
+			rule = MEN_ai_behavior
+			option = MEN_MP_1
+			}
+	}
+
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		infrastructure_effort
+		construction_effort_3
+		infrastructure_effort_2
+		production_effort
+		production_effort_2
+		production_effort_3
+		extra_tech_slot
+	}
+
+	research = {
+		construction_tech = 1000
+	}
+
+	ideas = {
+	}
+	
+		
+	ai_strategy = {
+	}	
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}

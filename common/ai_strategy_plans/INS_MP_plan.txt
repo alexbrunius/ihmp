@@ -1,0 +1,246 @@
+INS_MP_1 = {
+	name = "Dutch-East-Indies Multiplayer 1"
+	desc = ""
+
+	enable = {
+		original_tag = INS
+		has_game_rule = {
+			rule = INS_ai_behavior
+			option = INS_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		naval_effort
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		infrastructure_effort
+		infrastructure_effort_2
+		extra_tech_slot
+		extra_tech_slot_2
+		construction_effort_3
+		political_effort
+		liberty_ethos
+		neutrality_focus
+		deterrence
+		production_effort
+		production_effort_2
+		production_effort_3
+		aviation_effort
+		why_we_fight
+		technology_sharing
+	}
+
+	research = {
+		synth_resources = -1000
+		construction_tech = 100
+		armor = -1000
+		air_equipment = -1000
+		artillery = 100
+		cat_anti_tank = -1000
+	}
+
+	ideas = {
+		free_trade = 100000
+		generic_captain_of_industry = 10
+		generic_fortification_engineer = 2
+		war_economy = 20
+		partial_economic_mobilisation = 10
+		extensive_conscription = 10
+		generic_industrial_concern = 5
+		generic_electronics_concern = 0
+		generic_tank_manufacturer = 0
+		generic_naval_manufacturer = 0
+		generic_naval_theorist = 0
+		generic_air_warfare_theorist = 0
+		generic_navy_chief_decisive_bat = 0
+		generic_navy_anti_submarine = 0
+		generic_air_close_air_sup = 0
+		generic_air_chief_all_weather = 0
+		generic_army_art = 0
+		generic_navy_fleet_log = 0
+		generic_air_air_combat_trainer = 0
+	}
+	
+		
+	ai_strategy = {
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		doctrine_effort = 0
+		mechanization_effort = 0
+		CAS_effort = 0
+		NAV_effort = 0
+		rocket_effort = 0
+		flexible_navy = 0
+		large_navy = 0
+		submarine_effort = 0
+		cruiser_effort = 0
+		nuclear_effort = 0
+	}
+}
+
+INS_MP_Infrastructure_Java = {
+	name = "Indonesia MP Build Java Infrastructure"
+	desc = ""
+
+	enable = {
+		tag = INS
+		has_game_rule = {
+			rule = INS_ai_behavior
+			option = INS_MP_1
+		}
+		335 = {
+			is_controlled_by = INS
+			infrastructure < 10
+		}
+	}
+
+	abort = {
+		335 = {
+			OR ={
+				NOT = { is_controlled_by = INS }
+				NOT = { infrastructure < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 335
+		value = 10
+	}
+}
+
+INS_MP_Airbase_1 = {
+	name = "Airbase in Java"
+	desc = "Build Level 10 Airbase for Allies"
+
+	enable = {
+		original_tag = INS
+		has_game_rule = {
+			rule = INS_ai_behavior
+			option = INS_MP_1
+		}
+		335 = {
+			is_controlled_by = INS
+			air_base < 10
+			NOT = { infrastructure < 10 }
+		}
+	}
+
+	abort = {
+		335 = {
+			OR ={
+				NOT = { is_controlled_by = INS }
+				NOT = { air_base < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = air_base
+		target = 335
+		value = 10	
+	}
+}
+
+
+INS_MP_Electronics_1 = {
+	name = "Indonesia MP Electronics 2"
+	desc = ""
+
+	enable = {
+		original_tag = INS
+		has_game_rule = {
+			rule = INS_ai_behavior
+			option = INS_MP_1
+		}
+		NOT = { has_tech = mechanical_computing }
+	}
+	
+	abort = {
+		has_tech = mechanical_computing 
+	}
+
+	research = {
+		computing_tech = 100000
+	}
+}
+
+
+INS_MP_AA_Construction = {
+	name = "Indonesia MP AA Construction"
+	desc = ""
+
+	enable = {
+		original_tag = INS
+		has_game_rule = {
+			rule = INS_ai_behavior
+			option = INS_MP_1
+		}
+		has_completed_focus = deterrence
+		335 = {
+			is_controlled_by = INS
+			anti_air_building < 5
+		}
+	}
+
+	abort = {
+		335 = {
+			OR ={
+				NOT = { is_controlled_by = INS }
+				NOT = { anti_air_building < 5 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = anti_air_building
+		target = 335
+		value = 5
+	}
+}
+
+INS_MP_Doctrine = {
+	name = "No Doctrines till 1941"
+	desc = ""
+
+	enable = {
+		original_tag = INS
+		has_game_rule = {
+			rule = INS_ai_behavior
+			option = INS_MP_1
+		}
+		NOT = { date > 1941.1.1 }
+	}
+	
+	abort = {
+		date > 1941.1.1
+	}
+
+	research = {
+		land_doctrine = -10000
+		air_doctrine = -10000
+		naval_doctrine = -10000
+	}
+}
