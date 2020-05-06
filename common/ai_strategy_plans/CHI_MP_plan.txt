@@ -1,0 +1,431 @@
+CHI_MP_1_Fight = {
+	name = "Nationalist China Multiplayer Plan 1"
+	desc = "Fight against Japan"
+
+	enable = {
+		original_tag = CHI
+		is_subject = no
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+	}
+
+	abort = {
+		CHI = {
+			is_subject = yes
+		}
+	}
+
+
+	ai_national_focuses = {
+		CHI_unified_industrial_planning
+		CHI_expand_the_academica_sinica
+		CHI_three_principles_of_the_people
+		CHI_democracy
+		CHI_executive_yuan
+		CHI_nationalism
+		CHI_foreign_threats
+		CHI_united_front
+		CHI_military_affairs_commission
+		CHI_army_reform
+		CHI_war_of_resistance
+		CHI_war_of_national_liberation
+		CHI_war_of_anti_imperialism
+		CHI_invite_foreign_investors
+		CHI_reach_out_to_france
+		CHI_guarantee_the_hanoi_route
+		CHI_mission_to_the_soviet_union
+		CHI_invite_soviet_advisers 
+		CHI_the_soviet_volunteer_group
+		CHI_rural_reconstruction_movement
+		CHI_mining_commission
+		CHI_develop_the_hanyan_arsenal
+		CHI_financial_policy
+		CHI_price_controls
+		CHI_reform_the_national_bank
+		CHI_forced_loans
+		CHI_mission_to_the_us
+		CHI_french_military_mission
+		CHI_french_drill
+		CHI_rapprochement_with_soviet_union
+		CHI_purchase_tanks
+		CHI_experimental_mechanised_unit
+		CHI_scorched_earth_tactics
+		CHI_welfare
+		CHI_forced_conscription
+		CHI_refugee_relief_agency
+		CHI_land_tax_reform
+		CHI_new_life_movement
+		CHI_modern_logistics
+		CHI_renegotiate_the_unequal_treaties
+		CHI_one_china_policy
+		CHI_integrate_tibet
+	}
+
+	research = {
+		cat_mass_assault = 10
+		infantry_weapons = 5
+		industry = 5
+		air_doctrine = -1000
+	}
+
+	ideas = {
+		CHI_chiang_ching_kuo = 50
+		CHI_soong_mei_ling = 10
+		civilian_economy = 0
+		low_economic_mobilisation = 100
+		partial_economic_mobilisation = 200
+		war_economy = 300
+		free_trade = 20000
+		CHI_h_h_kung = 0
+		CHI_chen_yi = 0
+		CHI_kwong_jiang = 0
+		CHI_dai_li = 0
+		CHI_chen_guofu = 0
+		CHI_gao_zhihang = 0
+		CHI_fang_zeyi = 0
+		CHI_huang_shen = 0
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = JAP
+		value = 200
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+CHI_MP_1_Alliance = {
+	name = "Ally Warlords"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		CHI = {
+			is_subject = no
+		}
+	}
+
+	abort = {
+		CHI = {
+			is_subject = yes
+		}
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = PRC
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = SHX
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = XSM
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = SIK
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = YUN
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = GXC
+		value = 200
+	}
+}
+
+CHI_MP_Only_Befriend_Helpers_for_Focus = {
+	name = "Befriend Helpers"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+	}
+
+	abort = {
+		OR = {
+			focus_progress = {
+				focus = CHI_invite_foreign_investors
+				progress > 0.1
+			}
+			AND = { 
+				has_completed_focus = CHI_invite_foreign_investors
+				NOT = { has_completed_focus = CHI_the_soviet_volunteer_group }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = -200
+	}	
+}
+
+CHI_MP_Befriend_FRA = {
+	name = "Befriend FRA"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		OR = {
+			focus_progress = {
+				focus = CHI_invite_foreign_investors
+				progress > 0.1
+			}
+			AND = { 
+				has_completed_focus = CHI_invite_foreign_investors
+				NOT = { has_completed_focus = CHI_guarantee_the_hanoi_route }
+			}
+		}
+	}
+
+	abort = {
+		has_completed_focus = CHI_guarantee_the_hanoi_route
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = FRA
+		value = 200
+	}	
+}
+
+CHI_MP_Befriend_SOV = {
+	name = "Befriend SOV"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		OR = {
+			focus_progress = {
+				focus = CHI_guarantee_the_hanoi_route
+				progress > 0.1
+			}
+			AND = { 
+				has_completed_focus = CHI_guarantee_the_hanoi_route
+				NOT = { has_completed_focus = CHI_the_soviet_volunteer_group }
+			}
+		}
+	}
+
+	abort = {
+		has_completed_focus = CHI_the_soviet_volunteer_group
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = SOV
+		value = 200
+	}	
+}
+
+MP_Early_PP = {
+	name = "Early PP Spending"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		date < 1940.1.1
+	}
+
+	abort = {
+		date > 1940.1.1
+	}
+
+	ideas = {
+		CHI_xiao_jinguang = 0
+		CHI_bai_chongxi = 0
+		CHI_chen_shaokuan = 0
+		CHI_wang_shuming = 0
+		SIA_thawon_thamrongnawasawat = 0
+		SIA_tianliang_huntrakool = 0
+		SIA_sindhu_kamalanavin = 0
+		SIA_luang_sinthusongkhramchai = 0
+		SIA_phraya_thayarnpikart = 0
+		SIA_pridi_phanomyong = 0
+		SIA_phraya_preechacholayudha = 0
+		tank_manufacturer = 0
+		naval_manufacturer = 0
+		generic_motorized_equipment_manufacturer = 0
+		generic_artillery_manufacturer = 0
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = general
+		value = -1000
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = -1000
+	}
+}
+
+MP_1_No_AirUnits = {
+	name = "No Air"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = -1000000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = -1000000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = fighter_equipment
+		value = -1000000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -10000
+	}
+}
+
+CHI_MP_Electronics_1 = {
+	name = "Research Radio"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		CHI = {
+			is_subject = no
+		}
+		has_completed_focus = CHI_expand_the_academica_sinica
+		NOT = { has_tech = radio }
+	}
+	
+	abort = {
+		CHI = {
+			is_subject = yes
+		}
+		has_tech = radio
+	}
+
+	research = {
+		electronics = 100000
+	}
+}
+
+
+CHI_MP_1_Puppet = {
+	name = "Puppet China Plan 1"
+	desc = "Fight for Japan"
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		CHI = {
+			is_subject = yes
+		}
+	}
+
+	abort = {
+		CHI = {
+			is_subject = no
+		}
+	}
+
+
+	ai_national_focuses = {
+	}
+
+	research = {
+	cat_anti_tank = 20
+	cat_mass_assault = 100
+	}
+
+	ideas = {
+		extensive_conscription = 100
+		war_economy = 50
+		CHI_soong_mei_ling = 10
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

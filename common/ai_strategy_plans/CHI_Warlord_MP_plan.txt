@@ -1,0 +1,270 @@
+CHI_warlord_MP_plan_nationalist = {
+	name = "Chinese Warlord MP plan supporting Nationalists"
+	desc = "Scripted behavior for Chinese Warlord"
+
+	enable = {
+		OR = {
+			original_tag = GXC
+			original_tag = YUN
+			original_tag = XSM
+		}
+		has_game_rule = {
+			rule = WL_ai_behavior
+			option = WL_MP_1
+		}
+	}
+
+	abort = {
+		NOT = {
+			has_focus_tree = china_warlord_focus
+		}
+	}
+
+	ai_national_focuses = {
+		CHI_industrial_investment
+		CHI_public_education_reform
+		CHI_local_arms_production
+		CHI_secure_internal_politics
+		CHI_cooperation_with_the_nationalists
+		CHI_technological_cooperation
+		CHI_new_model_province
+		CHI_root_out_corruption
+		CHI_reform_the_administration
+		CHI_land_reform
+		CHI_long_term_economic_planning
+		CHI_local_arms_development
+		CHI_heavy_weapons_development
+	}
+
+	focus_factors = {
+		#Never attempt a take over
+		CHI_join_the_republican_government = 0
+		CHI_power_struggle = 0
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		export_focus = 0
+		free_trade = 1000
+		GXC_li_zongren = 0
+		GXC_li_jishen = 0
+		YUN_ding_zhipan = 0
+		YUN_zhou_zhirou = 0
+		YUN_liu_wenhui = 0
+		SHX_qu_yangke = 0
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = JAP
+		value = 200
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+CHI_warlord_MP_plan_communist = {
+	name = "Communist Chinese Warlord MP plan supporting Nationalists"
+	desc = "Scripted behavior for Chinese Warlord"
+
+	enable = {
+		OR = {
+			original_tag = SHX
+			original_tag = SIK
+		}
+		has_game_rule = {
+			rule = WL_ai_behavior
+			option = WL_MP_1
+		}
+	}
+	abort = {
+		NOT = {
+			has_focus_tree = china_warlord_focus
+		}
+	}
+
+	ai_national_focuses = {
+		CHI_industrial_investment
+		CHI_public_education_reform
+		CHI_local_arms_production
+		CHI_secure_internal_politics
+		CHI_cooperation_with_the_communists
+		CHI_land_redistribution
+		CHI_land_value_tax
+		CHI_communist_administrators
+		CHI_ideological_education
+		CHI_judiciary_reforms
+		CHI_long_term_economic_planning
+		CHI_local_arms_development
+		CHI_heavy_weapons_development
+		CHI_public_works
+		CHI_labor_reform
+		CHI_rural_militias
+	}
+
+	focus_factors = {
+		#Never attempt a take over
+		CHI_join_the_chinese_soviet = 0
+		CHI_the_yanan_incident = 0
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = JAP
+		value = 200
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+GXC_ignore_FRA_script = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = GXC
+		country_exists = FRA
+		has_game_rule = {
+			rule = WL_ai_behavior
+			option = WL_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = ignore
+		id = "FRA"			
+		value = 1000
+	}	
+}
+
+GXC_Infrastructure_1 = {
+	name = ""
+	desc = ""
+
+	enable = {	
+		original_tag = GXC
+		has_game_rule = {
+			rule = WL_ai_behavior
+			option = WL_MP_1
+		}
+		594 = {
+			is_controlled_by = GXC
+			infrastructure < 7
+		}
+	}
+
+	abort = {
+		594 = {
+			OR ={
+				NOT = { is_controlled_by = GXC }
+				NOT = { infrastructure < 7 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 594
+		value = 4
+	}
+}
+
+GXC_Infrastructure_1 = {
+	name = ""
+	desc = ""
+
+	enable = {	
+		original_tag = GXC
+		has_game_rule = {
+			rule = WL_ai_behavior
+			option = WL_MP_1
+		}
+		594 = {
+			is_controlled_by = GXC
+			NOT = { infrastructure < 7 }
+		}
+		592 = {
+			is_controlled_by = GXC
+			infrastructure < 7
+		}
+	}
+
+	abort = {
+		592 = {
+			OR ={
+				NOT = { is_controlled_by = GXC }
+				NOT = { infrastructure < 7 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 592
+		value = 4
+	}
+}
+
+YUN_Infrastructure = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = YUN
+		has_game_rule = {
+			rule = WL_ai_behavior
+			option = WL_MP_1
+		}
+		325= {
+			is_controlled_by = YUN
+			infrastructure < 10
+		}
+	}
+
+	abort = {
+		325 = {
+			OR ={
+				NOT = { is_controlled_by = YUN }
+				NOT = { infrastructure < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 325
+		value = 10
+	}
+}

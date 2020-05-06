@@ -1,0 +1,99 @@
+SOV_MP_1 = {
+	name = "SOV Multiplayer Plan 1"
+	desc = "Collectivism"
+
+	enable = {
+		original_tag = SOV
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = SOV_MP_1
+				}
+			}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		SOV_stalin_constitution
+		SOV_collectivist_propaganda
+		SOV_finish_five_year_plan
+		SOV_production_effort
+		SOV_extra_tech_slot_early
+		SOV_move_industry_to_urals #just in case
+		SOV_defense_of_moscow #just in case
+		#1937
+		SOV_militarized_schools
+		SOV_workers_culture
+		SOV_infrastructure_effort
+		SOV_improve_railway
+		SOV_great_purge
+		#1938
+		SOV_rehabilitated_military
+		SOV_military_reorganization
+		#1939
+		SOV_lessons_of_war
+		SOV_research_city_experiment
+		SOV_diversify_the_programme
+		SOV_closed_city_network
+		SOV_tranformation_of_nature
+		#1940
+		SOV_socialist_realism
+		SOV_transpolar_flights
+		SOV_women_pilots
+		SOV_smersh
+	}
+	
+	focus_factors = {
+		SOV_peoples_commissariat = 0
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		war_economy = 1000
+	}
+
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SOV_MP_1_CivBuildup = {
+	name = "Sovjet Civ Buildup"
+	desc = ""
+
+	enable = {
+		original_tag = SOV
+		has_game_rule = {
+			rule = SOV_ai_behavior
+			option = SOV_MP_1
+		}
+		date < 1938.9.15
+	}
+	abort_when_not_enabled = yes
+
+	ideas = {
+		service_by_requirement = 0
+	}
+	
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 100
+	}
+}

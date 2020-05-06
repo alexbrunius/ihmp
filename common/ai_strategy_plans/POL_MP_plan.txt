@@ -1,0 +1,499 @@
+POL_MP_1 = {
+	name = "POL Multiplayer Plan 1"
+	desc = ""
+
+	enable = {
+		original_tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+		is_subject = no
+	}
+
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		#1936
+		POL_strengthen_the_polish_state
+		POL_defensive_focus
+		POL_the_four_year_plan
+		POL_national_defence_fund
+		POL_warsaw_main_railway_station
+		#1937
+		POL_invest_in_the_old_polish_region
+		POL_additional_research_slot1
+		POL_develop_upper_silesia	
+		POL_polish_militarism		
+		POL_central_region_strategy
+		#1938
+		POL_expansion_of_new_towns
+		POL_start_central_industrial_region
+		POL_fill_the_railways_gaps
+		POL_expand_central_industrial_region
+		POL_prepare_for_the_next_war
+		#1939
+		POL_develop_polish_ship_building
+		POL_the_defence_of_poland
+		POL_romanian_bridgehead_strategy
+		POL_hel_fortified_area
+		POL_artillery_modernisation
+		POL_silesia_fortified_area
+		
+	}
+
+	research = {
+		synth_resources = -1000
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 100
+		partial_economic_mobilisation = 200
+		war_economy = 300
+		limited_conscription = 1
+		POL_tomislaw_lupaszko = 10
+		POL_jozef_haller = 40
+		POL_roman_dmowski = 0
+		POL_stanislaw_radkiewicz = 0
+		POL_eugeniusz_kwiatkowiski = 0
+		POL_jozef_beck = 0
+		POL_wladyslaw_kalkus = 0
+		POL_jozef_zajac = 0
+		POL_lrl = 0
+		POL_ava = 0
+	}
+
+	traits = {
+	}
+
+	ai_strategy = {
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+POL_MP_Template = {
+	name = "Templates"
+	desc = ""
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 40
+	}
+	ai_strategy = {
+		type = template_prio
+		id = garrison
+		value = -40
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = GER	
+		value = 200
+	}
+}
+
+POL_More_Mils = {
+	name = "Only construct Mils after 1937"
+	desc = ""
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+		date > 1937.1.1
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 100
+	}	
+}
+
+No_PP_For_Relation = {
+	name = "No PP for Relation"
+	desc = ""
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = -200
+	}	
+}
+
+POL_MP_Radio = {
+	name = "Research radio"
+	desc = ""
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+		has_tech = mechanical_computing
+		has_completed_focus = POL_additional_research_slot1
+		NOT = {
+			OR = {
+				has_tech = radio
+				is_researching_technology = radio
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			has_tech = radio
+			is_researching_technology = radio
+		}
+	}
+
+	research = {
+		electronics = 100
+	}
+}
+
+POL_MP_Arty = {
+	name = "Research Arty"
+	desc = ""
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+		date > 1938.1.1
+		has_completed_focus = POL_additional_research_slot1
+		NOT = {
+			OR = {
+				has_tech = artillery1
+				is_researching_technology = artillery1
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			has_tech = artillery1
+			is_researching_technology = artillery1
+		}
+	}
+
+	research = {
+		artillery = 10000
+		cat_anti_tank = -20000
+	}
+}
+
+POL_MP_AA_Production = {
+	name = "Produce Anti-Air Guns"
+	desc = ""
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+		has_tech = antiair1
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_air
+		value = 200
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = -1000
+	}
+
+}
+
+POL_MP_ForceUnits = {
+	name = "Force Build Units"
+	desc = ""
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+		date > 1938.6.1
+		has_manpower > 200000
+		GER = { has_capitulated = no }
+	}
+
+	abort = {
+		OR = {
+			POL = { has_manpower < 200000 }
+			GER = { has_capitulated = yes }
+		}
+	}
+
+	ai_strategy = {
+		type = force_build_armies
+		value = 100
+	}
+}
+
+POL_MP_No_Generals = {
+	name = "No Generals"
+	desc = ""
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+		date < 1939.1.1
+	}
+
+	abort = {
+		date > 1939.1.1
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = general
+		value = -1000
+	}
+}
+
+POL_MP_No_Admirals = {
+	name = "No Admirals"
+	desc = ""
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+		date < 1940.1.1
+	}
+
+	abort = {
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = -1000
+	}
+}
+
+POL_MP_1_AirUnits = {
+	name = "No Air of Naval Units"
+	desc = ""
+
+	enable = {
+		original_tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	research = {
+		air_equipment = -1000
+		air_doctrine = -1000
+		naval_equipment = -1000
+		naval_doctrine = -1000
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = -1000000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = -1000000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = fighter_equipment
+		value = -1000000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = -1000
+	}
+}
+
+POL_MP_Antagonize = {
+	name = "Antagonize Axis and befriend Soviet/India"
+	desc = ""
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+	}
+
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = JAP
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = ROM
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = HUN
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = BUL
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = SOV
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = RAJ
+		value = 200
+	}
+}
+
+MP_Spy_Defense = {
+	name = "Spy Defense"
+	desc = ""
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+	ai_strategy = {
+		type = agency_ai_base_num_factories_factor
+		value = -100    # -100% on the define
+	}
+	ai_strategy = {
+		type = agency_ai_per_upgrade_factories_factor
+		value = -100    # -100% on the define
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 100
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = -100
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = quiet_network
+		value = -100
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = root_out_resistance
+		value = -100
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = control_trade
+		value = -100
+	}
+}
