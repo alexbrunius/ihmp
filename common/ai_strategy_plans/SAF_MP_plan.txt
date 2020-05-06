@@ -1,0 +1,300 @@
+SAF_MP_1 = {
+	name = "South African Mulitplayer plan"
+	desc = ""
+
+	enable = {
+		original_tag = SAF
+		has_dlc = "Together for Victory"
+		has_game_rule = {
+			rule = SAF_ai_behavior
+			option = SAF_MP_1
+		}
+
+	}
+
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		SAF_war_measures_act
+		SAF_support_the_policy_of_appeasement
+		SAF_south_african_railways
+		SAF_expand_the_mining_industry
+		SAF_infrastructure_effort
+		SAF_south_african_steel
+		SAF_expand_the_rand_mines
+		SAF_fund_the_university_of_south_africa
+		SAF_armament_effort
+		SAF_pretoria_arms
+		SAF_police_windhoek
+		SAF_voortrekker_monument
+		SAF_csir
+		SAF_emergency_workers
+		SAF_commit_to_the_five_year_plan
+		SAF_replace_the_blenheim
+		SAF_cape_garrison_artillery
+		SAF_reconstitute_the_cape_corps
+		SAF_expand_the_cape_corps	
+		SAF_native_laws_amendment_act	
+		SAF_work_for_all_poor
+		SAF_joint_air_training_scheme
+		SAF_suppress_the_stormjaers
+		SAF_desert_equipment
+		SAF_special_service_battalion
+		SAF_secure_the_cape_sea_route
+		SAF_seaward_defence_force
+		SAF_q_services_corps
+		SAF_sa_engineer_corps
+		SAF_south_african_special_forces
+	}
+
+	focus_factors = {
+		SAF_perfect_the_cab_rank_technique = 0
+		SAF_anti_submarine_tactics = 0
+		SAF_submarine_warfare = 0
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		cat_mobile_warfare = -10000
+		cat_superior_firepower = -10000
+		cat_grand_battle_plan = -10000
+		cat_mass_assault = 10
+		air_doctrine = -1000
+		naval_equipment = -1000
+		naval_doctrine = -1000
+	}
+
+	ideas = {
+		SAF_e_g_jansen = 1000
+		SAF_nicolaas_havenga = 10
+		SAF_d_f_malan = 0
+		free_trade = 10000
+		export_focus = 0
+		SAF_pierre_van_ryneveld = 0
+		generic_light_aircraft_manufacturer = 0
+		generic_medium_aircraft_manufacturer = 0
+		generic_heavy_aircraft_manufacturer = 0
+		generic_electronics_concern = 0
+		generic_motorized_equipment_manufacturer = 0
+		generic_artillery_manufacturer = 0
+		SAF_c_de_weenburg_du_toit = 0
+		SAF_pierre_van_ryneveld = 0
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+SAF_MP_Advisors = {
+	name = "Blocked Advisors till capitulated or Mid-1940"
+	desc = ""
+
+	enable = {
+		tag = SAF
+		has_game_rule = {
+			rule = SAF_ai_behavior
+			option = SAF_MP_1
+		}
+		OR = {
+			FRA = { has_capitulated = no }
+			date < 1940.1.1
+		}
+	}
+
+	abort = {
+		OR = {
+			FRA = { has_capitulated = yes }
+			date > 1940.1.1
+		}
+	}
+
+	ideas = {
+		iscor = 0
+		generic_naval_manufacturer = 0
+		generic_air_close_air_sup = 0
+		generic_air_chief_all_weather = 0
+		SAF_robert_palmer = 0
+		SAF_marinus_van_osterkamp = 0
+		SAF_jeannot_de_la_tourier = 0
+		SAF_adolf_malan = 0
+		SAF_james_mitchell_baker = 0
+		SAF_leonard_beyers = 0
+	}
+	
+	ai_strategy = {
+		type = pp_spend_priority
+		id = general
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = -1000
+	}
+}
+
+SAF_MP_Infrastructure_1 = {
+	name = "SAF Infrastructure"
+	desc = "Build Level 10 for Buildspeed"
+
+	enable = {
+		tag = SAF
+		has_game_rule = {
+			rule = SAF_ai_behavior
+			option = SAF_MP_1
+		}
+		275 = {
+			is_controlled_by = SAF
+			infrastructure < 10
+		}
+	}
+
+	abort = {
+		275 = {
+			OR ={
+				NOT = { is_controlled_by = SAF }
+				NOT = { infrastructure < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 275
+		value = 5
+	}
+}
+
+SAF_MP_No_MIL = {
+	name = "No Mil"
+	desc = "Build Level 10 for Buildspeed"
+
+	enable = {
+		tag = SAF
+		has_game_rule = {
+			rule = SAF_ai_behavior
+			option = SAF_MP_1
+		}
+		date < 1938.1.1
+	}
+
+	abort = {
+		OR = {
+			date > 1938.1.1
+			SAF = { arms_factory > 1 }
+		}
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 1
+	}
+}
+
+SAF_MP_1_AirUnits = {
+	name = "SAF No Air"
+	desc = ""
+
+	enable = {
+		tag = SAF
+		has_game_rule = {
+			rule = SAF_ai_behavior
+			option = SAF_MP_1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = -1000000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = -1000000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = fighter_equipment
+		value = -1000000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -10000
+	}
+}
+
+SAF_MP_1_NAV2 = {
+	name = "Research Naval Bomber 2"
+	desc = ""
+
+	enable = {
+		tag = SAF
+		has_game_rule = {
+			rule = SAF_ai_behavior
+			option = SAF_MP_1
+		}
+		has_completed_focus = SAF_replace_the_blenheim
+		NOT = { has_tech = naval_bomber2 }
+	}
+
+	abort = {
+		has_tech = naval_bomber2
+	}
+
+	research = {
+		naval_bomber = 10000
+	}	
+}
+
+SAF_MP_AirDoctrine = {
+	name = "Air Doctrine Research"
+	desc = ""
+
+	enable = {
+		tag = SAF
+		has_game_rule = {
+			rule = SAF_ai_behavior
+			option = SAF_MP_1
+		}
+	has_tech = naval_strike_tactics
+	}
+	abort = { 
+	}
+	
+	research = {
+		cat_strategic_destruction = -10000
+	}
+}

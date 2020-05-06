@@ -570,7 +570,7 @@ GER_ai_behavior = {
 	name = "GER_AI_BEHAVIOR"
 	required_dlc = "Waking the Tiger"
 	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -596,11 +596,16 @@ GER_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	default = {
+		name = GER_MP_1
+		text = "RULE_OPTION_GER_MP_1"
+		desc = "RULE_OPTION_GER_MP_1_DESC"
+	}
 }
 SOV_ai_behavior = {
 	name = "SOV_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -621,12 +626,17 @@ SOV_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	default = {
+		name = SOV_MP_1
+		text = "RULE_OPTION_SOV_MP_1"
+		desc = "RULE_OPTION_SOV_MP_1_DESC"
+	}
 }
 JAP_ai_behavior = {
 	name = "JAP_AI_BEHAVIOR"
 	required_dlc = "Waking the Tiger"
 	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -657,12 +667,17 @@ JAP_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	default = {
+		name = JAP_MP_1
+		text = "RULE_OPTION_JAP_MP_1"
+		desc = "RULE_OPTION_JAP_MP_1_DESC"
+	}
 }
 
 ITA_ai_behavior = {
 	name = "ITA_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -683,12 +698,18 @@ ITA_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	default = {
+		name = ITA_MP_1
+		text = "RULE_OPTION_ITA_MP_1"
+		desc = "RULE_OPTION_ITA_MP_1_DESC"
+	}
 }
 
 FRA_ai_behavior = {
 	name = "FRA_AI_BEHAVIOR"
+	required_dlc = "La Resistance"
 	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -715,19 +736,16 @@ FRA_ai_behavior = {
 		desc = "RULE_FASCIST_FRA_AI_DESC"
 	}
 	option = {
-		required_dlc = "La Resistance"
 		name = ORLEANIST
 		text = "RULE_OPTION_MONARCHIST_ORLEANIST"
 		desc = "RULE_MONARCHIST_ORLEANIST_FRA_AI_DESC"
 	}
 	option = {
-		required_dlc = "La Resistance"
 		name = LEGITIMIST
 		text = "RULE_OPTION_MONARCHIST_LEGITIMIST"
 		desc = "RULE_MONARCHIST_LEGITIMIST_FRA_AI_DESC"
 	}
 	option = {
-		required_dlc = "La Resistance"
 		name = BONAPARTIST
 		text = "RULE_OPTION_MONARCHIST_BONAPARTIST"
 		desc = "RULE_MONARCHIST_BONAPARTIST_FRA_AI_DESC"
@@ -737,13 +755,23 @@ FRA_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	default = {
+		name = FRA_MP_1
+		text = "RULE_OPTION_FRA_MP_1"
+		desc = "RULE_OPTION_FRA_MP_1_DESC"
+	}
+	option = {
+		name = FRA_MP_2
+		text = "RULE_OPTION_FRA_MP_2"
+		desc = "RULE_OPTION_FRA_MP_2_DESC"
+	}
 }
 
 POL_ai_behavior = {
 	name = "POL_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	required_dlc = "Poland: United and Ready"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -769,13 +797,18 @@ POL_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	default = {
+		name = POL_MP_1
+		text = "RULE_OPTION_POL_MP_1"
+		desc = "RULE_OPTION_POL_MP_1_DESC"
+	}
 }
 
 AST_ai_behavior = {
 	name = "AST_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	required_dlc = "Together for Victory"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -806,13 +839,18 @@ AST_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	default = {
+		name = AST_MP_1
+		text = "RULE_OPTION_AST_MP_1"
+		desc = "RULE_OPTION_AST_MP_1_DESC"
+	}
 }
 
 CAN_ai_behavior = {
 	name = "CAN_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	required_dlc = "Together for Victory"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -843,13 +881,18 @@ CAN_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	default = {
+		name = CAN_MP_1
+		text = "RULE_OPTION_CAN_MP_1"
+		desc = "RULE_OPTION_CAN_MP_1_DESC"
+	}
 }
 
 SAF_ai_behavior = {
 	name = "SAF_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	required_dlc = "Together for Victory"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -880,12 +923,17 @@ SAF_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	default = {
+		name = SAF_MP_1
+		text = "RULE_OPTION_SAF_MP_1"
+		desc = "RULE_OPTION_SAF_MP_1_DESC"
+	}
 }
 NZL_ai_behavior = {
 	name = "NZL_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	required_dlc = "Together for Victory"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -916,12 +964,17 @@ NZL_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	default = {
+		name = NZL_MP_1
+		text = "RULE_OPTION_NZL_MP_1"
+		desc = "RULE_OPTION_NZL_MP_1_DESC"
+	}
 }
 RAJ_ai_behavior = {
 	name = "RAJ_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	required_dlc = "Together for Victory"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -947,13 +1000,18 @@ RAJ_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	default = {
+		name = RAJ_MP_1
+		text = "RULE_OPTION_RAJ_MP_1"
+		desc = "RULE_OPTION_RAJ_MP_1_DESC"
+	}
 }
 
 HUN_ai_behavior = {
 	name = "HUN_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	required_dlc = "Death or Dishonor"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -989,13 +1047,23 @@ HUN_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	default = {
+		name = HUN_MP_1
+		text = "RULE_OPTION_HUN_MP_1"
+		desc = "RULE_OPTION_HUN_MP_1_DESC"
+	}
+	option = {
+		name = HUN_MP_2
+		text = "RULE_OPTION_HUN_MP_2"
+		desc = "RULE_OPTION_HUN_MP_2_DESC"
+	}
 }
 
 ROM_ai_behavior = {
 	name = "ROM_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	required_dlc = "Death or Dishonor"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -1026,12 +1094,32 @@ ROM_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	default = {
+		name = ROM_MP_1
+		text = "RULE_OPTION_ROM_MP_1"
+		desc = "RULE_OPTION_ROM_MP_1_DESC"
+	}
+}
+
+BUL_ai_behavior = {
+	name = "BUL_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = BUL_MP_1
+		text = "RULE_OPTION_BUL_MP_1"
+		desc = "RULE_OPTION_BUL_MP_1_DESC"
+	}
 }
 YUG_ai_behavior = {
 	name = "YUG_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	required_dlc = "Death or Dishonor"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -1061,6 +1149,11 @@ YUG_ai_behavior = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+	default = {
+		name = YUG_MP_1
+		text = "RULE_OPTION_YUG_MP_1"
+		desc = "RULE_OPTION_YUG_MP_1_DESC"
 	}
 }
 
@@ -1111,7 +1204,7 @@ CHI_ai_behavior = {
 	name = "CHI_AI_BEHAVIOR"
 	required_dlc = "Waking the Tiger"
 	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -1131,6 +1224,27 @@ CHI_ai_behavior = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+	default = {
+		name = CHI_MP_1
+		text = "RULE_OPTION_CHI_MP_1"
+		desc = "RULE_OPTION_CHI_MP_1_DESC"
+	}
+}
+
+WL_ai_behavior = {
+	name = "WL_AI_BEHAVIOR"
+	required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = WL_MP_1
+		text = "RULE_OPTION_WL_MP_1"
+		desc = "RULE_OPTION_WL_MP_1_DESC"
 	}
 }
 PRC_ai_behavior = {
@@ -1163,7 +1277,7 @@ MAN_ai_behavior = {
 	name = "MAN_AI_BEHAVIOR"
 	required_dlc = "Waking the Tiger"
 	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -1184,12 +1298,23 @@ MAN_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	option = {
+		name = MAN_MP_1
+		text = "RULE_OPTION_MAN_MP_1"
+		desc = "RULE_OPTION_MAN_MP_1_DESC"
+	}
+	default = {
+		name = MAN_MP_2
+		text = "RULE_OPTION_MAN_MP_2"
+		desc = "RULE_OPTION_MAN_MP_2_AI_DESC"
+	}
 }
+
 ENG_ai_behavior = {
 	name = "ENG_AI_BEHAVIOR"
 	required_dlc = "Man the Guns"
 	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -1225,13 +1350,18 @@ ENG_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	default = {
+		name = ENG_MP_1
+		text = "RULE_OPTION_ENG_MP_1"
+		desc = "RULE_OPTION_ENG_MP_1_DESC"
+	}
 }
 
 USA_ai_behavior = {
 	name = "USA_AI_BEHAVIOR"
 	required_dlc = "Man the Guns"
 	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -1261,6 +1391,11 @@ USA_ai_behavior = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+	default = {
+		name = USA_MP_1
+		text = "RULE_OPTION_USA_MP_1"
+		desc = "RULE_OPTION_USA_MP_1_DESC"
 	}
 }
 
@@ -1464,6 +1599,126 @@ POR_ai_behavior = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+}
+
+ETH_ai_behavior = {
+	name = "ETH_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = ETH_MP_1
+		text = "RULE_OPTION_ETH_MP_1"
+		desc = "RULE_OPTION_ETH_MP_1_DESC"
+	}
+}
+
+SIA_ai_behavior = {
+	name = "SIA_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = SIA_MP_1
+		text = "RULE_OPTION_SIA_MP_1"
+		desc = "RULE_OPTION_SIA_MP_1_DESC"
+	}
+}
+
+MAL_ai_behavior = {
+	name = "MAL_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = MAL_MP_1
+		text = "RULE_OPTION_MAL_MP_1"
+		desc = "RULE_OPTION_MAL_MP_1_DESC"
+	}
+}
+
+INS_ai_behavior = {
+	name = "INS_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = INS_MP_1
+		text = "RULE_OPTION_INS_MP_1"
+		desc = "RULE_OPTION_INS_MP_1_DESC"
+	}
+}
+
+ALB_ai_behavior = {
+	name = "ALB_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = ALB_MP_1
+		text = "RULE_OPTION_ALB_MP_1"
+		desc = "RULE_OPTION_ALB_MP_1_DESC"
+	}
+}
+
+AUS_ai_behavior = {
+	name = "AUS_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = AUS_MP_1
+		text = "RULE_OPTION_AUS_MP_1"
+		desc = "RULE_OPTION_AUS_MP_1_DESC"
+	}
+}
+
+MEN_ai_behavior = {
+	name = "MEN_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = MEN_MP_1
+		text = "RULE_OPTION_MEN_MP_1"
+		desc = "RULE_OPTION_MEN_MP_1_DESC"
+	}
+}
+
+MON_ai_behavior = {
+	name = "MON_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = MON_MP_1
+		text = "RULE_OPTION_MON_MP_1"
+		desc = "RULE_OPTION_MON_MP_1_DESC"
 	}
 }
 

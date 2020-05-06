@@ -1,0 +1,703 @@
+FRA_MP_1 = {
+	name = "France Multiplayer 1"
+	desc = "Revive the National Bloc"
+
+	enable = {
+		original_tag = FRA
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}	
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		FRA_revive_the_national_bloc
+		FRA_laissez_faire
+		FRA_protect_the_rights_of_man
+		FRA_review_foreign_policy
+		FRA_buy_time
+		#1937
+		FRA_strengthen_government_support
+		FRA_defensive_strategems
+		FRA_intervention_in_spain
+		FRA_begin_rearmament
+		FRA_economic_devolution
+		#1938		
+		FRA_defensive_focus
+		FRA_firepower_kills
+		FRA_infantry_focus
+		FRA_artillery_focus
+		FRA_heavy_armor_focus
+		#1939
+		FRA_army_reform
+		FRA_go_with_britain
+		FRA_ban_communism
+		FRA_the_blum_viollette_proposal
+		FRA_expand_the_citizenship
+		FRA_encourage_immigration
+		#1940
+		FRA_arms_purchases_in_the_us
+		FRA_devalue_the_franc
+		FRA_invest_in_the_colonies
+		FRA_algerie_france
+		FRA_invest_in_west_africa
+		#1941
+		FRA_invest_in_syria
+		FRA_colonial_industry
+		FRA_extra_research_slot_2
+		FRA_invest_in_the_metropole
+		FRA_industrial_expansion 
+		#1942
+		FRA_extra_research_slot
+	}
+
+	research = {
+		synth_resources = -1000
+		air_doctrine = -1000
+		naval_equipment = -1000
+		naval_doctrine = -1000
+	}
+
+	ideas = {
+		war_economy = 200
+		partial_economic_mobilisation = 100
+		FRA_gaston_henry_haye = 1000
+		henri_giraud = 30
+		maxime_weygand = 20
+		FRA_zivony_peshkov = 20
+		FRA_paul_baudouin = 0
+		FRA_charles_tillon = 0
+		charles_de_gaulle = 0
+		louis_kahn = 0
+		jean_decoux = 0
+		victor_denain = 0
+		jean_marie_bergeret = 0
+		frederic_irene_joliot_curie = 0
+	}
+
+	ai_strategy = {
+	}
+
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+FRA_MP_2 = {
+	name = "France Multiplayer 2"
+	desc = "Form the Popular Front"
+
+	enable = {
+		original_tag = FRA
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}	
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		FRA_form_the_popular_front
+		FRA_reform_the_labour_laws
+		FRA_review_foreign_policy
+		FRA_buy_time
+		FRA_strengthen_government_support
+		#1937
+		FRA_defensive_strategems
+		FRA_ban_the_leagues
+		FRA_begin_rearmament
+		FRA_nationalize_key_industry
+		FRA_form_the_state_arsenals
+		#1938
+		FRA_defensive_focus
+		FRA_firepower_kills
+		FRA_infantry_focus
+		FRA_artillery_focus
+		FRA_heavy_armor_focus
+		#1939
+		FRA_army_reform
+		FRA_go_with_britain
+		FRA_the_blum_viollette_proposal
+		FRA_expand_the_citizenship
+		FRA_encourage_immigration
+		#1940
+		FRA_devalue_the_franc
+		FRA_invest_in_the_colonies
+		FRA_algerie_france
+		FRA_invest_in_west_africa
+		FRA_invest_in_syria
+		#1941
+		FRA_colonial_industry
+		FRA_extra_research_slot_2
+		FRA_invest_in_the_metropole
+		FRA_industrial_expansion
+		FRA_extra_research_slot
+		#1942
+		
+		
+		 
+		
+	}
+
+	research = {
+		synth_resources = -1000
+		air_doctrine = -1000
+		naval_equipment = -1000
+		naval_doctrine = -1000
+	}
+
+	ideas = {
+		war_economy = 200
+		partial_economic_mobilisation = 100
+		FRA_gaston_henry_haye = 1000
+		henri_giraud = 30
+		maxime_weygand = 20
+		FRA_zivony_peshkov = 20
+		FRA_paul_baudouin = 0
+		FRA_charles_tillon = 0
+		charles_de_gaulle = 0
+		louis_kahn = 0
+		jean_decoux = 0
+		victor_denain = 0
+		jean_marie_bergeret = 0
+		frederic_irene_joliot_curie = 0
+	}
+
+	ai_strategy = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+FRA_MP_Advisors = {
+	name = "Blocked Advisors till capitulated or Mid-1940"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		OR = {
+			FRA = { has_capitulated = no }
+			date < 1940.6.1
+		}
+	}
+
+	abort = {
+		OR = {
+			FRA = { has_capitulated = yes }
+			date > 1940.6.1
+		}
+	}
+
+	ideas = {
+		FRA_felix_gouin = 0
+		FRA_paul_reynaud = 0
+		francois_darlan = 0
+		marcel_gensoul = 0
+		jean_marie_abrial = 0
+		joseph_vuillemin = 0
+		robert_odic = 0
+		philippe_fequant = 0
+		rene_prioux = 0
+		charles_huntziger = 0
+		philippe_leclerc = 0
+		alfred_heurtaux = 0
+		martial_valin = 0
+		jean_francois_jannekeyn = 0
+		jean_de_laborde = 0
+		emile_muselier = 0
+		rene_emile_godfroy = 0
+		renault_fra = 0
+		FRA_AMX = 0
+		somua = 0
+		mas = 0
+		schneider = 0
+		morane_saulnier = 0
+		bloch = 0
+		amiot = 0
+		levasseur = 0
+		fcm = 0
+		famh = 0
+	}
+	
+	ai_strategy = {
+		type = pp_spend_priority
+		id = general
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = -1000
+	}
+}
+
+FRA_MP_NoBomber = {
+	name = "No Bomber Production"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = -10000
+	}	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -10000
+	}
+}
+
+FRA_MP_NoLandDoctrine = {
+	name = "No Landdoctrine until Army reformed"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_idea = FRA_victors_of_wwi
+	}
+	
+	abort = {
+		NOT { has_idea = FRA_victors_of_wwi }
+	}
+	
+	research = {
+		land_doctrine = -10000
+	}
+}
+
+FRA_MP_AT_Research = {
+	name = "Research Anti-Tank Guns"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date > 1937.06.01
+	}
+
+	abort = {
+	}
+
+	research = {
+		cat_anti_tank = 10000
+	}
+
+}
+
+FRA_MP_AT_Production = {
+	name = "Produce Anti-Tank Guns"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_tech = antitank2
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = 200
+	}
+
+}
+
+FRA_MP_InfEquip_LessProduction = {
+	name = "Produce Less Inf Equip"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_tech = antitank2
+		stockpile_ratio = {
+			archetype = infantry_equipment
+			ratio > 1.0
+		}
+	}
+
+	abort = {
+		stockpile_ratio = {
+			archetype = infantry_equipment
+			ratio < 0.5
+		}
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = -50
+	}
+}
+
+FRA_MP_AT_MoreProduction = {
+	name = "Produce Less Armor"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_tech = antitank2
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = -50
+	}
+}
+
+FRA_MP_Europe = {
+	name = "Solely Focus on Europe against Germany and Italy"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.6.1
+	}
+
+	abort = {
+		date > 1940.6.1
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 10000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = -10000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = -10000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = suez
+		value = -10000
+	}
+	ai_strategy = {
+		type = ignore
+		id = BRA
+		value = 1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = SPR
+		value = 1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = SPA
+		value = 1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = LIB
+		value = 1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = TUR
+		value = 1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = IRQ
+		value = 1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = GXC
+		value = 1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = YUN
+		value = 1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = SIA
+		value = 1000
+	}
+}
+
+
+FRA_MP_Belgium = {
+	name = "Prepare some troops on the Belgian Border"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.6.1
+	}
+
+	abort = {
+		date > 1940.6.1
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = BEL
+		value = 100
+	
+	}
+}
+
+FRA_MP_Axis = {
+	name = "Prepare Troops on the Axis Border"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = GER
+		value = 400
+	}
+	ai_strategy = {
+		type = conquer
+		id = ITA
+		value = 200
+	}
+}
+
+FRA_MP_Antagonize = {
+	name = "Antagonize Axis for no Trade"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = JAP
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = ROM
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = HUN
+		value = 200
+	}
+}
+
+MP_Spy_Defense = {
+	name = "Spy Defense"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1938.1.1	
+	}
+
+	abort = {
+		date > 1938.1.1
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+	ai_strategy = {
+		type = agency_ai_base_num_factories_factor
+		value = -100    # -100% on the define
+	}
+	ai_strategy = {
+		type = agency_ai_per_upgrade_factories_factor
+		value = -100    # -100% on the define
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 100
+	}
+}

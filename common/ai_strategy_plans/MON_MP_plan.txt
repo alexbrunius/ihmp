@@ -1,0 +1,233 @@
+MON_MP_1 = {
+	name = "Mongolia Multiplayer 1"
+	desc = ""
+
+	enable = {
+		original_tag = MON
+		has_game_rule = {
+			rule = MON_ai_behavior
+			option = MON_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		political_effort
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		infrastructure_effort
+		infrastructure_effort_2
+		extra_tech_slot
+		extra_tech_slot_2
+		production_effort
+		production_effort_2
+		production_effort_3
+		construction_effort_3
+		aviation_effort
+		fighter_focus
+		army_effort
+		doctrine_effort
+		doctrine_effort_2
+	}
+
+	research = {
+		synth_resources = -1000
+	}
+
+	ideas = {
+		war_economy = 100
+		free_trade = 5000
+		extensive_conscription = 10
+	}
+	
+		
+	ai_strategy = {
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+	}
+}
+
+MON_MP_Electronics_1 = {
+	name = "Mongolian Multiplayer Plan Electronics 1"
+	desc = ""
+
+	enable = {
+		original_tag = MON
+		has_game_rule = {
+			rule = MON_ai_behavior
+			option = MON_MP_1
+		}
+		NOT = { has_tech = electronic_mechanical_engineering }
+	}
+	
+	abort = {
+		has_tech = electronic_mechanical_engineering 
+	}
+
+	research = {
+		electronics = 10000
+		industry = -5000
+	}
+}
+
+MON_MP_Electronics_2 = {
+	name = "Mongolian Multiplayer Plan Electronics 2"
+	desc = ""
+
+	enable = {
+		original_tag = MON
+		has_game_rule = {
+			rule = MON_ai_behavior
+			option = MON_MP_1
+		}
+		NOT = { has_tech = mechanical_computing }
+	}
+	
+	abort = {
+		has_tech = mechanical_computing 
+	}
+
+	research = {
+		computing_tech = 100000
+		industry = -5000
+	}
+}
+
+MON_MP_Radio = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = MON
+		has_game_rule = {
+			rule = MON_ai_behavior
+			option = MON_MP_1
+		}
+		has_tech = mechanical_computing
+		not = { has_tech = radio }
+	}
+
+	abort = {
+		has_tech = radio
+	}
+
+	research = {
+		electronics = 200
+	}
+}
+
+MON_MP_Radar_Research = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = MON
+		has_game_rule = {
+			rule = MON_ai_behavior
+			option = MON_MP_1
+		}
+		has_completed_focus = extra_tech_slot
+	}
+
+	abort = {
+	}
+
+	research = {
+		radar_tech = 600
+	}
+}
+
+MON_MP_Radar_Construction = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = MON
+		has_game_rule = {
+			rule = MON_ai_behavior
+			option = MON_MP_1
+		}
+		has_tech = radio_detection
+		724 = {
+			is_controlled_by = MON
+			radar_station < 6
+		}
+	}
+
+	abort = {
+		724 = {
+			OR ={
+				NOT = { is_controlled_by = MON }
+				NOT = { radar_station < 6 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = radar_station
+		target = 724
+		value = 100
+	}
+}
+
+No_PP_For_Relation = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = MON
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = -200
+	}	
+}
+
+Soviet_Do_Befriend = {
+	name = ""
+	desc = ""
+
+	enable = {
+		tag = MON
+		country_exists = JAP
+		has_game_rule = {
+			rule = MON_ai_behavior
+			option = MON_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = SOV			
+		value = 200
+	}	
+}
