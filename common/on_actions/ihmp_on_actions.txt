@@ -59,4 +59,55 @@ on_actions = {
 			}
 		}
 	}
+	
+	#ROOT is winner #FROM is loser
+	on_peaceconference_ended = {
+		effect = {
+			if = { 
+				limit = { has_dlc = "Waking the Tiger" }
+				every_state = {
+					limit = {
+						is_core_of = SHX
+						NOT = { is_owned_by = SHX }
+					}
+					remove_core_of = SHX
+				}
+				every_state = {
+					limit = {
+						is_core_of = PRC
+						NOT = { is_owned_by = PRC }
+					}
+					remove_core_of = PRC
+				}
+				every_state = {
+					limit = {
+						is_core_of = GXC
+						NOT = { is_owned_by = GXC }
+					}
+					remove_core_of = GXC
+				}
+				every_state = {
+					limit = {
+						is_core_of = YUN
+						NOT = { is_owned_by = YUN }
+					}
+					remove_core_of = YUN
+				}
+				every_state = {
+					limit = {
+						is_core_of = XSM
+						NOT = { is_owned_by = XSM }
+					}
+					remove_core_of = XSM
+				}
+				every_state = {
+					limit = {
+						is_core_of = SIK
+						NOT = { is_owned_by = SIK }
+					}
+					remove_core_of = SIK
+				}
+			}
+		}
+	}
 }
