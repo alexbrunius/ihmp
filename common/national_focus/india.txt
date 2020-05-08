@@ -2506,7 +2506,7 @@ focus_tree = {
 				uses = 1
 				category = tactical_bomber
 				category = cas_bomber
-				category = naval_bomber
+				category = naval_air
 			}
 		}
 	}

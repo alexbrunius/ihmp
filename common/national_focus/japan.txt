@@ -2954,7 +2954,7 @@ focus_tree = {
 					uses = 1
 					category = tactical_bomber
 					category = cat_strategic_bomber
-					category = naval_bomber
+					category = naval_air
 					category = cas_bomber
 				}
 				add_tech_bonus = {

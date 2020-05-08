@@ -566,7 +566,7 @@ focus_tree = {
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				category = naval_bomber
+				category = naval_air
 			}
 		}
 	}
