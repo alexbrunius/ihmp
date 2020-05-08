@@ -4309,7 +4309,7 @@
 				name = ROM_torpedo_bombers
 				bonus = 1.0
 				uses = 1
-				category = naval_bomber
+				category = naval_air
 			}
 		}
 	}

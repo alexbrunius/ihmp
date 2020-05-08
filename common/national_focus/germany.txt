@@ -2185,7 +2185,7 @@ focus_tree = {
 				name = nav_bomber_bonus
 				bonus = 1.0
 				uses = 2
-				category = naval_bomber
+				category = naval_air
 			}
 		}
 	}
