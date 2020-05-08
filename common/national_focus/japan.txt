@@ -5627,7 +5627,6 @@ focus_tree = {
 		prerequisite = { focus = JAP_modern_escorts }
 		available = {
 			has_war_with = USA
-			has_equipment = { convoy_1 < 250 }
 		}
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 0
@@ -5648,60 +5647,7 @@ focus_tree = {
 				amount = 100
 				producer = JAP			
 			}
-			random_owned_controlled_state = {
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = JAP_convoy_focus_2_1dockyard
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = JAP_convoy_focus_2_1dockyard
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = JAP_convoy_focus_2_1dockyard
-			}
+			add_ideas = CAN_trade_fleet
 		}
 	}
 }
