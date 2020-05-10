@@ -365,22 +365,20 @@ GER_case_anton_category = {
 				any_country_with_original_tag = {
 					original_tag_to_check = FRA
 					has_government = fascism
-					OR = {
-						is_subject_of = GER
-						has_focus_tree = vichy_french_focus
-					}
 					NOT = { has_war_with = GER }
 					NOT = { has_country_flag = case_anton }
 					custom_trigger_tooltip = {
 						tooltip = GER_case_anton_tt2
-						462 = { CONTROLLER = { has_war_with = ROOT } }
-						461 = { CONTROLLER = { has_war_with = ROOT } }
-						513 = { CONTROLLER = { has_war_with = ROOT } }
-						462 = { CONTROLLER = { has_war_with = ROOT } }
-						459 = { CONTROLLER = { has_war_with = ROOT } }
-						460 = { CONTROLLER = { has_war_with = ROOT } }
-						458 = { CONTROLLER = { has_war_with = ROOT } }
-						665 = { CONTROLLER = { has_war_with = ROOT } }
+						OR = {
+							462 = { CONTROLLER = { has_war_with = ROOT } }
+							461 = { CONTROLLER = { has_war_with = ROOT } }
+							513 = { CONTROLLER = { has_war_with = ROOT } }
+							462 = { CONTROLLER = { has_war_with = ROOT } }
+							459 = { CONTROLLER = { has_war_with = ROOT } }
+							460 = { CONTROLLER = { has_war_with = ROOT } }
+							458 = { CONTROLLER = { has_war_with = ROOT } }
+							665 = { CONTROLLER = { has_war_with = ROOT } }
+						}
 					}
 				}
 				# Italy is Italing
@@ -389,6 +387,7 @@ GER_case_anton_category = {
 				custom_trigger_tooltip = {
 					tooltip = GER_case_anton_tt3
 					OR = {
+						# occupied zone
 						19  = { CONTROLLER = { has_war_with = ROOT } }
 						23  = { CONTROLLER = { has_war_with = ROOT } }
 						30  = { CONTROLLER = { has_war_with = ROOT } }
@@ -400,6 +399,18 @@ GER_case_anton_category = {
 						36  = { CONTROLLER = { has_war_with = ROOT } }
 						99  = { CONTROLLER = { has_war_with = ROOT } }
 						785 = { CONTROLLER = { has_war_with = ROOT } }
+
+						# Vichy and Corsica
+						735 = { CONTROLLER = { has_war_with = ROOT } is_core_of = VIC }
+						21  = { CONTROLLER = { has_war_with = ROOT } is_core_of = VIC }
+						32  = { CONTROLLER = { has_war_with = ROOT } is_core_of = VIC }
+						20  = { CONTROLLER = { has_war_with = ROOT } is_core_of = VIC }
+						26  = { CONTROLLER = { has_war_with = ROOT } is_core_of = VIC }
+						22  = { CONTROLLER = { has_war_with = ROOT } is_core_of = VIC }
+						31  = { CONTROLLER = { has_war_with = ROOT } is_core_of = VIC }
+						25  = { CONTROLLER = { has_war_with = ROOT } is_core_of = VIC }
+						33  = { CONTROLLER = { has_war_with = ROOT } is_core_of = VIC }
+						1   = { CONTROLLER = { has_war_with = ROOT } is_core_of = VIC }
 					}
 				}
 				# Spain is fucked
