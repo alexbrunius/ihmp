@@ -378,22 +378,12 @@ FRA_MP_NoPlanes = {
 		value = -100
 	}
 	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = screen_ship
-		value = -100
-	}
-	ai_strategy = {
 		type = unit_ratio
 		id = submarine
 		value = -100
 	}
 	ai_strategy = {
 		type = equipment_production_factor
-		id = submarine
-		value = -100
-	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
 		id = submarine
 		value = -100
 	}

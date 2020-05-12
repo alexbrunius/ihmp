@@ -153,7 +153,6 @@ POL_MP_AA_Production = {
 		id = artillery_equipment
 		value = -50
 	}
-
 }
 
 POL_MP_ForceUnits = {
@@ -408,11 +407,6 @@ POL_MP_1_AirUnits = {
 	}
 	ai_strategy = {
 		type = equipment_production_factor
-		id = screen_ship
-		value = -100
-	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
 		id = screen_ship
 		value = -100
 	}

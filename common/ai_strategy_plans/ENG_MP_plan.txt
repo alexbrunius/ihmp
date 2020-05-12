@@ -144,7 +144,41 @@ ENG_MP_1_No_IW_Fighter = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
-		value = -10000
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = fighter_equipment
+		value = -1000
+	}
+}
+
+ENG_MP_1_Fighter2 = {
+	name = "Research Fighter2"
+	desc = ""
+
+	enable = {
+		tag = ENG
+		has_game_rule = {
+			rule = ENG_ai_behavior
+			option = ENG_MP_1
+		}
+		NOT = { has_tech = fighter3 }
+		OR = {
+			date > 1938.6.1
+			has_completed_focus = fighter_command_focus
+		}
+	}
+
+	abort = {
+		OR = {
+			has_tech = fighter3
+			is_researching_technology = fighter3
+		}
+	}
+
+	research = {
+		light_fighter = 10000
 	}
 }
 
