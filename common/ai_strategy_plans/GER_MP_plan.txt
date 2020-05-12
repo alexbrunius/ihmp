@@ -61,6 +61,10 @@ GER_MP_1 = {
 	}
 
 	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 0
+		war_economy = 0
 		hjalmar_schacht = 60
 		heinrich_himmler = -100
 		martin_bormann = 100

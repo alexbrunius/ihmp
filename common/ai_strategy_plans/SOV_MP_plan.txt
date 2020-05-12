@@ -3,12 +3,12 @@ SOV_MP_1 = {
 	desc = "Collectivism"
 
 	enable = {
-		original_tag = SOV
-			has_game_rule = {
-				rule = SOV_ai_behavior
-				option = SOV_MP_1
-				}
-			}
+		tag = SOV
+		has_game_rule = {
+			rule = SOV_ai_behavior
+			option = SOV_MP_1
+		}
+	}
 
 	abort = {
 	}
@@ -52,7 +52,11 @@ SOV_MP_1 = {
 	}
 
 	ideas = {
-		war_economy = 1000
+		war_economy = 100
+		free_trade = 100
+		export_focus = 1
+		limited_exports = 0
+		closed_economy = 0
 	}
 
 	traits = {
@@ -95,5 +99,106 @@ SOV_MP_1_CivBuildup = {
 		type = building_target
 		id = industrial_complex
 		value = 100
+	}
+}
+
+SOV_MP_1_No_IW_Fighter = {
+	name = "No Interwar Fighter Production"
+	desc = ""
+
+	enable = {
+		original_tag = SOV
+		has_game_rule = {
+			rule = SOV_ai_behavior
+			option = SOV_MP_1
+		}
+		NOT = { has_tech = fighter1 }
+	}
+	abort = {
+		has_tech = fighter1
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = -10000
+	}
+}
+
+
+SOV_MP_1_No_Strat = {
+	name = "No Strat. Bomber Production"
+	desc = ""
+
+	enable = {
+		original_tag = SOV
+		has_game_rule = {
+			rule = SOV_ai_behavior
+			option = SOV_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = -1000
+	}	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = scout_plane
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = scout_plane
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = screen_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = screen_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = submarine
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = submarine
+		value = -100
 	}
 }
