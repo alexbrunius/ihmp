@@ -32,7 +32,7 @@ equipments = {
 			}
 			fixed_ship_anti_air_slot = {
 				required = no
-				allowed_module_categories = { ship_anti_air }
+				allowed_module_categories = { ship_anti_air ship_secondaries }
 			}
 			fixed_ship_radar_slot = {
 				required = no
@@ -44,7 +44,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries }
+				allowed_module_categories = { ship_anti_air ship_secondaries }
 			}
 			
 			front_1_custom_slot = {
@@ -142,6 +142,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
+					ship_secondaries
 					ship_deck_space
 					ship_carrier_armor
 				}
@@ -149,6 +150,7 @@ equipments = {
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_anti_air
 					ship_secondaries
 					ship_deck_space
 					ship_carrier_armor
@@ -193,6 +195,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
+					ship_secondaries
 					ship_deck_space
 					ship_carrier_armor
 				}
@@ -200,6 +203,7 @@ equipments = {
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_anti_air
 					ship_secondaries
 					ship_deck_space
 					ship_carrier_armor
@@ -208,6 +212,7 @@ equipments = {
 			mid_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_anti_air
 					ship_secondaries
 					ship_deck_space
 					ship_carrier_armor
@@ -254,6 +259,7 @@ equipments = {
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_anti_air
 					ship_secondaries
 					ship_deck_space
 					ship_carrier_armor
