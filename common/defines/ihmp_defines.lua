@@ -218,8 +218,7 @@ NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 8                          --
 NDefines.NNavy.EXPERIENCE_FACTOR_CARRIER_GAIN = 0.04		-- was 0.08					-- Xp gain by carrier ships in the combat
 
 NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 0.8						-- was 1.25	-- How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
-NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 2						-- was 7 -- Convoy starts regaining it's efficiency after X days without any convoys being sink.
-NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.05					-- was 0.04	-- How much efficiency regains every day.
+NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 5						-- was 7 -- Convoy starts regaining it's efficiency after X days without any convoys being sink.
 
 -- 0.6 Update to naval mines
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.006	-- was 1.0
