@@ -2765,7 +2765,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = armor_bonus
 				ahead_reduction = 2
-				uses = 2
+				uses = 1
 				category = cat_mechanized_equipment
 			}
 			if = { limit = { has_idea = officers_purged } remove_ideas = officers_purged }
