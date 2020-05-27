@@ -4399,6 +4399,10 @@ country_event = {
 	option = { #War
 		name = panay_incident.2.c
 		custom_effect_tooltip = panay_incident.2.c.tt
+		trigger = { 
+			NOT = { has_idea = undisturbed_isolation }
+			NOT = { has_idea = isolation }
+		}
 		ai_chance = {
 			factor = 5
 			modifier = {
