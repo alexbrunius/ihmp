@@ -235,12 +235,6 @@ units= {
 	fleet = {
 		name = "Submarine Base Force"			
 		naval_base = 1562 # San Diego
-		task_force = {				
-			name = "Submarine Base Force"			
-			location = 1562 # San Diego
-				
-		
-		}
 		task_force = {					
 			name = "4th Submarine Squadron"			
 			location = 4180 # Pearl Harbor, HI
@@ -325,7 +319,6 @@ units= {
 			ship = { name = "USS Pike" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Porpoise Class" } } }
 			ship = { name = "USS Shark" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Porpoise Class" } } }
 		}
-
 	}
 }
 
