@@ -572,7 +572,8 @@ technologies = {
 	air_offense = {
 
 		# EFFECT ########
-		air_escort_efficiency = 0.25
+		# air_escort_efficiency = 0.25 IHMP disabled because it doesn't work
+		air_strategic_bomber_defence_factor = 0.1
 		###########
 		
 		path = {
@@ -618,7 +619,7 @@ technologies = {
 	flying_fortress = {
 
 		# EFFECT ########
-		air_strategic_bomber_defence_factor = 0.25
+		air_strategic_bomber_defence_factor = 0.20
 		###########
 		
 		path = {
