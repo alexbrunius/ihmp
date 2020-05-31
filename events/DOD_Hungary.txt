@@ -3734,7 +3734,6 @@ country_event = {
 		HUN = {
 			transfer_state = 70
 			transfer_state = 71
-			transfer_state = 72
 			transfer_state = 73
 		}
 		if = {
@@ -3767,14 +3766,6 @@ country_event = {
 				}
 			}
 			SLO = { transfer_state = 71 }
-		}
-		if = {
-			limit = {
-				72 = {
-					is_owned_by = CZE	
-				}
-			}
-			SLO = { transfer_state = 72 }
 		}
 		if = {
 			limit = {
