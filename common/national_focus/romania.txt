@@ -1013,10 +1013,14 @@
 	focus = {
 		id = ROM_agrarian_reform
 		icon = GFX_goal_generic_consumer_goods
-		#prerequisite = { focus = ROM_civil_works focus = ROM_national_defense_industry }
+		prerequisite = { focus = ROM_civil_works focus = ROM_national_defense_industry }
 		x = 1
 		y = 1
 		relative_position_id = ROM_civil_works
+		
+		allow_branch = {
+			always = yes
+		}
 
 		cost = 10
 
@@ -1025,10 +1029,7 @@
 		}
 
 		available = {
-			OR = {
-				has_completed_focus = ROM_civil_works
-				has_completed_focus = ROM_national_defense_industry
-			}
+
 		}
 
 		bypass = {
