@@ -1577,6 +1577,18 @@ country_event = {
 
 	option = {# Back down
 		name = DOD_hungary.54.a
+		trigger = {
+			ROM = {
+				has_idea = {
+					ROM_war_preparation
+				}
+			}
+			HUN = {
+				has_idea = {
+					HUN_war_preparation
+				}
+			}
+		}
 		ai_chance = {
 			factor = 35
 			modifier = {
@@ -1600,6 +1612,18 @@ country_event = {
 
 	option = {# To war!
 		name = DOD_hungary.54.b
+		trigger = {
+			ROM = {
+				has_idea = {
+					ROM_war_preparation
+				}
+			}
+			HUN = {
+				has_idea = {
+					HUN_war_preparation
+				}
+			}
+		}
 		ai_chance = {
 			factor = 35
 			modifier = { 
@@ -1621,10 +1645,45 @@ country_event = {
 	
 	option = {# Ask for mediation
 		name = DOD_hungary.54.c
+		trigger = {
+			ROM = {
+				has_idea = {
+					ROM_war_preparation
+				}
+			}
+			HUN = {
+				has_idea = {
+					HUN_war_preparation
+				}
+			}
+		}
 		ai_chance = {
 			factor = 35
 		}
 		country_event = { id = DOD_hungary.55 }
+	}
+
+	option = {# Already resolved
+		name = DOD_hungary.54.d
+		trigger = {
+			ROM = {
+				NOT = {
+					has_idea = {
+						ROM_war_preparation
+					}
+				}
+			}
+			HUN = {
+				NOT = {
+					has_idea = {
+						HUN_war_preparation
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 35
+		}
 	}
 }
 
@@ -2108,7 +2167,6 @@ country_event = {
 			factor = 35
 		}
 		HUN = { country_event = { id = DOD_hungary.54 hours = 24 } }
-		
 	}
 }
 
