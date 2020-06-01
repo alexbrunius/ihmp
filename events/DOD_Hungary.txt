@@ -1449,7 +1449,6 @@ country_event = {
 
 	option = {# Prepare for war!
 		name = DOD_hungary.53.b
-		HUN = { country_event = { id = DOD_hungary.54 hours = 24 } }
 		ai_chance = {
 			factor = 35
 			modifier = {
@@ -1513,6 +1512,47 @@ country_event = {
 				}
 			}
 			ENG = { country_event = { id = DOD_hungary.60 } } #Britain given option to intervene, if they don't have bigger problems
+		}
+		if = {
+			limit = { 
+				AND = {
+					NOT = {
+						GER = {
+							NOT = {
+								OR = {
+									has_war_with = HUN
+									has_war_with = ROM
+								}
+							}
+						}
+					}
+					NOT = {
+						ITA = {
+							NOT = {
+								OR = {
+									has_war_with = HUN
+									has_war_with = ROM
+								}
+								is_in_faction_with = GER
+							}
+						}
+					}
+					NOT = {
+						FRA = {
+							has_war = no
+							has_government = democratic
+						}
+					}
+					NOT = {
+						ENG = {
+							has_war = no
+							has_government = democratic
+							has_completed_focus = uk_balkan_strategy
+						}
+					}
+				}
+			}
+			HUN = { country_event = { id = DOD_hungary.54 hours = 24 } }
 		}
 	}
 
@@ -1901,9 +1941,8 @@ country_event = {
 
 	option = {# well done us
 		name = DOD_hungary.57.a
-		add_stability = 0.05
-		remove_ideas = ROM_war_preparation
-	
+		ROM = { add_stability = 0.05 }
+		ROM = { remove_ideas = ROM_war_preparation }
 	}
 }
 #Hungary seeks Mediation
@@ -2068,6 +2107,7 @@ country_event = {
 		ai_chance = {
 			factor = 35
 		}
+		HUN = { country_event = { id = DOD_hungary.54 hours = 24 } }
 		
 	}
 }
@@ -2172,8 +2212,8 @@ country_event = {
 				NOT = { has_global_flag = Balkan_crisis_HUN_folded }
 				NOT = { has_global_flag = Balkan_crisis_mediation_requested }
 			}
+		HUN = { remove_ideas = HUN_war_preparation }
 		ROM = {country_event = { id = DOD_hungary.57 } }
-		remove_ideas = HUN_war_preparation
 		}
 	}
 
