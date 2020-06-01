@@ -2150,7 +2150,7 @@ country_event = {
 		ai_chance = {
 			factor = 35
 		}
-		HUN = { country_event = { id = DOD_hungary.54 hours = 24 } }
+		HUN = { country_event = { id = DOD_hungary.54 hours = 72 } }
 	}
 }
 
