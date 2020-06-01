@@ -1579,14 +1579,10 @@ country_event = {
 		name = DOD_hungary.54.a
 		trigger = {
 			ROM = {
-				has_idea = {
-					ROM_war_preparation
-				}
+				has_idea = 	ROM_war_preparation
 			}
 			HUN = {
-				has_idea = {
-					HUN_war_preparation
-				}
+				has_idea = HUN_war_preparation
 			}
 		}
 		ai_chance = {
@@ -1614,14 +1610,10 @@ country_event = {
 		name = DOD_hungary.54.b
 		trigger = {
 			ROM = {
-				has_idea = {
-					ROM_war_preparation
-				}
+				has_idea = 	ROM_war_preparation
 			}
 			HUN = {
-				has_idea = {
-					HUN_war_preparation
-				}
+				has_idea = HUN_war_preparation
 			}
 		}
 		ai_chance = {
@@ -1647,14 +1639,10 @@ country_event = {
 		name = DOD_hungary.54.c
 		trigger = {
 			ROM = {
-				has_idea = {
-					ROM_war_preparation
-				}
+				has_idea = 	ROM_war_preparation
 			}
 			HUN = {
-				has_idea = {
-					HUN_war_preparation
-				}
+				has_idea = HUN_war_preparation
 			}
 		}
 		ai_chance = {
@@ -1668,16 +1656,12 @@ country_event = {
 		trigger = {
 			ROM = {
 				NOT = {
-					has_idea = {
-						ROM_war_preparation
-					}
+					has_idea = ROM_war_preparation
 				}
 			}
 			HUN = {
 				NOT = {
-					has_idea = {
-						HUN_war_preparation
-					}
+					has_idea = HUN_war_preparation
 				}
 			}
 		}
