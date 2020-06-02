@@ -2815,6 +2815,8 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -2995,6 +2997,8 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -3095,7 +3099,8 @@ focus_tree = {
 			random_owned_controlled_state = {
 				prioritize = { 43 }
 				limit = {
-					ROOT = { has_full_control_of_state = PREV } 
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -3247,6 +3252,8 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -3263,6 +3270,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
 						size > 0
@@ -3358,6 +3367,8 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
 						size > 1
