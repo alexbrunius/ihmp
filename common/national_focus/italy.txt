@@ -1031,6 +1031,8 @@ focus_tree = {
 			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
@@ -1047,6 +1049,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
