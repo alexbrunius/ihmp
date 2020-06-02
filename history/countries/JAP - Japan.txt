@@ -174,12 +174,6 @@ if = {
 	}
 }
 
-create_import = {
-		resource = oil
-		factories = 2
-		exporter = USA
-}
-
 1939.1.1 = {
 
 	add_political_power = 1198
