@@ -8,3 +8,8 @@
  MODIFIER_AIR_NAV_EFFICIENCY:0 "Naval Mission Combat Modifier"
  MODIFIER_AIR_NAV_EFFICIENCY_DESC:0 "Improved tactics for planes doing naval bombing or port strikes resulting in increased abilities."
  MODIFIER_ARMY_BONUS_AIR_SUPERIORITY_FACTOR:1 "Air Superiority Effect On Enemy"
+ tank_manufacturer_cost_factor:0 "Tank Designer Cost"
+ naval_manufacturer_cost_factor:0 "Ship Designer Cost"
+ aircraft_manufacturer_cost_factor:0 "Aircraft Designer Cost"
+ materiel_manufacturer_cost_factor:0 "Materiel Designer Cost"
+ industrial_concern_cost_factor:0 "Industrial Concern Cost"
