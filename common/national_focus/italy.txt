@@ -136,6 +136,8 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -152,6 +154,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -168,6 +172,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -279,6 +285,8 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					arms_factory > 0
 					free_building_slots = {
 						building = arms_factory
@@ -296,6 +304,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					arms_factory > 0
 					free_building_slots = {
 						building = arms_factory
@@ -684,11 +694,17 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 8
+				amount = 4
 				state = 450
 			}
 			450 = {
 				set_state_flag = benghazi_oil_developed
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
 			}	
 		
 		}
@@ -786,6 +802,8 @@ focus_tree = {
 			army_experience = 5
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					arms_factory > 0
 					free_building_slots = {
 						building = arms_factory
@@ -802,6 +820,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					arms_factory > 0
 					free_building_slots = {
 						building = arms_factory
@@ -1011,6 +1031,8 @@ focus_tree = {
 			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
@@ -1027,6 +1049,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
@@ -1249,7 +1273,7 @@ focus_tree = {
 				name = naval_air_effort
 				bonus = 1.0
 				uses = 1
-				category = naval_air
+				category = naval_bomber
 				#technology = naval_bomber1
 				#technology = naval_bomber2
 				#technology = naval_bomber3
