@@ -1557,14 +1557,14 @@ GER_wants_synth = {
 	enable = {
 		tag = GER
 		has_government = fascism
-		date > 1937.10.20
+		date > 1939.01.01
 		has_war = no
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = building_target
-		id = synthetic_refinery
-		value = 8
+		id = synthetic_refinery_rubber
+		value = 10
 	}
 }
 
