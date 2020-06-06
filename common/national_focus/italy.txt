@@ -1557,6 +1557,7 @@ focus_tree = {
 		bypass = {
 			ETH = { exists = yes }
 			NOT = { has_war_with = ETH }
+			NOT = { ETH = { is_subject_of = ITA } }
 		}
 
 		available_if_capitulated = yes
