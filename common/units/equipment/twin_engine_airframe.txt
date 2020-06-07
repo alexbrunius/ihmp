@@ -407,7 +407,7 @@ equipments = {
 		parent = scout_plane_equipment_1
 		priority = 100
 		
-		air_range = 1700
+		air_range = 2000
 		maximum_speed = 550
 		air_agility = 30
 		air_attack = 0
