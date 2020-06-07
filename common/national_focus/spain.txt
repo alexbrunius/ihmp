@@ -1,4 +1,4 @@
-### search_filters = {FOCUS_FILTER_POLITICAL}
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -9252,7 +9252,7 @@ focus_tree = {
 			custom_effect_tooltip = SPR_anti_fascist_unity_tt
 			add_days_mission_timeout = {
 				mission = SPR_anarchist_uprising_mission
-				days = 140
+				days = 420
 			}
 		}
 	}
