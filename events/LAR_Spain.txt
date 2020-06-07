@@ -528,6 +528,52 @@ country_event = {
 					}
 				}
 				SPD = { add_timed_idea = { idea = SPR_startup days = 10 } }
+				SPD = {
+					destroy_ships = {
+						type = ship_hull_light
+						count = all
+					}
+					destroy_ships = {
+						type = ship_hull_cruiser
+						count = all
+					}
+					destroy_ships = {
+						type = ship_hull_heavy
+						count = all
+					}
+					destroy_ships = {
+						type = ship_hull_carrier 
+						count = all
+					}
+					destroy_ships = {
+						type = ship_hull_submarine
+						count = all
+					}
+					load_oob = "SPD_SCW_naval_mtg"
+				}
+				SPA = {
+					destroy_ships = {
+						type = ship_hull_light
+						count = all
+					}
+					destroy_ships = {
+						type = ship_hull_cruiser
+						count = all
+					}
+					destroy_ships = {
+						type = ship_hull_heavy
+						count = all
+					}
+					destroy_ships = {
+						type = ship_hull_carrier 
+						count = all
+					}
+					destroy_ships = {
+						type = ship_hull_submarine
+						count = all
+					}
+					load_oob = "SPA_SCW_naval_mtg"
+				}
 				# If player has completed this focus, give North Africa and spawn units there (this effect is run first so the tag has any territory whatsoever - it's assumed all players take this focus)
 				if = {
 					limit = {
