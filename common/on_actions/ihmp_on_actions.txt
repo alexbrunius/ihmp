@@ -116,6 +116,31 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					OR = {
+						has_game_rule = {
+							rule = MAN_ai_behavior
+							option = MAN_MP_1
+						}
+						has_game_rule = {
+							rule = MAN_ai_behavior
+							option = MAN_MP_2
+						}
+					}
+					MAN = { is_ai = yes }
+				}
+				MAN = {
+					delete_units = { 
+						division_template = "Qu Jun"
+						disband = yes
+					}
+					delete_units = { 
+						division_template = "Qibing Shi"
+						disband = yes
+					}
+				}
+			}
+			if = {
+				limit = {
 					has_game_rule = {
 						rule = ROM_ai_behavior
 						option = ROM_MP_1
