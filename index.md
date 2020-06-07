@@ -1,6 +1,13 @@
-
-
 # Changelog:
+## 1.9.3.1
+- 1940 scout plane range 1700->2000.
+- All majors now start with scout plane researched.
+- Triumph in Africa no longer bypassed when Italy puppets Ethiopia.
+- New Leadership and Future of the Republic NFs now take 35 days instead of 70.
+- Anti-Fascist Unity now delays anarchist uprising by 420 days, from 140.
+- Republican Spain now gets a temporary production efficiency bonus for 10 days to offset their low starting efficiency.
+- Added a hack to split Spanish fleet on SCW start.
+
 ## 1.9.3.0
 - Adjust the mod to 1.9.3 vanilla.
 - Canada main focus branches no longer exclusive, it's possible to take the other one at a cost of 30 stability and 150 PP.
