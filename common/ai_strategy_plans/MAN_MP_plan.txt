@@ -55,9 +55,13 @@ MAN_MP_1 = {
 	}
 
 	ideas = {
-	MAN_songgotu_zhanshan = 100
-	MAN_hung_zhehuang = 3
-	MAN_kyoiji_tomonaga = 2
+		MAN_songgotu_zhanshan = 100
+		MAN_hung_zhehuang = 3
+		MAN_kyoiji_tomonaga = 2
+		free_trade = 100
+		export_focus = 0
+		limited_exports = 0
+		closed_economy = 0
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -128,9 +132,13 @@ MAN_MP_2 = {
 	}
 
 	ideas = {
-	MAN_songgotu_zhanshan = 100
-	MAN_hung_zhehuang = 3
-	MAN_kyoiji_tomonaga = 2
+		MAN_songgotu_zhanshan = 100
+		MAN_hung_zhehuang = 3
+		MAN_kyoiji_tomonaga = 2
+		free_trade = 100
+		export_focus = 0
+		limited_exports = 0
+		closed_economy = 0
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -240,5 +248,41 @@ MAN_MP_Infrastructure = {
 		id = infrastructure
 		target = 714
 		value = 100
+	}
+}
+
+MAN_MP_Infrastructure = {
+	name = "Ignore Soviet"
+	desc = ""
+
+	enable = {
+		original_tag = MAN
+		OR = {
+			has_game_rule = {
+				rule = MAN_ai_behavior
+				option = MAN_MP_1
+			}
+			has_game_rule = {
+				rule = MAN_ai_behavior
+				option = MAN_MP_2
+			}
+		}
+		date < 1940.1.1
+	}
+
+	abort = { date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = SOV
+		value = 1000
+	
+	}
+	ai_strategy = {
+		type = ignore
+		id = MON
+		value = 1000
+	
 	}
 }
