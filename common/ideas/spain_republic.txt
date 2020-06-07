@@ -19,6 +19,23 @@ ideas = {
 				max_surrender_limit_offset = 1
 			}
 		}
+		SPR_startup = {
+
+			name = SPR_death_before_surrender
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_government = fascism }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 100
+			}
+		}
 	}
 
 	economy = {

@@ -1,4 +1,4 @@
-﻿add_namespace = lar_spain 
+add_namespace = lar_spain 
 
 # Election of 1936 - La Resistance Edition
 country_event = {
@@ -527,6 +527,7 @@ country_event = {
 						}
 					}
 				}
+				SPD = { add_timed_idea = { idea = SPR_startup days = 10 } }
 				# If player has completed this focus, give North Africa and spawn units there (this effect is run first so the tag has any territory whatsoever - it's assumed all players take this focus)
 				if = {
 					limit = {
