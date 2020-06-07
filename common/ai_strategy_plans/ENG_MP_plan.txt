@@ -246,3 +246,40 @@ ENG_MP_1_No_Strat = {
 		value = -1000
 	}
 }
+
+ENG_MP_Ignore = {
+	name = "Ignore Baltic for Soviet"
+	desc = ""
+
+	enable = {
+		tag = ENG
+		has_game_rule = {
+			rule = ENG_ai_behavior
+			option = ENG_MP_1
+		}
+	}
+
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = LIT
+		value = 200
+	}
+	ai_strategy = {
+		type = ignore
+		id = LAT
+		value = 200
+	}
+	ai_strategy = {
+		type = ignore
+		id = EST
+		value = 200
+	}
+	ai_strategy = {
+		type = ignore
+		id = FIN
+		value = 200
+	}
+}
