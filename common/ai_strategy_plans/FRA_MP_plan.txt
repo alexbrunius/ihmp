@@ -678,7 +678,7 @@ FRA_MP_Antagonize = {
 	desc = ""
 
 	enable = {
-		original_tag = FRA
+		tag = FRA
 		OR = {
 			has_game_rule = {
 				rule = FRA_ai_behavior
@@ -707,6 +707,49 @@ FRA_MP_Antagonize = {
 	ai_strategy = {
 		type = antagonize
 		id = HUN
+		value = 200
+	}
+}
+
+FRA_MP_Ignore = {
+	name = "Ignore Baltic for Soviet"
+	desc = ""
+
+	enable = {
+		tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = LIT
+		value = 200
+	}
+	ai_strategy = {
+		type = ignore
+		id = LAT
+		value = 200
+	}
+	ai_strategy = {
+		type = ignore
+		id = EST
+		value = 200
+	}
+	ai_strategy = {
+		type = ignore
+		id = FIN
 		value = 200
 	}
 }
