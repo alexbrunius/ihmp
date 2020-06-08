@@ -1,4 +1,7 @@
 # Changelog:
+## 1.9.3.2
+- Amphibious armour is now classified as special forces, getting benefits from SF tech branch.
+
 ## 1.9.3.1
 - 1940 scout plane range 1700->2000.
 - All majors now start with scout plane researched.
