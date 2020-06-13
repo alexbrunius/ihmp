@@ -212,6 +212,8 @@ NDefines.NNavy.POSITIONING_PENALTY_HOURLY_DECAY_FOR_NEWLY_JOINED_SHIPS			= 0.05 
 
 NDefines.NNavy.FUEL_COST_MULT = 0.12 	-- was 0.10 -- fuel multiplier for all naval missions
 
+NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0	--was 0.66 -- org will clamped to this ratio on manual move
+
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.05			-- was 0.05	unchanged			-- supremacy of a ship is calculated using its IC, manpower and a base define
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_IC = 0.01					-- was 0.005
 NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 1.0					-- was 100
