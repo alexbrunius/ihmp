@@ -180,6 +180,7 @@ NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT 										= 8		-- was 16 -- Amount of 
 NDefines.NNavy.SUBMARINE_REVEAL_BASE_CHANCE 									= 6		-- was 12 -- Base factor for submarine detection. It's modified by the difference of a spotter's submarines detection vs submarine visibility. Use this variable for game balancing. setting this too low will cause bad spotting issues.
 NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE 							= 0.10		-- was 0.04 -- Chance of a submarine being revealed when it fires. 1.0 is 100%. this chance is then multiplied with modifier created by comparing firer's visibiility and target's detection
 NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				= 0.3  		-- was 0.5 -- screening efficiency (screen to capital ratio) at 0% positioning
+NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING					= 0.0  -- was 0.7 -- AA penalty at 0% positioning
 
 NDefines.NNavy.ESCAPE_SPEED_SUB_BASE 											= 0.12		-- was 0.08 -- subs get faster escape speed. gets replaced by hidden version below if hidden
 NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB 											= 0.54  	-- was 0.18 -- hidden subs get faster escape speed
