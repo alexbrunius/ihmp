@@ -1,4 +1,9 @@
 # Changelog:
+## 1.9.3.3
+- Manual fleet orders no longer lower organisation.
+- Positioning penalty no longer affects AA efficiency.
+- Field marshall division command limit changed to 6, as setting it to blocked doesn't work (thanks, Paradox).
+
 ## 1.9.3.2
 - Amphibious armour is now classified as special forces, getting benefits from SF tech branch.
 
