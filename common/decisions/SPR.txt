@@ -9161,6 +9161,17 @@ SPR_civil_war_offensives = {
 					}
 				}
 			}
+			modifier = {
+				factor = 100
+				OR = {
+					tag = SPR
+					tag = SPA
+				}
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = SPR_MP_1
+				}
+			}
 		}
 	}
 
@@ -9545,6 +9556,17 @@ SPR_civil_war_offensives = {
 					}
 				}
 			}
+			modifier = {
+				factor = 100
+				OR = {
+					tag = SPR
+					tag = SPA
+				}
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = SPR_MP_1
+				}
+			}
 		}
 	}
 
@@ -9685,6 +9707,17 @@ SPR_civil_war_offensives = {
 						rule = SPR_ai_behavior 
 						option = NATIONALIST_HISTORICAL
 					}
+				}
+			}
+			modifier = {
+				factor = 200
+				OR = {
+					tag = SPR
+					tag = SPA
+				}
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = SPR_MP_1
 				}
 			}
 		}
@@ -9829,6 +9862,17 @@ SPR_civil_war_offensives = {
 					}
 				}
 			}
+			modifier = {
+				factor = 100
+				OR = {
+					tag = SPR
+					tag = SPA
+				}
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = SPR_MP_1
+				}
+			}
 		}
 	}
 
@@ -9969,6 +10013,17 @@ SPR_civil_war_offensives = {
 						rule = SPR_ai_behavior 
 						option = NATIONALIST_HISTORICAL
 					}
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					tag = SPR
+					tag = SPA
+				}
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = SPR_MP_1
 				}
 			}
 		}
@@ -10213,6 +10268,17 @@ SPR_civil_war_offensives = {
 					has_full_control_of_state = 165
 				}
 			}
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+					tag = SPA
+				}
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = SPR_MP_1
+				}
+			}
 		}
 	}
 
@@ -10453,6 +10519,17 @@ SPR_civil_war_offensives = {
 				}
 				NOT = {
 					has_full_control_of_state = 41
+				}
+			}
+			modifier = {
+				factor = 10000
+				OR = {
+					tag = SPR
+					tag = SPA
+				}
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = SPR_MP_1
 				}
 			}
 		}
@@ -10816,6 +10893,14 @@ SPR_civil_war_offensives = {
 				}
 				NOT = {
 					has_full_control_of_state = 170
+				}
+			}
+			modifier = {
+				factor = 100
+				tag = SPD
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = SPR_MP_1
 				}
 			}
 		}
