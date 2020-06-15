@@ -526,7 +526,7 @@ SOV_MP_1_No_Strat = {
 	desc = ""
 
 	enable = {
-		original_tag = SOV
+		tag = SOV
 		has_game_rule = {
 			rule = SOV_ai_behavior
 			option = SOV_MP_1
@@ -589,6 +589,50 @@ SOV_MP_1_No_Strat = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = submarine
+		value = -100
+	}
+}
+
+SOV_No_Volunteers_To_Warlords = {
+
+	enable = {
+		tag = SOV
+		has_game_rule = {
+			rule = SOV_ai_behavior
+			option = SOV_MP_1
+		}
+	}
+	abort = {	
+	}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = GXC
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SHX
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = XSM
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = YUN
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SIK
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = PRC
 		value = -100
 	}
 }

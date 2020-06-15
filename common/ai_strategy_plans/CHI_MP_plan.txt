@@ -96,6 +96,24 @@ CHI_MP_1_Fight = {
 		id = JAP
 		value = 200
 	}
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.4
+		states = { 
+			597
+			743
+		}
+		area = asia
+	}
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.1
+		states = { 
+			613
+			596
+		}
+		area = asia
+	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
