@@ -1134,6 +1134,10 @@
 		}
 
 		completion_reward = {
+			every_state = {
+				limit = { is_core_of = MEN }
+				add_core_of = ROOT
+			}
 			annex_country = { target = MEN transfer_troops = yes }
 		}
 	}
