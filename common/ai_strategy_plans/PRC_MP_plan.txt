@@ -1,0 +1,292 @@
+PRC_MP_1 = {
+	name = "Communist China MP plan"
+	desc = "Multiplayer behavior for Communist China"
+
+	enable = {
+		original_tag = PRC
+		has_game_rule = {
+			rule = PRC_ai_behavior 
+			option = PRC_MP_1
+		}
+		is_subject = no
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		PRC_strengthen_the_central_secretariat #March 10 1936
+		PRC_agrarian_socialism #May 20 1936
+		PRC_rectification_campaign #July 30 1936
+		PRC_land_redistribution #October 10 1936
+		PRC_literacy_programs #December 20 1936
+		PRC_china_medical_university
+		PRC_enforce_the_three_rules #February 30 1937
+		PRC_the_yanan_base_area #May 10 1937
+		PRC_prepare_for_war_with_japan #July 20 1937
+		PRC_ban_the_opium_trade #September 30 1937
+		PRC_abolish_the_land_rent #December 10 1937
+		PRC_protracted_warfare #February 20 1938
+		PRC_peoples_war #April 30 1938
+		PRC_maoism #July 10 1938
+		CHI_invite_foreign_investors #September 20 1938
+		PRC_revolutionary_military_commission #November 30 1938
+		PRC_central_military_commission #February 10 1939
+		PRC_peoples_liberation_army #April 20 1939
+		PRC_focus_on_china #June 30 1939
+		PRC_infiltration #September 10 1939
+		CHI_mission_to_the_soviet_union #November 20 1939
+		CHI_rapprochement_with_soviet_union #January 30 1940
+		CHI_purchase_tanks #April 10 1940
+		CHI_experimental_mechanised_unit #June 20 1940
+		CHI_combined_arms_warfare #August 30 1940
+		 #November 10 1940	
+		 #January 20 1941	
+		 #March 30 1941	
+		 #June 10 1941	
+		 #August 20 1941	
+		 #October 30 1941	
+		 #January 10	
+		 #March 20 1942	
+		 #May 30 1942	
+		 #August 10 1942	
+		 #October 20 1942	
+		 #December 30 1942	
+		 #March 10 1943	
+		 #May 20 1943	
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		#manpower
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+		#trade
+		export_focus = 0
+		limited_exports = 0
+		#economy
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 0
+		war_economy = 1
+		#poltical advisor
+		PRC_lin_bojiu = 0
+		PRC_zhou_enlai = 0
+		PRC_kang_sheng = 0
+		PRC_liu_shaoqi = 500
+		#theorist
+		PRC_liu_bocheng = 10
+		PRC_hsia_tian = 0
+		PRC_zhang_wei = 0
+		#staff
+		PRC_gao_gang = 0
+		PRC_fang_zeyi = 0
+		PRC_liang_shen = 0
+		PRC_chen_geng = 0
+		PRC_chen_yi = 0
+		PRC_deng_ye_peng = 0
+		PRC_su_yu = 0
+		PRC_otto_braun = 0
+	}
+
+	focus_factors = {
+		CHI_one_china_policy = 0
+		PRC_socialism_with_chinese_characteristics = 0
+		PRC_proclaim_the_peoples_republic = 0
+		PRC_socialist_market_economy = 0
+		PRC_exploit_the_weak_neighbours = 0
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "JAP"
+		value = -500
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+PRC_MP_Silent_Worhorse = {
+	name = "PRC MP Silent Workhorse"
+	desc = "research electronic_mechanical_engineering"
+
+	enable = {
+		original_tag = PRC
+		has_game_rule = {
+			rule = PRC_ai_behavior 
+			option = PRC_MP_1
+		}
+		NOT = { has_idea = PRC_liu_shaoqi }
+	}
+	
+	abort = {
+		has_idea = PRC_liu_shaoqi 
+	}
+
+	ideas = {
+		PRC_liu_bocheng = 0
+	}
+}
+
+PRC_MP_Electronics_1 = {
+	name = "PRC MP Electronics 1"
+	desc = "research electronic_mechanical_engineering"
+
+	enable = {
+		original_tag = PRC
+		has_game_rule = {
+			rule = PRC_ai_behavior 
+			option = PRC_MP_1
+		}
+		NOT = { has_tech = mechanical_computing }
+		NOT = { is_researching_technology = mechanical_computing }
+	}
+	
+	abort = {
+		has_tech = mechanical_computing 
+		is_researching_technology = mechanical_computing
+	}
+
+	research = {
+		electronics = 10000
+		construction_tech = -5000
+	}
+}
+
+PRC_MP_Weapons_1 = {
+	name = "PRC MP Weapons 1"
+	desc = "Resarch weapons 1 quick for better stats"
+
+	enable = {
+		original_tag = PRC
+		has_game_rule = {
+			rule = PRC_ai_behavior 
+			option = PRC_MP_1
+		}
+		NOT = { has_tech = infantry_weapons1 }
+	}
+	
+	abort = {
+		OR = {
+			has_tech = infantry_weapons1
+			is_researching_technology = infantry_weapons1
+		}
+	}
+
+	research = {
+		infantry_weapons = 1000
+	}
+}
+
+PRC_MP_1_Alliance = {
+	name = "Ally China"
+	desc = "Be a good friend and ally China against Japan"
+
+	enable = {
+		original_tag = PRC
+		has_game_rule = {
+			rule = PRC_ai_behavior
+			option = PRC_MP_1
+		}
+		is_subject = no
+	}
+
+	abort = {
+		is_subject = yes
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = CHI
+		value = 200
+	}
+}
+
+PRC_MP_Infrastructure_1 = {
+	name = "PRC Infrastructure"
+	desc = "Build Level 5 Infrastructure for Ressources"
+
+	enable = {
+		original_tag = PRC
+		has_game_rule = {
+			rule = PRC_ai_behavior
+			option = PRC_MP_1
+		}
+		622 = {
+			is_controlled_by = PRC
+			infrastructure < 5
+		}
+	}
+
+	abort = {
+		622 = {
+			OR ={
+				NOT = { is_controlled_by = PRC }
+				NOT = { infrastructure < 5 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 622
+		value = 1
+	}
+}
+
+PRC_MP_W1_Production = {
+	name = "Produce Weapons 1"
+	desc = "The Human Wave needs more Guns"
+
+	enable = {
+		original_tag = PRC
+		has_game_rule = {
+			rule = PRC_ai_behavior
+			option = PRC_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = infantry_equipment
+		value = 100
+	}
+}
+
+PRC_No_expedtionary_forces = {
+	name = "As PRC keep all forces for yourself"
+	desc = "We are friendly to China, but not THAT friendly"
+
+	enable = {
+		original_tag = PRC
+		has_game_rule = {
+			rule = PRC_ai_behavior
+			option = PRC_MP_1
+		}
+	}
+
+	abort = {
+		is_subject = yes
+	}
+
+	ai_strategy = {
+		type = spare_unit_factor
+		value = 100
+	}
+
+}

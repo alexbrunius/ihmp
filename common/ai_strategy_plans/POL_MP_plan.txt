@@ -527,3 +527,70 @@ MP_Spy_Defense = {
 		value = -100
 	}
 }
+
+POL_MP_No_Kresy_Factories = {
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+		has_capitulated = no
+	}
+
+	abort = {
+		has_capitulated = yes
+	}
+
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  89
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  91
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  93
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  94
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  95
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  96
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  97
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  784
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  10
+        value = 100
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  88
+        value = 50
+    }
+}

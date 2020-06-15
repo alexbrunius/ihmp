@@ -19,19 +19,23 @@ ROM_MP_1 = {
 		ROM_institute_royal_dictatorship
 		ROM_revise_the_constitution
 		ROM_the_royal_foundation
-		ROM_king_michaels_coup
-		ROM_flexible_foreign_policy
-		ROM_appoint_german_friendly_government
+		#ROM_king_michaels_coup
+		#ROM_flexible_foreign_policy
+		#ROM_appoint_german_friendly_government
+		ROM_fortify_the_borders
+		ROM_his_majestys_loyal_government
+		ROM_militarize_the_sentinels
+		ROM_all_parties_must_end
 		ROM_preserve_greater_romania
 		ROM_civil_works
 		ROM_agrarian_reform
 		ROM_danubian_transport_network
 		ROM_malaxa
 		ROM_hunedoara_steel_works
-		ROM_a_deal_with_the_devil
-		ROM_form_peasant_militias
 		ROM_invest_in_the_iar
 		ROM_expand_ploiesti_oil_production
+		ROM_a_deal_with_the_devil
+		ROM_form_peasant_militias
 		ROM_expand_the_university_of_bucharest
 		ROM_expand_the_air_force
 		ROM_trade_treaty_with_germany

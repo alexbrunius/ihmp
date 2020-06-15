@@ -678,7 +678,7 @@ FRA_MP_Antagonize = {
 	desc = ""
 
 	enable = {
-		original_tag = FRA
+		tag = FRA
 		OR = {
 			has_game_rule = {
 				rule = FRA_ai_behavior
@@ -798,4 +798,188 @@ MP_Spy_Defense = {
 		mission = counter_intelligence
 		value = 100
 	}
+}
+
+FRA_MP_Algier_Infrastructure = {
+	name = "Algier Infrastructure"
+	desc = "Build Level 10 Infrastructure in Algier"
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		459 = {
+			is_controlled_by = FRA
+			infrastructure < 10
+		}
+	}
+
+	abort = {
+		has_capitulated = yes
+		459 = {
+			OR ={
+				NOT = { is_controlled_by = FRA }
+				NOT = { infrastructure < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 459
+		value = 10
+	}
+}
+
+FRA_MP_No_Europe_Factories = {
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+	}
+
+	abort = {
+		has_capitulated = yes
+	}
+
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  1
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  14
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  15
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  16
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  17
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  18
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  19
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  20
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  21
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  22
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  23
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  24
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  25
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  26
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  27
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  28
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  29
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  30
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  31
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  32
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  33
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  735
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  785
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  459
+        value = 100
+    }
 }
