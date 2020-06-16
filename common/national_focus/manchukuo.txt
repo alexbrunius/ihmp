@@ -186,7 +186,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 			every_state = {
-				limit = { has_state_flag = GER_industrial_effort_2_2IC }
+				limit = { has_state_flag = MAN_invite_japanese_settlers_2IC }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -198,7 +198,10 @@
 
 		completion_reward = {
 			random_owned_state = {
-				limit = { is_fully_controlled_by = ROOT }
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_core_of = ROOT
+				}
 				add_manpower = 25417
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -209,7 +212,10 @@
 				set_state_flag = MAN_invite_japanese_settlers_2IC
 			}
 			random_owned_state = {
-				limit = { is_fully_controlled_by = ROOT }
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_core_of = ROOT
+				}
 				add_manpower = 33846
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -435,6 +441,7 @@
 			random_owned_controlled_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
+					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -611,6 +618,7 @@
 				prioritize = { 328 }
 				limit = {
 					is_fully_controlled_by = ROOT
+					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
