@@ -1251,7 +1251,7 @@ PRC_ai_behavior = {
 	name = "PRC_AI_BEHAVIOR"
 	required_dlc = "Waking the Tiger"
 	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -1271,6 +1271,11 @@ PRC_ai_behavior = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+	default = {
+		name = PRC_MP_1
+		text = "RULE_OPTION_PRC_MP_1"
+		desc = "RULE_OPTION_PRC_MP_1_DESC"
 	}
 }
 MAN_ai_behavior = {
@@ -1502,7 +1507,7 @@ SPR_ai_behavior = {
 	name = "SPR_AI_BEHAVIOR"
 	required_dlc = "La Resistance"
 	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -1547,6 +1552,11 @@ SPR_ai_behavior = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+	default = {
+		name = SPR_MP_1
+		text = "RULE_OPTION_SPR_MP_1"
+		desc = "RULE_OPTION_SPR_MP_1_DESC"
 	}
 }
 
