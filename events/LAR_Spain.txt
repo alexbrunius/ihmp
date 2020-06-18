@@ -4503,6 +4503,10 @@ country_event = {
 						rule = SPR_ai_behavior 
 						option = NATIONALIST_HISTORICAL
 					}
+					has_game_rule = {
+						rule = SPR_ai_behavior 
+						option = SPR_MP_1
+					}
 				}
 			}
 		}
@@ -4547,6 +4551,10 @@ country_event = {
 					has_game_rule = {
 						rule = SPR_ai_behavior 
 						option = NATIONALIST_HISTORICAL
+					}
+					has_game_rule = {
+						rule = SPR_ai_behavior 
+						option = SPR_MP_1
 					}
 				}
 			}
@@ -4639,6 +4647,10 @@ country_event = {
 						rule = SPR_ai_behavior 
 						option = SECOND_REPUBLIC
 					}
+					has_game_rule = {
+						rule = SPR_ai_behavior 
+						option = SPR_MP_1
+					}
 				}
 			}
 		}
@@ -4691,6 +4703,13 @@ country_event = {
 						rule = SPR_ai_behavior 
 						option = STALINIST
 					}
+				}
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = SPR_MP_1
 				}
 			}
 		}
