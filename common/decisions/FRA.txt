@@ -1011,6 +1011,32 @@ economy_decisions = {
 			factor = 10
 			modifier = {
 				has_war = no
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = FRA_ai_behavior
+							option = FRA_MP_1
+						}
+						has_game_rule = {
+							rule = FRA_ai_behavior
+							option = FRA_MP_2
+						}
+					}
+				}
+				factor = 0
+			}
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_1
+					}
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_2
+					}
+				}
+				communism > 0.25
 				factor = 0
 			}
 		}
