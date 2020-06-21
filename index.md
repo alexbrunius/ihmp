@@ -1,4 +1,8 @@
 # Changelog:
+## 1.9.3.4
+- Fix Moscow Strategic region having no weather. Brilliant German strategy of avoiding mud and winter is thus foiled.
+- Mobile Infantry doctrine now also affects MOT RART amd MRART and MOT REC.
+
 ## 1.9.3.3
 - Manual fleet orders no longer lower organisation.
 - Positioning penalty no longer affects AA efficiency.
