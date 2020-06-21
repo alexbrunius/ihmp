@@ -180,6 +180,18 @@ technologies = {
 			maximum_speed = 0.1
 			default_morale = 0.13
 		}
+		motorized_rocket_brigade = {
+			maximum_speed = 0.1
+			default_morale = 0.13
+		}
+		mot_rocket_artillery_brigade = {
+			maximum_speed = 0.1
+			default_morale = 0.13
+		}
+		mot_recon = {
+			maximum_speed = 0.1
+			default_morale = 0.13
+		}
 		mot_anti_tank_brigade = {
 			maximum_speed = 0.1
 			default_morale = 0.13
