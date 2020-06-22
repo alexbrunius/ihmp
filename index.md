@@ -1,4 +1,10 @@
 # Changelog:
+## 1.9.3.5
+- Fix Italy NF tree not getting  proper naval air research bonus like all other NF trees do.
+- All carrier module slots that take secondaries now can take AA and vice versa.
+- Remove 1 ahead of time MECH from SOV.
+- Lessons of war now lowers the purge penalty by 3 levels instead of removing it completely.
+
 ## 1.9.3.4
 - Fix Moscow Strategic region having no weather. Brilliant German strategy of avoiding mud and winter is thus foiled.
 - Mobile Infantry doctrine now also affects MOT RART amd MRART and MOT REC.
