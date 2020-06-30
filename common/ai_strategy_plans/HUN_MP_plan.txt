@@ -179,7 +179,7 @@ HUN_MP_2 = {
 
 }
 
-HUN_MP_Alliance = {
+HUN_MP_Ideas = {
 	name = "Hungarian-German Alliance"
 	desc = ""
 
