@@ -1,0 +1,305 @@
+FREE_FRA_MP_1 = {
+	name = "Free France Multiplayer 1"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		has_game_rule = {
+			rule = FREE_FRA_ai_behavior
+			option = FREE_FRA_MP_1
+		}
+		has_capitulated = yes
+	}
+
+	abort = {
+		has_capitulated = no
+		has_completed_focus = FRA_form_the_provisional_government_of_the_republic
+	}
+
+	ai_national_focuses = {
+		FRA_refus_absurde
+		FRA_the_maquis
+		FRA_connections_to_industrialists
+		FRA_appeal_to_the_french_nation
+		FRA_appeal_to_overseas_territories
+		FRA_continue_the_fight
+		FRA_intervention_in_syria
+		FRA_intervention_in_central_africa
+		FRA_intervention_in_west_africa
+		FRA_intervention_in_madagascar
+		FRA_intervention_in_north_africa
+		FRA_form_the_national_committee
+		FRA_form_the_provisional_government_of_the_republic
+		FRA_reach_out_to_trade_unions
+		FRA_cooperation_with_the_communists
+		FRA_the_civil_and_military_organization
+		FRA_national_council_of_the_resistance
+	}
+
+	research = {
+		synth_resources = -1000
+		air_doctrine = -1000
+		naval_equipment = -1000
+		naval_doctrine = -1000
+	}
+
+	ideas = {
+		free_trade = 0
+		export_focus = 0
+		limited_exports = 1
+		closed_economy = 0
+		war_economy = 2000
+		partial_economic_mobilisation = 100
+		civilian_economy = 0
+		disarmed_nation = 0
+		volunteer_only = 0
+		FRA_gaston_henry_haye = 1000
+		henri_giraud = 30
+		maxime_weygand = 20
+		FRA_zivony_peshkov = 5
+		FRA_paul_baudouin = 0
+		FRA_charles_tillon = 0
+		charles_de_gaulle = 0
+		louis_kahn = 0
+		jean_decoux = 0
+		victor_denain = 0
+		jean_marie_bergeret = 0
+		frederic_irene_joliot_curie = 0
+		georges_bonnet = 0
+		FRA_panhard = 0
+		FRA_roger_salengro = 0
+	}
+
+	ai_strategy = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+FRA_MP_NoPlanes = {
+	name = "No Plane Production"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		has_game_rule = {
+			rule = FREE_FRA_ai_behavior
+			option = FREE_FRA_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = scout_plane
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = scout_plane
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = screen_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = submarine
+		value = -100
+	}
+}
+
+
+FRA_MP_Antagonize = {
+	name = "Antagonize Axis for no Trade"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		has_game_rule = {
+			rule = FREE_FRA_ai_behavior
+			option = FREE_FRA_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = GER
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = ITA
+		value = 200
+	}	
+	ai_strategy = {
+		type = antagonize
+		id = JAP
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = ROM
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = HUN
+		value = 200
+	}
+}
+
+FRA_MP_Ignore = {
+	name = "Ignore Baltic for Soviet"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		has_game_rule = {
+			rule = FREE_FRA_ai_behavior
+			option = FREE_FRA_MP_1
+		}
+	}
+
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = LIT
+		value = 200
+	}
+	ai_strategy = {
+		type = ignore
+		id = LAT
+		value = 200
+	}
+	ai_strategy = {
+		type = ignore
+		id = EST
+		value = 200
+	}
+	ai_strategy = {
+		type = ignore
+		id = FIN
+		value = 200
+	}
+}
+
+MP_Spy_Defense = {
+	name = "Spy Defense"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		has_game_rule = {
+			rule = FREE_FRA_ai_behavior
+			option = FREE_FRA_MP_1
+		}
+		date < 1938.1.1	
+	}
+
+	abort = {
+		date > 1938.1.1
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+	ai_strategy = {
+		type = agency_ai_base_num_factories_factor
+		value = -100    # -100% on the define
+	}
+	ai_strategy = {
+		type = agency_ai_per_upgrade_factories_factor
+		value = -100    # -100% on the define
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 100
+	}
+}

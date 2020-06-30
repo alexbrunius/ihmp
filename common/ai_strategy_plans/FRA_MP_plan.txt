@@ -3,14 +3,16 @@ FRA_MP_1 = {
 	desc = "Form the Popular Front"
 
 	enable = {
-		original_tag = FRA
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_1
-			}	
+		tag = FRA
+		has_game_rule = {
+			rule = FRA_ai_behavior
+			option = FRA_MP_1
+		}
+		has_capitulated = no
 	}
 
 	abort = {
+		has_capitulated = yes
 	}
 
 	ai_national_focuses = {
@@ -33,27 +35,26 @@ FRA_MP_1 = {
 		FRA_heavy_armor_focus
 		#1939
 		FRA_army_reform
-		FRA_go_with_britain
 		FRA_the_blum_viollette_proposal
+		FRA_devalue_the_franc
 		FRA_expand_the_citizenship
 		FRA_encourage_immigration
 		#1940
-		FRA_devalue_the_franc
+		FRA_reorganize_the_aviation_industry
+		FRA_general_work_council
+		FRA_go_with_britain
 		FRA_invest_in_the_colonies
 		FRA_algerie_france
+		#1941
 		FRA_invest_in_west_africa
 		FRA_invest_in_syria
-		#1941
 		FRA_colonial_industry
 		FRA_extra_research_slot_2
+		FRA_national_champions
 		FRA_invest_in_the_metropole
 		FRA_industrial_expansion
 		FRA_extra_research_slot
 		#1942
-		
-		
-		 
-		
 	}
 
 	research = {
@@ -65,15 +66,18 @@ FRA_MP_1 = {
 
 	ideas = {
 		free_trade = 0
-		export_focus = 600
+		export_focus = 1
 		limited_exports = 0
 		closed_economy = 0
-		war_economy = 200
+		war_economy = 2000
 		partial_economic_mobilisation = 100
+		civilian_economy = 0
+		disarmed_nation = 0
+		volunteer_only = 0
 		FRA_gaston_henry_haye = 1000
 		henri_giraud = 30
 		maxime_weygand = 20
-		FRA_zivony_peshkov = 20
+		FRA_zivony_peshkov = 5
 		FRA_paul_baudouin = 0
 		FRA_charles_tillon = 0
 		charles_de_gaulle = 0
@@ -105,14 +109,16 @@ FRA_MP_2 = {
 	desc = "Revive the National Bloc"
 
 	enable = {
-		original_tag = FRA
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_2
-			}	
+		tag = FRA
+		has_game_rule = {
+			rule = FRA_ai_behavior
+			option = FRA_MP_2
+		}
+		has_capitulated = no
 	}
 
 	abort = {
+		has_capitulated = yes
 	}
 
 	ai_national_focuses = {
@@ -135,14 +141,13 @@ FRA_MP_2 = {
 		FRA_heavy_armor_focus
 		#1939
 		FRA_army_reform
-		FRA_go_with_britain
 		FRA_ban_communism
 		FRA_the_blum_viollette_proposal
 		FRA_expand_the_citizenship
 		FRA_encourage_immigration
 		#1940
-		FRA_arms_purchases_in_the_us
 		FRA_devalue_the_franc
+		FRA_go_with_britain
 		FRA_invest_in_the_colonies
 		FRA_algerie_france
 		FRA_invest_in_west_africa
@@ -165,15 +170,18 @@ FRA_MP_2 = {
 
 	ideas = {
 		free_trade = 0
-		export_focus = 600
+		export_focus = 1
 		limited_exports = 0
 		closed_economy = 0
-		war_economy = 200
+		war_economy = 2000
 		partial_economic_mobilisation = 100
+		civilian_economy = 0
+		disarmed_nation = 0
+		volunteer_only = 0
 		FRA_gaston_henry_haye = 1000
 		henri_giraud = 30
 		maxime_weygand = 20
-		FRA_zivony_peshkov = 20
+		FRA_zivony_peshkov = 5
 		FRA_paul_baudouin = 0
 		FRA_charles_tillon = 0
 		charles_de_gaulle = 0
@@ -231,6 +239,7 @@ FRA_MP_Advisors = {
 	}
 
 	ideas = {
+		FRA_zivony_peshkov = 0
 		FRA_felix_gouin = 0
 		FRA_paul_reynaud = 0
 		francois_darlan = 0
@@ -267,6 +276,10 @@ FRA_MP_Advisors = {
 		FRA_pierre_pucheu = 0
 		FRA_maurice_gauche = 0
 		generic_head_of_intelligence = 0
+		#army chief
+		FRA_henri_marie_auguste_bineau = 0
+		FRA_pierre_alombert_goget = 0
+		alphonse_georges = 0
 	}
 	
 	ai_strategy = {
@@ -409,7 +422,7 @@ FRA_MP_NoLandDoctrine = {
 	}
 	
 	abort = {
-		NOT { has_idea = FRA_victors_of_wwi }
+		NOT = { has_idea = FRA_victors_of_wwi }
 	}
 	
 	research = {
@@ -539,7 +552,24 @@ FRA_MP_Europe = {
 	abort = {
 		date > 1940.6.1
 	}
-
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = BRA
+		tag = SPR
+		tag = SPA
+		tag = SPB
+		tag = SPC
+		tag = SPD
+		tag = BRA
+		tag = LIB
+		tag = TUR
+		tag = IRQ
+		tag = GXC
+		tag = YUN
+		tag = SIA
+		value = -200
+	}
+	
 	ai_strategy = {
 		type = area_priority
 		id = europe
@@ -560,60 +590,15 @@ FRA_MP_Europe = {
 		id = suez
 		value = -10000
 	}
-	ai_strategy = {
-		type = ignore
-		id = BRA
-		value = 1000
-	}
-	ai_strategy = {
-		type = ignore
-		id = SPR
-		value = 1000
-	}
-	ai_strategy = {
-		type = ignore
-		id = SPA
-		value = 1000
-	}
-	ai_strategy = {
-		type = ignore
-		id = LIB
-		value = 1000
-	}
-	ai_strategy = {
-		type = ignore
-		id = TUR
-		value = 1000
-	}
-	ai_strategy = {
-		type = ignore
-		id = IRQ
-		value = 1000
-	}
-	ai_strategy = {
-		type = ignore
-		id = GXC
-		value = 1000
-	}
-	ai_strategy = {
-		type = ignore
-		id = YUN
-		value = 1000
-	}
-	ai_strategy = {
-		type = ignore
-		id = SIA
-		value = 1000
-	}
 }
 
 
 FRA_MP_Belgium = {
 	name = "Prepare some troops on the Belgian Border"
-	desc = ""
+	desc = "Garrision Calais States with half the French Army"
 
 	enable = {
-		original_tag = FRA
+		tag = FRA
 		OR = {
 			has_game_rule = {
 				rule = FRA_ai_behavior
@@ -628,14 +613,37 @@ FRA_MP_Belgium = {
 	}
 
 	abort = {
-		date > 1940.6.1
+		BEL = { is_in_faction_with = FRA }
 	}
-	
+
+#	ai_strategy = {
+#		type = put_unit_buffers
+#		ratio = 1
+#		states = {
+#			18
+#			29
+#			785
+#		}
+#		area = europe
+#	}
+#	ai_strategy = {
+#	 	type = front_control
+#		tag = BEL
+#		area = europe
+#
+#		ratio = 0.0
+#		priority = 5
+#		ordertype = front
+#	}
 	ai_strategy = {
-		type = prepare_for_war
+		type = conquer
 		id = BEL
 		value = 100
-	
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		area = africa
+		value = -200				# will be added as a factor over regular requests
 	}
 }
 
@@ -658,7 +666,8 @@ FRA_MP_Axis = {
 		date < 1940.1.1
 	}
 
-	abort = { date > 1940.1.1
+	abort = {
+		date > 1940.1.1
 	}
 	
 	ai_strategy = {
@@ -669,7 +678,12 @@ FRA_MP_Axis = {
 	ai_strategy = {
 		type = conquer
 		id = ITA
-		value = 200
+		value = 400
+	}
+	ai_strategy = {
+		type = invade
+		id = GER
+		value = -400
 	}
 }
 
@@ -693,7 +707,17 @@ FRA_MP_Antagonize = {
 
 	abort = {
 	}
-	
+
+	ai_strategy = {
+		type = antagonize
+		id = GER
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = ITA
+		value = 200
+	}	
 	ai_strategy = {
 		type = antagonize
 		id = JAP
@@ -708,6 +732,57 @@ FRA_MP_Antagonize = {
 		type = antagonize
 		id = HUN
 		value = 200
+	}
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.2
+		states = {
+			16
+		}
+		area = europe
+	}
+}
+
+FRA_MP_Allies = {
+	name = "Protect Poland and ally UK"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = protect
+		id = POL
+		value = 400
+	}
+	ai_strategy = {
+		type = alliance
+		id = POL
+		value = 400
+	}
+	ai_strategy = {
+		type = alliance
+		id = ENG
+		value = 400
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = -200
 	}
 }
 
@@ -838,6 +913,58 @@ FRA_MP_Algier_Infrastructure = {
 		id = infrastructure
 		target = 459
 		value = 10
+	}
+}
+
+FRA_MP_Civilian_1 = {
+	name = "Build Civ in Algier"
+	desc = "If Algier has Level 10 Infra, build Civ there"
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		date < 1938.6.1
+		459 = {
+			is_controlled_by = FRA
+			NOT = { infrastructure < 10 }
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = no
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			date > 1939.1.1
+			459 = {
+				OR ={
+					NOT = { is_controlled_by = FRA }
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = no
+					}
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 459
+		value = 6
 	}
 }
 

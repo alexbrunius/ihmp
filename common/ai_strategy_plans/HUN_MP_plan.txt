@@ -43,6 +43,7 @@ HUN_MP_1 = {
 	research = {
 		armor = -100
 		cat_mobile_warfare = -1000
+		cat_superior_firepower = -1000
 		cat_grand_battle_plan = -1000
 		cat_strategic_destruction = -1000
 		cat_operational_integrity = -1000
@@ -50,20 +51,18 @@ HUN_MP_1 = {
 	}
 
 	ideas = {
-		HUN_zoltan_tildy = 100
+		HUN_zoltan_tildy = 100 # Silent Workhorse
 		free_trade = 150
 		export_focus = 0
 		limited_exports = 0
 		closed_economy = 0
 		HUN_lajos_remenyi_schneller = 20
 		HUN_mavag = 10
-		HUN_shvoy_kalman = -100
 		HUN_gyorgy_jendrassik = 3
 		civilian_economy = 0
 		low_economic_mobilisation = 0
 		partial_economic_mobilisation = 0
 		war_economy = 1
-		limited_conscription = 10
 		extensive_conscription = 20
 	}
 
@@ -149,7 +148,6 @@ HUN_MP_2 = {
 		closed_economy = 0
 		HUN_lajos_remenyi_schneller = 20
 		HUN_mavag = 10
-		HUN_shvoy_kalman = -100
 		HUN_gyorgy_jendrassik = 3
 		civilian_economy = 0
 		low_economic_mobilisation = 0
@@ -181,6 +179,98 @@ HUN_MP_2 = {
 
 }
 
+HUN_MP_Alliance = {
+	name = "Hungarian-German Alliance"
+	desc = ""
+
+	enable = {
+		tag = HUN
+		OR = {
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_1
+			}
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+
+	ideas = {
+		HUN_kalman_kanya = 0
+		HUN_gusztav_gratz = 0
+		HUN_kalman_daranyi = 0
+		HUN_laszlo_rajk = 0
+		HUN_jozsef_szell = 0
+		HUN_gyula_gombos_de_jakfa = 0
+		HUN_francois_deak = 0
+		HUN_jeno_ratz = 0
+		generic_medium_aircraft_manufacturer = 0
+		generic_heavy_aircraft_manufacturer = 0
+		generic_naval_aircraft_manufacturer = 0
+		generic_electronics_concern = 0
+		generic_motorized_equipment_manufacturer = 0
+		HUN_ferenc_szombathelyi = 0
+	}
+}
+
+HUN_MP_Advisors = {
+	name = "Blocked Advisors till Conscription"
+	desc = ""
+
+	enable = {
+		tag = HUN
+		OR = {
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_1
+			}
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_2
+			}
+		}
+		NOT = { has_idea = limited_conscription }
+	}
+
+	abort = {
+		has_idea = limited_conscription
+	}
+
+	ideas = {
+		limited_conscription = 100
+		HUN_lajos_remenyi_schneller = 0
+		HUN_mavag = 0
+		HUN_vilmos_roder = 0
+		HUN_shvoy_kalman = 0
+		HUN_reszo_kastner = 0
+		HUN_gusztav_jany = 0
+		HUN_dezso_laszlo = 0
+		HUN_henrik_werth = 0
+		mw_aircraft = 0
+		HUN_ganz_danubius = 0
+		HUN_femaru_fegyver_es_gepgyar = 0
+		generic_artillery_manufacturer = 0
+		generic_tank_manufacturer = 0
+		HUN_hugo_sonyi = 0
+	}
+	
+	ai_strategy = {
+		type = pp_spend_priority
+		id = general
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = -1000
+	}
+}
 
 HUN_MP_Alliance = {
 	name = "Hungarian-German Alliance"
