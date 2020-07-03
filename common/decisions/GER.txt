@@ -367,9 +367,13 @@ GER_case_anton_category = {
 					has_government = fascism
 					NOT = { has_war_with = GER }
 					NOT = { has_country_flag = case_anton }
+					has_global_flag = {
+						flag = achievement_france_surrender
+						days > 150
+					}
 					custom_trigger_tooltip = {
 						tooltip = GER_case_anton_tt2
-						OR = {
+						AND = {
 							462 = { CONTROLLER = { has_war_with = ROOT } }
 							461 = { CONTROLLER = { has_war_with = ROOT } }
 							513 = { CONTROLLER = { has_war_with = ROOT } }
@@ -386,6 +390,10 @@ GER_case_anton_category = {
 				# DDay (lost coastal state from Bordeaux to Jutland
 				custom_trigger_tooltip = {
 					tooltip = GER_case_anton_tt3
+					has_global_flag = {
+						flag = achievement_france_surrender
+						days > 150
+					}
 					OR = {
 						# occupied zone
 						19  = { CONTROLLER = { has_war_with = ROOT } }

@@ -999,7 +999,7 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = FRA
+				original_tag = FRA
 				date < 1941.1.1
 				factor = 0
 			}
@@ -1048,7 +1048,7 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = FRA
+				original_tag = FRA
 				date < 1941.1.1
 				factor = 0
 			}
