@@ -19,9 +19,9 @@ FREE_FRA_MP_1 = {
 	ai_national_focuses = {
 		FRA_refus_absurde
 		FRA_the_maquis
-		FRA_connections_to_industrialists
 		FRA_appeal_to_the_french_nation
 		FRA_appeal_to_overseas_territories
+		FRA_connections_to_industrialists
 		FRA_continue_the_fight
 		FRA_intervention_in_syria
 		FRA_intervention_in_central_africa

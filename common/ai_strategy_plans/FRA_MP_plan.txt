@@ -25,18 +25,18 @@ FRA_MP_1 = {
 		FRA_defensive_strategems
 		FRA_begin_rearmament
 		FRA_nationalize_key_industry
+		FRA_the_blum_viollette_proposal
 		FRA_form_the_state_arsenals
-		FRA_ban_the_leagues
-		#1938
 		FRA_defensive_focus
+		#1938
 		FRA_firepower_kills
 		FRA_infantry_focus
 		FRA_artillery_focus
 		FRA_heavy_armor_focus
-		#1939
 		FRA_army_reform
-		FRA_the_blum_viollette_proposal
+		#1939
 		FRA_devalue_the_franc
+		FRA_ban_the_leagues
 		FRA_expand_the_citizenship
 		FRA_encourage_immigration
 		#1940
@@ -65,30 +65,6 @@ FRA_MP_1 = {
 	}
 
 	ideas = {
-		free_trade = 0
-		export_focus = 1
-		limited_exports = 0
-		closed_economy = 0
-		war_economy = 2000
-		partial_economic_mobilisation = 100
-		civilian_economy = 0
-		disarmed_nation = 0
-		volunteer_only = 0
-		FRA_gaston_henry_haye = 1000
-		henri_giraud = 30
-		maxime_weygand = 20
-		FRA_zivony_peshkov = 5
-		FRA_paul_baudouin = 0
-		FRA_charles_tillon = 0
-		charles_de_gaulle = 0
-		louis_kahn = 0
-		jean_decoux = 0
-		victor_denain = 0
-		jean_marie_bergeret = 0
-		frederic_irene_joliot_curie = 0
-		georges_bonnet = 0
-		FRA_panhard = 0
-		FRA_roger_salengro = 0
 	}
 
 	ai_strategy = {
@@ -169,13 +145,49 @@ FRA_MP_2 = {
 	}
 
 	ideas = {
+	}
+
+	ai_strategy = {
+	}
+
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+FRA_MP_Ideas = {
+	name = "France Ideas"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+
+	ideas = {
+		civilian_economy = 0
 		free_trade = 0
 		export_focus = 1
 		limited_exports = 0
 		closed_economy = 0
-		war_economy = 2000
-		partial_economic_mobilisation = 100
-		civilian_economy = 0
 		disarmed_nation = 0
 		volunteer_only = 0
 		FRA_gaston_henry_haye = 1000
@@ -194,18 +206,122 @@ FRA_MP_2 = {
 		FRA_panhard = 0
 		FRA_roger_salengro = 0
 	}
+}
 
-	ai_strategy = {
+FRA_MP_Early_Mob = {
+	name = "France Early Mobilisation"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
 	}
 
+	abort = {
+		has_idea = partial_economic_mobilisation
+	}
 
-	# Keep small, as it is used as a factor for some things (such as research needs)
-	# Recommended around 1.0. Useful for relation between plans
-	weight = {
-		factor = 1.0
-		modifier = {
-			factor = 1.0
+	ideas = {
+		partial_economic_mobilisation = 10
+		low_economic_mobilisation = 1
+		civilian_economy = 0
+	}
+}
+
+FRA_MP_Partial_Mob = {
+	name = "France Partial Mobilisation"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
 		}
+	}
+
+	abort = {
+		has_idea = war_economy
+	}
+
+	ideas = {
+		war_economy = 20
+		partial_economic_mobilisation = 10
+		low_economic_mobilisation = 0
+		civilian_economy = 0
+	}
+}
+
+FRA_MP_War_Eco = {
+	name = "France War Eco"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+		has_idea = tot_economic_mobilisation
+	}
+
+	ideas = {
+		tot_economic_mobilisation = 30
+		war_economy = 20
+		partial_economic_mobilisation = 0
+		low_economic_mobilisation = 0
+		civilian_economy = 0
+	}
+}
+
+FRA_MP_Extensive_Conscription = {
+	name = "France Extensive Conscription"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_idea = extensive_conscription
+	}
+
+	abort = {
+	}
+
+	ideas = {
+		limited_conscription = 0
 	}
 }
 
@@ -381,6 +497,11 @@ FRA_MP_NoPlanes = {
 		value = -1000
 	}
 	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = scout_plane_equipment
+		value = -1000
+	}
+	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
 		value = -100
@@ -388,6 +509,16 @@ FRA_MP_NoPlanes = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = screen_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = capital_ship
 		value = -100
 	}
 	ai_strategy = {
@@ -557,10 +688,8 @@ FRA_MP_Europe = {
 		tag = BRA
 		tag = SPR
 		tag = SPA
-		tag = SPB
-		tag = SPC
 		tag = SPD
-		tag = BRA
+		tag = RAJ
 		tag = LIB
 		tag = TUR
 		tag = IRQ
@@ -571,24 +700,16 @@ FRA_MP_Europe = {
 	}
 	
 	ai_strategy = {
-		type = area_priority
-		id = europe
-		value = 10000
-	}
-	ai_strategy = {
-		type = area_priority
-		id = asia
-		value = -10000
-	}
-	ai_strategy = {
-		type = area_priority
-		id = africa
-		value = -10000
-	}
-	ai_strategy = {
-		type = area_priority
-		id = suez
-		value = -10000
+	 	type = front_unit_request
+		state = 551 #Khartum
+		state = 549 #Sudan
+		state = 547 #Kenia
+		state = 269 #Somaliland (ENG)
+		state = 268 #Somaliland (FRA)
+		state = 271 #Ethopia
+		state = 550 #Eritrea
+		state = 559 #Somaliland (ITA)
+		value = -600
 	}
 }
 
@@ -616,25 +737,6 @@ FRA_MP_Belgium = {
 		BEL = { is_in_faction_with = FRA }
 	}
 
-#	ai_strategy = {
-#		type = put_unit_buffers
-#		ratio = 1
-#		states = {
-#			18
-#			29
-#			785
-#		}
-#		area = europe
-#	}
-#	ai_strategy = {
-#	 	type = front_control
-#		tag = BEL
-#		area = europe
-#
-#		ratio = 0.0
-#		priority = 5
-#		ordertype = front
-#	}
 	ai_strategy = {
 		type = conquer
 		id = BEL
@@ -642,8 +744,14 @@ FRA_MP_Belgium = {
 	}
 	ai_strategy = {
 	 	type = front_unit_request
-		area = africa
-		value = -200				# will be added as a factor over regular requests
+		state = 538 #Central Kongo
+		state = 295 #Leopoldville
+		state = 718 #Stanleyville
+		state = 769 #Burundi
+		state = 768 #Ruanda
+		state = 772 #French Congo
+		state = 660 #French Congo
+		value = -600
 	}
 }
 
@@ -775,6 +883,11 @@ FRA_MP_Allies = {
 		value = 400
 	}
 	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = POL
+		value = 800
+	}
+	ai_strategy = {
 		type = alliance
 		id = ENG
 		value = 400
@@ -782,6 +895,35 @@ FRA_MP_Allies = {
 	ai_strategy = {
 		type = pp_spend_priority
 		id = relation	
+		value = -200
+	}
+}
+
+FRA_MP_No_Guarantee = {
+	name = "No Guarantee if in war"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_war = yes
+	}
+
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee	
 		value = -200
 	}
 }
@@ -806,26 +948,11 @@ FRA_MP_Ignore = {
 
 	abort = {
 	}
-	
+
 	ai_strategy = {
-		type = ignore
-		id = LIT
-		value = 200
-	}
-	ai_strategy = {
-		type = ignore
-		id = LAT
-		value = 200
-	}
-	ai_strategy = {
-		type = ignore
-		id = EST
-		value = 200
-	}
-	ai_strategy = {
-		type = ignore
-		id = FIN
-		value = 200
+		type = contain
+		id = SOV
+		value = -1000
 	}
 }
 

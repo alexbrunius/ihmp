@@ -300,3 +300,31 @@ SAF_MP_AirDoctrine = {
 		cat_strategic_destruction = -10000
 	}
 }
+
+SAF_MP_Ethopia = {
+	name = "Get Ethopia"
+	desc = ""
+
+	enable = {
+		tag = SAF
+		has_game_rule = {
+			rule = SAF_ai_behavior
+			option = SAF_MP_1
+		}
+	}
+
+	abort = { 
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = ITA
+		value = 200
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		state = 540 #South Angoloa
+		state = 544 #Mosambik	
+		value = -200
+	}
+}

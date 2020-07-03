@@ -40,6 +40,9 @@ GRE_MP_1 = {
 	}
 
 	ideas = {
+		GRE_georgios_papandreou = 1000
+		GRE_damaskinos = 0
+		GRE_eleftherios_venizelos = 0
 		free_trade = 100
 		export_focus = 0
 		limited_exports = 0
@@ -47,6 +50,8 @@ GRE_MP_1 = {
 		generic_captain_of_industry = 10
 		generic_fortification_engineer = 2
 		war_economy = 20
+		low_economic_mobilisation = 0
+		civilian_economy = 0
 		partial_economic_mobilisation = 10
 		extensive_conscription = 10
 		generic_industrial_concern = 5
@@ -119,6 +124,34 @@ GRE_MP_1 = {
 		cruiser_effort = 0
 		nuclear_effort = 0
 	}
+}
+
+GRE_MP_Extensive_Conscription = {
+	name = "Greece Extensive Conscription"
+	desc = ""
+
+	enable = {
+		tag = GRE
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}
+		has_idea = extensive_conscription
+	}
+
+	abort = {
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 1
+	}
+
 }
 
 GRE_MP_Doctrine = {
@@ -195,5 +228,28 @@ GRE_MP_Ignore_BUL = {
 	 	type = front_unit_request
 		tag = BUL
 		value = -200
+	}
+}
+
+GRE_MP_Production = {
+	name = "Production"
+	desc = ""
+
+	enable = {
+		tag = GRE
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}
+		num_of_military_factories > 10
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = infantry_equipment
+		value = -75
 	}
 }
