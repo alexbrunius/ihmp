@@ -106,6 +106,15 @@ political_actions = {
 				has_stability < 0.6
 			}
 			modifier = {
+				add = 1
+				tag = FRA
+				FRA = {
+					has_idea = FRA_gaston_henry_haye
+					has_idea = henri_giraud
+					has_stability  < 0.9
+				}
+			}
+			modifier = {
 				factor = 0
 				original_tag = SPR
 				NOT = { has_global_flag = spanish_civil_war }
@@ -1573,11 +1582,15 @@ war_measures = {
 				has_political_power < 100
 				factor = 0 #use as pp dump
 			}
-
 			modifier = {
 				factor = 0
 				original_tag = SOV
 				SOV_save_pp_for_manpower_trouble = yes
+			}
+			modifier = {
+				factor = 0
+				original_tag = SPR
+				NOT = { has_global_flag = scw_over }
 			}
 		}
 

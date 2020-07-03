@@ -1951,7 +1951,21 @@ political_actions = {
 		
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				tag = FRA
+				has_game_rule = {
+					rule = FRA_ai_behavior
+					option = FRA_MP_1
+				}
+				FRA = {
+					communism > 0.25
+					has_idea = FRA_gaston_henry_haye
+					has_idea = henri_giraud
+				}
+				add = 1
+			}
 		}
+
     }
     
 	ban_fascist_party = {
