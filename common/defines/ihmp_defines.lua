@@ -375,3 +375,12 @@ NDefines.NIntel.AIR_COMBAT_AIR_INTEL_FACTOR = 0.1		-- was 0.2
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_LAND_COMBAT_ABSOLUTE_MAXIMUMS = { 0, 20, 10, 10 }		--was { 0, 40, 10, 15 }
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_NAVAL_COMBAT_ABSOLUTE_MAXIMUMS = { 10, 0, 25, 10 }		--was { 15, 0, 45, 25 }
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_COMBAT_ABSOLUTE_MAXIMUMS = { 0, 0, 0, 15 }		--was = { 0, 0, 0, 30 }
+
+-- ai stuff
+NDefines.NAI.AIR_WING_REINFORCEMENT_LIMIT = 100
+NDefines.NAI.MAX_REQUEST_EXPEDITIONARIES_ARMY_RATIO = 1.0
+NDefines.NAI.CASUALTY_RATIO_TO_PULL_EXPEDITIONARIES_BACK = 1.0			-- AI will pull expeditioniries back if its casualties is aboce this ratio compared to their total deployed manpower
+NDefines.NAI.CASUALTY_RATIO_TO_NOT_SEND_EXPEDITIONARIES = 1.0			-- AI will not send expeditioniries if its casualties is aboce this ratio compared to their total deployed manpower
+NDefines.NAI.SURRENDER_LEVEL_TO_PULL_EXPEDITIONARIES_BACK = 1.0			-- AI will pull expeditioniries back if its surrender level is above this ratio
+NDefines.NAI.SURRENDER_LEVEL_TO_NOT_SEND_EXPEDITIONARIES = 1.0			-- AI will not send expeditioniries if its surrender level is above this ratio
+NDefines.NAI.NAVY_PREFERED_MAX_SIZE = 60						-- AI will generally attempt to merge fleets into this size, but as a soft limit.
