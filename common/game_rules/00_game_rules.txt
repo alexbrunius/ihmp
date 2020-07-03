@@ -767,6 +767,38 @@ FRA_ai_behavior = {
 	}
 }
 
+FREE_FRA_ai_behavior = {
+	name = "FREE_FRA_AI_BEHAVIOR"
+	required_dlc = "La Resistance"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = FREE_FRA_MP_1
+		text = "RULE_OPTION_FREE_FRA_MP_1"
+		desc = "RULE_OPTION_FREE_FRA_MP_1_DESC"
+	}
+}
+
+VIC_ai_behavior = {
+	name = "VIC_AI_BEHAVIOR"
+	required_dlc = "La Resistance"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = VIC_MP_1
+		text = "RULE_OPTION_VIC_MP_1"
+		desc = "RULE_OPTION_VIC_MP_1_DESC"
+	}
+}
+
 POL_ai_behavior = {
 	name = "POL_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
@@ -1684,6 +1716,21 @@ ALB_ai_behavior = {
 		name = ALB_MP_1
 		text = "RULE_OPTION_ALB_MP_1"
 		desc = "RULE_OPTION_ALB_MP_1_DESC"
+	}
+}
+
+GRE_ai_behavior = {
+	name = "GRE_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = GRE_MP_1
+		text = "RULE_OPTION_GRE_MP_1"
+		desc = "RULE_OPTION_GRE_MP_1_DESC"
 	}
 }
 
