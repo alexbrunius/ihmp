@@ -291,15 +291,17 @@ country_event = {
 			has_war = yes
 			any_enemy_country = {
 				is_major = yes
-				OR = {
-					NOT = { tag = event_target:WTT_current_china_leader #special exception }
-					NOT = { tag = CHI }
-					NOT = { tag = PRC }
-					NOT = { tag = SHX }
-					NOT = { tag = XSM }
-					NOT = { tag = SIK }
-					NOT = { tag = YUN }
-					NOT = { tag = GXC }
+				NOT = {
+					OR = {
+						tag = event_target:WTT_current_china_leader #special exception
+						tag = CHI
+						tag = PRC
+						tag = SHX
+						tag = XSM
+						tag = SIK
+						tag = YUN
+						tag = GXC
+					}
 				}
 			}
 		}
