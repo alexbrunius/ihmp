@@ -25,6 +25,7 @@ on_actions = {
 	
 	on_startup = {
 		effect = {
+			#Ressource Rights
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"
@@ -44,6 +45,7 @@ on_actions = {
 					give_resource_rights = { receiver = ENG state = 411 }
 				}
 			}
+			#Disband Divisions
 			if = {
 				limit = {
 					has_game_rule = {
@@ -87,6 +89,21 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_MP_1
+					}
+					SOV = { is_ai = yes }
+				}
+				SOV = {
+					delete_units = { 
+						division_template = "Kavaleriyskaya Diviziya"
+						disband = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
 						rule = CHI_ai_behavior
 						option = CHI_MP_1
 					}
@@ -110,6 +127,10 @@ on_actions = {
 				JAP = {
 					delete_units = { 
 						division_template = "Kihei Shidan"
+						disband = yes
+					}
+					delete_unit_template_and_units = { 
+						division_template = "Dokuritsu Konsei Ryodan"
 						disband = yes
 					}
 				}
@@ -175,6 +196,71 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = GRE_ai_behavior
+						option = GRE_MP_1
+					}
+					GRE = { is_ai = yes }
+				}
+				GRE = {
+					delete_units = { 
+						division_template = "Merarchía Ippikoú"
+						disband = yes
+					}
+				}
+			}
+			#Major Warlords
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WL_ai_behavior
+						option = WL_MP_1
+					}
+					CHI = { is_ai = yes }
+				}
+				PRC = {
+					set_major = yes
+				}
+				SHX = {
+					set_major = yes
+				}
+				XSM = {
+					set_major = yes
+				}
+				SIK = {
+					set_major = yes
+				}
+				YUN = {
+					set_major = yes
+				}
+				GXC = {
+					set_major = yes
+				}
+			}
+			#Military Police for AIs
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = AI_Military_Police
+						option = Free_Template
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = yes
+					}
+					division_template = {
+						name = "Military Police"
+						regiments = {
+							cavalry = { x = 0 y = 0 }
+						}
+						support = {
+						} 
+					}
+				}
+			}
 		}
 	}
 
@@ -187,6 +273,16 @@ on_actions = {
 					FROM = { tag = SOV }
 				}
 				set_global_flag = SOV_capitulated_FIN
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = FRA }
+					FROM = { tag = GER }
+					NOT = { has_global_flag = achievement_france_surrender }
+				}
+				FRA = { country_event = { id = france.10 } }
 			}
 		}
 	}
@@ -224,6 +320,20 @@ on_actions = {
 						set_compliance = JAP.chi_compl
 					}
 				}
+			}
+		}
+	}
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { tag = GER }
+					FROM = { original_tag = FRA }
+					FROM.FROM = { state = 16 }
+					NOT = { has_global_flag = achievement_france_surrender }
+				}
+				FRA = { country_event = { id = france.10 } }
 			}
 		}
 	}
