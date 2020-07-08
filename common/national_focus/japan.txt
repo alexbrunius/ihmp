@@ -1192,7 +1192,12 @@ focus_tree = {
 		}
 
 		bypass = {
-				CHI = { has_capitulated = yes }
+			CHI = { has_capitulated = yes }
+			PRC = { has_capitulated = yes }
+			SHX = { has_capitulated = yes }
+			GXC = { has_capitulated = yes }
+			YUN = { has_capitulated = yes }
+			XSM = { has_capitulated = yes }
 		}
 
 		cancel_if_invalid = yes
