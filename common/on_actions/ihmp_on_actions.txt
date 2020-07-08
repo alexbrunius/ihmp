@@ -89,6 +89,21 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_MP_1
+					}
+					SOV = { is_ai = yes }
+				}
+				SOV = {
+					delete_units = { 
+						division_template = "Kavaleriyskaya Diviziya"
+						disband = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
 						rule = CHI_ai_behavior
 						option = CHI_MP_1
 					}
@@ -112,6 +127,10 @@ on_actions = {
 				JAP = {
 					delete_units = { 
 						division_template = "Kihei Shidan"
+						disband = yes
+					}
+					delete_unit_template_and_units = { 
+						division_template = "Dokuritsu Konsei Ryodan"
 						disband = yes
 					}
 				}
@@ -173,6 +192,21 @@ on_actions = {
 				HUN = {
 					delete_units = { 
 						division_template = "Huszár Dandár"
+						disband = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = GRE_ai_behavior
+						option = GRE_MP_1
+					}
+					GRE = { is_ai = yes }
+				}
+				GRE = {
+					delete_units = { 
+						division_template = "Merarchía Ippikoú"
 						disband = yes
 					}
 				}
