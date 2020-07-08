@@ -115,6 +115,16 @@ political_actions = {
 				}
 			}
 			modifier = {
+				add = 1
+				tag = SIA
+				SIA = {
+					has_idea = SIA_kuang_abhayavongsa
+					has_idea = SIA_thawee_punyaketu
+					has_idea = free_trade
+					has_stability  < 0.8
+				}
+			}
+			modifier = {
 				factor = 0
 				original_tag = SPR
 				NOT = { has_global_flag = spanish_civil_war }
