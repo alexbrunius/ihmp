@@ -56,9 +56,9 @@ SPD_MP_1 = {
 		SPR_revive_the_republican_navy
 		SPR_subvert_soviet_control
 		SPR_war_of_independence
-		SPR_enemies_of_our_enemy
-		SPR_deal_with_the_devil
-		SPR_foreign_industrial_aid
+		#SPR_enemies_of_our_enemy
+		#SPR_deal_with_the_devil
+		#SPR_foreign_industrial_aid
 	}
 
 	research = {
