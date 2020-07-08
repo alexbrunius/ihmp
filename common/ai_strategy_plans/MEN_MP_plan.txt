@@ -24,6 +24,7 @@ MEN_MP_1 = {
 		production_effort
 		production_effort_2
 		production_effort_3
+		aviation_effort
 		extra_tech_slot
 	}
 
