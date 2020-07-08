@@ -216,7 +216,7 @@ secret_police_oversight = {
 	ai_will_do = {
 		base = 1
 		modifier = {
-			original_tag = SPR						
+			FROM = { original_tag = SPR }
 			factor = 0
 		}
 	}
@@ -242,7 +242,7 @@ liberate_workers_occupation = {
 	ai_will_do = {
 		base = 200
 		modifier = {
-			original_tag = SPR						
+			FROM = { original_tag = SPR }
 			factor = 0
 		}
 	}
@@ -280,7 +280,7 @@ military_governor_occupation = {
 			add = 400
 		}
 		modifier = {
-			original_tag = SPR						
+			FROM = { original_tag = SPR }
 			factor = 0
 		}
 	}
@@ -319,7 +319,7 @@ martial_law_occupation = {
 		}
 
 		modifier = {
-			original_tag = SPR						
+			FROM = { original_tag = SPR }
 			factor = 0
 		}
 	}
@@ -411,7 +411,7 @@ forced_labor_occupation = {
 		}
 
 		modifier = {
-			original_tag = SPR						
+			FROM = { original_tag = SPR }
 			factor = 0
 		}
 	}
@@ -454,7 +454,7 @@ harsh_quotas_occupation = {
 		}
 
 		modifier = {
-			original_tag = SPR						
+			FROM = { original_tag = SPR }
 			factor = 0
 		}
 	}
@@ -497,7 +497,7 @@ brutally_oppressive_occupation = {
 		}
 
 		modifier = {
-			original_tag = SPR						
+			FROM = { original_tag = SPR }
 			factor = 0
 		}
 	}
