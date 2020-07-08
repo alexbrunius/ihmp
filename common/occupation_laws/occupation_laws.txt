@@ -212,6 +212,14 @@ secret_police_oversight = {
 		enemy_intel_network_gain_factor_over_occupied_tag = -0.25 # -25% scaled by the number of occupied states and the ratio of the network covering those occupied states
 		# todo + spy defense
 	}
+	
+	ai_will_do = {
+		base = 1
+		modifier = {
+			FROM = { original_tag = SPR }
+			factor = 0
+		}
+	}
 }
 
 liberate_workers_occupation = {
@@ -233,6 +241,10 @@ liberate_workers_occupation = {
 	
 	ai_will_do = {
 		base = 200
+		modifier = {
+			FROM = { original_tag = SPR }
+			factor = 0
+		}
 	}
 }
 
@@ -267,6 +279,10 @@ military_governor_occupation = {
 			check_variable  = { resistance_target_without_law > 0.55} 						
 			add = 400
 		}
+		modifier = {
+			FROM = { original_tag = SPR }
+			factor = 0
+		}
 	}
 }
 
@@ -300,6 +316,11 @@ martial_law_occupation = {
 			resistance > resistance_limit
 			
 			add = 500
+		}
+
+		modifier = {
+			FROM = { original_tag = SPR }
+			factor = 0
 		}
 	}
 }
@@ -388,6 +409,11 @@ forced_labor_occupation = {
 			add_to_temp_variable = { releveant_resources = 100 }
 			add = releveant_resources
 		}
+
+		modifier = {
+			FROM = { original_tag = SPR }
+			factor = 0
+		}
 	}
 }
 
@@ -426,6 +452,11 @@ harsh_quotas_occupation = {
 			
 			add = num_damaged
 		}
+
+		modifier = {
+			FROM = { original_tag = SPR }
+			factor = 0
+		}
 	}
 }
 
@@ -463,6 +494,11 @@ brutally_oppressive_occupation = {
 			resistance > resistance_limit
 			
 			add = 1000
+		}
+
+		modifier = {
+			FROM = { original_tag = SPR }
+			factor = 0
 		}
 	}
 }
