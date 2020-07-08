@@ -160,43 +160,146 @@ ROM_MP_1_Alliance = {
 		value = 200
 	}
 	ai_strategy = {
-		type = prepare_for_war
-		id = ENG
-		value = 200
-	}
-	ai_strategy = {
 		type = pp_spend_priority
 		id = relation	
 		value = -200
 	}
 }
 
-GER_MP_1_NoWar = {
-	name = "Dont join Italian wars"
+MP_Conscription_0 = {
+	name = "Conscription"
 	desc = ""
 
 	enable = {
-		original_tag = ROM
+		tag = ROM
 		has_game_rule = {
 			rule = ROM_ai_behavior
 			option = ROM_MP_1
 		}
+		has_idea = volunteer_only
 	}
 
 	abort = {
-
+		NOT = { has_idea = volunteer_only }
 	}
 
-	ai_strategy = {
-		type = dont_join_wars_with
-		id = ITA
-		target_country = GRE
-		value = 500
+	ideas = {
+		disarmed_nation = 0
 	}
-	ai_strategy = {
-		type = dont_join_wars_with
-		id = ITA
-		target_country = YUG
-		value = 500
+}
+
+MP_Conscription_1 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = ROM
+		has_game_rule = {
+			rule = ROM_ai_behavior
+			option = ROM_MP_1
+		}
+		has_idea = limited_conscription
+	}
+
+	abort = {
+		NOT = { has_idea = limited_conscription }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+	}
+}
+
+MP_Conscription_2 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = ROM
+		has_game_rule = {
+			rule = ROM_ai_behavior
+			option = ROM_MP_1
+		}
+		has_idea = extensive_conscription
+	}
+
+	abort = {
+		NOT = { has_idea = extensive_conscription }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+	}
+}
+
+MP_Economy_0 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = ROM
+		has_game_rule = {
+			rule = ROM_ai_behavior
+			option = ROM_MP_1
+		}
+		has_idea = low_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = low_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+	}
+}
+
+MP_Economy_1 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = ROM
+		has_game_rule = {
+			rule = ROM_ai_behavior
+			option = ROM_MP_1
+		}
+		has_idea = partial_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = partial_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+	}
+}
+
+MP_Economy_2 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = ROM
+		has_game_rule = {
+			rule = ROM_ai_behavior
+			option = ROM_MP_1
+		}
+		has_idea = war_economy
+	}
+
+	abort = {
+		NOT = { has_idea = war_economy }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 0
 	}
 }

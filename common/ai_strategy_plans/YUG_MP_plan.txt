@@ -37,6 +37,8 @@ YUG_MP_plan = {
 		YUG_expand_the_university_of_belgrad
 		YUG_central_management
 		YUG_expand_the_sarajevo_arsenals
+		YUG_non_discriminating_officer_promotions
+		YUG_reclaim_istria_and_zadar
 		YUG_motorized_logistics
 		YUG_armored_cavalry
 		YUG_tank_conversions
@@ -65,8 +67,149 @@ YUG_MP_plan = {
 	}
 
 	focus_factors = {
-		
+		YUG_invite_german_military_mission = 0
+		YUG_join_axis = 0
+		YUG_join_allies = 0
+		YUG_allied_air_combat_school = 0
 	}
 
+}
+
+MP_Conscription_0 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = YUG
+		has_game_rule = {
+			rule = YUG_ai_behavior
+			option = YUG_MP_1
+		}
+		has_idea = volunteer_only
+	}
+
+	abort = {
+		NOT = { has_idea = volunteer_only }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+	}
+}
+
+MP_Conscription_1 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = YUG
+		has_game_rule = {
+			rule = YUG_ai_behavior
+			option = YUG_MP_1
+		}
+		has_idea = limited_conscription
+	}
+
+	abort = {
+		NOT = { has_idea = limited_conscription }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+	}
+}
+
+MP_Conscription_2 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = YUG
+		has_game_rule = {
+			rule = YUG_ai_behavior
+			option = YUG_MP_1
+		}
+		has_idea = extensive_conscription
+	}
+
+	abort = {
+		NOT = { has_idea = extensive_conscription }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+	}
+}
+
+MP_Economy_0 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = YUG
+		has_game_rule = {
+			rule = YUG_ai_behavior
+			option = YUG_MP_1
+		}
+		has_idea = low_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = low_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+	}
+}
+
+MP_Economy_1 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = YUG
+		has_game_rule = {
+			rule = YUG_ai_behavior
+			option = YUG_MP_1
+		}
+		has_idea = partial_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = partial_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+	}
+}
+
+MP_Economy_2 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = YUG
+		has_game_rule = {
+			rule = YUG_ai_behavior
+			option = YUG_MP_1
+		}
+		has_idea = war_economy
+	}
+
+	abort = {
+		NOT = { has_idea = war_economy }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 0
+	}
 }
 
