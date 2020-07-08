@@ -636,3 +636,32 @@ SOV_No_Volunteers_To_Warlords = {
 		value = -100
 	}
 }
+
+SOV_MP_Attack_Finland = {
+	name = "Attack Finland"
+	desc = ""
+
+	enable = {
+		tag = SOV
+		has_game_rule = {
+			rule = SOV_ai_behavior
+			option = SOV_MP_1
+		}
+		has_wargoal_against = FIN
+	}
+
+	abort = {
+		FIN = {
+			 OR = {
+			 	is_guaranteed_by = ENG
+				is_guaranteed_by = FRA
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = declare_war
+		id = FIN
+		value = 500
+	}
+}

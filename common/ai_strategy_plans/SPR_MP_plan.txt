@@ -46,7 +46,7 @@ SPR_MP_1 = {
 		SPA_banish_the_party_leaders
 		SPA_safeguard_the_freedom_of_worship
 		SPA_fuse_the_parties
-		SPA_a_methodical_approach
+		#SPA_a_methodical_approach
 		SPA_tackle_the_vulnerable_fronts
 		#AfterSCW
 		SPA_expand_conscription
@@ -62,13 +62,14 @@ SPR_MP_1 = {
 		SPA_la_division_azul
 		SPA_the_tangiers_enclave
 		SPA_the_national_and_popular_army_of_spain
-		SPA_autarky
 		SPA_the_army_of_africa_model
-		SPA_equipment_modernization
-		SPA_motorization
-		SPA_reduce_reliance_on_foreign_resources
 		SPA_invest_in_naval_infrastructure
 		SPA_expand_the_slipways
+		SPA_equipment_modernization
+		SPA_motorization
+		SPA_autarky
+		SPA_spanish_austerity
+		SPA_reduce_reliance_on_foreign_resources
 		SPA_restart_small_scale_shipbuilding
 		SPA_the_plan_imperial
 		SPA_artillery_modernization
@@ -81,11 +82,23 @@ SPR_MP_1 = {
 	}
 
 	research = {
-
+		
 	}
 
 	ideas = {
-
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 1
+		war_economy = 1
+		free_trade = 0
+		export_focus = 1
+		limited_exports = 0
+		closed_economy = 0
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+		SPA_ramon_serrano_suner = 100
+		SPA_agustin_munoz_grandes = 0
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -314,4 +327,28 @@ SPR_historical_plan_war_with_axis = {
 		}
 	}
 
+}
+
+SPR_MP_Get_PP = {
+	name = "Spanish Nationalist MP plan"
+	desc = "Multiplayer behavior for Nationalist Spain"
+
+	enable = {
+		OR = {
+			tag = SPR
+			tag = SPA
+		}
+		has_game_rule = {
+			rule = SPR_ai_behavior 
+			option = SPR_MP_1
+		}
+	}
+	abort = {
+		has_global_flag = scw_over
+	}
+
+	focus_factors = {
+		SPA_equipment_shipments = 0
+		SPA_a_methodical_approach = 0
+	}
 }

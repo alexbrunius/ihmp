@@ -32,14 +32,14 @@ GER_MP_1 = {
 		GER_end_of_czechoslovakia
 		GER_demand_memel
 		#1939
-		GER_west_wall
 		GER_mol_rib_pact
 		GER_danzig_or_war
 		GER_around_maginot
-		GER_army_innovation_2
-		#1940
 		GER_coal_liquidization
 		GER_synthetic_rubber
+		#1940
+		GER_west_wall
+		GER_army_innovation_2
 		GER_weserubung
 		GER_war_with_france
 		GER_air_innovation
@@ -48,9 +48,9 @@ GER_MP_1 = {
 		GER_air_innovation_2
 		GER_atlantikwall
 		GER_anti_comitern_pact
+		GER_ussr_war_goal
 		GER_second_vienna_award
 		GER_italy_ally
-		GER_ussr_war_goal
 	}
 
 	research = {
@@ -77,7 +77,13 @@ GER_MP_1 = {
 		krupp = 25
 		goering = 0.5
 		werner_von_fritsch = 0.3
+		free_trade = 0
+		export_focus = 0
+		limited_exports = 1
 		closed_economy = 0
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
 	}
 
 	ai_strategy = {
@@ -102,12 +108,12 @@ GER_MP_1 = {
 	}
 }
 
-GER_MP_1_NoWar = {
-	name = "Dont join Italian wars"
+GER_MP_Production = {
+	name = "Production"
 	desc = ""
 
 	enable = {
-		original_tag = GER
+		tag = GER
 		has_game_rule = {
 			rule = GER_ai_behavior
 			option = GER_MP_1
@@ -115,20 +121,72 @@ GER_MP_1_NoWar = {
 	}
 
 	abort = {
-
 	}
 
 	ai_strategy = {
-		type = dont_join_wars_with
-		id = ITA
-		target_country = GRE
-		value = 500
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -10000
 	}
 	ai_strategy = {
-		type = dont_join_wars_with
-		id = ITA
-		target_country = YUG
-		value = 500
+		type = unit_ratio
+		id = naval_bomber
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = scout_plane
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = scout_plane_equipment
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = scout_plane
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = screen_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = capital_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = anti_tank_equipment
+		value = -1000
 	}
 }
 
@@ -223,8 +281,62 @@ GER_MP_1_Fighter2 = {
 	}
 }
 
-GER_MP_1_MARM = {
-	name = "Research MARM"
+GER_MP_MARM_1 = {
+	name = "Research MARM 1"
+	desc = ""
+
+	enable = {
+		tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+		NOT = { has_tech = basic_medium_tank }
+		has_completed_focus = GER_extra_tech_slot
+	}
+
+	abort = {
+		OR = {
+			has_tech = basic_medium_tank
+			is_researching_technology = basic_medium_tank
+		}
+	}
+
+	research = {
+		cat_medium_armor = 10000
+	}
+}
+
+GER_MP_1_MARM2 = {
+	name = "Research MARM2"
+	desc = ""
+
+	enable = {
+		tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+		NOT = { has_tech = improved_medium_tank }
+		has_completed_focus = GER_soviet_treaty
+		has_opinion_modifier = sov_ger_treaty
+	}
+
+	abort = {
+		OR = {
+			has_tech = improved_medium_tank
+			is_researching_technology = improved_medium_tank
+		}
+	}
+
+	research = {
+		cat_medium_armor = 10000
+		cat_heavy_armor = -10000
+	}
+}
+
+GER_MP_MARM_3 = {
+	name = "Research MARM 3"
 	desc = ""
 
 	enable = {
@@ -247,4 +359,272 @@ GER_MP_1_MARM = {
 	research = {
 		cat_medium_armor = 100000
 	}
+}
+
+GER_MP_MARM_Production = {
+	name = "Produce MARM no LARM"
+	desc = ""
+
+	enable = {
+		tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+		has_tech = improved_medium_tank
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = infantry_equipment
+		value = -25
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = support_equipment
+		value = -25
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = artillery_equipment
+		value = -25
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = light_tank_equipment
+		value = -200
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_tank_equipment
+		value = 200
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 200
+	}
+}
+
+GER_MP_Fronts_1 = {
+	name = "No Troops for Netherlands till Poland capitulated"
+	desc = ""
+
+	enable = {
+		tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+		POL = { has_capitulated = no }
+	}
+
+	abort = {
+		OR = {
+			POL = { has_capitulated = yes }
+			threat > 0.95
+		}
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = HOL
+		value = -400
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = BEL
+		value = -400
+	}
+	ai_strategy = {
+		type = declare_war
+		id = HOL
+		value = -400
+	}
+	ai_strategy = {
+		type = declare_war
+		id = BEL
+		value = -400
+	}
+}
+
+GER_MP_Fronts_2 = {
+	name = "No Troops for Vichy France"
+	desc = ""
+
+	enable = {
+		tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+		country_exists = VIC
+	}
+
+	abort = {
+		VIC = {
+			OR = {
+				NOT = {
+					has_non_aggression_pact_with = GER
+				}
+				focus_progress = {
+					focus = VIC_end_the_occupation
+					progress > 0.5
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = VIC
+		value = -1000
+	}
+}
+
+GER_MP_Fronts_3 = {
+	name = "No Troops for Switzerland"
+	desc = ""
+
+	enable = {
+		tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+	}
+
+	abort = {
+		focus_progress = {
+			focus = GER_operation_tannenbaum
+			progress > 0.5
+		}
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = SWI
+		value = -1000
+	}
+}
+
+GER_MP_Fronts_3 = {
+	name = "Don't Attack Norway before Denmark Falls"
+	desc = ""
+
+	enable = {
+		tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+		DEN = { has_capitulated = no }
+	}
+
+	abort = {
+		DEN = { has_capitulated = yes }
+	}
+
+	ai_strategy = {
+		type = declare_war
+		id = NOR
+		value = -400
+	}
+}
+
+GER_MP_Fronts_4 = {
+	name = "Prepare Troops on Soviet Front"
+	desc = ""
+
+	enable = {
+		tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+		DEN = { has_capitulated = yes }
+		HOL = { has_capitulated = yes }
+		BEL = { has_capitulated = yes }
+		FRA = { has_capitulated = yes }
+		POL = { has_capitulated = yes }
+	}
+
+	abort_when_not_enabled = yes
+
+	abort = {
+		has_war_with = SOV
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = SOV
+		value = 200
+	}
+}
+
+GER_MP_No_Eth = {
+	name = "No Troops in Ethopia"
+	desc = ""
+
+	enable = {
+		tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+	}
+
+	abort = {
+		446 = {
+			OR = {
+				is_controlled_by = ITA
+				is_controlled_by = GER
+			}
+		}
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		state = 551 #Khartum
+		state = 549 #Sudan
+		state = 547 #Kenia
+		state = 269 #Somaliland (ENG)
+		state = 268 #Somaliland (FRA)
+		state = 271 #Ethopia
+		state = 550 #Eritrea
+		state = 559 #Somaliland (ITA)
+		value = -600
+	}	
+}
+
+GER_MP_Volunteer_Spain = {
+	name = "Volunteers for Spain"
+	desc = ""
+
+	enable = {
+		tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+		country_exists = SPA
+		NOT = { has_global_flag = scw_over }
+	}
+
+	abort = {
+		OR = {
+			NOT = { country_exists = SPA }
+			SPA = { has_completed_focus = SPA_join_the_allies }
+			has_global_flag = scw_over
+		}
+	}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SPA
+		value = 1000
+	}	
 }

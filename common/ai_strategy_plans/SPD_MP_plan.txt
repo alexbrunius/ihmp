@@ -56,9 +56,9 @@ SPD_MP_1 = {
 		SPR_revive_the_republican_navy
 		SPR_subvert_soviet_control
 		SPR_war_of_independence
-		SPR_enemies_of_our_enemy
-		SPR_deal_with_the_devil
-		SPR_foreign_industrial_aid
+		#SPR_enemies_of_our_enemy
+		#SPR_deal_with_the_devil
+		#SPR_foreign_industrial_aid
 	}
 
 	research = {
@@ -66,7 +66,21 @@ SPD_MP_1 = {
 	}
 
 	ideas = {
-
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 0
+		war_economy = 1
+		free_trade = 0
+		export_focus = 1
+		limited_exports = 0
+		closed_economy = 0
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+		SPR_juan_negrin = 3
+		SPR_francisco_largo_caballero = 2
+		SPR_augusto_barcia_trelles_vanilla = 0
+		SPR_diego_martinez_barrio_vanilla = 0
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -78,4 +92,26 @@ SPD_MP_1 = {
 		}
 	}
 
+}
+
+SPD_MP_Get_PP = {
+	name = "Spanish Democratic MP plan"
+	desc = "Multiplayer behavior for Democratic Spain"
+
+	enable = {
+		tag = SPD
+		has_game_rule = {
+			rule = SPR_ai_behavior 
+			option = SPR_MP_1
+		}
+	}
+	abort = {
+		has_global_flag = scw_over
+	}
+
+	focus_factors = {
+		SPR_petition_for_french_aid = 0
+		SPR_soviet_military_advisors = 0
+		SPR_soviet_technological_advancements = 0
+	}
 }

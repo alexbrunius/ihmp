@@ -321,7 +321,7 @@ RAJ_MP_Infrastructure_2 = {
 }
 
 RAJ_MP_Civilian_1 = {
-	name = ""
+	name = "Build Civ"
 	desc = ""
 
 	enable = {

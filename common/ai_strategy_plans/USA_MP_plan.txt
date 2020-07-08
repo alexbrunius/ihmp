@@ -3,7 +3,7 @@ USA_MP_1 = {
 	desc = "Mulitplayer script behavior for US"
 
 	enable = {
-		original_tag = USA
+		tag = USA
 		has_game_rule = {
 			rule = USA_ai_behavior
 			option = USA_MP_1
@@ -32,7 +32,7 @@ USA_MP_1 = {
 		USA_second_vinson_act
 		USA_two_ocean_navy_act
 		USA_bureau_of_ships
-		USA_lend_lease_act
+		#USA_lend_lease_act
 		USA_escort_effort
 		USA_military_construction
 		#1939
@@ -132,5 +132,32 @@ USA_MP_1_No_IW_Tac = {
 		type = equipment_production_factor
 		id = tactical_bomber
 		value = -10000
+	}
+}
+
+USA_MP_Join_Allies = {
+	name = "Join Allies"
+	desc = ""
+
+	enable = {
+		tag = USA
+		has_game_rule = {
+			rule = USA_ai_behavior
+			option = USA_MP_1
+		}
+		OR = {
+			JAP = {
+				has_war_with = ENG
+			}
+			date >1942.1.1
+		}
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = ENG			
+		value = 1000
 	}
 }

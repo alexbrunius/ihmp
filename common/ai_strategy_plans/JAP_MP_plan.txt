@@ -1,14 +1,15 @@
 JAP_MP_1 = {
-	name = "JAP_MP_1"
-	desc = "RULE_OPTION_JAP_MP_1_DESC"
+	name = "Japan MP Plan 1"
+	desc = ""
 
 	enable = {
-		original_tag = JAP
+		tag = JAP
 		has_game_rule = {
 			rule = JAP_ai_behavior
 			option = JAP_MP_1
 		}
 	}
+
 	abort = {
 	}
 
@@ -19,13 +20,13 @@ JAP_MP_1 = {
 		JAP_national_research_policy #October 10 1936	
 		JAP_nationalize_war_industry #December 20 1936	
 		#1937
-		JAP_national_defense_state #February 30 1937	
-		JAP_spiritual_mobilization #May 10 1937	
-		JAP_new_naval_estimates #July 20 1937	
-		JAP_liaison_conference #September 30 1937	
-		JAP_greater_east_asian_co_prosperity_sphere #December 10 1937	
+		#JAP_national_defense_state #February 30 1937	
+		JAP_new_naval_estimates #May 10 1937	
+		JAP_liaison_conference #July 20 1937	
+		JAP_greater_east_asian_co_prosperity_sphere #September 30 1937	
+		JAP_intervene_in_china #December 10 1937	
 		#1938
-		JAP_intervene_in_china #February 20 1938	
+		JAP_spiritual_mobilization #February 20 1938	
 		JAP_warrior_spirit #April 30 1938	
 		JAP_army_expansion_law #July 10 1938	
 		JAP_fighter_modernization #September 20 1938	
@@ -38,24 +39,19 @@ JAP_MP_1 = {
 		JAP_first_air_fleet		
 		#1940
 		JAP_the_zero
-		JAP_small_arms_modernization
-		JAP_modern_escorts
+		JAP_unified_fighter_development
 		JAP_sign_tripartite_pact
 		JAP_strike_south_doctrine
 		JAP_non_aggression_pact_with_the_soviet_union
 		#1941
-		JAP_secure_the_philippines
-		JAP_strike_on_the_southern_resource_area
+		JAP_bypass_the_philippines
+		#JAP_strike_on_the_southern_resource_area
 	}
 	
-	
-
-
-
 	research = {
 		bb_tech = -500
 		cat_mobile_warfare = -1000
-		cat_grand_battle_plan = -1000
+		#cat_grand_battle_plan = -1000
 		cat_mass_assault = -1000
 	}
 
@@ -65,7 +61,18 @@ JAP_MP_1 = {
 		hisaichi_terauchi = 30
 		mitsubishi = 50
 		JAP_chiune_sugihara = 0
+		free_trade = 0
+		export_focus = 0
+		limited_exports = 1
 		closed_economy = 0
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 0
+		war_economy = 0
+		tot_economic_mobilisation = 1
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
 	}
 
 
@@ -90,17 +97,17 @@ JAP_MP_IgnoreSoviet = {
 			rule = JAP_ai_behavior
 			option = JAP_MP_1
 		}
-		date < 1940.1.1
+		date < 1941.1.1
 	}
 
-	abort = { date > 1940.1.1
+	abort = { date > 1941.1.1
 	}
 	
 	ai_strategy = {
-		type = ignore
-		id = SOV
-		value = 1000
-	
+	 	type = front_unit_request
+		tag = SOV
+		tag = MON
+		value = -200
 	}
 }
 
@@ -167,11 +174,11 @@ JAP_MP_Conquer_China = {
 }
 
 JAP_MP_Befriend_Axis = {
-	name = ""
+	name = "Befriend Axis"
 	desc = ""
 
 	enable = {
-		original_tag = JAP
+		tag = JAP
 		has_game_rule = {
 			rule = JAP_ai_behavior
 			option = JAP_MP_1
@@ -179,18 +186,22 @@ JAP_MP_Befriend_Axis = {
 	}
 
 	abort = {
-
 	}
 
+	#ai_strategy = {
+	#	type = befriend
+	#	id = GER
+	#	value = 200
+	#}
+	#ai_strategy = {
+	#	type = befriend
+	#	id = ITA
+	#	value = 200
+	#}
 	ai_strategy = {
-		type = befriend
-		id = GER
-		value = 200
-	}
-	ai_strategy = {
-		type = befriend
-		id = ITA
-		value = 200
+		type = pp_spend_priority
+		id = relation	
+		value = -400
 	}
 }
 
@@ -284,5 +295,33 @@ JAP_MP_1_No_Bomber = {
 		type = unit_ratio
 		id = scout_plane
 		value = -1000
+	}
+}
+
+JAP_MP_Attack_USA_Later = {
+	name = "Attack USA Later"
+	desc = ""
+
+	enable = {
+		tag = JAP
+		has_game_rule = {
+			rule = JAP_ai_behavior
+			option = JAP_MP_1
+		}
+		date < 1941.9.1
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = declare_war
+		id = USA
+		value = -999
+	}
+
+	focus_factors = {
+		JAP_strike_on_the_southern_resource_area = 0
 	}
 }

@@ -245,6 +245,16 @@ ENG_MP_1_No_Strat = {
 		id = scout_plane
 		value = -1000
 	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = scout_plane_equipment
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = cv_fighter_equipment
+		value = -75
+	}
 }
 
 ENG_MP_Ignore = {
@@ -261,25 +271,86 @@ ENG_MP_Ignore = {
 
 	abort = {
 	}
-	
+
 	ai_strategy = {
-		type = ignore
-		id = LIT
-		value = 200
+		type = contain
+		id = SOV
+		value = -1000
+	}
+}
+
+ENG_MP_Fronts = {
+	name = "Fronts"
+	desc = ""
+
+	enable = {
+		tag = ENG
+		has_game_rule = {
+			rule = ENG_ai_behavior
+			option = ENG_MP_1
+		}
+	}
+
+	abort = { 
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = BRA
+		tag = VEN
+		tag = GUA
+		tag = MEX
+		tag = HOL
+		tag = FRA
+		tag = LIB
+		tag = YEM
+		tag = OMA
+		tag = SAU
+		tag = IRQ
+		tag = GXC
+		tag = POR
+		tag = IRE
+		tag = SIA
+		value = -200
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		state = 551 #Khartum
+		state = 549 #Sudan
+		state = 547 #Kenia
+		state = 269 #Somaliland (ENG)
+		state = 268 #Somaliland (FRA)
+		state = 271 #Ethopia
+		state = 550 #Eritrea
+		state = 559 #Somaliland (ITA)
+		value = -200
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		state = 538 #Central Kongo
+		state = 295 #Leopoldville
+		state = 718 #Stanleyville
+		state = 769 #Burundi
+		state = 768 #Ruanda
+		state = 772 #French Congo
+		state = 660 #French Congo
+		value = -200
 	}
 	ai_strategy = {
-		type = ignore
-		id = LAT
-		value = 200
+	 	type = front_unit_request #North Africa
+		area = suez
+		value = 400
 	}
 	ai_strategy = {
-		type = ignore
-		id = EST
-		value = 200
+		type = dont_defend_ally_borders
+		id = POL
+		value = 800
 	}
 	ai_strategy = {
-		type = ignore
-		id = FIN
-		value = 200
+		type = dont_defend_ally_borders
+		id = DEN
+		value = 800
 	}
 }

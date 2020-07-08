@@ -3,7 +3,7 @@ ITA_MP_1 = {
 	desc = "Focus on Fighter Research"
 
 	enable = {
-		original_tag = ITA
+		tag = ITA
 		has_game_rule = {
 			rule = ITA_ai_behavior
 			option = ITA_MP_1
@@ -104,7 +104,7 @@ ITA_MP_1_Fighter1 = {
 	desc = "Let the AI of Italy research Fighter 1 as his first research"
 
 	enable = {
-		original_tag = ITA
+		tag = ITA
 			has_game_rule = {
 				rule = ITA_ai_behavior
 				option = ITA_MP_1
@@ -126,7 +126,7 @@ ITA_MP_1_Fighter2 = {
 	desc = "Let the AI of Italy research Fighter 2 as soons as it is avaible"
 
 	enable = {
-		original_tag = ITA
+		tag = ITA
 		has_game_rule = {
 			rule = ITA_ai_behavior
 			option = ITA_MP_1
@@ -150,7 +150,7 @@ ITA_MP_1_Fighter3 = {
 	desc = "Let the AI of Italy research Fighter 3 as it has Air Innovation II"
 
 	enable = {
-		original_tag = ITA
+		tag = ITA
 		has_game_rule = {
 			rule = ITA_ai_behavior
 			option = ITA_MP_1
@@ -174,7 +174,7 @@ ITA_MP_1_No_IW_Fighter = {
 	desc = ""
 
 	enable = {
-		original_tag = ITA
+		tag = ITA
 		has_game_rule = {
 			rule = ITA_ai_behavior
 			option = ITA_MP_1
@@ -197,7 +197,7 @@ ITA_MP_1_NoBombers = {
 	desc = ""
 
 	enable = {
-		original_tag = ITA
+		tag = ITA
 		has_game_rule = {
 			rule = ITA_ai_behavior
 			option = ITA_MP_1
@@ -228,7 +228,7 @@ ITA_MP_1_CivBuildup = {
 	desc = ""
 
 	enable = {
-		original_tag = ITA
+		tag = ITA
 		has_game_rule = {
 			rule = ITA_ai_behavior
 			option = ITA_MP_1
@@ -245,11 +245,11 @@ ITA_MP_1_CivBuildup = {
 }
 
 ITA_MP_Befriend_Axis = {
-	name = ""
+	name = "Befriend the Axis"
 	desc = ""
 
 	enable = {
-		original_tag = ITA
+		tag = ITA
 		has_game_rule = {
 			rule = ITA_ai_behavior
 			option = ITA_MP_1
@@ -274,5 +274,70 @@ ITA_MP_Befriend_Axis = {
 		type = pp_spend_priority
 		id = relation	
 		value = -200
+	}	
+}
+
+ITA_MP_No_Eth = {
+	name = "No Troops in Ethopia"
+	desc = ""
+
+	enable = {
+		tag = ITA
+		has_game_rule = {
+			rule = ITA_ai_behavior
+			option = ITA_MP_1
+		}
+		NOT = { has_war_with = ETH }
+	}
+
+	abort = {
+		446 = {
+			OR = {
+				is_controlled_by = ITA
+				is_controlled_by = GER
+			}
+		}
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		state = 551 #Khartum
+		state = 549 #Sudan
+		state = 547 #Kenia
+		state = 269 #Somaliland (ENG)
+		state = 268 #Somaliland (FRA)
+		state = 271 #Ethopia
+		state = 550 #Eritrea
+		state = 559 #Somaliland (ITA)
+		value = -600
+	}	
+}
+
+ITA_MP_Volunteer_Spain = {
+	name = "Volunteers for Spain"
+	desc = ""
+
+	enable = {
+		tag = ITA
+		has_game_rule = {
+			rule = ITA_ai_behavior
+			option = ITA_MP_1
+		}
+		country_exists = SPA
+		NOT = { has_global_flag = scw_over }
+	}
+
+	abort = {
+		OR = {
+			NOT = { country_exists = SPA }
+			SPA = { has_completed_focus = SPA_join_the_allies }
+			has_global_flag = scw_over
+		}
+	}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SPA
+		value = 1000
 	}	
 }
