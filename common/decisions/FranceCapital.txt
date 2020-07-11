@@ -11,8 +11,8 @@ political_actions = {
 			tag = FRA
 			ROOT = { has_capitulated = yes }
 			capital_scope = {
-				NOT =  { state = 16 }
-				NOT =  { state = 459 }
+				not = { state = 16 }
+				not = { state = 459 }
 			}
 		}
 		cost = 0
@@ -22,37 +22,6 @@ political_actions = {
 		days_re_enable = 30
 		complete_effect = {
 			set_capital = 459
-		}
-	}
-	FRA_move_government_to_Cassablanca = {
-		icon = generic_nationalism
-		available = {
-			tag = FRA
-			461 = {
-				is_controlled_by = ROOT
-			}
-			459 = {
-				NOT = {
-					is_controlled_by = ROOT
-				}
-			}
-		}
-		visible = {
-			tag = FRA
-			ROOT = { has_capitulated = yes }
-			capital_scope = {
-				NOT =  { state = 16 }
-				NOT =  { state = 459 }
-				NOT =  { state = 461 }
-			}
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 1
-		}
-		days_re_enable = 30
-		complete_effect = {
-			set_capital = 461
 		}
 	}
 	FRA_move_government_to_Brazzaville = {
@@ -67,20 +36,14 @@ political_actions = {
 					is_controlled_by = ROOT
 				}
 			}
-			461 = {
-				NOT = {
-					is_controlled_by = ROOT
-				}
-			}
 		}
 		visible = {
 			tag = FRA
 			ROOT = { has_capitulated = yes }
 			capital_scope = {
-				NOT =  { state = 16 }
-				NOT =  { state = 459 }
-				NOT =  { state = 461 }
-				NOT =  { state = 772 }
+				not = { state = 16 }
+				not = { state = 459 }
+				not = { state = 772 }
 			}
 		}
 		cost = 0
@@ -101,7 +64,7 @@ political_actions = {
 				is_controlled_by = ROOT
 			}
 			capital_scope = {
-				NOT =  { state = 19 }
+				not = { state = 19 }
 			}
 		}
 		visible = {
@@ -110,7 +73,7 @@ political_actions = {
 				is_controlled_by = ROOT
 			}
 			capital_scope = {
-				NOT =  { state = 19 }
+				not = { state = 19 }
 			}
 		}
 		cost = 0
@@ -130,7 +93,7 @@ political_actions = {
 				is_controlled_by = ROOT
 			}
 			capital_scope = {
-				NOT =  { state = 16 }
+				not = { state = 16 }
 			}
 		}
 		visible = {
@@ -139,7 +102,7 @@ political_actions = {
 				is_controlled_by = ROOT
 			}
 			capital_scope = {
-				NOT =  { state = 16 }
+				not = { state = 16 }
 			}
 		}
 		cost = 0
