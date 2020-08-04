@@ -3,7 +3,7 @@ BUL_MP_1 = {
 	desc = ""
 
 	enable = {
-		original_tag = BUL
+		tag = BUL
 		has_game_rule = {
 			rule = BUL_ai_behavior
 			option = BUL_MP_1
@@ -96,7 +96,7 @@ BUL_MP_Electronics_1 = {
 	desc = ""
 
 	enable = {
-		original_tag = BUL
+		tag = BUL
 		has_game_rule = {
 			rule = BUL_ai_behavior
 			option = BUL_MP_1
@@ -110,6 +110,48 @@ BUL_MP_Electronics_1 = {
 
 	research = {
 		computing_tech = 100000
+	}
+}
+
+BUL_MP_Antagonize = {
+	name = "Antagonize Axis for no Trade"
+	desc = ""
+
+	enable = {
+		tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = SOV
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = FRA
+		value = 200
+	}	
+	ai_strategy = {
+		type = antagonize
+		id = ENG
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = RAJ
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = POL
+		value = 200
 	}
 }
 
