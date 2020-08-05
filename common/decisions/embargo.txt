@@ -12,7 +12,7 @@ political_actions = {
 			NOT = { has_government = JAP }
 			NOT = { has_war_with = JAP }
 		}
-		cost = 75
+		cost = 25
 		ai_will_do = {
 			factor = 100
 		}
@@ -35,14 +35,20 @@ political_actions = {
 		icon = generic_political_discourse
 		available = {
 			tag = USA
-			has_country_flag = USA_Embargo_JAP
+			OR = {
+				has_country_flag = USA_Embargo_JAP
+				has_war_with = JAP
+			}
 			JAP = {
 				has_completed_focus = JAP_secure_china
 			}
 		}
 		visible = {
 			tag = USA
-			has_country_flag = USA_Embargo_JAP
+			OR = {
+				has_country_flag = USA_Embargo_JAP
+				has_war_with = JAP
+			}
 			NOT = { has_government = JAP }
 		}
 		cost = 75
@@ -84,7 +90,7 @@ political_actions = {
 			NOT = { has_government = JAP }
 			NOT = { has_war_with = JAP }
 		}
-		cost = 75
+		cost = 25
 		ai_will_do = {
 			factor = 100
 		}
@@ -107,14 +113,20 @@ political_actions = {
 		icon = generic_political_discourse
 		available = {
 			tag = ENG
-			has_country_flag = ENG_Embargo_JAP
+			OR = {
+				has_country_flag = ENG_Embargo_JAP
+				has_war_with = JAP
+			}
 			JAP = {
 				has_completed_focus = JAP_secure_china
 			}
 		}
 		visible = {
 			tag = ENG
-			has_country_flag = ENG_Embargo_JAP
+			OR = {
+				has_country_flag = ENG_Embargo_JAP
+				has_war_with = JAP
+			}
 			NOT = { has_government = JAP }
 		}
 		cost = 75
@@ -150,7 +162,7 @@ political_actions = {
 			NOT = { has_government = GER }
 			NOT = { has_war_with = GER }
 		}
-		cost = 75
+		cost = 25
 		ai_will_do = {
 			factor = 100
 		}
@@ -173,14 +185,20 @@ political_actions = {
 		icon = generic_political_discourse
 		available = {
 			tag = USA
-			has_country_flag = USA_Embargo_GER
+			OR = {
+				has_country_flag = USA_Embargo_GER
+				has_war_with = JAP
+			}
 			GER = {
 				has_war_with = ENG
 			}
 		}
 		visible = {
 			tag = USA
-			has_country_flag = USA_Embargo_GER
+			OR = {
+				has_country_flag = USA_Embargo_GER
+				has_war_with = JAP
+			}
 			NOT = { has_government = GER }
 		}
 		cost = 75
