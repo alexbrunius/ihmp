@@ -24,9 +24,16 @@ JAP_intervene_in_china = {
 				has_war_with = USA
 				factor = 10 #screw it, kill everything
 			}
+			modifier = {
+				factor = 10
+				has_game_rule = {
+					rule = JAP_ai_behavior
+					option = JAP_MP_1
+				}
+			}
+
 		}
 		modifier = {
-
 		}
 
 		days_remove = 0
@@ -165,7 +172,26 @@ JAP_interservice_rivalry = {
 		days_remove = -1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 10
+				has_game_rule = {
+					rule = JAP_ai_behavior
+					option = JAP_MP_1
+				}
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = JAP_ai_behavior
+					option = JAP_MP_1
+				}
+				NOT = { has_idea = JAP_mitsumasa_yonai }
+			}
 		}
+
+		modifier = {
+		}
+	
 		complete_effect = {
 			random_owned_state = {
 				limit = {
@@ -228,7 +254,18 @@ JAP_interservice_rivalry = {
 		days_remove = -1
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = JAP_ai_behavior
+					option = JAP_MP_1
+				}
+			}
 		}
+
+		modifier = {
+		}
+
 		complete_effect = {
 			random_owned_state = {
 				limit = {
@@ -291,7 +328,18 @@ JAP_interservice_rivalry = {
 		days_remove = -1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = JAP_ai_behavior
+					option = JAP_MP_1
+				}
+			}
 		}
+
+		modifier = {
+		}
+
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
 			add_ideas = JAP_prioritize_army_aircraft_construction
@@ -321,7 +369,19 @@ JAP_interservice_rivalry = {
 		days_remove = -1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = JAP_ai_behavior
+					option = JAP_MP_1
+				}
+				NOT = { has_idea = JAP_mitsumasa_yonai }
+			}
 		}
+
+		modifier = {
+		}
+
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
 			add_ideas = JAP_prioritize_naval_aircraft_construction
@@ -351,10 +411,27 @@ JAP_interservice_rivalry = {
 		days_remove = -1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 5
+				has_game_rule = {
+					rule = JAP_ai_behavior
+					option = JAP_MP_1
+				}
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = JAP_ai_behavior
+					option = JAP_MP_1
+				}
+				NOT = { has_idea = JAP_mitsumasa_yonai }
+			}
 		}
+
 		modifier = {
 			conscription = 0.02
 		}
+
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
 			JAP_interservice_rivalry_towards_army = yes
@@ -383,7 +460,15 @@ JAP_interservice_rivalry = {
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 3
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = JAP_ai_behavior
+					option = JAP_MP_1
+				}
+			}
 		}
+
 		modifier = {
 			industrial_capacity_factory = 0.05
 			industrial_capacity_dockyard = 0.05
@@ -416,7 +501,16 @@ JAP_interservice_rivalry = {
 		days_remove = -1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = JAP_ai_behavior
+					option = JAP_MP_1
+				}
+				NOT = { has_idea = JAP_mitsumasa_yonai }
+			}
 		}
+
 		modifier = {
 			special_forces_cap = 0.02
 		}
@@ -448,7 +542,15 @@ JAP_interservice_rivalry = {
 		days_remove = -1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = JAP_ai_behavior
+					option = JAP_MP_1
+				}
+			}
 		}
+
 		modifier = {
 			special_forces_attack_factor = 0.05 
 			special_forces_defence_factor = 0.05
@@ -2553,6 +2655,91 @@ prospect_for_resources = {
 				set_state_flag = sichuan_aluminium_developed
 			}
 		}	
+	}
+	JAP_develop_east_indies_oil = {
+
+		icon = oil
+
+		allowed = {
+			tag = JAP
+		}
+
+		available = {
+			335 = {
+				controller = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+					has_full_control_of_state = PREV
+				}
+			}
+			672 = {
+				controller = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+					has_full_control_of_state = PREV
+				}
+			}
+			334 = {
+				controller = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+					has_full_control_of_state = PREV
+				}
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		visible = {
+			has_completed_focus = JAP_exploit_the_southern_resource_area
+			NOT = { check_variable = { var = east_indies_oil value = 20 compare = greater_than_or_equals } }
+		}
+
+		remove_effect = {
+			335 = {
+				add_resource = {
+					type = oil
+					amount = 2
+				}
+			}
+			672 = {
+				add_resource = {
+					type = oil
+					amount = 2
+				}
+			}
+			334 = {
+				add_resource = {
+					type = oil
+					amount = 2
+				}
+			}
+			if = {
+				limit = {
+					NOT = { check_variable = { var = east_indies_oil value = 1 compare = greater_than_or_equals } }
+				}
+				set_variable = { var = east_indies_oil value = 0 }
+			}
+			add_to_variable = { var = east_indies_oil value = 1 }
+		}
+
+		complete_effect = {
+		}
+
 	}
 
 }
