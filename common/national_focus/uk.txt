@@ -1931,12 +1931,14 @@ focus_tree = {
 	focus = {
 		id = uk_rock_focus 
 		prerequisite = { focus = uk_mediterranean_focus }
-		mutually_exclusive = { focus = uk_spain_focus }
+		mutually_exclusive = {
+			focus = uk_spain_focus
+		}
 		available = {
 			118 = { is_owned_and_controlled_by = ENG }
 		} 
 		icon = GFX_goal_generic_construct_military
-		x = -3
+		x = -5
 		y = 1
 		relative_position_id = uk_mediterranean_focus
 		cost = 10
@@ -1970,7 +1972,10 @@ focus_tree = {
 	focus = {
 		id = uk_spain_focus
 		prerequisite = { focus = uk_mediterranean_focus }
-		mutually_exclusive = { focus = uk_rock_focus }
+		mutually_exclusive = {
+			focus = uk_invoke_the_alliance_of_1373_focus
+			focus = uk_rock_focus
+		}
 
 		available = {
 			any_other_country = {
@@ -1984,7 +1989,7 @@ focus_tree = {
 		} #SPA/SPR not in a faction
 		#prerequisite = { focus = uk_carrier_focus }
 		icon = GFX_goal_generic_demand_territory
-		x = -1
+		x = -3
 		y = 1
 		relative_position_id = uk_mediterranean_focus
 		cost = 10
@@ -2059,6 +2064,40 @@ focus_tree = {
 			}
 			hidden_effect = {
 				news_event = { hours = 5 id = news.224 }
+			}
+		}
+	}
+	focus = {
+		id = uk_invoke_the_alliance_of_1373_focus
+		prerequisite = { focus = uk_mediterranean_focus }
+		mutually_exclusive = {
+			focus = uk_spain_focus
+		}
+		available = {
+			has_war = yes
+			has_government = democratic
+			POR = {
+				OR = {
+					has_government = ROOT
+					has_government = neutrality
+				}
+			}
+			POR = { is_in_faction = no }
+			is_faction_leader = yes
+		} 
+		icon = GFX_focus_generic_befriend_portugal
+		x = -1
+		y = 1
+		relative_position_id = uk_mediterranean_focus
+		cost = 10
+		completion_reward = {
+			ENG = { add_to_faction = POR }
+			POR = {
+				add_ai_strategy = {
+					type = alliance
+					id = ENG
+					value = 200
+				}
 			}
 		}
 	}
@@ -5435,7 +5474,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = uk_colonial_focus
 		cost = 10
@@ -5485,7 +5524,7 @@ focus_tree = {
 		id = ENG_british_commonwealth_air_training_plan
 		prerequisite = { focus = uk_commonwealth_focus }
 		icon = GFX_goal_generic_air_fighter2
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = uk_commonwealth_focus
 		cost = 10
@@ -5536,7 +5575,7 @@ focus_tree = {
 			}
 		} 
 		icon = GFX_goal_generic_construct_civ_factory
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = uk_commonwealth_focus
 		cost = 10
@@ -5753,7 +5792,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_civilian
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = uk_commonwealth_focus
 		cost = 10
@@ -6073,7 +6112,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 0
+		x = 1
 		y = 3
 		relative_position_id = uk_commonwealth_focus
 		cost = 10
@@ -6232,7 +6271,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 2
+		x = 3
 		y = 3
 		relative_position_id = uk_commonwealth_focus
 		cost = 10
