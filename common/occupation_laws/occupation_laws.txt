@@ -279,7 +279,7 @@ martial_law_occupation = {
 		compliance_gain 				= -0.055		
 		#required_garrison_factor 		= 0.0
 		#resistance_damage_to_garrison 	= 0.0		
-		#local_factories 				= 0.0
+		local_factories 				= 0.1
 		local_resources 				= 0.1
 	}
 	
