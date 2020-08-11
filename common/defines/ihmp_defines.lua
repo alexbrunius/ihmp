@@ -105,6 +105,7 @@ NDefines.NMilitary.MIN_DIVISION_DEPLOYMENT_TRAINING = 0.4			-- was 0.2 -- Min le
 NDefines.NMilitary.UNIT_UPKEEP_ATTRITION = 0.01					-- was 0.00		--Constant attrition value applied to armies.
 
 -- LAND/ARMY FUEL
+NDefines.NMilitary.ARMY_MAX_FUEL_FLOW_MULT = 2.4					-- was 2.0 -- max fuel ratio that an army can get per hour, multiplied by supply situation
 NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.8						-- was 0.5 -- fuel cost multiplier for all army related stuff
 NDefines.NMilitary.FUEL_PENALTY_START_RATIO = 0.33								-- was 0.25 -- ratio of fuel in an army to start getting penalties
 NDefines.NMilitary.SURPLUS_SUPPLY_RATIO_FOR_ZERO_FUEL_FLOW = 1.5		-- was 0.5 -- if a supply chunk has more supply needed than this ratio + 1 compared to its max supply flow, the units inside the chiunk will get no fuel 
