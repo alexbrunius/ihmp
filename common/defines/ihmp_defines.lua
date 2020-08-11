@@ -264,6 +264,7 @@ NDefines.NOperatives.OPERATIVE_SLOTS_FROM_FACTION_MEMBERS_FOR_SPY_MASTER = {
 }
 
 -- INTEL STUFF
+NDefines.NIntel.INTEL_NETWORK_MIN_VP_TO_TARGET = 1					-- was 15 -- The minimum value of the highest VP in a state to consider the state as a valid target to start building an intel network
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_MULT_DECAY = 0.980 -- was 0.995
 
 NDefines.NIntel.CIVILIAN_PRODUCTION_RANGE_INTEL_MIN = 0.2 -- was 0.1 -- minimum value to show fuzzy factory counts below this you will get ???
