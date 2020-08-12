@@ -104,6 +104,13 @@ political_actions = {
 			modifier = {
 				add = 1
 				has_stability < 0.6
+				NOT = { tag = CHI }
+			}
+			modifier = {
+				add = 1
+				tag = CHI
+				date > 1938.1.1
+				has_stability < 1.0
 			}
 			modifier = {
 				add = 1
@@ -1242,7 +1249,7 @@ special_projects = {
 		available = {
 			has_full_control_of_state = 446
 			has_full_control_of_state = 453
-			num_of_civilian_factories > 15
+			num_of_civilian_factories > 10
 		}
 	
 		visible = {
@@ -1256,7 +1263,7 @@ special_projects = {
 		cost = 120
 	
 		modifier = {
-			civilian_factory_use = 15
+			civilian_factory_use = 10
 		}
 	
 		remove_effect = {
