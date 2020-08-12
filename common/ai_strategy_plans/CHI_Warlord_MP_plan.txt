@@ -159,6 +159,38 @@ CHI_warlord_MP_plan_communist = {
 	}
 }
 
+MP_Weapons_1 = {
+	name = "PRC MP Weapons 1"
+	desc = "Resarch weapons 1 quick for better stats"
+
+	enable = {
+		OR = {
+			original_tag = GXC
+			original_tag = YUN
+			original_tag = XSM
+			original_tag = SHX
+			original_tag = SIK
+		}
+		has_game_rule = {
+			rule = WL_ai_behavior
+			option = WL_MP_1
+		}
+		NOT = { has_tech = infantry_weapons1 }
+	}
+	
+	abort = {
+		OR = {
+			has_tech = infantry_weapons1
+			is_researching_technology = infantry_weapons1
+		}
+	}
+
+	research = {
+		infantry_weapons = 1000
+		construction_tech = -1000
+	}
+}
+
 GXC_ignore_FRA_script = {
 	name = ""
 	desc = ""
@@ -211,11 +243,11 @@ GXC_Infrastructure_1 = {
 		type = build_building
 		id = infrastructure
 		target = 594
-		value = 4
+		value = 1
 	}
 }
 
-GXC_Infrastructure_1 = {
+GXC_Infrastructure_2 = {
 	name = ""
 	desc = ""
 
@@ -248,7 +280,7 @@ GXC_Infrastructure_1 = {
 		type = build_building
 		id = infrastructure
 		target = 592
-		value = 4
+		value = 1
 	}
 }
 
@@ -327,7 +359,7 @@ CHI_warlord_expedtionary_forces = {
 }
 
 XSM_Garrision = {
-	name = ""
+	name = "Garrision"
 	desc = ""
 
 	enable = {
@@ -369,7 +401,7 @@ XSM_Garrision = {
 }
 
 YUN_Garrision = {
-	name = ""
+	name = "Garrision"
 	desc = ""
 
 	enable = {
@@ -412,6 +444,55 @@ YUN_Garrision = {
 			595
 			596
 			613
+		}
+		area = asia
+	}
+}
+
+GXC_Garrision = {
+	name = "Garrision"
+	desc = ""
+
+	enable = {
+		original_tag = GXC
+		has_game_rule = {
+			rule = WL_ai_behavior
+			option = WL_MP_1
+		}
+		is_in_faction_with = CHI
+		591 = {
+			is_controlled_by = GXC	
+		}
+		592 = {
+			is_controlled_by = GXC	
+		}
+		593 = {
+			is_controlled_by = GXC
+		}
+	}
+
+	abort = {
+		OR = {
+			NOT = { is_in_faction_with = CHI }
+			591 = {
+				NOT = { is_controlled_by = GXC }
+			}
+			592 = {
+				NOT = { is_controlled_by = GXC }
+			}
+			593 = {
+				NOT = { is_controlled_by = GXC }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.5
+		states = {
+			591
+			592
+			593
 		}
 		area = asia
 	}

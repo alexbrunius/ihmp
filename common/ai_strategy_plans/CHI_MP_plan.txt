@@ -24,9 +24,10 @@ CHI_MP_1_Fight = {
 		CHI_three_principles_of_the_people
 		CHI_democracy
 		CHI_executive_yuan
+		CHI_rural_reconstruction_movement
 		CHI_nationalism
 		CHI_foreign_threats
-		CHI_united_front
+		#CHI_united_front
 		CHI_military_affairs_commission
 		CHI_army_reform
 		CHI_war_of_resistance
@@ -38,7 +39,6 @@ CHI_MP_1_Fight = {
 		CHI_mission_to_the_soviet_union
 		CHI_invite_soviet_advisers 
 		CHI_the_soviet_volunteer_group
-		CHI_rural_reconstruction_movement
 		CHI_mining_commission
 		CHI_develop_the_hanyan_arsenal
 		CHI_financial_policy
@@ -97,6 +97,11 @@ CHI_MP_1_Fight = {
 		value = 200
 	}
 	ai_strategy = {
+		type = equipment_production_min_factories
+		id = anti_air
+		value = 1
+	}
+	ai_strategy = {
 		type = put_unit_buffers
 		ratio = 0.4
 		states = { 
@@ -124,6 +129,37 @@ CHI_MP_1_Fight = {
 		}
 	}
 
+}
+
+CHI_Guard_Forward_Coast = {
+	name = "Guard East-Heibei if conqured"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		609 = {
+			is_fully_controlled_by = CHI
+		}
+	}
+
+	abort = {
+		609 = {
+			NOT = { is_fully_controlled_by = CHI }
+		}
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.2
+		states = { 
+			609
+		}
+		area = asia
+	}
 }
 
 CHI_MP_1_Alliance = {
@@ -176,6 +212,31 @@ CHI_MP_1_Alliance = {
 		type = alliance
 		id = GXC
 		value = 200
+	}
+}
+
+CHI_MP_Weapons_1 = {
+	name = "MP Weapons 1"
+	desc = "Resarch weapons 1 quick for better stats"
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior 
+			option = CHI_MP_1
+		}
+		NOT = { has_tech = infantry_weapons1 }
+	}
+	
+	abort = {
+		OR = {
+			has_tech = infantry_weapons1
+			is_researching_technology = infantry_weapons1
+		}
+	}
+
+	research = {
+		infantry_weapons = 1000
 	}
 }
 
@@ -373,6 +434,46 @@ MP_1_No_AirUnits = {
 		id = strategic_bomber
 		value = -10000
 	}
+	ai_strategy = {
+		type = unit_ratio
+		id = scout_plane
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = scout_plane_equipment
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = screen_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = capital_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = submarine
+		value = -100
+	}
 }
 
 CHI_MP_Electronics_1 = {
@@ -404,6 +505,81 @@ CHI_MP_Electronics_1 = {
 	}
 }
 
+CHI_MP_Infrastructure_1 = {
+	name = "CHI Infrastructure"
+	desc = "Build Level 10 for Buildspeed and Resources"
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		605 = {
+			is_controlled_by = CHI
+			infrastructure < 8
+		}
+	}
+
+	abort = {
+		605 = {
+			OR ={
+				NOT = { is_controlled_by = CHI }
+				NOT = { infrastructure < 8 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 605
+		value = 1
+	}
+}
+
+CHI_MP_Mils_1 = {
+	name = "CHI Military Factory"
+	desc = "Build Mils in Sichuan"
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		NOT = { has_idea = civilian_economy }
+		605 = {
+			is_controlled_by = CHI
+			NOT = { infrastructure < 8 }
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+				include_locked = no
+			}			
+		}
+	}
+
+	abort = {
+		605 = {
+			OR ={
+				NOT = { is_controlled_by = CHI }
+				free_building_slots = {
+					building = arms_factory
+					size < 1
+					include_locked = no
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = arms_factory
+		target = 605
+		value = 1
+	}
+}
 
 CHI_MP_1_Puppet = {
 	name = "Puppet China Plan 1"

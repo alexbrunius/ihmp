@@ -51,6 +51,7 @@ GER_MP_1 = {
 		GER_ussr_war_goal
 		GER_second_vienna_award
 		GER_italy_ally
+		GER_nationalist_spain_ally
 	}
 
 	research = {
@@ -217,6 +218,11 @@ GER_MP_Alliance = {
 		value = 400
 	}
 	ai_strategy = {
+		type = alliance
+		id = BUL
+		value = 400
+	}
+	ai_strategy = {
 		type = befriend
 		id = ITA
 		value = 200
@@ -252,7 +258,7 @@ Do_Befriend_But_No_PP = {
 		type = pp_spend_priority
 		id = relation	
 		value = -200
-	}	
+	}
 }
 
 GER_MP_1_Fighter2 = {
@@ -426,6 +432,8 @@ GER_MP_Fronts_1 = {
 		OR = {
 			POL = { has_capitulated = yes }
 			threat > 0.95
+			has_war_with = BEL
+			has_war_with = HOL
 		}
 	}
 
@@ -466,23 +474,23 @@ GER_MP_Fronts_2 = {
 
 	abort = {
 		VIC = {
-			OR = {
-				NOT = {
-					has_non_aggression_pact_with = GER
-				}
-				focus_progress = {
-					focus = VIC_end_the_occupation
-					progress > 0.5
-				}
+			focus_progress = {
+				focus = VIC_end_the_occupation
+				progress > 0.5
 			}
 		}
 	}
 
 	ai_strategy = {
 	 	type = front_unit_request
-		tag = VIC
+		state = 20
+		state = 22
+		state = 26
+		state = 33
+		state = 25
+		state = 31 
 		value = -1000
-	}
+	}	
 }
 
 GER_MP_Fronts_3 = {
@@ -511,7 +519,7 @@ GER_MP_Fronts_3 = {
 	}
 }
 
-GER_MP_Fronts_3 = {
+GER_MP_Fronts_4 = {
 	name = "Don't Attack Norway before Denmark Falls"
 	desc = ""
 

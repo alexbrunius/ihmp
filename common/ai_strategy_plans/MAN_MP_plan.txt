@@ -48,6 +48,9 @@ MAN_MP_1 = {
 	research = {
 		excavation_tech = 100
 		synth_resources = -1000
+		cat_mobile_warfare = -10000
+		cat_superior_firepower = -10000
+		cat_grand_battle_plan = -10000
 		air_doctrine = -1000
 		naval_doctrine = -1000
 		air_equipment = -1000
@@ -125,6 +128,9 @@ MAN_MP_2 = {
 	research = {
 		excavation_tech = 100
 		synth_resources = -1000
+		cat_mobile_warfare = -10000
+		cat_superior_firepower = -10000
+		cat_grand_battle_plan = -10000
 		air_doctrine = -1000
 		naval_doctrine = -1000
 		air_equipment = -1000
@@ -150,6 +156,38 @@ MAN_MP_2 = {
 		}
 	}
 
+}
+
+MP_Weapons_1 = {
+	name = "MP Weapons 1"
+	desc = "Resarch weapons 1 quick for better stats"
+
+	enable = {
+		original_tag = MAN
+		OR = {
+			has_game_rule = {
+				rule = MAN_ai_behavior
+				option = MAN_MP_1
+			}
+			has_game_rule = {
+				rule = MAN_ai_behavior
+				option = MAN_MP_2
+			}
+		}
+		NOT = { has_tech = infantry_weapons1 }
+	}
+	
+	abort = {
+		OR = {
+			has_tech = infantry_weapons1
+			is_researching_technology = infantry_weapons1
+		}
+	}
+
+	research = {
+		infantry_weapons = 1000
+		construction_tech = -1000
+	}
 }
 
 MAN_MP_Industry_1 = {
