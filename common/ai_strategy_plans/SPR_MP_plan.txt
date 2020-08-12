@@ -11,6 +11,7 @@ SPR_MP_1 = {
 			rule = SPR_ai_behavior 
 			option = SPR_MP_1
 		}
+		NOT = { has_global_flag = scw_over }
 	}
 
 	abort = {
@@ -21,6 +22,7 @@ SPR_MP_1 = {
 				has_war_with = ENG
 				has_war_with = GER
 			}
+			has_global_flag = scw_over
 		}
 		
 	}
@@ -112,6 +114,119 @@ SPR_MP_1 = {
 
 }
 
+SPR_MP_1 = {
+	name = "Spanish MP plan 1"
+	desc = "Multiplayer behavior for Nationalist Spain"
+
+	enable = {
+		OR = {
+			tag = SPR
+			tag = SPA
+		}
+		has_game_rule = {
+			rule = SPR_ai_behavior 
+			option = SPR_MP_1
+		}
+		has_global_flag = scw_over
+	}
+
+	abort = {
+		OR = {
+			tag = SPD
+			tag = SPC
+			OR = {
+				has_war_with = ENG
+				has_war_with = GER
+			}
+		}
+		OR = {
+			AND = {
+				GER = { has_completed_focus = GER_nationalist_spain_ally }
+				ENG = { has_completed_focus = uk_spain_focus }
+			}
+			AND = {
+				NOT = { GER = { has_completed_focus = GER_nationalist_spain_ally } }
+				NOT = { ENG = { has_completed_focus = uk_spain_focus } }
+			}
+		}
+		
+	}
+
+	ai_national_focuses = {
+		#AfterSCW
+		SPA_expand_conscription
+		SPA_portuguese_aid
+		SPA_integrate_the_requetes
+		SPA_utilize_the_intellectuals
+		SPA_national_recovery
+		SPA_adopt_the_26_points
+		SPA_direct_the_universities
+		SPA_dictator_for_life
+		SPA_stamp_out_the_maquis
+		SPA_prepare_the_pyrenees_defenses
+		SPA_la_division_azul
+		SPA_the_tangiers_enclave
+		SPA_the_national_and_popular_army_of_spain
+		SPA_the_army_of_africa_model
+		SPA_invest_in_naval_infrastructure
+		SPA_expand_the_slipways
+		SPA_autarky
+		SPA_spanish_austerity
+		SPA_reduce_reliance_on_foreign_resources
+		SPA_restart_small_scale_shipbuilding
+		SPA_the_plan_imperial
+		SPA_artillery_modernization
+		SPA_defenses_against_strategic_bombing
+		SPA_defenses_against_invasion
+	}
+
+	focus_factors = {
+		SPA_the_iberian_pact = 0
+	}
+
+	research = {
+		
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 1
+		war_economy = 1
+		free_trade = 0
+		export_focus = 1
+		limited_exports = 0
+		closed_economy = 0
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+		SPA_ramon_serrano_suner = 100
+		SPA_agustin_munoz_grandes = 0
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = GER
+		value = -200
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = ENG
+		value = -200
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
 SPR_historical_plan_war_with_allies = {
 	name = "Spanish anti-Allied historical plan"
 	desc = "Historical behavior for Nationalist Spain at war with the Allies"
@@ -130,6 +245,12 @@ SPR_historical_plan_war_with_allies = {
 			has_war_with = USA
 		}
 		NOT = { has_war_with = GER }
+		GER = { has_completed_focus = GER_nationalist_spain_ally }
+		NOT = { ENG = { has_completed_focus = uk_spain_focus } }
+		has_country_flag = {
+			flag = ger_spa_alliance_focus
+			days > 140
+		}
 	}
 	abort = {
 		OR = {
@@ -142,8 +263,7 @@ SPR_historical_plan_war_with_allies = {
 				option = SPR_MP_1
 			}
 			has_war_with = GER
-		}
-		
+		}		
 	}
 
 	ai_national_focuses = {
@@ -154,43 +274,23 @@ SPR_historical_plan_war_with_allies = {
 		SPA_support_the_war_industry
 		SPA_expand_the_war_industry
 		SPA_the_duty_to_work
-		SPA_a_great_spain
-		SPA_hand_over_the_ceda_campaign_chest	
-		SPA_negotiate_carlist_support
-		SPA_the_army_of_africa
-		SPA_secure_the_northern_garrisons
-		SPA_foment_a_carlist_split
-		SPA_con_paquito
-		SPA_unify_the_nationalist_front
-		SPA_consolidate_the_north
-		SPA_save_the_alcazar
-		SPA_martyrdom_for_primo_de_rivera
-		SPA_caudillo_of_spain
-		SPA_extol_the_martyrs_of_the_war
-		SPA_banish_the_party_leaders
-		SPA_safeguard_the_freedom_of_worship
-		SPA_fuse_the_parties
-		SPA_a_methodical_approach
-		SPA_portuguese_aid
-		SPA_tackle_the_vulnerable_fronts
 		SPA_expand_conscription
+		SPA_portuguese_aid
 		SPA_integrate_the_requetes
-		SPA_the_iberian_pact
+		SPA_utilize_the_intellectuals
 		SPA_national_recovery
 		SPA_adopt_the_26_points
-		SPA_prepare_the_pyrenees_defenses
 		SPA_direct_the_universities
 		SPA_dictator_for_life
-		SPA_la_division_azul
 		SPA_stamp_out_the_maquis
+		SPA_prepare_the_pyrenees_defenses
+		SPA_la_division_azul
 		SPA_the_tangiers_enclave
 		SPA_the_national_and_popular_army_of_spain
 		SPA_the_army_of_africa_model
-		SPA_equipment_modernization
-		SPA_motorization
-		SPA_an_armored_corps
 		SPA_invest_in_naval_infrastructure
 		SPA_expand_the_slipways
+		SPA_reduce_reliance_on_foreign_resources
 		SPA_restart_small_scale_shipbuilding
 		SPA_the_plan_imperial
 		SPA_artillery_modernization
@@ -203,7 +303,25 @@ SPR_historical_plan_war_with_allies = {
 	}
 
 	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 1
+		war_economy = 1
+		free_trade = 100
+		export_focus = 0
+		limited_exports = 0
+		closed_economy = 0
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+		SPA_ramon_serrano_suner = 100
+		SPA_agustin_munoz_grandes = 0
+	}
 
+	ai_strategy = {
+		type = alliance
+		id = GER
+		value = -200
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -238,6 +356,8 @@ SPR_historical_plan_war_with_axis = {
 			has_war_with = ENG
 			has_war_with = USA
 		}
+		NOT = { GER = { has_completed_focus = GER_nationalist_spain_ally } }
+		ENG = { has_completed_focus = uk_spain_focus }
 	}
 	abort = {
 		OR = {
@@ -315,7 +435,25 @@ SPR_historical_plan_war_with_axis = {
 	}
 
 	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 1
+		war_economy = 1
+		free_trade = 0
+		export_focus = 1
+		limited_exports = 0
+		closed_economy = 0
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+		SPA_ramon_serrano_suner = 100
+		SPA_agustin_munoz_grandes = 0
+	}
 
+	ai_strategy = {
+		type = alliance
+		id = GER
+		value = -200
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)

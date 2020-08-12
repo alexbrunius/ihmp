@@ -113,6 +113,43 @@ BUL_MP_Electronics_1 = {
 	}
 }
 
+BUL_MP_Alliance = {
+	name = "Bulgarian-German Alliance"
+	desc = ""
+
+	enable = {
+		tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = GER
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = GER
+		value = 400
+	}
+	ai_strategy = {
+		type = support
+		id = GER
+		value = 200
+	}	
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = -200
+	}
+}
+
 BUL_MP_Antagonize = {
 	name = "Antagonize Axis for no Trade"
 	desc = ""

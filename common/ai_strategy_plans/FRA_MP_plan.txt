@@ -624,43 +624,6 @@ FRA_MP_AT_Production = {
 
 }
 
-FRA_MP_InfEquip_LessProduction = {
-	name = "Produce Less Inf Equip"
-	desc = ""
-
-	enable = {
-		original_tag = FRA
-		OR = {
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_1
-			}
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_2
-			}
-		}
-		has_tech = antitank2
-		stockpile_ratio = {
-			archetype = infantry_equipment
-			ratio > 1.0
-		}
-	}
-
-	abort = {
-		stockpile_ratio = {
-			archetype = infantry_equipment
-			ratio < 0.5
-		}
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = infantry
-		value = -50
-	}
-}
-
 FRA_MP_Europe = {
 	name = "Solely Focus on Europe against Germany and Italy"
 	desc = ""
@@ -687,8 +650,6 @@ FRA_MP_Europe = {
 	 	type = front_unit_request
 		tag = BRA
 		tag = SPR
-		tag = SPA
-		tag = SPD
 		tag = RAJ
 		tag = LIB
 		tag = TUR
@@ -711,6 +672,15 @@ FRA_MP_Europe = {
 		state = 559 #Somaliland (ITA)
 		value = -600
 	}
+	ai_strategy = {
+	 	type = front_unit_request
+		state = 165
+		state = 794
+		state = 166
+		state = 172
+		state = 792 
+		value = -1000
+	}	
 }
 
 

@@ -1,0 +1,678 @@
+POR_historical_plan = {
+	name = "Historical Neutrality"
+	desc = "Under the regime of Salazar, Portugal will strengthen the Estado Novo and will attempt to remain neutral during the World War."
+
+	enable = {
+		original_tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+			}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+
+		POR_estado_novo
+		POR_support_the_spanish_nationalists
+		POR_continue_the_public_works
+		POR_instituto_superior_tecnico
+		POR_roads_bridges_and_dams
+		POR_food_industries
+		POR_textile_industry
+		POR_strengthen_the_regime
+		POR_appease_monarchists
+		POR_concordat_with_the_holy_see
+		POR_national_gold_reserves
+		POR_proudly_alone
+		POR_ogme
+		POR_portuguese_artillery
+		POR_military_research_facilities
+		POR_military_vehicles
+		POR_army_reorganization
+		POR_portuguese_legion
+		POR_extraction_industries
+		POR_hydroelectricity
+		POR_second_navy_reequipment
+		POR_a_powerful_merchant_marine
+		POR_observation_mission
+		POR_ogma
+		POR_colonial_assimilation_policy
+		POR_colonial_army
+		POR_metropolitan_army
+		POR_standardization
+		POR_corpo_do_estado_maior
+		POR_staff_wargames
+		POR_merchant_marine_protection
+		POR_submarine_effort
+		POR_fuzileiros
+		POR_naval_research_institute
+		POR_arsenal_do_alfeite
+		POR_the_capital_of_espionage
+		POR_infrastructure_in_angola
+		POR_develop_north_angola
+		POR_develop_south_angola
+		POR_portuguese_oil
+		#POR_national_cruiser_production
+		#POR_atlantic_defense_strategy
+	}
+
+	focus_factors = {
+		POR_send_assistance = 0
+		POR_nationalist_intervention = 0
+		POR_iberian_summit = 0
+		POR_the_eastern_menace = 0
+		POR_the_communist_threat = 0
+		POR_national_syndicalism = 0
+		POR_honor_anglo_portuguese_alliance = 0
+		POR_a_royal_wedding = 0
+	}				
+
+	research = {
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = ENG
+		tag = FRA
+		tag = BEL
+		tag = SAF
+		tag = RAJ
+		tag = CHI
+		tag = GXC
+		tag = INS
+		value = -200
+	}
+
+	ideas = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+POR_MP_Ideas = {
+	name = "POR Ideas"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 10
+		partial_economic_mobilisation = 10
+		free_trade = 10
+		export_focus = 0
+		limited_exports = 0
+		closed_economy = 0
+		disarmed_nation = 0
+		volunteer_only = 0
+		POR_alfredo_da_silva = 5
+		POR_jose_adriano_pequito_rebelo = 20
+		POR_joao_francisco_de_barbosa_azevedo = 100
+		POR_alvaro_cunhal = 0
+		POR_jaime_cortesao_2 = 0
+		POR_francisco_craveiro_lopes_2 = 0
+		POR_augusto_de_vasconcelos_2 = 0
+		POR_jose_hipolito_raposo_2 = 0
+		POR_jose_hipolito_raposo = 0
+		POR_rolao_preto = 0
+		POR_domingos_oliveira = 100
+		POR_vieira_da_rocha = 0
+		POR_julio_botelho_moniz = 0
+		POR_humberto_carmona = 0
+		POR_jaime_afreixo = 0
+		POR_manuel_quintao_meireles = 0
+		ogme = 0
+		fma = 0
+		generic_electronics_concern = 0
+		POR_jose_norton_de_matos_2 = 0.5
+		POR_jose_manuel_sarmento_de_beires_2 = 0
+		POR_manuel_ortins_torres_de_bettencourt = 0
+	}
+}
+
+POR_MP_Garrision = {
+	name = "Garrision the Mainland"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+		NOT = { SPA = { is_in_faction_with = GER } }
+		NOT = { has_war_with = SPA }
+	}
+
+	abort = {
+		OR = {
+			SPA = { is_in_faction_with = GER }
+			has_war_with = SPA
+		}
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = SPR
+		value = -200
+	}	
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 1.0
+		states = { 
+			112
+			179
+			180
+			181
+			795
+		}
+		area = europe
+	}
+}
+
+POR_MP_Buildup = {
+	name = "Build Civs while on Civ Eco"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+		has_idea = civilian_economy
+	}
+
+	abort = {
+		NOT = { has_idea = civilian_economy }
+	}
+	
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 30
+	}
+}
+
+POR_MP_No_Island_Factories = {
+	name = "Don't build on Islands or in Colonies"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+		has_capitulated = no
+	}
+
+	abort = {
+		has_capitulated = yes
+	}
+
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  697
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  698
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  702
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  296
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  705
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  796
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  540
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  544
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  321
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  721
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  729
+        value = -1000
+    }
+}
+
+POR_MP_Early_Production = {
+	name = "Portugal Early Production"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+		OR = {
+			NOT = { num_of_military_factories > 10 }
+			AND = {
+				NOT = { has_equipment = { support_equipment_1 > 800	} }
+				NOT = { has_completed_focus = POR_strengthen_the_regime }
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			num_of_military_factories > 10
+			has_equipment = { support_equipment_1 > 800	}
+			has_completed_focus = POR_strengthen_the_regime 
+		}
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = infantry_equipment
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = artillery_equipment
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = support_equipment
+		value = 1000
+	}
+}
+
+POR_MP_Early_Production = {
+	name = "Portugal Early Production"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+		has_equipment = { support_equipment_1 > 800	}
+	}
+
+	abort = {
+	}
+	
+	ideas = {
+		limited_conscription = 20
+	}
+}
+
+POR_MP_NoPlanes = {
+	name = "No Plane Production"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = scout_plane
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = scout_plane
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = scout_plane_equipment
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = screen_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = capital_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = submarine
+		value = -100
+	}
+}
+
+No_PP_For_Relation = {
+	name = "No PP for Relation"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = -200
+	}	
+}
+
+POR_MP_No_Generals = {
+	name = "No Generals"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+		date < 1939.1.1
+	}
+
+	abort = {
+		date > 1939.1.1
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = general
+		value = -1000
+	}
+}
+
+POR_MP_No_Admirals = {
+	name = "No Admirals"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+		date < 1940.1.1
+	}
+
+	abort = {
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = -1000
+	}
+}
+
+MP_Conscription_0 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+		has_idea = volunteer_only
+	}
+
+	abort = {
+		NOT = { has_idea = volunteer_only }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+	}
+}
+
+MP_Conscription_1 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+		has_idea = limited_conscription
+	}
+
+	abort = {
+		NOT = { has_idea = limited_conscription }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+	}
+}
+
+MP_Conscription_2 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+		has_idea = extensive_conscription
+	}
+
+	abort = {
+		NOT = { has_idea = extensive_conscription }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+	}
+}
+
+MP_Economy_0 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+		has_idea = low_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = low_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+	}
+}
+
+MP_Economy_1 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+		has_idea = partial_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = partial_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+	}
+}
+
+MP_Economy_2 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+		has_idea = war_economy
+	}
+
+	abort = {
+		NOT = { has_idea = war_economy }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 0
+	}
+}

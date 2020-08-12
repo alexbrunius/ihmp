@@ -164,7 +164,7 @@ PRC_MP_Electronics_1 = {
 	}
 }
 
-PRC_MP_Weapons_1 = {
+MP_Weapons_1 = {
 	name = "PRC MP Weapons 1"
 	desc = "Resarch weapons 1 quick for better stats"
 
@@ -186,6 +186,7 @@ PRC_MP_Weapons_1 = {
 
 	research = {
 		infantry_weapons = 1000
+		construction_tech = -1000
 	}
 }
 

@@ -35,9 +35,16 @@ MEN_MP_1 = {
 	ideas = {
 	}
 	
-		
 	ai_strategy = {
-	}	
+		type = unit_ratio
+		id = infantry
+		value = -1000
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -1000
+	}
 
 	traits = {
 	}
@@ -55,4 +62,30 @@ MEN_MP_1 = {
 		
 	}
 
+}
+
+MP_Weapons_1 = {
+	name = "MP Weapons 1"
+	desc = "Resarch weapons 1 quick for better stats"
+
+	enable = {
+		original_tag = MEN
+		has_game_rule = {
+			rule = MEN_ai_behavior 
+			option = MEN_MP_1
+		}
+		NOT = { has_tech = infantry_weapons1 }
+	}
+	
+	abort = {
+		OR = {
+			has_tech = infantry_weapons1
+			is_researching_technology = infantry_weapons1
+		}
+	}
+
+	research = {
+		infantry_weapons = 1000
+		construction_tech = -1000
+	}
 }

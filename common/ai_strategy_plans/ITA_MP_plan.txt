@@ -14,20 +14,20 @@ ITA_MP_1 = {
 	}
 
 	ai_national_focuses = {
-		ITA_ethiopian_war_logistics					#March 10 1936	
-		ITA_industrial_effort						#May 20 1936	
-		ITA_army_primacy							#July 30 1936	
-		ITA_air_innovation							#October 10 1936
-		ITA_industrial_effort_2 					#October 10 1936	
-		ITA_extra_tech_slot 						#December 20 1936	
-		ITA_italian_highways						#February 30 1937
+		ITA_ethiopian_war_logistics					#March 10 1936
+		ITA_industrial_effort						#May 20 1936
+		ITA_industrial_effort_2						#July 30 1936
+		ITA_extra_tech_slot							#October 10 1936
+		ITA_italian_highways 						#October 10 1936
+		ITA_army_primacy							#December 20 1936
+		ITA_air_innovation							#February 30 1937
 		ITA_victoryinETH							#May 10 1937
 		ITA_support_nationalist_spain
+		ITA_mare_nostrum							
 		ITA_yugoslavia_friend
-		ITA_mare_nostrum
+		ITA_albania_war_goal
 		ITA_bulgaria_friend
 		ITA_pact_of_steel
-		ITA_albania_war_goal
 		ITA_demand_balearic_islands
 		ITA_modernized_artillery	
 		ITA_modernized_army
@@ -61,7 +61,7 @@ ITA_MP_1 = {
 	research = {
 		cat_mobile_warfare = 40
 		synth_resources = -100
-		cat_grand_battle_plan = -10000
+		#cat_grand_battle_plan = -10000
 		cat_strategic_destruction = -10000
 	}
 

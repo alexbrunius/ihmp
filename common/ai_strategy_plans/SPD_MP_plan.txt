@@ -49,8 +49,8 @@ SPD_MP_1 = {
 		SPR_collectivize_industry
 		SPR_connect_the_country
 		SPR_transplant_soviet_industry
-		SPR_slipway_enlargement
 		SPR_the_five_year_plan
+		SPR_slipway_enlargement
 		SPR_engineering_advances
 		SPR_rebuild_the_nation
 		SPR_reprofessionalize_the_military
@@ -78,7 +78,9 @@ SPD_MP_1 = {
 		SPR_juan_negrin = 3
 		SPR_francisco_largo_caballero = 2
 		SPR_augusto_barcia_trelles_vanilla = 0
+		SPR_augusto_barcia_trelles = 0
 		SPR_diego_martinez_barrio_vanilla = 0
+		SPR_diego_martinez_barrio = 0
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
