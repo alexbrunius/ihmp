@@ -104,6 +104,13 @@ political_actions = {
 			modifier = {
 				add = 1
 				has_stability < 0.6
+				NOT = { tag = CHI }
+			}
+			modifier = {
+				add = 1
+				tag = CHI
+				date > 1938.1.1
+				has_stability < 1.0
 			}
 			modifier = {
 				add = 1
@@ -112,6 +119,16 @@ political_actions = {
 					has_idea = FRA_gaston_henry_haye
 					has_idea = henri_giraud
 					has_stability  < 0.9
+				}
+			}
+			modifier = {
+				add = 1
+				tag = SIA
+				SIA = {
+					has_idea = SIA_kuang_abhayavongsa
+					has_idea = SIA_thawee_punyaketu
+					has_idea = free_trade
+					has_stability  < 0.8
 				}
 			}
 			modifier = {
@@ -1232,7 +1249,7 @@ special_projects = {
 		available = {
 			has_full_control_of_state = 446
 			has_full_control_of_state = 453
-			num_of_civilian_factories > 15
+			num_of_civilian_factories > 10
 		}
 	
 		visible = {
@@ -1246,7 +1263,7 @@ special_projects = {
 		cost = 120
 	
 		modifier = {
-			civilian_factory_use = 15
+			civilian_factory_use = 10
 		}
 	
 		remove_effect = {
