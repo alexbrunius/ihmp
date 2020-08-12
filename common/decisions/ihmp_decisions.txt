@@ -164,19 +164,19 @@ operations = {
 			has_government = democratic
 			has_war_with = ITA
 			date > 1939.01.01
+			
 			OR = {
 				RAJ = { surrender_progress > 0.5 }
-				446 = {
-					NOT = { is_controlled_by = ENG }
+				has_global_flag = iraq_coup
+				447 = {
+					NOT = { is_fully_controlled_by = ENG }
 				}			
-			}		
-			divisions_in_state = { state = 656 size > 2 }
-			divisions_in_state = { state = 455 size > 2 }
+			}
 		}
 
 		cost = 25
 
-		days_remove = 10
+		days_remove = 1
 
 		ai_will_do = {
 			factor = 1
@@ -188,9 +188,11 @@ operations = {
 		}
 		
 		remove_effect = {
-			annex_country = {
-				target = IRQ
-				transfer_troops = no
+			IRQ = {
+				declare_war_on = {
+					target = ENG
+					type = topple_government
+				}
 			}
 		}
 	}
@@ -314,12 +316,26 @@ operations = {
 			413 = { is_owned_by = PER } # Khuzestan
 			412 = { is_owned_by = PER } # Fars
 			421 = { is_owned_by = PER } # Kurdistan
+			NOT = {
+				PER = {
+					has_war_with = ENG
+				}
+			}
 		}
 		
 		remove_effect = {
-			ENG = { transfer_state = 413 } # Khuzestan
-			ENG = { transfer_state = 412 } # Fars
-			ENG = { transfer_state = 421 } # Kurdistan
+			PER = {
+				add_ideas = neutrality_idea
+				declare_war_on = {
+					target = ENG
+					type = topple_government
+				}
+				declare_war_on = {
+					target = SOV
+					type = topple_government
+				}
+			}
+
 		}
 	}
 
@@ -363,14 +379,25 @@ operations = {
 			419 = { is_owned_by = PER } # Tibriz
 			416 = { is_owned_by = PER } # Khorasan
 			420 = { is_owned_by = PER } # Gilan
+			NOT = {
+				PER = {
+					has_war_with = SOV
+				}
+			}
 		}
 		
 		remove_effect = {
-			SOV = { transfer_state = 266 } # Tehran
-			SOV = { transfer_state = 419 } # Tibriz
-			SOV = { transfer_state = 416 } # Khorasan
-			SOV = { transfer_state = 420 } # Gilan
-			SOV = { puppet = PER }
+			PER = {
+				add_ideas = neutrality_idea
+				declare_war_on = {
+					target = ENG
+					type = topple_government
+				}
+				declare_war_on = {
+					target = SOV
+					type = topple_government
+				}
+			}
 		}
 	}
 
@@ -457,3 +484,65 @@ operations = {
 		}
 	}
 }
+
+#foreign_politics = {
+#	defend_Kresy = {
+#		allowed = {
+#			tag = POL
+#			is_ai = no
+#		}
+#
+#		available = {
+#			divisions_in_border_state = {
+#				size > POL_Soviet_Defense
+#				state = {
+#					every_state = {
+#						is_controlled_by = POL
+#						add_to_variable = { POL_Soviet_Defense@PREV }
+#					}
+#				}
+#				border_state = {
+#					every_state = {
+#						is_controlled_by = SOV
+#					
+#					}
+#				}
+#			}
+#		}
+#
+#		activation = {
+#			has_war_with = GER
+#			GER = {
+#				has_non_aggression_pact_with = SOV
+#			}
+#		}
+#
+#		is_good = no
+#		days_mission_timeout = 7
+#		timeout_effect = {
+#			add_timed_idea = {
+#				idea = POL_surrender
+#				days = 180
+#			}
+#		}
+#		complete_effect = {
+#			add_to_variable = {
+#				var = POL_Soviet_Defense
+#				value = 2
+#			}
+#			if = {
+#				limit = {
+#					check_variable = { var = POL_Soviet_Defense
+#					value = 6
+#					compare = less_than }
+#				}
+#				hidden_effect = {
+#					set_variable = {
+#					var = POL_Soviet_Defense
+#					value = 6
+#					}
+#				}
+#			}
+#		}
+#	}
+#}
