@@ -1,0 +1,76 @@
+﻿###########################
+# 
+###########################
+
+add_namespace = ihmp_middleast
+
+
+	country_event = {
+		id = ihmp_middleast.1
+		title = ihmp_middleast.1.t
+		desc = ihmp_middleast.1.d
+		picture = GFX_report_event_dead_soldiers
+		fire_only_once = yes
+		trigger = {
+		 447 = { #Alexandria
+				NOT = {
+					is_fully_controlled_by = ENG
+				}
+			}
+		}
+		mean_time_to_happen = {
+			days = 1
+		}
+
+		
+		option = { 
+			name = ihmp_middleast.1.a
+			ai_chance = { factor = 100 }
+			hidden_effect = {
+				country_event = { id = ihmp_middleast.2 }
+			}
+		}
+	}
+
+	country_event = {
+		id = ihmp_middleast.2
+		title = ihmp_middleast.2.t
+		desc = ihmp_middleast.2.d
+		picture = GFX_report_event_dead_soldiers
+		fire_only_once = yes
+		is_triggered_only = yes
+		trigger = {
+			IRQ = {
+				fascism > 0.15
+			}
+			452 = {
+				NOT = {
+					is_controlled_by = ENG
+				}
+			}
+		}
+		
+		option = { 
+			name = ihmp_middleast.2.a
+			ai_chance = { factor = 100 }
+			set_global_flag = iraq_coup
+			IRQ = {
+				set_politics = {
+					ruling_party = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.25
+				}
+				diplomatic_relation = {
+					country = ENG
+					relation = military_access
+					active = no
+				}
+			}
+			ENG = {
+				remove_resource_rights = 291
+				remove_resource_rights = 676
+			}
+		}
+	}
