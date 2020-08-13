@@ -239,6 +239,28 @@ on_actions = {
 					set_major = yes
 				}
 			}
+			#Military Police for AIs
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = AI_Military_Police
+						option = Free_Template
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = yes
+					}
+					division_template = {
+						name = "Military Police"
+						regiments = {
+							cavalry = { x = 0 y = 0 }
+						}
+						support = {
+						} 
+					}
+				}
+			}
 		}
 	}
 
