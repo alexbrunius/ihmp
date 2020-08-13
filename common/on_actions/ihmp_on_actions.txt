@@ -12,13 +12,19 @@ on_actions = {
 				limit = {
 					FROM = { tag = PER }
 				}
-				ENG = { remove_resource_rights = 413 }
+				ENG = {
+					remove_resource_rights = 413
+					clr_country_flag = PER_resource_rights
+				}
 			}
 			if = {
 				limit = {
 					FROM = { tag = IRQ }
 				}
-				ENG = { remove_resource_rights = 291 }
+				ENG = {
+					remove_resource_rights = 291
+					clr_country_flag = IRQ_resource_rights
+				}
 			}
 		}
 	}
@@ -34,6 +40,9 @@ on_actions = {
 					give_resource_rights = { receiver = ENG state = 291 }
 					give_resource_rights = { receiver = ENG state = 676 }
 				}
+				ENG = {
+					set_country_flag = IRQ_resource_rights
+				}
 			}
 			if = {
 				limit = {
@@ -43,6 +52,18 @@ on_actions = {
 					give_resource_rights = { receiver = ENG state = 413 }
 					give_resource_rights = { receiver = ENG state = 412 }
 					give_resource_rights = { receiver = ENG state = 411 }
+				}
+				ENG = {
+					set_country_flag = PER_resource_rights
+				}
+			}
+			#Military Access UK-Iraq
+			if = {
+				limit = {
+					always = yes
+				}
+				IRQ = {
+					give_military_access = ENG
 				}
 			}
 			#Disband Divisions
@@ -82,6 +103,29 @@ on_actions = {
 					}
 					delete_units = { 
 						division_template = "Brigade de Chars de Combat"
+						disband = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = POR_ai_behavior
+						option = POR_MP_1
+					}
+					SOV = { is_ai = yes }
+				}
+				POR = {
+					delete_units = { 
+						division_template = "Brigada de Cavalaria"
+						disband = yes
+					}
+					delete_units = { 
+						division_template = "Divisão de Infantaria"
+						disband = yes
+					}
+					delete_units = { 
+						division_template = "Força de Caçadores"
 						disband = yes
 					}
 				}
@@ -156,6 +200,25 @@ on_actions = {
 					}
 					delete_units = { 
 						division_template = "Qibing Shi"
+						disband = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MEN_ai_behavior
+						option = MEN_MP_1
+					}
+					MEN = { is_ai = yes }
+				}
+				MEN = {
+					delete_units = { 
+						division_template = "Juntuán"
+						disband = yes
+					}
+					delete_units = { 
+						division_template = "Qibing Jun"
 						disband = yes
 					}
 				}
@@ -278,6 +341,57 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					ROOT = { tag = PER }
+					FROM = {
+						OR = {
+							tag = ENG
+							tag = RAJ
+							tag = SOV
+						}
+					}
+				}
+				PER = {
+					every_enemy_country = {
+						white_peace = PREV
+					}
+				}
+				ENG = { transfer_state = 413 } # Khuzestan
+				ENG = { transfer_state = 412 } # Fars
+				ENG = { transfer_state = 421 } # Kurdistan
+				SOV = { transfer_state = 266 } # Tehran
+				SOV = { transfer_state = 419 } # Tibriz
+				SOV = { transfer_state = 416 } # Khorasan
+				SOV = { transfer_state = 420 } # Gilan
+				SOV = { puppet = PER }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					ROOT = { tag = PER }
+					FROM = {
+						OR = {
+							tag = ENG
+							tag = RAJ
+						}
+					}
+				}
+				IRQ = {
+					every_enemy_country = {
+						white_peace = PREV
+					}
+				}
+				ENG = {
+					annex_country = {
+						target = IRQ
+						transfer_troops = no
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
 					ROOT = { original_tag = FRA }
 					FROM = { tag = GER }
 					NOT = { has_global_flag = achievement_france_surrender }
@@ -285,7 +399,29 @@ on_actions = {
 				FRA = { country_event = { id = france.10 } }
 			}
 		}
+#		effect = {
+#			if = {
+#				limit = {
+#					FROM = { is_in_faction_with = CHI }
+#				}
+#				CHI = {
+#					CHI_unity_level_down = yes #adds surrender defense
+#				}					
+#			}
+#		}
 	}
+#	on_uncapitulation = {
+#		effect = {
+#			if = {
+#				limit = {
+#					FROM = { is_in_faction_with = event_target:WTT_current_china_leader }
+#				}
+#				event_target:WTT_current_china_leader = {
+#					CHI_unity_level_up = yes #adds surrender defense
+#				}					
+#			}
+#		}
+#	}
 	
 	#ROOT is winner #FROM is loser
 	on_peaceconference_ended = {
@@ -325,6 +461,34 @@ on_actions = {
 	}
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = ENG }
+					FROM.FROM = { state = 452 } #Marsa Matruh
+					NOT = { has_global_flag = iraq_coup }
+				}
+				IRQ = {
+					country_event = {
+						id = ihmp_middleeast.2
+						days = 150
+						random = 50
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = { tag = ENG }
+					FROM.FROM = { state = 447 } #Alexandra Matruh
+					NOT = { has_global_flag = iraq_coup }
+				}
+				IRQ = {
+					country_event = {
+						id = ihmp_middleeast.2
+					}
+				}
+			}
+		}
 		effect = {
 			if = {
 				limit = {
