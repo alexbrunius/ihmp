@@ -29,3 +29,18 @@ AI_PLANES = {
 		desc = "AI_PLANES_BLOCKED_DESC"
 	}
 }
+
+AI_MILITARY_POLICE = {
+	name = "AI_MILITARY_POLICE"
+	group = "RULE_GROUP_GAME_SETUP"
+	option = {
+		name = DEFAULT
+		text = "DEFAULT"
+		desc = "DEFAULT_DESC"
+	}
+	default = {
+		name = FREE_TEMPLATE
+		text = "RULE_OPTION_FREE_TEMPLATE"
+		desc = "FREE_TEMPLATE_DESC"
+	}
+}
