@@ -116,10 +116,10 @@ ROM_MP_1_Infrastructure = {
 			rule = ROM_ai_behavior
 			option = ROM_MP_1
 				}
-			46 = {
-		is_controlled_by = ROM
-		infrastructure < 10
-			}
+		46 = {
+			is_controlled_by = ROM
+			infrastructure < 10
+		}
 	}
 
 	abort = {
@@ -135,7 +135,7 @@ ROM_MP_1_Infrastructure = {
 		type = build_building
 		id = infrastructure
 		target = 46
-		value = 3
+		value = 1
 	}
 }
 
@@ -164,6 +164,43 @@ ROM_MP_1_Alliance = {
 		id = relation	
 		value = -200
 	}
+}
+
+ROM_MP_No_Besserabia_Factories = {
+
+	enable = {
+		tag = ROM
+		has_game_rule = {
+			rule = ROM_ai_behavior
+			option = ROM_MP_1
+		}
+		SOV = { NOT = { has_country_flag = bessarabia_demand } }
+	}
+
+	abort = {
+		SOV = { has_country_flag = bessarabia_demand }
+	}
+
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  78
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  80
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  766
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  46
+        value = 50
+    }
 }
 
 MP_Conscription_0 = {
