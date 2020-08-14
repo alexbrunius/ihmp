@@ -185,12 +185,13 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
 						include_locked = yes
 					}
-					is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -202,12 +203,13 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
 						include_locked = yes
 					}
-					is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -807,6 +809,8 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					is_in_home_area = yes
 					free_building_slots = {
 						building = arms_factory
@@ -824,6 +828,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					is_in_home_area = yes
 					free_building_slots = {
 						building = arms_factory
@@ -841,6 +847,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					is_in_home_area = yes
 					free_building_slots = {
 						building = arms_factory
@@ -1309,13 +1317,14 @@ focus_tree = {
 			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
 						size > 0
 						include_locked = yes
 					}
-					is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1327,13 +1336,14 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
 						size > 0
 						include_locked = yes
 					}
-					is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1345,13 +1355,14 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
 						size > 0
 						include_locked = yes
 					}
-					is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1701,13 +1712,14 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
 						size > 1
 						include_locked = yes
 					}
-					is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2085,7 +2097,7 @@ focus_tree = {
 			POR = { is_in_faction = no }
 			is_faction_leader = yes
 		} 
-		icon = GFX_focus_generic_befriend_portugal
+		icon = GFX_goal_generic_demand_territory
 		x = -1
 		y = 1
 		relative_position_id = uk_mediterranean_focus
@@ -5632,6 +5644,10 @@ focus_tree = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				random_owned_controlled_state = {
 					limit = {
+						RAJ = { has_full_control_of_state = PREV }
+						is_core_of = RAJ
+						NOT = { is_core_of = PAK }
+						NOT = { is_core_of = BAN }
 						free_building_slots = {
 							building = industrial_complex
 							size > 1
@@ -5648,6 +5664,10 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						RAJ = { has_full_control_of_state = PREV }
+						is_core_of = RAJ
+						NOT = { is_core_of = PAK }
+						NOT = { is_core_of = BAN }
 						free_building_slots = {
 							building = industrial_complex
 							size > 1
@@ -5664,6 +5684,10 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						RAJ = { has_full_control_of_state = PREV }
+						is_core_of = RAJ
+						NOT = { is_core_of = PAK }
+						NOT = { is_core_of = BAN }
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -5842,6 +5866,8 @@ focus_tree = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				random_owned_controlled_state = {
 					limit = {
+						AST = { has_full_control_of_state = PREV }
+						is_core_of = AST
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -5858,6 +5884,8 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						AST = { has_full_control_of_state = PREV }
+						is_core_of = AST
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -5874,6 +5902,8 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						AST = { has_full_control_of_state = PREV }
+						is_core_of = AST
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -5891,6 +5921,8 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						AST = { has_full_control_of_state = PREV }
+						is_core_of = AST
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -6002,6 +6034,8 @@ focus_tree = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				random_owned_controlled_state = {
 					limit = {
+						NZL = { has_full_control_of_state = PREV }
+						is_core_of = NZL
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -6018,6 +6052,8 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						NZL = { has_full_control_of_state = PREV }
+						is_core_of = NZL
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -6034,6 +6070,8 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						NZL = { has_full_control_of_state = PREV }
+						is_core_of = NZL
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -6051,6 +6089,8 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						NZL = { has_full_control_of_state = PREV }
+						is_core_of = NZL
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -6162,6 +6202,8 @@ focus_tree = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				random_owned_controlled_state = {
 					limit = {
+						CAN = { has_full_control_of_state = PREV }
+						is_core_of = CAN
 						free_building_slots = {
 							building = industrial_complex
 							size > 1
@@ -6178,6 +6220,8 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						CAN = { has_full_control_of_state = PREV }
+						is_core_of = CAN
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -6194,6 +6238,8 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						CAN = { has_full_control_of_state = PREV }
+						is_core_of = CAN
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -6211,6 +6257,8 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						CAN = { has_full_control_of_state = PREV }
+						is_core_of = CAN
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -6321,6 +6369,8 @@ focus_tree = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				random_owned_controlled_state = {
 					limit = {
+						SAF = { has_full_control_of_state = PREV }
+						is_core_of = SAF
 						free_building_slots = {
 							building = industrial_complex
 							size > 1
@@ -6353,6 +6403,8 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						SAF = { has_full_control_of_state = PREV }
+						is_core_of = SAF
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -6370,6 +6422,8 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						SAF = { has_full_control_of_state = PREV }
+						is_core_of = SAF
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -7472,6 +7526,8 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					is_in_home_area = yes
 					free_building_slots = {
 						building = arms_factory
@@ -7489,6 +7545,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					is_in_home_area = yes
 					free_building_slots = {
 						building = arms_factory

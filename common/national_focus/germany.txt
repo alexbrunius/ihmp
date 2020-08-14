@@ -1483,6 +1483,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -1499,6 +1501,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -1515,6 +1519,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -1893,6 +1899,8 @@ focus_tree = {
 				effect_tooltip = {
 					random_owned_controlled_state = {
 						limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
 							free_building_slots = {
 								building = arms_factory
 								size > 1
@@ -1910,6 +1918,8 @@ focus_tree = {
 					}
 					random_owned_controlled_state = {
 						limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
 							free_building_slots = {
 								building = arms_factory
 								size > 1
@@ -1928,6 +1938,8 @@ focus_tree = {
 					HUN = {
 						random_owned_controlled_state = {
 							limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
 								free_building_slots = {
 									building = arms_factory
 									size > 1
@@ -1944,6 +1956,8 @@ focus_tree = {
 						}
 						random_owned_controlled_state = {
 							limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
 								free_building_slots = {
 									building = arms_factory
 									size > 1
@@ -1993,6 +2007,8 @@ focus_tree = {
 				effect_tooltip = {
 					random_owned_controlled_state = {
 						limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
 							free_building_slots = {
 								building = arms_factory
 								size > 1
@@ -2010,6 +2026,8 @@ focus_tree = {
 					}
 					random_owned_controlled_state = {
 						limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
 							free_building_slots = {
 								building = arms_factory
 								size > 1
@@ -2028,6 +2046,11 @@ focus_tree = {
 					ROM = {
 						random_owned_controlled_state = {
 							limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
+							NOT = { state = 78 }
+							NOT = { state = 80 }
+							NOT = { state = 766 }
 								free_building_slots = {
 									building = arms_factory
 									size > 1
@@ -2044,6 +2067,11 @@ focus_tree = {
 						}
 						random_owned_controlled_state = {
 							limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
+							NOT = { state = 78 }
+							NOT = { state = 80 }
+							NOT = { state = 766 }
 								free_building_slots = {
 									building = arms_factory
 									size > 1
@@ -2093,6 +2121,8 @@ focus_tree = {
 				effect_tooltip = {
 					random_owned_controlled_state = {
 						limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
 							free_building_slots = {
 								building = arms_factory
 								size > 1
@@ -2110,6 +2140,8 @@ focus_tree = {
 					}
 					random_owned_controlled_state = {
 						limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
 							free_building_slots = {
 								building = arms_factory
 								size > 1
@@ -2127,6 +2159,8 @@ focus_tree = {
 					}
 					BUL = {
 						random_owned_controlled_state = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
 							limit = {
 								free_building_slots = {
 									building = arms_factory
@@ -2144,6 +2178,8 @@ focus_tree = {
 						}
 						random_owned_controlled_state = {
 							limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							is_core_of = ROOT
 								free_building_slots = {
 									building = arms_factory
 									size > 1
@@ -4340,8 +4376,8 @@ focus_tree = {
 						original_tag = SPR
 						has_government = fascism
 					}
-					remove_ideas = SPA_recovering_from_civil_war
 					add_opinion_modifier = { target = GER modifier = ger_spa_alliance_focus }
+					set_country_flag = ger_spa_alliance_focus
 				}
 			}
 			if = {
@@ -4349,8 +4385,8 @@ focus_tree = {
 					has_dlc = "La Resistance"
 				}
 				SPA = {
-					remove_ideas = SPA_recovering_from_civil_war
 					add_opinion_modifier = { target = GER modifier = ger_spa_alliance_focus }
+					set_country_flag = ger_spa_alliance_focus
 				}
 			}
 		}
@@ -4649,6 +4685,8 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
@@ -4666,6 +4704,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
@@ -4729,6 +4769,8 @@ focus_tree = {
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
@@ -4789,6 +4831,8 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
@@ -4807,6 +4851,8 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
@@ -4877,6 +4923,8 @@ focus_tree = {
 			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
@@ -4958,6 +5006,8 @@ focus_tree = {
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
