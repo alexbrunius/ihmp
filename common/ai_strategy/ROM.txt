@@ -1,0 +1,48 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+
+
+
+ROM_be_nice_to_hitler = {
+	enable = {
+		tag = ROM
+		has_completed_focus = ROM_trade_treaty_with_germany
+	}
+	abort={
+		is_in_faction = yes
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = GER
+		value = 200
+	}
+}
+
+ROM_build_early_civ = {
+
+	enable = {
+		tag = ROM
+		date < 1938.01.01
+		has_war = no
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 20
+	}
+}
