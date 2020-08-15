@@ -385,13 +385,34 @@ governments_in_exile = {
 		
 		icon = generic_naval
 
-		cost = 25
+		cost = var:transfer_navy_cost?25
 		fire_only_once = yes
 
 		available = {
 		    FROM = {
 		    	has_legitimacy < 80
-		    }
+			}
+			FROM = {
+				set_temp_variable = { transfer_navy_score = 0 }
+				
+				set_temp_variable = { t = num_ships_with_type@carrier }
+				multiply_temp_variable = { t = 5 }
+				add_to_temp_variable = { transfer_navy_score = t }
+				
+				set_temp_variable = { t = num_ships_with_type@capital }
+				multiply_temp_variable = { t = 5 }
+				add_to_temp_variable = { transfer_navy_score = t }
+				
+				set_temp_variable = { t = num_ships_with_type@screen }
+				multiply_temp_variable = { t = 1 }
+				add_to_temp_variable = { transfer_navy_score = t }
+				
+				set_temp_variable = { t = num_ships_with_type@submarine }
+				multiply_temp_variable = { t = 0.5 }
+				add_to_temp_variable = { transfer_navy_score = t }
+				set_temp_variable = { ROOT.transfer_navy_cost = transfer_navy_score }
+				add_to_temp_variable = { ROOT.transfer_navy_cost = 25 }
+			}
 		}
 
 		visible = {
