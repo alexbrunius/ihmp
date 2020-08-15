@@ -2310,7 +2310,7 @@ technologies = {
 			max_organisation = 2
 		}
 		signal_company = {
-			initiative = 0.12
+			initiative = 0.2
 		}
 
 		doctrine = yes	
