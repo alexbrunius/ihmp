@@ -2165,6 +2165,9 @@ equipment_modules = {
 		add_stats = {
 			armor_value = 6
 		}
+		build_cost_resources = {
+			steel = 1
+		}
 	}
 	ship_armor_cruiser_2 = {
 		category = ship_cruiser_armor
@@ -2221,7 +2224,7 @@ equipment_modules = {
 			armor_value = 12
 		}
 		build_cost_resources = {
-			steel = 2
+			steel = 1
 			chromium = 1
 		}
 	}
