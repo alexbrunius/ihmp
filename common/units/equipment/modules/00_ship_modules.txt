@@ -23,6 +23,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			lg_armor_piercing = 1
+			max_strength = 5
 		}
 		
 		can_convert_from = {
@@ -41,7 +42,7 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 1.5
 			build_cost_ic = 120
-			
+			surface_visibility = 0.5
 		}
 		multiply_stats = {
 			reliability = -0.05
@@ -49,6 +50,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			lg_armor_piercing = 2
+			max_strength = 5
 		}
 		
 		can_convert_from = {
@@ -70,13 +72,15 @@ equipment_modules = {
 		
 		add_stats = {
 			lg_attack = 2
-			build_cost_ic = 150			
+			build_cost_ic = 150
+			surface_visibility = 0.5
 		}
 		multiply_stats = {
 			reliability = -0.05
 		}
 		add_average_stats = {
 			lg_armor_piercing = 2.5
+			max_strength = 5
 		}
 		multiply_stats = {
 			naval_speed = -0.01
@@ -100,7 +104,8 @@ equipment_modules = {
 		
 		add_stats = {
 			lg_attack = 3.0
-			build_cost_ic = 175	
+			build_cost_ic = 175
+			surface_visibility = 0.5
 		}
 		multiply_stats = {
 			reliability = -0.05
@@ -110,6 +115,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			lg_armor_piercing = 2.5
+			max_strength = 5
 		}
 		
 		can_convert_from = {
@@ -132,6 +138,7 @@ equipment_modules = {
 			lg_attack = 3
 			anti_air_attack = 3
 			build_cost_ic = 300
+			surface_visibility = 0.5
 		}
 		multiply_stats = {
 			naval_speed = -0.01
@@ -139,6 +146,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			lg_armor_piercing = 2.0
+			max_strength = 5
 		}
 		
 		can_convert_from = {
