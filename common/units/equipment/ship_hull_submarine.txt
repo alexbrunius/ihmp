@@ -129,7 +129,7 @@ equipments = {
 		build_cost_ic = 120 # was 250
 		resources = {
 			#oil = 1
-			steel = 2
+			steel = 1
 		}
 		type = { 
 			submarine
@@ -180,7 +180,7 @@ equipments = {
 		
 		build_cost_ic = 140 #was 320
 		resources = {
-			steel = 2
+			steel = 1
 		}
 		type = { 
 			submarine
@@ -225,12 +225,12 @@ equipments = {
 		naval_range = 6000
 		
 		max_strength = 105 #was 35
-		anti_air_attack = 0		
+		anti_air_attack = 0.5		
 
 		
 		build_cost_ic = 180 #was 450
 		resources = {
-			steel = 3
+			steel = 1
 			chromium = 1
 		}
 		type = { 
