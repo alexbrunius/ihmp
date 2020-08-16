@@ -180,6 +180,7 @@ equipment_modules = {
 		}		
 		add_average_stats = {
 			hg_armor_piercing = 31
+			max_strength = 60
 		}
 		build_cost_resources = {
 			steel = 1
@@ -207,6 +208,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 36
+			max_strength = 60
 		}
 		build_cost_resources = {
 			steel = 1
@@ -239,6 +241,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 40
+			max_strength = 60
 		}
 		build_cost_resources = {
 			steel = 1
@@ -273,6 +276,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 43
+			max_strength = 60
 		}
 		build_cost_resources = {
 			steel = 1
@@ -310,6 +314,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 50
+			max_strength = 80
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
