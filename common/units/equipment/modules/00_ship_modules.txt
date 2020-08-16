@@ -459,6 +459,7 @@ equipment_modules = {
 		add_stats = {	
 			lg_attack = 3.5
 			build_cost_ic = 225
+			surface_visibility = 1
 		}
 		multiply_stats = {
 			naval_speed = -0.03
@@ -483,6 +484,7 @@ equipment_modules = {
 		add_stats = {	
 			lg_attack = 4.5
 			build_cost_ic = 275
+			surface_visibility = 1
 		}
 		multiply_stats = {
 			naval_speed = -0.04
@@ -512,9 +514,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
-			
 			lg_attack = 5.5
 			build_cost_ic = 325
+			surface_visibility = 1
 		}
 		multiply_stats = {
 			naval_speed = -0.04
@@ -546,10 +548,9 @@ equipment_modules = {
 		gui_category = ship_light_battery
 		parent = ship_light_medium_battery_3
 		add_stats = {
-			
 			lg_attack = 6.5
-			
 			build_cost_ic = 375
+			surface_visibility = 1
 		}
 		multiply_stats = {
 			naval_speed = -0.05
