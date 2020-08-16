@@ -469,6 +469,9 @@ equipment_modules = {
 			lg_armor_piercing = 5.5
 			max_strength = 20
 		}
+		build_cost_resources = {
+			steel = 0.5
+		}
 		can_convert_from = {
 			module_category = ship_medium_battery
 			convert_cost_ic = 500
@@ -494,12 +497,12 @@ equipment_modules = {
 			lg_armor_piercing = 7.0
 			max_strength = 20
 		}
+		build_cost_resources = {
+			steel = 0.5
+		}
 		can_convert_from = {
 			module_category = ship_medium_battery
 			convert_cost_ic = 400
-			convert_cost_resources = {
-				steel = 1
-			}
 		}
 		can_convert_from = {
 			module = ship_light_medium_battery_1
@@ -527,14 +530,11 @@ equipment_modules = {
 			max_strength = 20
 		}
 		build_cost_resources = {
-			steel = 1
+			steel = 0.5
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
 			convert_cost_ic = 500
-			convert_cost_resources = {
-				steel = 1
-			}
 		}
 		can_convert_from = {
 			module = ship_light_medium_battery_2
@@ -561,14 +561,11 @@ equipment_modules = {
 			max_strength = 20
 		}
 		build_cost_resources = {
-			steel = 1
+			steel = 0.5
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
 			convert_cost_ic = 600
-			convert_cost_resources = {
-				steel = 1
-			}
 		}
 		can_convert_from = {
 			module = ship_light_medium_battery_3
