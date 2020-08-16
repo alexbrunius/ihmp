@@ -171,7 +171,6 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		
 		add_stats = {
-			
 			hg_attack = 12
 			build_cost_ic = 1250
 		}
@@ -334,10 +333,10 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.04
-			max_strength = 0.4
 			reliability = -0.08
 		}
 		add_average_stats = {
+			max_strength = 40
 			hg_armor_piercing = 22
 		}
 		build_cost_resources = {
@@ -366,10 +365,10 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.06
-			max_strength = 0.4
 			reliability = -0.08
 		}
 		add_average_stats = {
+			max_strength = 40
 			hg_armor_piercing = 24
 		}
 		build_cost_resources = {
@@ -398,10 +397,10 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.07
-			max_strength = 0.4
 			reliability = -0.08
 		}
 		add_average_stats = {
+			max_strength = 40
 			hg_armor_piercing = 26
 		}
 		build_cost_resources = {
@@ -436,10 +435,10 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.08
-			max_strength = 0.4
 			reliability = -0.08
 		}
 		add_average_stats = {
+			max_strength = 40
 			hg_armor_piercing = 28
 		}
 		build_cost_resources = {
