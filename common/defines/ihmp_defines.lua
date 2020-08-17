@@ -264,6 +264,7 @@ NDefines.NOperatives.OPERATIVE_SLOTS_FROM_FACTION_MEMBERS_FOR_SPY_MASTER = {
 	0.75, 	80.0, -- 0.75 operative for [80, 120)
 	1.0, 	120.0, -- 1.0 operative for >= 120
 }
+NDefines.NOperatives.COUNTER_INTELLIGENCE_STACKING_FACTOR = 0.0		-- was 0.5				-- Multiplier applied to each operative after the first one. So if we have the following counter intelligence rating values [ 0.1, 0.3, 0.2 ], the factor is applied twice for the lowest value and once for the 2nd lowest one as such : [ 0.3, 0.2 * D, 0.1 * D * D ] and then the result is summed up to give the final rating value
 
 -- INTEL STUFF
 NDefines.NIntel.INTEL_NETWORK_MIN_VP_TO_TARGET = 1					-- was 15 -- The minimum value of the highest VP in a state to consider the state as a valid target to start building an intel network
