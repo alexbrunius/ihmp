@@ -407,6 +407,10 @@ branch_operative = {
 					tag = SIA
 				}
 			}
+			modifier = {
+				factor = 0
+				num_of_available_civilian_factories < 30
+			}
 		}
 		
 		modifiers_during_progress = {
