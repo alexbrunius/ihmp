@@ -5404,6 +5404,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = JAP_first_air_fleet
+			add_tech_bonus = {
+				name = JAP_first_air_fleet
+				bonus = 1.0
+				uses = 1
+				category = cv_tech	
+			}
 		}
 	}
 
