@@ -3150,7 +3150,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 4 y = 1 }
+			position = { x = 5 y = 1 }
 		}
 		
 		ai_will_do = {
@@ -3189,7 +3189,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 4 y = 14 }
+			position = { x = 5 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -3228,7 +3228,15 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		
+		path = {
+			leads_to_tech = airdrop_mines
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = airsweep_mines
+			research_cost_coeff = 1
+		}
 		
 		naval_mines_damage_factor = 0.2 # more boom for the boom box
 		folder = {
@@ -3274,7 +3282,7 @@ early_ship_hull_carrier = {
 		
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 2 y = 9 }
+			position = { x = 4 y = 9 }
 		}
 		
 		ai_will_do = {
@@ -3308,11 +3316,6 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = airdrop_mines
-			research_cost_coeff = 1
-		}
-
 		naval_mines_damage_factor = 0.2 # more boom for the boom box
 		folder = {
 			name = mtgnavalfolder
@@ -3341,7 +3344,7 @@ early_ship_hull_carrier = {
 		
 		research_cost = 2
 
-		start_year = 1942
+		start_year = 1940
 
 		category_nav_bomber = { 
 			mines_planting = 0.05 
@@ -3355,7 +3358,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 2 y = 14 }
+			position = { x = 1 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -3383,15 +3386,10 @@ early_ship_hull_carrier = {
 
 		start_year = 1945
 
-		path = {
-			leads_to_tech = airsweep_mines
-			research_cost_coeff = 1
-		}
-
 		naval_mines_damage_factor = 0.2 # more boom for the boom box
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 19 }
+			position = { x = 0 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -3413,7 +3411,7 @@ early_ship_hull_carrier = {
 		
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1940
 
 		category_nav_bomber = { 
 			mines_sweeping = 0.1 
@@ -3425,7 +3423,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 2 y = 19 }
+			position = { x = 3 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -3507,7 +3505,7 @@ early_ship_hull_carrier = {
 		
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 13 }
+			position = { x = 0 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -3573,7 +3571,7 @@ early_ship_hull_carrier = {
 		start_year = 1944
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 19 }
+			position = { x = 0 y = 18 }
 		}
 		
 		ai_will_do = {
