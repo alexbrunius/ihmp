@@ -186,6 +186,7 @@
 
 		completion_reward = {
 			random_owned_controlled_state = {
+				prioritize = { 276 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
