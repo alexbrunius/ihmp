@@ -3215,6 +3215,9 @@ early_ship_hull_carrier = {
 	improved_naval_mines = {
 		
 		research_cost = 2
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 
 		start_year = 1936
 
@@ -3308,6 +3311,9 @@ early_ship_hull_carrier = {
 	advanced_naval_mines = {
 		
 		research_cost = 2
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 
 		start_year = 1942
 
@@ -3343,6 +3349,9 @@ early_ship_hull_carrier = {
 	airdrop_mines = {
 		
 		research_cost = 2
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 
 		start_year = 1940
 
@@ -3383,8 +3392,11 @@ early_ship_hull_carrier = {
 	modern_naval_mines = {
 		
 		research_cost = 2
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 
-		start_year = 1945
+		start_year = 1944
 
 		naval_mines_damage_factor = 0.2 # more boom for the boom box
 		folder = {
@@ -3410,6 +3422,9 @@ early_ship_hull_carrier = {
 	airsweep_mines = {
 		
 		research_cost = 2
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 
 		start_year = 1940
 
