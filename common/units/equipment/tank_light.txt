@@ -44,7 +44,7 @@ equipments = {
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 5
+		lend_lease_cost = 10
 		
 		build_cost_ic = 8
 		resources = {
@@ -202,7 +202,7 @@ equipments = {
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 5		
+		lend_lease_cost = 10		
 		
 		build_cost_ic = 8
 		resources = {
@@ -337,7 +337,7 @@ equipments = {
 		air_attack = 0
 		
 		#Space taken in convoy
-		lend_lease_cost = 5
+		lend_lease_cost = 10
 		
 		build_cost_ic = 6.4
 		resources = {
@@ -476,7 +476,7 @@ equipments = {
 		air_attack = 15
 		
 		#Space taken in convoy
-		lend_lease_cost = 5
+		lend_lease_cost = 10
 		
 		build_cost_ic = 8
 		resources = {
