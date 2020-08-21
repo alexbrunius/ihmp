@@ -15,9 +15,17 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
+			leads_to_tech = cv_CAS1
+			research_cost_coeff = 1
+		}
+		path = {
 			leads_to_tech = cv_naval_bomber1
 			research_cost_coeff = 1
-		}		
+		}
+		path = {
+			leads_to_tech = cv_early_fighter
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = heavy_fighter1
 			research_cost_coeff = 1
@@ -36,10 +44,6 @@ technologies = {
 			air_equipment
 		}
 		
-		sub_technologies = {
-			cv_early_fighter
-		}
-		
 		ai_will_do = {
 			factor = 1
 			
@@ -55,9 +59,18 @@ technologies = {
 		enable_equipments = {
 			cv_fighter_equipment_0
 		}
+
+		path = {
+			leads_to_tech = cv_fighter1
+			research_cost_coeff = 1
+		}
 	
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1933
+		folder = {
+			name = air_techs_folder
+			position = { x = -1 y = 2 }
+		}
 		
 		categories = {
 			naval_air
@@ -98,6 +111,11 @@ technologies = {
 			leads_to_tech = heavy_fighter1
 			research_cost_coeff = 0.5
 		}
+
+		path = {
+			leads_to_tech = cv_fighter1
+			research_cost_coeff = 0.5
+		}
 		
 		research_cost = 2
 		start_year = 1936
@@ -111,10 +129,6 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
-		}
-		
-		sub_technologies = {
-			cv_fighter1
 		}
 		
 		ai_will_do = {
@@ -152,9 +166,18 @@ technologies = {
 		enable_equipments = {
 			cv_fighter_equipment_1
 		}
+
+		path = {
+			leads_to_tech = cv_fighter2
+			research_cost_coeff = 1
+		}
 	
 		research_cost = 1 #Carrier Variant
 		start_year = 1936
+		folder = {
+			name = air_techs_folder
+			position = { x = -1 y = 4 }
+		}
 		
 		categories = {
 			naval_air
@@ -206,6 +229,11 @@ technologies = {
 		path = {
 			leads_to_tech = heavy_fighter2
 			research_cost_coeff = 0.5
+		}
+
+		path = {
+			leads_to_tech = cv_fighter2
+			research_cost_coeff = 0.5
 		}		
 
 		research_cost = 2
@@ -219,10 +247,6 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
-		}
-		
-		sub_technologies = {
-			cv_fighter2
 		}
 		
 		ai_will_do = {
@@ -266,9 +290,18 @@ technologies = {
 		enable_equipments = {
 			cv_fighter_equipment_2
 		}
+
+		path = {
+			leads_to_tech = cv_fighter3
+			research_cost_coeff = 1
+		}
 	
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1940
+		folder = {
+			name = air_techs_folder
+			position = { x = -1 y = 6 }
+		}
 		
 		categories = {
 			naval_air
@@ -332,6 +365,11 @@ technologies = {
 			leads_to_tech = heavy_fighter3
 			research_cost_coeff = 0.5
 		}
+
+		path = {
+			leads_to_tech = cv_fighter3
+			research_cost_coeff = 0.5
+		}
 		research_cost = 2
 		start_year = 1944
 
@@ -344,10 +382,6 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
-		}
-		
-		sub_technologies = {
-			cv_fighter3
 		}
 		
 		ai_will_do = {
@@ -388,6 +422,11 @@ technologies = {
 	
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1944
+
+		folder = {
+			name = air_techs_folder
+			position = { x = -1 y = 8 }
+		}
 		
 		categories = {
 			naval_air
@@ -497,17 +536,18 @@ technologies = {
 			leads_to_tech = CAS2
 			research_cost_coeff = 1
 		}
+	
+		path = {
+			leads_to_tech = cv_CAS1
+			research_cost_coeff = 0.5
+		}
 		
 		research_cost = 2
 		start_year = 1936
 
 		folder = {
 			name = air_techs_folder
-			position = { x = -1 y = 4 }
-		}
-		
-		sub_technologies = {
-			cv_CAS1
+			position = { x = -4 y = 4 }
 		}
 		
 		categories = {
@@ -543,8 +583,17 @@ technologies = {
 			cv_CAS_equipment_1
 		}
 	
+		path = {
+			leads_to_tech = cv_CAS2
+			research_cost_coeff = 1
+		}
+	
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1936
+		folder = {
+			name = air_techs_folder
+			position = { x = -7 y = 4 }
+		}
 		
 		categories = {
 			naval_air
@@ -595,17 +644,18 @@ technologies = {
 			leads_to_tech = CAS3
 			research_cost_coeff = 1
 		}
+	
+		path = {
+			leads_to_tech = cv_CAS2
+			research_cost_coeff = 0.5
+		}
 		
 		research_cost = 2
 		start_year = 1940
 
 		folder = {
 			name = air_techs_folder
-			position = { x = -1 y = 6 }
-		}
-		
-		sub_technologies = {
-			cv_CAS2
+			position = { x = -4 y = 6 }
 		}
 		
 		categories = {
@@ -650,8 +700,17 @@ technologies = {
 			cv_CAS_equipment_2
 		}
 	
+		path = {
+			leads_to_tech = cv_CAS3
+			research_cost_coeff = 1
+		}
+	
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1940
+		folder = {
+			name = air_techs_folder
+			position = { x = -7 y = 6 }
+		}
 		
 		categories = {
 			naval_air
@@ -697,6 +756,11 @@ technologies = {
 		enable_equipments = {
 			CAS_equipment_3
 		}
+	
+		path = {
+			leads_to_tech = cv_CAS3
+			research_cost_coeff = 0.5
+		}
 		
 		path = {
 			leads_to_tech = jet_fighter1
@@ -707,11 +771,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = air_techs_folder
-			position = { x = -1 y = 8 }
-		}
-		
-		sub_technologies = {
-			cv_CAS3
+			position = { x = -4 y = 8 }
 		}
 		
 		categories = {
@@ -754,8 +814,17 @@ technologies = {
 			cv_CAS_equipment_3
 		}
 	
+		path = {
+			leads_to_tech = jet_fighter1
+			research_cost_coeff = 1
+		}
+	
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1944
+		folder = {
+			name = air_techs_folder
+			position = { x = -7 y = 8 }
+		}
 		
 		categories = {
 			naval_air
@@ -811,10 +880,6 @@ technologies = {
 			position = { x = -2 y = 4 }
 		}
 		
-		#sub_technologies = {
-		#	cv_naval_bomber1
-		#}
-		
 		categories = {
 			naval_air
 			naval_bomber
@@ -828,7 +893,7 @@ technologies = {
 					has_war_with = ENG
 					has_war_with = USA
 					has_war_with = JAP
-				}
+				} 
 				factor = 3
 			}
 			modifier = {
@@ -853,6 +918,11 @@ technologies = {
 			leads_to_tech = cv_naval_bomber2
 			research_cost_coeff = 1
 		}
+		
+		path = {
+			leads_to_tech = cv_CAS1
+			research_cost_coeff = 0.5
+		}
 	
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1936
@@ -864,7 +934,7 @@ technologies = {
 		
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = 4 }
+			position = { x = -10 y = 4 }
 		}		
 		
 		ai_will_do = {
@@ -970,6 +1040,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		path = {
+			leads_to_tech = cv_CAS2
+			research_cost_coeff = 0.5
+		}
+		
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1940
 		
@@ -980,7 +1055,7 @@ technologies = {
 		
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = 6 }
+			position = { x = -10 y = 6 }
 		}	
 		
 		ai_will_do = {
@@ -1087,11 +1162,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		path = {
+			leads_to_tech = cv_CAS3
+			research_cost_coeff = 0.5
+		}
+		
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1944
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = 8 }
+			position = { x = -10 y = 8 }
 		}	
 		
 		categories = {
