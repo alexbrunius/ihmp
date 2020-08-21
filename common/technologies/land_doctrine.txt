@@ -1216,6 +1216,21 @@ technologies = {
 		mot_artillery_brigade = {
 			combat_width = -1
 		}
+		light_sp_artillery_brigade = {
+			combat_width = -1
+		}
+		medium_sp_artillery_brigade = {
+			combat_width = -1
+		}
+		heavy_sp_artillery_brigade = {
+			combat_width = -1
+		}
+		super_heavy_sp_artillery_brigade = {
+			combat_width = -1
+		}
+		modern_sp_artillery_brigade = {
+			combat_width = -1
+		}
 		
 		path = {
 			leads_to_tech = overwhelming_firepower 
