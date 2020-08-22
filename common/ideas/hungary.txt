@@ -9,7 +9,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = -0.005
+				conscription_factor = -0.025
 				production_speed_arms_factory_factor = -0.5
 			}
 		}
@@ -226,7 +226,7 @@ ideas = {
 			picture = generic_communist_army
 
 			modifier = {
-				conscription = 0.05
+				conscription_factor = 0.25
 			}
 		}
 

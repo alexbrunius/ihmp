@@ -74,7 +74,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription = 0.005
+				conscription_factor = 0.025
 				industrial_capacity_factory = 0.05
 			}
 		}
@@ -87,7 +87,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription = 0.01
+				conscription_factor = 0.05
 			}
 		}
 

@@ -56,7 +56,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription = 0.02
+				conscription_factor = 0.10
 				stability_factor = 0.05	
 				war_support_factor = 0.05
 			}
@@ -188,7 +188,7 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 			
 			modifier = {
-				conscription = 0.02
+				conscription_factor = 0.10
 				consumer_goods_factor = 0.02
 			}
 		}
@@ -208,7 +208,7 @@ ideas = {
 			picture = generic_intel_bonus
 			
 			modifier = {
-				conscription = 0.01
+				conscription_factor = 0.05
 				stability_factor = -0.05
 			}
 		}

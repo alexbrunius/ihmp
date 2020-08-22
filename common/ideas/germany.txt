@@ -525,7 +525,7 @@ ideas = {
 			modifier = {
 				industry_repair_factor = 0.20
 				training_time_factor = -0.1
-				conscription = 0.005
+				conscription_factor = 0.025
 			}
 		}
 
@@ -565,7 +565,7 @@ ideas = {
 			modifier = {
 				industry_repair_factor = 0.20
 				training_time_factor = -0.1
-				conscription = 0.005
+				conscription_factor = 0.025
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_infrastructure_factor = 0.1
 			}

@@ -80,7 +80,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription = 0.025
+				conscription_factor = 0.125
 			}
 		}
 
@@ -501,7 +501,7 @@ ideas = {
 			picture = generic_communist_army
 			
 			modifier = {
-				conscription = 0.02
+				conscription_factor = 0.10
 			}
 		}
 

@@ -11,7 +11,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.05
-				conscription = 0.002
+				conscription_factor = 0.01
 				fascism_drift = 0.05
 			}
 	
@@ -29,7 +29,7 @@ ideas = {
 			picture = generic_communism_drift_bonus
 			
 			modifier = {
-				conscription = -0.002
+				conscription_factor = -0.01
 				communism_drift = 0.05
 			}
 	

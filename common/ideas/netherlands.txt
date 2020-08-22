@@ -923,7 +923,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription = 0.01
+				conscription_factor = 0.05
 				training_time_factor = -0.1
 			}
 		}
@@ -976,7 +976,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription = 0.01
+				conscription_factor = 0.05
 			}
 		}
 
@@ -1091,7 +1091,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription = 0.03
+				conscription_factor = 0.15
 			}
 		}
 
@@ -1130,7 +1130,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription = 0.05
+				conscription_factor = 0.25
 			}
 		}
 
@@ -1209,7 +1209,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription = 0.01
+				conscription_factor = 0.05
 			}
 		}
 
@@ -1252,7 +1252,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription = 0.025
+				conscription_factor = 0.125
 			}
 		}
 
@@ -1351,7 +1351,7 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				conscription = 0.01
+				conscription_factor = 0.05
 				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.05
 			}
