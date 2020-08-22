@@ -336,7 +336,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription = 0.02	
+				conscription_factor = 0.10	
 			}
 		}
 		USA_war_department = {	
@@ -491,7 +491,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription = 0.02	
+				conscription_factor = 0.10	
 			}
 		}
 		USA_full_desegregation = {
@@ -510,7 +510,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription = 0.02	
+				conscription_factor = 0.10	
 				conscription_factor = 0.2
 			}
 		}

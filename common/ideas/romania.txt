@@ -279,7 +279,7 @@ ideas = {
 			}			
 
 			modifier = {
-				conscription = 0.01
+				conscription_factor = 0.05
 			}
 		}
 
@@ -297,7 +297,7 @@ ideas = {
 
 			modifier = {
 				army_morale_factor = 0.1
-				conscription = 0.02
+				conscription_factor = 0.10
 			}
 		}
 
@@ -448,7 +448,7 @@ ideas = {
 			
 			modifier = {
 				communism_drift = 0.01
-				conscription = 0.01
+				conscription_factor = 0.05
 			}
 		}
 

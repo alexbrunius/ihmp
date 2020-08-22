@@ -429,7 +429,7 @@ JAP_interservice_rivalry = {
 		}
 
 		modifier = {
-			conscription = 0.02
+			conscription_factor = 0.10
 		}
 
 		complete_effect = {
