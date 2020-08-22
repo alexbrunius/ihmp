@@ -287,7 +287,9 @@ NDefines.NIntel.CIVILIAN_CONVOYS_INTEL_RANGE_AT_LOWEST_INTEL = 0.8 -- was 0.5 --
 
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_ANTI_AIR_REDUCTION = 0.5 -- was 0.3 -- minimum value to show anti air damage reduction
 
-NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.4 -- was 0.3   -- min required intel to show currently focus
+NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_FOCUS_TREE = 0.9 -- was 0.7   -- min required intel to show currently focus
+NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.7 -- was 0.3   -- min required intel to show currently focus
+NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS_PROGRESS = 0.8 -- was 0.5   -- min required intel to show currently focus
 
 NDefines.NIntel.INTEL_TO_SHOW_PREVIOUSLY_RESEARCHED = { 0.9, 0.7, 0.7, 0.7 } -- minimum value to show previously researched tech
 NDefines.NIntel.INTEL_TO_SHOW_CURRENTLY_RESEARCHED = { 1.0, 0.8, 0.8, 0.8 } -- minimum value to show currently being researched tech
