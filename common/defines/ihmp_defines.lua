@@ -214,7 +214,7 @@ NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 0.05	 
 NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 0.50  -- was 0.12 now same as convoys 	-- same as SPOTTING_SPEED_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval invasion convoys
 
 NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR					= 0.75 -- was 0.25	-- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
-NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO					= 1.5  -- was 0.5 -- maximum penalty to get from larger fleets
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO					= 1.325  -- was 0.5 -- maximum penalty to get from larger fleets
 NDefines.NNavy.POSITIONING_PENALTY_HOURLY_DECAY_FOR_NEWLY_JOINED_SHIPS			= 0.05 -- was 0.002 -- the accumulated penalty from new ships will decay hourly by this value
 
 NDefines.NNavy.FUEL_COST_MULT = 0.12 	-- was 0.10 -- fuel multiplier for all naval missions
