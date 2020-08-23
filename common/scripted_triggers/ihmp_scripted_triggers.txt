@@ -387,6 +387,29 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 					FROM = { has_war_with = JAP }
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = RULE_ALLOW_LEND_LEASE_SCW
+				ROOT = {
+					OR = {
+						tag = GER
+						tag = ITA
+						tag = SOV
+						tag = USA
+						tag = ENG
+						tag = FRA
+					}
+				}
+				FROM = {
+					OR = {
+						tag = SPA
+						tag = SPB
+						tag = SPC
+						tag = SPD
+					}
+				}
+				has_global_flag = spanish_civil_war
+				NOT = { has_global_flag = scw_over }
+			}
 		}
 	}
 	if = {
