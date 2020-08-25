@@ -41,16 +41,19 @@ CHI_MP_1_Fight = {
 		CHI_the_soviet_volunteer_group
 		CHI_mining_commission
 		CHI_develop_the_hanyan_arsenal
+		CHI_mission_to_the_us
+		CHI_hire_chennault
+		CHI_invite_the_flying_tigers
 		CHI_financial_policy
 		CHI_price_controls
 		CHI_reform_the_national_bank
 		CHI_forced_loans
-		CHI_mission_to_the_us
 		CHI_french_military_mission
 		CHI_french_drill
 		CHI_rapprochement_with_soviet_union
 		CHI_purchase_tanks
 		CHI_experimental_mechanised_unit
+		CHI_fighter_purchases
 		CHI_scorched_earth_tactics
 		CHI_welfare
 		CHI_forced_conscription
@@ -260,7 +263,7 @@ CHI_MP_Only_Befriend_Helpers_for_Focus = {
 			}
 			AND = { 
 				has_completed_focus = CHI_invite_foreign_investors
-				NOT = { has_completed_focus = CHI_the_soviet_volunteer_group }
+				NOT = { has_completed_focus = CHI_invite_the_flying_tigers }
 			}
 		}
 	}
@@ -334,6 +337,39 @@ CHI_MP_Befriend_SOV = {
 	ai_strategy = {
 		type = befriend
 		id = SOV
+		value = 200
+	}	
+}
+
+CHI_MP_Befriend_USA = {
+	name = "Befriend USA"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		OR = {
+			focus_progress = {
+				focus = CHI_mission_to_the_us
+				progress > 0.1
+			}
+			AND = { 
+				has_completed_focus = CHI_mission_to_the_us
+				NOT = { has_completed_focus = CHI_invite_the_flying_tigers }
+			}
+		}
+	}
+
+	abort = {
+		has_completed_focus = CHI_invite_the_flying_tigers
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = USA
 		value = 200
 	}	
 }
