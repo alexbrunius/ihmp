@@ -163,6 +163,12 @@ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 				}
 			}
 			custom_trigger_tooltip = {
+				tooltip = RULE_ALLOW_LICENSING_SAME_FACTION_SWEDEN
+				FROM = {
+					tag = SWE
+				}
+			}
+			custom_trigger_tooltip = {
 				tooltip = RULE_ALLOW_LICENSING_SAME_FACTION_SOVIET_ALLIES_GER_JAP
 				ROOT = {
 					OR = {
