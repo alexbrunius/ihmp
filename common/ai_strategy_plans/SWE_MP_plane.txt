@@ -1,0 +1,421 @@
+SWE_MP_1 = {
+	name = "Sweden Multiplayer 1"
+	desc = ""
+
+	enable = {
+		original_tag = SWE
+		has_game_rule = {
+			rule = SWE_ai_behavior
+			option = SWE_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		infrastructure_effort
+		infrastructure_effort_2
+		extra_tech_slot
+		extra_tech_slot_2
+		construction_effort_3
+		production_effort
+		production_effort_2
+		production_effort_3
+		political_effort
+		liberty_ethos
+		neutrality_focus
+		deterrence
+		aviation_effort
+		why_we_fight
+		technology_sharing
+		naval_effort
+	}
+
+	research = {
+		construction_tech = 100
+		artillery = 100
+		synth_resources = -1000
+		armor = -1000
+		air_equipment = -1000
+		naval_equipment = -1000
+		air_doctrine = -10000
+		naval_doctrine = -10000
+	}
+
+	ideas = {
+		free_trade = 0
+		export_focus = 1
+		limited_exports = 0
+		closed_economy = 0
+		generic_captain_of_industry = 10
+		generic_fortification_engineer = 2
+		war_economy = 20
+		partial_economic_mobilisation = 10
+		extensive_conscription = 10
+		generic_industrial_concern = 5
+		generic_electronics_concern = 0
+		generic_tank_manufacturer = 0
+		generic_naval_manufacturer = 0
+		generic_naval_theorist = 0
+		generic_air_warfare_theorist = 0
+		generic_navy_chief_decisive_bat = 0
+		generic_navy_anti_submarine = 0
+		generic_air_close_air_sup = 0
+		generic_air_chief_all_weather = 0
+		generic_army_art = 0
+		generic_navy_fleet_log = 0
+		generic_air_air_combat_trainer = 0
+		SWE_thorwald_bergquist = 0
+		SWE_osten_unden = 100
+		SWE_olof_thornell = 50
+		bofors = 20
+		husqvarna = 0
+		scania = 0
+	}
+	
+		
+	ai_strategy = {
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		doctrine_effort = 0
+		mechanization_effort = 0
+		CAS_effort = 0
+		NAV_effort = 0
+		rocket_effort = 0
+		flexible_navy = 0
+		large_navy = 0
+		submarine_effort = 0
+		cruiser_effort = 0
+		nuclear_effort = 0
+	}
+}
+
+MP_Befriend_Everyone = {
+	name = "Befriend Everyone"
+	desc = "Sell everyone licenses"
+
+	enable = {
+		tag = SWE
+		has_game_rule = {
+			rule = SWE_ai_behavior
+			option = SWE_MP_1
+		}
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = GER
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = ITA
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = HUN
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = ROM
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = ENG
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = FRA
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = CAN
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = USA
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = RAJ
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = AST
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = JAP
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = SIA
+		value = 200
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = -200
+	}	
+}
+
+SWE_MP_No_Neutral_Front = {
+	name = "No Neutral Front"
+	desc = "Don't plan a front against Norway or Finland, unless you are in war with them"
+
+	enable = {
+		tag = SWE
+		has_game_rule = {
+			rule = SWE_ai_behavior
+			option = SWE_MP_1
+		}
+		NOT = { has_war_with = NOR }
+		NOT = { has_war_with = FIN }
+	}
+
+	abort = {
+		OR = {
+			has_war_with = NOR
+			has_war_with = FIN
+		}
+		
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = NOR
+		value = -200
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = FIN
+		value = -200
+	}
+}
+
+SWE_MP_Electronics_1 = {
+	name = "MP Electronics 2"
+	desc = ""
+
+	enable = {
+		original_tag = SWE
+		has_game_rule = {
+			rule = SWE_ai_behavior
+			option = SWE_MP_1
+		}
+		NOT = { has_tech = mechanical_computing }
+	}
+	
+	abort = {
+		has_tech = mechanical_computing 
+	}
+
+	research = {
+		computing_tech = 100000
+	}
+}
+
+SWE_MP_Build_Infra = {
+	name = "Build Infra for Tungsten"
+	desc = ""
+
+	enable = {
+		tag = SWE
+		has_game_rule = {
+			rule = SWE_ai_behavior
+			option = SWE_MP_1
+		}
+		has_country_flag = Pressured_by_GER
+		666 = {
+			is_controlled_by = SWE
+			infrastructure < 10
+		}
+		
+	}
+	
+	abort = {
+		666 = {
+			OR ={
+				NOT = { is_controlled_by = SWE }
+				NOT = { infrastructure < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 666
+		value = 1
+	}
+}
+
+
+MP_Conscription_0 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = SWE
+		has_game_rule = {
+			rule = SWE_ai_behavior
+			option = SWE_MP_1
+		}
+		has_idea = volunteer_only
+	}
+
+	abort = {
+		NOT = { has_idea = volunteer_only }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+	}
+}
+
+MP_Conscription_1 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = SWE
+		has_game_rule = {
+			rule = SWE_ai_behavior
+			option = SWE_MP_1
+		}
+		has_idea = limited_conscription
+	}
+
+	abort = {
+		NOT = { has_idea = limited_conscription }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+	}
+}
+
+MP_Conscription_2 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = SWE
+		has_game_rule = {
+			rule = SWE_ai_behavior
+			option = SWE_MP_1
+		}
+		has_idea = extensive_conscription
+	}
+
+	abort = {
+		NOT = { has_idea = extensive_conscription }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+	}
+}
+
+MP_Economy_0 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = SWE
+		has_game_rule = {
+			rule = SWE_ai_behavior
+			option = SWE_MP_1
+		}
+		has_idea = low_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = low_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+	}
+}
+
+MP_Economy_1 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = SWE
+		has_game_rule = {
+			rule = SWE_ai_behavior
+			option = SWE_MP_1
+		}
+		has_idea = partial_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = partial_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+	}
+}
+
+MP_Economy_2 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = SWE
+		has_game_rule = {
+			rule = SWE_ai_behavior
+			option = SWE_MP_1
+		}
+		has_idea = war_economy
+	}
+
+	abort = {
+		NOT = { has_idea = war_economy }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 0
+	}
+}
