@@ -535,14 +535,12 @@ foreign_politics = {
 
 		cost = 100
 
-		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1
 		}
 
 		visible = {
-			always = yes
+			SWE = { NOT = { has_country_flag = Pressured_by_GER } }
 		}
 
 		complete_effect = {
