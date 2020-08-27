@@ -232,6 +232,9 @@ country_event = {
 				add_timed_idea = { idea = GER_molotov_ribbentrop_pact days = 730 }
 			}
 		}
+		FIN = {
+			country_event = { id = italy.100 }
+		}
 		set_global_flag = sov_yes_pact
 	}
 	
