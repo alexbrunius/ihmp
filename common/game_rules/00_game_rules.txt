@@ -164,6 +164,7 @@ allow_lend_lease = {
 		text = "RULE_OPTION_SAME_FACTION"
 		desc = "RULE_ALLOW_LEND_LEASE_SAME_FACTION_DESC"
 	}
+
 	option = {
 		name = BLOCKED
 		text = "RULE_OPTION_BLOCKED"
@@ -1348,7 +1349,7 @@ MAN_ai_behavior = {
 	default = {
 		name = MAN_MP_2
 		text = "RULE_OPTION_MAN_MP_2"
-		desc = "RULE_OPTION_MAN_MP_2_AI_DESC"
+		desc = "RULE_OPTION_MAN_MP_2_DESC"
 	}
 }
 
@@ -1651,6 +1652,36 @@ POR_ai_behavior = {
 		name = POR_MP_1
 		text = "RULE_OPTION_POR_MP_1"
 		desc = "RULE_OPTION_POR_MP_1_DESC"
+	}
+}
+
+FIN_ai_behavior = {
+	name = "FIN_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = FIN_MP_1
+		text = "RULE_OPTION_FIN_MP_1"
+		desc = "RULE_OPTION_FIN_MP_1_DESC"
+	}
+}
+
+SWE_ai_behavior = {
+	name = "SWE_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = SWE_MP_1
+		text = "RULE_OPTION_SWE_MP_1"
+		desc = "RULE_OPTION_SWE_MP_1_DESC"
 	}
 }
 
