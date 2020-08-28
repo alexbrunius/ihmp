@@ -252,10 +252,9 @@ FIN_MP_Contiuation_War_0 = {
 	enable = {
 		tag = FIN
 		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+			rule = FIN_ai_behavior
+			option = FIN_MP_1
 		}
-		POL = { has_capitulated = no }
 	}
 
 	abort = {
@@ -277,7 +276,7 @@ FIN_MP_Contiuation_War_0 = {
 }
 
 FIN_MP_Contiuation_War_1 = {
-	name = "Wait to attack Soviet, till Barbarossa"
+	name = "Attack Soviet with Germany"
 	desc = ""
 
 	enable = {
