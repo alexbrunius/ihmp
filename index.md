@@ -1,4 +1,108 @@
 # Changelog:
+## 1.9.3.6-BETA
+- Removed convoy retreat speed from screening since it doesn't scale properly and was always giving 100%.
+- Fix duplicated Soviet VPs.
+- Martial Law now gives 10% factories.
+- Brutal Opression now has 60% garrison increase (from 100%, same as harsh quotas).
+- CV FTR+NAV reliability penalty on weapons upgrade 15->10%.
+- TAC bomb upgrade STR/CAS/NAV 2/2/0 -> 5/5/5%.
+- CAS bomb upgrade now also gives 5% NAV attack.
+- Remove Kamchatkan and Pechoran ports that made no sense.
+- Fuel flow to divisions 2->2.4.
+- Reduced SCW volunteer NFs from 3 to 2 divisions.
+- Lowered division lower limit for sending volunteers to 25 and make multiples of 25 give additional division each.
+- It's now possible to create spy network in any state with VPs.
+- Manchukuo focus tree now gives cores on Mengoku.
+- Fixed MAN_invite_japanese_settlers tooltip.
+- Added Greece mobilization event, triggered when Albania yields to Italy.
+- Slimmed down French Focus Tree under historical NF rule.
+- Case Anton is only possible 150 days after French capitulation to prevent weirdness.
+- Vichy now forms upon French capitulation or losing of Paris.
+- France should now capitulate properly when Vichy forms. UK gets notification when Germany declines Vichy.
+- Added decisions to move French capital after capitulation.
+- Slightly changed strategic regions in China.
+- Japan now needs to conquer entire Nationalist China and all Warlords to end the war.
+- AI now gets a free 1 battalion suppression template.
+- Changed the cost for the first step embargo for UK and USA from 75 to 25 PP.
+- Invoke Alliance of 1373 is now UK NF, not decision.
+- Added Oil prospecting decision for Japan for DEI.
+- If Marsa Muthra falls to an enemy of UK, after 150 +/-50days Iraq revolts, if it is still not controlled by ENG.
+- Changed Sabine and Countanance operations to be wars (AI attacks UK/SOV).
+- Doubled impact of initiative on planning (no change to reinforce chance). Signal companies+GPB doctrine impact 20/12% -> 40/20%.
+- UK and GER NFs now only spawn factories in cores.
+- Medium battery surface visibility 3.5 -> 2.5.
+- Light medium battery (CL) surface visibility of 1 added.
+- Light medium batteries now cost 0.5 steel.
+- Light (DD) batteries now give 5 HP and 0.5 surface visibility.
+- Medium batteries now give flat 40 HP instead of 40% HP inrease.
+- Heavy and Superheavy batteries now give 60 and 80 HP, respectively.
+- Heavy and Superheavy batteries now give 3.5 and 4.5 surface visibility, respectively.
+- Heavy hull base HP lowered (350/370/400/450/700 -> 230/250/280/330/560).
+- Heavy hull base visibility 20->13.
+- All DD base hulls now cost 2 steel, DD4 also 1 chromium.
+- All submarine hulls now cost 1 steel, SS4 also 1 chromium.
+- Panzerschiff base visibility lowered 22->19.5.
+- All cruiser hulls now cost 1 steel.
+- All cruiser armor now costs 1 steel, armor 4 also 1 chromium.
+- Removed CV range penalty from coastal designer to prevent 0 range bug.
+- Game speed 1 reverted to vanilla, speed 2 now 2x slower than vanilla, speeds 3 and 4 now the same as vanilla's 2 and 3.
+- Medium (CA) guns now cost 1 steel.
+- SHBB base speed 22->24 (matches BB3).
+- SHBB base visibility 20->11.
+- TAC strat bombing 10/12/14/16->12/14/16/18.
+- All occupation laws milder than Forced Labour now have 30 percentage point higher garrison requirement.
+- More than 1 operative on counterintelligence no longer contribute diminishing returns to spy defense.
+- New levels of Localized Training Centers: 2nd gives +1 operative recruitment choice and costs permanent 2CIC, 3rd and 4th give +1 operative slot and cost 3 and 5 permanent CIC, respectively.
+- Reduced max days saved for research 30->10 to prevent research juggling.
+- CV FTR and CAS are now a separate tech line instead of variant.
+- LL now possible under same rules as licensing.
+- Lowered Cyprus VPs from 5 and 2 to 2 and 1.
+- First Air fleet now gives 100% carrier research bonus.
+- Reworked North Atlantic strategic regions and split NW Africa into two zones.
+- Northern Norway state split into two.
+- Changed Naval Base in Nagasaki from 6 to 10.
+- Canada Housing Act should now prioritise Toronto.
+- SPART combat width 3->2.
+- Dispersed support now also lowers combat width of SPART.
+- Plane mine operations are now 1940 techs, unlocked by magnetic mine.
+- All mine damage and plane techs are now XP boostable (150% for 50 XP).
+- Most flat conscription modifiers replaces by conscription_factor, assuming 1% conscription equals 5% conscription_factor.
+- Naval intel factor from spy network 15->2 (in line with other intel categories).
+- Intel required for current NF/current NF progress/NF tree increased to 70/80/90%.
+- Countries can send lend lease to countries that have volunteer forces from them.
+- Transfer exile navy PP cost now scales with navy size (25PP base, 5/capital&carrier, 1/screen, 0.5/sub).
+- MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO 1.5 -> 1.35.
+- DAMAGE_PENALTY_ON_MINIMUM_POSITIONING 0.5->0.75.
+- 1936+ CAS/CVCAS/CVFTRFTR/CVNAV/REC now cost 3 ALU 1 RUB.
+- Rocket interceptors now cost 2 ALU 2 TUN 1 RUB.
+- 1936+ TAC/NAV/HFTR/TRA now cost 4 ALU 1 RUB.
+- IW TAC now cost 3 ALU 1 RUB.
+- STR now cost 5 ALU 1 RUB.
+- Fixed Australian designers giving 10% research bonus instead of 15%.
+- Japan starts with BB/BC armor 2 researched.
+- Wichita and Brooklyn Class start with Cruiser Armor 2 instead of 3.
+- Snorkel buffed from 10/20% to 20/40% visibility reduction.
+- Sub visibility halved while sub detection doubled. This should mean DD vs sub detection is the same while plane detection is halved.
+- LL convoy costs halved.
+- Doubled HP and cost of convoys.
+- Halved resource transport convoy requirements.
+- Halved supply and fuel convoy requirements.
+- Doubled sunk convoy impact on warscore.
+- Battalion transport weight halved.
+- Halved starting convoys for significant countries.
+- Emergency convoy NF convoys given halved.
+- Sonar and ship radar sub detection increased by 1.
+- MECH, AMPH MECH and MRART are now under tank production category (to keep their production by minors under house rule).
+- Port damage from strategic bombing reverted to vanilla (didn't help with port strike damage, while being impossible to strat bomb).
+- Screen ships can now fire after 16 hours (capitals still after 8, CVs instantly).
+- Carrier hit profile multiplier 0.25->0.5.
+- Raiding designer no longer lowers visibility of surface ships.
+- Atlantic designer now gives 10% HP to screens and submarines.
+- Paratroopers 2 is no 1941 tech.
+- Smoke Screen expert now gives 10% retreat speed.
+- MRART now costs 1 tungsten.
+- Added Canada NF tree tweaks by Bhoo.
+
 ## 1.9.3.5
 - Fix Italy NF tree not getting  proper naval air research bonus like all other NF trees do.
 - All carrier module slots that take secondaries now can take AA and vice versa.
