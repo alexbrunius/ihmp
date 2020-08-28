@@ -96,7 +96,7 @@ SPD_MP_1 = {
 
 SPD_MP_Wait = {
 	name = "Spanish Democratic MP plan"
-	desc = "Wait till Soviet picks event optiom´b"
+	desc = "Wait till Soviet picks event option"
 
 	enable = {
 		tag = SPD
@@ -118,6 +118,16 @@ SPD_MP_Wait = {
 				progress > 0.0
 			}
 			has_completed_focus = SPR_enemies_of_our_enemy
+			AND = {
+				has_completed_focus = SPR_war_of_independence
+				NOT = { has_war_with = SOV }
+				is_subject = no
+				SOV = { NOT = { has_country_flag = SOV_annexed_spanish_land } }			
+			}
+			AND = {
+				has_completed_focus = SPR_war_of_independence
+				has_war_with = SOV
+			}
 		}
 	}
 
@@ -127,6 +137,8 @@ SPD_MP_Wait = {
 		SPR_petition_for_french_aid = 0
 		SPR_soviet_military_advisors = 0
 		SPR_soviet_technological_advancements = 0
+		SPR_experiences_from_the_civil_war = 0
+		SPR_navy_modernization = 0
 	}
 }
 
