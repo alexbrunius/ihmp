@@ -31,17 +31,17 @@ country_event = {
 				}
 			}
 		}
-		FIN = {
-			create_wargoal = {
-				type = take_state
-				target = SOV
-				generator = { 146 }
-			}
-		}
 		SOV = {
 			country_event = { days = 5 id = soviet.12 }
 			effect_tooltip = {
 				transfer_state = 146
+			}
+		}
+		FIN = {
+			create_wargoal = {
+				type = take_core_state
+				target = SOV
+				generator = { 146 }
 			}
 		}
 	}
@@ -393,7 +393,7 @@ country_event = {
 				value = 200
 			}
 			create_wargoal = {
-				type = take_state
+				type = take_core_state
 				target = SOV
 				generator = { 146 }
 			}
