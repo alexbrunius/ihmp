@@ -232,6 +232,7 @@ NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 1.0					-- was 100
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 10		-- was 100
 
 NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 8                          -- was 4 hours from start of combat when only carriers, capitals and subs get to attack
+NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 16                                   -- was 8 -- hours where all get to attack
 
 NDefines.NNavy.EXPERIENCE_FACTOR_CARRIER_GAIN = 0.04		-- was 0.08					-- Xp gain by carrier ships in the combat
 
