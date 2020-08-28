@@ -135,6 +135,7 @@ if = {
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_ship_hull_heavy = 1
+		basic_heavy_armor_scheme = 1
 		early_ship_hull_carrier = 1
 		basic_ship_hull_carrier = 1
 		mtg_transport = 1
