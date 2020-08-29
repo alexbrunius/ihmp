@@ -2426,10 +2426,10 @@
 	focus = {
 		id = AST_army_inventions_directorate
 		icon = GFX_focus_research
-		prerequisite = { focus = AST_national_security_act }
-		x = -2
-		y = 2
-		relative_position_id = AST_establish_advisory_war_council
+		prerequisite = { focus = AST_allied_works_council }
+		x = 2
+		y = 1
+		relative_position_id = AST_allied_works_council
 
 		cost = 10
 
@@ -2666,7 +2666,7 @@
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = AST_civil_construction_corps }
 		prerequisite = { focus = AST_squash_the_squanderbugs }
-		x = -3
+		x = -2
 		y = 4
 		relative_position_id = AST_establish_advisory_war_council
 
