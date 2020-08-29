@@ -110,6 +110,21 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
+						rule = CAN_ai_behavior
+						option = CAN_MP_1
+					}
+					CAN = { is_ai = yes }
+				}
+				CAN = {
+					delete_units = { 
+						division_template = "Cavalry Militia"
+						disband = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
 						rule = POR_ai_behavior
 						option = POR_MP_1
 					}
