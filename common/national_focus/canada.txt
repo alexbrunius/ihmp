@@ -328,7 +328,8 @@
 		completion_reward = {
 			add_political_power = -35
 			473 = {
-				limit = {
+				if = {
+					limit = {
 						free_building_slots = {
 							building = infrastructure
 							size > 1
@@ -340,9 +341,11 @@
 						instant_build = yes
 					}
 					set_state_flag = CAN_canada_pacific_railway_Inf_2
+				}
 			}
 			470 = {
-				limit = {
+				if = {
+					limit = {
 						free_building_slots = {
 							building = infrastructure
 							size > 1
@@ -354,6 +357,7 @@
 						instant_build = yes
 					}
 					set_state_flag = CAN_canada_pacific_railway_Inf_2
+				}
 			}
 		}
 	}	
@@ -412,32 +416,36 @@
 		completion_reward = {
 			add_political_power = -35
 			473 ={
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
+				if = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
 					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = CAN_maritime_colonial_railway_Inf_1
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = CAN_maritime_colonial_railway_Inf_1
 			}
 			471 ={
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
+				if = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
 					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = CAN_maritime_colonial_railway_Inf_2
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = CAN_maritime_colonial_railway_Inf_2
 			}
 		}
 	}
@@ -2687,43 +2695,6 @@
 	}
 
 	focus = {
-		id = CAN_supply_the_empire
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = CAN_imperial_oil focus = CAN_aluminium_company_of_canada }
-		x = 0
-		y = 2
-		relative_position_id = CAN_aluminium_company_of_canada
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = CAN_supply_the_empire
-				bonus = 1.0
-				uses = 3
-				category = excavation_tech
-			}
-		}
-	}
-
-	focus = {
 		id = CAN_aluminium_company_of_canada
 		icon = GFX_goal_generic_positive_trade_relations 
 		prerequisite = { focus = CAN_canada_pacific_railway }
@@ -2770,6 +2741,43 @@
 					type = aluminium
 					amount = 8
 				}
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_supply_the_empire
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = CAN_imperial_oil focus = CAN_aluminium_company_of_canada }
+		x = 0
+		y = 2
+		relative_position_id = CAN_aluminium_company_of_canada
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_supply_the_empire
+				bonus = 1.0
+				uses = 3
+				category = excavation_tech
 			}
 		}
 	}
