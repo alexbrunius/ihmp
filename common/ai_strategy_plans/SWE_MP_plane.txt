@@ -37,7 +37,7 @@ SWE_MP_1 = {
 
 	research = {
 		construction_tech = 100
-		artillery = 100
+		artillery = 1000
 		synth_resources = -1000
 		armor = -1000
 		air_equipment = -1000
@@ -181,6 +181,11 @@ MP_Befriend_Everyone = {
 	ai_strategy = {
 		type = befriend
 		id = SIA
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = SOV
 		value = 200
 	}
 	ai_strategy = {
