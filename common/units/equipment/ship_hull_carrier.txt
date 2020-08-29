@@ -89,7 +89,7 @@ equipments = {
 		surface_detection = 26
 		sub_detection = 10
 		surface_visibility = 30
-		naval_speed = 26
+		naval_speed = 16
 		reliability = 0.70
 		
 		naval_range = 3000
@@ -97,12 +97,12 @@ equipments = {
 		max_strength = 250
 		
 
-		fuel_consumption = 87
+		fuel_consumption = 37
 
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no
 		
-		build_cost_ic = 2450
+		build_cost_ic = 450
 		resources = {
 			steel = 3
 			chromium = 1
@@ -170,7 +170,7 @@ equipments = {
 		
 
 
-		build_cost_ic = 2600
+		build_cost_ic = 600
 		resources = {
 			steel = 4
 			chromium = 1
@@ -232,7 +232,7 @@ equipments = {
 		
 
 
-		build_cost_ic = 3250
+		build_cost_ic = 1250
 		resources = {
 			steel = 4
 			chromium = 2
@@ -275,10 +275,10 @@ equipments = {
 		naval_range = 4000
 		reliability = 0.65
 		max_strength = 325
-		naval_speed = 23
+		naval_speed = 13
 
 
-		build_cost_ic = 2700
+		build_cost_ic = 700
 		resources = {
 			steel = 4
 			chromium = 1
@@ -317,8 +317,8 @@ equipments = {
 		max_strength = 125
 		
 		reliability = 0.65
-		naval_speed = 20
-		build_cost_ic = 2700
+		naval_speed = 10
+		build_cost_ic = 700
 		resources = {
 			steel = 3
 		}
