@@ -574,7 +574,7 @@ country_event = {
 	
 	option = {
 		name = italy.100.a
-		GRE = {
+		ROOT = {
 			if = {
 				limit = { has_idea = disarmed_nation }
 				add_ideas = extensive_conscription
