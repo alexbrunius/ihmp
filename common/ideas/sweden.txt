@@ -458,6 +458,12 @@ ideas = {
 				artillery = {
 					reliability = 0.20
 				}
+				anti_tank = {
+					reliability = 0.20
+				}
+				anti_air = {
+					reliability = 0.20
+				}
 			}
 			
 			traits = { artillery_manufacturer }
