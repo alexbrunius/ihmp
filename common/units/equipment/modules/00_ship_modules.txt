@@ -1382,12 +1382,14 @@ equipment_modules = {
 			naval_speed = 15
 			fuel_consumption = 62
 			build_cost_ic = 2400
+			reliability = 0.2
+			max_strength = 100
 		}
 		
 		multiply_stats = {
 			naval_speed = 0.2
 		}
-		
+
 		can_convert_from = {
 			module_category = carrier_ship_engine
 			convert_cost_ic = 2500
@@ -1404,12 +1406,14 @@ equipment_modules = {
 			naval_speed = 15
 			fuel_consumption = 66
 			build_cost_ic = 2480
+			reliability = 0.2
+			max_strength = 100
 		}
 		
 		multiply_stats = {
 			naval_speed = 0.3
 		}
-		
+
 		can_convert_from = {
 			module_category = carrier_ship_engine
 			convert_cost_ic = 2500
@@ -1431,12 +1435,14 @@ equipment_modules = {
 			naval_speed = 15
 			fuel_consumption = 70
 			build_cost_ic = 2550
+			reliability = 0.2
+			max_strength = 100
 		}
 		
 		multiply_stats = {
 			naval_speed = 0.4
 		}
-		
+
 		can_convert_from = {
 			module_category = carrier_ship_engine
 			convert_cost_ic = 2500
@@ -1457,12 +1463,14 @@ equipment_modules = {
 			naval_speed = 15
 			fuel_consumption = 74
 			build_cost_ic = 2670
+			reliability = 0.2
+			max_strength = 100
 		}
 		
 		multiply_stats = {
 			naval_speed = 0.45
 		}
-		
+
 		can_convert_from = {
 			module_category = carrier_ship_engine
 			convert_cost_ic = 2500
