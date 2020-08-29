@@ -102,6 +102,21 @@
 - Smoke Screen expert now gives 10% retreat speed.
 - MRART now costs 1 tungsten.
 - Added Canada NF tree tweaks by Bhoo.
+- Fixed a vanilla bug with USA senate opposition removing as many senators' support as intended.
+- Added CVEs by virtue of lowering base carrier IC cost by 2000, fuel use by 50 and speed by 10 and adding the same amount to each carrier engine. CVEs now use cruiser or heavy ship engines.
+- Australian Reserach Collaboration NF no longer requires it to be free.
+- Starting Australian War Support 35->15.
+- Australian Establish Advisory War Council NF now gives 5% War Support.
+- Australian Army Incentions Directorate NF now requires Allied Works Council.
+- Australian Allied Works Council NF no longer requires Civil Construction Corps.
+- Finland now gets reconquest wargoal after Winter War. AI acts on it only after Barbarossa, starting Continuation war.
+- Finland should now increase conscription when MR pact is signed.
+- Allowed Licensing from Sweden always.
+- AI Sweden picks Bofors and researches ART/AA/AT techs for license.
+- Bofors now gives reliability also to AA and AT.
+- Added Pressure Sweden decision for Germany to take resource rights in Lappland and force Sweden to build infrastructure there.
+- Further improved CVE by removing 20 percentage points of reliability and 100 HP from base carrier hulls and adding it to engines.
+
 
 ## 1.9.3.5
 - Fix Italy NF tree not getting  proper naval air research bonus like all other NF trees do.
