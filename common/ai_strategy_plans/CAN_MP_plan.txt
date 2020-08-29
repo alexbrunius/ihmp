@@ -109,6 +109,58 @@ CAN_MP_1 = {
 
 }
 
+CAN_MP_Garrision = {
+	name = "Garrision the Sussex"
+	desc = "Put all divisons in Sussex until France falls"
+
+	enable = {
+		tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+		NOT = { FRA = { has_capitulated = yes } }
+	}
+
+	abort = {
+		FRA = { has_capitulated = yes }
+	}
+	
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 1.0
+		states = { 
+			127
+		}
+		area = europe
+	}
+}
+
+CAN_MP_No_USA_Front = {
+	name = "No USA Front"
+	desc = "Don't plan a front against USA, unless you are in war to it"
+
+	enable = {
+		tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+		NOT = { has_war_with = USA }
+	}
+
+	abort = {
+		has_war_with = USA
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = USA
+		value = -200
+	}	
+
+}
+
 CAN_MP_Buildup = {
 	name = ""
 	desc = ""
