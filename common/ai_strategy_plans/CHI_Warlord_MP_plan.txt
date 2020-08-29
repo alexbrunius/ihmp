@@ -400,6 +400,44 @@ XSM_Garrision = {
 	}
 }
 
+XSM_Garrision_2 = {
+	name = "Garrision Bejing"
+	desc = ""
+
+	enable = {
+		original_tag = XSM
+		has_game_rule = {
+			rule = WL_ai_behavior
+			option = WL_MP_1
+		}
+		is_in_faction_with = CHI
+		609 = {
+			NOT = {
+				is_fully_controlled_by = JAP
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			NOT = { is_in_faction_with = CHI }
+			609 = {
+				is_fully_controlled_by = JAP
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 1.0
+		states = { 
+			608
+		}
+		area = asia
+	}
+}
+
+
 YUN_Garrision = {
 	name = "Garrision"
 	desc = ""
