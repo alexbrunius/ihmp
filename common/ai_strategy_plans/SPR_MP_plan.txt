@@ -148,6 +148,19 @@ SPR_MP_1 = {
 				NOT = { GER = { has_completed_focus = GER_nationalist_spain_ally } }
 				NOT = { ENG = { has_completed_focus = uk_spain_focus } }
 			}
+			AND = {
+				NOT = { has_war_with = GER }
+				has_country_flag = {
+					flag = ger_spa_alliance_focus
+					days > 140
+				}
+				GER = { has_completed_focus = GER_nationalist_spain_ally }
+				NOT = { ENG = { has_completed_focus = uk_spain_focus } }
+			}
+			AND = {
+				NOT = { GER = { has_completed_focus = GER_nationalist_spain_ally } }
+				ENG = { has_completed_focus = uk_spain_focus }
+			}
 		}
 		
 	}
@@ -269,6 +282,10 @@ SPR_MP_plan_war_with_allies = {
 		SPA_join_the_axis
 		SPA_fascist_economic_aid
 		SPA_facilitate_pyrenees_freight_transports
+		SPA_spanish_austerity
+		SPA_expand_the_axis_gold_trade
+		SPA_ensure_agricultural_self_sufficiency
+		SPA_reduce_reliance_on_foreign_resources	
 		SPA_improve_cross_country_railways
 		SPA_support_the_war_industry
 		SPA_expand_the_war_industry
