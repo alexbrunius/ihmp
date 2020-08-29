@@ -2068,7 +2068,6 @@
 		id = AST_allied_works_council
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = AST_department_of_supply_and_development }
-		prerequisite = { focus = AST_civil_construction_corps }
 		x = 2
 		y = 3
 		relative_position_id = AST_standard_gauge_railway
