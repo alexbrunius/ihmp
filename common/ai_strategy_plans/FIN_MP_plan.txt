@@ -74,7 +74,7 @@ FIN_MP_1 = {
 
 	ai_strategy = {
 		type = prepare_for_war
-		id = GER	
+		id = SOV	
 		value = 200
 	}
 
@@ -131,10 +131,10 @@ SWE_MP_No_Neutral_Front = {
 	desc = "Don't plan a front against Norway or Finland, unless you are in war with them"
 
 	enable = {
-		tag = SWE
+		tag = FIN
 		has_game_rule = {
-			rule = SWE_ai_behavior
-			option = SWE_MP_1
+			rule = FIN_ai_behavior
+			option = FIN_MP_1
 		}
 		NOT = { has_war_with = NOR }
 		NOT = { has_war_with = FIN }
@@ -215,8 +215,8 @@ FIN_MP_Antagonize = {
 	enable = {
 		tag = FIN
 		has_game_rule = {
-			rule = POL_ai_behavior
-			option = POL_MP_1
+			rule = FIN_ai_behavior
+			option = FIN_MP_1
 		}
 	}
 
@@ -282,8 +282,8 @@ FIN_MP_Contiuation_War_1 = {
 	enable = {
 		tag = FIN
 		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+			rule = FIN_ai_behavior
+			option = FIN_MP_1
 		}
 		OR = {
 			ROOT = {
@@ -382,7 +382,7 @@ FIN_More_Mils = {
 
 
 FIN_MP_Electronics_1 = {
-	name = "Indonesia MP Electronics 2"
+	name = "MP Electronics 2"
 	desc = ""
 
 	enable = {
