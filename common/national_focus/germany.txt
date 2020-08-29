@@ -4376,8 +4376,8 @@ focus_tree = {
 						original_tag = SPR
 						has_government = fascism
 					}
-					remove_ideas = SPA_recovering_from_civil_war
 					add_opinion_modifier = { target = GER modifier = ger_spa_alliance_focus }
+					set_country_flag = ger_spa_alliance_focus
 				}
 			}
 			if = {
@@ -4385,8 +4385,8 @@ focus_tree = {
 					has_dlc = "La Resistance"
 				}
 				SPA = {
-					remove_ideas = SPA_recovering_from_civil_war
 					add_opinion_modifier = { target = GER modifier = ger_spa_alliance_focus }
+					set_country_flag = ger_spa_alliance_focus
 				}
 			}
 		}
