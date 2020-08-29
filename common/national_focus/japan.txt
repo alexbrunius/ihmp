@@ -1198,6 +1198,10 @@ focus_tree = {
 			GXC = { has_capitulated = yes }
 			YUN = { has_capitulated = yes }
 			XSM = { has_capitulated = yes }
+			OR = {
+				SIK = { has_capitulated = yes }
+				JAP = { NOT = { has_war_with = SIK } }
+			}
 		}
 
 		cancel_if_invalid = yes
