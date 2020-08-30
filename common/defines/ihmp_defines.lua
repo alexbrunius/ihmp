@@ -183,7 +183,7 @@ NDefines.NNavy.CONVOY_RAID_MAX_REGION_TO_TASKFORCE_RATIO						= 1.0		-- was 1.5 
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO							= 9.0		-- was 5.0 -- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
 
 NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT 											= 6		-- was 20 -- Amount of in-game-hours that takes the submarine (with position unrevealed), to hide.
-NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT 										= 8		-- was 16 -- Amount of in-game-hours that makes the submarine visible if it is on the defender side.
+NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT 										= 16		-- was 16 -- Amount of in-game-hours that makes the submarine visible if it is on the defender side.
 NDefines.NNavy.SUBMARINE_REVEAL_BASE_CHANCE 									= 6		-- was 12 -- Base factor for submarine detection. It's modified by the difference of a spotter's submarines detection vs submarine visibility. Use this variable for game balancing. setting this too low will cause bad spotting issues.
 NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE 							= 0.10		-- was 0.04 -- Chance of a submarine being revealed when it fires. 1.0 is 100%. this chance is then multiplied with modifier created by comparing firer's visibiility and target's detection
 NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				= 0.3  		-- was 0.5 -- screening efficiency (screen to capital ratio) at 0% positioning
