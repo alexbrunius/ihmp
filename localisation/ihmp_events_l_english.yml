@@ -23,3 +23,5 @@
  GER_integrate_war_economies_tt5:2 "If §Y[BUL.GetName]§! is in a faction with §Y[Root.GetName]§!, add §Y4 Military Factory§! each to §Y[Root.GetName]§! and §Y[BUL.GetName]§!, and §Y[BUL.GetName]§! becomes puppet of §Y[Root.GetName]§!.\n"
  GER_integrate_war_economies_tt6:0 "§R[BUL.GetName] must approve of the agreement for the bonuses to take effect.§!\n"
  DOD_hungary.54.d:0 "The conflict was already resolved."
+ blow_suez_canal_iteration:0 "Damage the Suez Canal"
+ blow_suez_canal_iteration_desc:0 "We  are not confident in our abilities to hold the strategically vital Suez Canal. We must therefore begin preparations to inflict enough partially damage to the canal so that it will remain out of commission for a a short period of time. This will temporarily limit the enemy's ability to move ships from Asia and East Africa into the Mediterranean."
