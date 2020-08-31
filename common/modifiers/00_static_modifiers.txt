@@ -125,6 +125,40 @@ unplanned_offensive = { # on Province
 	ground_attack_factor = -0.75
 }
 
+suez_level_10 = {
+	#Dummy
+}
+suez_level_9 = {
+	#Dummy
+}
+suez_level_8 = {
+	#Dummy
+}
+suez_level_7 = {
+	#Dummy
+}
+suez_level_6 = {
+	#Dummy
+}
+suez_level_5 = {
+	#Dummy
+}
+suez_level_4 = {
+	#Dummy
+}
+suez_level_3 = {
+	#Dummy
+}
+suez_level_2 = {
+	#Dummy
+}
+suez_level_1 = {
+	#Dummy
+}
+suez_level_0 = {
+	#Dummy
+}
+
 night = { # On province. Multiplied by amount of darkness.
 	naval_hit_chance = -0.25
 	carrier_traffic = -1.0
