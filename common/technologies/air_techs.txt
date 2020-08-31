@@ -24,7 +24,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = cv_early_fighter
-			research_cost_coeff = 1
+			research_cost_coeff = 0.5
 		}
 		path = {
 			leads_to_tech = heavy_fighter1
@@ -171,6 +171,11 @@ technologies = {
 			leads_to_tech = cv_fighter2
 			research_cost_coeff = 1
 		}
+
+		path = {
+			leads_to_tech = fighter1
+			research_cost_coeff = 0.5
+		}
 	
 		research_cost = 1 #Carrier Variant
 		start_year = 1936
@@ -294,6 +299,11 @@ technologies = {
 		path = {
 			leads_to_tech = cv_fighter3
 			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = fighter2
+			research_cost_coeff = 0.5
 		}
 	
 		research_cost = 1.0 #Carrier Variant
@@ -426,6 +436,11 @@ technologies = {
 		folder = {
 			name = air_techs_folder
 			position = { x = -1 y = 8 }
+		}
+
+		path = {
+			leads_to_tech = fighter3
+			research_cost_coeff = 0.5
 		}
 		
 		categories = {
