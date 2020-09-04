@@ -216,31 +216,6 @@ SIA_MP_No_Mil_3 = {
 	}
 }
 
-SIA_MP_No_Mil_4 = {
-	name = ""
-	desc = ""
-
-	enable = {
-		tag = SIA
-		has_game_rule = {
-			rule = SIA_ai_behavior
-			option = SIA_MP_1
-		}
-		has_completed_focus = production_effort_3
-		date < 1942.6.1
-	}
-
-	abort = {
-		date > 1942.6.1
-	}
-
-	ai_strategy = {
-		type = building_target
-		id = arms_factory
-		value = 4
-	}
-}
-
 SIA_MP_Infrastructure_1 = {
 	name = "Siam Rubber in Northern Malay"
 	desc = "Build Level 10 Infrastructure for Rubber"
@@ -592,86 +567,86 @@ SIA_MP_Radar_Construction = {
 	}
 }
 
-SIA_MP_AA_1 = {
-	name = "Siam MP Build AA 1"
-	desc = ""
+#SIA_MP_AA_1 = {
+#	name = "Siam MP Build AA 1"
+#	desc = ""
+#
+#	enable = {
+#		tag = SIA
+#		has_game_rule = {
+#			rule = SIA_ai_behavior
+#			option = SIA_MP_1
+#		}
+#		724 = {
+#			is_controlled_by = SIA
+#			anti_air_building < 5
+#			NOT = {	infrastructure < 10 }
+#			NOT = { air_base < 10 }
+#		}
+#		289 = {
+#			is_controlled_by = SIA
+#			NOT = { infrastructure < 10	}
+#			NOT = { air_base < 10 }
+#		}
+#	}
+#
+#	abort = {
+#		724 = {
+#			OR ={
+#				NOT = { is_controlled_by = SIA }
+#				NOT = { anti_air_building < 5 }
+#			}
+#		}
+#	}
+#
+#	ai_strategy = {
+#		type = build_building
+#		id = anti_air_building
+#		target = 724
+#		value = 5
+#	}
+#}
 
-	enable = {
-		tag = SIA
-		has_game_rule = {
-			rule = SIA_ai_behavior
-			option = SIA_MP_1
-		}
-		724 = {
-			is_controlled_by = SIA
-			anti_air_building < 5
-			NOT = {	infrastructure < 10 }
-			NOT = { air_base < 10 }
-		}
-		289 = {
-			is_controlled_by = SIA
-			NOT = { infrastructure < 10	}
-			NOT = { air_base < 10 }
-		}
-	}
-
-	abort = {
-		724 = {
-			OR ={
-				NOT = { is_controlled_by = SIA }
-				NOT = { anti_air_building < 5 }
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = build_building
-		id = anti_air_building
-		target = 724
-		value = 5
-	}
-}
-
-SIA_MP_AA_2 = {
-	name = "Siam MP Build AA 2"
-	desc = ""
-
-	enable = {
-		tag = SIA
-		has_game_rule = {
-			rule = SIA_ai_behavior
-			option = SIA_MP_1
-		}
-		724 = {
-			is_controlled_by = SIA
-			NOT = { anti_air_building < 5 }
-			NOT = {	infrastructure < 10 }
-			NOT = { air_base < 10 }
-		}
-		289 = {
-			is_controlled_by = SIA
-			anti_air_building < 5
-			NOT = { infrastructure < 10	}
-			NOT = { air_base < 10 }
-		}
-	}
-
-	abort = {
-		289 = {
-			OR ={
-				NOT = { is_controlled_by = SIA }
-				NOT = { anti_air_building < 5 }
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = build_building
-		id = anti_air_building
-		target = 289
-		value = 5
-	}
-}
+#SIA_MP_AA_2 = {
+#	name = "Siam MP Build AA 2"
+#	desc = ""
+#
+#	enable = {
+#		tag = SIA
+#		has_game_rule = {
+#			rule = SIA_ai_behavior
+#			option = SIA_MP_1
+#		}
+#		724 = {
+#			is_controlled_by = SIA
+#			NOT = { anti_air_building < 5 }
+#			NOT = {	infrastructure < 10 }
+#			NOT = { air_base < 10 }
+#		}
+#		289 = {
+#			is_controlled_by = SIA
+#			anti_air_building < 5
+#			NOT = { infrastructure < 10	}
+#			NOT = { air_base < 10 }
+#		}
+#	}
+#
+#	abort = {
+#		289 = {
+#			OR ={
+#				NOT = { is_controlled_by = SIA }
+#				NOT = { anti_air_building < 5 }
+#			}
+#		}
+#	}
+#
+#	ai_strategy = {
+#		type = build_building
+#		id = anti_air_building
+#		target = 289
+#		value = 5
+#	}
+#}
 
 SIA_MP_Civ = {
 	name = "Siam Build Civ"
@@ -685,13 +660,13 @@ SIA_MP_Civ = {
 		}
 		724 = {
 			is_controlled_by = SIA
-			NOT = { anti_air_building < 5 }
+			#NOT = { anti_air_building < 5 }
 			NOT = {	infrastructure < 10 }
 			NOT = { air_base < 10 }
 		}
 		289 = {
 			is_controlled_by = SIA
-			NOT = { anti_air_building < 5 }
+			#NOT = { anti_air_building < 5 }
 			NOT = { infrastructure < 10	}
 			NOT = { air_base < 10 }
 		}
@@ -703,7 +678,7 @@ SIA_MP_Civ = {
 	ai_strategy = {
 		type = building_target
 		id = industrial_complex
-		value = 20
+		value = 10
 	}
 }
 
