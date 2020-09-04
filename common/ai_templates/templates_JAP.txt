@@ -491,9 +491,6 @@ infantry_JAP = {
 			weight = 0.9
 			match_value = 2500.0
 			
-			support = {
-			}
-			
 			regiments = {
 				infantry = 6
 			}
