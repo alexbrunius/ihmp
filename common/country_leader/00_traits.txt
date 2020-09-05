@@ -3289,7 +3289,7 @@ leader_traits = {
 
 	air_air_combat_training_1 = {  # Chance of ace generating is increased by 5%
 		sprite = 1
-		air_ace_generation_chance_factor = 0.05
+		air_ace_generation_chance_factor = 0.5
 		
 		ai_will_do = {
 			factor = 1
@@ -3298,7 +3298,7 @@ leader_traits = {
 	
 	air_air_combat_training_2 = {  # Chance of ace generating is increased by 10%
 		sprite = 1
-		air_ace_generation_chance_factor = 0.1
+		air_ace_generation_chance_factor = 1.0
 		
 		ai_will_do = {
 			factor = 2
@@ -3307,7 +3307,7 @@ leader_traits = {
 	
 	air_air_combat_training_3 = {  # Chance of ace generating is increased by 15%
 		sprite = 1
-		air_ace_generation_chance_factor = 0.15
+		air_ace_generation_chance_factor = 1.5
 		
 		ai_will_do = {
 			factor = 3

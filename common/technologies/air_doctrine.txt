@@ -991,7 +991,7 @@ technologies = {
 	fighter_ace_initiative = {
 
 		# EFFECT ########
-		air_ace_generation_chance_factor = 0.25
+		air_ace_generation_chance_factor = 1.0
 		air_mission_xp_gain_factor = 0.1
 		###########
 
@@ -1484,7 +1484,7 @@ technologies = {
 
 		# EFFECT ########
 		air_intercept_efficiency = 0.2
-		air_ace_generation_chance_factor = 0.1
+		air_ace_generation_chance_factor = 0.5
 		###########
 		
 		path = {
@@ -1923,7 +1923,7 @@ technologies = {
 
 		# EFFECT ########
 		air_superiority_efficiency = 0.2
-		air_ace_generation_chance_factor = 0.1
+		air_ace_generation_chance_factor = 0.5
 		category_fighter = {
 				air_agility = 0.1
 			}
