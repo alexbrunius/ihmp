@@ -251,7 +251,7 @@ guiTypes = {
 
 		iconType = { 
 			name = "xp_level"
-			spriteType = "GFX_unit_level"
+			spriteType = "GFX_air_unit_level"
 			position = { x=59 y=3 }
 		}
 		

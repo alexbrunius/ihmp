@@ -13,4 +13,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/unit_level.dds"
 		noOfFrames = 21
 	}
+	spriteType = {
+		name = "GFX_air_unit_level"
+		texturefile = "gfx/interface/air_unit_level.dds"
+		noOfFrames = 5
+	}
 }
