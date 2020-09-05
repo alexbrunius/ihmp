@@ -3,4 +3,8 @@
  ship_sonar_3_desc:0 "An active noise emitter that sends a short 'ping' into the water, then listens for the echo from a submerged submarine hull."
  ship_sonar_4:0 "Latewar Sonar"
  ship_sonar_4_desc:0 "An active noise emitter that sends a short 'ping' into the water, then listens for the echo from a submerged submarine hull."
+ EQ_MOD_CAT_cve_ship_engine_TITLE:0 "Escort Carrier Engines"
+ cve_ship_engine_0:0 "9,000 Shp Engine"
+ cve_ship_engine_0_short:0 "Escort Carrier Engine"
+ cve_ship_engine_0_desc:0 "Slow but cheap"
 

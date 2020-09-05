@@ -1373,6 +1373,41 @@ equipment_modules = {
 			convert_cost_ic = 4800
 		}
 	}
+
+	cve_ship_engine_0 = {
+		category = cve_ship_engine
+		sfx = sfx_ui_sd_module_engine
+		
+		
+		add_stats = {
+			naval_speed = 0
+			fuel_consumption = -50
+			build_cost_ic = -2000
+			reliability = -0.2
+			max_strength = -100
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.0
+		}
+
+		can_convert_from = {
+			module_category = carrier_ship_engine
+			convert_cost_ic = 2500
+		}
+
+		can_convert_from = {
+			module_category = cruiser_ship_engine
+			convert_cost_ic = 2000
+		}
+
+		can_convert_from = {
+			module_category = heavy_ship_engine
+			convert_cost_ic = 2000
+		}
+
+	}
+
 	carrier_ship_engine_1 = {
 		category = carrier_ship_engine
 		sfx = sfx_ui_sd_module_engine
@@ -1892,6 +1927,26 @@ equipment_modules = {
 			carrier_size = 20
 			max_strength = 25
 			build_cost_ic = 2000
+		}
+		manpower = 500 #outside the add_stats section for code reasons
+		multiply_stats = {
+			naval_speed = -0.05
+			reliability = -0.08
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		dismantle_cost_ic = 700
+	}
+	ship_deck_spotting = {
+		category = ship_deck_space
+		gfx = ship_deck_space
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			surface_detection = 20
+			sub_detection = 14
+			build_cost_ic = 340
 		}
 		manpower = 500 #outside the add_stats section for code reasons
 		multiply_stats = {

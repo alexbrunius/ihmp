@@ -294,12 +294,14 @@ equipments = {
 		can_convert_from = { ship_hull_cruiser_1 ship_hull_cruiser_2 ship_hull_cruiser_3 ship_hull_cruiser_4 ship_hull_cruiser_panzerschiff }
 		module_slots = {
 			fixed_ship_deck_slot_1 = inherit
-			fixed_ship_deck_slot_2 = inherit
+			fixed_ship_deck_slot_2 = { 
+				allowed_module_categories = { ship_deck_space ship_carrier_armor ship_airplane_launcher }
+			}
 			fixed_ship_anti_air_slot = inherit
 			fixed_ship_radar_slot = inherit
 			fixed_ship_engine_slot = {
 				required = yes
-				allowed_module_categories = { cruiser_ship_engine carrier_ship_engine }
+				allowed_module_categories = { cruiser_ship_engine carrier_ship_engine cve_ship_engine }
 			}
 			fixed_ship_secondaries_slot = inherit
 		}
