@@ -1,5 +1,5 @@
 # Changelog:
-## 1.9.3.6-BETA
+## 1.9.3.6
 - Removed convoy retreat speed from screening since it doesn't scale properly and was always giving 100%.
 - Fix duplicated Soviet VPs.
 - Martial Law now gives 10% factories.
@@ -44,7 +44,6 @@
 - Panzerschiff base visibility lowered 22->19.5.
 - All cruiser hulls now cost 1 steel.
 - All cruiser armor now costs 1 steel, armor 4 also 1 chromium.
-- Removed CV range penalty from coastal designer to prevent 0 range bug.
 - Game speed 1 reverted to vanilla, speed 2 now 2x slower than vanilla, speeds 3 and 4 now the same as vanilla's 2 and 3.
 - Medium (CA) guns now cost 1 steel.
 - SHBB base speed 22->24 (matches BB3).
@@ -103,7 +102,6 @@
 - MRART now costs 1 tungsten.
 - Added Canada NF tree tweaks by Bhoo.
 - Fixed a vanilla bug with USA senate opposition removing as many senators' support as intended.
-- Added CVEs by virtue of lowering base carrier IC cost by 2000, fuel use by 50 and speed by 10 and adding the same amount to each carrier engine. CVEs now use cruiser or heavy ship engines.
 - Australian Reserach Collaboration NF no longer requires it to be free.
 - Starting Australian War Support 35->15.
 - Australian Establish Advisory War Council NF now gives 5% War Support.
@@ -115,8 +113,14 @@
 - AI Sweden picks Bofors and researches ART/AA/AT techs for license.
 - Bofors now gives reliability also to AA and AT.
 - Added Pressure Sweden decision for Germany to take resource rights in Lappland and force Sweden to build infrastructure there.
-- Further improved CVE by removing 20 percentage points of reliability and 100 HP from base carrier hulls and adding it to engines.
-
+- Removed the base 25 PP cost for transfer navy decisions.
+- Integrated localisation for pressure Sweden decision.
+- Changed Scharnhorst (BB1 armour to BC2, Heavy Gun 2 to Heavy Gun 1) and Deutschland (Crusier Armour 2, Engine 2, Secondaries 2, Torpedoes 2) Classes.
+- Work around PDS bugs which classifies carriers as both carriers and capital_ships.
+- Militarized Schools conscription factor buffed from 2.5% to 5%.
+- Add CVE engine that lowers hp, reliability, cost, speed and fuel use.
+- Made Ace Generation Chance modifiers multiples of 100% to work around rounding issues.
+- Suez canal can now be also damaged and repaired in stages.
 
 ## 1.9.3.5
 - Fix Italy NF tree not getting  proper naval air research bonus like all other NF trees do.
