@@ -62,6 +62,7 @@ buildings = {
 		icon_frame = 6
 		max_level = 10
 		value = 1
+		damage_factor = 0.5
 	}
 
 	bunker = {
