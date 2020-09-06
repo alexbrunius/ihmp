@@ -1,4 +1,10 @@
 # Changelog:
+## 1.9.3.7
+- Fix weirdness with air wing XP levels by reverting to vanilla 5 (they scale properly).
+- USA now gets training XP gain malus for all ship types instead of just destroyers.
+- Port damage factor decreased back again 1->0.5.
+- Siam AI updates.
+
 ## 1.9.3.6
 - Removed convoy retreat speed from screening since it doesn't scale properly and was always giving 100%.
 - Fix duplicated Soviet VPs.
