@@ -63,9 +63,6 @@ ROM_MP_1 = {
 		#ROM_the_maresal
 	}
 
-	research = {
-	}
-
 	ideas = {
 		ROM_gheorghe_argeseanu = 100
 		ROM_nicolae_malaxa = 15
@@ -83,9 +80,6 @@ ROM_MP_1 = {
 		closed_economy = 0
 	}
 		
-	ai_strategy = {
-	}
-
 	traits = {
 		captain_of_industry = 5
 		war_industrialist = 5
@@ -167,7 +161,8 @@ ROM_MP_1_Alliance = {
 }
 
 ROM_MP_No_Besserabia_Factories = {
-
+	name = "No Bessarabia Factories"
+	desc = ""
 	enable = {
 		tag = ROM
 		has_game_rule = {
@@ -204,7 +199,7 @@ ROM_MP_No_Besserabia_Factories = {
 }
 
 MP_Conscription_0 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -226,7 +221,7 @@ MP_Conscription_0 = {
 }
 
 MP_Conscription_1 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -249,7 +244,7 @@ MP_Conscription_1 = {
 }
 
 MP_Conscription_2 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -273,7 +268,7 @@ MP_Conscription_2 = {
 }
 
 MP_Economy_0 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -295,7 +290,7 @@ MP_Economy_0 = {
 }
 
 MP_Economy_1 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -318,7 +313,7 @@ MP_Economy_1 = {
 }
 
 MP_Economy_2 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {

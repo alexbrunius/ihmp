@@ -78,9 +78,6 @@ FIN_MP_1 = {
 		value = 200
 	}
 
-	traits = {
-	}
-
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -405,7 +402,7 @@ FIN_MP_Electronics_1 = {
 
 
 MP_Conscription_0 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -427,7 +424,7 @@ MP_Conscription_0 = {
 }
 
 MP_Conscription_1 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -450,7 +447,7 @@ MP_Conscription_1 = {
 }
 
 MP_Conscription_2 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -474,7 +471,7 @@ MP_Conscription_2 = {
 }
 
 MP_Economy_0 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -496,7 +493,7 @@ MP_Economy_0 = {
 }
 
 MP_Economy_1 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -519,7 +516,7 @@ MP_Economy_1 = {
 }
 
 MP_Economy_2 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {

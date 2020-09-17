@@ -403,8 +403,8 @@ MP_Early_PP = {
 		SIA_phraya_thayarnpikart = 0
 		SIA_pridi_phanomyong = 0
 		SIA_phraya_preechacholayudha = 0
-		tank_manufacturer = 0
-		naval_manufacturer = 0
+		generic_tank_manufacturer = 0
+		generic_naval_manufacturer = 0
 		generic_motorized_equipment_manufacturer = 0
 		generic_artillery_manufacturer = 0
 	}
@@ -664,7 +664,7 @@ CHI_MP_1_Puppet = {
 }
 
 MP_Conscription_0 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -686,7 +686,7 @@ MP_Conscription_0 = {
 }
 
 MP_Conscription_1 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -709,7 +709,7 @@ MP_Conscription_1 = {
 }
 
 MP_Conscription_2 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -733,7 +733,7 @@ MP_Conscription_2 = {
 }
 
 MP_Economy_0 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -755,7 +755,7 @@ MP_Economy_0 = {
 }
 
 MP_Economy_1 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -778,7 +778,7 @@ MP_Economy_1 = {
 }
 
 MP_Economy_2 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {

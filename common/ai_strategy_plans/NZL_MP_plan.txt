@@ -55,10 +55,6 @@ NZL_MP_plan = {
 		support_tech = 6.5
 	}
 
-	ideas = {
-		
-	}
-
 	traits = {
 		captain_of_industry = 5
 		war_industrialist = 5
@@ -80,7 +76,7 @@ NZL_MP_plan = {
 }
 
 MP_Conscription_0 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -102,7 +98,7 @@ MP_Conscription_0 = {
 }
 
 MP_Conscription_1 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -125,7 +121,7 @@ MP_Conscription_1 = {
 }
 
 MP_Conscription_2 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -149,7 +145,7 @@ MP_Conscription_2 = {
 }
 
 MP_Economy_0 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -171,7 +167,7 @@ MP_Economy_0 = {
 }
 
 MP_Economy_1 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -194,7 +190,7 @@ MP_Economy_1 = {
 }
 
 MP_Economy_2 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {

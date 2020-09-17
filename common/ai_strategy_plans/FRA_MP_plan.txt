@@ -64,12 +64,6 @@ FRA_MP_1 = {
 		naval_doctrine = -1000
 	}
 
-	ideas = {
-	}
-
-	ai_strategy = {
-	}
-
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -143,13 +137,6 @@ FRA_MP_2 = {
 		naval_equipment = -1000
 		naval_doctrine = -1000
 	}
-
-	ideas = {
-	}
-
-	ai_strategy = {
-	}
-
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
@@ -1066,7 +1053,8 @@ FRA_MP_Civilian_1 = {
 }
 
 FRA_MP_No_Europe_Factories = {
-
+	name = "No Factories in Europe"
+	desc = ""
 	enable = {
 		original_tag = FRA
 		OR = {
@@ -1209,7 +1197,7 @@ FRA_MP_No_Europe_Factories = {
 }
 
 MP_Conscription_0 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -1237,7 +1225,7 @@ MP_Conscription_0 = {
 }
 
 MP_Conscription_1 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -1266,7 +1254,7 @@ MP_Conscription_1 = {
 }
 
 MP_Conscription_2 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -1296,7 +1284,7 @@ MP_Conscription_2 = {
 }
 
 MP_Economy_0 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -1324,7 +1312,7 @@ MP_Economy_0 = {
 }
 
 MP_Economy_1 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -1353,7 +1341,7 @@ MP_Economy_1 = {
 }
 
 MP_Economy_2 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {

@@ -60,10 +60,6 @@ SPD_MP_1 = {
 		SPR_war_of_independence
 	}
 
-	research = {
-
-	}
-
 	ideas = {
 		civilian_economy = 0
 		low_economic_mobilisation = 0
@@ -168,10 +164,6 @@ SPD_MP_2 = {
 		SPR_ideological_allies
 	}
 
-	research = {
-
-	}
-
 	ideas = {
 		civilian_economy = 0
 		low_economic_mobilisation = 0
@@ -223,10 +215,6 @@ SPD_MP_2 = {
 		SPR_enemies_of_our_enemy
 		SPR_deal_with_the_devil
 		SPR_foreign_industrial_aid
-	}
-
-	research = {
-
 	}
 
 	ideas = {

@@ -61,13 +61,6 @@ SIA_MP_1 = {
 		SIA_manphya_khanphialong = 1
 		SIA_sawat_phutianands = 0
 	}
-	
-		
-	ai_strategy = {
-	}
-
-	traits = {
-	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
@@ -124,8 +117,8 @@ SIA_MP_Military = {
 		SIA_phraya_thayarnpikart = 0
 		SIA_pridi_phanomyong = 0
 		SIA_phraya_preechacholayudha = 0
-		tank_manufacturer = 0
-		naval_manufacturer = 0
+		generic_tank_manufacturer = 0
+		generic_naval_manufacturer = 0
 		generic_motorized_equipment_manufacturer = 0
 		generic_artillery_manufacturer = 0
 	}
@@ -782,7 +775,7 @@ SIA_MP_1_NoCAS = {
 }
 
 MP_Conscription_0 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -804,7 +797,7 @@ MP_Conscription_0 = {
 }
 
 MP_Conscription_1 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -827,7 +820,7 @@ MP_Conscription_1 = {
 }
 
 MP_Conscription_2 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -851,7 +844,7 @@ MP_Conscription_2 = {
 }
 
 MP_Economy_0 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -873,7 +866,7 @@ MP_Economy_0 = {
 }
 
 MP_Economy_1 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -896,7 +889,7 @@ MP_Economy_1 = {
 }
 
 MP_Economy_2 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {

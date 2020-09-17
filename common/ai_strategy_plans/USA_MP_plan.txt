@@ -1,5 +1,5 @@
 USA_MP_1 = {
-	name = "USA_MP_1"
+	name = "USA MP Plan 1"
 	desc = "Mulitplayer script behavior for US"
 
 	enable = {
@@ -52,10 +52,6 @@ USA_MP_1 = {
 
 	focus_factors = {
 		USA_suspend_the_presecution = 0 # well done, not medium rare
-	}
-
-	research = {
-
 	}
 
 	ideas = {
@@ -163,7 +159,7 @@ USA_MP_Join_Allies = {
 }
 
 MP_Conscription_0 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -185,7 +181,7 @@ MP_Conscription_0 = {
 }
 
 MP_Conscription_1 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -208,7 +204,7 @@ MP_Conscription_1 = {
 }
 
 MP_Conscription_2 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -232,7 +228,7 @@ MP_Conscription_2 = {
 }
 
 MP_Economy_0 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -254,7 +250,7 @@ MP_Economy_0 = {
 }
 
 MP_Economy_1 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -277,7 +273,7 @@ MP_Economy_1 = {
 }
 
 MP_Economy_2 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {

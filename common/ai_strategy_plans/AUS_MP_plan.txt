@@ -34,15 +34,6 @@ AUS_MP_1 = {
 		naval_doctrine = -1000
 	}
 
-	ideas = {
-	}
-
-	ai_strategy = {
-	}	
-
-	traits = {
-	}
-
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {

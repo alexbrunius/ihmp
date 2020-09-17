@@ -43,10 +43,6 @@ CHI_warlord_MP_plan_nationalist = {
 		CHI_power_struggle = 0
 	}
 
-	research = {
-
-	}
-
 	ideas = {
 		free_trade = 600
 		export_focus = 0
@@ -126,10 +122,6 @@ CHI_warlord_MP_plan_communist = {
 		#Never attempt a take over
 		CHI_join_the_chinese_soviet = 0
 		CHI_the_yanan_incident = 0
-	}
-
-	research = {
-
 	}
 
 	ideas = {
@@ -359,7 +351,7 @@ CHI_warlord_expedtionary_forces = {
 }
 
 XSM_Garrision = {
-	name = "Garrision"
+	name = "Garrison Plan"
 	desc = ""
 
 	enable = {
@@ -439,7 +431,7 @@ XSM_Garrision_2 = {
 
 
 YUN_Garrision = {
-	name = "Garrision"
+	name = "Garrison Plan"
 	desc = ""
 
 	enable = {
@@ -488,7 +480,7 @@ YUN_Garrision = {
 }
 
 GXC_Garrision = {
-	name = "Garrision"
+	name = "Garrison Plan"
 	desc = ""
 
 	enable = {
@@ -537,7 +529,7 @@ GXC_Garrision = {
 }
 
 MP_Conscription_0 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -565,7 +557,7 @@ MP_Conscription_0 = {
 }
 
 MP_Conscription_1 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -594,7 +586,7 @@ MP_Conscription_1 = {
 }
 
 MP_Conscription_2 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -624,7 +616,7 @@ MP_Conscription_2 = {
 }
 
 MP_Economy_0 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -652,7 +644,7 @@ MP_Economy_0 = {
 }
 
 MP_Economy_1 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -681,7 +673,7 @@ MP_Economy_1 = {
 }
 
 MP_Economy_2 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {

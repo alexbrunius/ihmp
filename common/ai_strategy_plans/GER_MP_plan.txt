@@ -76,8 +76,8 @@ GER_MP_1 = {
 		rudolf_hess = 0
 		messerschmitt = 5
 		krupp = 25
-		goering = 0.5
-		werner_von_fritsch = 0.3
+		goering = 1
+		werner_von_fritsch = 1
 		free_trade = 0
 		export_focus = 0
 		limited_exports = 1
@@ -85,11 +85,7 @@ GER_MP_1 = {
 		disarmed_nation = 0
 		volunteer_only = 0
 		limited_conscription = 0
-	}
-
-	ai_strategy = {
-	}
-	
+	}	
 
 	traits = {
 		captain_of_industry = 5
@@ -110,7 +106,7 @@ GER_MP_1 = {
 }
 
 GER_MP_Production = {
-	name = "Production"
+	name = "Production Plan"
 	desc = ""
 
 	enable = {
@@ -560,8 +556,6 @@ GER_MP_Fronts_4 = {
 		POL = { has_capitulated = yes }
 	}
 
-	abort_when_not_enabled = yes
-
 	abort = {
 		has_war_with = SOV
 	}
@@ -638,7 +632,7 @@ GER_MP_Volunteer_Spain = {
 }
 
 MP_Conscription_0 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -660,7 +654,7 @@ MP_Conscription_0 = {
 }
 
 MP_Conscription_1 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -683,7 +677,7 @@ MP_Conscription_1 = {
 }
 
 MP_Conscription_2 = {
-	name = "Conscription"
+	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
@@ -707,7 +701,7 @@ MP_Conscription_2 = {
 }
 
 MP_Economy_0 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -729,7 +723,7 @@ MP_Economy_0 = {
 }
 
 MP_Economy_1 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
@@ -752,7 +746,7 @@ MP_Economy_1 = {
 }
 
 MP_Economy_2 = {
-	name = "Economy"
+	name = "Economy Plan"
 	desc = ""
 
 	enable = {
