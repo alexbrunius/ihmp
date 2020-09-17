@@ -1,0 +1,57 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+# building_target
+
+
+POR_MP_Early_Production = {
+
+	enable = {
+		tag = POR
+		has_game_rule = {
+			rule = POR_ai_behavior
+			option = POR_MP_1
+		}
+		OR = {
+			NOT = { num_of_military_factories > 10 }
+			AND = {
+				NOT = { has_equipment = { support_equipment_1 > 800	} }
+				NOT = { has_completed_focus = POR_strengthen_the_regime }
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			num_of_military_factories > 10
+			has_equipment = { support_equipment_1 > 800	}
+			has_completed_focus = POR_strengthen_the_regime 
+		}
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = infantry_equipment
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = artillery_equipment
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = support_equipment
+		value = 1000
+	}
+}
