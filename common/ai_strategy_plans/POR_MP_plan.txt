@@ -309,21 +309,24 @@ POR_MP_Early_Production = {
 		}
 	}
 
+	# TODO Voigt fix
 	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = infantry_equipment
+		type = equipment_production_factor
+		id = infantry
 		value = -1000
 	}
+	# TODO Voigt fix
 	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = artillery_equipment
+		type = equipment_production_factor
+		id = artillery
 		value = -1000
 	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = support_equipment
-		value = 1000
-	}
+	# TODO Voigt fix
+	# ai_strategy = {
+	# 	type = equipment_variant_production_factor
+	# 	id = support_equipment
+	# 	value = 1000
+	# }
 }
 
 POR_MP_Early_Production = {
@@ -426,11 +429,12 @@ POR_MP_NoPlanes = {
 		id = scout_plane
 		value = -1000
 	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = scout_plane_equipment
-		value = -1000
-	}
+	# TODO Voigt fix
+	# ai_strategy = {
+	# 	type = equipment_variant_production_factor
+	# 	id = scout_plane_equipment
+	# 	value = -1000
+	# }
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship

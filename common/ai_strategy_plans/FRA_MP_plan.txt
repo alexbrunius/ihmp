@@ -483,11 +483,12 @@ FRA_MP_NoPlanes = {
 		id = scout_plane
 		value = -1000
 	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = scout_plane_equipment
-		value = -1000
-	}
+	# TODO Voigt fix
+	# ai_strategy = {
+	# 	type = equipment_variant_production_factor
+	# 	id = scout_plane_equipment
+	# 	value = -1000
+	# }
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
@@ -952,11 +953,12 @@ MP_Spy_Defense = {
 		type = agency_ai_per_upgrade_factories_factor
 		value = -100    # -100% on the define
 	}
-	ai_strategy = {
-		type = operative_mission
-		mission = counter_intelligence
-		value = 100
-	}
+	# TODO Voigt fix
+	# ai_strategy = {
+	# 	type = operative_mission
+	# 	mission = counter_intelligence
+	# 	value = 100
+	# }
 }
 
 FRA_MP_Algier_Infrastructure = {

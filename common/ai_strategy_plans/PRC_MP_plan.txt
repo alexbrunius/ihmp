@@ -258,9 +258,10 @@ PRC_MP_W1_Production = {
 	abort = {
 	}
 
+	# TODO Voigt fix
 	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = infantry_equipment
+		type = equipment_production_factor
+		id = infantry
 		value = 100
 	}
 }

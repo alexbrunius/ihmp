@@ -181,14 +181,16 @@ JAP_MP_Conquer_China = {
 		tag = CHI
 		value = 400
 	}
+	# TODO Voigt fix
 	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = infantry_equipment
+		type = equipment_production_factor
+		id = infantry
 		value = 50
 	}
+	# TODO Voigt fix
 	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = artillery_equipment
+		type = equipment_production_factor
+		id = artillery
 		value = -75
 	}
 		ai_strategy = {
@@ -282,11 +284,12 @@ JAP_MP_1_No_LT1 = {
 		id = armor
 		value = -1000
 	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = light_tank_equipment_1
-		value = -1000
-	}
+	# TODO Voigt fix
+	# ai_strategy = {
+	# 	type = equipment_variant_production_factor
+	# 	id = light_tank_equipment_1
+	# 	value = -1000
+	# }
 }
 
 
@@ -306,9 +309,10 @@ JAP_MP_1_No_IW_Fighter = {
 		has_tech = fighter2
 	}
 	
+	# TODO Voigt fix
 	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = fighter_equipment
+		type = equipment_production_factor
+		id = fighter
 		value = -1000
 	}
 	ai_strategy = {
@@ -318,28 +322,29 @@ JAP_MP_1_No_IW_Fighter = {
 	}
 }
 
-JAP_MP_1_No_IW_CV_Fighter = {
-	name = "No Interwar CV Fighter Production"
-	desc = ""
+# TODO Voigt fix
+# JAP_MP_1_No_IW_CV_Fighter = {
+# 	name = "No Interwar CV Fighter Production"
+# 	desc = ""
 
-	enable = {
-		tag = JAP
-		has_game_rule = {
-			rule = JAP_ai_behavior
-			option = JAP_MP_1
-		}
-		NOT = { has_tech = fighter2 }
-	}
-	abort = {
-		has_tech = cv_fighter2
-	}
+# 	enable = {
+# 		tag = JAP
+# 		has_game_rule = {
+# 			rule = JAP_ai_behavior
+# 			option = JAP_MP_1
+# 		}
+# 		NOT = { has_tech = fighter2 }
+# 	}
+# 	abort = {
+# 		has_tech = cv_fighter2
+# 	}
 	
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = cv_fighter_equipment
-		value = -1000
-	}
-}
+# 	ai_strategy = {
+# 		type = equipment_variant_production_factor
+# 		id = cv_fighter_equipment
+# 		value = -1000
+# 	}
+# }
 
 JAP_MP_1_Fighter2 = {
 	name = "Research Fighter2"
@@ -431,11 +436,12 @@ JAP_MP_1_No_Bomber = {
 		id = scout_plane
 		value = -1000
 	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = scout_plane_equipment
-		value = -1000
-	}
+	# TODO Voigt fix
+	# ai_strategy = {
+	# 	type = equipment_variant_production_factor
+	# 	id = scout_plane_equipment
+	# 	value = -1000
+	# }
 }
 
 JAP_MP_No_Capitals = {

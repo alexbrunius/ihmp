@@ -202,11 +202,12 @@ MP_1_No_AirUnits = {
 		id = fighter
 		value = -1000000
 	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = fighter_equipment
-		value = -1000000
-	}
+	# TODO Voigt fix
+	# ai_strategy = {
+	# 	type = equipment_variant_production_factor
+	# 	id = fighter_equipment
+	# 	value = -1000000
+	# }
 	ai_strategy = {
 		type = equipment_production_factor
 		id = cas

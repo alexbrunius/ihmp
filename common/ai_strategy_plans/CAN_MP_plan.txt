@@ -274,11 +274,12 @@ CAN_MP_1_Fighter_prod = {
 		id = fighter
 		value = 10
 	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = fighter_equipment
-		value = 100
-	}
+	# TODO Voigt fix
+	# ai_strategy = {
+	# 	type = equipment_variant_production_factor
+	# 	id = fighter_equipment
+	# 	value = 100
+	# }
 }
 
 CAN_MP_1_NoPlanes = {

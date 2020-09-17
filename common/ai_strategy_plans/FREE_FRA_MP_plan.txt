@@ -294,9 +294,10 @@ MP_Spy_Defense = {
 		type = agency_ai_per_upgrade_factories_factor
 		value = -100    # -100% on the define
 	}
-	ai_strategy = {
-		type = operative_mission
-		mission = counter_intelligence
-		value = 100
-	}
+	# TODO Voigt fix
+	# ai_strategy = {
+	# 	type = operative_mission
+	# 	mission = counter_intelligence
+	# 	value = 100
+	# }
 }
