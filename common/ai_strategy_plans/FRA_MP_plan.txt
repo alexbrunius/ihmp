@@ -195,122 +195,6 @@ FRA_MP_Ideas = {
 	}
 }
 
-FRA_MP_Early_Mob = {
-	name = "France Early Mobilisation"
-	desc = ""
-
-	enable = {
-		original_tag = FRA
-		OR = {
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_1
-			}
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_2
-			}
-		}
-	}
-
-	abort = {
-		has_idea = partial_economic_mobilisation
-	}
-
-	ideas = {
-		partial_economic_mobilisation = 10
-		low_economic_mobilisation = 1
-		civilian_economy = 0
-	}
-}
-
-FRA_MP_Partial_Mob = {
-	name = "France Partial Mobilisation"
-	desc = ""
-
-	enable = {
-		original_tag = FRA
-		OR = {
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_1
-			}
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_2
-			}
-		}
-	}
-
-	abort = {
-		has_idea = war_economy
-	}
-
-	ideas = {
-		war_economy = 20
-		partial_economic_mobilisation = 10
-		low_economic_mobilisation = 0
-		civilian_economy = 0
-	}
-}
-
-FRA_MP_War_Eco = {
-	name = "France War Eco"
-	desc = ""
-
-	enable = {
-		original_tag = FRA
-		OR = {
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_1
-			}
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_2
-			}
-		}
-	}
-
-	abort = {
-		has_idea = tot_economic_mobilisation
-	}
-
-	ideas = {
-		tot_economic_mobilisation = 30
-		war_economy = 20
-		partial_economic_mobilisation = 0
-		low_economic_mobilisation = 0
-		civilian_economy = 0
-	}
-}
-
-FRA_MP_Extensive_Conscription = {
-	name = "France Extensive Conscription"
-	desc = ""
-
-	enable = {
-		original_tag = FRA
-		OR = {
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_1
-			}
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_2
-			}
-		}
-		has_idea = extensive_conscription
-	}
-
-	abort = {
-	}
-
-	ideas = {
-		limited_conscription = 0
-	}
-}
 
 FRA_MP_Advisors = {
 	name = "Blocked Advisors till capitulated or Mid-1940"
@@ -483,12 +367,6 @@ FRA_MP_NoPlanes = {
 		id = scout_plane
 		value = -1000
 	}
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = scout_plane_equipment
-	# 	value = -1000
-	# }
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
@@ -953,12 +831,6 @@ MP_Spy_Defense = {
 		type = agency_ai_per_upgrade_factories_factor
 		value = -100    # -100% on the define
 	}
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = operative_mission
-	# 	mission = counter_intelligence
-	# 	value = 100
-	# }
 }
 
 FRA_MP_Algier_Infrastructure = {

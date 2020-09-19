@@ -142,12 +142,6 @@ ENG_MP_1_No_IW_Fighter = {
 		id = fighter
 		value = -1000
 	}
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = fighter_equipment
-	# 	value = -1000
-	# }
 }
 
 ENG_MP_1_Fighter2 = {
@@ -242,17 +236,6 @@ ENG_MP_1_No_Strat = {
 		id = scout_plane
 		value = -1000
 	}
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = scout_plane_equipment
-	# 	value = -1000
-	# }
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = cv_fighter_equipment
-	# 	value = -75
-	# }
 }
 
 ENG_MP_Ignore = {

@@ -145,12 +145,6 @@ GER_MP_Production = {
 		id = scout_plane
 		value = -1000
 	}
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = scout_plane_equipment
-	# 	value = -1000
-	# }
 	ai_strategy = {
 		type = unit_ratio
 		id = scout_plane
@@ -181,12 +175,6 @@ GER_MP_Production = {
 		id = anti_tank
 		value = -1000
 	}
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = anti_tank_equipment
-	# 	value = -1000
-	# }
 }
 
 GER_MP_Alliance = {
@@ -362,55 +350,6 @@ GER_MP_MARM_3 = {
 
 	research = {
 		cat_medium_armor = 100000
-	}
-}
-
-GER_MP_MARM_Production = {
-	name = "Produce MARM no LARM"
-	desc = ""
-
-	enable = {
-		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
-		}
-		has_tech = improved_medium_tank
-	}
-
-	abort = {
-	}
-
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = infantry_equipment
-	# 	value = -25
-	# }
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = support_equipment
-	# 	value = -25
-	# }
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = artillery_equipment
-	# 	value = -25
-	# }
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = light_tank_equipment
-	# 	value = -200
-	# }
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = medium_tank_equipment
-	# 	value = 200
-	# }
-	ai_strategy = {
-		type = equipment_production_factor
-		id = armor
-		value = 200
 	}
 }
 

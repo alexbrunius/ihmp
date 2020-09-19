@@ -292,53 +292,6 @@ POR_MP_Early_Production = {
 			rule = POR_ai_behavior
 			option = POR_MP_1
 		}
-		OR = {
-			NOT = { num_of_military_factories > 10 }
-			AND = {
-				NOT = { has_equipment = { support_equipment_1 > 800	} }
-				NOT = { has_completed_focus = POR_strengthen_the_regime }
-			}
-		}
-	}
-
-	abort = {
-		OR = {
-			num_of_military_factories > 10
-			has_equipment = { support_equipment_1 > 800	}
-			has_completed_focus = POR_strengthen_the_regime 
-		}
-	}
-
-	# TODO Voigt fix
-	ai_strategy = {
-		type = equipment_production_factor
-		id = infantry
-		value = -1000
-	}
-	# TODO Voigt fix
-	ai_strategy = {
-		type = equipment_production_factor
-		id = artillery
-		value = -1000
-	}
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = support_equipment
-	# 	value = 1000
-	# }
-}
-
-POR_MP_Early_Production = {
-	name = "Portugal Early Production"
-	desc = ""
-
-	enable = {
-		tag = POR
-		has_game_rule = {
-			rule = POR_ai_behavior
-			option = POR_MP_1
-		}
 		has_equipment = { support_equipment_1 > 800	}
 	}
 
@@ -429,12 +382,6 @@ POR_MP_NoPlanes = {
 		id = scout_plane
 		value = -1000
 	}
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = scout_plane_equipment
-	# 	value = -1000
-	# }
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship

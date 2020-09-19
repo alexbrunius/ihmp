@@ -173,13 +173,13 @@ SPR_MP_1 = {
 		SPA_direct_the_universities
 		SPA_dictator_for_life
 		SPA_stamp_out_the_maquis
-		SPA_prepare_the_pyrenees_defenses
+		SPA_the_national_and_popular_army_of_spain
 		SPA_la_division_azul
 		SPA_the_tangiers_enclave
-		SPA_the_national_and_popular_army_of_spain
 		SPA_the_army_of_africa_model
 		SPA_invest_in_naval_infrastructure
 		SPA_expand_the_slipways
+		SPA_prepare_the_pyrenees_defenses
 		SPA_autarky
 		SPA_spanish_austerity
 		SPA_reduce_reliance_on_foreign_resources
@@ -485,6 +485,87 @@ SPR_MP_Get_PP = {
 		SPA_a_methodical_approach = 0
 	}
 }
+
+MP_1_No_AirUnits = {
+	name = "No Planes or Ships"
+	desc = ""
+
+	enable = {
+		original_tag = SPR
+		has_game_rule = {
+			rule = SPR_ai_behavior 
+			option = SPR_MP_1
+		}
+	}
+	abort = {
+	}
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = scout_plane
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = scout_plane
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = capital_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = submarine
+		value = -100
+	}
+}
+
 
 MP_Conscription_0 = {
 	name = "Conscription Plan"

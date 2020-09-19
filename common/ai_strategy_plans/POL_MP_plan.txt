@@ -125,25 +125,16 @@ POL_MP_AA_Production = {
 	abort = {
 	}
 
-	# TODO Voigt fix
-	ai_strategy = {
-		type = equipment_production_factor
-		id = infantry
-		value = -75
-	}
-	# TODO Voigt fix
 	ai_strategy = {
 		type = equipment_production_factor
 		id = anti_air
 		value = 150
 	}
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = support_equipment
-	# 	value = -20
-	# }
-	# TODO Voigt fix
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = -75
+	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = artillery
@@ -371,12 +362,6 @@ POL_MP_1_AirUnits = {
 		id = fighter
 		value = -1000
 	}
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = fighter_equipment
-	# 	value = -1000
-	# }
 	ai_strategy = {
 		type = equipment_production_factor
 		id = cas
@@ -498,32 +483,6 @@ MP_Spy_Defense = {
 		type = agency_ai_per_upgrade_factories_factor
 		value = -100    # -100% on the define
 	}
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = operative_mission
-	# 	mission = counter_intelligence
-	# 	value = 100
-	# }
-	# ai_strategy = {
-	# 	type = operative_mission
-	# 	mission = build_intel_network
-	# 	value = -100
-	# }
-	# ai_strategy = {
-	# 	type = operative_mission
-	# 	mission = quiet_network
-	# 	value = -100
-	# }
-	# ai_strategy = {
-	# 	type = operative_mission
-	# 	mission = root_out_resistance
-	# 	value = -100
-	# }
-	# ai_strategy = {
-	# 	type = operative_mission
-	# 	mission = control_trade
-	# 	value = -100
-	# }
 }
 
 POL_MP_No_Kresy_Factories = {

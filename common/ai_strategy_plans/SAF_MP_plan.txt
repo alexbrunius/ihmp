@@ -228,33 +228,27 @@ SAF_MP_1_AirUnits = {
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
-		value = -1000000
+		value = -1000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
-		value = -1000000
+		value = -1000
 	}
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = fighter_equipment
-	# 	value = -1000000
-	# }
 	ai_strategy = {
 		type = equipment_production_factor
 		id = cas
-		value = -10000
+		value = -1000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = tactical_bomber
-		value = -10000
+		value = -1000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = strategic_bomber
-		value = -10000
+		value = -1000
 	}
 }
 

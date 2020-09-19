@@ -399,21 +399,10 @@ SOV_MP_MARM_Production = {
 		id = infantry
 		value = -50
 	}
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = infantry_equipment
-	# 	value = -50
-	# }
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = light_tank_equipment
-	# 	value = -100
-	# }
 	ai_strategy = {
 		type = equipment_production_factor
 		id = armor
-		value = 100
+		value = 50
 	}
 }
 
@@ -459,7 +448,6 @@ SOV_MP_1_No_IW_Fighter = {
 		has_tech = fighter2
 	}
 	
-	# TODO Voigt fix
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
@@ -540,12 +528,6 @@ SOV_MP_1_No_Strat = {
 		id = tactical_bomber
 		value = -1000
 	}
-	# TODO Voigt fix
-	# ai_strategy = {
-	# 	type = equipment_variant_production_factor
-	# 	id = tac_bomber_equipment
-	# 	value = -1000
-	# }
 	ai_strategy = {
 		type = unit_ratio
 		id = tactical_bomber
