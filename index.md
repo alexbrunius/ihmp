@@ -1,4 +1,9 @@
 # Changelog:
+## 1.9.3.8
+- Fixed ai_strategy issues that were causing parse errors and breaking saves.
+- Italian Pact of Steel NF no longer bypassed or blocked when Italy already is in a faction.
+- AI France won't give military access until 1943.
+
 ## 1.9.3.7
 - Fix weirdness with air wing XP levels by reverting to vanilla 5 (they scale properly).
 - USA now gets training XP gain malus for all ship types instead of just destroyers.
