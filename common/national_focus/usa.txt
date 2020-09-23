@@ -2244,6 +2244,8 @@ focus_tree = {
 							region = 119
 							region = 120
 						}
+						NOT = { state = 371 }
+						NOT = { has_state_flag = USA_military_construction_3Inf }
 					}
 					add_building_construction = {
 						type = infrastructure
@@ -2295,6 +2297,8 @@ focus_tree = {
 							region = 119
 							region = 120
 						}
+						NOT = { state = 375 }
+						NOT = { has_state_flag = USA_military_construction_3Inf }
 					}
 					add_building_construction = {
 						type = infrastructure
@@ -2363,6 +2367,8 @@ focus_tree = {
 							building = infrastructure
 							size > 2
 						}
+						NOT = { state = 378 }
+						NOT = { has_state_flag = USA_military_construction_3Inf }
 					}
 					add_building_construction = {
 						type = infrastructure
@@ -2453,6 +2459,7 @@ focus_tree = {
 						region = 119
 						region = 120
 					}
+					NOT = { has_state_flag = USA_USACE_projects_3Inf }
 					state_population > 3000000
 				}
 				add_building_construction = {
@@ -2475,6 +2482,7 @@ focus_tree = {
 						region = 119
 						region = 120
 					}
+					NOT = { has_state_flag = USA_USACE_projects_3Inf }
 					state_population > 3000000
 				}
 				add_building_construction = {
