@@ -1757,6 +1757,12 @@ political_actions = {
 				factor = 0
 			}
 			modifier = {
+				tag = CAN
+				has_War = no
+				has_idea = free_trade
+				factor = 0
+			}
+			modifier = {
 				tag = FRA
 				has_capitulated = no
 				factor = 0
@@ -1803,6 +1809,12 @@ political_actions = {
 				tag = ENG
 				has_War = no
 				date < 1937.3.1
+				factor = 0
+			}
+			modifier = {
+				tag = CAN
+				has_War = no
+				has_idea = free_trade
 				factor = 0
 			}
 			modifier = {
