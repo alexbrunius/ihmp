@@ -238,7 +238,7 @@ SIA_MP_Infrastructure_1 = {
 		type = build_building
 		id = infrastructure
 		target = 724
-		value = 10
+		value = 1
 	}
 }
 
@@ -275,7 +275,7 @@ SIA_MP_Infrastructure_2 = {
 		type = build_building
 		id = infrastructure
 		target = 289
-		value = 10
+		value = 1
 	}
 }
 
@@ -313,7 +313,7 @@ SIA_MP_Airbase_1 = {
 		type = build_building
 		id = air_base
 		target = 724
-		value = 10
+		value = 1
 	}
 }
 
@@ -335,7 +335,7 @@ SIA_MP_Airbase_2 = {
 		289 = {
 			is_controlled_by = SIA
 			NOT = { infrastructure < 10	}
-			air_base < 8
+			air_base < 6
 		}
 	}
 
@@ -343,7 +343,7 @@ SIA_MP_Airbase_2 = {
 		289 = {
 			OR ={
 				NOT = { is_controlled_by = SIA }
-				NOT = { air_base < 8 }
+				NOT = { air_base < 6 }
 			}
 		}
 	}
@@ -352,7 +352,7 @@ SIA_MP_Airbase_2 = {
 		type = build_building
 		id = air_base
 		target = 289
-		value = 10
+		value = 1
 	}
 }
 
@@ -538,7 +538,7 @@ SIA_MP_Radar_Construction = {
 		has_tech = improved_decimetric_radar
 		724 = {
 			is_controlled_by = SIA
-			radar_station < 6
+			radar_station < 1
 		}
 	}
 
@@ -547,7 +547,7 @@ SIA_MP_Radar_Construction = {
 		724 = {
 			OR ={
 				NOT = { is_controlled_by = SIA }
-				NOT = { radar_station < 6 }
+				NOT = { radar_station < 1 }
 			}
 		}
 	}
@@ -556,7 +556,7 @@ SIA_MP_Radar_Construction = {
 		type = build_building
 		id = radar_station
 		target = 724
-		value = 6
+		value = 1
 	}
 }
 
@@ -661,7 +661,7 @@ SIA_MP_Civ = {
 			is_controlled_by = SIA
 			#NOT = { anti_air_building < 5 }
 			NOT = { infrastructure < 10	}
-			NOT = { air_base < 10 }
+			NOT = { air_base < 6 }
 		}
 	}
 
@@ -693,7 +693,7 @@ Japan_Do_Ally = {
 
 	ai_strategy = {
 		type = alliance
-		id = "JAP"			
+		id = JAP		
 		value = 200
 	}
 	ai_strategy = {
@@ -703,7 +703,7 @@ Japan_Do_Ally = {
 	}
 	ai_strategy = {
 		type = alliance
-		id = "GER"			
+		id = GER		
 		value = -200
 	}
 }

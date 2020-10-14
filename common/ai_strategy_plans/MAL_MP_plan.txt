@@ -195,7 +195,7 @@ MAL_MP_Radar_Construction = {
 		has_tech = radio_detection
 		336 = {
 			is_controlled_by = MAL
-			radar_station < 6
+			radar_station < 1
 		}
 	}
 
@@ -203,7 +203,7 @@ MAL_MP_Radar_Construction = {
 		336 = {
 			OR ={
 				NOT = { is_controlled_by = MAL }
-				NOT = { radar_station < 6 }
+				NOT = { radar_station < 1 }
 			}
 		}
 	}
@@ -212,7 +212,7 @@ MAL_MP_Radar_Construction = {
 		type = build_building
 		id = radar_station
 		target = 336
-		value = 100
+		value = 1
 	}
 }
 
@@ -246,7 +246,7 @@ MAL_MP_AA_Construction = {
 		type = build_building
 		id = anti_air_building
 		target = 336
-		value = 100
+		value = 1
 	}
 }
 
