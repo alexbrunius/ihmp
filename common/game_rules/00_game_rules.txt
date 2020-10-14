@@ -924,6 +924,11 @@ CAN_ai_behavior = {
 		text = "RULE_OPTION_CAN_MP_1"
 		desc = "RULE_OPTION_CAN_MP_1_DESC"
 	}
+	option = {
+		name = CAN_MP_2
+		text = "RULE_OPTION_CAN_MP_2"
+		desc = "RULE_OPTION_CAN_MP_2_DESC"
+	}
 }
 
 SAF_ai_behavior = {
