@@ -1,6 +1,6 @@
 CAN_MP_1 = {
 	name = "Canada MP Plan 1"
-	desc = ""
+	desc = "Fighter Focus Canada"
 
 	enable = {
 		original_tag = CAN
@@ -15,6 +15,8 @@ CAN_MP_1 = {
 
 	ai_national_focuses = {
 		CAN_rowell_sirois_commission
+		CAN_crown_corporations
+		CAN_national_housing_act
 		CAN_rcaf_station_borden
 		CAN_we_have_the_hurricane
 		CAN_defence_of_canada_regulations
@@ -22,63 +24,198 @@ CAN_MP_1 = {
 		CAN_canada_wheat_board
 		CAN_national_resources_mobilization_act
 		CAN_fund_the_national_research_council
+		CAN_alberta_coal_towns
+		CAN_national_steel_car
+		CAN_if_day
+		CAN_war_fueled_economy
 		CAN_commit_to_the_war
-		CAN_war_bonds
-		CAN_crown_corporations
-		CAN_national_housing_act
+		CAN_dollar_a_year_men
 		CAN_strengthen_the_commonwealth_ties
 		CAN_shadow_factories
 		CAN_montreal_laboratory_collaboration
+		CAN_war_bonds
 		CAN_department_of_munitions_and_supply
 		CAN_victory_aircraft_limited
 		CAN_bits_and_pieces_program
 		CAN_john_inglis_and_company
-		CAN_if_day
-		CAN_mine_the_shield
-		CAN_alberta_coal_towns
-		CAN_national_steel_car
-		CAN_war_fueled_economy
 		CAN_halifax_shipyards
-		CAN_canada_pacific_railway
-		CAN_the_plan
-		CAN_camp_x
-		CAN_supply_the_empire
 		CAN_aluminium_company_of_canada
+		CAN_forced_quebec_conscription
+		CAN_retool_angus_shops
+		CAN_the_valentine_tank
+		CAN_the_plan
+		CAN_canada_pacific_railway
+		CAN_maritime_colonial_railway
+		CAN_mine_the_shield
 		CAN_turner_valley_oilfield
+		CAN_imperial_oil
+		CAN_supply_the_empire
 		CAN_army_modernization
 		CAN_cmp_truck
-		CAN_a_motorized_army
-		CAN_red_deer_training_camp
-		CAN_the_valentine_tank
 		CAN_canadian_infantry_corps
-		CAN_dollar_a_year_men
+		CAN_independent_command
+		CAN_red_deer_training_camp
+		CAN_send_in_the_zombies
+		CAN_a_motorized_army
 		CAN_royal_regiment_of_canadian_artillery
-		CAN_retool_angus_shops	
-		CAN_imperial_oil
+		CAN_the_walkie_talkie
+		CAN_camp_x
+		CAN_destroyer_effort
 		CAN_light_cruiser_effort
 		CAN_escort_fleet
 		CAN_trade_fleet
+		CAN_united_shipyards
 		CAN_degauss_ship_hulls
-		CAN_united_shipyards		
 		#CAN_habakkuk_carrier
-		CAN_maritime_colonial_railway
-		
-		
-		
 	}
 
 	research = {
-		cat_battlefield_support = -1000
+		cat_strategic_destruction = -1000
+		#cat_battlefield_support = -1000
 		cat_operational_integrity = -1000
-		cat_superior_firepower = -1000
-		cat_grand_battle_plan = -1000
-		cat_mass_assault = -1000
+		#cat_superior_firepower = -1000
+		#cat_grand_battle_plan = -1000
+		#cat_mass_assault = -1000
 	}
 
 	ideas = {
 		CAN_r_b_bennett = 1000
 		CAN_harry_crerar = 100
-		canadian_car_foundry = 100
+		canadian_car_foundry = 10
+		civilian_economy = 0
+		low_economic_mobilisation = 100
+		partial_economic_mobilisation = 200
+		war_economy = 300
+		free_trade = 100
+		export_focus = 0
+		limited_exports = 0
+		closed_economy = 0
+		CAN_chuck_crate = 0
+		CAN_robert_manion = 0
+		CAN_william_kashtan = 0
+		CAN_ian_a_mackenzie = 0
+		CAN_newton_wesley_rowell = 0
+		CAN_leo_richer_lafleche = 0
+		CAN_louis_st_laurent = 0
+		CAN_george_volkoff = 0
+		CAN_robert_leckie = 0
+		CAN_lloyd_samuel_breadner = 0
+		CAN_george_croil = 0
+		CAN_harold_edwards = 0
+		CAN_percy_nelles = 0
+		CAN_alasdair_murray = 0
+		CAN_gino_verchiella = 0
+		montreal_lab = 0
+		polymer_corporation = 0
+		kingston_shipbuilding = 0
+		havilland_canada = 0
+		CAN_fairchild_aircraft_ltd = 0
+		CAN_handley_page = 0
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+CAN_MP_2 = {
+	name = "Canada MP Plan 2"
+	desc = "Destroyer Focus Canada"
+
+	enable = {
+		original_tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_2
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		CAN_rowell_sirois_commission
+		CAN_halifax_shipyards
+		CAN_destroyer_effort
+		CAN_defence_of_canada_regulations
+		CAN_wartime_prices_and_trade_board
+		CAN_canada_wheat_board
+		CAN_national_resources_mobilization_act
+		CAN_fund_the_national_research_council
+		CAN_alberta_coal_towns
+		CAN_national_steel_car
+		CAN_war_fueled_economy
+		CAN_commit_to_the_war
+		CAN_crown_corporations
+		CAN_national_housing_act
+		CAN_dollar_a_year_men
+		CAN_strengthen_the_commonwealth_ties
+		CAN_shadow_factories
+		CAN_montreal_laboratory_collaboration
+		CAN_war_bonds
+		CAN_department_of_munitions_and_supply
+		CAN_victory_aircraft_limited
+		CAN_bits_and_pieces_program
+		CAN_john_inglis_and_company
+		CAN_if_day
+		CAN_aluminium_company_of_canada
+		CAN_forced_quebec_conscription
+		CAN_send_in_the_zombies
+		CAN_rcaf_station_borden
+		CAN_we_have_the_hurricane
+		CAN_retool_angus_shops
+		CAN_the_valentine_tank
+		CAN_the_plan
+		CAN_canada_pacific_railway
+		CAN_maritime_colonial_railway
+		CAN_mine_the_shield
+		CAN_turner_valley_oilfield
+		CAN_imperial_oil
+		CAN_supply_the_empire
+		CAN_army_modernization
+		CAN_cmp_truck
+		CAN_canadian_infantry_corps
+		CAN_independent_command
+		CAN_red_deer_training_camp
+		CAN_a_motorized_army
+		CAN_royal_regiment_of_canadian_artillery
+		CAN_the_walkie_talkie
+		CAN_camp_x
+		CAN_light_cruiser_effort
+		CAN_escort_fleet
+		CAN_trade_fleet
+		CAN_united_shipyards
+		CAN_degauss_ship_hulls
+		#CAN_habakkuk_carrier
+	}
+
+	research = {
+		#cat_battlefield_support = -1000
+		cat_operational_integrity = -1000
+		#cat_superior_firepower = -1000
+		#cat_grand_battle_plan = -1000
+		#cat_mass_assault = -1000
+	}
+
+	ideas = {
+		CAN_r_b_bennett = 1000
+		CAN_harry_crerar = 100
+		canadian_car_foundry = 10
 		civilian_economy = 0
 		low_economic_mobilisation = 100
 		partial_economic_mobilisation = 200
@@ -109,15 +246,112 @@ CAN_MP_1 = {
 
 }
 
+CAN_MP_Infrastructure_1 = {
+	name = "CAN Infrastructure"
+	desc = "Build Level 10 for buildspeed and -slots"
+
+	enable = {
+		tag = CAN
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
+		}
+		276 = {
+			is_controlled_by = CAN
+			infrastructure < 10
+		}
+	}
+
+	abort = {
+		276 = {
+			OR ={
+				NOT = { is_controlled_by = CAN }
+				NOT = { infrastructure < 10 }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 276
+		value = 1
+	}
+}
+
+CAN_MP_Civilian_1 = {
+	name = "Build Civ in Infra"
+	desc = ""
+
+	enable = {
+		tag = CAN
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
+		}
+		date < 1939.1.1
+		276 = {
+			is_controlled_by = CAN
+			NOT = { infrastructure < 10 }
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = no
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			date > 1939.1.1
+			276 = {
+				OR ={
+					NOT = { is_controlled_by = CAN }
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = no
+					}
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 276
+		value = 1
+	}
+}
+
 CAN_MP_Garrision = {
-	name = "Garrision the Sussex"
+	name = "Garrision Sussex"
 	desc = "Put all divisons in Sussex until France falls"
 
 	enable = {
 		tag = CAN
-		has_game_rule = {
-			rule = CAN_ai_behavior
-			option = CAN_MP_1
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
 		}
 		NOT = { FRA = { has_capitulated = yes } }
 	}
@@ -142,9 +376,15 @@ CAN_MP_No_USA_Front = {
 
 	enable = {
 		tag = CAN
-		has_game_rule = {
-			rule = CAN_ai_behavior
-			option = CAN_MP_1
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
 		}
 		NOT = { has_war_with = USA }
 	}
@@ -162,14 +402,20 @@ CAN_MP_No_USA_Front = {
 }
 
 CAN_MP_Buildup = {
-	name = ""
+	name = "Build up to 30 Civ"
 	desc = ""
 
 	enable = {
 		tag = CAN
-		has_game_rule = {
-			rule = CAN_ai_behavior
-			option = CAN_MP_1
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
 		}
 		date < 1938.1.1
 	}
@@ -195,38 +441,37 @@ CAN_MP_AirDoctrine = {
 			rule = CAN_ai_behavior
 			option = CAN_MP_1
 		}
-	has_tech = logistical_bombing
+	has_tech = formation_flying
 	}
 	abort = { 
 	}
 	
 	research = {
-		cat_strategic_destruction = -1000
+		cat_battlefield_support = -1000
 	}
 }
 
-CAN_MP_1_LessInfProd = {
-	name = "Fighter Production"
-	desc = ""
-
-	enable = {
-		original_tag = CAN
-		has_game_rule = {
-			rule = CAN_ai_behavior
-			option = CAN_MP_1
-		}
-		has_tech = fighter1
-	}
-	abort = {
-	}
-	
-	ai_strategy = {
-		type = equipment_production_factor
-		id = infantry
-		value = -1000
-	
-	}
-}
+#CAN_MP_1_LessInfProd = {
+#	name = "Less Inf Production"
+#	desc = ""
+#
+#	enable = {
+#		original_tag = CAN
+#		has_game_rule = {
+#			rule = CAN_ai_behavior
+#			option = CAN_MP_1
+#		}
+#		has_tech = fighter1
+#	}
+#	abort = {
+#	}
+#	
+#	ai_strategy = {
+#		type = equipment_production_factor
+#		id = infantry
+#		value = -1000
+#	}
+#}
 
 CAN_MP_1_NoScreen = {
 	name = "No Screens"
@@ -250,6 +495,29 @@ CAN_MP_1_NoScreen = {
 	}
 }
 
+CAN_MP_1_No_Fighter_prod = {
+	name = "No Fighter Production till enough Mils"
+	desc = ""
+
+	enable = {
+		original_tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+		NOT = { num_of_military_factories > 14 }
+	}
+	abort = {
+		num_of_military_factories > 14
+	}
+	
+	ai_strategy = {
+		type = air_factory_balance
+		value = -100
+	}
+
+}
+
 CAN_MP_1_Fighter_prod = {
 	name = "Fighter Production"
 	desc = ""
@@ -261,18 +529,38 @@ CAN_MP_1_Fighter_prod = {
 			option = CAN_MP_1
 		}
 		has_tech = fighter1
+		num_of_military_factories > 14
 	}
 	abort = {
 	}
 	
 	ai_strategy = {
-		type = air_factory_balance
-		value = 1000
-	}
-	ai_strategy = {
-		type = equipment_production_factor
+		type = equipment_production_min_factories
 		id = fighter
-		value = 10
+		value = 7
+	}
+}
+
+CAN_MP_1_Motorized_prod = {
+	name = "Motorized Production"
+	desc = ""
+
+	enable = {
+		original_tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+		has_tech = motorised_infantry
+		num_of_military_factories > 7
+	}
+	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = motorized
+		value = 1
 	}
 }
 
@@ -282,9 +570,15 @@ CAN_MP_1_NoPlanes = {
 
 	enable = {
 		original_tag = CAN
-		has_game_rule = {
-			rule = CAN_ai_behavior
-			option = CAN_MP_1
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
 		}
 	}
 	abort = {
@@ -347,10 +641,14 @@ CAN_MP_Fighter2 = {
 		}
 		has_completed_focus = CAN_we_have_the_hurricane
 		NOT = { has_tech = fighter2 }
+		NOT = { is_researching_technology = fighter2 }
 	}
 
 	abort = {
-		has_tech = fighter2
+		OR = {
+			has_tech = fighter2
+			is_researching_technology = fighter2
+		}
 	}
 
 	research = {
@@ -360,14 +658,20 @@ CAN_MP_Fighter2 = {
 }
 
 No_PP_For_Relation = {
-	name = ""
+	name = "No PP for Relation"
 	desc = ""
 
 	enable = {
 		original_tag = CAN
-		has_game_rule = {
-			rule = CAN_ai_behavior
-			option = CAN_MP_1
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
 		}
 	}
 
@@ -386,10 +690,16 @@ CAN_MP_No_Generals = {
 	desc = ""
 
 	enable = {
-		tag = RAJ
-		has_game_rule = {
-			rule = RAJ_ai_behavior
-			option = RAJ_MP_1
+		tag = CAN
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
 		}
 		date < 1939.1.1
 	}
@@ -408,6 +718,14 @@ CAN_MP_No_Generals = {
 		id = admiral
 		value = -1000
 	}
+
+	ideas = {
+		CAN_raymond_collishaw = 0
+		CAN_george_jones = 0
+		CAN_guy_simonds = 0
+		CAN_john_murchie = 0
+		CAN_frederick_m_w_harvey = 0
+	}
 }
 
 CAN_MP_Allies_Support = {
@@ -416,9 +734,15 @@ CAN_MP_Allies_Support = {
 
 	enable = {
 		original_tag = CAN
-		has_game_rule = {
-			rule = CAN_ai_behavior
-			option = CAN_MP_1
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
 		}
 	}
 
@@ -454,9 +778,15 @@ MP_Conscription_0 = {
 
 	enable = {
 		tag = CAN
-		has_game_rule = {
-			rule = CAN_ai_behavior
-			option = CAN_MP_1
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
 		}
 		has_idea = volunteer_only
 	}
@@ -476,9 +806,15 @@ MP_Conscription_1 = {
 
 	enable = {
 		tag = CAN
-		has_game_rule = {
-			rule = CAN_ai_behavior
-			option = CAN_MP_1
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
 		}
 		has_idea = limited_conscription
 	}
@@ -499,9 +835,15 @@ MP_Conscription_2 = {
 
 	enable = {
 		tag = CAN
-		has_game_rule = {
-			rule = CAN_ai_behavior
-			option = CAN_MP_1
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
 		}
 		has_idea = extensive_conscription
 	}
@@ -523,9 +865,15 @@ MP_Economy_0 = {
 
 	enable = {
 		tag = CAN
-		has_game_rule = {
-			rule = CAN_ai_behavior
-			option = CAN_MP_1
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
 		}
 		has_idea = low_economic_mobilisation
 	}
@@ -545,9 +893,15 @@ MP_Economy_1 = {
 
 	enable = {
 		tag = CAN
-		has_game_rule = {
-			rule = CAN_ai_behavior
-			option = CAN_MP_1
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
 		}
 		has_idea = partial_economic_mobilisation
 	}
@@ -568,9 +922,15 @@ MP_Economy_2 = {
 
 	enable = {
 		tag = CAN
-		has_game_rule = {
-			rule = CAN_ai_behavior
-			option = CAN_MP_1
+		OR = {
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_1
+			}
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = CAN_MP_2
+			}
 		}
 		has_idea = war_economy
 	}
