@@ -207,6 +207,17 @@ political_actions = {
 			modifier = {
 				add = 1
 				has_stability < 0.4
+				NOT = { tag = BUL }
+			}
+			modifier = {
+				add = 1
+				tag = BUL
+				NOT = {
+					has_game_rule = {
+						rule = BUL_ai_behavior
+						option = BUL_MP_1
+					}
+				}
 			}
 			modifier = {
 				factor = 0
