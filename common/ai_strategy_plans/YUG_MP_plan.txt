@@ -25,11 +25,9 @@ YUG_MP_plan = {
 		YUG_exploit_the_pannonian_deposits
 		YUG_expand_the_serbian_shipyards
 		YUG_friendship_treaty_with_italy
-		YUG_attract_foreign_capital
-		YUG_ban_slovene_nationalist_parties
-		YUG_traditional_values
-		YUG_concessions_for_macedonians
-		YUG_crush_the_ustasa
+		YUG_attract_axis_capital
+		YUG_evolution
+		YUG_establish_the_banovina_of_croatia
 		YUG_expand_the_university_of_zagreb
 		YUG_improve_serbian_rail_network
 		YUG_improve_light_industry
@@ -37,14 +35,22 @@ YUG_MP_plan = {
 		YUG_expand_the_university_of_belgrad
 		YUG_central_management
 		YUG_expand_the_sarajevo_arsenals
-		YUG_non_discriminating_officer_promotions
-		YUG_reclaim_istria_and_zadar
-		YUG_motorized_logistics
-		YUG_armored_cavalry
-		YUG_tank_conversions
+		YUG_ban_slovene_nationalist_parties
+		YUG_concessions_for_macedonians
+		YUG_attract_allied_capital
+		YUG_local_militias
+		YUG_army_modernization
 		YUG_army_maneuvers
-		YUG_supremacy_of_defense
-		YUG_artillery_regiments
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -66,7 +72,7 @@ YUG_MP_plan = {
 }
 
 MP_Conscription_0 = {
-	name = "Conscription Plan"
+	name = "Conscription"
 	desc = ""
 
 	enable = {
@@ -88,7 +94,7 @@ MP_Conscription_0 = {
 }
 
 MP_Conscription_1 = {
-	name = "Conscription Plan"
+	name = "Conscription"
 	desc = ""
 
 	enable = {
@@ -111,7 +117,7 @@ MP_Conscription_1 = {
 }
 
 MP_Conscription_2 = {
-	name = "Conscription Plan"
+	name = "Conscription"
 	desc = ""
 
 	enable = {
@@ -135,7 +141,7 @@ MP_Conscription_2 = {
 }
 
 MP_Economy_0 = {
-	name = "Economy Plan"
+	name = "Economy"
 	desc = ""
 
 	enable = {
@@ -157,7 +163,7 @@ MP_Economy_0 = {
 }
 
 MP_Economy_1 = {
-	name = "Economy Plan"
+	name = "Economy"
 	desc = ""
 
 	enable = {
@@ -180,7 +186,7 @@ MP_Economy_1 = {
 }
 
 MP_Economy_2 = {
-	name = "Economy Plan"
+	name = "Economy"
 	desc = ""
 
 	enable = {
