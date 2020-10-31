@@ -117,3 +117,5 @@
  AI_MILITARY_POLICE:0 "Military Police Template for AI"
  RULE_OPTION_FREE_TEMPLATE:0 "Enabled"
  FREE_TEMPLATE_DESC:0 "AI gets free Military Police template"
+ EASTERN_OCCUPAITONS_HISTORICAL_DESC:0 "Only the harshest occupation laws are allowed on Soviet cores for fascist nations"
+ EASTERN_OCCUPAITONS_FREE_DESC:0 "Any occupation laws are allowed on Soviet cores"

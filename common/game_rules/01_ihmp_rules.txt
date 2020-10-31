@@ -59,3 +59,18 @@ AI_DISBAND_DIVISIONS = {
 		desc = "DISBAND_DESC"
 	}
 }
+
+EASTERN_OCCUPAITONS = {
+	name = "EASTERN_OCCUPAITONS"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "EASTERN_OCCUPAITONS_HISTORICAL_DESC"
+	}
+	option = {
+		name = "FREE"
+		text = "RULE_OPTION_FREE"
+		desc = "EASTERN_OCCUPAITONS_FREE_DESC"
+	}
+}
