@@ -2137,6 +2137,15 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	
 	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				is_historical_focus_on = yes
+			}
+			ENG = { add_to_faction = FRA }
+		}
+	}
 	
 	option = {
 		name = germany.55.a
