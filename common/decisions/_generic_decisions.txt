@@ -105,12 +105,23 @@ political_actions = {
 				add = 1
 				has_stability < 0.6
 				NOT = { tag = CHI }
+				NOT = { tag = BUL }
 			}
 			modifier = {
 				add = 1
 				tag = CHI
 				date > 1938.1.1
 				has_stability < 1.0
+			}
+			modifier = {
+				add = 1
+				tag = BUL
+				NOT = {
+					has_game_rule = {
+						rule = BUL_ai_behavior
+						option = BUL_MP_1
+					}
+				}
 			}
 			modifier = {
 				add = 1
