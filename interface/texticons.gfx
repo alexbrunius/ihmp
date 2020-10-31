@@ -948,6 +948,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_location_pointerEine"
+		texturefile = "gfx/texticons/location_pointer.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_divisions"
 		texturefile = "gfx/texticons/divisions.dds"
 		legacy_lazy_load = no
