@@ -113,6 +113,10 @@ on_actions = {
 						rule = CAN_ai_behavior
 						option = CAN_MP_1
 					}
+					has_game_rule = {
+						rule = Disband_Divisons
+						option = Disband
+					}
 					CAN = { is_ai = yes }
 				}
 				CAN = {
@@ -128,7 +132,7 @@ on_actions = {
 						rule = POR_ai_behavior
 						option = POR_MP_1
 					}
-					SOV = { is_ai = yes }
+					POR = { is_ai = yes }
 				}
 				POR = {
 					delete_units = { 
@@ -150,6 +154,10 @@ on_actions = {
 					has_game_rule = {
 						rule = SOV_ai_behavior
 						option = SOV_MP_1
+					}
+					has_game_rule = {
+						rule = Disband_Divisons
+						option = Disband
 					}
 					SOV = { is_ai = yes }
 				}
@@ -180,6 +188,10 @@ on_actions = {
 					has_game_rule = {
 						rule = JAP_ai_behavior
 						option = JAP_MP_1
+					}
+					has_game_rule = {
+						rule = Disband_Divisons
+						option = Disband
 					}
 					JAP = { is_ai = yes }
 				}
@@ -244,6 +256,10 @@ on_actions = {
 						rule = ROM_ai_behavior
 						option = ROM_MP_1
 					}
+					has_game_rule = {
+						rule = Disband_Divisons
+						option = Disband
+					}
 					ROM = { is_ai = yes }
 				}
 				ROM = {
@@ -264,6 +280,10 @@ on_actions = {
 							rule = HUN_ai_behavior
 							option = HUN_MP_2
 						}
+					}
+					has_game_rule = {
+						rule = Disband_Divisons
+						option = Disband
 					}
 					HUN = { is_ai = yes }
 				}
@@ -328,6 +348,8 @@ on_actions = {
 				every_country = {
 					limit = {
 						is_ai = yes
+						NOT = { tag = AUS }
+						NOT = { tag = MEN }
 					}
 					division_template = {
 						name = "Military Police"
@@ -356,52 +378,11 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					ROOT = { tag = PER }
-					FROM = {
-						OR = {
-							tag = ENG
-							tag = RAJ
-							tag = SOV
-						}
-					}
+					ROOT = { original_tag = FRA }
+					FROM = { tag = GER }
+					NOT = { has_global_flag = achievement_france_surrender }
 				}
-				PER = {
-					every_enemy_country = {
-						white_peace = PREV
-					}
-				}
-				ENG = { transfer_state = 413 } # Khuzestan
-				ENG = { transfer_state = 412 } # Fars
-				ENG = { transfer_state = 421 } # Kurdistan
-				SOV = { transfer_state = 266 } # Tehran
-				SOV = { transfer_state = 419 } # Tibriz
-				SOV = { transfer_state = 416 } # Khorasan
-				SOV = { transfer_state = 420 } # Gilan
-				SOV = { puppet = PER }
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					ROOT = { tag = PER }
-					FROM = {
-						OR = {
-							tag = ENG
-							tag = RAJ
-						}
-					}
-				}
-				IRQ = {
-					every_enemy_country = {
-						white_peace = PREV
-					}
-				}
-				ENG = {
-					annex_country = {
-						target = IRQ
-						transfer_troops = no
-					}
-				}
+				FRA = { country_event = { id = france.10 } }
 			}
 		}
 		effect = {
@@ -409,9 +390,10 @@ on_actions = {
 				limit = {
 					ROOT = { original_tag = FRA }
 					FROM = { tag = GER }
-					NOT = { has_global_flag = achievement_france_surrender }
+					has_global_flag = vichy_yes
 				}
-				FRA = { country_event = { id = france.10 } }
+				GER = { country_event = france.141 }
+				FRA = { remove_ideas = FRA_surrender }
 			}
 		}
 #		effect = {
