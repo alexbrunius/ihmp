@@ -1,68 +1,99 @@
-BUL_MP_1 = {
-	name = "Bulgarian Multiplayer 1"
-	desc = ""
+BUL_historical_plan = {
+	name = "Historical"
+	desc = "Tsar Boris III will lead the country towards the Axis, relying on German arbitration to expand Bulgarian borders peacefully, eventually signing the Tripartite Pact and delaying Bulgarian participation in the war."
 
 	enable = {
-		tag = BUL
+		original_tag = BUL
 		has_game_rule = {
 			rule = BUL_ai_behavior
 			option = BUL_MP_1
+			}
+	}
+	abort = {
+		OR = {
+			has_war_with = GER
+			has_war_with = ITA
+			has_war_with = TUR
+			has_government = communism
+			has_government = democratic
 		}
 	}
 
-	abort = {
+	ai_national_focuses = {
+		#1936
+		BUL_power_to_the_tsar
+		BUL_dissolve_the_military_union #Short focus
+		BUL_the_tsars_regime
+		BUL_promote_bulgarian_nationalism
+		BUL_limited_womens_suffrage
+		BUL_found_the_brannik
+		#1937
+		BUL_illusions_of_a_non_partisan_system
+		BUL_strengthen_the_royal_dictatorship
+		BUL_acquire_modern_tools
+		BUL_improve_the_road_system
+		BUL_attract_foreign_capitals
+		BUL_expand_sofia_university
+		BUL_expand_the_tobacco_industry
+		#1938
+		BUL_support_macedonian_organizations #Short focus
+		BUL_bulgarian_irredentism
+		BUL_restrained_paramilitary_organizations
+		BUL_national_railway_lines
+		BUL_approach_germany
+		#1939
+		BUL_negotiate_bulgarian_rearmament
+		BUL_join_the_tripartite_pact
+		BUL_utmost_optimization
+		BUL_war_industry
+		BUL_reorganize_the_military_industry
+		BUL_darzhavna_voenna_fabrika
+		BUL_found_dvf_sopot
+		BUL_rebuild_the_army
+		BUL_vasil_levsky_national_military_university
+		BUL_prussia_of_the_balkans
+		BUL_expand_varna_naval_base
+		BUL_develop_burgas_shipyards
+		BUL_bulgarisation_of_the_balkans
+		BUL_steel_plant_in_pernik
+		BUL_restore_the_tarnovo_constitution
+		BUL_freedom_of_press
+		#BUL_crush_the_communists
+		#1940
+		#BUL_mineral_extraction_in_the_rhodopes
+		#BUL_national_military_academy
+		#BUL_war_logistics
+		#BUL_cooperation_with_italy		
+		#BUL_peaceful_development
+		#BUL_increase_industry_investments
+		#BUL_contract_foreign_companies
+		#1941
+		#BUL_kaproni_bulgarski
+		#BUL_georgi_benkovski_aircraft_repair_facilities
+		#BUL_pilot_training_program
+		#BUL_darzhavna_aeroplanna_rabotilnitsa
+		#BUL_darzhavna_samoletna_fabrika
+		#BUL_form_a_regency_council
+		#BUL_military_secrets_sharing
+		#1942
+		#1943
+		#1944
+
 	}
 
-	ai_national_focuses = {
-		industrial_effort
-		construction_effort
-		construction_effort_2
-		production_effort
-		production_effort_2
-		production_effort_3
-		infrastructure_effort
-		infrastructure_effort_2
-		extra_tech_slot
-		extra_tech_slot_2
-		construction_effort_3
-		naval_effort
-		political_effort
-		collectivist_ethos
-		nationalism_focus
-		militarism
-		military_youth
-		paramilitarism
-		ideological_fanaticism
-		technology_sharing
-		army_effort
-		motorization_effort
-		mechanization_effort
-		armor_effort
-		aviation_effort
+	focus_factors = {
+		BUL_plot_against_boris = 0
+		#BUL_total_war = 0
+		BUL_cooperate_with_the_zveno = 0
+		BUL_condemn_macedonian_organizations = 0
 	}
 
 	research = {
-		synth_resources = -1000
-		excavation_tech = -200
-		air_doctrine = -10000
-		naval_doctrine = -10000
-		cat_mobile_warfare = -1000
-		cat_superior_firepower = -1000
-		cat_grand_battle_plan = -1000
+
 	}
 
 	ideas = {
-		free_trade = 600
-		export_focus = 0
-		limited_exports = 0
-		closed_economy = 0
-		BUL_dobri_bozhilov = 10
-		war_economy = 200
-		partial_economic_mobilisation = 100
-		extensive_conscription = 10
-		generic_industrial_concern = 5
-		BUL_konstantin_muraviev = 0
-		BUL_georgi_ivanov_kyoseivanov = 0
+
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -74,251 +105,4 @@ BUL_MP_1 = {
 		}
 	}
 
-	focus_factors = {
-		CAS_effort = 0
-		rocket_effort = 0
-		large_navy = 0
-		flexible_navy = 0
-		nuclear_effort = 0
-	}
-}
-
-
-BUL_MP_Electronics_1 = {
-	name = "Bulgarian Multiplayer Plan Electronics 2"
-	desc = ""
-
-	enable = {
-		tag = BUL
-		has_game_rule = {
-			rule = BUL_ai_behavior
-			option = BUL_MP_1
-		}
-		NOT = { has_tech = mechanical_computing }
-	}
-	
-	abort = {
-		has_tech = mechanical_computing 
-	}
-
-	research = {
-		computing_tech = 100000
-	}
-}
-
-BUL_MP_Alliance = {
-	name = "Bulgarian-German Alliance"
-	desc = ""
-
-	enable = {
-		tag = BUL
-		has_game_rule = {
-			rule = BUL_ai_behavior
-			option = BUL_MP_1
-		}
-	}
-
-	abort = {
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = GER
-		value = 200
-	}
-	ai_strategy = {
-		type = alliance
-		id = GER
-		value = 400
-	}
-	ai_strategy = {
-		type = support
-		id = GER
-		value = 200
-	}	
-	ai_strategy = {
-		type = pp_spend_priority
-		id = relation
-		value = -200
-	}
-}
-
-BUL_MP_Antagonize = {
-	name = "Antagonize Axis for no Trade"
-	desc = ""
-
-	enable = {
-		tag = BUL
-		has_game_rule = {
-			rule = BUL_ai_behavior
-			option = BUL_MP_1
-		}
-	}
-
-	abort = {
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = SOV
-		value = 200
-	}
-	ai_strategy = {
-		type = antagonize
-		id = FRA
-		value = 200
-	}	
-	ai_strategy = {
-		type = antagonize
-		id = ENG
-		value = 200
-	}
-	ai_strategy = {
-		type = antagonize
-		id = RAJ
-		value = 200
-	}
-	ai_strategy = {
-		type = antagonize
-		id = POL
-		value = 200
-	}
-}
-
-MP_Conscription_0 = {
-	name = "Conscription Plan"
-	desc = ""
-
-	enable = {
-		tag = BUL
-		has_game_rule = {
-			rule = BUL_ai_behavior
-			option = BUL_MP_1
-		}
-		has_idea = volunteer_only
-	}
-
-	abort = {
-		NOT = { has_idea = volunteer_only }
-	}
-
-	ideas = {
-		disarmed_nation = 0
-	}
-}
-
-MP_Conscription_1 = {
-	name = "Conscription Plan"
-	desc = ""
-
-	enable = {
-		tag = BUL
-		has_game_rule = {
-			rule = BUL_ai_behavior
-			option = BUL_MP_1
-		}
-		has_idea = limited_conscription
-	}
-
-	abort = {
-		NOT = { has_idea = limited_conscription }
-	}
-
-	ideas = {
-		disarmed_nation = 0
-		volunteer_only = 0
-	}
-}
-
-MP_Conscription_2 = {
-	name = "Conscription Plan"
-	desc = ""
-
-	enable = {
-		tag = BUL
-		has_game_rule = {
-			rule = BUL_ai_behavior
-			option = BUL_MP_1
-		}
-		has_idea = extensive_conscription
-	}
-
-	abort = {
-		NOT = { has_idea = extensive_conscription }
-	}
-
-	ideas = {
-		disarmed_nation = 0
-		volunteer_only = 0
-		limited_conscription = 0
-	}
-}
-
-MP_Economy_0 = {
-	name = "Economy Plan"
-	desc = ""
-
-	enable = {
-		tag = BUL
-		has_game_rule = {
-			rule = BUL_ai_behavior
-			option = BUL_MP_1
-		}
-		has_idea = low_economic_mobilisation
-	}
-
-	abort = {
-		NOT = { has_idea = low_economic_mobilisation }
-	}
-
-	ideas = {
-		civilian_economy = 0
-	}
-}
-
-MP_Economy_1 = {
-	name = "Economy Plan"
-	desc = ""
-
-	enable = {
-		tag = BUL
-		has_game_rule = {
-			rule = BUL_ai_behavior
-			option = BUL_MP_1
-		}
-		has_idea = partial_economic_mobilisation
-	}
-
-	abort = {
-		NOT = { has_idea = partial_economic_mobilisation }
-	}
-
-	ideas = {
-		civilian_economy = 0
-		low_economic_mobilisation = 0
-	}
-}
-
-MP_Economy_2 = {
-	name = "Economy Plan"
-	desc = ""
-
-	enable = {
-		tag = BUL
-		has_game_rule = {
-			rule = BUL_ai_behavior
-			option = BUL_MP_1
-		}
-		has_idea = war_economy
-	}
-
-	abort = {
-		NOT = { has_idea = war_economy }
-	}
-
-	ideas = {
-		civilian_economy = 0
-		low_economic_mobilisation = 0
-		partial_economic_mobilisation = 0
-	}
 }

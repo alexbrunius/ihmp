@@ -1,0 +1,234 @@
+TUR_MP_plan = {
+	name = "Turkey MP plan"
+	desc = ""
+
+	enable = {
+		original_tag = TUR
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = TUR_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		TUR_the_montreux_convention
+		TUR_continue_the_policy_of_etatism
+		TUR_ratify_the_six_arrows
+		TUR_treaty_of_saadabad
+		TUR_peace_at_home
+		TUR_turkish_state_railways
+		TUR_the_second_five_year_plan
+		TUR_the_guardians_of_kemalism
+		TUR_assess_our_future
+		TUR_the_hatay_issue
+		TUR_peace_in_the_world
+		TUR_variant_turkish_tax_focus
+		TUR_turk_ulusu
+		TUR_the_pontic_redoubt
+		TUR_abuse_the_office_of_soil_products
+		TUR_reconfigure_our_foreign_policy
+		TUR_renew_the_turkish_soviet_non_aggression_pact
+		TUR_the_batumi_accord
+		TUR_provide_refuge_to_the_victims_of_fascism
+		TUR_dissolve_the_ODPA
+		TUR_soviet_tank_factories
+		TUR_adana_to_baku_highway
+		TUR_anti_bolshevik_mediterranean_bloc
+		TUR_the_international_of_proletarian_freethinkers
+		TUR_seize_religious_property
+		TUR_the_german_turkish_friendship_treaty
+		TUR_the_clodius_agreement
+		TUR_approve_the_funkplan
+		TUR_renew_the_turkish_soviet_non_aggression_pact
+		TUR_the_batumi_accord
+		TUR_provide_refuge_to_the_victims_of_fascism
+		TUR_dissolve_the_ODPA
+		TUR_soviet_tank_factories
+		TUR_adana_to_baku_highway
+		TUR_learning_from_the_great_war
+		TUR_hava_okulu
+		TUR_modernising_the_army
+		TUR_expand_the_air_bases
+		TUR_expand_the_golcuk_naval_base
+		TUR_relocate_from_yildiz_palace
+		TUR_embrace_military_tradition
+		TUR_superiority_of_arms
+		TUR_accelerate_native_fighter_designs
+		TUR_construct_the_cakmak_line
+		TUR_patrol_the_seas
+		TUR_turkish_air_defense_platforms
+		TUR_the_path_of_the_wolf
+		TUR_fortified_defensive_bases
+		TUR_turk_silahli_kuvvetleri
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		TUR_join_the_allies = 0
+		TUR_join_the_axis = 0
+		TUR_the_mediterranean_entente = 0
+		TUR_readdress_the_montreux_convention = 0
+		TUR_anti_bolshevik_mediterranean_bloc = 0
+	}
+
+}
+
+MP_Conscription_0 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = TUR
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = TUR_MP_1
+		}
+		has_idea = volunteer_only
+	}
+
+	abort = {
+		NOT = { has_idea = volunteer_only }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+	}
+}
+
+MP_Conscription_1 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = TUR
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = TUR_MP_1
+		}
+		has_idea = limited_conscription
+	}
+
+	abort = {
+		NOT = { has_idea = limited_conscription }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+	}
+}
+
+MP_Conscription_2 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = TUR
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = TUR_MP_1
+		}
+		has_idea = extensive_conscription
+	}
+
+	abort = {
+		NOT = { has_idea = extensive_conscription }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+	}
+}
+
+MP_Economy_0 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = TUR
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = TUR_MP_1
+		}
+		has_idea = low_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = low_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+	}
+}
+
+MP_Economy_1 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = TUR
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = TUR_MP_1
+		}
+		has_idea = partial_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = partial_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+	}
+}
+
+MP_Economy_2 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = TUR
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = TUR_MP_1
+		}
+		has_idea = war_economy
+	}
+
+	abort = {
+		NOT = { has_idea = war_economy }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 0
+	}
+}
+

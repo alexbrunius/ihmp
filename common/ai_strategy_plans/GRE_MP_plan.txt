@@ -1,3 +1,6 @@
+
+
+
 GRE_MP_1 = {
 	name = "Greece Multiplayer 1"
 	desc = ""
@@ -14,25 +17,30 @@ GRE_MP_1 = {
 	}
 
 	ai_national_focuses = {
-		industrial_effort
-		construction_effort
-		construction_effort_2
-		infrastructure_effort
-		infrastructure_effort_2
-		extra_tech_slot
-		extra_tech_slot_2
-		construction_effort_3
-		production_effort
-		production_effort_2
-		production_effort_3
-		naval_effort
-		political_effort
-		liberty_ethos
-		neutrality_focus
-		deterrence
-		aviation_effort
-		why_we_fight
-		technology_sharing
+		GRE_the_kings_government
+		GRE_reevaluating_the_drachma
+		GRE_force_the_farmers_into_factories
+		GRE_paying_back_our_debts_in_bulk
+		GRE_metaxism_focus
+		GRE_the_hellenic_spirit
+		GRE_the_national_youth_organisation
+		GRE_crack_down_on_the_republicans
+		GRE_use_the_military
+		GRE_an_orthodox_state
+		GRE_fiscal_responsibility
+		GRE_bedrock_of_balkan_financial_stability
+		GRE_greek_autarky
+		GRE_increase_our_mining_operations
+		GRE_mobilise_our_economy
+		GRE_clear_the_slums
+		GRE_crack_down_on_foreign_monopolies
+		GRE_academy_of_athens
+		GRE_third_hellenic_civilization
+		GRE_defending_our_kingdom
+		GRE_reviving_the_spartan_warrior_spirit
+		GRE_lignite_liquefaction
+		GRE_extracting_more_from_our_soil
+		GRE_prepare_against_the_mediterranean_threat
 	}
 
 	research = {
@@ -47,55 +55,10 @@ GRE_MP_1 = {
 		export_focus = 0
 		limited_exports = 0
 		closed_economy = 0
-		generic_captain_of_industry = 10
-		generic_fortification_engineer = 2
-		war_economy = 20
-		low_economic_mobilisation = 0
-		civilian_economy = 0
-		partial_economic_mobilisation = 10
-		extensive_conscription = 10
-		generic_industrial_concern = 5
-		generic_electronics_concern = 0
-		generic_tank_manufacturer = 0
-		generic_naval_manufacturer = 0
-		generic_naval_theorist = 0
-		generic_air_warfare_theorist = 0
-		generic_navy_chief_decisive_bat = 0
-		generic_navy_anti_submarine = 0
-		generic_air_close_air_sup = 0
-		generic_air_chief_all_weather = 0
-		generic_army_art = 0
-		generic_navy_fleet_log = 0
-		generic_air_air_combat_trainer = 0
 	}
 	
-		
-	ai_strategy = {
-		type = put_unit_buffers
-		ratio = 0.4
-		states = { 
-			47
-			128
-		}
-		area = europe
-	}
-	ai_strategy = {
-		type = put_unit_buffers
-		ratio = 0.1
-		states = { 
-			731
-		}
-		area = europe
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = screen_ship
-		value = -100
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = screen_ship
-		value = -100
+
+	traits = {
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -108,42 +71,9 @@ GRE_MP_1 = {
 	}
 
 	focus_factors = {
-		mechanization_effort = 0
-		CAS_effort = 0
-		NAV_effort = 0
-		rocket_effort = 0
-		large_navy = 0
-		cruiser_effort = 0
-		nuclear_effort = 0
+		GRE_securing_the_bulgarian_menace = 0
+		GRE_our_traditional_allies_in_the_aegean = 0
 	}
-}
-
-GRE_MP_Extensive_Conscription = {
-	name = "Greece Extensive Conscription"
-	desc = ""
-
-	enable = {
-		tag = GRE
-		has_game_rule = {
-			rule = GRE_ai_behavior
-			option = GRE_MP_1
-		}
-		has_idea = extensive_conscription
-	}
-
-	abort = {
-	}
-
-	ideas = {
-		disarmed_nation = 0
-		volunteer_only = 0
-		limited_conscription = 0
-	}
-	ai_strategy = {
-		type = force_build_armies
-		value = 1
-	}
-
 }
 
 GRE_MP_Doctrine = {
@@ -186,7 +116,7 @@ GRE_MP_Ignore_TUR = {
 	
 	ai_strategy = {
 	 	type = front_unit_request
-		tag = TUR
+		state = 341
 		value = -200
 	}
 }
@@ -218,13 +148,37 @@ GRE_MP_Ignore_BUL = {
 	
 	ai_strategy = {
 	 	type = front_unit_request
-		tag = BUL
+		state = 211
+		state = 212
 		value = -200
 	}
 }
 
+GRE_MP_Production = {
+	name = "Production"
+	desc = ""
+
+	enable = {
+		tag = GRE
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}
+		num_of_military_factories > 10
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = infantry_equipment
+		value = -75
+	}
+}
+
 MP_Conscription_0 = {
-	name = "Conscription Plan"
+	name = "Conscription"
 	desc = ""
 
 	enable = {
@@ -246,7 +200,7 @@ MP_Conscription_0 = {
 }
 
 MP_Conscription_1 = {
-	name = "Conscription Plan"
+	name = "Conscription"
 	desc = ""
 
 	enable = {
@@ -269,7 +223,7 @@ MP_Conscription_1 = {
 }
 
 MP_Conscription_2 = {
-	name = "Conscription Plan"
+	name = "Conscription"
 	desc = ""
 
 	enable = {
@@ -293,7 +247,7 @@ MP_Conscription_2 = {
 }
 
 MP_Economy_0 = {
-	name = "Economy Plan"
+	name = "Economy"
 	desc = ""
 
 	enable = {
@@ -315,7 +269,7 @@ MP_Economy_0 = {
 }
 
 MP_Economy_1 = {
-	name = "Economy Plan"
+	name = "Economy"
 	desc = ""
 
 	enable = {
@@ -338,7 +292,7 @@ MP_Economy_1 = {
 }
 
 MP_Economy_2 = {
-	name = "Economy Plan"
+	name = "Economy"
 	desc = ""
 
 	enable = {
