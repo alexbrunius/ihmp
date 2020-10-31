@@ -515,5 +515,36 @@ on_actions = {
 				FRA = { country_event = { id = france.10 } }
 			}
 		}
+		effect = {
+			if = { #destroys and damages Soviet infrastructure to simulate different railway gauges
+				limit = {
+					FROM = { original_tag = SOV }
+					FROM.FROM = { is_owned_by = SOV }
+					FROM.FROM = { NOT = { has_state_flag = sov_infra_destruction } }
+				}
+				FROM.FROM = {
+					set_state_flag = sov_infra_destruction
+
+					# set_temp_variable = { inf_damage = infrastructure_level }
+					# divide_temp_variable = { inf_damage = 2 }
+					# clamp_temp_variable = { var = inf_damage max = 3 min = 0 }
+					
+					set_temp_variable = { inf_remove = infrastructure_level }
+					divide_temp_variable = { inf_remove = 4 }
+					clamp_temp_variable = { var = inf_remove max = 2 min = 0 }
+					
+					remove_building = {
+						type = infrastructure
+						level = var:inf_remove
+					}
+
+					# doesn't work with variables for some reason
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+			}
+		}
 	}
 }
