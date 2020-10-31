@@ -114,8 +114,8 @@ on_actions = {
 						option = CAN_MP_1
 					}
 					has_game_rule = {
-						rule = Disband_Divisons
-						option = Disband
+						rule = AI_DISBAND_DIVISIONS
+						option = DISBAND
 					}
 					CAN = { is_ai = yes }
 				}
@@ -156,8 +156,8 @@ on_actions = {
 						option = SOV_MP_1
 					}
 					has_game_rule = {
-						rule = Disband_Divisons
-						option = Disband
+						rule = AI_DISBAND_DIVISIONS
+						option = DISBAND
 					}
 					SOV = { is_ai = yes }
 				}
@@ -190,8 +190,8 @@ on_actions = {
 						option = JAP_MP_1
 					}
 					has_game_rule = {
-						rule = Disband_Divisons
-						option = Disband
+						rule = AI_DISBAND_DIVISIONS
+						option = DISBAND
 					}
 					JAP = { is_ai = yes }
 				}
@@ -257,8 +257,8 @@ on_actions = {
 						option = ROM_MP_1
 					}
 					has_game_rule = {
-						rule = Disband_Divisons
-						option = Disband
+						rule = AI_DISBAND_DIVISIONS
+						option = DISBAND
 					}
 					ROM = { is_ai = yes }
 				}
@@ -282,8 +282,8 @@ on_actions = {
 						}
 					}
 					has_game_rule = {
-						rule = Disband_Divisons
-						option = Disband
+						rule = AI_DISBAND_DIVISIONS
+						option = DISBAND
 					}
 					HUN = { is_ai = yes }
 				}
