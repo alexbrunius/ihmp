@@ -1,19 +1,19 @@
 BUL_historical_plan = {
-	name = "Historical"
-	desc = "Tsar Boris III will lead the country towards the Axis, relying on German arbitration to expand Bulgarian borders peacefully, eventually signing the Tripartite Pact and delaying Bulgarian participation in the war."
+	name = "Historical Multiplayer"
+	desc = "Tsar Boris III will lead the country towards the Axis, relying on German arbitration to expand Bulgarian borders peacefully, eventually signing the Tripartite Pact."
 
 	enable = {
 		original_tag = BUL
 		has_game_rule = {
 			rule = BUL_ai_behavior
 			option = BUL_MP_1
-			}
+		}
 	}
 	abort = {
 		OR = {
 			has_war_with = GER
 			has_war_with = ITA
-			has_war_with = TUR
+			has_war_with = BUL
 			has_government = communism
 			has_government = democratic
 		}
@@ -22,7 +22,7 @@ BUL_historical_plan = {
 	ai_national_focuses = {
 		#1936
 		BUL_power_to_the_tsar
-		BUL_dissolve_the_military_union #Short focus
+		BUL_cooperate_with_the_zveno #Short focus
 		BUL_the_tsars_regime
 		BUL_promote_bulgarian_nationalism
 		BUL_limited_womens_suffrage
@@ -30,17 +30,18 @@ BUL_historical_plan = {
 		#1937
 		BUL_illusions_of_a_non_partisan_system
 		BUL_strengthen_the_royal_dictatorship
+		BUL_liberalization_of_trade_policies
+		BUL_approach_germany
 		BUL_acquire_modern_tools
 		BUL_improve_the_road_system
 		BUL_attract_foreign_capitals
 		BUL_expand_sofia_university
-		BUL_expand_the_tobacco_industry
 		#1938
+		BUL_expand_the_tobacco_industry
+		BUL_restrained_paramilitary_organizations
 		BUL_support_macedonian_organizations #Short focus
 		BUL_bulgarian_irredentism
-		BUL_restrained_paramilitary_organizations
 		BUL_national_railway_lines
-		BUL_approach_germany
 		#1939
 		BUL_negotiate_bulgarian_rearmament
 		BUL_join_the_tripartite_pact
@@ -84,7 +85,7 @@ BUL_historical_plan = {
 	focus_factors = {
 		BUL_plot_against_boris = 0
 		#BUL_total_war = 0
-		BUL_cooperate_with_the_zveno = 0
+		BUL_dissolve_the_military_union = 0
 		BUL_condemn_macedonian_organizations = 0
 	}
 
@@ -105,4 +106,279 @@ BUL_historical_plan = {
 		}
 	}
 
+}
+
+BUL_MP_Ideas = {
+	name = "BUL Ideas"
+	desc = ""
+
+	enable = {
+		tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		BUL_stefan_nedev = 0
+		BUL_stoycho_mushanov = 0 #democratic advisor
+		BUL_nikola_petkov = 0
+		BUL_konstantin_muraviev_bftb = 0
+		BUL_stefan_stefanov = 0
+		BUL_dimitrana_ivanova = 100
+		BUL_vasil_kolarov = 0
+		BUL_valko_chervenkov = 0
+		BUL_todor_pavlov = 0
+		BUL_ivan_dochev = 0
+		BUL_aleksandar_tsankov = 1 #Etaism
+		BUL_nikola_zhekov = 0
+		BUL_dobri_bozhilov_bftb = 0
+		BUL_bogdan_filov = 1
+		BUL_konstantin_muraviev = 0 #vanilla
+		BUL_georgi_ivanov_kyoseivanov = 0
+		#Theorists
+		BUL_georgi_petsov_bftb = 0
+		BUL_sava_ivanov = 0
+		BUL_georgi_drenikov = 0
+		BUL_ivan_gaidimitriv = 0
+		BUL_georgi_petsov = 0
+		#Army Chief
+		BUL_konstantin_lukash = 1
+		BUL_kiril_stanchev_bftb = 1
+		BUL_nikola_hadzipetkov_bftb = 0
+		BUL_kiril_dimitrov_yanchulev = 0
+		BUL_vasil_boydev_bftb = 0
+		BUL_nikola_hadzipetkov = 0
+		#Air Chief
+		BUL_dimitr_ayryanov = 0
+		BUL_gancho_manchev = 0
+		BUL_asen_dobrev_nikolov = 0
+		#Naval Chief
+		BUL_asen_toshev = 0
+		#High Command
+		BUL_stoyan_stoyanov_bftb = 0
+		BUL_stefan_tsanev = 0
+		BUL_ivan_sapundzhiev = 0
+		BUL_atanas_pavlov_zhilkov_bftb = 1
+		BUL_trifon_trifonov = 0
+		BUL_ferdinand_kozovski = 0
+		BUL_stoyan_trendafilov = 1
+		BUL_vladimir_stoychev = 1
+		#Designer
+		BUL_british_tank_designer = 0
+		BUL_soviet_tank_designer = 0
+		generic_tank_manufacturer = 0
+		BUL_british_naval_designer = 0
+		BUL_soviet_naval_designer = 0
+		BUL_british_aircraft_designer = 0
+		BUL_soviet_aircraft_designer = 0
+		BUL_british_materiel_designer = 0
+		BUL_soviet_materiel_designer = 0
+		#Industry
+		BUL_petrol_ad = 0
+		BUL_petrol_ad_improved = 0
+		BUL_ira = 0
+		BUL_ira_improved = 0
+		BUL_pirin = 0
+		BUL_pirin_improved = 0
+		BUL_vulkan_cement = 0
+		BUL_vulkan_cement_improved = 0
+		BUL_german_industrial_concern = 1
+		BUL_british_industrial_concern = 0
+		BUL_soviet_industrial_concern = 0
+	}
+}
+
+BUL_MP_Democratic_Ideas = {
+	name = "BUL Democratic Ideas over"
+	desc = ""
+
+	enable = {
+		tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+		has_completed_focus = BUL_illusions_of_a_non_partisan_system
+	}
+
+	abort = {
+	}
+
+	ideas = {
+		BUL_dimitrana_ivanova = 0 #woman rights activist
+		BUL_stoycho_mushanov = 0 #democratic advisor
+	}
+}
+
+BUL_MP_Peace_Ideas = {
+	name = "BUL Democratic Ideas over"
+	desc = ""
+
+	enable = {
+		tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+	}
+
+	abort = {
+		OR = {
+			date > 1939.1.1
+			has_war = yes
+		}
+	}
+
+	ideas = {
+		BUL_atanas_pavlov_zhilkov_bftb = 0
+		BUL_stoyan_trendafilov = 0
+		BUL_vladimir_stoychev = 0
+		BUL_konstantin_lukash = 0
+		BUL_kiril_stanchev_bftb = 0
+	}
+}
+
+MP_Conscription_0 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+		has_idea = volunteer_only
+	}
+
+	abort = {
+		NOT = { has_idea = volunteer_only }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+	}
+}
+
+MP_Conscription_1 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+		has_idea = limited_conscription
+	}
+
+	abort = {
+		NOT = { has_idea = limited_conscription }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+	}
+}
+
+MP_Conscription_2 = {
+	name = "Conscription"
+	desc = ""
+
+	enable = {
+		tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+		has_idea = extensive_conscription
+	}
+
+	abort = {
+		NOT = { has_idea = extensive_conscription }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+	}
+}
+
+MP_Economy_0 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+		has_idea = low_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = low_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+	}
+}
+
+MP_Economy_1 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+		has_idea = partial_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = partial_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+	}
+}
+
+MP_Economy_2 = {
+	name = "Economy"
+	desc = ""
+
+	enable = {
+		tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+		has_idea = war_economy
+	}
+
+	abort = {
+		NOT = { has_idea = war_economy }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 0
+	}
 }
