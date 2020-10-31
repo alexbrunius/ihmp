@@ -327,7 +327,8 @@ give_SOV_armor_research_bonuses = {
 	add_tech_bonus = {
 		name = med_armor_bonus
 		ahead_reduction = 2
-		category = cat_medium_armor
+		technology = basic_medium_tank
+		technology = improved_medium_tank
 	}
 	add_tech_bonus = {
 		name = armor_bonus
