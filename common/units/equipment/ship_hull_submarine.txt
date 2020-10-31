@@ -46,6 +46,26 @@ equipments = {
 			category = ship_radar
 			count < 2
 		}
+
+		module_count_limit = {
+			category = ship_sub_snorkel
+			count < 2
+		}
+
+		module_count_limit = {
+			category = ship_airplane_launcher
+			count < 2
+		}
+
+		module_count_limit = {
+			category = ship_torpedo_sub
+			count < 3
+		}
+
+		module_count_limit = {
+			category = ship_mine_layer_sub
+			count < 2
+		}
 		
 		default_modules = {
 			fixed_ship_torpedo_slot = empty
@@ -108,12 +128,27 @@ equipments = {
 		module_slots = {
 			fixed_ship_torpedo_slot = inherit 
 			fixed_ship_engine_slot = inherit
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo_sub
+					ship_mine_layer_sub
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_radar
+					ship_sub_snorkel
+				}
+			}
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo_sub
 					ship_mine_layer_sub
 					ship_radar
+					ship_sub_snorkel
 				}
 			}
 		}
@@ -165,7 +200,15 @@ equipments = {
 					ship_sub_snorkel
 				}
 			}
-			rear_1_custom_slot = front_1_custom_slot
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo_sub
+					ship_mine_layer_sub
+					ship_radar
+					ship_sub_snorkel
+				}
+			}
 		}
 
 		default_modules = {
@@ -215,7 +258,15 @@ equipments = {
 					ship_sub_snorkel
 				}
 			}
-			rear_1_custom_slot = front_1_custom_slot
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo_sub
+					ship_mine_layer_sub
+					ship_radar
+					ship_sub_snorkel
+				}
+			}
 		}
 
 		default_modules = {
@@ -272,9 +323,11 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo_sub
-					ship_mine_layer_sub
 					ship_airplane_launcher
+					ship_mine_layer_sub
 					ship_extra_fuel_tank
+					ship_radar
+					ship_sub_snorkel
 				}
 			}
 		}
