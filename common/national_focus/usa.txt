@@ -1962,6 +1962,7 @@ focus_tree = {
 					has_offensive_war = yes
 					}
 				date > 1940.1.1
+				has_war_support > 0.35
 			}
 		}
 		bypass = {
