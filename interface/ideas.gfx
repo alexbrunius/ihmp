@@ -310,6 +310,11 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
+		name = "GFX_idea_amphibious_operations"
+		texturefile = "gfx/interface/ideas/liberty_ships_focus.dds"
+	}	
+	
+	spriteType = {
 		name = "GFX_idea_stiff_upper_lip"
 		texturefile = "gfx/interface/ideas/brittish_stoicism.dds"
 	}	

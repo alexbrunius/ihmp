@@ -1025,6 +1025,23 @@ ideas = {
 			}
 		}
 
+		amphibious_operations = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				naval_invasion_capacity = 12
+			}
+		}
+
 		air_war_plans_division_focus = {
 			
 			allowed = {
