@@ -1738,7 +1738,10 @@ focus_tree = {
 
 
 		completion_reward = {
-			JAP = { puppet = SIA }
+			set_autonomy = {
+				target = SIA
+				autonomous_state = autonomy_wtt_imperial_associate
+			}
 			add_ai_strategy = {
 				type = protect
 				id = "SIA"
