@@ -70,3 +70,63 @@ add_namespace = ihmp_middleast
 			}
 		}
 	}
+
+	country_event = {
+		id = ihmp_middleast.3
+		title = ihmp_middleast.3.t
+		desc = ihmp_middleast.3.d
+		picture = GFX_report_event_dead_soldiers
+		trigger = {
+			tag = PER
+			AND = {
+				has_war_with = SOV
+				has_war_with = ENG
+			}
+			surrender_progress > 0.5
+			has_civil_war = no
+			is_in_faction = no
+		}
+
+		mean_time_to_happen = { days = 1 }
+
+		fire_only_once = yes
+		
+		option = { 
+			name = ihmp_middleast.3.a
+			ai_chance = { factor = 100 }
+			SOV = { country_event = ihmp_middleast.4 }
+		}
+	}
+	country_event = {
+		id = ihmp_middleast.4
+		title = ihmp_middleast.4.t
+		desc = ihmp_middleast.4.d
+		picture = GFX_report_event_dead_soldiers
+		
+		is_triggered_only = yes
+
+		#Accept surrender
+		option = {
+			name = ihmp_middleast.4.a
+			ai_chance = { factor = 1 }
+			PER = {
+				every_enemy_country = {
+					white_peace = PREV
+				}
+			}
+			ENG = { transfer_state = 413 } # Khuzestan
+			ENG = { transfer_state = 412 } # Fars
+			ENG = { transfer_state = 421 } # Kurdistan
+			SOV = { transfer_state = 266 } # Tehran
+			SOV = { transfer_state = 419 } # Tibriz
+			SOV = { transfer_state = 416 } # Khorasan
+			SOV = { transfer_state = 420 } # Gilan
+			SOV = { puppet = PER }
+		}
+
+		#Take it all
+		option = {
+			name = ihmp_middleast.4.b
+			ai_chance = { factor = 0 }
+		}
+	}
