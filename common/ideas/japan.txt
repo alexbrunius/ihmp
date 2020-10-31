@@ -743,6 +743,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 			
 			modifier = {
+				naval_invasion_capacity = 6
 				special_forces_cap = 0.02
 			}
 		}
