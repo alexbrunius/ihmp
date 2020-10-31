@@ -89,15 +89,10 @@ SPR_MP_1 = {
 		low_economic_mobilisation = 0
 		partial_economic_mobilisation = 1
 		war_economy = 1
-		free_trade = 0
-		export_focus = 1
-		limited_exports = 0
-		closed_economy = 0
 		disarmed_nation = 0
 		volunteer_only = 0
 		limited_conscription = 0
 		SPA_ramon_serrano_suner = 100
-		SPA_agustin_munoz_grandes = 0
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -124,7 +119,13 @@ SPR_MP_1 = {
 			rule = SPR_ai_behavior 
 			option = SPR_MP_1
 		}
+		NOT = {
+			has_war_with = ENG
+			has_war_with = GER
+		}
 		has_global_flag = scw_over
+		NOT = { GER = { has_completed_focus = GER_nationalist_spain_ally } }
+		NOT = { ENG = { has_completed_focus = uk_spain_focus } }
 	}
 
 	abort = {
@@ -142,10 +143,6 @@ SPR_MP_1 = {
 				ENG = { has_completed_focus = uk_spain_focus }
 			}
 			AND = {
-				NOT = { GER = { has_completed_focus = GER_nationalist_spain_ally } }
-				NOT = { ENG = { has_completed_focus = uk_spain_focus } }
-			}
-			AND = {
 				NOT = { has_war_with = GER }
 				has_country_flag = {
 					flag = ger_spa_alliance_focus
@@ -155,6 +152,11 @@ SPR_MP_1 = {
 				NOT = { ENG = { has_completed_focus = uk_spain_focus } }
 			}
 			AND = {
+				NOT = { has_war_with = ENG }
+				has_country_flag = {
+					flag = eng_spa_alliance_focus
+					days > 350
+				}
 				NOT = { GER = { has_completed_focus = GER_nationalist_spain_ally } }
 				ENG = { has_completed_focus = uk_spain_focus }
 			}
@@ -199,15 +201,10 @@ SPR_MP_1 = {
 		low_economic_mobilisation = 0
 		partial_economic_mobilisation = 1
 		war_economy = 1
-		free_trade = 0
-		export_focus = 1
-		limited_exports = 0
-		closed_economy = 0
 		disarmed_nation = 0
 		volunteer_only = 0
 		limited_conscription = 0
 		SPA_ramon_serrano_suner = 100
-		SPA_agustin_munoz_grandes = 0
 	}
 
 	ai_strategy = {
@@ -230,7 +227,6 @@ SPR_MP_1 = {
 			factor = 1.0
 		}
 	}
-
 }
 
 SPR_MP_plan_war_with_allies = {
@@ -248,14 +244,13 @@ SPR_MP_plan_war_with_allies = {
 		}
 		OR = {
 			has_war_with = ENG
-			has_war_with = USA
 			AND = {
 				NOT = { has_war_with = GER }
 				GER = { has_completed_focus = GER_nationalist_spain_ally }
 				NOT = { ENG = { has_completed_focus = uk_spain_focus } }
 				has_country_flag = {
 					flag = ger_spa_alliance_focus
-					days > 140
+					days > 139
 				}
 			}
 		}
@@ -312,15 +307,10 @@ SPR_MP_plan_war_with_allies = {
 		low_economic_mobilisation = 0
 		partial_economic_mobilisation = 1
 		war_economy = 1
-		free_trade = 100
-		export_focus = 0
-		limited_exports = 0
-		closed_economy = 0
 		disarmed_nation = 0
 		volunteer_only = 0
 		limited_conscription = 0
 		SPA_ramon_serrano_suner = 100
-		SPA_agustin_munoz_grandes = 0
 	}
 
 	ai_strategy = {
@@ -353,17 +343,24 @@ SPR_historical_plan_war_with_axis = {
 			rule = SPR_ai_behavior 
 			option = SPR_MP_1
 		}
-		OR = {
-			has_war_with = GER
-			has_war_with = ITA
-		}
 		NOT = {
 			has_war_with = ENG
-			has_war_with = USA
 		}
-		NOT = { GER = { has_completed_focus = GER_nationalist_spain_ally } }
-		ENG = { has_completed_focus = uk_spain_focus }
+		OR = {
+			has_war_with = GER
+			AND = {
+				NOT = { has_war_with = GER }
+				has_country_flag = {
+					flag = eng_spa_alliance_focus
+					days > 349
+				}
+				NOT = { GER = { has_completed_focus = GER_nationalist_spain_ally } }
+				ENG = { has_completed_focus = uk_spain_focus }
+			}
+		}
+
 	}
+
 	abort = {
 		OR = {
 			AND = {
@@ -434,15 +431,10 @@ SPR_historical_plan_war_with_axis = {
 		low_economic_mobilisation = 0
 		partial_economic_mobilisation = 1
 		war_economy = 1
-		free_trade = 0
-		export_focus = 1
-		limited_exports = 0
-		closed_economy = 0
 		disarmed_nation = 0
 		volunteer_only = 0
 		limited_conscription = 0
 		SPA_ramon_serrano_suner = 100
-		SPA_agustin_munoz_grandes = 0
 	}
 
 	ai_strategy = {
@@ -460,6 +452,200 @@ SPR_historical_plan_war_with_axis = {
 		}
 	}
 
+}
+
+SPR_MP_Neutrality = {
+	name = "Spanish MP plan 1"
+	desc = "Multiplayer behavior for Nationalist Spain after SCW"
+
+	enable = {
+		OR = {
+			tag = SPR
+			tag = SPA
+		}
+		has_game_rule = {
+			rule = SPR_ai_behavior 
+			option = SPR_MP_1
+		}
+		NOT = {
+			has_war_with = ENG
+			has_war_with = GER
+		}
+		has_global_flag = scw_over
+		GER = { has_completed_focus = GER_nationalist_spain_ally }
+		ENG = { has_completed_focus = uk_spain_focus }
+		OR = {
+			has_country_flag = {
+				flag = ger_spa_alliance_focus
+				days < 140
+			}
+			has_country_flag = {
+				flag = eng_spa_alliance_focus
+				days < 350
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			tag = SPD
+			tag = SPC
+			OR = {
+				has_war_with = ENG
+				has_war_with = GER
+			}
+		}
+	}
+
+	ai_national_focuses = {
+		#AfterSCW
+		SPA_expand_conscription
+		SPA_portuguese_aid
+		SPA_integrate_the_requetes
+		SPA_utilize_the_intellectuals
+		SPA_national_recovery
+		SPA_adopt_the_26_points
+		SPA_direct_the_universities
+		SPA_dictator_for_life
+		SPA_stamp_out_the_maquis
+		SPA_the_national_and_popular_army_of_spain
+		SPA_la_division_azul
+		SPA_the_tangiers_enclave
+		SPA_the_army_of_africa_model
+		SPA_invest_in_naval_infrastructure
+		SPA_expand_the_slipways
+		SPA_prepare_the_pyrenees_defenses
+		SPA_autarky
+		SPA_spanish_austerity
+		SPA_reduce_reliance_on_foreign_resources
+		SPA_expand_the_axis_gold_trade
+		SPA_ensure_agricultural_self_sufficiency
+		SPA_restart_small_scale_shipbuilding
+		SPA_the_plan_imperial
+		SPA_artillery_modernization
+		SPA_defenses_against_strategic_bombing
+		SPA_defenses_against_invasion
+	}
+
+	focus_factors = {
+		SPA_the_iberian_pact = 0
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 1
+		war_economy = 1
+		free_trade = 0
+		export_focus = 1
+		limited_exports = 0
+		closed_economy = 0
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+		SPA_ramon_serrano_suner = 100
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = GER
+		value = -200
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = ENG
+		value = -200
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+SPR_MP_1_Trade_Peace = {
+	name = "Spanish Trade in Peacetime"
+	desc = ""
+
+	enable = {
+		tag = SPR
+		has_game_rule = {
+			rule = SPR_ai_behavior
+			option = SPR_MP_1
+		}
+		NOT = { has_completed_focus = SPA_expand_the_axis_gold_trade }
+	}
+
+	ideas = {
+		free_trade = 0
+		export_focus = 0
+		limited_exports = 0
+		closed_economy = 0
+	}
+}
+
+SPR_MP_1_Trade_Axis = {
+	name = "Spanish Trade with Axis"
+	desc = ""
+
+	enable = {
+		tag = SPR
+		has_game_rule = {
+			rule = SPR_ai_behavior
+			option = SPR_MP_1
+		}
+		has_completed_focus = SPA_expand_the_axis_gold_trade
+	}
+
+	ideas = {
+		free_trade = 0
+		export_focus = 1000
+		limited_exports = 0
+		closed_economy = 0
+	}
+}
+
+SPR_MP_1_Theorist = {
+	name = "Spanish Trade in Peacetime"
+	desc = ""
+
+	enable = {
+		tag = SPR
+		has_game_rule = {
+			rule = SPR_ai_behavior
+			option = SPR_MP_1
+		}
+		NOT = { has_global_flag = SPR_carlist_uprising_flag }
+	}
+
+	ideas = {
+		SPA_jose_enrique_varela = 1
+		SPA_agustin_munoz_grandes = 0
+	}
+}
+
+SPR_MP_1_Carlist_Theorist = {
+	name = "Spanish Trade with Axis"
+	desc = ""
+
+	enable = {
+		tag = SPR
+		has_game_rule = {
+			rule = SPR_ai_behavior
+			option = SPR_MP_1
+		}
+		has_global_flag = SPR_carlist_uprising_flag
+	}
+
+	ideas = {
+		SPA_jose_enrique_varela = 0
+		SPA_agustin_munoz_grandes = 1
+	}
 }
 
 SPR_MP_Get_PP = {
