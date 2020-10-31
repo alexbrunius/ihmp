@@ -2200,6 +2200,13 @@ BUL_internal_factions = {
 				}
 			}
 			modifier = {
+				add = 2
+				has_game_rule = {
+					rule = BUL_ai_behavior
+					option = BUL_MP_1
+				}
+			}
+			modifier = {
 				factor = 0
 				has_game_rule = {
 					rule = BUL_ai_behavior
@@ -2270,6 +2277,14 @@ BUL_internal_factions = {
 			modifier = {
 				add = 2
 				BUL_is_fascist_axis_ai = yes
+
+			}
+			modifier = {
+				add = 2
+				has_game_rule = {
+					rule = BUL_ai_behavior
+					option = BUL_MP_1
+				}
 			}
 			modifier = {
 				factor = 0
@@ -2513,6 +2528,13 @@ BUL_internal_factions = {
 				}
 			}
 			modifier = {
+				add = 2
+				has_game_rule = {
+					rule = BUL_ai_behavior
+					option = BUL_MP_1
+				}
+			}
+			modifier = {
 				factor = 0
 				has_game_rule = {
 					rule = BUL_ai_behavior
@@ -2603,6 +2625,13 @@ BUL_internal_factions = {
 			modifier = {
 				add = 2.5
 				BUL_is_fascist_axis_ai = yes
+			}
+			modifier = {
+				add = 2
+				has_game_rule = {
+					rule = BUL_ai_behavior
+					option = BUL_MP_1
+				}
 			}
 			modifier = {
 				factor = 0
