@@ -378,6 +378,46 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					ROOT = { tag = PER }
+					FROM = {
+						OR = {
+							tag = ENG
+							tag = RAJ
+							tag = SOV
+						}
+					}
+					has_global_flag = historical_iran_split
+				}
+				FRA = { country_event = { id = france.10 } }
+			}
+		}
+#		effect = {
+#			if = {
+#				limit = {
+#					ROOT = { tag = IRQ }
+#					FROM = {
+#						OR = {
+#							tag = ENG
+#							tag = RAJ
+#						}
+#					}
+#				}
+#				IRQ = {
+#					every_enemy_country = {
+#						white_peace = PREV
+#					}
+#				}
+#				ENG = {
+#					annex_country = {
+#						target = IRQ
+#						transfer_troops = no
+#					}
+#				}
+#			}
+#		}
+		effect = {
+			if = {
+				limit = {
 					ROOT = { original_tag = FRA }
 					FROM = { tag = GER }
 					NOT = { has_global_flag = achievement_france_surrender }
