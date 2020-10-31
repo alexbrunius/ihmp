@@ -2019,6 +2019,7 @@ focus_tree = {
 					limit = {
 						original_tag = SPR
 					}
+					set_country_flag = eng_spa_alliance_focus
 					add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
 					add_timed_idea = { idea = democratic_influence days = 1095 }
 					country_event = { id = generic.1 }
@@ -2039,6 +2040,7 @@ focus_tree = {
 					limit = {
 						original_tag = SPR
 					}
+					set_country_flag = eng_spa_alliance_focus
 					add_opinion_modifier = { target = ENG modifier = fascism_leanings_good }
 					add_timed_idea = { idea = fascist_influence days = 1095 }
 					country_event = { id = generic.1 }
@@ -2062,6 +2064,7 @@ focus_tree = {
 					limit = {
 						original_tag = SPR
 					}
+					set_country_flag = eng_spa_alliance_focus
 					add_opinion_modifier = { target = ENG modifier = neutrality_leanings_good }
 					add_timed_idea = { idea = neutrality_influence days = 1095 }
 					country_event = { id = generic.1 }
