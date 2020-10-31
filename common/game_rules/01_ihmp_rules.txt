@@ -44,3 +44,18 @@ AI_MILITARY_POLICE = {
 		desc = "FREE_TEMPLATE_DESC"
 	}
 }
+
+AI_DISBAND_DIVISIONS = {
+	name = "AI_DISBAND_DIVISIONS"
+	group = "RULE_GROUP_GAME_SETUP"
+	option = {
+		name = DEFAULT
+		text = "DEFAULT"
+		desc = "DEFAULT_DESC"
+	}
+	default = {
+		name = DISBAND
+		text = "RULE_OPTION_DISBAND"
+		desc = "DISBAND_DESC"
+	}
+}
