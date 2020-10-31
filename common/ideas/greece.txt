@@ -970,7 +970,7 @@ ideas = {
 			removal_cost = -1
 				
 			modifier = {
-				conscription = 0.002
+				conscription_factor = 0.025
 			}
 		}
 
@@ -1008,7 +1008,7 @@ ideas = {
 			removal_cost = -1
 				
 			modifier = {
-				conscription = 0.002
+				conscription_factor = 0.025
 				army_morale_factor = 0.10 
 			}
 		}		
@@ -1028,7 +1028,7 @@ ideas = {
 			removal_cost = -1
 				
 			modifier = {
-				conscription = 0.004
+				conscription_factor = 0.05
 				army_morale_factor = 0.10 
 				land_reinforce_rate = 0.05
 			}
@@ -1627,7 +1627,7 @@ ideas = {
 			modifier = {		
 				communism_drift = 0.1	
 				political_power_factor = 0.05
-				conscription = 0.02		
+				conscription_factor = 0.1
 			}
 		}	
 
@@ -1648,7 +1648,7 @@ ideas = {
 			modifier = {	
 				communism_drift = 0.1	
 				political_power_factor = 0.05
-				conscription = 0.02
+				conscription_factor = 0.1
 				army_morale_factor = 0.08		
 			}
 		}
@@ -1670,7 +1670,7 @@ ideas = {
 			modifier = {
 				communism_drift = 0.1
 				political_power_factor = 0.05
-				conscription = 0.03
+				conscription_factor = 0.15
 				army_org_factor = 0.04	
 			}
 		}

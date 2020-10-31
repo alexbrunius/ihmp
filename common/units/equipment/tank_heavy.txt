@@ -3,10 +3,17 @@ equipments = {
 	heavy_tank_equipment = {
 		year = 1934
 
+		can_be_produced = {
+			NOT = {
+				has_idea = BUL_army_restrictions
+			}
+		}
+
 		is_archetype = yes
 		is_convertable = yes
 		picture = archetype_heavy_tank_equipment
 		is_buildable = no
+		is_convertable = yes
 		type = armor
 		group_by = archetype
 		
@@ -123,6 +130,12 @@ equipments = {
 
 	heavy_tank_artillery_equipment = {
 		year = 1934
+
+		can_be_produced = {
+			NOT = {
+				has_idea = BUL_army_restrictions
+			}
+		}
 
 		is_archetype = yes
 		is_convertable = yes
@@ -252,6 +265,12 @@ equipments = {
 
 	heavy_tank_destroyer_equipment = {
 		year = 1934
+
+		can_be_produced = {
+			NOT = {
+				has_idea = BUL_army_restrictions
+			}
+		}
 
 		is_archetype = yes
 		is_convertable = yes
@@ -385,6 +404,12 @@ equipments = {
 
 	heavy_tank_aa_equipment = {
 		year = 1934
+
+		can_be_produced = {
+			NOT = {
+				has_idea = BUL_army_restrictions
+			}
+		}
 
 		is_archetype = yes
 		is_convertable = yes

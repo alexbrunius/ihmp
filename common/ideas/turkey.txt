@@ -1490,7 +1490,7 @@ ideas = {
 			removal_cost = -1
 				
 			modifier = {
-				conscription = 0.02
+				conscription_factor = 0.1
 				fascism_drift = 0.03
 				resistance_garrison_penetration_chance = -0.15
 			}
@@ -1511,7 +1511,7 @@ ideas = {
 			removal_cost = -1
 				
 			modifier = {
-				conscription = 0.01
+				conscription_factor = 0.02
 				communism_drift = 0.08
 				production_factory_efficiency_gain_factor = 0.05
 			}
