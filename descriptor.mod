@@ -1,4 +1,4 @@
-version="1.9.3.8"
+version="1.10.2.0"
 tags={
 	"Fixes"
 	"Gameplay"
@@ -6,5 +6,5 @@ tags={
 	"Historical"
 }
 name="Improved Historical MP"
-supported_version="1.9.*"
+supported_version="1.10.*"
 remote_file_id="2017189237"

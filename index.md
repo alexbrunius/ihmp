@@ -1,4 +1,39 @@
 # Changelog:
+- Added ai_strategy_plan for new BftB countries.
+- Updated the mod to BftB.
+- Operation Fork doesn't need Norway to have capitulated.
+- Updated Canada ai_strategy_plan.
+- Shadow Factories now give MIC and Dollar-a-Year Men CIC.
+- Added surrender event for Iran, similar to Winter War event.
+- Siam and Malasia still research radar, but build only 1 level.
+- Added Phillipine ai_strategy_plan.
+- Added new gamerule for disbanding ai divisions.
+- Halfed reliability loss and gain for tank variants.
+- SS templates are no longer locked.
+- Integrated Joe's division name list tweaks.
+- Added a game rule for SOV/LIT/LAT/EST harsh occupation, by default only the 3 most harsh laws are available for fascist nations on Soviet cores.
+- Romanian Ford designer properly gives cost reduction for MOT now.
+- GER-SOV treaty now gives AoT bonus only for MARM1 and MARM2.
+- All sub types now limited to max 2 torp, 1 radar, 1 snorkel 1 mine and 1 airplane module. 36/40/44 and cruiser subs can mount radar and snorkel simultaneously.
+- Made all dispersed/concentrated industry tech levels exclusive to prevent blueprint stealing exploit.
+- Breaking ciphers now gives 20% intel in each category, instead of 50%.
+- Added supply factor increase of between 4-12% to all Artillery, SP Artillery and Tank battalions to discourage SA stacking. Lowered their baseline supply consumption by 20% to compensate reasonable templates.
+- Arsenal of Democracy now unlocked at 35% war support.
+- Giant Wakes now bypasses if US is already out of isolation.
+- Germany only gets 50 compliance in Bohemia if they actually puppet Slovakia.
+- France now joins the allies when Fate of Czechoslovakia finishes on historical mode.
+- Intel netwrok max planning and entrenchment reduction now capped at 33%, to prevent stacking exploits.
+- Naval mines speed penalty reduced 50->30%.
+- Fixed soviet re-gauging infrastructure damage feature.
+- PCDI now gives 50% MIC conversion speed, from 20%.
+- PCDI now requires only 1 of the prerequisite NFs.
+- Invasion techs now give 6 invasion capacity each.
+- US NF Amphibious Operations now gives 12 invasion capacity.
+- Japanese NF Expand the SNLF now gives 6 invasion capacity.
+- UK's SAS NF now gives 6 invasion capacity.
+- Each level of encryption now gives 6000 points, from 4250.
+- Siam now becomes imperial associate instead of imperial protectorate (lower subject level).
+
 ## 1.9.3.8
 - Fixed ai_strategy issues that were causing parse errors and breaking saves.
 - Italian Pact of Steel NF no longer bypassed or blocked when Italy already is in a faction.
