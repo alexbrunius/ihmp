@@ -550,6 +550,49 @@ foreign_politics = {
 			}
 		}
 	}
+	
+	SOV_sue_for_peace_FIN = {
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			FIN = {
+				surrender_progress < 0.2 # if they are losing, lets not allow it
+			}
+		}
+
+#		target_array = enemies
+#
+#		target_trigger = {
+#			#Target is FROM
+#			FROM = {
+#				tag = FIN
+#				has_war_with = ROOT
+#			}
+#		}
+
+		visible = {
+			any_enemy_country = {
+				tag = FIN
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			FIN = {
+				country_event = { id = finland.103 days = 1 }
+			}
+		}
+	}
 
 #	defend_Kresy = {
 #		allowed = {
