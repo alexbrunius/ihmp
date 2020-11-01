@@ -233,7 +233,7 @@ country_event = {
 			}
 		}
 		FIN = {
-			country_event = { id = italy.100 }
+			country_event = { id = finland.100 }
 		}
 		set_global_flag = sov_yes_pact
 	}
