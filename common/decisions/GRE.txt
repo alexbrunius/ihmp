@@ -2297,9 +2297,11 @@ GRE_pay_back_debt_to_the_ifc_category = {
 					rule = GRE_ai_behavior
 					option = GRE_MP_1
 				}
-				NOT = { has_completed_focus = GRE_bedrock_of_balkan_financial_stability }
-				check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 0 compare = greater_than }
-				check_variable = { var = GRE_debt_to_the_ifc_france_var value = 0 compare = greater_than }
+				OR = {
+					NOT = { has_completed_focus = GRE_bedrock_of_balkan_financial_stability }
+					check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 0 compare = greater_than }
+					check_variable = { var = GRE_debt_to_the_ifc_france_var value = 0 compare = greater_than }
+				}
 			}
 		}
 
