@@ -2088,7 +2088,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_war = yes
-				has_war_support > 0.3
+				has_war_support > 0.5
 			}
 			democratic > 0.95
 		}
@@ -2129,7 +2129,7 @@ focus_tree = {
 						has_country_flag = USA_the_giant_wakes_added_civ_eco
 					}
 				}
-				add_ideas = civilian_economy
+				add_ideas = partial_economic_mobilisation
 				set_country_flag = USA_the_giant_wakes_added_civ_eco
 			}
 		}
