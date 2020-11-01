@@ -218,6 +218,8 @@ FIN_MP_Antagonize = {
 	}
 
 	abort = {
+		NOT = { has_war_with = SOV }
+		owns_state = 146
 	}
 
 	ai_strategy = {
@@ -239,6 +241,30 @@ FIN_MP_Antagonize = {
 		type = alliance
 		id = GER
 		value = -1000
+	}
+}
+
+FIN_MP_Stop_Cooperation = {
+	name = "Stop Befriending Germany"
+	desc = ""
+
+	enable = {
+		tag = FIN
+		has_game_rule = {
+			rule = FIN_ai_behavior
+			option = FIN_MP_1
+		}
+		has_global_flag = Finland_Peace
+	}
+
+	abort = {
+		has_war_with = SOV
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = GER
+		value = 0
 	}
 }
 
@@ -302,9 +328,7 @@ FIN_MP_Contiuation_War_1 = {
 				has_capitulated = yes
 				is_subject = yes
 				NOT = { has_government = communism }
-				
 			}
-			
 		}
 	}
 
@@ -320,6 +344,102 @@ FIN_MP_Contiuation_War_1 = {
 	}
 }
 
+FIN_MP_Contiuation_War_2 = {
+	name = "Stop attacking Leningrad"
+	desc = ""
+
+	enable = {
+		tag = FIN
+		has_game_rule = {
+			rule = FIN_ai_behavior
+			option = FIN_MP_1
+		}
+		OR = {
+			ROOT = {
+				has_war_with = SOV
+			}
+			GER = {
+				has_war_with = SOV
+			}
+		}
+		SOV = {
+			is_subject = no
+			has_government = communism		
+		}
+	}
+
+	abort = {
+		SOV = {
+			OR ={
+				has_capitulated = yes
+				is_subject = yes
+				NOT = { has_government = communism }
+			}
+		}
+	}
+
+#used for controlling invasion or regular fronts
+	ai_strategy = {
+		type = front_control
+		state = 195
+		priority = 100 # default 0, higher prio strats will override lower
+		ordertype = front # front or invasion. if set this strategy will only apply to that specific order type
+		execution_type = careful # one of careful balanced rush rush_weak. if set will override the execution type of front (only for front orders)
+		execute_order = no # yes or no. if set will override execute or not decision of front
+		manual_attack = no # default yes. if no ai will not do manual pokes at enemy (only for front orders)
+	}
+}
+
+FIN_MP_Contiuation_War_3 = {
+	name = "Stop attacking Soviet"
+	desc = ""
+
+	enable = {
+		tag = FIN
+		has_game_rule = {
+			rule = FIN_ai_behavior
+			option = FIN_MP_1
+		}
+		OR = {
+			ROOT = {
+				has_war_with = SOV
+			}
+			GER = {
+				has_war_with = SOV
+			}
+		}
+		SOV = {
+			is_subject = no
+			has_government = communism		
+		}
+	}
+
+	abort = {
+		SOV = {
+			OR ={
+				has_capitulated = yes
+				is_subject = yes
+				NOT = { has_government = communism }
+			}
+		}
+	}
+
+#used for controlling invasion or regular fronts
+	ai_strategy = {
+		type = front_control
+		state = 208
+		state = 195
+		state = 244
+		state = 264
+		state = 351
+		state = 214
+		priority = 100 # default 0, higher prio strats will override lower
+		ordertype = front # front or invasion. if set this strategy will only apply to that specific order type
+		execution_type = careful # one of careful balanced rush rush_weak. if set will override the execution type of front (only for front orders)
+		execute_order = no # yes or no. if set will override execute or not decision of front
+		manual_attack = no # default yes. if no ai will not do manual pokes at enemy (only for front orders)
+	}
+}
 
 FIN_MP_Civ_Aland = {
 	name = "Build 1 Civ in Aland"
