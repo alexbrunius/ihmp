@@ -17,18 +17,18 @@ GRE_MP_1 = {
 	}
 
 	ai_national_focuses = {
-		GRE_the_kings_government
 		GRE_reevaluating_the_drachma
 		GRE_force_the_farmers_into_factories
 		GRE_paying_back_our_debts_in_bulk
+		GRE_fiscal_responsibility
+		GRE_bedrock_of_balkan_financial_stability
+		GRE_the_kings_government
 		GRE_metaxism_focus
 		GRE_the_hellenic_spirit
 		GRE_the_national_youth_organisation
 		GRE_crack_down_on_the_republicans
 		GRE_use_the_military
 		GRE_an_orthodox_state
-		GRE_fiscal_responsibility
-		GRE_bedrock_of_balkan_financial_stability
 		GRE_greek_autarky
 		GRE_increase_our_mining_operations
 		GRE_mobilise_our_economy
@@ -48,13 +48,6 @@ GRE_MP_1 = {
 	}
 
 	ideas = {
-		GRE_georgios_papandreou = 1000
-		GRE_damaskinos = 0
-		GRE_eleftherios_venizelos = 0
-		free_trade = 100
-		export_focus = 0
-		limited_exports = 0
-		closed_economy = 0
 	}
 	
 
@@ -73,6 +66,148 @@ GRE_MP_1 = {
 	focus_factors = {
 		GRE_securing_the_bulgarian_menace = 0
 		GRE_our_traditional_allies_in_the_aegean = 0
+	}
+}
+
+GRE_MP_Ideas = {
+	name = "GRE Ideas"
+	desc = ""
+
+	enable = {
+		tag = GRE
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		#Trade
+		free_trade = 0
+		export_focus = 0
+		limited_exports = 0
+		closed_economy = 0
+		GRE_damaskinos = 0
+		GRE_ioannis_metaxas = 0
+		GRE_konstantinos_maniadakis = 0
+		GRE_georgios_papandreou_bftb = 0
+		GRE_konstantinos_tsaldaris = 0
+		GRE_aristeidis_dimitratos = 1
+		GRE_emmanouil_tsouderos = 2
+		GRE_sophoklis_venizelos = 0
+		GRE_aristotle_onassis = 0
+		GRE_xenophon_giosmas = 0
+		GRE_dimitris_glinos = 0
+		GRE_dimitrios_holevas = 0
+		GRE_markos_vafiadis = 0
+		GRE_father_dimistrios = 1
+		#Theorists
+		GRE_alexandros_papagos_theorist = 1
+		GRE_konstantinos_ventiris_bftb = 0
+		GRE_marinos_mitralexis = 0
+		spyridon_avgeris = 0
+		#Army Chief
+		GRE_alexandros_papagos = 1
+		GRE_georgios_tsolakoglou = 0
+		GRE_nikolaos_plastiras_bftb = 0
+		GRE_aris_velouchiotis_bftb = 0
+		#Air Chief
+		GRE_panagiotis_gazis_bftb = 0
+		GRE_vasilios_tsarpalis_bftb = 0
+		#Naval Chief
+
+		#High Command
+		GRE_napoleon_zervas_bftb = 1
+		GRE_nikos_beloyannis_bftb = 1
+		GRE_georgios_kosmas = 1
+		GRE_epameinondas_kavvadias = 0
+		GRE_dimitrios_oikonomou = 0
+		#Designer
+		GRE_biamax = 0
+		GRE_man = 0
+		GRE_fiat = 0
+		GRE_vickers_armstrong = 1
+		gnaf = 0 #Fighter Designer
+		GRE_aekkea = 0
+		GRE_phaliron_aircraft = 0
+		GRE_royal_hellenic_naval_shipyard = 1
+		GRE_basileiades = 0
+		GRE_astilleros_onassis = 0
+		GRE_pyrkal = 1
+		GRE_petropoulos = 0
+		GRE_rsaf_enfield = 0
+		GRE_rheinmetall = 0
+		GRE_ford_motor_company = 0
+		GRE_grabin_design_bureau = 0
+		#Industry
+		GRE_dep = 0
+		GRE_english_electric = 0
+		GRE_siemens = 0
+		GRE_pitsos = 5
+		GRE_aete = 0
+		GRE_neorion = 0
+	}
+}
+
+GRE_MP_Early_Ideas = {
+	name = "GRE Early Ideas over"
+	desc = ""
+
+	enable = {
+		tag = GRE
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}
+		NOT = { has_completed_focus = GRE_bedrock_of_balkan_financial_stability }
+	}
+
+	abort = {
+		has_completed_focus = GRE_bedrock_of_balkan_financial_stability
+	}
+
+	ideas = {
+		GRE_aristeidis_dimitratos = 0
+		GRE_vickers_armstrong = 0
+		GRE_royal_hellenic_naval_shipyard = 0
+		GRE_pyrkal = 0
+		GRE_alexandros_papagos_theorist = 0
+	}
+}
+
+GRE_MP_Peace_Ideas = {
+	name = "GRE Democratic Ideas over"
+	desc = ""
+
+	enable = {
+		tag = GRE
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}
+	}
+
+	abort = {
+		OR = {
+			date > 1939.1.1
+			has_war = yes
+		}
+	}
+
+	ideas = {
+		GRE_alexandros_papagos = 0
+		GRE_alexandros_sakellariou_bftb = 0
+		GRE_petros_voulgaris_bftb = 0
+		GRE_napoleon_zervas_bftb = 0
+		GRE_nikos_beloyannis_bftb = 0
+		GRE_georgios_kosmas = 0
+		GRE_royal_hellenic_naval_shipyard = 0
+		limited_conscription = 0
 	}
 }
 
@@ -99,6 +234,215 @@ GRE_MP_Doctrine = {
 	}
 }
 
+GRE_MP_Only_Befriend_Helpers_for_Focus = {
+	name = "Befriend Helpers"
+	desc = ""
+
+	enable = {
+		original_tag = GRE
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}
+	}
+
+	abort = {
+		OR = {
+			focus_progress = {
+				focus = GRE_bedrock_of_balkan_financial_stability
+				progress > 0
+			}
+			NOT = { 
+				has_completed_focus = GRE_bedrock_of_balkan_financial_stability
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = -200
+	}	
+}
+
+GRE_MP_Befriend_Balkan = {
+	name = "Befriend Balkan"
+	desc = ""
+
+	enable = {
+		original_tag = GRE
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}
+		focus_progress = {
+			focus = GRE_bedrock_of_balkan_financial_stability
+			progress > 0
+		}
+	}
+
+	abort = {
+		has_completed_focus = GRE_bedrock_of_balkan_financial_stability
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = CZE
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = AUS
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = YUG
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = ALB
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = TUR
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = ROM
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = HUN
+		value = 200
+	}
+	ai_strategy = {
+		type = pp_spend_amount
+		id = decision
+		value = 0
+	}
+	ai_strategy = {
+		type = pp_spend_amount
+		id = ideas
+		value = 0
+	}
+}
+
+GRE_MP_NoPlanes = {
+	name = "No Plane Production"
+	desc = ""
+
+	enable = {
+		original_tag = GRE
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = scout_plane
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = scout_plane
+		value = -1000
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = screen_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = capital_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = submarine
+		value = -100
+	}
+}
+
 GRE_MP_Ignore_TUR = {
 	name = "Ignore Turkey, shorten Front"
 	desc = ""
@@ -121,7 +465,7 @@ GRE_MP_Ignore_TUR = {
 	}
 }
 
-GRE_MP_Ignore_BUL = {
+GRE_MP_Ignore_GRE = {
 	name = "Ignore Bulgaria, shorten Front"
 	desc = ""
 
@@ -131,14 +475,14 @@ GRE_MP_Ignore_BUL = {
 			rule = GRE_ai_behavior
 			option = GRE_MP_1
 		}
-		NOT = { has_war_with = BUL }
+		NOT = { has_war_with = GRE }
 		731 = {
 			is_fully_controlled_by = GRE
 		}
 	}
 
 	abort = {
-		has_war_with = BUL
+		has_war_with = GRE
 		731 = {
 			NOT = {
 				is_fully_controlled_by = GRE
@@ -151,29 +495,6 @@ GRE_MP_Ignore_BUL = {
 		state = 211
 		state = 212
 		value = -200
-	}
-}
-
-GRE_MP_Production = {
-	name = "Production"
-	desc = ""
-
-	enable = {
-		tag = GRE
-		has_game_rule = {
-			rule = GRE_ai_behavior
-			option = GRE_MP_1
-		}
-		num_of_military_factories > 10
-	}
-
-	abort = {
-	}
-
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = infantry_equipment
-		value = -75
 	}
 }
 
