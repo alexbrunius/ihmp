@@ -24,20 +24,20 @@ GRE_MP_1 = {
 		GRE_bedrock_of_balkan_financial_stability
 		GRE_the_kings_government
 		GRE_metaxism_focus
+		GRE_greek_autarky
+		GRE_increase_our_mining_operations
+		GRE_mobilise_our_economy
 		GRE_the_hellenic_spirit
 		GRE_the_national_youth_organisation
 		GRE_crack_down_on_the_republicans
 		GRE_use_the_military
 		GRE_an_orthodox_state
-		GRE_greek_autarky
-		GRE_increase_our_mining_operations
-		GRE_mobilise_our_economy
-		GRE_clear_the_slums
-		GRE_crack_down_on_foreign_monopolies
-		GRE_academy_of_athens
 		GRE_third_hellenic_civilization
 		GRE_defending_our_kingdom
 		GRE_reviving_the_spartan_warrior_spirit
+		GRE_clear_the_slums
+		GRE_crack_down_on_foreign_monopolies
+		GRE_academy_of_athens
 		GRE_lignite_liquefaction
 		GRE_extracting_more_from_our_soil
 		GRE_prepare_against_the_mediterranean_threat
@@ -98,7 +98,7 @@ GRE_MP_Ideas = {
 		GRE_georgios_papandreou_bftb = 0
 		GRE_konstantinos_tsaldaris = 0
 		GRE_aristeidis_dimitratos = 1
-		GRE_emmanouil_tsouderos = 2
+		GRE_emmanouil_tsouderos = 10
 		GRE_sophoklis_venizelos = 0
 		GRE_aristotle_onassis = 0
 		GRE_xenophon_giosmas = 0
@@ -173,7 +173,7 @@ GRE_MP_Early_Ideas = {
 
 	ideas = {
 		GRE_aristeidis_dimitratos = 0
-		GRE_vickers_armstrong = 0
+		GRE_emmanouil_tsouderos = 0
 		GRE_royal_hellenic_naval_shipyard = 0
 		GRE_pyrkal = 0
 		GRE_alexandros_papagos_theorist = 0
@@ -207,7 +207,7 @@ GRE_MP_Peace_Ideas = {
 		GRE_nikos_beloyannis_bftb = 0
 		GRE_georgios_kosmas = 0
 		GRE_royal_hellenic_naval_shipyard = 0
-		limited_conscription = 0
+		GRE_vickers_armstrong = 0
 	}
 }
 
@@ -249,9 +249,10 @@ GRE_MP_Only_Befriend_Helpers_for_Focus = {
 	abort = {
 		OR = {
 			focus_progress = {
-				focus = GRE_bedrock_of_balkan_financial_stability
-				progress > 0
+				focus = GRE_fiscal_responsibility
+				progress > 0.6
 			}
+			has_completed_focus = GRE_fiscal_responsibility
 			NOT = { 
 				has_completed_focus = GRE_bedrock_of_balkan_financial_stability
 			}
@@ -275,9 +276,12 @@ GRE_MP_Befriend_Balkan = {
 			rule = GRE_ai_behavior
 			option = GRE_MP_1
 		}
-		focus_progress = {
-			focus = GRE_bedrock_of_balkan_financial_stability
-			progress > 0
+		OR = {
+			focus_progress = {
+				focus = GRE_fiscal_responsibility
+				progress > 0.6
+			}
+			has_completed_focus = GRE_fiscal_responsibility
 		}
 	}
 
@@ -460,7 +464,7 @@ GRE_MP_Ignore_TUR = {
 	
 	ai_strategy = {
 	 	type = front_unit_request
-		state = 341
+		tag = TUR
 		value = -200
 	}
 }
