@@ -106,6 +106,7 @@ political_actions = {
 				has_stability < 0.6
 				NOT = { tag = CHI }
 				NOT = { tag = BUL }
+				NOT = { tag = GRE }
 			}
 			modifier = {
 				add = 1
@@ -122,6 +123,25 @@ political_actions = {
 						option = BUL_MP_1
 					}
 				}
+			}
+			modifier = {
+				add = 1
+				tag = GRE
+				NOT = {
+					has_game_rule = {
+						rule = GRE_ai_behavior
+						option = GRE_MP_1
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				tag = GRE
+				has_game_rule = {
+					rule = GRE_ai_behavior
+					option = GRE_MP_1
+				}
+				GRE = { has_completed_focus = GRE_bedrock_of_balkan_financial_stability }
 			}
 			modifier = {
 				add = 1
@@ -208,6 +228,7 @@ political_actions = {
 				add = 1
 				has_stability < 0.4
 				NOT = { tag = BUL }
+				NOT = { tag = GRE }
 			}
 			modifier = {
 				add = 1
@@ -216,6 +237,16 @@ political_actions = {
 					has_game_rule = {
 						rule = BUL_ai_behavior
 						option = BUL_MP_1
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				tag = GRE
+				NOT = {
+					has_game_rule = {
+						rule = GRE_ai_behavior
+						option = GRE_MP_1
 					}
 				}
 			}
