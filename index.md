@@ -1,4 +1,12 @@
 # Changelog:
+
+## 1.10.2.1
+- Waking the Giant now requires 50% war support and switches directly to partial mobilisation.
+- Improvements to Bulgarian AI.
+- Added Continuation War white peace events. Finland offers a white peace to Soviet after shock is over, if it controls its core territory again but Soviet loses 10% stability accepting that. Soviet always can use a decision to trigger another white peace offer event, but which then gives the whole eastern region including Murmansk and Olonets to Finland.
+- Updated Greece ai_strategy_plan for BftB.
+
+## 1.10.2.0
 - Added ai_strategy_plan for new BftB countries.
 - Updated the mod to BftB.
 - Operation Fork doesn't need Norway to have capitulated.
