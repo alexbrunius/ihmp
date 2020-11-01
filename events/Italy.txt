@@ -20,9 +20,6 @@ country_event = {
 		USA = {
 			set_country_flag = { flag = USA_albania_window days = 60 value = 1 }
 		}
-		GRE = {
-			country_event = { id = italy.100 }
-		}
 		hidden_effect = {
 			country_event = { days = 1 id = news.22 }
 		}
@@ -577,36 +574,5 @@ country_event = {
 		name = italy.16.a
 
 		transfer_state = 735
-	}
-}
-
-# Greece Mobilizes
-country_event = {
-	id = italy.100
-	title = italy.100.t
-	desc = italy.100.d
-	picture = GFX_report_event_generic_sign_treaty1
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = italy.100.a
-		ROOT = {
-			if = {
-				limit = { has_idea = disarmed_nation }
-				add_ideas = extensive_conscription
-				add_political_power = -450
-			}
-			if = {
-				limit = { has_idea = volunteer_only }
-				add_ideas = extensive_conscription
-				add_political_power = -300
-			}
-			if = {
-				limit = { has_idea = limited_conscription }
-				add_ideas = extensive_conscription
-				add_political_power = -150
-			}
-		}
 	}
 }
