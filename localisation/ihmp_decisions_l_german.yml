@@ -5,3 +5,4 @@
  FRA_move_government_to_Brazzaville:0 "Verlegt die Hauptstadt von Frankreich nach Brazzaville. Möglich solange Brazzaville von Frankreich kontrolliert wird, Frankreich kapituliert ha, sowie Algiers nichtmehr von Frankreich kontrolliert ist."
  FRA_move_government_to_Bordeaux:0 "Verlegt die Hauptstadt von Paris nach Boredeaux."
  FRA_move_government_to_Paris:0 "Verlegt die Hauptstadt von Frankreich zurück nach Paris."
+ SOV_sue_for_peace_FIN:0 "Finland einen Frieden vorschlagen."

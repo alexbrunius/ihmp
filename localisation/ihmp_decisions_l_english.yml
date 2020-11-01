@@ -5,3 +5,4 @@
  FRA_move_government_to_Brazzaville:0 "Moves the capital of France to Brazzaville. Possible as long as Brazzaville  is controlled by France, France itself capitulated and Algiers isn't controlled by France anymore."
  FRA_move_government_to_Bordeaux:0 "Moves the capital of France from Paris to Boredeaux."
  FRA_move_government_to_Paris:0 "Moves the capital of France back to Paris."
+ SOV_sue_for_peace_FIN:0 "Offer Peace to Finland."
