@@ -2279,6 +2279,10 @@ focus_tree = {
 				owns_state = 339
 				339 = { is_claimed_by = ROOT }
 			}
+			OR = { 
+				owns_state = 797
+				797 = { is_claimed_by = ROOT }
+			}
 		}
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -2287,11 +2291,12 @@ focus_tree = {
 			add_state_claim = 347
 			add_state_claim = 340
 			add_state_claim = 339
+			add_state_claim = 797
 			add_named_threat = { threat = 2 name = SOV_claim_on_the_straits }
 			create_wargoal = {
 				type = take_state_focus
 				target = TUR
-				generator = { 341 347 340 339 }
+				generator = { 341 347 340 339 797 }
 			}
 		}
 	}
@@ -2306,6 +2311,7 @@ focus_tree = {
 			347 = { is_controlled_by = SOV }
 			340 = { is_controlled_by = SOV }
 			339 = { is_controlled_by = SOV }
+			797 = { is_controlled_by = SOV }
 		}
 		bypass = {
 			187 = { is_controlled_by = SOV }
@@ -2845,7 +2851,10 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			NOT = { has_idea = trotskyite_plot_purged }
+				NOT = {
+					has_dlc = "La Resistance"
+				}
+				NOT = { has_idea = trotskyite_plot_purged }
 		}
 		x = 2
 		y = 1

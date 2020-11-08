@@ -56,7 +56,7 @@ BUL_historical_plan = {
 		BUL_prussia_of_the_balkans
 		BUL_expand_varna_naval_base
 		BUL_develop_burgas_shipyards
-		BUL_bulgarisation_of_the_balkans
+		BUL_bulgarian_administration_of_the_balkans
 		BUL_steel_plant_in_pernik
 		BUL_restore_the_tarnovo_constitution
 		BUL_freedom_of_press

@@ -5966,7 +5966,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		ai_will_do = {
-			factor = 1
+			factor = 7
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {

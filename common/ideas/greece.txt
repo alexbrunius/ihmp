@@ -2277,7 +2277,7 @@ theorist = {
 		traits = { air_warfare_theorist }
 	}
 
-	spyridon_avgeris = {
+	GRE_spyridon_avgeris = {
 		ledger = navy
 				
 		picture = generic_navy_anti_submarine_eastern_european_2d

@@ -1522,13 +1522,21 @@
 				limit = { 
 					#has_dlc = "Battle for the Bosporus" #TODO
 				}
-				every_country = {
+				every_other_country = {
 					limit = {
 						has_opinion_modifier = BFTB_balkan_pact_ally
 					}
 					remove_opinion_modifier = {
 						target = ROM
 						modifier = BFTB_balkan_pact_ally
+					}
+					hidden_effect = {
+						ROOT = {
+							remove_opinion_modifier = {
+								target = PREV
+								modifier = BFTB_balkan_pact_ally
+							}
+						}
 					}
 				}
 			}
@@ -1543,7 +1551,7 @@
 					}
 					remove_opinion_modifier = {
 						target = HUN
-						modifier = BFTB_incongruous_neighbors
+						modifier = BFTB_balkan_pact_enemy
 					}
 					add_opinion_modifier = {
 						target = BUL
@@ -1552,50 +1560,6 @@
 					add_opinion_modifier = {
 						target = HUN
 						modifier = BFTB_incongruous_neighbors
-					}
-				}
-				if = {
-					limit = {
-						GRE = {
-							has_opinion_modifier = BFTB_balkan_pact_ally
-						}
-					}
-					remove_opinion_modifier = {
-						target = GRE
-						modifier = BFTB_balkan_pact_ally
-					}
-				}
-				if = {
-					limit = {
-						HUN = {
-							has_opinion_modifier = BFTB_balkan_pact_ally
-						}
-					}
-					remove_opinion_modifier = {
-						target = HUN
-						modifier = BFTB_balkan_pact_ally
-					}
-				}
-				if = {
-					limit = {
-						TUR = {
-							has_opinion_modifier = BFTB_balkan_pact_ally
-						}
-					}
-					remove_opinion_modifier = {
-						target = TUR
-						modifier = BFTB_balkan_pact_ally
-					}
-				}
-				if = {
-					limit = {
-						YUG = {
-							has_opinion_modifier = BFTB_balkan_pact_ally
-						}
-					}
-					remove_opinion_modifier = {
-						target = YUG
-						modifier = BFTB_balkan_pact_ally
 					}
 				}
 			}
@@ -1765,7 +1729,7 @@
 			is_subject = no
 			YUG = {
 				exists = yes
-				is_puppet = no
+				is_subject = no
 				NOT = {
 					is_in_faction_with = ROM
 				}
@@ -1781,6 +1745,8 @@
 			YUG = {
 				has_war = yes
 			}
+			YUG = { is_subject_of = ROOT }
+			YUG = { exists = no }
 			has_wargoal_against = YUG
 		}
 
@@ -1791,15 +1757,22 @@
 		completion_reward = {
 			#Only split if YUG is not at war
 			if = {
-				limit = { YUG = { has_war = yes } }
+				limit = {
+					YUG = {
+						OR = {
+							has_war = yes
+							is_subject = yes
+						}
+					}
+				}
 				create_wargoal = {
 					type = annex_everything
 					target = YUG
 				}
-				else = {
-					unlock_decision_category_tooltip = ROM_dividing_yugo
-					set_country_flag = invited_to_split_yugo
-				}
+			}
+			else = {
+				unlock_decision_category_tooltip = ROM_dividing_yugo
+				set_country_flag = invited_to_split_yugo
 			}
 		}
 	}
@@ -2284,13 +2257,27 @@
 						TUR = { is_faction_leader = yes }
 					}
 				}
-				every_country = {
+				every_other_country = {
 					limit = {
 						has_opinion_modifier = BFTB_balkan_pact_ally
 					}
 					remove_opinion_modifier = {
 						target = ROM
 						modifier = BFTB_balkan_pact_ally
+					}
+					if = {
+						limit = {
+							NOT = {	is_in_faction_with = TUR }
+							TUR = { is_faction_leader = no }
+						}
+						hidden_effect = {
+							ROOT = {
+								remove_opinion_modifier = {
+									target = PREV
+									modifier = BFTB_balkan_pact_ally
+								}
+							}
+						}
 					}
 				}
 			}
@@ -2310,7 +2297,7 @@
 					}
 					remove_opinion_modifier = {
 						target = HUN
-						modifier = BFTB_incongruous_neighbors
+						modifier = BFTB_balkan_pact_enemy
 					}
 					add_opinion_modifier = {
 						target = BUL
@@ -2319,66 +2306,6 @@
 					add_opinion_modifier = {
 						target = HUN
 						modifier = BFTB_incongruous_neighbors
-					}
-				}
-				if = {
-					limit = {
-						GRE = {
-							has_opinion_modifier = BFTB_balkan_pact_ally
-						}
-						NOT = {
-							is_in_faction_with = TUR
-							TUR = { is_faction_leader = yes }
-						}
-					}
-					remove_opinion_modifier = {
-						target = GRE
-						modifier = BFTB_balkan_pact_ally
-					}
-				}
-				if = {
-					limit = {
-						HUN = {
-							has_opinion_modifier = BFTB_balkan_pact_ally
-						}
-						NOT = {
-							is_in_faction_with = TUR
-							TUR = { is_faction_leader = yes }
-						}
-					}
-					remove_opinion_modifier = {
-						target = HUN
-						modifier = BFTB_balkan_pact_ally
-					}
-				}
-				if = {
-					limit = {
-						TUR = {
-							has_opinion_modifier = BFTB_balkan_pact_ally
-						}
-						NOT = {
-							is_in_faction_with = TUR
-							TUR = { is_faction_leader = yes }
-						}
-					}
-					remove_opinion_modifier = {
-						target = TUR
-						modifier = BFTB_balkan_pact_ally
-					}
-				}
-				if = {
-					limit = {
-						YUG = {
-							has_opinion_modifier = BFTB_balkan_pact_ally
-						}
-						NOT = {
-							is_in_faction_with = TUR
-							TUR = { is_faction_leader = yes }
-						}
-					}
-					remove_opinion_modifier = {
-						target = YUG
-						modifier = BFTB_balkan_pact_ally
 					}
 				}
 			}
@@ -2511,13 +2438,27 @@
 						TUR = { is_faction_leader = yes }
 					}
 				}
-				every_country = {
+				every_other_country = {
 					limit = {
 						has_opinion_modifier = BFTB_balkan_pact_ally
 					}
 					remove_opinion_modifier = {
 						target = ROM
 						modifier = BFTB_balkan_pact_ally
+					}
+					if = {
+						limit = {
+							is_in_faction_with = TUR
+							TUR = { is_faction_leader = no }
+						}
+						hidden_effect = {
+							ROOT = {
+								remove_opinion_modifier = {
+									target = PREV
+									modifier = BFTB_balkan_pact_ally
+								}
+							}
+						}
 					}
 				}
 			}
@@ -2537,7 +2478,7 @@
 					}
 					remove_opinion_modifier = {
 						target = HUN
-						modifier = BFTB_incongruous_neighbors
+						modifier = BFTB_balkan_pact_enemy
 					}
 					add_opinion_modifier = {
 						target = BUL
@@ -2546,66 +2487,6 @@
 					add_opinion_modifier = {
 						target = HUN
 						modifier = BFTB_incongruous_neighbors
-					}
-				}
-				if = {
-					limit = {
-						GRE = {
-							has_opinion_modifier = BFTB_balkan_pact_ally
-						}
-						NOT = {
-							is_in_faction_with = TUR
-							TUR = { is_faction_leader = yes }
-						}
-					}
-					remove_opinion_modifier = {
-						target = GRE
-						modifier = BFTB_balkan_pact_ally
-					}
-				}
-				if = {
-					limit = {
-						HUN = {
-							has_opinion_modifier = BFTB_balkan_pact_ally
-						}
-						NOT = {
-							is_in_faction_with = TUR
-							TUR = { is_faction_leader = yes }
-						}
-					}
-					remove_opinion_modifier = {
-						target = HUN
-						modifier = BFTB_balkan_pact_ally
-					}
-				}
-				if = {
-					limit = {
-						TUR = {
-							has_opinion_modifier = BFTB_balkan_pact_ally
-						}
-						NOT = {
-							is_in_faction_with = TUR
-							TUR = { is_faction_leader = yes }
-						}
-					}
-					remove_opinion_modifier = {
-						target = TUR
-						modifier = BFTB_balkan_pact_ally
-					}
-				}
-				if = {
-					limit = {
-						YUG = {
-							has_opinion_modifier = BFTB_balkan_pact_ally
-						}
-						NOT = {
-							is_in_faction_with = TUR
-							TUR = { is_faction_leader = yes }
-						}
-					}
-					remove_opinion_modifier = {
-						target = YUG
-						modifier = BFTB_balkan_pact_ally
 					}
 				}
 			}

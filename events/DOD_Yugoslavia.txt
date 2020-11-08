@@ -3260,10 +3260,6 @@ country_event = {
 	option = { #Historical (allies)
 		name = DOD_yugoslavia.50.a
 		hidden_effect = {
-			country_event = {
-				id = DOD_yugoslavia.502
-				days = 10
-			}
 			save_global_event_target_as = yugoslavia_wedding_partner
 		}
 	}
@@ -3558,6 +3554,7 @@ country_event = {
 				name = YUG_peters_loyalists
 				long_name = YUG_peters_loyalists
 			}
+			add_ideas = { YUG_idea_orthodox_church_support }
 			custom_effect_tooltip = all_subjects_become_fascist_tt
 			hidden_effect = {
 				every_other_country = {
@@ -3726,6 +3723,33 @@ country_event = {
 			}
 			add_opinion_modifier = { target = FROM modifier = small_decrease }
 			FROM = { add_opinion_modifier = { target = YUG modifier = small_decrease } }
+		}
+		else = {
+			if = {
+				limit = {
+					GER = {
+						exists = yes
+						has_capitulated = no
+						has_government = fascism
+						is_faction_leader = yes
+					}
+				}
+				GER = {
+					create_wargoal = {
+						type = annex_everything
+						target = YUG
+					}
+				}
+			}
+			else = {
+				get_best_alliance_match_fascism_effect = yes
+				var:best_leader = {
+					create_wargoal = {
+						type = annex_everything
+						target = YUG
+					}
+				}
+			}
 		}
 		complete_national_focus = YUG_end_the_regency #switches to the Peter branch so Yugoslavia is not stuck
 	}

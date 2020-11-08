@@ -1,112 +1,6 @@
 ideas = {
 
 	country = { 
-#		TUR_kemalist_army_officers = { 
-#
-#			allowed = {
-#				original_tag = TUR
-#			}
-#
-#			allowed_civil_war = {
-#				always = yes
-#			}
-#
-#			picture = general_staff
-#				
-#			removal_cost = -1
-#				
-#			modifier = {
-#				stability_factor = 0.05
-#				max_planning = 0.1
-#				experience_gain_army_factor = -0.1
-#			}
-#		}
-#
-#		TUR_kemalist_army_officers_disloyal = { 
-#
-#			allowed = {
-#				original_tag = TUR
-#			}
-#
-#			allowed_civil_war = {
-#				always = yes
-#			}
-#
-#			picture = general_staff
-#				
-#			removal_cost = -1
-#				
-#			modifier = {
-#				stability_weekly = -0.03
-#				max_planning = 0.1
-#				experience_gain_army_factor = -0.1
-#			}
-#		}
-#
-#		TUR_kemalist_army_officers_integrated = { 
-#
-#			allowed = {
-#				original_tag = TUR
-#			}
-#
-#			allowed_civil_war = {
-#				always = yes
-#			}
-#
-#			picture = general_staff
-#				
-#			removal_cost = -1
-#				
-#			modifier = {
-#				stability_factor = 0.1
-#				max_planning = 0.15
-#				planning_speed = 0.05
-#				command_power_gain_mult = 0.25
-#			}
-#		}
-#
-#		TUR_kemalist_army_officers_corrupted = { 
-#
-#			allowed = {
-#				original_tag = TUR
-#			}
-#
-#			allowed_civil_war = {
-#				always = yes
-#			}
-#
-#			picture = general_staff
-#				
-#			removal_cost = -1
-#				
-#			modifier = {
-#				max_planning = 0.05
-#				planning_speed = 0.05
-#			}
-#		}
-#
-#		TUR_kemalist_army_officers_fascistised = { 
-#
-#			allowed = {
-#				original_tag = TUR
-#			}
-#
-#			allowed_civil_war = {
-#				always = yes
-#			}
-#
-#			picture = general_staff
-#				
-#			removal_cost = -1
-#				
-#			modifier = {
-#				war_support_factor = 0.05
-#				max_planning = 0.1
-#				planning_speed = 0.05
-#				army_core_defence_factor = 0.05
-#				justify_war_goal_time = -0.15
-#			}
-#		}
 
 		TUR_kemalist_army_officers_powerful_loyal = { 
 
@@ -3235,7 +3129,7 @@ ideas = {
 				has_completed_focus = TUR_revive_turkish_revolutionism
 				NOT = { 
 					has_country_leader = {
-						name = "Recep Peker"
+						name = "Mehmet Recep Peker"
 						ruling_only = yes
 					}
 				}
@@ -3778,7 +3672,7 @@ ideas = {
 				has_country_flag = TUR_ottoman_officers_invited_back
 			}
 			
-			traits = { army_chief_defensive_3 } 
+			traits = { army_chief_offensive_2 } 
 			
 			ai_will_do = {
 				factor = 1
@@ -4149,7 +4043,7 @@ ideas = {
 				has_country_flag = TUR_ottoman_officers_invited_back
 			}
 
-			traits = { army_chief_morale_2 }
+			traits = { army_chief_planning_2 }
 			
 			ai_will_do = {
 				factor = 1
