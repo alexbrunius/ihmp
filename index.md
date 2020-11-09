@@ -1,5 +1,9 @@
 # Changelog:
 
+## 1.10.2.2
+- Reverted submarine revealed timeout (when found by ASW patrol) from 8 to 16 hours.
+- Compatibility with 1.10.2 beta as of 8.11.2020.
+
 ## 1.10.2.1
 - Waking the Giant now requires 50% war support and switches directly to partial mobilisation.
 - Improvements to Bulgarian AI.
