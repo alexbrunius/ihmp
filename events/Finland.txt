@@ -494,6 +494,7 @@ country_event = {
 	trigger = {
 		tag = FIN
 		has_war_with = SOV
+		SOV = { has_war_with = GER }
 		OR = {
 			SOV = {
 				surrender_progress > 0.25
