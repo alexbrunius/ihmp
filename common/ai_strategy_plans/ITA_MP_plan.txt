@@ -312,35 +312,6 @@ ITA_MP_No_Eth = {
 	}	
 }
 
-ITA_MP_Volunteer_Spain = {
-	name = "Volunteers for Spain"
-	desc = ""
-
-	enable = {
-		tag = ITA
-		has_game_rule = {
-			rule = ITA_ai_behavior
-			option = ITA_MP_1
-		}
-		country_exists = SPA
-		NOT = { has_global_flag = scw_over }
-	}
-
-	abort = {
-		OR = {
-			NOT = { country_exists = SPA }
-			SPA = { has_completed_focus = SPA_join_the_allies }
-			has_global_flag = scw_over
-		}
-	}
-	
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = SPA
-		value = 1000
-	}	
-}
-
 MP_Conscription_0 = {
 	name = "Conscription Plan"
 	desc = ""

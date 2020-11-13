@@ -210,6 +210,11 @@ GER_MP_Alliance = {
 	}
 	ai_strategy = {
 		type = befriend
+		id = BUL
+		value = 50
+	}
+	ai_strategy = {
+		type = befriend
 		id = ITA
 		value = 200
 	}
@@ -541,35 +546,6 @@ GER_MP_No_Eth = {
 		state = 550 #Eritrea
 		state = 559 #Somaliland (ITA)
 		value = -600
-	}	
-}
-
-GER_MP_Volunteer_Spain = {
-	name = "Volunteers for Spain"
-	desc = ""
-
-	enable = {
-		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
-		}
-		country_exists = SPA
-		NOT = { has_global_flag = scw_over }
-	}
-
-	abort = {
-		OR = {
-			NOT = { country_exists = SPA }
-			SPA = { has_completed_focus = SPA_join_the_allies }
-			has_global_flag = scw_over
-		}
-	}
-	
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = SPA
-		value = 1000
 	}	
 }
 
