@@ -1,5 +1,9 @@
 # Changelog:
 
+## 1.10.2.3
+- Small fix to Continuation war white peace event.
+- Removed Send Volunteer ai_strategy from Germany and Italy.
+
 ## 1.10.2.2
 - Reverted submarine revealed timeout (when found by ASW patrol) from 8 to 16 hours.
 - Compatibility with 1.10.2 beta as of 8.11.2020.
