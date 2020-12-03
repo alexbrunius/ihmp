@@ -496,7 +496,7 @@ foreign_politics = {
 		available = {
 			NOR = { has_capitulated = yes }
 			110 = {
-				owner = {
+				controller = {
 					OR ={
 						tag = GER
 						is_subject_of = GER
@@ -505,7 +505,7 @@ foreign_politics = {
 				}
 			}
 			142 = {
-				owner = {
+				controller = {
 					OR ={
 						tag = GER
 						is_subject_of = GER
@@ -514,7 +514,7 @@ foreign_politics = {
 				}
 			}
 			143 = {
-				owner = {
+				controller = {
 					OR ={
 						tag = GER
 						is_subject_of = GER
@@ -523,7 +523,7 @@ foreign_politics = {
 				}
 			}
 			144 = {
-				owner = {
+				controller = {
 					OR ={
 						tag = GER
 						is_subject_of = GER
