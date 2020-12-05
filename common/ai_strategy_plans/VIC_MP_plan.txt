@@ -231,7 +231,7 @@ VIC_MP_Antagonize = {
 }
 
 VIC_MP_Allies = {
-	name = "Befriend Axis but no Alliance"
+	name = "No Axis Alliance"
 	desc = ""
 
 	enable = {
@@ -246,19 +246,14 @@ VIC_MP_Allies = {
 	}
 	
 	ai_strategy = {
-		type = befriend
-		id = GER
-		value = 400
-	}
-	ai_strategy = {
 		type = alliance
 		id = GER
 		value = -400
 	}
 	ai_strategy = {
-		type = befriend
+		type = alliance
 		id = ITA
-		value = 400
+		value = -400
 	}
 	ai_strategy = {
 		type = alliance
