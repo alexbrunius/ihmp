@@ -1,5 +1,9 @@
 # Changelog:
 
+## 1.10.2.4
+- Switched owner to controller scope for Pressure Sweden Decision.
+- Removed Axis Befriend strategies from Vichy France.
+
 ## 1.10.2.3
 - Small fix to Continuation war white peace event.
 - Removed Send Volunteer ai_strategy from Germany and Italy.

@@ -1,4 +1,4 @@
-version="1.10.2.3"
+version="1.10.2.4"
 tags={
 	"Fixes"
 	"Gameplay"
