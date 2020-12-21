@@ -1,0 +1,42 @@
+
+state={
+	id=756
+	name="STATE_756"
+
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		owner = XSM
+		add_core_of = XSM
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 0
+
+		}
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = Waking
+						the Tiger 
+					}
+
+				}
+				CHI = {
+					transfer_state = PREV
+
+				}
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1723 1778 1781 1853 2028 2087 4525 4655 4783 4786 4843 4856 5031 5076 7727 7803 7806 7864 7971 8055 8102 10558 10629 10632 10689 10770 10899 12331 12539 12541 12596 12609 12669 12750 12776 12820 12880 
+	}
+	manpower=1000000
+}
