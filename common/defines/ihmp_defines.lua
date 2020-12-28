@@ -20,7 +20,7 @@ NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 25.0			-- was 50	-- Command Powe
 NDefines.NCountry.BASE_STABILITY_PARTY_POPULARITY_FACTOR = 0.20	--was 0.15 -- Default stability rulling party popularity factor
 	
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.03	-- was 0.3 -- Modifier for army equipment reinforcement speed
-NDefines.NCountry.VP_TO_SUPPLY_BONUS_CONVERSION = 0.4			-- was 0.1 -- Bonus to supply local supplies from Victory Points, multiplied by this aspect and rounded to closest integer
+NDefines.NCountry.VP_TO_SUPPLY_BONUS_CONVERSION = 0.2			-- was 0.1 -- Bonus to supply local supplies from Victory Points, multiplied by this aspect and rounded to closest integer
 NDefines.NCountry.SUPPLY_BASE_MULT = 0.25							-- was 1 -- multiplier on supply base values
 NDefines.NCountry.SUPPLY_BONUS_FROM_INPUT = 0.50					-- was 0.25 -- % of supply bonus from input area.
 NDefines.NCountry.SUPPLY_FROM_DAMAGED_INFRA = 0.4                -- was 0.3 -- damaged infrastructure counts as this in supply calcs
