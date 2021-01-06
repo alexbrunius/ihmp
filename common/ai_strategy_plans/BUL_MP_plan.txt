@@ -26,6 +26,8 @@ BUL_historical_plan = {
 		BUL_the_tsars_regime
 		BUL_promote_bulgarian_nationalism
 		BUL_limited_womens_suffrage
+		BUL_support_macedonian_organizations #Short focus
+		BUL_bulgarian_irredentism
 		BUL_found_the_brannik
 		#1937
 		BUL_illusions_of_a_non_partisan_system
@@ -39,9 +41,7 @@ BUL_historical_plan = {
 		#1938
 		BUL_expand_the_tobacco_industry
 		BUL_georgi_benkovski_aircraft_repair_facilities
-		BUL_restrained_paramilitary_organizations
-		BUL_support_macedonian_organizations #Short focus
-		BUL_bulgarian_irredentism
+		BUL_restrained_paramilitary_organizations^
 		BUL_national_railway_lines
 		#1939
 		BUL_negotiate_bulgarian_rearmament
@@ -56,7 +56,6 @@ BUL_historical_plan = {
 		BUL_prussia_of_the_balkans
 		BUL_expand_varna_naval_base
 		BUL_develop_burgas_shipyards
-		BUL_bulgarian_administration_of_the_balkans
 		BUL_steel_plant_in_pernik
 		BUL_restore_the_tarnovo_constitution
 		BUL_freedom_of_press
@@ -117,6 +116,29 @@ BUL_historical_plan = {
 		}
 	}
 
+}
+
+BUL_MP_Block_WT_Foci = {
+	name = "Block WT Generating Foci"
+	desc = "Block WT generating foci, till there is already 12 WT"
+
+	enable = {
+		tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+		NOT = { threat > 0.12 }
+	}
+
+	abort = {
+		threat > 0.12
+	}
+
+	focus_factors = {
+		BUL_support_macedonian_organizations = 0
+		BUL_bulgarian_irredentism = 0
+	}
 }
 
 BUL_MP_Ideas = {
