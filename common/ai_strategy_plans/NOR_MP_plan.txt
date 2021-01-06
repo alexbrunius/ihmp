@@ -1,0 +1,324 @@
+NOR_MP_1 = {
+	name = "Norway Multiplayer 1"
+	desc = ""
+
+	enable = {
+		original_tag = NOR
+		has_game_rule = {
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		infrastructure_effort
+		infrastructure_effort_2
+		extra_tech_slot
+		extra_tech_slot_2
+		construction_effort_3
+		production_effort
+		production_effort_2
+		production_effort_3
+		political_effort
+		liberty_ethos
+		neutrality_focus
+		deterrence
+		aviation_effort
+		why_we_fight
+		technology_sharing
+		naval_effort
+	}
+
+	research = {
+		construction_tech = 100
+		synth_resources = -1000
+		armor = -1000
+		air_equipment = -1000
+		naval_equipment = -1000
+		air_doctrine = -10000
+		naval_doctrine = -10000
+	}
+
+	ideas = {
+		free_trade = 0
+		export_focus = 1
+		limited_exports = 0
+		closed_economy = 0
+		generic_captain_of_industry = 10
+		generic_fortification_engineer = 2
+		war_economy = 20
+		partial_economic_mobilisation = 10
+		extensive_conscription = 10
+		generic_industrial_concern = 5
+		generic_electronics_concern = 0
+		generic_tank_manufacturer = 0
+		generic_naval_manufacturer = 0
+		generic_naval_theorist = 0
+		generic_air_warfare_theorist = 0
+		generic_navy_chief_decisive_bat = 0
+		generic_navy_anti_submarine = 0
+		generic_air_close_air_sup = 0
+		generic_air_chief_all_weather = 0
+		generic_army_art = 0
+		generic_navy_fleet_log = 0
+		generic_air_air_combat_trainer = 0
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		doctrine_effort = 0
+		mechanization_effort = 0
+		CAS_effort = 0
+		NAV_effort = 0
+		rocket_effort = 0
+		flexible_navy = 0
+		large_navy = 0
+		submarine_effort = 0
+		cruiser_effort = 0
+		nuclear_effort = 0
+	}
+}
+
+NOR_MP_Garrision = {
+	name = "Garrision the Mainland"
+	desc = ""
+
+	enable = {
+		tag = NOR
+		has_game_rule = {
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
+		}
+		NOT = { SWE = { gives_military_access_to = GER } }
+		NOT = { SWE = { is_in_faction_with = GER } }
+		NOT = { has_war_with = SWE }
+	}
+
+	abort = {
+		OR = {
+			SWE = { gives_military_access_to = GER }
+			SWE = { is_in_faction_with = GER }
+			has_war_with = SWE
+		}
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = SWE
+		value = -200
+	}	
+}
+
+NOR_MP_Garrision = {
+	name = "Garrision the Mainland"
+	desc = ""
+
+	enable = {
+		tag = NOR
+		has_game_rule = {
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
+		}
+		NOT = { FIN = { gives_military_access_to = GER } }
+		NOT = { FIN = { is_in_faction_with = GER } }
+		NOT = { has_war_with = SWE }
+	}
+
+	abort = {
+		OR = {
+			FIN = { gives_military_access_to = GER }
+			FIN = { is_in_faction_with = GER }
+			has_war_with = FIN
+		}
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = FIN
+		value = -200
+	}	
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 1.0
+		states = { 
+			110
+			142
+			143
+		}
+		area = europe
+	}
+}
+
+NOR_MP_Electronics_1 = {
+	name = "MP Electronics 2"
+	desc = ""
+
+	enable = {
+		original_tag = NOR
+		has_game_rule = {
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
+		}
+		NOT = { has_tech = mechanical_computing }
+	}
+	
+	abort = {
+		has_tech = mechanical_computing 
+	}
+
+	research = {
+		computing_tech = 100000
+	}
+}
+
+MP_Conscription_0 = {
+	name = "Conscription Plan"
+	desc = ""
+
+	enable = {
+		tag = NOR
+		has_game_rule = {
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
+		}
+		has_idea = volunteer_only
+	}
+
+	abort = {
+		NOT = { has_idea = volunteer_only }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+	}
+}
+
+MP_Conscription_1 = {
+	name = "Conscription Plan"
+	desc = ""
+
+	enable = {
+		tag = NOR
+		has_game_rule = {
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
+		}
+		has_idea = limited_conscription
+	}
+
+	abort = {
+		NOT = { has_idea = limited_conscription }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+	}
+}
+
+MP_Conscription_2 = {
+	name = "Conscription Plan"
+	desc = ""
+
+	enable = {
+		tag = NOR
+		has_game_rule = {
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
+		}
+		has_idea = extensive_conscription
+	}
+
+	abort = {
+		NOT = { has_idea = extensive_conscription }
+	}
+
+	ideas = {
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+	}
+}
+
+MP_Economy_0 = {
+	name = "Economy Plan"
+	desc = ""
+
+	enable = {
+		tag = NOR
+		has_game_rule = {
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
+		}
+		has_idea = low_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = low_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+	}
+}
+
+MP_Economy_1 = {
+	name = "Economy Plan"
+	desc = ""
+
+	enable = {
+		tag = NOR
+		has_game_rule = {
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
+		}
+		has_idea = partial_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = partial_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+	}
+}
+
+MP_Economy_2 = {
+	name = "Economy Plan"
+	desc = ""
+
+	enable = {
+		tag = NOR
+		has_game_rule = {
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
+		}
+		has_idea = war_economy
+	}
+
+	abort = {
+		NOT = { has_idea = war_economy }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 0
+	}
+}
