@@ -119,3 +119,6 @@
  FREE_TEMPLATE_DESC:0 "AI gets free Military Police template"
  EASTERN_OCCUPAITONS_HISTORICAL_DESC:0 "Only the harshest occupation laws are allowed on Soviet cores for fascist nations"
  EASTERN_OCCUPAITONS_FREE_DESC:0 "Any occupation laws are allowed on Soviet cores"
+ RULE_ALLOW_ACCESS_HISTORICAL_DESC:0 "Historical Military Access and Docking Rights (Finland to Axis only after Barbarossa, Vichy never)"
+ RULE_ALLOW_MILITARY_ACCESS_FINLAND_TT:0 "§RFinland can only give access to Axis after Germany is at war with Soviet Union§!"
+ RULE_ALLOW_MILITARY_ACCESS_VICHY_TT:0 "§RVichy France cannot give access to Axis§!"
