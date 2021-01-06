@@ -2746,10 +2746,12 @@ focus_tree = {
 				uses = 1
 				category = cat_mechanized_equipment
 			}
-			custom_effect_tooltip = soviet.37.a_tt
-			reduce_purge = yes
-			reduce_purge = yes
-			reduce_purge = yes
+			custom_effect_tooltip = SOV_reduce_purge_3
+			hidden_effect = {
+				reduce_purge = yes
+				reduce_purge = yes
+				reduce_purge = yes
+			}
 		}
 	}
 
