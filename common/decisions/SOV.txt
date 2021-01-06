@@ -632,7 +632,7 @@ SOV_great_patriotic_war = {
 			surrender_progress > 0
 		}
 
-		cost = 50
+		cost = 25
 		fire_only_once = yes
 		visible = {
 			has_war = yes
@@ -673,7 +673,7 @@ SOV_great_patriotic_war = {
 			}
 		}
 
-		cost = 50
+		cost = 25
 		fire_only_once = yes
 		visible = {
 			has_war = yes
@@ -777,7 +777,7 @@ SOV_great_patriotic_war = {
 			}
 		}
 
-		cost = 75
+		cost = 25
 		fire_only_once = yes
 		visible = {
 			has_war = yes
@@ -821,7 +821,7 @@ SOV_great_patriotic_war = {
 			}
 		}
 
-		cost = 75
+		cost = 25
 		fire_only_once = yes
 		visible = {
 			has_war = yes
@@ -865,7 +865,7 @@ SOV_great_patriotic_war = {
 			}
 		}
 
-		cost = 75
+		cost = 25
 		fire_only_once = yes
 		visible = {
 			has_war = yes
@@ -986,7 +986,7 @@ SOV_great_patriotic_war = {
 			}
 		}
 
-		cost = 75
+		cost = 25
 		fire_only_once = yes
 		visible = {
 			has_war = yes
@@ -1105,7 +1105,7 @@ SOV_great_patriotic_war = {
 			}
 		}
 
-		cost = 75
+		cost = 25
 		fire_only_once = yes
 		visible = {
 			has_war = yes
