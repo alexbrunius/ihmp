@@ -180,7 +180,7 @@ FRA_MP_Ideas = {
 		FRA_gaston_henry_haye = 1000
 		henri_giraud = 30
 		maxime_weygand = 20
-		FRA_zivony_peshkov = 5
+		FRA_zivony_peshkov = 1
 		FRA_paul_baudouin = 0
 		FRA_charles_tillon = 0
 		charles_de_gaulle = 0
@@ -792,9 +792,9 @@ FRA_MP_Ignore = {
 	}
 }
 
-MP_Spy_Defense = {
+MP_Spy_Defense_0 = {
 	name = "Spy Defense"
-	desc = ""
+	desc = "Build up passive Defense"
 
 	enable = {
 		original_tag = FRA
@@ -830,6 +830,114 @@ MP_Spy_Defense = {
 	ai_strategy = {
 		type = agency_ai_per_upgrade_factories_factor
 		value = -100    # -100% on the define
+	}
+}
+
+MP_Spy_Defense_1 = {
+	name = "Spy Defense"
+	desc = "Keep Spies on CounterInteligence"
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		num_of_operatives = 1
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			NOT = { num_of_operatives = 1 }
+		}
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 1000
+		mission_target = ROOT
+		num_operatives = 1
+	}
+}
+
+MP_Spy_Defense_2 = {
+	name = "Spy Defense"
+	desc = "Keep Spies on CounterInteligence"
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		num_of_operatives = 2
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			NOT = { num_of_operatives = 2 }
+		}
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 1000
+		mission_target = ROOT
+		num_operatives = 2
+	}
+}
+
+MP_Spy_Defense_3 = {
+	name = "Spy Defense"
+	desc = "Keep Spies on CounterInteligence"
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		num_of_operatives = 3
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			NOT = { num_of_operatives = 3 }
+		}
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 1000
+		mission_target = ROOT
+		num_operatives = 3
 	}
 }
 
