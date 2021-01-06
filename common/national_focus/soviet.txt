@@ -2727,6 +2727,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			army_experience = 20
+			add_research_slot = 1
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
