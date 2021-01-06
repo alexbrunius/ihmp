@@ -6,3 +6,7 @@
  FRA_move_government_to_Bordeaux:0 "Moves the capital of France from Paris to Boredeaux."
  FRA_move_government_to_Paris:0 "Moves the capital of France back to Paris."
  SOV_sue_for_peace_FIN:0 "Offer Peace to Finland."
+ SOV_sue_for_peace_FIN:0 "Offer Peace to Finland."
+ SOV_relocate_industry_from_kiev:0 "Relocate Industry from Kiev"
+ SOV_relocate_industry_from_kiev_desc:0 "Evacuating the heavy machinery of our Kiev factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+ SOV_relocate_industry_from_kiev_tt:0 "§RThese effects require control of Kiev when the decision times out.§!"
