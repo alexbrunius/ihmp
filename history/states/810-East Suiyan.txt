@@ -1,0 +1,20 @@
+state={
+	id=810
+	name="STATE_810"
+
+	history={
+		owner = SHX
+		buildings = {
+			infrastructure = 0
+		}
+		add_core_of = SHX
+	}
+
+	provinces={
+		2087 4525 10629 12331 12609 12880  
+	}
+	manpower=14253
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}

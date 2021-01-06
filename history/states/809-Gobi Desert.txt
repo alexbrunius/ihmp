@@ -1,0 +1,20 @@
+state={
+	id=809
+	name="STATE_809"
+
+	history={
+		owner = MON
+		buildings = {
+			infrastructure = 0
+		}
+		add_core_of = MON
+	}
+
+	provinces={
+		1723 1781 1853 4655 4786 4856 7806 7864 10558 10632 10689 12539 12541 12669 
+	}
+	manpower=87281
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+}
