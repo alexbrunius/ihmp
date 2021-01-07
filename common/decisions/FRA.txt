@@ -81,7 +81,8 @@ FRA_vichy_france = {
 
 		timeout_effect = {
 			transfer_navy = { target = GER }
-			GER = { annex_country = { target = ROOT } }
+			#GER = { annex_country = { target = ROOT } }
+			FRA = { annex_country = { target = ROOT transfer_troops = yes } } 
 			if = {
 				limit = {
 					NOT = { has_country_flag = scuttled_fleet }
