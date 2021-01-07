@@ -93,7 +93,7 @@ NOR_MP_1 = {
 	}
 }
 
-NOR_MP_Garrision = {
+NOR_MP_Garrision_SWE = {
 	name = "Garrision the Mainland"
 	desc = ""
 
@@ -123,7 +123,37 @@ NOR_MP_Garrision = {
 	}	
 }
 
-NOR_MP_Garrision = {
+NOR_MP_Garrision_SOV = {
+	name = "Garrision the Mainland"
+	desc = ""
+
+	enable = {
+		tag = NOR
+		has_game_rule = {
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
+		}
+		NOT = { SOV = { gives_military_access_to = GER } }
+		NOT = { SOV = { is_in_faction_with = GER } }
+		NOT = { has_war_with = SOV }
+	}
+
+	abort = {
+		OR = {
+			SOV = { gives_military_access_to = GER }
+			SOV = { is_in_faction_with = GER }
+			has_war_with = SOV
+		}
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = SOV
+		value = -200
+	}	
+}
+
+NOR_MP_Garrision_FIN = {
 	name = "Garrision the Mainland"
 	desc = ""
 
