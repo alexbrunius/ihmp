@@ -297,14 +297,10 @@ operations = {
 				446 = {
 					NOT = { is_controlled_by = ENG }
 				}			
-			}			
-			divisions_in_state = { state = 291 size > 2 }
-			divisions_in_state = { state = 656 size > 2 }
+			}
 		}
 
 		cost = 25
-
-		days_remove = 20
 
 		ai_will_do = {
 			factor = 1
@@ -316,10 +312,10 @@ operations = {
 			413 = { is_owned_by = PER } # Khuzestan
 			412 = { is_owned_by = PER } # Fars
 			421 = { is_owned_by = PER } # Kurdistan
-			NOT = {
-				PER = {
-					has_war_with = ENG
-				}
+			PER = {
+				NOT = { has_war_with = SOV }
+				NOT = { has_war_with = ENG }
+				is_subject = no
 			}
 		}
 		
@@ -359,14 +355,9 @@ operations = {
 					NOT = { is_controlled_by = ENG }
 				}			
 			}
-			divisions_in_state = { state = 230 size > 2 }
-			divisions_in_state = { state = 229 size > 2 }
-			divisions_in_state = { state = 584 size > 4 }
 		}
 
 		cost = 25
-
-		days_remove = 20
 
 		ai_will_do = {
 			factor = 1
@@ -379,20 +370,15 @@ operations = {
 			419 = { is_owned_by = PER } # Tibriz
 			416 = { is_owned_by = PER } # Khorasan
 			420 = { is_owned_by = PER } # Gilan
-			NOT = {
-				PER = {
-					has_war_with = SOV
-				}
+			PER = {
+				NOT = { has_war_with = SOV }
+				is_subject = no
 			}
 		}
 		
 		remove_effect = {
 			PER = {
 				add_ideas = neutrality_idea
-				declare_war_on = {
-					target = ENG
-					type = topple_government
-				}
 				declare_war_on = {
 					target = SOV
 					type = topple_government
