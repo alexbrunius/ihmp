@@ -104,8 +104,44 @@ country_event = {
 				CAN = { load_oob = "CAN_destroyers_for_bases" }
 			}
 			else = {
-				ENG = {	load_oob = "ENG_destroyers_for_bases_mtg" }
-				CAN = { load_oob = "CAN_destroyers_for_bases_mtg" }
+				ENG = {
+					create_equipment_variant = {
+						name = "Town Class Destroyer"
+						type = ship_hull_light_1
+						name_group = ENG_CITIES
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = light_ship_engine_1
+							fixed_ship_torpedo_slot = ship_torpedo_1
+							mid_1_custom_slot = ship_torpedo_1
+							rear_1_custom_slot = ship_depth_charge_1
+						}
+					}				
+					load_oob = "ENG_destroyers_for_bases_mtg"
+				}
+				CAN = {
+					create_equipment_variant = {
+						name = "Town Class Destroyer"
+						type = ship_hull_light_1
+						name_group = CAN_CITIES
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = light_ship_engine_1
+							fixed_ship_torpedo_slot = ship_torpedo_1
+							mid_1_custom_slot = ship_torpedo_1
+							rear_1_custom_slot = ship_depth_charge_1
+						}
+					}					
+					load_oob = "CAN_destroyers_for_bases_mtg"
+				}
 			}
 			ENG = {
 				if = { limit = { 696 = { is_controlled_by = ENG } }
