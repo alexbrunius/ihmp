@@ -290,13 +290,13 @@ MP_Spy_Defense_1 = {
 			option = SWE_MP_1
 		}
 		has_capitulated = no
-		num_of_operatives = 1
+		num_of_operatives > 0
 	}
 
 	abort = {
 		OR = {
 			has_capitulated = yes
-			NOT = { num_of_operatives = 1 }
+			NOT = { num_of_operatives < 2 }
 		}
 	}
 
@@ -320,13 +320,13 @@ MP_Spy_Defense_2 = {
 			option = SWE_MP_1
 		}
 		has_capitulated = no
-		num_of_operatives = 2
+		num_of_operatives > 1
 	}
 
 	abort = {
 		OR = {
 			has_capitulated = yes
-			NOT = { num_of_operatives = 2 }
+			NOT = { num_of_operatives < 3 }
 		}
 	}
 
@@ -350,13 +350,13 @@ MP_Spy_Defense_3 = {
 			option = SWE_MP_1
 		}
 		has_capitulated = no
-		num_of_operatives = 3
+		num_of_operatives > 2
 	}
 
 	abort = {
 		OR = {
 			has_capitulated = yes
-			NOT = { num_of_operatives = 3 }
+			NOT = { num_of_operatives < 4 }
 		}
 	}
 
