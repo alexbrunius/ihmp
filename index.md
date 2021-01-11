@@ -1,5 +1,33 @@
 # Changelog:
 
+## 1.10.3.5
+- Lowered local supply from VP from 0.4 to 0.2.
+- Soviet Lessons of War NF now gives a research slot.
+- Finland can only give MA to Axis after Barbarossa. Vichy never gives MA to Axis.
+- Improved Lessons of War NF tooltip, it now says it lowers the purge penalty.
+- Improved German War with USSR NF tooltip, it explains the mission it grants now.
+- Soviet industry relocation NF duration 35->14.
+- Added Kiev industrial evacuation for Soviets. Cost for each evacuation lowered from 25 PP to 10.
+- Added 1 CIC to smolensk for the evacuation decision to make sense.
+- PP cost of all Soviet scorched earth decisions lowered to 25 PP each.
+- ART/RART equipment breakthrough increased by 1 for each model.
+- Fixed display bugs in air tech tree.
+- Added impassable Gobi Desert.
+- Added Counter-Intel mission strategies to POL, FRA and SWE.
+- Tweaked Democractic Spain to wait with anarchist uprising.
+- Tweaked Bulgaria AI.
+- Added Norway AI Script and tweaked Finland's.
+- Tweaked Turkish AI Focus Sequence.
+- Adjusting Turkish AI decision weights.
+- French surrender event is now immediate so Germany can't transfer territory safely after France capitulated.
+- Integrate War Economies now only gives fascist support instead of puppeting.
+- Improved Bulgarian AI, including their handling of their Balkan claims.
+- Operation countenance no longer requires divisions in states and starts immediately, as it declares war.
+- Guest Workers are now removed from Germany when they run Case Anton.
+- Added Soviet embargo on Japan. US embargo on Japan now requires the latter annexing Indochina.
+- Chinese, French and Swedish AI now properly focus on counterintelligence.
+- Case Anton now makes FRA annex Vichy. Germany needs to occupy continental France manually and colonies are transferred to Free France. Fleet transfer unchanged.
+
 ## 1.10.2.4
 - Switched owner to controller scope for Pressure Sweden Decision.
 - Removed Axis Befriend strategies from Vichy France.
