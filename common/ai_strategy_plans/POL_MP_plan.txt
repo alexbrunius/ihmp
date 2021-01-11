@@ -466,9 +466,11 @@ MP_Spy_Defense_0 = {
 			rule = POL_ai_behavior
 			option = POL_MP_1
 		}
+		date < 1937.1.1
 	}
 
 	abort = {
+		NOT = { date < 1937.1.1 }
 	}
 
 	ai_strategy = {
