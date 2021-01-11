@@ -28,6 +28,7 @@ BUL_historical_plan = {
 		BUL_limited_womens_suffrage
 		BUL_support_macedonian_organizations #Short focus
 		BUL_bulgarian_irredentism
+		BUL_restrained_paramilitary_organizations
 		BUL_found_the_brannik
 		#1937
 		BUL_illusions_of_a_non_partisan_system
@@ -41,7 +42,6 @@ BUL_historical_plan = {
 		#1938
 		BUL_expand_the_tobacco_industry
 		BUL_georgi_benkovski_aircraft_repair_facilities
-		BUL_restrained_paramilitary_organizations^
 		BUL_national_railway_lines
 		#1939
 		BUL_negotiate_bulgarian_rearmament
