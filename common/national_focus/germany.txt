@@ -2257,6 +2257,7 @@ focus_tree = {
 			}
 
 			random_owned_controlled_state = {
+				prioritize = { 64 }
 				limit = {
 					air_base > 3
 					air_base < 9
@@ -2269,6 +2270,7 @@ focus_tree = {
 				set_state_flag = GER_air_innovation_2air
 			}
 			random_owned_controlled_state = {
+				prioritize = { 763 }
 				limit = {
 					air_base > 3
 					air_base < 9
@@ -2281,6 +2283,7 @@ focus_tree = {
 				set_state_flag = GER_air_innovation_2air
 			}
 			random_owned_controlled_state = {
+				prioritize = { 51 }
 				limit = {
 					air_base > 2
 					air_base < 9
