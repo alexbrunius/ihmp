@@ -2494,10 +2494,24 @@ focus_tree = {
 				any_other_country = {
 					original_tag = FRA
 					has_government = fascism
-					owns_state = 735
-					controls_state = 735
-					owns_state = 1
-					controls_state = 1
+					OR = {
+						AND = {
+							owns_state = 735
+							controls_state = 735 #Savoy
+						}
+						AND = {
+							owns_state = 1
+							controls_state = 1 #Corsica
+						}
+						AND = {
+							owns_state = 21
+							controls_state = 21 #Provence
+						}
+						AND = {
+							owns_state = 32
+							controls_state = 32 #Alps
+						}
+					}
 				}
 			}
 		}
@@ -2525,7 +2539,7 @@ focus_tree = {
 		}	
 		completion_reward = {
 			if = {
-				limit = { 
+				limit = {
 					any_other_country = {
 						original_tag = FRA
 						has_government = fascism
@@ -2535,7 +2549,7 @@ focus_tree = {
 				set_global_flag = ITA_claims_on_france_735
 			}
 			if = {
-				limit = { 
+				limit = {
 					any_other_country = {
 						original_tag = FRA
 						has_government = fascism
@@ -2543,6 +2557,26 @@ focus_tree = {
 					}
 				}
 				set_global_flag = ITA_claims_on_france_1
+			}
+			if = {
+				limit = {
+					any_other_country = {
+						original_tag = FRA
+						has_government = fascism
+						owns_state = 21
+					}
+				}
+				set_global_flag = ITA_claims_on_france_21
+			}
+			if = {
+				limit = {
+					any_other_country = {
+						original_tag = FRA
+						has_government = fascism
+						owns_state = 32
+					}
+				}
+				set_global_flag = ITA_claims_on_france_32
 			}
 
 			GER = { country_event = germany.104 }			
