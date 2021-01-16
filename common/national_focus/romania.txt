@@ -1200,6 +1200,13 @@
 				prioritize = { 46 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV } 
+					is_core_of = ROOT
+					NOT = {
+						state = 77
+						state = 78
+						state = 80
+						state = 766
+					}
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -1299,6 +1306,13 @@
 				prioritize = { 84 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV } 
+					is_core_of = ROOT
+					NOT = {
+						state = 77
+						state = 78
+						state = 80
+						state = 766
+					}
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -1364,6 +1378,13 @@
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					NOT = {
+						state = 77
+						state = 78
+						state = 80
+						state = 766
+					}
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -4242,6 +4263,13 @@
 				prioritize = { 46 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					NOT = {
+						state = 77
+						state = 78
+						state = 80
+						state = 766
+					}
 					free_building_slots = {
 						building = dockyard
 						size > 1
