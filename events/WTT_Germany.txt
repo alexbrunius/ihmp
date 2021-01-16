@@ -3174,6 +3174,7 @@ country_event = {
 			GER = {
 				random_owned_controlled_state = {
 					limit = {
+						is_core_of = GER
 						free_building_slots = {
 							building = arms_factory
 							size > 1
@@ -3191,6 +3192,7 @@ country_event = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						is_core_of = GER
 						free_building_slots = {
 							building = arms_factory
 							size > 1
@@ -3209,6 +3211,7 @@ country_event = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -3225,6 +3228,7 @@ country_event = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -3239,35 +3243,11 @@ country_event = {
 				}
 				set_state_flag = GER_integrate_war_economies_2
 			}
-			if = {
-				limit = {
-					has_dlc = "Death or Dishonor" 
-					is_in_faction_with = FROM
-					FROM = { is_subject = no }
+			ROOT = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.2
 				}
-				FROM = {
-					set_autonomy = { target = ROOT autonomy_state = autonomy_satellite }
-				}
-			}
-			if = {
-				limit = { 
-					has_dlc = "Together for Victory"
-					NOT = { has_dlc = "Death or Dishonor" } 
-					is_in_faction_with = FROM
-					FROM = { is_subject = no }
-				}
-				FROM = {
-					set_autonomy = { target = ROOT autonomy_state = autonomy_dominion }
-				}
-			}
-			if = {
-				limit = { 
-					NOT = { has_dlc = "Together for Victory" }
-					NOT = { has_dlc = "Death or Dishonor" }
-					is_in_faction_with = FROM
-					FROM = { is_subject = no }
-				}
-				FROM = { puppet = ROOT }
 			}
 		}
 		custom_effect_tooltip = wtt_germany.72_tt
@@ -3299,6 +3279,7 @@ country_event = {
 		name = wtt_germany.73.a
 		random_owned_controlled_state = {
 			limit = {
+				is_core_of = ROOT
 				free_building_slots = {
 					building = arms_factory
 					size > 1
@@ -3316,6 +3297,7 @@ country_event = {
 		}
 		random_owned_controlled_state = {
 			limit = {
+				is_core_of = ROOT
 				free_building_slots = {
 					building = arms_factory
 					size > 1
@@ -3334,6 +3316,7 @@ country_event = {
 		FROM = {
 			random_owned_controlled_state = {
 				limit = {
+					is_core_of = FROM
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -3350,6 +3333,7 @@ country_event = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					is_core_of = FROM
 					free_building_slots = {
 						building = arms_factory
 						size > 1
