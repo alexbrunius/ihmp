@@ -1,4 +1,4 @@
-﻿add_namespace = wtt_germany
+add_namespace = wtt_germany
 
 # Event starting neutral civil war
 country_event = {
@@ -3174,6 +3174,7 @@ country_event = {
 			GER = {
 				random_owned_controlled_state = {
 					limit = {
+						is_core_of = GER
 						free_building_slots = {
 							building = arms_factory
 							size > 1
@@ -3191,6 +3192,7 @@ country_event = {
 				}
 				random_owned_controlled_state = {
 					limit = {
+						is_core_of = GER
 						free_building_slots = {
 							building = arms_factory
 							size > 1
@@ -3209,6 +3211,7 @@ country_event = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -3225,6 +3228,7 @@ country_event = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -3299,6 +3303,7 @@ country_event = {
 		name = wtt_germany.73.a
 		random_owned_controlled_state = {
 			limit = {
+				is_core_of = ROOT
 				free_building_slots = {
 					building = arms_factory
 					size > 1
@@ -3316,6 +3321,7 @@ country_event = {
 		}
 		random_owned_controlled_state = {
 			limit = {
+				is_core_of = ROOT
 				free_building_slots = {
 					building = arms_factory
 					size > 1
@@ -3334,6 +3340,7 @@ country_event = {
 		FROM = {
 			random_owned_controlled_state = {
 				limit = {
+					is_core_of = FROM
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -3350,6 +3357,7 @@ country_event = {
 			}
 			random_owned_controlled_state = {
 				limit = {
+					is_core_of = FROM
 					free_building_slots = {
 						building = arms_factory
 						size > 1
