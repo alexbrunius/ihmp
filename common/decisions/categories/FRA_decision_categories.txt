@@ -36,7 +36,7 @@ FRA_intervention_in_overseas_territories = {
 		OR = {
 			AND = {
 				tag = FRA
-				NOT = { has_focus_tree = vichy_french_focus }
+				NOT = { has_government = fascism }
 				NOT = { is_subject_of = GER }
 			}
 			tag = ENG
@@ -47,7 +47,7 @@ FRA_intervention_in_overseas_territories = {
 		OR = {
 			AND = {
 				tag = FRA
-				NOT = { has_focus_tree = vichy_french_focus }
+				NOT = { has_government = fascism }
 				NOT = { is_subject_of = GER }
 			}
 			tag = ENG
