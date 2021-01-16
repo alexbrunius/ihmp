@@ -8306,8 +8306,13 @@ BUL_negotiate_claims_in_the_balkans = {
 					option = BUL_MP_1
 				}
 				GRE = {
-					has_capitulated = no
-					surrender_progress < 0.9
+					OR = {
+						AND = {
+							surrender_progress < 0.95
+							has_capitulated = no
+						}
+						controls_state = 184
+					}
 				}
 			}
 		}
