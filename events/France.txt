@@ -1858,6 +1858,14 @@ country_event = {
 				limit = { has_global_flag = ITA_claims_on_france_1 }
 				ITA = { transfer_state = 1 }
 			}
+			if = {
+				limit = { has_global_flag = ITA_claims_on_france_21 }
+				ITA = { transfer_state = 21 }
+			}
+			if = {
+				limit = { has_global_flag = ITA_claims_on_france_32 }
+				ITA = { transfer_state = 32 }
+			}
 		}
 
 		if = {
