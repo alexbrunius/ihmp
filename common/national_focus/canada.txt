@@ -4733,6 +4733,12 @@ USA = {
 					instant_build = yes
 				}
 			}
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
+			}
 		}
 
 		completion_reward = {
@@ -4753,6 +4759,12 @@ USA = {
 					instant_build = yes
 				}
 				set_state_flag = CAN_united_shipyards_DY
+			}
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
 			}
 		}
 	}
