@@ -82,7 +82,7 @@ FRA_vichy_france = {
 		timeout_effect = {
 			transfer_navy = { target = GER }
 			#GER = { annex_country = { target = ROOT } }
-			FRA = { annex_country = { target = ROOT transfer_troops = yes } } 
+			FRA = { annex_country = { target = ROOT transfer_troops = yes } }
 			if = {
 				limit = {
 					NOT = { has_country_flag = scuttled_fleet }
@@ -531,6 +531,19 @@ FRA_spanish_intervention_category = {
 				has_stability < 0.3
 				factor = 5
 			}
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_1
+					}
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_2
+					}
+				}
+				factor = 0
+			}
 		}
 		complete_effect = {
 			FROM = {
@@ -565,6 +578,19 @@ FRA_spanish_intervention_category = {
 				has_stability < 0.3
 				factor = 0
 			}
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_1
+					}
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_2
+					}
+				}
+				factor = 0
+			}
 		}
 		days_remove = -1
 		modifier = {
@@ -588,6 +614,19 @@ FRA_spanish_intervention_category = {
 			modifier = {
 				has_stability < 0.3
 				add = 5
+			}
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_1
+					}
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_2
+					}
+				}
+				factor = 0
 			}
 		}
 	}
@@ -625,6 +664,19 @@ FRA_spanish_intervention_category = {
 				FROM = { has_government = ROOT }
 				factor = 5
 			}
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_1
+					}
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_2
+					}
+				}
+				factor = 0
+			}
 		}
 		cost = 0
 	}
@@ -654,6 +706,19 @@ FRA_spanish_intervention_category = {
 				has_stability < 0.4
 				factor = 0
 			}
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_1
+					}
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_2
+					}
+				}
+				factor = 0
+			}
 		}
 		days_remove = -1
 		modifier = {
@@ -679,6 +744,19 @@ FRA_spanish_intervention_category = {
 			modifier = {
 				has_stability < 0.4
 				add = 5
+			}
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_1
+					}
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_2
+					}
+				}
+				factor = 0
 			}
 		}
 	}
@@ -715,6 +793,19 @@ FRA_spanish_intervention_category = {
 				has_stability < 0.45
 				factor = 0
 			}
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_1
+					}
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_2
+					}
+				}
+				factor = 0
+			}
 		}
 	}
 
@@ -733,6 +824,19 @@ FRA_spanish_intervention_category = {
 			modifier = {
 				has_stability < 0.45
 				add = 5
+			}
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_1
+					}
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_2
+					}
+				}
+				factor = 0
 			}
 		}
 	}
@@ -775,6 +879,19 @@ FRA_spanish_intervention_category = {
 				has_stability < 0.5
 				factor = 0
 			}
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_1
+					}
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_2
+					}
+				}
+				factor = 0
+			}
 		}
 		days_remove = -1
 		modifier = {
@@ -796,6 +913,19 @@ FRA_spanish_intervention_category = {
 			modifier = {
 				has_stability < 0.5
 				add = 5
+			}
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_1
+					}
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_2
+					}
+				}
+				factor = 0
 			}
 		}
 		cost = 0
@@ -827,6 +957,16 @@ FRA_spanish_intervention_category = {
 			}
 			modifier = {
 				has_stability < 0.8
+				NOT = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_1
+					}
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_2
+					}
+				}
 				factor = 0.5
 			}
 		}
@@ -864,6 +1004,20 @@ FRA_spanish_intervention_category = {
 				has_stability < 0.55
 				add = 5
 			}
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_1
+					}
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_2
+					}
+				}
+				factor = 0
+			}
+
 		}
 	}
 
@@ -995,6 +1149,19 @@ FRA_spanish_intervention_category = {
 			}
 			modifier = {
 				is_historical_focus_on = yes
+				factor = 0
+			}
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_1
+					}
+					has_game_rule = {
+						rule = FRA_ai_behavior
+						option = FRA_MP_2
+					}
+				}
 				factor = 0
 			}
 		}
@@ -1539,6 +1706,13 @@ FRA_intervention_in_overseas_territories = {
 		cost = 25
 		ai_will_do = {
 			factor = 3
+			modifier = {
+				has_game_rule = {
+					rule = FREE_FRA_ai_behavior
+					option = FREE_FRA_MP_1
+				}
+				factor = 0
+			}
 		}
 	}
 	FRA_prepare_coup_in_north_africa = {
@@ -1563,6 +1737,13 @@ FRA_intervention_in_overseas_territories = {
 		cost = 25
 		ai_will_do = {
 			factor = 0 #at least until we know the AI can handle it
+			modifier = {
+				has_game_rule = {
+					rule = FREE_FRA_ai_behavior
+					option = FREE_FRA_MP_1
+				}
+				add = 100
+			}
 		}
 	}
 	FRA_promise_independence_to_syria = {
@@ -1608,6 +1789,13 @@ FRA_intervention_in_overseas_territories = {
 		cost = 25
 		ai_will_do = {
 			factor = 3
+			modifier = {
+				has_game_rule = {
+					rule = FREE_FRA_ai_behavior
+					option = FREE_FRA_MP_1
+				}
+				factor = 0
+			}
 		}
 		
 	}
@@ -1665,9 +1853,21 @@ FRA_intervention_in_overseas_territories = {
 			} 
 		} 
 
-		visible = { has_completed_focus = FRA_intervention_in_syria }
+		visible = {
+			NOT = { has_global_flag = Invasion_in_Syria }
+			FRA = { has_completed_focus = FRA_intervention_in_syria }
+			OR = {
+				AND = {
+					tag = FRA
+					NOT = { has_focus_tree = vichy_french_focus }
+					NOT = { is_subject_of = GER }
+				}
+				tag = ENG
+			}
+		}
 
-		complete_effect = { 
+		complete_effect = {
+			set_global_flag = Invasion_in_Syria
 			random_state = { #find a neighbouring state of Syria that is controlled by an ally or ourselves
 				limit = {
 					OR = {
@@ -1834,6 +2034,13 @@ FRA_intervention_in_overseas_territories = {
 		cost = 25
 		ai_will_do = {
 			factor = 3
+			modifier = {
+				has_game_rule = {
+					rule = FREE_FRA_ai_behavior
+					option = FREE_FRA_MP_1
+				}
+				factor = 0
+			}
 		}
 	}
 	FRA_prepare_coup_in_indochina = {
@@ -1856,6 +2063,13 @@ FRA_intervention_in_overseas_territories = {
 		cost = 25
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				has_game_rule = {
+					rule = FREE_FRA_ai_behavior
+					option = FREE_FRA_MP_1
+				}
+				factor = 0
+			}
 		}
 	}
 	FRA_invasion_in_indochina = {
@@ -2013,6 +2227,13 @@ FRA_intervention_in_overseas_territories = {
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				has_game_rule = {
+					rule = FREE_FRA_ai_behavior
+					option = FREE_FRA_MP_1
+				}
+				factor = 0
+			}
 		}
 		cost = 25
 	}
@@ -2055,6 +2276,13 @@ FRA_intervention_in_overseas_territories = {
 		cost = 25
 		ai_will_do = {
 			factor = 3
+			modifier = {
+				has_game_rule = {
+					rule = FREE_FRA_ai_behavior
+					option = FREE_FRA_MP_1
+				}
+				factor = 0
+			}
 		}
 		
 	}
@@ -2107,9 +2335,21 @@ FRA_intervention_in_overseas_territories = {
 			} 
 		} 
 
-		visible = { has_completed_focus = FRA_intervention_in_central_africa }
+		visible = {
+			NOT = { has_global_flag = Invasion_in_Central_Africa }
+			FRA = { has_completed_focus = FRA_intervention_in_central_africa }
+			OR = {
+				AND = {
+					tag = FRA
+					NOT = { has_focus_tree = vichy_french_focus }
+					NOT = { is_subject_of = GER }
+				}
+				tag = ENG
+			}
+		}
 
-		complete_effect = { 
+		complete_effect = {
+			set_global_flag = Invasion_in_Central_Africa
 			random_state = { #find a neighbouring state of Syria that is controlled by an ally or ourselves
 				limit = {
 					OR = {
@@ -2244,6 +2484,13 @@ FRA_intervention_in_overseas_territories = {
 		cost = 25
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				has_game_rule = {
+					rule = FREE_FRA_ai_behavior
+					option = FREE_FRA_MP_1
+				}
+				add = 100
+			}
 		}
 	}
 	FRA_promise_independence_to_west_africa = {
@@ -2288,6 +2535,13 @@ FRA_intervention_in_overseas_territories = {
 		cost = 25
 		ai_will_do = {
 			factor = 3
+			modifier = {
+				has_game_rule = {
+					rule = FREE_FRA_ai_behavior
+					option = FREE_FRA_MP_1
+				}
+				factor = 0
+			}
 		}
 	}
 	FRA_prepare_coup_in_west_africa = {
@@ -2343,9 +2597,21 @@ FRA_intervention_in_overseas_territories = {
 			} 
 		} 
 
-		visible = { has_completed_focus = FRA_intervention_in_west_africa }
+		visible = {
+			NOT = { has_global_flag = Invasion_in_West_Africa }
+			FRA = { has_completed_focus = FRA_intervention_in_west_africa }
+			OR = {
+				AND = {
+					tag = FRA
+					NOT = { has_focus_tree = vichy_french_focus }
+					NOT = { is_subject_of = GER }
+				}
+				tag = ENG
+			}
+		}
 
 		complete_effect = { 
+			set_global_flag = Invasion_in_West_Africa
 			random_state = { #find a neighbouring state of Syria that is controlled by an ally or ourselves
 				limit = {
 					OR = {
@@ -2482,6 +2748,13 @@ FRA_intervention_in_overseas_territories = {
 		cost = 25
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				has_game_rule = {
+					rule = FREE_FRA_ai_behavior
+					option = FREE_FRA_MP_1
+				}
+				add = 100
+			}
 		}
 	}
 
