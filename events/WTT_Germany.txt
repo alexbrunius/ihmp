@@ -3243,35 +3243,11 @@ country_event = {
 				}
 				set_state_flag = GER_integrate_war_economies_2
 			}
-			if = {
-				limit = {
-					has_dlc = "Death or Dishonor" 
-					is_in_faction_with = FROM
-					FROM = { is_subject = no }
+			ROOT = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.2
 				}
-				FROM = {
-					set_autonomy = { target = ROOT autonomy_state = autonomy_satellite }
-				}
-			}
-			if = {
-				limit = { 
-					has_dlc = "Together for Victory"
-					NOT = { has_dlc = "Death or Dishonor" } 
-					is_in_faction_with = FROM
-					FROM = { is_subject = no }
-				}
-				FROM = {
-					set_autonomy = { target = ROOT autonomy_state = autonomy_dominion }
-				}
-			}
-			if = {
-				limit = { 
-					NOT = { has_dlc = "Together for Victory" }
-					NOT = { has_dlc = "Death or Dishonor" }
-					is_in_faction_with = FROM
-					FROM = { is_subject = no }
-				}
-				FROM = { puppet = ROOT }
 			}
 		}
 		custom_effect_tooltip = wtt_germany.72_tt
