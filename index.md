@@ -8,7 +8,7 @@
 - Changed effect tooltip for intergrate war economy, to reflect changes in the event (no puppet, but +20% fascism support for Balkan states).
 - Romanian factories no longer spawn in states that are likely to be lost.
 - Made intervene in Vichy decisions available to UK.
-- Free French Appeal to Overseas NF random weights made more historical (including Indochina and North Africa always staying with Vichy and Central Africa always going to Free France). Other places have 80% chance of flipping to Free France.
+- Free French Appeal to Overseas NF random weights made more historical (including Indochina and North Africa always staying with Vichy and Central Africa always going to Free France). Other places have 20% chance of flipping to Free France.
 - Updated France AI plans slightly.
 - Canadian NF Polymer corporation now gives rubber factories instead of synth fuel.
 
