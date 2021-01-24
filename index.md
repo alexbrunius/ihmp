@@ -1,5 +1,17 @@
 # Changelog:
 
+## 1.10.3.6
+- Made Italian Claims on France Focus more available (when any of the possible states are owned by Vichy).
+- Changed events for Italian Claims on France to transfer territory up to the Rhone if Germany agrees.
+- German Air Innovation NF now prioritizes airbases in Württemberg, Brandenburg and Königsberg.
+- Added is_core limits to integrate war economy factories.
+- Changed effect tooltip for intergrate war economy, to reflect changes in the event (no puppet, but +20% fascism support for Balkan states).
+- Romanian factories no longer spawn in states that are likely to be lost.
+- Made intervene in Vichy decisions available to UK.
+- Free French Appeal to Overseas NF random weights made more historical (including Indochina and North Africa always staying with Vichy and Central Africa always going to Free France). Other places have 80% chance of flipping to Free France.
+- Updated France AI plans slightly.
+- Canadian NF Polymer corporation now gives rubber factories instead of synth fuel.
+
 ## 1.10.3.5
 - Lowered local supply from VP from 0.4 to 0.2.
 - Soviet Lessons of War NF now gives a research slot.
