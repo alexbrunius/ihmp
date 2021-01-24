@@ -551,7 +551,11 @@ country_event = {
 	desc = { 
 		text = italy.15.d
 		trigger = {
-			has_global_flag = ITA_claims_on_france_735
+			OR = {
+				has_global_flag = ITA_claims_on_france_735
+				has_global_flag = ITA_claims_on_france_21
+				has_global_flag = ITA_claims_on_france_32
+			}
 			has_global_flag = ITA_claims_on_france_1
 		}
 	}
@@ -559,6 +563,8 @@ country_event = {
 		text = italy.15.d_Corsica
 		trigger = {
 			NOT = { has_global_flag = ITA_claims_on_france_735 }
+			NOT = { has_global_flag = ITA_claims_on_france_21 }
+			NOT = { has_global_flag = ITA_claims_on_france_32 }
 			has_global_flag = ITA_claims_on_france_1
 		}
 	}
@@ -576,7 +582,15 @@ country_event = {
 		if = {
 			limit = { has_global_flag = ITA_claims_on_france_1 }
 			ITA = { transfer_state = 1 }
-		}		
+		}
+		if = {
+			limit = { has_global_flag = ITA_claims_on_france_21 }
+			ITA = { transfer_state = 21 }
+		}
+		if = {
+			limit = { has_global_flag = ITA_claims_on_france_32 }
+			ITA = { transfer_state = 32 }
+		}
 	}
 }
 
