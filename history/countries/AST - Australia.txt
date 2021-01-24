@@ -34,7 +34,6 @@ if = {
 		early_light_cruiser = 1
 		early_heavy_cruiser = 1
 		early_submarine = 1
-		transport = 1
 	}
 	set_naval_oob = "AST_1936_naval_legacy"
 }
@@ -54,7 +53,6 @@ if = {
 		basic_depth_charges = 1
 		basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
-		mtg_transport = 1
 	}
 	set_naval_oob = "AST_1936_naval"
 }
