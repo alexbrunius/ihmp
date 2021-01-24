@@ -29,7 +29,6 @@ set_technology = {
 	
 	trench_warfare = 1
 
-	transport = 1
 	fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
@@ -74,7 +73,10 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
-set_popularities = {	democratic = 33	communism = 33	neutrality = 34
+set_popularities = {
+	democratic = 33
+	communism = 33
+	neutrality = 34
 }
 
 create_country_leader = {
