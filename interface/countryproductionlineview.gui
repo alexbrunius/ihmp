@@ -1571,7 +1571,7 @@ guiTypes = {
 		iconType = {
 			name ="equipment_icon"
 			spriteType = "GFX_technology_medium"
-			position = { x=80 y=72 }
+			position = { x=100 y=72 }
 			centerposition = yes
 			alwaystransparent = yes
 		}
@@ -1579,14 +1579,14 @@ guiTypes = {
 		iconType = {
 			name ="subtech_strip_w_bg"
 			spriteType = "GFX_sub_tech_strip_w_bg"
-			position = { x=120 y=54 }
+			position = { x=140 y=54 }
 			alwaystransparent = yes
 		}
 
 		iconType = {
 			name ="carrier_fighter_icon"
 			spriteType = "GFX_airwing_carrier_icon"
-			position = { x=20 y=88 }
+			position = { x=40 y=88 }
 			centerposition = yes
 			alwaystransparent = yes
 		}		
@@ -1661,22 +1661,23 @@ guiTypes = {
 			quadTextureSprite = "GFX_btn_x5"
 			clicksound = click_close
 		}
-		#buttonType = {
-		#	name = "increase_priority"
-		#	position = { x=488 y=41 }
-		#	quadTextureSprite = "GFX_arrow_up_small"
-		#	pdx_tooltip = "PRODUCTION_INCREASE_PRIORITY_LABEL"
-		#	clicksound = click_default
-		#}
-		#
-		#buttonType = {
-		#	name = "decrease_priority"
-		#	position = { x=488 y=70	 }
-		#	quadTextureSprite = "GFX_arrow_down_small"
-		#	pdx_tooltip = "PRODUCTION_DECREASE_PRIORITY_LABEL"
-		#	pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
-		#	clicksound = click_default
-		#}
+		buttonType = {
+			name = "increase_priority"
+			position = { x=5 y=48 }
+			quadTextureSprite = "GFX_arrow_up_small"
+			pdx_tooltip = "PRODUCTION_INCREASE_PRIORITY_LABEL"
+			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
+			clicksound = click_default
+		}
+		
+		buttonType = {
+			name = "decrease_priority"
+			position = { x=5 y=75	 }
+			quadTextureSprite = "GFX_arrow_down_small"
+			pdx_tooltip = "PRODUCTION_DECREASE_PRIORITY_LABEL"
+			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
+			clicksound = click_default
+		}
 		
 		buttonType = {
 			name = "close_production_line"
@@ -1730,7 +1731,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "convert"
-			position = { x=10 y=75 }
+			position = { x=30 y=75 }
 			quadTextureSprite = "GFX_production_line_convert"
 			clicksound = click_default
 		}		
@@ -1882,7 +1883,7 @@ guiTypes = {
 		iconType = {
 			name ="equipment_icon"
 			spriteType = "GFX_technology_medium"
-			position = { x=80 y=43 }
+			position = { x=95 y=43 }
 			centerposition = yes
 			scale = 0.5
 			alwaystransparent = yes
@@ -1899,7 +1900,7 @@ guiTypes = {
 		iconType = {
 			name ="carrier_fighter_icon"
 			spriteType = "GFX_airwing_carrier_icon"
-			position = { x=20 y=44 }
+			position = { x=50 y=44 }
 			centerposition = yes
 			alwaystransparent = yes
 		}		
@@ -1962,22 +1963,25 @@ guiTypes = {
 		#	alwaystransparent = yes
 		#}
 		#
-		#buttonType = {
-		#	name = "increase_priority"
-		#	position = { x=488 y=41 }
-		#	quadTextureSprite = "GFX_arrow_up_small"
-		#	pdx_tooltip = "PRODUCTION_INCREASE_PRIORITY_LABEL"
-		#	clicksound = click_default
-		#}
-		#
-		#buttonType = {
-		#	name = "decrease_priority"
-		#	position = { x=488 y=70	 }
-		#	quadTextureSprite = "GFX_arrow_down_small"
-		#	pdx_tooltip = "PRODUCTION_DECREASE_PRIORITY_LABEL"
-		#	pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
-		#	clicksound = click_default
-		#}
+		buttonType = {
+			name = "increase_priority"
+			position = { x=4 y=34 }
+			quadTextureSprite = "GFX_arrow_up_small"
+			pdx_tooltip = "PRODUCTION_INCREASE_PRIORITY_LABEL"
+			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
+			clicksound = click_default
+			scale = 0.8
+		}
+		
+		buttonType = {
+			name = "decrease_priority"
+			position = { x=23 y=34	 }
+			quadTextureSprite = "GFX_arrow_down_small"
+			pdx_tooltip = "PRODUCTION_DECREASE_PRIORITY_LABEL"
+			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
+			clicksound = click_default
+			scale = 0.8
+		}
 		
 		buttonType = {
 			name = "close_production_line"
@@ -2031,7 +2035,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "convert"
-			position = { x=7 y=30 }
+			position = { x=45 y=30 }
 			quadTextureSprite = "GFX_production_line_convert"
 			clicksound = click_default
 		}
@@ -2443,7 +2447,7 @@ guiTypes = {
 		iconType = {
 			name ="equipment_role"
 			spriteType = "GFX_naval_equipment_role_icons"
-			position = { x = 10 y = 49 }
+			position = { x = 30 y = 49 }
 			alwaystransparent = yes
 		}
 
@@ -2553,23 +2557,23 @@ guiTypes = {
 		#	quadTextureSprite = "GFX_btn_x5"
 		#	clicksound = click_close
 		#}
-		#buttonType = {
-		#	name = "increase_priority"
-		#	position = { x=488 y=41 }
-		#	quadTextureSprite = "GFX_arrow_up_small"
-		#	pdx_tooltip = "PRODUCTION_INCREASE_PRIORITY_LABEL"
-		#	pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
-		#	clicksound = click_default
-		#}
-		#
-		#buttonType = {
-		#	name = "decrease_priority"
-		#	position = { x=488 y=70	 }
-		#	quadTextureSprite = "GFX_arrow_down_small"
-		#	pdx_tooltip = "PRODUCTION_DECREASE_PRIORITY_LABEL"
-		#	pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
-		#	clicksound = click_default
-		#}
+		buttonType = {
+			name = "increase_priority"
+			position = { x=5 y=48 }
+			quadTextureSprite = "GFX_arrow_up_small"
+			pdx_tooltip = "PRODUCTION_INCREASE_PRIORITY_LABEL"
+			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
+			clicksound = click_default
+		}
+		
+		buttonType = {
+			name = "decrease_priority"
+			position = { x=5 y=75	 }
+			quadTextureSprite = "GFX_arrow_down_small"
+			pdx_tooltip = "PRODUCTION_DECREASE_PRIORITY_LABEL"
+			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
+			clicksound = click_default
+		}
 		
 		buttonType = {
 			name = "close_production_line"
@@ -2870,23 +2874,25 @@ guiTypes = {
 		#	alwaystransparent = yes
 		#}
 		
-		#buttonType = {
-		#	name = "increase_priority"
-		#	position = { x=488 y=41 }
-		#	quadTextureSprite = "GFX_arrow_up_small"
-		#	pdx_tooltip = "PRODUCTION_INCREASE_PRIORITY_LABEL"
-		#	pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
-		#	clicksound = click_default
-		#}
-		#
-		#buttonType = {
-		#	name = "decrease_priority"
-		#	position = { x=488 y=70	 }
-		#	quadTextureSprite = "GFX_arrow_down_small"
-		#	pdx_tooltip = "PRODUCTION_DECREASE_PRIORITY_LABEL"
-		#	pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
-		#	clicksound = click_default
-		#}
+		buttonType = {
+			name = "increase_priority"
+			position = { x=4 y=34 }
+			quadTextureSprite = "GFX_arrow_up_small"
+			pdx_tooltip = "PRODUCTION_INCREASE_PRIORITY_LABEL"
+			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
+			clicksound = click_default
+			scale = 0.8
+		}
+		
+		buttonType = {
+			name = "decrease_priority"
+			position = { x=23 y=34	 }
+			quadTextureSprite = "GFX_arrow_down_small"
+			pdx_tooltip = "PRODUCTION_DECREASE_PRIORITY_LABEL"
+			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
+			clicksound = click_default
+			scale = 0.8
+		}
 		
 		buttonType = {
 			name = "close_production_line"
@@ -3235,6 +3241,23 @@ guiTypes = {
 			position = { x=@prod_add_pos_x y=2 }
 			quadTextureSprite = "GFX_add_10"
 			font = "hoi_16mbs"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "increase_priority"
+			position = { x=5 y=48 }
+			quadTextureSprite = "GFX_arrow_up_small"
+			pdx_tooltip = "PRODUCTION_INCREASE_PRIORITY_LABEL"
+			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
+			clicksound = click_default
+		}
+		
+		buttonType = {
+			name = "decrease_priority"
+			position = { x=5 y=75	 }
+			quadTextureSprite = "GFX_arrow_down_small"
+			pdx_tooltip = "PRODUCTION_DECREASE_PRIORITY_LABEL"
+			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
 			clicksound = click_default
 		}
 		
