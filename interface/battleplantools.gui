@@ -72,6 +72,7 @@ guiTypes = {
 				position = {x=52 y=33}	
 				spriteType = "GFX_BPT_order_draw_naval_inv_btn"
 				clicksound = click_battleplan
+				shortcut = "v"
 			}
 			
 			buttonType = {
@@ -79,6 +80,7 @@ guiTypes = {
 				position = {x=87 y=33}	
 				spriteType = "GFX_BPT_order_draw_paradrop_btn"
 				clicksound = click_battleplan
+				shortcut = "g"
 			}
 			
 			buttonType = {
@@ -143,7 +145,6 @@ guiTypes = {
 				position = {x=285 y=33}	
 				spriteType = "GFX_BPT_order_area_defense_btn"
 				clicksound = click_battleplan
-				shortcut = "v" 
 			}
 			
 			buttonType = {
