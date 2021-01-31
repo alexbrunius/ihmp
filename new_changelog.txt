@@ -1,1 +1,2 @@
+Removed war option from Panay incident in mtg_usa.txt
 
