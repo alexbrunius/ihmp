@@ -1,5 +1,12 @@
 # Changelog:
 
+## 1.10.3.7
+- Reverted halving of LL weight in equipment files while halving the global define. This should result in the same values, but fix the bug of infantry and support eq costing no convoys to LL.
+- Add back up/down buttons on production lines.
+- Expanded land combat window to fit 10 divisions in battle and 12 in reserve (from 4/6).
+- Creating naval invasion now has "v" shortcut (removed from garrison order). Paradrop now has "g" shortcut.
+- Fixed Integrate War Economies event for Balkan Minors not giving factories.
+
 ## 1.10.3.6
 - Made Italian Claims on France Focus more available (when any of the possible states are owned by Vichy).
 - Changed events for Italian Claims on France to transfer territory up to the Rhone if Germany agrees.
