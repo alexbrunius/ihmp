@@ -1,4 +1,4 @@
-add_namespace = wtt_germany
+﻿add_namespace = wtt_germany
 
 # Event starting neutral civil war
 country_event = {
@@ -3316,7 +3316,7 @@ country_event = {
 		FROM = {
 			random_owned_controlled_state = {
 				limit = {
-					is_core_of = FROM
+					is_core_of = PREV
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -3333,7 +3333,7 @@ country_event = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					is_core_of = FROM
+					is_core_of = PREV
 					free_building_slots = {
 						building = arms_factory
 						size > 1
