@@ -8100,6 +8100,7 @@ focus_tree = {
 			}
 		}
 
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		prerequisite = { focus = ENG_home_defence }
@@ -8134,6 +8135,7 @@ focus_tree = {
 			}
 		}
 
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		prerequisite = { focus = ENG_issue_gasmasks }
