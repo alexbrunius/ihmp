@@ -198,7 +198,7 @@ NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB 											= 0.54  	-- was 0.18 -- hidden
 	
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		80.0,						-- was 90 -- big guns
-		135.0,						-- was 145 -- torpedos
+		140.0,						-- was 145 -- torpedos
 		50.0,						-- was 40 -- small guns
 	}
 
