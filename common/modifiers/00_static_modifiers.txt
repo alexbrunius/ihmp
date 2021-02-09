@@ -379,25 +379,29 @@ diff_very_hard_player = {
 
 
 diff_very_easy_ai = {
+	promote_cost_factor = 10
 }
 
 diff_easy_ai = {
-	
+	promote_cost_factor = 10
 }
 
 diff_normal_ai = {
+	promote_cost_factor = 10
 }
 
 diff_hard_ai = {
 	army_fuel_consumption_factor = -0.25
 	air_fuel_consumption_factor = -0.25
  	navy_fuel_consumption_factor = -0.25
+	promote_cost_factor = 10
 }
 
 diff_very_hard_ai = {
 	army_fuel_consumption_factor = -0.5
 	air_fuel_consumption_factor = -0.5
  	navy_fuel_consumption_factor = -0.5
+	promote_cost_factor = 10
 }
 
 
