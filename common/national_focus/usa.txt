@@ -1989,6 +1989,9 @@ focus_tree = {
 				}			
 			}
 		}
+
+		continue_if_invalid = yes
+		
 		complete_tooltip = {
 			navy_experience = 50
 			army_experience = 50
@@ -4834,7 +4837,6 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_USA_CONGRESS}
@@ -5006,8 +5008,7 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
@@ -5542,7 +5543,6 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
@@ -5666,7 +5666,6 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
