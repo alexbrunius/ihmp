@@ -338,7 +338,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 10
+		sub_visibility = 11
 		naval_speed = 11
 		reliability = 0.75
 		
