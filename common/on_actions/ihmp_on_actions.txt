@@ -343,6 +343,66 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = FIN_ai_behavior
+						option = FIN_MP_1
+					}
+					FIN = { is_ai = yes }
+				}
+				FIN = {
+					delete_units = { 
+						division_template = "Ratsuväkiprikaati"
+						disband = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = NOR_ai_behavior
+						option = NOR_MP_1
+					}
+					NOR = { is_ai = yes }
+				}
+				NOR = {
+					delete_units = { 
+						division_template = "Dragonregiment"
+						disband = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = SWE_ai_behavior
+						option = SWE_MP_1
+					}
+					SWE = { is_ai = yes }
+				}
+				SWE = {
+					delete_units = { 
+						division_template = "Kavalleribrigaden"
+						disband = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WL_ai_behavior
+						option = WL_MP_1
+					}
+					XSM = { is_ai = yes }
+				}
+				XSM = {
+					delete_units = { 
+						division_template = "Qibing Jun"
+						disband = yes
+					}
+				}
+			}
 			#Major Warlords
 			if = {
 				limit = {
@@ -369,63 +429,6 @@ on_actions = {
 				}
 				GXC = {
 					set_major = yes
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = FIN_ai_behavior
-						option = FIN_MP_1
-					}
-					has_game_rule = {
-						rule = AI_DISBAND_DIVISIONS
-						option = DISBAND
-					}
-					FIN = { is_ai = yes }
-				}
-				FIN = {
-					delete_units = { 
-						division_template = "Ratsuväkiprikaati"
-						disband = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = NOR_ai_behavior
-						option = NOR_MP_1
-					}
-					has_game_rule = {
-						rule = AI_DISBAND_DIVISIONS
-						option = DISBAND
-					}
-					NOR = { is_ai = yes }
-				}
-				NOR = {
-					delete_units = { 
-						division_template = "Dragonregiment"
-						disband = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = SWE_ai_behavior
-						option = SWE_MP_1
-					}
-					has_game_rule = {
-						rule = AI_DISBAND_DIVISIONS
-						option = DISBAND
-					}
-					SWE = { is_ai = yes }
-				}
-				SWE = {
-					delete_units = { 
-						division_template = "Kavalleribrigaden"
-						disband = yes
-					}
 				}
 			}
 			#Military Police for AIs
@@ -568,7 +571,8 @@ on_actions = {
 	on_peaceconference_ended = {
 		effect = {
 			if = { 
-				limit = { 
+				limit = {
+					ROOT = { tag = JAP }
 					has_dlc = "Waking the Tiger"
 					613 = { is_owned_by  = JAP }
 				}
@@ -596,6 +600,24 @@ on_actions = {
 						remove_core_of = SIK
 						set_compliance = JAP.chi_compl
 					}
+				}
+				PRC = {
+					set_major = no
+				}
+				SHX = {
+					set_major = no
+				}
+				XSM = {
+					set_major = no
+				}
+				SIK = {
+					set_major = no
+				}
+				YUN = {
+					set_major = no
+				}
+				GXC = {
+					set_major = no
 				}
 			}
 		}
