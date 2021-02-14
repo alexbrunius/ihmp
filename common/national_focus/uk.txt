@@ -6483,11 +6483,10 @@ focus_tree = {
 			#}
 		}	
 		completion_reward = {
-			set_autonomy = {
-				target = RAJ
-				autonomy_state = autonomy_dominion
+			RAJ = {
+				add_autonomy_score = { value = 200 }
+				add_timed_idea = { idea = ENG_indian_autonomy_RAJ_idea days = 1460 }
 			}
-			RAJ = { add_timed_idea = { idea = ENG_indian_autonomy_RAJ_idea days = 730 } }
 			custom_effect_tooltip = ENG_indian_autonomy_tt
 		}
 	}
