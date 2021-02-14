@@ -407,6 +407,7 @@ GER_case_anton_category = {
 						36  = { CONTROLLER = { has_war_with = ROOT } }
 						99  = { CONTROLLER = { has_war_with = ROOT } }
 						785 = { CONTROLLER = { has_war_with = ROOT } }
+						806 = { CONTROLLER = { has_war_with = ROOT } }
 
 						# Vichy and Corsica
 						735 = { CONTROLLER = { has_war_with = ROOT } owner = { tag = VIC } }
