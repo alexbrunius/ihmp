@@ -1750,6 +1750,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		available = {
 			has_government = democratic
+			custom_trigger_tooltip = {
+				tooltip = USA_scientist_haven_tt
+				OR = {
+					has_country_flag = ger_refuge
+					has_country_flag = ita_refuge
+				}
+			}
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {

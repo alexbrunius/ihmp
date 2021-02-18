@@ -1734,6 +1734,10 @@ political_actions = {
             stability_factor = -0.05
         }
 
+		complete_effect = {
+			set_country_flag = ger_refuge
+		}
+
         remove_trigger = {
             OR = {
                 GER = { has_government = ROOT }
@@ -1799,6 +1803,10 @@ political_actions = {
             research_speed_factor = 0.05
             stability_factor = -0.05
         }
+
+		complete_effect = {
+			set_country_flag = ita_refuge
+		}
 
         remove_trigger = {
             ITA = { has_government = ROOT }
