@@ -13,13 +13,19 @@ country_event = {
 	picture = GFX_report_event_dead_soldiers
 	fire_only_once = yes
 	is_triggered_only = yes
-	
-	option = { 
-		name = amm_soviet.1.a
-		ai_chance = { factor = 100 }
+
+	immediate = {
 		add_ideas = state_of_chock
 		hidden_effect = {
 			country_event = { id = amm_soviet.2 days = 30 }
+		}
+	}
+
+	option = { 
+		name = amm_soviet.1.a
+		ai_chance = { factor = 100 }
+		effect_tooltip = {
+			add_ideas =  state_of_chock
 		}
 	}
 }
