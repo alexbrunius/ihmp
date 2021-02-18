@@ -2095,6 +2095,20 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	submarine_specialist = { 
+		type = navy
+		trait_type = personality_trait
+	
+		modifier = {
+			
+		}
+		trait_xp_factor = {
+			seawolf = 0.5     #+100%
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	caustic_personality = { 
 		type = navy
 		trait_type = personality_trait
