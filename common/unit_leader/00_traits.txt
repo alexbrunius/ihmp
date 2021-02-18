@@ -1004,7 +1004,7 @@ leader_traits = {
 		cost = 700
 		modifier = {
 			fort = {
-				attack = 0.15
+				attack = 0.10
 			}
 			experience_gain_factor = 0.15
 			max_commander_army_size = -3
