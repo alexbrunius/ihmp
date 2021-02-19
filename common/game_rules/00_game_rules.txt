@@ -607,6 +607,11 @@ GER_ai_behavior = {
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+	option = {
+		name = 	GER_MP_2
+		text = "RULE_OPTION_GER_MP_2"
+		desc = "RULE_OPTION_GER_MP_2_DESC"
+	}
 	default = {
 		name = GER_MP_1
 		text = "RULE_OPTION_GER_MP_1"

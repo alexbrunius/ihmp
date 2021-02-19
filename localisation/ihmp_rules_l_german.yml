@@ -21,6 +21,8 @@
  RULE_ALLOW_LEND_LEASE_VOLUNTEERS:0 "Game Rule: §RCountries can send lend lease to countries that have volunteer forces from them§!"
  RULE_OPTION_GER_MP_1:0 "1. Deutsches MP Skript"
  RULE_OPTION_GER_MP_1_DESC:0 "Deutschland nimmt als erstes die wirtschaftlichen Foki, als 7ten Fokus Rheinland, als 13ten Fokus Anschluss und als 20ten Danzig oder Krieg"
+ RULE_OPTION_GER_MP_2:0 "2. Deutsches MP Skript"
+ RULE_OPTION_GER_MP_2_DESC:0 "Kreigs Marine Foki"
  RULE_OPTION_SOV_MP_1:0 "Sowjetisches MP Skript"
  RULE_OPTION_SOV_MP_1_DESC:0 "Sowjetunion nimmt dem Kollektivismus Pfad, führt die große Säuberung durchm aber führt niemals Propaganda gegen die Kapitalisten oder Faschisten, sondern wechselt stattdessen auf einen fortlaufenden Fokus"
  RULE_OPTION_JAP_MP_1:0 "Japanisches MP Skript"

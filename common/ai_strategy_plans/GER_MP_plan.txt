@@ -105,15 +105,141 @@ GER_MP_1 = {
 	}
 }
 
+GER_MP_2 = {
+	name = "GER MP Navy Heavy"
+	desc = "Navy Heavy Cruiser Subs"
+
+	enable = {
+		tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_2
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		GER_rhineland
+		GER_naval_rearmament
+		GER_four_year_plan
+		GER_naval_effort
+		GER_autarky
+		GER_u_boat_effort
+		#1937
+		GER_hermann_goring_werke
+		GER_kdf_wagen
+		GER_extra_tech_slot
+		GER_naval_effort2
+		GER_autobahn
+		GER_german_war_economy
+		#1938
+		GER_army_innovation
+		GER_soviet_treaty
+		GER_anschluss
+		GER_demand_sudetenland
+		GER_first_vienna_award
+		GER_end_of_czechoslovakia
+		#1939
+		GER_demand_memel
+		GER_mol_rib_pact
+		GER_Trade_interdiction
+		GER_danzig_or_war
+		GER_around_maginot
+		GER_coal_liquidization
+		GER_synthetic_rubber
+		#1940
+		GER_modular_construction
+		GER_west_wall
+		GER_army_innovation_2
+		GER_weserubung
+		GER_war_with_france
+		GER_air_innovation
+		#1941
+		GER_tactical_air_effort
+		GER_air_innovation_2
+		GER_atlantikwall
+		GER_anti_comitern_pact
+		GER_ussr_war_goal
+		GER_second_vienna_award
+		GER_italy_ally
+		GER_nationalist_spain_ally
+		#1942
+		GER_rocketry_focus
+		GER_Wunderwaffe
+		GER_tech_sharing
+
+	}
+
+	research = {
+		
+		naval_equipment = 100
+		naval_doctrine = 100
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		armor = -1000
+		cat_medium_armor = 2000
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 0
+		war_economy = 0
+		hjalmar_schacht = 60
+		heinrich_himmler = 0
+		martin_bormann = 100
+		walther_funk = 20
+		joseph_goebbels = 30
+		rudolf_hess = 0
+		messerschmitt = 5
+		krupp = 25
+		goering = 1
+		werner_von_fritsch = 1
+		free_trade = 0
+		export_focus = 0
+		limited_exports = 1
+		closed_economy = 0
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+	}	
+
+	traits = {
+		captain_of_industry = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = .5
+		modifier = {
+			factor = .5
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
 GER_MP_Production = {
 	name = "Production Plan"
 	desc = ""
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 	}
 
@@ -183,9 +309,15 @@ GER_MP_Alliance = {
 
 	enable = {
 		original_tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 	}
 
@@ -236,9 +368,15 @@ Do_Befriend_But_No_PP = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 	}
 
@@ -258,9 +396,15 @@ GER_MP_1_Fighter2 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 		NOT = { has_tech = fighter2 }
 		date > 1938.6.1
@@ -284,9 +428,15 @@ GER_MP_MARM_1 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 		NOT = { has_tech = basic_medium_tank }
 		has_completed_focus = GER_extra_tech_slot
@@ -310,9 +460,15 @@ GER_MP_1_MARM2 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 		NOT = { has_tech = improved_medium_tank }
 		has_completed_focus = GER_soviet_treaty
@@ -338,9 +494,15 @@ GER_MP_MARM_3 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 		NOT = { has_tech = advanced_medium_tank }
 		has_completed_focus = GER_army_innovation_2
@@ -364,9 +526,15 @@ GER_MP_Fronts_1 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 		POL = { has_capitulated = no }
 	}
@@ -408,9 +576,15 @@ GER_MP_Fronts_2 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 		country_exists = VIC
 	}
@@ -442,9 +616,15 @@ GER_MP_Fronts_3 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 	}
 
@@ -468,9 +648,15 @@ GER_MP_Fronts_4 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 		DEN = { has_capitulated = no }
 	}
@@ -492,9 +678,15 @@ GER_MP_Fronts_4 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 		DEN = { has_capitulated = yes }
 		HOL = { has_capitulated = yes }
@@ -520,9 +712,15 @@ GER_MP_No_Eth = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 	}
 
@@ -555,9 +753,15 @@ MP_Conscription_0 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 		has_idea = volunteer_only
 	}
@@ -577,9 +781,15 @@ MP_Conscription_1 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 		has_idea = limited_conscription
 	}
@@ -600,9 +810,15 @@ MP_Conscription_2 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 		has_idea = extensive_conscription
 	}
@@ -624,9 +840,15 @@ MP_Economy_0 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 		has_idea = low_economic_mobilisation
 	}
@@ -646,9 +868,15 @@ MP_Economy_1 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 		has_idea = partial_economic_mobilisation
 	}
@@ -669,9 +897,15 @@ MP_Economy_2 = {
 
 	enable = {
 		tag = GER
-		has_game_rule = {
-			rule = GER_ai_behavior
-			option = GER_MP_1
+		OR = {
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_1
+			}
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = GER_MP_2
+			}
 		}
 		has_idea = war_economy
 	}

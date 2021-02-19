@@ -21,6 +21,7 @@ GER_MP_MARM_Production = {
 		has_game_rule = {
 			rule = GER_ai_behavior
 			option = GER_MP_1
+			option = GER_MP_2
 		}
 		has_tech = improved_medium_tank
 	}
