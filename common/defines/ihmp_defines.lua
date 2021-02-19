@@ -397,3 +397,6 @@ NDefines.NAI.SURRENDER_LEVEL_TO_PULL_EXPEDITIONARIES_BACK = 1.0			-- AI will pul
 NDefines.NAI.SURRENDER_LEVEL_TO_NOT_SEND_EXPEDITIONARIES = 1.0			-- AI will not send expeditioniries if its surrender level is above this ratio
 NDefines.NAI.NAVY_PREFERED_MAX_SIZE = 60						-- AI will generally attempt to merge fleets into this size, but as a soft limit.
 NDefines.NAI.HOUR_BAD_COMBAT_REEVALUATE = 24                     --was 100            	-- if we are in combat for this amount and it goes shitty then try skipping it
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0		-- AI needs to control more than this number of states before considering giving any away
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0	-- The difference in number of controlled states compared to war participation needs to be bigger than this for the AI to consider giving a state to a country
+NDefines.NAI.GIVE_STATE_CONTROL_BASE_SCORE = 1000			-- Base diplo score for giving away control of states
