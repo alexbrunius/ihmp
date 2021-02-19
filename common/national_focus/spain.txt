@@ -3901,6 +3901,11 @@ focus_tree = {
 			}
 			NOT = { has_global_flag = POR_iberian_summit_in_progress_flag }
 		}
+
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
+
 		bypass = {
 			POR = { is_in_faction = yes }
 		}
@@ -12433,6 +12438,7 @@ focus_tree = {
 	focus = {
 		id = SPR_end_fascism_at_all_costs
 		available = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
 		}
 		bypass = {
 		}
