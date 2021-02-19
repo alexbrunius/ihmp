@@ -396,3 +396,4 @@ NDefines.NAI.CASUALTY_RATIO_TO_NOT_SEND_EXPEDITIONARIES = 1.0			-- AI will not s
 NDefines.NAI.SURRENDER_LEVEL_TO_PULL_EXPEDITIONARIES_BACK = 1.0			-- AI will pull expeditioniries back if its surrender level is above this ratio
 NDefines.NAI.SURRENDER_LEVEL_TO_NOT_SEND_EXPEDITIONARIES = 1.0			-- AI will not send expeditioniries if its surrender level is above this ratio
 NDefines.NAI.NAVY_PREFERED_MAX_SIZE = 60						-- AI will generally attempt to merge fleets into this size, but as a soft limit.
+NDefines.NAI.HOUR_BAD_COMBAT_REEVALUATE = 24                     --was 100            	-- if we are in combat for this amount and it goes shitty then try skipping it
