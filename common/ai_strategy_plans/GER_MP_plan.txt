@@ -137,15 +137,15 @@ GER_MP_2 = {
 		#1938
 		GER_army_innovation
 		GER_soviet_treaty
-		GER_anschluss
+		GER_anschluss  #15
 		GER_demand_sudetenland
 		GER_first_vienna_award
 		GER_end_of_czechoslovakia
 		#1939
 		GER_demand_memel
-		GER_mol_rib_pact
+		GER_mol_rib_pact  #20
 		GER_Trade_interdiction
-		GER_danzig_or_war
+		GER_danzig_or_war  #22
 		GER_around_maginot
 		GER_coal_liquidization
 		GER_synthetic_rubber
