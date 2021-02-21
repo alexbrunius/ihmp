@@ -11,7 +11,7 @@ NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1 -- was 0.5 --Scal
 NDefines.NBuildings.RADAR_RANGE_MAX = 120				-- was 200 -- Range is interpolated between building levels 1-15.
 
 -- DIPLOMACY STUFF
-NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.04			-- was 0.05 -- Each army unit owned by the source country contributes this amount of volunteers to the limit.
+NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.02			-- was 0.05 -- Each army unit owned by the source country contributes this amount of volunteers to the limit.
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 25			-- was 30	-- This many divisons are required for the country to be able to send volunteers.
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 50					-- was 100	-- Political power cost to send attache
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 25.0			-- was 50	-- Command Power sent attache usage cost
