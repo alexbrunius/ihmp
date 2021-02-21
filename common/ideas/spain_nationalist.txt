@@ -373,7 +373,31 @@ ideas = {
 			}
 
 			modifier = {
-				send_volunteer_size = 2
+				send_volunteer_size = 1
+				send_volunteer_divisions_required = -1
+				lend_lease_tension = -0.30
+			}
+		}
+
+		SPA_spanish_civil_war_commitments_SOV = {
+
+			picture = generic_manpower_bonus
+
+			allowed = {
+				OR = {
+					original_tag = ITA
+					original_tag = GER
+					original_tag = SOV
+					original_tag = FRA
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				send_volunteer_size = 3
 				send_volunteer_divisions_required = -1
 				lend_lease_tension = -0.30
 			}
