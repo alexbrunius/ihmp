@@ -2403,7 +2403,7 @@ focus_tree = {
 		prerequisite = { focus = USA_military_construction }
 		available = {
 			OR = {
-				has_war_support > 0.3
+				has_war_support > 0.4
 				has_war = yes
 			}
 		}
@@ -2453,6 +2453,31 @@ focus_tree = {
 						region = 119
 						region = 120
 					}
+					NOT = { has_state_flag = USA_USACE_projects_3AF }
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = USA_USACE_projects_3AF
+			}			
+			random_owned_controlled_state = {
+				limit = {
+					arms_factory > 0
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						region = 117
+						region = 118
+						region = 119
+						region = 120
+					}
+					NOT = { has_state_flag = USA_USACE_projects_3AF }
 				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
