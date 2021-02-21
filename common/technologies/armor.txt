@@ -230,7 +230,7 @@ technologies = {
 		}
 	
 		research_cost = 0.5
-		start_year = 1934
+		start_year = 1937
 		
 		ai_will_do = {
 			factor = 0.25
@@ -419,7 +419,7 @@ technologies = {
 		}
 	
 		research_cost = 0.5
-		start_year = 1936
+		start_year = 1939
 		
 		ai_will_do = {
 			factor = 0
@@ -663,7 +663,7 @@ technologies = {
 		}
 	
 		research_cost = 0.5
-		start_year = 1941
+		start_year = 1944
 	
 		ai_will_do = {
 			factor = 0.1

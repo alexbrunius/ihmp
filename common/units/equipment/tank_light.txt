@@ -157,7 +157,7 @@ equipments = {
 	}
 
 	light_tank_artillery_equipment = {
-		year = 1934
+		year = 1937
 
 		can_be_produced = {
 			NOT = {
@@ -214,7 +214,7 @@ equipments = {
 	}
 
 	light_tank_artillery_equipment_1 = {
-		year = 1934
+		year = 1937
 
 		archetype = light_tank_artillery_equipment
 		family = light_tank_equipment_1
@@ -226,7 +226,7 @@ equipments = {
 	}
 
 	light_tank_artillery_equipment_2 = {
-		year = 1936
+		year = 1939
 
 		archetype = light_tank_artillery_equipment
 		parent = light_tank_artillery_equipment_1
@@ -259,7 +259,7 @@ equipments = {
 	}
 
 	light_tank_artillery_equipment_3 = {
-		year = 1941
+		year = 1944
 
 		archetype = light_tank_artillery_equipment
 		parent = light_tank_artillery_equipment_2
