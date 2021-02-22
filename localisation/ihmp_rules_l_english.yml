@@ -21,6 +21,8 @@
  RULE_ALLOW_LEND_LEASE_VOLUNTEERS:0 "Game Rule: §RCountries can send lend lease to countries that have volunteer forces from them§!"
  RULE_OPTION_GER_MP_1:0 "1. German MP script"
  RULE_OPTION_GER_MP_1_DESC:0 "Germany first industrializes, then takes as its 7th focus Rheinland, as its 13th focus Anschluss and as its 20th Danzig or War"
+ RULE_OPTION_GER_MP_2:0 "2. German MP script"
+ RULE_OPTION_GER_MP_2_DESC:0 "Naval heavy mix with early industrialization, then takes Rheinland at 1; Anschluss at 15; Danzig or war at 22."
  RULE_OPTION_SOV_MP_1:0 "1. Soviet MP script"
  RULE_OPTION_SOV_MP_1_DESC:0 "Sovietunion takes collectivism path, the purges, but nether does propaganda against the capitalists or fascists, instead it takes a continues focus"
  RULE_OPTION_JAP_MP_1:0 "Japanese MP script"
