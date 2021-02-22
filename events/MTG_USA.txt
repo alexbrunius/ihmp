@@ -4403,6 +4403,7 @@ country_event = {
 			NOT = { has_idea = undisturbed_isolation }
 			NOT = { has_idea = isolation }
 		}
+		trigger = { has_completed_focus = USA_limited_intervention }
 		ai_chance = {
 			factor = 5
 			modifier = {
