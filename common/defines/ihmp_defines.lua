@@ -51,6 +51,8 @@ NDefines.NPolitics.ARMY_LEADER_COST = 2						-- was 5 -- cost for recruiting new
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 6			-- was 24 -- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 4			-- Max width of regiments in division designer.
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 3			-- Max height of regiments in division designer.
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2			-- Max width of support in division designer.
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 3			-- Max height of support in division designer.
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 14	-- was 20 --Base cost to unlock a regiment slot,
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 7	-- was 5  --Base cost to change a regiment column.
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 7		-- was 10 --Base cost to unlock a support slot
@@ -155,7 +157,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 		0.0, -- NAVAL_KAMIKAZE	
         0.0, -- PORT_STRIKE		
 		0.1, -- AIR_SUPPLY		was 0.3
-		0.05, -- TRAINING			was 0.0
+		0.0, -- TRAINING
 		0.0, -- NAVAL_MINES_PLANTING
 		0.0, -- NAVAL_MINES_SWEEPING
 		0.0, -- MISSION_RECON
@@ -196,12 +198,12 @@ NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB 											= 0.54  	-- was 0.18 -- hidden
 	
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		80.0,						-- was 90 -- big guns
-		135.0,						-- was 145 -- torpedos
+		140.0,						-- was 145 -- torpedos
 		50.0,						-- was 40 -- small guns
 	}
 
 NDefines.NNavy.DEPTH_CHARGES_HIT_CHANCE_MULT 				= 0.6 			-- was 1.1	-- multiplies hit chance of small guns
-NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE 					= 130.0			-- was 100 -- hit profile for depth charges
+NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE 					= 120.0			-- was 100 -- hit profile for depth charges
 NDefines.NNavy.DEPTH_CHARGES_DAMAGE_MULT 					= 1.1 			-- was 0.7 -- multiplies damage of depth charges
 
 NDefines.NNavy.CONVOY_SPOTTING_SPEED_MULT 					= 1.2			-- was 1.0 -- spotting speed mult against convoys
@@ -394,3 +396,7 @@ NDefines.NAI.CASUALTY_RATIO_TO_NOT_SEND_EXPEDITIONARIES = 1.0			-- AI will not s
 NDefines.NAI.SURRENDER_LEVEL_TO_PULL_EXPEDITIONARIES_BACK = 1.0			-- AI will pull expeditioniries back if its surrender level is above this ratio
 NDefines.NAI.SURRENDER_LEVEL_TO_NOT_SEND_EXPEDITIONARIES = 1.0			-- AI will not send expeditioniries if its surrender level is above this ratio
 NDefines.NAI.NAVY_PREFERED_MAX_SIZE = 60						-- AI will generally attempt to merge fleets into this size, but as a soft limit.
+NDefines.NAI.HOUR_BAD_COMBAT_REEVALUATE = 24                     --was 100            	-- if we are in combat for this amount and it goes shitty then try skipping it
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0		-- AI needs to control more than this number of states before considering giving any away
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0	-- The difference in number of controlled states compared to war participation needs to be bigger than this for the AI to consider giving a state to a country
+NDefines.NAI.GIVE_STATE_CONTROL_BASE_SCORE = 1000			-- Base diplo score for giving away control of states

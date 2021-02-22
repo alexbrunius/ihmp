@@ -85,6 +85,7 @@ if = {
 		basic_depth_charges = 1
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
 	}
 	set_naval_oob = "GER_1936_naval_mtg"
 }
@@ -436,7 +437,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Heinz Guderian"
 	picture = "Portrait_Germany_Heinz_Guderian.dds"
-	traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer }
+	traits = { trickster brilliant_strategist armor_officer armor_officer career_officer }
 	skill = 4
 	id = 6
 	attack_skill = 2
@@ -714,7 +715,7 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Karl Dönitz"
 	picture = "Portrait_Germany_Karl_Donitz.dds"
-	traits = { navy_career_officer seawolf }
+	traits = { navy_career_officer submarine_specialist }
 	skill = 5
 	id = 26
 	attack_skill = 5

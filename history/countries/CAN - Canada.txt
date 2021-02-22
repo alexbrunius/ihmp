@@ -35,7 +35,6 @@ if = {
 	set_technology = {
 		early_destroyer = 1
 		early_light_cruiser = 1
-		transport = 1
 	}
 }
 if = {
@@ -49,7 +48,6 @@ if = {
 		basic_light_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-		mtg_transport = 1
 	}
 }
 
@@ -320,7 +318,7 @@ if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
 	create_equipment_variant = {
-		name = "Sanguenay Class"
+		name = "Saguenay Class"
 		type = destroyer_1
 		upgrades = {
 			ship_torpedo_upgrade = 1
@@ -353,7 +351,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Sanguenay Class"
+		name = "Saguenay Class"
 		type = ship_hull_light_1
 		name_group = CAN_DD_HISTORICAL
 		parent_version = 0
@@ -362,10 +360,10 @@ if = {
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
 }

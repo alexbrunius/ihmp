@@ -1,0 +1,61 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+# building_target
+
+
+Soviet_dont_mess_with_volunteers = {
+	enable = {
+		date < 1940.1.1
+		tag = SOV
+	}
+	abort = {
+		NOT = { date < 1940.1.1 }
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = CHI
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = PRC
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SHX
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = XSM
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SIK
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = YUN
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = GXC
+		value = -500
+	}	
+}

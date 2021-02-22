@@ -50,8 +50,8 @@ CHI_warlord_MP_plan_nationalist = {
 		closed_economy = 0
 		civilian_economy = 0
 		low_economic_mobilisation = 0
-		partial_economic_mobilisation = 100
-		war_economy = 200
+		partial_economic_mobilisation = 10
+		war_economy = 20
 		GXC_li_zongren = 0
 		GXC_li_jishen = 0
 		YUN_ding_zhipan = 0
@@ -131,8 +131,8 @@ CHI_warlord_MP_plan_communist = {
 		closed_economy = 0
 		civilian_economy = 0
 		low_economic_mobilisation = 0
-		partial_economic_mobilisation = 100
-		war_economy = 200
+		partial_economic_mobilisation = 10
+		war_economy = 20
 	}
 
 	ai_strategy = {
@@ -152,7 +152,7 @@ CHI_warlord_MP_plan_communist = {
 }
 
 MP_Weapons_1 = {
-	name = "PRC MP Weapons 1"
+	name = "WL MP Weapons 1"
 	desc = "Resarch weapons 1 quick for better stats"
 
 	enable = {
@@ -184,8 +184,8 @@ MP_Weapons_1 = {
 }
 
 GXC_ignore_FRA_script = {
-	name = ""
-	desc = ""
+	name = "Ignore French Border"
+	desc = "Guanxi ignores their French colonial border"
 
 	enable = {
 		tag = GXC
@@ -207,8 +207,8 @@ GXC_ignore_FRA_script = {
 }
 
 GXC_Infrastructure_1 = {
-	name = ""
-	desc = ""
+	name = "Guanxi Infrastructure"
+	desc = "Guanxi builds up the infrastructure in their capital"
 
 	enable = {	
 		original_tag = GXC
@@ -224,7 +224,7 @@ GXC_Infrastructure_1 = {
 
 	abort = {
 		594 = {
-			OR ={
+			OR = {
 				NOT = { is_controlled_by = GXC }
 				NOT = { infrastructure < 7 }
 			}
@@ -240,8 +240,8 @@ GXC_Infrastructure_1 = {
 }
 
 GXC_Infrastructure_2 = {
-	name = ""
-	desc = ""
+	name = "Guanxi Infrastructure"
+	desc = "Guanxi builds up the infrastructure in Guangzhou"
 
 	enable = {	
 		original_tag = GXC
@@ -261,7 +261,7 @@ GXC_Infrastructure_2 = {
 
 	abort = {
 		592 = {
-			OR ={
+			OR = {
 				NOT = { is_controlled_by = GXC }
 				NOT = { infrastructure < 7 }
 			}
@@ -277,8 +277,8 @@ GXC_Infrastructure_2 = {
 }
 
 YUN_Infrastructure = {
-	name = ""
-	desc = ""
+	name = "Yunnan Infrastructure"
+	desc = "Yunnan builds up the infrastructure in their capital"
 
 	enable = {
 		original_tag = YUN
@@ -294,7 +294,7 @@ YUN_Infrastructure = {
 
 	abort = {
 		325 = {
-			OR ={
+			OR = {
 				NOT = { is_controlled_by = YUN }
 				NOT = { infrastructure < 10 }
 			}
@@ -305,13 +305,13 @@ YUN_Infrastructure = {
 		type = build_building
 		id = infrastructure
 		target = 325
-		value = 10
+		value = 1
 	}
 }
 
 CHI_warlord_expedtionary_forces = {
-	name = "Chinese Warlord MP plan supporting Nationalists"
-	desc = "Scripted behavior for Chinese Warlord"
+	name = "Chinese Warlord supporting Nationalists"
+	desc = "Chinese Warlord should give all their division to China"
 
 	enable = {
 		OR = {
@@ -337,64 +337,13 @@ CHI_warlord_expedtionary_forces = {
 
 	ai_strategy = {
 		type = spare_unit_factor
-		value = 0
-	}
-
-	# Keep small, as it is used as a factor for some things (such as research needs)
-	# Recommended around 1.0. Useful for relation between plans
-	weight = {
-		factor = 1.0
-		modifier = {
-			factor = 1.0
-		}
+		value = -1
 	}
 }
 
-XSM_Garrision = {
-	name = "Garrison Plan"
-	desc = ""
-
-	enable = {
-		original_tag = XSM
-		has_game_rule = {
-			rule = WL_ai_behavior
-			option = WL_MP_1
-		}
-		is_in_faction_with = CHI
-		597 = {
-			is_controlled_by = CHI	
-		}
-		743 = {
-			is_controlled_by = CHI	
-		}
-	}
-
-	abort = {
-		OR = {
-			NOT = { is_in_faction_with = CHI }
-			597 = {
-				NOT = { is_controlled_by = CHI }
-			}
-			743 = {
-				NOT = { is_controlled_by = CHI }
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = put_unit_buffers
-		ratio = 1.0
-		states = { 
-			597
-			743
-		}
-		area = asia
-	}
-}
-
-XSM_Garrision_2 = {
+XSM_Garrision_Bejing = {
 	name = "Garrision Bejing"
-	desc = ""
+	desc = "Xibei garrisions Bejing"
 
 	enable = {
 		original_tag = XSM
@@ -429,10 +378,51 @@ XSM_Garrision_2 = {
 	}
 }
 
+XSM_Garrision_Shandong = {
+	name = "Garrison Shandong"
+	desc = "Xibei garrisions Shandong"
 
-YUN_Garrision = {
-	name = "Garrison Plan"
-	desc = ""
+	enable = {
+		original_tag = XSM
+		has_game_rule = {
+			rule = WL_ai_behavior
+			option = WL_MP_1
+		}
+		is_in_faction_with = CHI
+		597 = {
+			is_controlled_by = CHI	
+		}
+		743 = {
+			is_controlled_by = CHI	
+		}
+	}
+
+	abort = {
+		OR = {
+			NOT = { is_in_faction_with = CHI }
+			597 = {
+				NOT = { is_controlled_by = CHI }
+			}
+			743 = {
+				NOT = { is_controlled_by = CHI }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 2.0
+		states = { 
+			597
+			743
+		}
+		area = asia
+	}
+}
+
+YUN_Garrision_Shanghai = {
+	name = "Garrison Shanghai"
+	desc = "Yunnan garrisions Shanghai"
 
 	enable = {
 		original_tag = YUN
@@ -441,9 +431,6 @@ YUN_Garrision = {
 			option = WL_MP_1
 		}
 		is_in_faction_with = CHI
-		595 = {
-			is_controlled_by = CHI	
-		}
 		596 = {
 			is_controlled_by = CHI	
 		}
@@ -455,9 +442,6 @@ YUN_Garrision = {
 	abort = {
 		OR = {
 			NOT = { is_in_faction_with = CHI }
-			595 = {
-				NOT = { is_controlled_by = CHI }
-			}
 			596 = {
 				NOT = { is_controlled_by = CHI }
 			}
@@ -469,19 +453,17 @@ YUN_Garrision = {
 
 	ai_strategy = {
 		type = put_unit_buffers
-		ratio = 1.0
+		ratio = 2.0
 		states = {
-			595
-			596
 			613
 		}
 		area = asia
 	}
 }
 
-GXC_Garrision = {
-	name = "Garrison Plan"
-	desc = ""
+GXC_Garrision_1 = {
+	name = "Garrison own territory"
+	desc = "Guanxi garrisions their own territory"
 
 	enable = {
 		original_tag = GXC
@@ -499,6 +481,12 @@ GXC_Garrision = {
 		593 = {
 			is_controlled_by = GXC
 		}
+		595 = {
+			NOT = { is_controlled_by = CHI }
+		}
+		596 = {
+			NOT = { is_controlled_by = CHI }
+		}
 	}
 
 	abort = {
@@ -513,16 +501,85 @@ GXC_Garrision = {
 			593 = {
 				NOT = { is_controlled_by = GXC }
 			}
+			595 = {
+				is_controlled_by = CHI
+			}
+			596 = {
+				is_controlled_by = CHI
+			}
 		}
 	}
 
 	ai_strategy = {
 		type = put_unit_buffers
-		ratio = 0.5
+		ratio = 3.0
 		states = {
 			591
 			592
 			593
+		}
+		area = asia
+	}
+}
+
+GXC_Garrision_Extended = {
+	name = "Garrison own territory and a South China"
+	desc = "Guanxi garrisions it's own territory and parts of South China"
+
+	enable = {
+		original_tag = GXC
+		has_game_rule = {
+			rule = WL_ai_behavior
+			option = WL_MP_1
+		}
+		is_in_faction_with = CHI
+		591 = {
+			is_controlled_by = GXC	
+		}
+		592 = {
+			is_controlled_by = GXC	
+		}
+		593 = {
+			is_controlled_by = GXC
+		}
+		595 = {
+			is_controlled_by = CHI
+		}
+		596 = {
+			is_controlled_by = CHI
+		}
+	}
+
+	abort = {
+		OR = {
+			NOT = { is_in_faction_with = CHI }
+			591 = {
+				NOT = { is_controlled_by = GXC }
+			}
+			592 = {
+				NOT = { is_controlled_by = GXC }
+			}
+			593 = {
+				NOT = { is_controlled_by = GXC }
+			}
+			595 = {
+				NOT = { is_controlled_by = CHI }
+			}
+			596 = {
+				NOT = { is_controlled_by = CHI }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 3.0
+		states = {
+			591
+			592
+			593
+			595
+			596
 		}
 		area = asia
 	}

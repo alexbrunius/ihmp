@@ -103,8 +103,7 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		complete_tooltip = {
@@ -1925,7 +1924,7 @@ focus_tree = {
 				create_corps_commander = {
 					name = "Jayanto Nath Chaudhuri"
 					gfx = "GFX_RAJ_jayanto_nath_chaudhuri"
-					traits = { panzer_leader }
+					traits = { armor_officer }
 					skill = 3
 					attack_skill = 4
 					defense_skill = 1

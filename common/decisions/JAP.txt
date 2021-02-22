@@ -2672,7 +2672,7 @@ prospect_for_resources = {
 						tag = ROOT
 						is_subject_of = ROOT
 					}
-					has_full_control_of_state = PREV
+					#has_full_control_of_state = PREV
 				}
 			}
 			672 = {
@@ -2681,7 +2681,7 @@ prospect_for_resources = {
 						tag = ROOT
 						is_subject_of = ROOT
 					}
-					has_full_control_of_state = PREV
+					#has_full_control_of_state = PREV
 				}
 			}
 			334 = {
@@ -2690,7 +2690,7 @@ prospect_for_resources = {
 						tag = ROOT
 						is_subject_of = ROOT
 					}
-					has_full_control_of_state = PREV
+					#has_full_control_of_state = PREV
 				}
 			}
 		}

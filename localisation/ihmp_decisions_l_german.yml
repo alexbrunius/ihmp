@@ -5,6 +5,7 @@
  FRA_move_government_to_Brazzaville:0 "Verlegt die Hauptstadt von Frankreich nach Brazzaville. Möglich solange Brazzaville von Frankreich kontrolliert wird, Frankreich kapituliert ha, sowie Algiers nichtmehr von Frankreich kontrolliert ist."
  FRA_move_government_to_Bordeaux:0 "Verlegt die Hauptstadt von Paris nach Boredeaux."
  FRA_move_government_to_Paris:0 "Verlegt die Hauptstadt von Frankreich zurück nach Paris."
+ JAP_develop_east_indies_oil:0 "Ölindustrie von Indonesien ausbauen"
  SOV_sue_for_peace_FIN:0 "Finland einen Frieden vorschlagen."
  SOV_relocate_industry_from_kiev:0 "Relocate Industry from Kiev"
  SOV_relocate_industry_from_kiev_desc:0 "Evacuating the heavy machinery of our Kiev factories to the Urals is a huge undertaking, but it is necessary to secure our war production."

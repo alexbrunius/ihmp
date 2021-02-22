@@ -43,7 +43,6 @@ if = {
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
 		early_heavy_cruiser = 1
-		transport = 1
 	}
 }
 if = {
@@ -62,7 +61,6 @@ if = {
 		basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		coastal_defense_ships = 1
-		mtg_transport = 1
 	}
 }
 
@@ -328,7 +326,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Conrad Helfrich"
 	gfx = "GFX_portrait_hol_conrad_helfrich"
-	traits = { seawolf superior_tactician bold navy_career_officer }
+	traits = { submarine_specialist superior_tactician bold navy_career_officer }
 	id = 981
 	skill = 4
 	attack_skill = 5

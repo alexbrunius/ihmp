@@ -1909,7 +1909,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1940
 		
@@ -1960,7 +1960,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2
+		research_cost = 1.5
 
 		start_year = 1944
 		
@@ -3463,7 +3463,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 3
 		start_year = 1922
 
 		folder = {

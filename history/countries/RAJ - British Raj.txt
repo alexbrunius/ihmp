@@ -41,18 +41,6 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		mtg_transport = 1
-	}
-	else = {
-		set_technology = {
-			transport = 1
-		}
-	}
-}
-
 set_convoys = 10
 
 set_cosmetic_tag = RAJ_UK # British Raj

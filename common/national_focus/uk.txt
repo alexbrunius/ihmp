@@ -1185,8 +1185,8 @@ focus_tree = {
 		id = bomber_command_focus
 		prerequisite = { focus = air_rearmament_focus }
 		icon = GFX_goal_generic_air_bomber
-		x = -2
-		y = 1
+		x = -3
+		y = 2
 		relative_position_id = air_rearmament_focus
 		cost = 10
 		ai_will_do = {
@@ -1235,7 +1235,7 @@ focus_tree = {
 		id = aircraft_production_focus
 		prerequisite = { focus = fighter_command_focus focus = bomber_command_focus focus = coastal_command_focus }
 		icon = GFX_goal_generic_air_production
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = fighter_command_focus
 		cost = 10
@@ -6483,11 +6483,10 @@ focus_tree = {
 			#}
 		}	
 		completion_reward = {
-			set_autonomy = {
-				target = RAJ
-				autonomy_state = autonomy_dominion
+			RAJ = {
+				add_autonomy_score = { value = 200 }
+				add_timed_idea = { idea = ENG_indian_autonomy_RAJ_idea days = 1460 }
 			}
-			RAJ = { add_timed_idea = { idea = ENG_indian_autonomy_RAJ_idea days = 730 } }
 			custom_effect_tooltip = ENG_indian_autonomy_tt
 		}
 	}
@@ -8100,6 +8099,7 @@ focus_tree = {
 			}
 		}
 
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		prerequisite = { focus = ENG_home_defence }
@@ -8134,6 +8134,7 @@ focus_tree = {
 			}
 		}
 
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		prerequisite = { focus = ENG_issue_gasmasks }

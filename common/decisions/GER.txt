@@ -407,6 +407,7 @@ GER_case_anton_category = {
 						36  = { CONTROLLER = { has_war_with = ROOT } }
 						99  = { CONTROLLER = { has_war_with = ROOT } }
 						785 = { CONTROLLER = { has_war_with = ROOT } }
+						806 = { CONTROLLER = { has_war_with = ROOT } }
 
 						# Vichy and Corsica
 						735 = { CONTROLLER = { has_war_with = ROOT } owner = { tag = VIC } }
@@ -427,6 +428,10 @@ GER_case_anton_category = {
 					has_government = fascism
 					is_in_faction_with = GER
 					surrender_progress > 0.5
+				}
+				any_country_with_original_tag = {
+					original_tag_to_check = SPR
+					has_war_with = GER
 				}
 			}
 			divisions_in_state = { state = 31 size < 1 }
