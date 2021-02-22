@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -2711,7 +2711,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 433 }
+				prioritize = { 436 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -2726,7 +2726,7 @@ focus_tree = {
 				set_state_flag = RAJ_great_indian_peninsula_railway_Inf1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 438 429 }
+				prioritize = { 429 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -2741,7 +2741,7 @@ focus_tree = {
 				set_state_flag = RAJ_great_indian_peninsula_railway_Inf2
 			}
 			random_owned_controlled_state = {
-				prioritize = { 443 427 }
+				prioritize = { 433 427 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
