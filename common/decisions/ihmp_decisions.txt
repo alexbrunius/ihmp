@@ -611,6 +611,7 @@ foreign_politics = {
 
 		complete_effect = {
 			hidden_effect = {
+				set_global_flag = SOV_sued_for_Peace
 				FIN = {
 					country_event = { id = finland.101 days = 1 }
 				}
@@ -693,7 +694,7 @@ foreign_politics = {
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = FIN_fights_on_TT
+				tooltip = FIN_not_fights_on_TT
 			}
 		}
 
@@ -716,7 +717,7 @@ foreign_politics = {
 
 		complete_effect = {
 			hidden_effect = {
-				set_global_flag = SOV_sued_for_limited_Peace
+				set_global_flag = SOV_sued_for_Peace
 				FIN = {
 					country_event = { id = finland.102 days = 1 }
 				}
@@ -764,11 +765,14 @@ foreign_politics = {
 
 	continuation_war_timer = {
 		available = {
-			has_global_flag = SOV_sued_for_limited_Peace
+			hidden_trigger = { has_global_flag = SOV_sued_for_Peace }
+			custom_trigger_tooltip = {
+				tooltip = SOV_sued_for_peace_TT
+			}
 		}
 
 		activation = {
-			NOT = { has_global_flag = SOV_sued_for_limited_Peace }
+			NOT = { has_global_flag = SOV_sued_for_Peace }
 			NOT = { has_global_flag = FIN_fights_on }
 			SOV = {
 				has_war_with = GER
@@ -786,6 +790,7 @@ foreign_politics = {
 
 		timeout_effect = {
 			set_global_flag = FIN_fights_on
+			custom_effect_tooltip = FIN_fights_on_TT
 		}
 	}
 
