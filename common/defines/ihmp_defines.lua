@@ -251,7 +251,7 @@ NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 30						-- was 15
 NDefines.NProduction.BASE_FACTORY_EFFICIENCY_GAIN = 0.9		-- was 1 -- Base efficiency factor.
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4 				-- was 4.5 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 
-NDefines.NProduction.EQUIPMENT_LEND_LEASE_WEIGHT_FACTOR = 0.001 -- was 0.01 -- Base equipment lend lease factor
+NDefines.NProduction.EQUIPMENT_LEND_LEASE_WEIGHT_FACTOR = 0.0005 -- was 0.01 -- Base equipment lend lease factor
 NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.02			-- was 0.2 -- Minimum fraction of an equipment type's base industry capacity cost to use when converting a naval equipment, such as through ship refitting.
 
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 30000			-- was 100000 -- How many deployment lines minimum can be training

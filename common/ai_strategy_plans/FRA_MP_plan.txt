@@ -63,6 +63,15 @@ FRA_MP_1 = {
 		naval_equipment = -1000
 		naval_doctrine = -1000
 	}
+	
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.2
+		states = {
+			16
+		}
+		area = europe
+	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
@@ -100,7 +109,7 @@ FRA_MP_2 = {
 		#1937
 		FRA_strengthen_government_support
 		FRA_defensive_strategems
-		FRA_intervention_in_spain
+		#FRA_intervention_in_spain
 		FRA_begin_rearmament
 		FRA_economic_devolution
 		#1938		
@@ -138,6 +147,15 @@ FRA_MP_2 = {
 		naval_doctrine = -1000
 	}
 
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.2
+		states = {
+			16
+		}
+		area = europe
+	}
+
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -170,6 +188,7 @@ FRA_MP_Ideas = {
 	}
 
 	ideas = {
+		war_economy = 0
 		civilian_economy = 0
 		free_trade = 0
 		export_focus = 1
@@ -180,7 +199,7 @@ FRA_MP_Ideas = {
 		FRA_gaston_henry_haye = 1000
 		henri_giraud = 30
 		maxime_weygand = 20
-		FRA_zivony_peshkov = 5
+		FRA_zivony_peshkov = 1
 		FRA_paul_baudouin = 0
 		FRA_charles_tillon = 0
 		charles_de_gaulle = 0
@@ -485,7 +504,7 @@ FRA_MP_AT_Production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = armor
-		value = -50
+		value = -100
 	}
 
 }
@@ -607,11 +626,11 @@ FRA_MP_Axis = {
 				option = FRA_MP_2
 			}
 		}
-		date < 1940.1.1
+		date < 1940.6.1
 	}
 
 	abort = {
-		date > 1940.1.1
+		date > 1940.6.1
 	}
 	
 	ai_strategy = {
@@ -627,7 +646,7 @@ FRA_MP_Axis = {
 	ai_strategy = {
 		type = invade
 		id = GER
-		value = -400
+		value = -1000
 	}
 }
 
@@ -647,9 +666,11 @@ FRA_MP_Antagonize = {
 				option = FRA_MP_2
 			}
 		}
+		has_government = democratic
 	}
 
 	abort = {
+		NOT = { has_government = democratic }
 	}
 
 	ai_strategy = {
@@ -677,14 +698,6 @@ FRA_MP_Antagonize = {
 		id = HUN
 		value = 200
 	}
-	ai_strategy = {
-		type = put_unit_buffers
-		ratio = 0.2
-		states = {
-			16
-		}
-		area = europe
-	}
 }
 
 FRA_MP_Allies = {
@@ -711,7 +724,12 @@ FRA_MP_Allies = {
 	ai_strategy = {
 		type = protect
 		id = POL
-		value = 400
+		value = 600
+	}
+	ai_strategy = {
+		type = contain
+		id = GER
+		value = -500
 	}
 	ai_strategy = {
 		type = alliance
@@ -765,7 +783,7 @@ FRA_MP_No_Guarantee = {
 }
 
 FRA_MP_Ignore = {
-	name = "Ignore Baltic for Soviet"
+	name = "Don't contain Soviet"
 	desc = ""
 
 	enable = {
@@ -792,9 +810,9 @@ FRA_MP_Ignore = {
 	}
 }
 
-MP_Spy_Defense = {
+MP_Spy_Defense_0 = {
 	name = "Spy Defense"
-	desc = ""
+	desc = "Build up passive Defense"
 
 	enable = {
 		original_tag = FRA
@@ -808,17 +826,13 @@ MP_Spy_Defense = {
 				option = FRA_MP_2
 			}
 		}
-		date < 1938.1.1	
+		date < 1937.1.1	
 	}
 
 	abort = {
-		date > 1938.1.1
+		NOT = { date < 1937.1.1 }
 	}
 
-	ai_strategy = {
-		type = intelligence_agency_usable_factories
-		value = 5
-	}
 	ai_strategy = {
 		type = intelligence_agency_usable_factories
 		value = 5
@@ -830,6 +844,114 @@ MP_Spy_Defense = {
 	ai_strategy = {
 		type = agency_ai_per_upgrade_factories_factor
 		value = -100    # -100% on the define
+	}
+}
+
+MP_Spy_Defense_1 = {
+	name = "Spy Defense"
+	desc = "Keep Spies on CounterInteligence"
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		num_of_operatives > 0
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			NOT = { num_of_operatives < 2 }
+		}
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 1000
+		mission_target = ROOT
+		num_operatives = 1
+	}
+}
+
+MP_Spy_Defense_2 = {
+	name = "Spy Defense"
+	desc = "Keep Spies on CounterInteligence"
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		num_of_operatives > 1
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			NOT = { num_of_operatives < 3 }
+		}
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 1000
+		mission_target = ROOT
+		num_operatives = 2
+	}
+}
+
+MP_Spy_Defense_3 = {
+	name = "Spy Defense"
+	desc = "Keep Spies on CounterInteligence"
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		num_of_operatives > 2
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			NOT = { num_of_operatives < 4 }
+		}
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 1000
+		mission_target = ROOT
+		num_operatives = 3
 	}
 }
 
@@ -870,7 +992,7 @@ FRA_MP_Algier_Infrastructure = {
 		type = build_building
 		id = infrastructure
 		target = 459
-		value = 10
+		value = 1
 	}
 }
 
@@ -922,7 +1044,7 @@ FRA_MP_Civilian_1 = {
 		type = build_building
 		id = industrial_complex
 		target = 459
-		value = 6
+		value = 1
 	}
 }
 

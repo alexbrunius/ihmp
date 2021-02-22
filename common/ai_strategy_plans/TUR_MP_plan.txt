@@ -19,15 +19,18 @@ TUR_MP_plan = {
 		TUR_ratify_the_six_arrows
 		TUR_treaty_of_saadabad
 		TUR_peace_at_home
+		TUR_the_sanayiciler
+		TUR_cooperate_with_the_debt_council
+		TUR_utilize_foreign_capital
 		TUR_turkish_state_railways
 		TUR_the_second_five_year_plan
 		TUR_the_guardians_of_kemalism
 		TUR_assess_our_future
 		TUR_the_hatay_issue
 		TUR_peace_in_the_world
-		TUR_variant_turkish_tax_focus
+		#TUR_variant_turkish_tax_focus
+		#TUR_the_pontic_redoubt
 		TUR_turk_ulusu
-		TUR_the_pontic_redoubt
 		TUR_abuse_the_office_of_soil_products
 		TUR_reconfigure_our_foreign_policy
 		TUR_renew_the_turkish_soviet_non_aggression_pact
@@ -42,12 +45,6 @@ TUR_MP_plan = {
 		TUR_the_german_turkish_friendship_treaty
 		TUR_the_clodius_agreement
 		TUR_approve_the_funkplan
-		TUR_renew_the_turkish_soviet_non_aggression_pact
-		TUR_the_batumi_accord
-		TUR_provide_refuge_to_the_victims_of_fascism
-		TUR_dissolve_the_ODPA
-		TUR_soviet_tank_factories
-		TUR_adana_to_baku_highway
 		TUR_learning_from_the_great_war
 		TUR_hava_okulu
 		TUR_modernising_the_army
@@ -92,6 +89,119 @@ TUR_MP_plan = {
 		TUR_anti_bolshevik_mediterranean_bloc = 0
 	}
 
+}
+
+TUR_MP_Ideas = {
+	name = "TUR Ideas"
+	desc = ""
+
+	enable = {
+		tag = TUR
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = TUR_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		#Trade
+		free_trade = 0
+		export_focus = 0
+		limited_exports = 0
+		closed_economy = 0
+		TUR_mumtaz_okmen = 0
+		TUR_hassan_saka = 0
+		TUR_kazim_ozalp = 0
+		TUR_mumtaz_okmen_bftb = 0
+		TUR_hasan_saka = 0
+		TUR_nuri_demirag = 0
+		TUR_nuri_killigil = 0
+		TUR_sukru_saracoglu = 5 #financial expert
+		TUR_halide_edib_adivar = 0
+		TUR_hilmi_uran = 100 #silent workhorse
+		TUR_kazim_ozalp_bftb = 0
+		TUR_mehmet_emin_yurdakul = 0
+		TUR_nazim_hikmet = 0
+		TUR_nejdet_sancar = 0
+		TUR_riza_nur = 0
+		TUR_zeki_velidi_togan = 0
+		#Prime Minister
+		TUR_ismet_inonu = 0
+		TUR_fevzi_cakmak = 0
+		TUR_sukru_saracoglu_prime_minister = 1
+		TUR_celal_bayar = 0
+		TUR_fethi_okyar = 0
+		TUR_sevket_sureyya_aydemir = 0
+		TUR_recep_peker = 0
+		TUR_adnan_menderes = 0
+		TUR_nuri_demirag_prime_minister = 0
+		TUR_sefik_husnu = 0
+		TUR_said_i_nursi = 0
+		TUR_nihal_atsiz = 0
+		#Theorists
+		TUR_refik_saydam = 0
+		TUR_kazim_karabekir = 0
+		TUR_ahmet_ali_celikten = 0
+		TUR_vecihi_hurkus = 0
+		TUR_rauf_orbay_bftb = 0
+		#Army Chief
+		TUR_fevzi_cakmak_vanilla = 0
+		tur_salih_omurtak = 0
+		TUR_cemil_cahit_toydemir = 0
+		TUR_fahrettin_altay = 0
+		#Air Chief
+		TUR_memduh_tagmac = 0
+		TUR_muzaffer_goksenin = 0
+		#Naval Chief
+		TUR_mehmet_ali_ungen_bftb = 0
+		TUR_sukru_okan = 1
+		#High Command
+		TUR_sabiha_gokcen_bftb = 0
+		TUR_kazim_orbay_bftb = 1
+		TUR_mehmet_fahri_engin_bftb = 0
+		TUR_izzettin_calislar = 1
+		TUR_sadik_altincan = 0
+		TUR_refet_bele = 1
+		#Designer
+		thk_bftb = 1
+		gok_okulu = 0
+		nud = 0
+		tomtasch = 0
+		golcuk_nsy = 1
+		cgt = 0
+		koc_ticaret_as_shipyard = 0
+		koc_ticaret_as_defense_industry = 0
+		#Industry
+
+	}
+}
+
+TUR_MP_Doctrine = {
+	name = "No Doctrines till 1941"
+	desc = ""
+
+	enable = {
+		tag = TUR
+		has_game_rule = {
+			rule = TUR_ai_behavior
+			option = TUR_MP_1
+		}
+		NOT = { date > 1941.1.1 }
+	}
+	
+	abort = {
+		date > 1941.1.1
+	}
+
+	research = {
+		air_doctrine = -10000
+		naval_doctrine = -10000
+	}
 }
 
 MP_Conscription_0 = {
@@ -231,4 +341,3 @@ MP_Economy_2 = {
 		partial_economic_mobilisation = 0
 	}
 }
-

@@ -65,10 +65,15 @@ allow_access = {
 	name = "RULE_ALLOW_MILITARY_ACCESS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
 	icon = "GFX_military_access_docking_rights"
-	default = {
+	option = {
 		name = "FREE"
 		text = RULE_OPTION_FREE
 		desc = "RULE_ALLOW_ACCESS_FREE_DESC"
+	}
+	default = {
+		name = "HISTORICAL"
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "RULE_ALLOW_ACCESS_HISTORICAL_DESC"
 	}
 	option = {
 		name = "SAME_IDEOLOGY"
@@ -601,6 +606,11 @@ GER_ai_behavior = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+	option = {
+		name = 	GER_MP_2
+		text = "RULE_OPTION_GER_MP_2"
+		desc = "RULE_OPTION_GER_MP_2_DESC"
 	}
 	default = {
 		name = GER_MP_1
@@ -1673,6 +1683,21 @@ SWE_ai_behavior = {
 		name = SWE_MP_1
 		text = "RULE_OPTION_SWE_MP_1"
 		desc = "RULE_OPTION_SWE_MP_1_DESC"
+	}
+}
+
+NOR_ai_behavior = {
+	name = "NOR_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	default = {
+		name = NOR_MP_1
+		text = "RULE_OPTION_NOR_MP_1"
+		desc = "RULE_OPTION_NOR_MP_1_DESC"
 	}
 }
 

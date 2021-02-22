@@ -309,6 +309,40 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = BUL_ai_behavior
+						option = BUL_MP_1
+					}
+					BUL = { is_ai = yes }
+				}
+				BUL = {
+					delete_units = { 
+						division_template = "Konna Divizija"
+						disband = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = TUR_ai_behavior
+						option = TUR_MP_1
+					}
+					TUR = { is_ai = yes }
+				}
+				TUR = {
+					delete_units = { 
+						division_template = "Süvari Tümeni"
+						disband = yes
+					}
+					delete_units = { 
+						division_template = "Zirhli Tümeni"
+						disband = yes
+					}
+				}
+			}
 			#Major Warlords
 			if = {
 				limit = {
@@ -335,6 +369,63 @@ on_actions = {
 				}
 				GXC = {
 					set_major = yes
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = FIN_ai_behavior
+						option = FIN_MP_1
+					}
+					has_game_rule = {
+						rule = AI_DISBAND_DIVISIONS
+						option = DISBAND
+					}
+					FIN = { is_ai = yes }
+				}
+				FIN = {
+					delete_units = { 
+						division_template = "Ratsuväkiprikaati"
+						disband = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = NOR_ai_behavior
+						option = NOR_MP_1
+					}
+					has_game_rule = {
+						rule = AI_DISBAND_DIVISIONS
+						option = DISBAND
+					}
+					NOR = { is_ai = yes }
+				}
+				NOR = {
+					delete_units = { 
+						division_template = "Dragonregiment"
+						disband = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = SWE_ai_behavior
+						option = SWE_MP_1
+					}
+					has_game_rule = {
+						rule = AI_DISBAND_DIVISIONS
+						option = DISBAND
+					}
+					SWE = { is_ai = yes }
+				}
+				SWE = {
+					delete_units = { 
+						division_template = "Kavalleribrigaden"
+						disband = yes
+					}
 				}
 			}
 			#Military Police for AIs
@@ -374,8 +465,7 @@ on_actions = {
 				}
 				set_global_flag = SOV_capitulated_FIN
 			}
-		}
-		effect = {
+
 			if = {
 				limit = {
 					ROOT = { original_tag = FRA }
@@ -384,15 +474,51 @@ on_actions = {
 				}
 				FRA = { country_event = { id = france.10 } }
 			}
-		}
-		effect = {
+
 			if = {
 				limit = {
-					ROOT = { original_tag = FRA }
-					FROM = { tag = GER }
+					ROOT = {
+						original_tag = FRA
+					}
+					FROM = {
+						tag = GER
+						has_government = fascism
+					}
+					has_dlc = "La Resistance"
 					has_global_flag = vichy_yes
 				}
 				GER = { country_event = france.141 }
+				FRA = { remove_ideas = FRA_surrender }
+			}
+
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = FRA
+					}
+					FROM = {
+						tag = GER
+						has_government = fascism
+					}
+					NOT = { has_dlc = "La Resistance" }
+					has_global_flag = vichy_yes
+				}
+				GER = { country_event = france.142 }
+				FRA = { remove_ideas = FRA_surrender }
+			}
+
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = FRA
+					}
+					FROM = {
+						tag = GER
+						has_government = neutrality
+					}
+					has_global_flag = vichy_yes
+				}
+				GER = { country_event = france.143 }
 				FRA = { remove_ideas = FRA_surrender }
 			}
 		}

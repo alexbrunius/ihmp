@@ -1,12 +1,12 @@
-SWE_MP_1 = {
-	name = "Sweden Multiplayer 1"
+NOR_MP_1 = {
+	name = "Norway Multiplayer 1"
 	desc = ""
 
 	enable = {
-		original_tag = SWE
+		original_tag = NOR
 		has_game_rule = {
-			rule = SWE_ai_behavior
-			option = SWE_MP_1
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
 		}
 	}
 
@@ -37,7 +37,6 @@ SWE_MP_1 = {
 
 	research = {
 		construction_tech = 100
-		artillery = 1000
 		synth_resources = -1000
 		armor = -1000
 		air_equipment = -1000
@@ -69,12 +68,6 @@ SWE_MP_1 = {
 		generic_army_art = 0
 		generic_navy_fleet_log = 0
 		generic_air_air_combat_trainer = 0
-		SWE_thorwald_bergquist = 0
-		SWE_osten_unden = 100
-		SWE_olof_thornell = 50
-		bofors = 20
-		husqvarna = 0
-		scania = 0
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -100,137 +93,115 @@ SWE_MP_1 = {
 	}
 }
 
-MP_Befriend_Everyone = {
-	name = "Befriend Everyone"
-	desc = "Sell everyone licenses"
+NOR_MP_Garrision_SWE = {
+	name = "Garrision the Mainland"
+	desc = ""
 
 	enable = {
-		tag = SWE
+		tag = NOR
 		has_game_rule = {
-			rule = SWE_ai_behavior
-			option = SWE_MP_1
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
 		}
-	}
-
-	abort = {
-
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = GER
-		value = 200
-	}
-	ai_strategy = {
-		type = befriend
-		id = ITA
-		value = 200
-	}
-	ai_strategy = {
-		type = befriend
-		id = HUN
-		value = 200
-	}
-	ai_strategy = {
-		type = befriend
-		id = ROM
-		value = 200
-	}
-	ai_strategy = {
-		type = befriend
-		id = ENG
-		value = 200
-	}
-	ai_strategy = {
-		type = befriend
-		id = FRA
-		value = 200
-	}
-	ai_strategy = {
-		type = befriend
-		id = CAN
-		value = 200
-	}
-	ai_strategy = {
-		type = befriend
-		id = USA
-		value = 200
-	}
-	ai_strategy = {
-		type = befriend
-		id = RAJ
-		value = 200
-	}
-	ai_strategy = {
-		type = befriend
-		id = AST
-		value = 200
-	}
-	ai_strategy = {
-		type = befriend
-		id = JAP
-		value = 200
-	}
-	ai_strategy = {
-		type = befriend
-		id = SIA
-		value = 200
-	}
-	ai_strategy = {
-		type = befriend
-		id = SOV
-		value = 200
-	}
-	ai_strategy = {
-		type = pp_spend_priority
-		id = relation	
-		value = -200
-	}	
-}
-
-SWE_MP_No_Neutral_Front = {
-	name = "No Neutral Front"
-	desc = "Don't plan a front against Norway or Finland, unless you are in war with them"
-
-	enable = {
-		tag = SWE
-		has_game_rule = {
-			rule = SWE_ai_behavior
-			option = SWE_MP_1
-		}
-		NOT = { has_war_with = NOR }
-		NOT = { has_war_with = FIN }
+		NOT = { SWE = { gives_military_access_to = GER } }
+		NOT = { SWE = { is_in_faction_with = GER } }
+		NOT = { has_war_with = SWE }
 	}
 
 	abort = {
 		OR = {
-			has_war_with = NOR
-			has_war_with = FIN
+			SWE = { gives_military_access_to = GER }
+			SWE = { is_in_faction_with = GER }
+			has_war_with = SWE
 		}
-		
 	}
 
 	ai_strategy = {
 	 	type = front_unit_request
-		tag = NOR
+		tag = SWE
 		value = -200
+	}	
+}
+
+NOR_MP_Garrision_SOV = {
+	name = "Garrision the Mainland"
+	desc = ""
+
+	enable = {
+		tag = NOR
+		has_game_rule = {
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
+		}
+		NOT = { SOV = { gives_military_access_to = GER } }
+		NOT = { SOV = { is_in_faction_with = GER } }
+		NOT = { has_war_with = SOV }
 	}
+
+	abort = {
+		OR = {
+			SOV = { gives_military_access_to = GER }
+			SOV = { is_in_faction_with = GER }
+			has_war_with = SOV
+		}
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = SOV
+		value = -200
+	}	
+}
+
+NOR_MP_Garrision_FIN = {
+	name = "Garrision the Mainland"
+	desc = ""
+
+	enable = {
+		tag = NOR
+		has_game_rule = {
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
+		}
+		NOT = { FIN = { gives_military_access_to = GER } }
+		NOT = { FIN = { is_in_faction_with = GER } }
+		NOT = { has_war_with = SWE }
+	}
+
+	abort = {
+		OR = {
+			FIN = { gives_military_access_to = GER }
+			FIN = { is_in_faction_with = GER }
+			has_war_with = FIN
+		}
+	}
+
 	ai_strategy = {
 	 	type = front_unit_request
 		tag = FIN
 		value = -200
+	}	
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 1.0
+		states = { 
+			110
+			142
+			143
+		}
+		area = europe
 	}
 }
 
-SWE_MP_Electronics_1 = {
+NOR_MP_Electronics_1 = {
 	name = "MP Electronics 2"
 	desc = ""
 
 	enable = {
-		original_tag = SWE
+		original_tag = NOR
 		has_game_rule = {
-			rule = SWE_ai_behavior
-			option = SWE_MP_1
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
 		}
 		NOT = { has_tech = mechanical_computing }
 	}
@@ -244,51 +215,15 @@ SWE_MP_Electronics_1 = {
 	}
 }
 
-SWE_MP_Build_Infra = {
-	name = "Build Infra for Tungsten"
-	desc = ""
-
-	enable = {
-		tag = SWE
-		has_game_rule = {
-			rule = SWE_ai_behavior
-			option = SWE_MP_1
-		}
-		has_country_flag = Pressured_by_GER
-		666 = {
-			is_controlled_by = SWE
-			infrastructure < 10
-		}
-		
-	}
-	
-	abort = {
-		666 = {
-			OR ={
-				NOT = { is_controlled_by = SWE }
-				NOT = { infrastructure < 10 }
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		target = 666
-		value = 1
-	}
-}
-
-
 MP_Conscription_0 = {
 	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
-		tag = SWE
+		tag = NOR
 		has_game_rule = {
-			rule = SWE_ai_behavior
-			option = SWE_MP_1
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
 		}
 		has_idea = volunteer_only
 	}
@@ -307,10 +242,10 @@ MP_Conscription_1 = {
 	desc = ""
 
 	enable = {
-		tag = SWE
+		tag = NOR
 		has_game_rule = {
-			rule = SWE_ai_behavior
-			option = SWE_MP_1
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
 		}
 		has_idea = limited_conscription
 	}
@@ -330,10 +265,10 @@ MP_Conscription_2 = {
 	desc = ""
 
 	enable = {
-		tag = SWE
+		tag = NOR
 		has_game_rule = {
-			rule = SWE_ai_behavior
-			option = SWE_MP_1
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
 		}
 		has_idea = extensive_conscription
 	}
@@ -354,10 +289,10 @@ MP_Economy_0 = {
 	desc = ""
 
 	enable = {
-		tag = SWE
+		tag = NOR
 		has_game_rule = {
-			rule = SWE_ai_behavior
-			option = SWE_MP_1
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
 		}
 		has_idea = low_economic_mobilisation
 	}
@@ -376,10 +311,10 @@ MP_Economy_1 = {
 	desc = ""
 
 	enable = {
-		tag = SWE
+		tag = NOR
 		has_game_rule = {
-			rule = SWE_ai_behavior
-			option = SWE_MP_1
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
 		}
 		has_idea = partial_economic_mobilisation
 	}
@@ -399,10 +334,10 @@ MP_Economy_2 = {
 	desc = ""
 
 	enable = {
-		tag = SWE
+		tag = NOR
 		has_game_rule = {
-			rule = SWE_ai_behavior
-			option = SWE_MP_1
+			rule = NOR_ai_behavior
+			option = NOR_MP_1
 		}
 		has_idea = war_economy
 	}

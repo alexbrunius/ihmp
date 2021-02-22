@@ -1051,6 +1051,7 @@ JAP_southern_expansion = {
 		}
 
 		complete_effect = {
+			set_country_flag = JAP_Demanded_Indochina
 			if = {
 				limit = {
 					FRA = {

@@ -1,10 +1,40 @@
 political_actions = {
+#	SOV_Embargo_JAP = {
+#		icon = generic_political_discourse
+#		available = {
+#			tag = SOV
+#		}
+#		visible = {
+#			tag = SOV
+#			NOT = { has_government = JAP }
+#			NOT = { has_war_with = JAP }
+#		}
+#		cost = 25
+#		ai_will_do = {
+#			factor = 0
+#		}
+#		fire_only_once = yes
+#		complete_effect = {
+#			SOV = {
+#				add_opinion_modifier = {
+#					target = JAP
+#					modifier = embargo
+#				}
+#				reverse_add_opinion_modifier = {
+#					target = JAP
+#					modifier = embargo
+#				}
+#				set_country_flag = SOV_Embargo_JAP
+#			}
+#		}
+#	}
 	USA_Embargo_JAP = {
 		icon = generic_political_discourse
 		available = {
 			tag = USA
 			JAP = {
 				has_completed_focus = JAP_secure_china
+				has_country_flag = JAP_Demanded_Indochina
 			}
 		}
 		visible = {
@@ -41,6 +71,7 @@ political_actions = {
 			}
 			JAP = {
 				has_completed_focus = JAP_secure_china
+				has_country_flag = JAP_Demanded_Indochina
 			}
 		}
 		visible = {
@@ -83,6 +114,7 @@ political_actions = {
 			tag = ENG
 			JAP = {
 				has_completed_focus = JAP_secure_china
+				has_country_flag = JAP_Demanded_Indochina
 			}
 		}
 		visible = {
@@ -119,6 +151,7 @@ political_actions = {
 			}
 			JAP = {
 				has_completed_focus = JAP_secure_china
+				has_country_flag = JAP_Demanded_Indochina
 			}
 		}
 		visible = {

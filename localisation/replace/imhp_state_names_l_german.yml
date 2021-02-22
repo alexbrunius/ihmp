@@ -1,4 +1,7 @@
 ﻿l_german:
-  STATE_797:0 "Al Wahat"
+  STATE_807:0 "Al Wahat"
   STATE_38:0 "Norrland"
-  STATE_798:0 "Finnmark"
+  STATE_808:0 "Finnmark"
+  STATE_809:0 "Wüste Gobi"
+  STATE_810:0 "Westsuiyuan"
+  STATE_621:0 "Ostsuiyuan"

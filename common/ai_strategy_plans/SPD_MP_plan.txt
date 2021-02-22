@@ -28,6 +28,7 @@ SPD_MP_1 = {
 		SPR_new_leadership
 		SPR_the_future_of_the_republic
 		SPR_reaffirm_the_popular_front_strategy
+		SPR_anti_fascist_unity
 		SPR_ensure_loyalty
 		SPR_enlist_the_carabineros
 		SPR_the_popular_army
@@ -90,8 +91,58 @@ SPD_MP_1 = {
 	}
 }
 
+SPD_MP_No_Anarchist = {
+	name = "Spanish No Anarchist"
+	desc = "Don't provoke anarchist revolution early"
+
+	enable = {
+		tag = SPD
+		has_game_rule = {
+			rule = SPR_ai_behavior 
+			option = SPR_MP_1
+		}
+		SPD = {
+			check_variable = {
+				var = days_mission_timeout@SPR_anarchist_uprising_mission
+				value = 40
+				compare = greater_than
+			}
+		}
+		any_country_with_original_tag = {
+			original_tag_to_check = SPR
+			tag = SPA
+			AND = {
+				NOT = { surrender_progress > 0.9 }
+				has_capitulated = no
+
+			}
+		}
+	}
+	abort = {
+		SPD = {
+			check_variable = {
+				var = days_mission_timeout@SPR_anarchist_uprising_mission
+				value = 40
+				compare = less_than_or_equals
+			}
+		}
+		any_country_with_original_tag = {
+			original_tag_to_check = SPR
+			tag = SPA
+			OR = {
+				surrender_progress > 0.9
+				has_capitulated = yes
+			}
+		}
+	}
+
+	focus_factors = {
+		SPR_crush_the_revolution = 0
+	}
+}
+
 SPD_MP_Wait = {
-	name = "Spanish Democratic MP plan"
+	name = "Spanish Democratic MP waiting plan"
 	desc = "Wait till Soviet picks event option"
 
 	enable = {

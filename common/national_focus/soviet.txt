@@ -94,7 +94,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_finish_five_year_plan
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -2727,6 +2727,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			army_experience = 20
+			add_research_slot = 1
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -2745,10 +2746,12 @@ focus_tree = {
 				uses = 1
 				category = cat_mechanized_equipment
 			}
-			custom_effect_tooltip = soviet.37.a_tt
-			reduce_purge = yes
-			reduce_purge = yes
-			reduce_purge = yes
+			custom_effect_tooltip = SOV_reduce_purge_3
+			hidden_effect = {
+				reduce_purge = yes
+				reduce_purge = yes
+				reduce_purge = yes
+			}
 		}
 	}
 

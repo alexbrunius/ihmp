@@ -4808,6 +4808,7 @@ BUL_macedonian_revolutionary_organizations = {
 			every_state = {
 				limit = {
 					BUL_is_macedonian_state = yes
+					NOT = { state = 731 }
 					NOT = { is_controlled_by = ROOT }
 				}
 				if = {
@@ -4885,6 +4886,7 @@ BUL_macedonian_revolutionary_organizations = {
 				limit = {
 					BUL_is_macedonian_state = yes
 					is_controlled_by = ROOT
+					NOT = { state = 731 }
 				}
 				add_dynamic_modifier = { modifier = widespread_bulgarian_sentiment_02 }
 			}
@@ -4892,6 +4894,7 @@ BUL_macedonian_revolutionary_organizations = {
 				limit = {
 					BUL_is_macedonian_state = yes
 					NOT = { is_controlled_by = ROOT }
+					NOT = { state = 731 }
 				}
 				add_dynamic_modifier = { modifier = widespread_bulgarian_sentiment_01 }
 				hidden_effect = {
@@ -8296,6 +8299,22 @@ BUL_negotiate_claims_in_the_balkans = {
 				factor = 10
 				is_historical_focus_on = yes
 			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = BUL_ai_behavior
+					option = BUL_MP_1
+				}
+				GRE = {
+					OR = {
+						AND = {
+							surrender_progress < 0.95
+							has_capitulated = no
+						}
+						controls_state = 184
+					}
+				}
+			}
 		}
 
 		available = {
@@ -8316,7 +8335,7 @@ BUL_negotiate_claims_in_the_balkans = {
 					OR = {
 						tag = GER
 						AND = {
-							NOT = { is_in_faction_with = GER }
+							is_in_faction_with = GER
 							NOT = { tag = BUL }
 						}
 					}

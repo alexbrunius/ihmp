@@ -659,6 +659,16 @@ ideas = {
 				always = no
 			}
 
+			available = { 
+				OR = {
+					country_exists = VIC
+					any_country_with_original_tag = {
+						original_tag_to_check = FRA
+						is_in_faction_with = GER
+					}
+				}
+			}
+
 			allowed_civil_war = {
 				always = yes
 			}

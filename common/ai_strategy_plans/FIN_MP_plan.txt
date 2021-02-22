@@ -123,9 +123,9 @@ No_PP_For_Relation = {
 	}	
 }
 
-SWE_MP_No_Neutral_Front = {
+FIN_MP_No_Neutral_Front = {
 	name = "No Neutral Front"
-	desc = "Don't plan a front against Norway or Finland, unless you are in war with them"
+	desc = "Don't plan a front against Norway or Sweden, unless you are in war with them"
 
 	enable = {
 		tag = FIN
@@ -134,13 +134,13 @@ SWE_MP_No_Neutral_Front = {
 			option = FIN_MP_1
 		}
 		NOT = { has_war_with = NOR }
-		NOT = { has_war_with = FIN }
+		NOT = { has_war_with = SWE }
 	}
 
 	abort = {
 		OR = {
 			has_war_with = NOR
-			has_war_with = FIN
+			has_war_with = SWE
 		}
 		
 	}
@@ -152,7 +152,7 @@ SWE_MP_No_Neutral_Front = {
 	}
 	ai_strategy = {
 	 	type = front_unit_request
-		tag = FIN
+		tag = SWE
 		value = -200
 	}
 }
@@ -206,7 +206,7 @@ FIN_MP_No_Admirals = {
 }
 
 FIN_MP_Antagonize = {
-	name = "Antagonize Soviet, Befriend Germany, No Alliance though"
+	name = "Antagonize Soviet"
 	desc = ""
 
 	enable = {
@@ -220,6 +220,7 @@ FIN_MP_Antagonize = {
 	abort = {
 		NOT = { has_war_with = SOV }
 		owns_state = 146
+		has_global_flag = Finland_Peace
 	}
 
 	ai_strategy = {
@@ -233,19 +234,14 @@ FIN_MP_Antagonize = {
 		value = 200
 	}
 	ai_strategy = {
-		type = befriend
-		id = GER
-		value = 200
-	}
-	ai_strategy = {
 		type = alliance
 		id = GER
 		value = -1000
 	}
 }
 
-FIN_MP_Stop_Cooperation = {
-	name = "Stop Befriending Germany"
+FIN_MP_Cooperation = {
+	name = "Befriending Germany"
 	desc = ""
 
 	enable = {
@@ -255,16 +251,27 @@ FIN_MP_Stop_Cooperation = {
 			option = FIN_MP_1
 		}
 		has_global_flag = Finland_Peace
+		NOT = {	GER = { has_non_aggression_pact_with = SOV } }
+		OR = {
+			NOR = {
+				has_war = no
+				AND = {
+					has_capitulated = yes
+					NOT = { 38 = { is_controlled_by = NOR } } #Norrland
+					NOT = { 808 = { is_controlled_by = NOR } } #Finnmark
+				}
+			}
+		}
 	}
 
 	abort = {
-		has_war_with = SOV
+		GER = { has_non_aggression_pact_with = SOV }
 	}
 
 	ai_strategy = {
 		type = befriend
 		id = GER
-		value = 0
+		value = 100
 	}
 }
 

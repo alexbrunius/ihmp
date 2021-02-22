@@ -38,7 +38,7 @@ equipments = {
 		naval_strike_targetting = 10
 
 		#Space taken in convoy
-		lend_lease_cost = 4
+		lend_lease_cost = 8
 		
 		build_cost_ic = 22
 		resources = {
@@ -91,7 +91,7 @@ equipments = {
 		naval_strike_targetting = 10
 
 		#Space taken in convoy
-		lend_lease_cost = 4
+		lend_lease_cost = 8
 		
 		build_cost_ic = 22
 		resources = {
@@ -145,7 +145,7 @@ equipments = {
 		naval_strike_targetting = 10
 		
 		#Space taken in convoy
-		lend_lease_cost = 4
+		lend_lease_cost = 8
 
 		build_cost_ic = 22
 		resources = {
@@ -200,7 +200,7 @@ equipments = {
 		naval_strike_targetting = 10
 		
 		#Space taken in convoy
-		lend_lease_cost = 4
+		lend_lease_cost = 8
 
 		build_cost_ic = 22
 		resources = {
@@ -251,7 +251,7 @@ equipments = {
 		naval_strike_targetting = 7.5
 		
 		#Space taken in convoy
-		lend_lease_cost = 8
+		lend_lease_cost = 16
 
 		build_cost_ic = 26
 		resources = {
@@ -304,7 +304,7 @@ equipments = {
 		naval_strike_targetting = 7.5
 		
 		#Space taken in convoy
-		lend_lease_cost = 4
+		lend_lease_cost = 8
 
 		build_cost_ic = 26
 		resources = {
@@ -355,7 +355,7 @@ equipments = {
 		naval_strike_targetting = 10
 		
 		#Space taken in convoy
-		lend_lease_cost = 5
+		lend_lease_cost = 10
 
 		build_cost_ic = 36
 		resources = {
@@ -908,7 +908,7 @@ equipments = {
 		}
 
 		#Space taken in convoy
-		lend_lease_cost = 3
+		lend_lease_cost = 6
 
 		build_cost_ic = 14
 		resources = {
@@ -1011,7 +1011,7 @@ equipments = {
 		}
 
 		#Space taken in convoy
-		lend_lease_cost = 5
+		lend_lease_cost = 10
 
 		build_cost_ic = 47
 		resources = {

@@ -447,18 +447,18 @@ POL_MP_Antagonize = {
 	ai_strategy = {
 		type = befriend
 		id = SOV
-		value = 200
+		value = 100
 	}
 	ai_strategy = {
 		type = befriend
 		id = RAJ
-		value = 200
+		value = 100
 	}
 }
 
-MP_Spy_Defense = {
-	name = "Spy Defense"
-	desc = ""
+MP_Spy_Defense_0 = {
+	name = "Initial Spy Defense"
+	desc = "Build up your Agency"
 
 	enable = {
 		tag = POL
@@ -466,9 +466,11 @@ MP_Spy_Defense = {
 			rule = POL_ai_behavior
 			option = POL_MP_1
 		}
+		date < 1939.1.1
 	}
 
 	abort = {
+		NOT = { date < 1939.1.1 }
 	}
 
 	ai_strategy = {
@@ -482,6 +484,96 @@ MP_Spy_Defense = {
 	ai_strategy = {
 		type = agency_ai_per_upgrade_factories_factor
 		value = -100    # -100% on the define
+	}
+}
+
+MP_Spy_Defense_1 = {
+	name = "Spy Defense"
+	desc = "Keep Spies on CounterInteligence"
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+		has_capitulated = no
+		num_of_operatives > 0
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			NOT = { num_of_operatives < 2 }
+		}
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 1000
+		mission_target = ROOT
+		num_operatives = 1
+	}
+}
+
+MP_Spy_Defense_2 = {
+	name = "Spy Defense"
+	desc = "Keep Spies on CounterInteligence"
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+		has_capitulated = no
+		num_of_operatives > 1
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			NOT = { num_of_operatives < 3 }
+		}
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 1000
+		mission_target = ROOT
+		num_operatives = 2
+	}
+}
+
+MP_Spy_Defense_3 = {
+	name = "Spy Defense"
+	desc = "Keep Spies on CounterInteligence"
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+		has_capitulated = no
+		num_of_operatives > 2
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			NOT = { num_of_operatives < 4 }
+		}
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 1000
+		mission_target = ROOT
+		num_operatives = 3
 	}
 }
 
