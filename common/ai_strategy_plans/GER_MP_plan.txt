@@ -215,9 +215,9 @@ GER_MP_2 = {
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
-		factor = .5
+		factor = 1.0
 		modifier = {
-			factor = .5
+			factor = 1.0
 		}
 	}
 
