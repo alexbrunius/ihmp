@@ -387,6 +387,52 @@ operations = {
 		}
 	}
 
+	operation_robin = {
+		
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			tag = ENG
+			has_capitulated = yes
+			is_subject = no
+			has_war = yes
+			is_in_faction_with = CAN
+			
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			tag = ENG
+			has_capitulated = yes
+			is_subject = no
+			has_war = yes
+			is_in_faction_with = CAN
+		}
+		
+		complete_effect = {
+			every_state = {
+				limit = { is_core_of = CAN }
+				add_core_of = ROOT
+			}
+			annex_country = {
+				target = CAN
+				transfer_troops = yes
+			}
+			set_capital = 276
+		}
+	}
+
 	nonisolation_navy = {
 		
 		icon = generic_operation

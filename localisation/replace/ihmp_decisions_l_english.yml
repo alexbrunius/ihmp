@@ -14,6 +14,8 @@
  demand_bessarabia:0 "Demand Bessarabia"
  operation_countenance_ENG:0 "Operation Countenance"
  operation_countenance_SOV:0 "Operation Countenance"
+ operation_robin:0 "Operation Robin"
+ operation_robin_desc:0 "We have lost our Home Islands, but we will continue our fight from and with the Commonwealth."
  nonisolation_navy:0 "Break Navy Isolationism"
  nonisolation_navy_desc:0 "With war declared and our Battleships burning the Navy and Politicians no longer see much reason to pursuit an isolationist path."
  occupy_greenland:0 "Occupy Greenland"
