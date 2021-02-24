@@ -29,7 +29,6 @@ if = {
 		early_submarine = 1
 		early_destroyer = 1
 		early_heavy_cruiser = 1
-		transport = 1
 	}
 }
 if = {
@@ -45,7 +44,6 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		basic_torpedo = 1
 		coastal_defense_ships = 1
-		mtg_transport = 1
 	}
 }
 

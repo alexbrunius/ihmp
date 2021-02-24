@@ -1767,12 +1767,52 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_full_control_of_state = 333
-				has_full_control_of_state = 672
-				has_full_control_of_state = 334
+				333 = { #Borneo
+					controller = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+						#has_full_control_of_state = PREV
+					}
+				}
+				334 = { #Borneo
+					controller = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+						#has_full_control_of_state = PREV
+					}
+				}
+				672 = { #Sumatra
+					controller = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+						#has_full_control_of_state = PREV
+					}
+				}
 			}
-			has_full_control_of_state = 336
-			has_full_control_of_state = 671
+			336 = { #Singapur
+				controller = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+					has_full_control_of_state = PREV
+				}
+			}
+			671 = { #Tonkin(Vietnam)
+				controller = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+					has_full_control_of_state = PREV
+				}
+			}
 		}
 
 		bypass = {
@@ -2469,8 +2509,7 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {

@@ -35,7 +35,6 @@ if = {
 	set_technology = {
 		early_destroyer = 1
 		early_light_cruiser = 1
-		transport = 1
 	}
 }
 if = {
@@ -49,7 +48,6 @@ if = {
 		basic_light_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-		mtg_transport = 1
 	}
 }
 

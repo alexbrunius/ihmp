@@ -8863,7 +8863,7 @@ operations = {
 			has_war_with = GER
 			ICE = { exists = yes }
 			#NOR = { has_capitulated = yes }
-			is_in_faction_with = NOR
+			#is_in_faction_with = NOR
 		}
 
 		cost = 35

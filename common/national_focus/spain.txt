@@ -3901,6 +3901,11 @@ focus_tree = {
 			}
 			NOT = { has_global_flag = POR_iberian_summit_in_progress_flag }
 		}
+
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
+
 		bypass = {
 			POR = { is_in_faction = yes }
 		}
@@ -9857,7 +9862,7 @@ focus_tree = {
 			    popularity = 0.05
 			}
 			SOV = {
-				add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
+				add_timed_idea = { idea = SPA_spanish_civil_war_commitments_SOV days = 730 }
 				add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
 			}
 			custom_effect_tooltip = SPR_expand_soviet_aid_tt
@@ -12433,6 +12438,7 @@ focus_tree = {
 	focus = {
 		id = SPR_end_fascism_at_all_costs
 		available = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
 		}
 		bypass = {
 		}

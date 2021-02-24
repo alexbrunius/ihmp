@@ -69,6 +69,7 @@ no_garrison = {
 	
 	state_modifier = {
 		resistance_target = 0.4
+		resistance_growth = 1.0
 		no_compliance_gain = 1
 		required_garrison_factor = -1
 	}
@@ -141,11 +142,7 @@ foreign_civilian_oversight = {
 	sound_effect = "Martial_Law_Interface_Foreign_Cvilian_Oversight"
 
 	visible = {
-		OR = {
-			NOT = { has_government = fascism }
-			NOT = { FROM.FROM = { OR = { tag = SOV tag = LIT tag = LAT tag = EST } } }
-			has_game_rule = { rule = EASTERN_OCCUPAITONS option = FREE }
-		}
+		mild_occupation_allowed = yes
 	}
 	
 	state_modifier = {
@@ -173,11 +170,7 @@ local_police_force_garrison = {
 	sound_effect = "Martial_Law_Interface_Local_Police_Force_Garrison"
 
 	visible = {
-		OR = {
-			NOT = { has_government = fascism }
-			NOT = { FROM.FROM = { OR = { tag = SOV tag = LIT tag = LAT tag = EST } } }
-			has_game_rule = { rule = EASTERN_OCCUPAITONS option = FREE }
-		}
+		mild_occupation_allowed = yes
 	}
 		
 	state_modifier = {
@@ -218,11 +211,7 @@ secret_police_oversight = {
 	sound_effect = "Martial_Law_Interface_Secret_Police_Oversight"
 
 	visible = {
-		OR = {
-			NOT = { has_government = fascism }
-			NOT = { FROM.FROM = { OR = { tag = SOV tag = LIT tag = LAT tag = EST } } }
-			has_game_rule = { rule = EASTERN_OCCUPAITONS option = FREE }
-		}
+		mild_occupation_allowed = yes
 	}	
 	
 	state_modifier = {
@@ -277,11 +266,7 @@ military_governor_occupation = {
 	sound_effect = "Martial_Law_Interface_Military_Governor_Occupation"
 
 	visible = {
-		OR = {
-			NOT = { has_government = fascism }
-			NOT = { FROM.FROM = { OR = { tag = SOV tag = LIT tag = LAT tag = EST } } }
-			has_game_rule = { rule = EASTERN_OCCUPAITONS option = FREE }
-		}
+		mild_occupation_allowed = yes
 	}	
 	
 	state_modifier = {
@@ -323,11 +308,7 @@ martial_law_occupation = {
 	sound_effect = "Martial_Law_Interface_Martial_Law_Occupation_Default"
 
 	visible = {
-		OR = {
-			NOT = { has_government = fascism }
-			NOT = { FROM.FROM = { OR = { tag = SOV tag = LIT tag = LAT tag = EST } } }
-			has_game_rule = { rule = EASTERN_OCCUPAITONS option = FREE } 
-		}
+		mild_occupation_allowed = yes
 	}	
 
 	state_modifier = {

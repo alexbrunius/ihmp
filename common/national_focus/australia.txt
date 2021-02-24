@@ -703,12 +703,25 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = AST_cac_boomerang
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = light_fighter
+			if = {
+				limit = {
+					has_tech = fighter2
+				}
+				add_tech_bonus = {
+					name = AST_cac_boomerang
+					ahead_reduction = 1
+					uses = 1
+					category = light_fighter
+				}
+				else = {
+					add_tech_bonus = {
+						name = AST_cac_boomerang
+						bonus = 1.0
+						ahead_reduction = 2
+						uses = 1
+						technology = fighter2
+					}
+				}
 			}
 		}
 	}
@@ -1650,6 +1663,12 @@
 				uses = 1
 				category = naval_doctrine
 			}
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
+			}
 		}
 	}
 
@@ -2310,8 +2329,7 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 

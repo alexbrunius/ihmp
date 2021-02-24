@@ -104,7 +104,7 @@ equipments = {
 		
 		surface_detection = 20
 		sub_detection = 2
-		surface_visibility = 10
+		surface_visibility = 9
 		naval_speed = 25
 		reliability = 0.80
 		
@@ -172,6 +172,7 @@ equipments = {
 
 		reliability = 0.85
 		naval_range = 1800
+		surface_visibility = 9.5
 		max_strength = 50 #was 40
 		build_cost_ic = 375 #was 500
 		resources = {
@@ -299,6 +300,7 @@ equipments = {
 
 		surface_detection = 20
 		reliability = 0.92
+		surface_visibility = 10.5
 		naval_range = 2500
 		max_strength = 75 #was 60
 		build_cost_ic = 450 #was 600

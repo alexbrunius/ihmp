@@ -1750,6 +1750,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		available = {
 			has_government = democratic
+			custom_trigger_tooltip = {
+				tooltip = USA_scientist_haven_tt
+				OR = {
+					has_country_flag = ger_refuge
+					has_country_flag = ita_refuge
+				}
+			}
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
@@ -1839,7 +1846,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_neutrality_act focus = USA_limited_intervention }
 		relative_position_id = USA_limited_intervention
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1962,7 +1969,7 @@ focus_tree = {
 					has_offensive_war = yes
 				}
 				date > 1940.1.1
-				has_war_support > 0.35
+				has_war_support > 0.3
 			}
 		}
 		bypass = {
@@ -1989,6 +1996,9 @@ focus_tree = {
 				}			
 			}
 		}
+
+		continue_if_invalid = yes
+		
 		complete_tooltip = {
 			navy_experience = 50
 			army_experience = 50
@@ -2088,7 +2098,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_war = yes
-				has_war_support > 0.5
+				has_war_support > 0.45
 			}
 			democratic > 0.95
 		}
@@ -2165,7 +2175,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_war = yes
-				has_war_support > 0.3
+				has_war_support > 0.35
 			}
 		}
 
@@ -2393,7 +2403,7 @@ focus_tree = {
 		prerequisite = { focus = USA_military_construction }
 		available = {
 			OR = {
-				has_war_support > 0.3
+				has_war_support > 0.4
 				has_war = yes
 			}
 		}
@@ -2443,6 +2453,31 @@ focus_tree = {
 						region = 119
 						region = 120
 					}
+					NOT = { has_state_flag = USA_USACE_projects_3AF }
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = USA_USACE_projects_3AF
+			}			
+			random_owned_controlled_state = {
+				limit = {
+					arms_factory > 0
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						region = 117
+						region = 118
+						region = 119
+						region = 120
+					}
+					NOT = { has_state_flag = USA_USACE_projects_3AF }
 				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -4834,7 +4869,6 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_USA_CONGRESS}
@@ -5006,8 +5040,7 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
@@ -5542,7 +5575,6 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
@@ -5666,7 +5698,6 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
 

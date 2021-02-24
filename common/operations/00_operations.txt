@@ -12,7 +12,7 @@ operation_rescue_operative = { ### 0 1/35
 	prevent_captured_operative_to_die = yes
 
 
-	days = 35
+	days = 15
 	network_strength = 30
 	operatives = 1
 

@@ -573,3 +573,23 @@ has_purge = {
 		has_idea = officers_purged_10
 	}
 }
+
+mild_occupation_allowed = {
+	OR = {
+		AND = {
+			NOT = { has_government = fascism }
+			OR = {
+				AND = {
+					GER = { has_government = fascism }
+					NOT = { is_in_faction_with = GER }
+				}
+				AND = {
+					GER = { NOT = { has_government = fascism } }
+					is_in_faction_with = GER
+				}
+			}
+		}
+		NOT = { FROM.FROM = { OR = { tag = SOV tag = LIT tag = LAT tag = EST } } }
+		has_game_rule = { rule = EASTERN_OCCUPAITONS option = FREE }
+	}
+}

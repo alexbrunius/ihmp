@@ -11,7 +11,7 @@ NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1 -- was 0.5 --Scal
 NDefines.NBuildings.RADAR_RANGE_MAX = 120				-- was 200 -- Range is interpolated between building levels 1-15.
 
 -- DIPLOMACY STUFF
-NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.04			-- was 0.05 -- Each army unit owned by the source country contributes this amount of volunteers to the limit.
+NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.02			-- was 0.05 -- Each army unit owned by the source country contributes this amount of volunteers to the limit.
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 25			-- was 30	-- This many divisons are required for the country to be able to send volunteers.
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 50					-- was 100	-- Political power cost to send attache
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 25.0			-- was 50	-- Command Power sent attache usage cost
@@ -51,6 +51,8 @@ NDefines.NPolitics.ARMY_LEADER_COST = 2						-- was 5 -- cost for recruiting new
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 6			-- was 24 -- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 4			-- Max width of regiments in division designer.
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 3			-- Max height of regiments in division designer.
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2			-- Max width of support in division designer.
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 3			-- Max height of support in division designer.
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 14	-- was 20 --Base cost to unlock a regiment slot,
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 7	-- was 5  --Base cost to change a regiment column.
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 7		-- was 10 --Base cost to unlock a support slot
@@ -68,7 +70,7 @@ NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3     -- was -0.5 - e
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
 NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
-NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.05
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.04
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.02, 0.04, 0.06, 0.08, 0.1, 0.14, 0.18, 0.22, 0.26, 0.3, 0.36, 0.42, 0.48, 0.54, 0.6, 0.66, 0.72, 0.78, 0.84, 0.9} -- Experience needed to progress to the next level
 -- OLD NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.3, 0.6, 0.9 }		-- was { 0.1, 0.3, 0.75, 0.9 } -- Experience needed to progress to the next level
 
@@ -155,7 +157,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 		0.0, -- NAVAL_KAMIKAZE	
         0.0, -- PORT_STRIKE		
 		0.1, -- AIR_SUPPLY		was 0.3
-		0.05, -- TRAINING			was 0.0
+		0.0, -- TRAINING
 		0.0, -- NAVAL_MINES_PLANTING
 		0.0, -- NAVAL_MINES_SWEEPING
 		0.0, -- MISSION_RECON
@@ -179,6 +181,7 @@ NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO							= 0.05	-- was 0.2 -- total sum
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 9                                -- was 6 -- base speed of units on water being transported
 
 -- SUBMARINE BALANCE TWEAKS
+NDefines.NNavy.EXPERIENCE_FACTOR_CONVOY_ATTACK = 0.35		-- was 0.4 -- each taskforce in convoy raid mission can at most cover this many regions without losing efficiency
 NDefines.NNavy.CONVOY_RAID_MAX_REGION_TO_TASKFORCE_RATIO						= 1.0		-- was 1.5 -- each taskforce in convoy raid mission can at most cover this many regions without losing efficiency
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO							= 9.0		-- was 5.0 -- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
 
@@ -196,12 +199,12 @@ NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB 											= 0.54  	-- was 0.18 -- hidden
 	
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		80.0,						-- was 90 -- big guns
-		135.0,						-- was 145 -- torpedos
+		140.0,						-- was 145 -- torpedos
 		50.0,						-- was 40 -- small guns
 	}
 
 NDefines.NNavy.DEPTH_CHARGES_HIT_CHANCE_MULT 				= 0.6 			-- was 1.1	-- multiplies hit chance of small guns
-NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE 					= 130.0			-- was 100 -- hit profile for depth charges
+NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE 					= 120.0			-- was 100 -- hit profile for depth charges
 NDefines.NNavy.DEPTH_CHARGES_DAMAGE_MULT 					= 1.1 			-- was 0.7 -- multiplies damage of depth charges
 
 NDefines.NNavy.CONVOY_SPOTTING_SPEED_MULT 					= 1.2			-- was 1.0 -- spotting speed mult against convoys
@@ -394,3 +397,7 @@ NDefines.NAI.CASUALTY_RATIO_TO_NOT_SEND_EXPEDITIONARIES = 1.0			-- AI will not s
 NDefines.NAI.SURRENDER_LEVEL_TO_PULL_EXPEDITIONARIES_BACK = 1.0			-- AI will pull expeditioniries back if its surrender level is above this ratio
 NDefines.NAI.SURRENDER_LEVEL_TO_NOT_SEND_EXPEDITIONARIES = 1.0			-- AI will not send expeditioniries if its surrender level is above this ratio
 NDefines.NAI.NAVY_PREFERED_MAX_SIZE = 60						-- AI will generally attempt to merge fleets into this size, but as a soft limit.
+NDefines.NAI.HOUR_BAD_COMBAT_REEVALUATE = 24                     --was 100            	-- if we are in combat for this amount and it goes shitty then try skipping it
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0		-- AI needs to control more than this number of states before considering giving any away
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0	-- The difference in number of controlled states compared to war participation needs to be bigger than this for the AI to consider giving a state to a country
+NDefines.NAI.GIVE_STATE_CONTROL_BASE_SCORE = 1000			-- Base diplo score for giving away control of states

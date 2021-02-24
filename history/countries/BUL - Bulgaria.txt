@@ -83,9 +83,9 @@ if = { #DLC
 	set_variable = { BUL_german_industrial_investments = 0 }
 	set_variable = { BUL_british_industrial_investments = 0 }
 	set_variable = { BUL_soviet_industrial_investments = 0 }
-	set_variable = { BUL_industrial_investments_basic_cap = 3 }
-	set_variable = { BUL_industrial_investments_medium_cap = 5 }
-	set_variable = { BUL_industrial_investments_max_cap = 10 }
+	set_variable = { BUL_industrial_investments_basic_cap = 1 }
+	set_variable = { BUL_industrial_investments_medium_cap = 2 }
+	set_variable = { BUL_industrial_investments_max_cap = 4 }
 	#IMRO
 	set_variable = { BUL_imro_garrisons_mp_value = 5000 }
 	#Purchase foreign equipment

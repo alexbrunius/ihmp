@@ -117,8 +117,7 @@ ideas = {
 			picture = can_defence_of_canada_regulations_democratic
 			
 			modifier = {
-				communism_drift = -0.01
-				fascism_drift = -0.01
+				democratic_drift = 0.01
 				foreign_subversive_activites = -0.50
 			}
 		}
@@ -138,8 +137,7 @@ ideas = {
 			picture = can_defence_of_canada_regulations_fascism
 			
 			modifier = {
-				democratic_drift = -0.01
-				communism_drift = -0.01
+				fascism_drift = 0.01
 				foreign_subversive_activites = -0.50
 			}
 		}
@@ -159,8 +157,7 @@ ideas = {
 			picture = can_defence_of_canada_regulations_communism
 			
 			modifier = {
-				democratic_drift = -0.01
-				fascism_drift = -0.01
+				communism_drift = 0.01
 				foreign_subversive_activites = -0.50
 			}
 		}

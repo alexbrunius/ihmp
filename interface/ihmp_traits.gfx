@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_submarine_specialist"
+		texturefile = "gfx/interface/traits/trait_submarine_specialist.dds"
+	}
+}
+

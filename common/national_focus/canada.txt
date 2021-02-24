@@ -605,8 +605,7 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -885,8 +884,7 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -990,8 +988,7 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -1713,8 +1710,7 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -2508,8 +2504,7 @@
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -4733,6 +4728,12 @@ USA = {
 					instant_build = yes
 				}
 			}
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
+			}
 		}
 
 		completion_reward = {
@@ -4753,6 +4754,12 @@ USA = {
 					instant_build = yes
 				}
 				set_state_flag = CAN_united_shipyards_DY
+			}
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
 			}
 		}
 	}

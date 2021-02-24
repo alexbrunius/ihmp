@@ -92,6 +92,9 @@ CHI_MP_1_Fight = {
 		CHI_gao_zhihang = 0
 		CHI_fang_zeyi = 0
 		CHI_huang_shen = 0
+		CHI_taiyuan_arsenal = 0
+		CHI_liaoning_arsenal = 0
+		CHI_mukden_arsenal = 0
 	}
 	
 	ai_strategy = {
@@ -104,24 +107,7 @@ CHI_MP_1_Fight = {
 		id = anti_air
 		value = 1
 	}
-	ai_strategy = {
-		type = put_unit_buffers
-		ratio = 0.4
-		states = { 
-			597
-			743
-		}
-		area = asia
-	}
-	ai_strategy = {
-		type = put_unit_buffers
-		ratio = 0.1
-		states = { 
-			613
-			596
-		}
-		area = asia
-	}
+
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
@@ -133,6 +119,93 @@ CHI_MP_1_Fight = {
 	}
 
 }
+
+CHI_Japanese_Front_0 = {
+	name = "Japanese Front Bejing"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		608 = { is_controlled_by = CHI }
+	}
+
+	abort = {
+		608 = { NOT = { is_controlled_by = CHI } }
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 1.0
+		states = { 
+			607
+			615
+		}
+		area = asia
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = JAP
+		value = 200
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = MAN
+		value = 200
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = MEN
+		value = 200
+	}
+	ai_strategy = {
+	 	type = front_control
+		strategic_region = 143
+		ordertype = front
+		execution_type = careful
+		execute_order = yes
+		manual_attack = no
+	}
+
+}
+
+CHI_Japanese_Front_1 = {
+	name = "Japanese Front Non Bejing"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		608 = { NOT = { is_controlled_by = CHI } }
+	}
+
+	abort = {
+		608 = { is_controlled_by = CHI }
+	}
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = JAP
+		value = 1000
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = MAN
+		value = 1000
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = MEN
+		value = 1000
+	}
+}
+
 
 CHI_Guard_Forward_Coast = {
 	name = "Guard East-Heibei if conqured"
@@ -157,7 +230,7 @@ CHI_Guard_Forward_Coast = {
 
 	ai_strategy = {
 		type = put_unit_buffers
-		ratio = 0.2
+		ratio = 0.5
 		states = { 
 			609
 		}
@@ -165,9 +238,129 @@ CHI_Guard_Forward_Coast = {
 	}
 }
 
+CHI_Garrision_Bejing = {
+	name = "Garrision Bejing"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		is_in_faction_with = XSM
+		XSM = { num_divisions < 12 }
+		609 = {
+			NOT = {
+				is_fully_controlled_by = JAP
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			NOT = { is_in_faction_with = XSM }
+			XSM = { NOT = { num_divisions < 12 } }
+			609 = {
+				is_fully_controlled_by = JAP
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.5
+		states = { 
+			608
+		}
+		area = asia
+	}
+}
+
+CHI_Garrision_Shandong = {
+	name = "Garrison Plan"
+	desc = ""
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		is_in_faction_with = XSM
+		XSM = { num_divisions < 12 }
+		597 = {
+			is_controlled_by = CHI	
+		}
+		743 = {
+			is_controlled_by = CHI	
+		}
+	}
+
+	abort = {
+		OR = {
+			NOT = { is_in_faction_with = XSM }
+			XSM = { NOT = { num_divisions < 12 } }
+			597 = {
+				NOT = { is_controlled_by = CHI }
+			}
+			743 = {
+				NOT = { is_controlled_by = CHI }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.5
+		states = { 
+			597
+			743
+		}
+		area = asia
+	}
+}
+
+CHI_Garrision_Shanghai = {
+	name = "Garrison Shanghai"
+	desc = "If Yunnan doesn't have enough troops to garrision Shanghai, do it yourself"
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = CHI_MP_1
+		}
+		is_in_faction_with = YUN
+		YUN = { num_divisions < 6 }
+		613 = {
+			is_controlled_by = CHI	
+		}
+	}
+
+	abort = {
+		OR = {
+			NOT = { is_in_faction_with = YUN }
+			YUN = { NOT = { num_divisions < 6 } }
+			613 = {
+				NOT = { is_controlled_by = CHI }
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.8
+		states = {
+			613
+		}
+		area = asia
+	}
+}
+
 CHI_MP_1_Alliance = {
 	name = "Ally Warlords"
-	desc = ""
+	desc = "You are in this war together"
 
 	enable = {
 		original_tag = CHI
@@ -245,7 +438,7 @@ CHI_MP_Weapons_1 = {
 
 CHI_MP_Only_Befriend_Helpers_for_Focus = {
 	name = "Befriend Helpers"
-	desc = ""
+	desc = "Do not spend PP on improving relations to early"
 
 	enable = {
 		original_tag = CHI
@@ -277,7 +470,7 @@ CHI_MP_Only_Befriend_Helpers_for_Focus = {
 
 CHI_MP_Befriend_FRA = {
 	name = "Befriend FRA"
-	desc = ""
+	desc = "Befried France for your Focus"
 
 	enable = {
 		original_tag = CHI
@@ -310,7 +503,7 @@ CHI_MP_Befriend_FRA = {
 
 CHI_MP_Befriend_SOV = {
 	name = "Befriend SOV"
-	desc = ""
+	desc = "Befriend Soviet Union for your Focus"
 
 	enable = {
 		original_tag = CHI
@@ -343,7 +536,7 @@ CHI_MP_Befriend_SOV = {
 
 CHI_MP_Befriend_USA = {
 	name = "Befriend USA"
-	desc = ""
+	desc = "Befriend USA for your Focus"
 
 	enable = {
 		original_tag = CHI
@@ -376,7 +569,7 @@ CHI_MP_Befriend_USA = {
 
 MP_Early_PP = {
 	name = "Early PP Spending"
-	desc = ""
+	desc = "Don't waste your early PP on unimportant stuff"
 
 	enable = {
 		original_tag = CHI
@@ -396,17 +589,9 @@ MP_Early_PP = {
 		CHI_bai_chongxi = 0
 		CHI_chen_shaokuan = 0
 		CHI_wang_shuming = 0
-		SIA_thawon_thamrongnawasawat = 0
-		SIA_tianliang_huntrakool = 0
-		SIA_sindhu_kamalanavin = 0
-		SIA_luang_sinthusongkhramchai = 0
-		SIA_phraya_thayarnpikart = 0
-		SIA_pridi_phanomyong = 0
-		SIA_phraya_preechacholayudha = 0
-		generic_tank_manufacturer = 0
-		generic_naval_manufacturer = 0
-		generic_motorized_equipment_manufacturer = 0
-		generic_artillery_manufacturer = 0
+		CHI_hanyan_arsenal = 0
+		jiangnan_shipyard_group = 0
+		dagu_shipyard = 0
 	}
 
 	ai_strategy = {
@@ -509,7 +694,7 @@ MP_1_No_AirUnits = {
 
 CHI_MP_Electronics_1 = {
 	name = "Research Radio"
-	desc = ""
+	desc = "Research Radio for reinforcment chance"
 
 	enable = {
 		original_tag = CHI
@@ -538,7 +723,7 @@ CHI_MP_Electronics_1 = {
 
 CHI_MP_Infrastructure_1 = {
 	name = "CHI Infrastructure"
-	desc = "Build Level 10 for Buildspeed and Resources"
+	desc = "Build Level 9 Infra for Buildspeed and Resources"
 
 	enable = {
 		original_tag = CHI
@@ -554,7 +739,7 @@ CHI_MP_Infrastructure_1 = {
 
 	abort = {
 		605 = {
-			OR ={
+			OR = {
 				NOT = { is_controlled_by = CHI }
 				NOT = { infrastructure < 8 }
 			}
@@ -593,7 +778,7 @@ CHI_MP_Mils_1 = {
 
 	abort = {
 		605 = {
-			OR ={
+			OR = {
 				NOT = { is_controlled_by = CHI }
 				free_building_slots = {
 					building = arms_factory
@@ -614,7 +799,7 @@ CHI_MP_Mils_1 = {
 
 MP_Spy_Defense_0 = {
 	name = "Spy Defense"
-	desc = ""
+	desc = "Build up your Agency"
 
 	enable = {
 		tag = CHI

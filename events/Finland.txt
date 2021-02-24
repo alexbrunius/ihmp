@@ -484,119 +484,98 @@ country_event = {
 	}
 }
 
-#Offer White Peace to Soviet
+#Peace for Greater Finland
 country_event = {
 	id = finland.101
 	title = finland.101.t
 	desc = finland.101.d
-	picture = GFX_report_event_soviet_tanks_snow
-	
-	trigger = {
-		tag = FIN
-		has_war_with = SOV
-		SOV = { has_war_with = GER }
-		OR = {
-			SOV = {
-				surrender_progress > 0.25
-			}
-			FIN = {
-				AND = {
-					controls_state = 111
-					controls_state = 146
-					controls_state = 147
-					controls_state = 722
-					OR = {
-						controls_state = 195
-						controls_state = 216
-						AND = {
-							NOT = { SOV = { has_idea = state_of_chock } }
-							NOT = { SOV = { has_idea = state_of_chock_2 } }
-							NOT = { SOV = { has_idea = state_of_chock_3 } }
-						}
-					}
-				}
-			}
-		}
-
-	}
-
-	mean_time_to_happen = { days = 1 }
-
-	fire_only_once = yes
-
-	#Offer Peace
-	option = {
-		name = finland.101.a
-		ai_chance = {
-			base = 8
-		}
-		SOV = {
-			country_event = { id = finland.102 }
-		}
-		custom_effect_tooltip = finland.101.a_tt
-		effect_tooltip = {
-			SOV = { 
-				white_peace = {
-					tag = FIN 
-					message = SOV_agree_peace
-				}
-				add_stability = -0.1
-			}
-			FIN = {
-				transfer_state = 146
-				transfer_state = 147
-				transfer_state = 722
-			}
-			if = {
-				limit = {
-					146 = {
-						is_claimed_by = SOV
-					}
-				}
-				SOV = { remove_state_claim = 146 }
-			}
-			if = {
-				limit = {
-					147 = {
-						is_claimed_by = SOV
-					}
-				}
-				SOV = { remove_state_claim = 147 }
-			}
-			if = {
-				limit = {
-					722 = {
-						is_claimed_by = SOV
-					}
-				}
-				SOV = { remove_state_claim = 722 }
-			}
-		}
-	}
-
-	#Never stop
-	option = {
-		name = finland.101.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-	}
-}
-
-#Soviet response to Finish peaceoffer
-country_event = {
-	id = finland.102
-	title = finland.102.t
-	desc = finland.102.d
 	picture = GFX_report_event_finnish_soldiers_snow
 	
 	is_triggered_only = yes
 
 	#Accept peace
+	option = {
+		name = finland.101.a
+		ai_chance = {
+			base = 9
+		}
+		white_peace = SOV
+		FIN = {
+			transfer_state = 146
+			transfer_state = 147
+			transfer_state = 213
+			transfer_state = 215
+			transfer_state = 216
+			transfer_state = 722
+		}
+		SOV = {
+			add_stability = -0.2
+		}
+		if = {
+			limit = {
+				146 = {
+					is_claimed_by = SOV
+				}
+			}
+			SOV = { remove_state_claim = 146 }
+		}
+		if = {
+			limit = {
+				146 = {
+					is_claimed_by = SOV
+				}
+			}
+			SOV = { remove_state_claim = 147 }
+		}
+		if = {
+			limit = {
+				722 = {
+					is_claimed_by = SOV
+				}
+			}
+			SOV = { remove_state_claim = 722 }
+		}
+		if = {
+			limit = {
+				GER = {
+					is_subject = no
+					not = { is_in_faction_with = SOV}
+				}
+			}
+			GER = {
+				diplomatic_relation = {
+					country = FIN
+					relation = military_access
+					active = no
+				}
+			}
+		}
+		set_global_flag = Finland_Peace
+	}
+
+	#Continue the war
+	option = {
+		name = finland.101.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}			
+		}
+	}
+}
+
+#Peace for Lesser Finland
+country_event = {
+	id = finland.102
+	title = finland.102.t
+	desc = finland.102.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+
+	#Accept Peace
 	option = {
 		name = finland.102.a
 		ai_chance = {
@@ -645,7 +624,7 @@ country_event = {
 		set_global_flag = Finland_Peace
 	}
 
-	#Continue the war
+	#Never stop
 	option = {
 		name = finland.102.b
 		ai_chance = {
@@ -653,86 +632,7 @@ country_event = {
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
-			}			
-		}
-	}
-}
-
-#Finlands response to Soviet peaceoffer
-country_event = {
-	id = finland.103
-	title = finland.103.t
-	desc = finland.103.d
-	picture = GFX_report_event_finnish_soldiers_snow
-	
-	is_triggered_only = yes
-
-	#Accept peace
-	option = {
-		name = finland.103.a
-		ai_chance = {
-			base = 9
-		}
-		white_peace = SOV
-		FIN = {
-			transfer_state = 146
-			transfer_state = 147
-			transfer_state = 213
-			transfer_state = 215
-			transfer_state = 216
-			transfer_state = 722
-		}
-		if = {
-			limit = {
-				146 = {
-					is_claimed_by = SOV
-				}
 			}
-			SOV = { remove_state_claim = 146 }
-		}
-		if = {
-			limit = {
-				146 = {
-					is_claimed_by = SOV
-				}
-			}
-			SOV = { remove_state_claim = 147 }
-		}
-		if = {
-			limit = {
-				722 = {
-					is_claimed_by = SOV
-				}
-			}
-			SOV = { remove_state_claim = 722 }
-		}
-		if = {
-			limit = {
-				GER = {
-					is_subject = no
-					not = { is_in_faction_with = SOV}
-				}
-			}
-			GER = {
-				diplomatic_relation = {
-					country = FIN
-					relation = military_access
-					active = no
-				}
-			}
-		}
-		set_global_flag = Finland_Peace
-	}
-
-	#Continue the war
-	option = {
-		name = finland.102.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}			
 		}
 	}
 }
