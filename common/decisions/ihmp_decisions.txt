@@ -537,35 +537,25 @@ foreign_politics = {
 		}
 	}
 	
-	SOV_sue_for_peace_FIN = {
+	SOV_sue_for_peace_FIN_1 = {
 
 		allowed = {
 			original_tag = SOV
 		}
 
 		available = {
-			FIN = {
-				surrender_progress < 0.2 # if they are losing, lets not allow it
-			}
+			has_war_with = GER
+			has_war_with = FIN
 		}
 
-#		target_array = enemies
-#
-#		target_trigger = {
-#			#Target is FROM
-#			FROM = {
-#				tag = FIN
-#				has_war_with = ROOT
-#			}
-#		}
-
 		visible = {
+			original_tag = SOV
 			any_enemy_country = {
 				tag = FIN
 			}
 		}
 
-		cost = 0
+		cost = 50
 
 		fire_only_once = yes
 
@@ -574,9 +564,187 @@ foreign_politics = {
 		}
 
 		complete_effect = {
-			FIN = {
-				country_event = { id = finland.103 days = 1 }
+			hidden_effect = {
+				set_global_flag = SOV_sued_for_Peace
+				FIN = {
+					country_event = { id = finland.101 days = 1 }
+				}
 			}
+			custom_effect_tooltip = SOV_sue_for_peace_FIN_1_TT
+			effect_tooltip = {
+				SOV = {
+					white_peace = {
+						tag = FIN 
+					}
+					add_stability = -0.2
+				}
+				if = {
+					limit = {
+						146 = {
+							is_claimed_by = SOV
+						}
+					}
+					SOV = { remove_state_claim = 146 }
+				}
+				if = {
+					limit = {
+						146 = {
+							is_claimed_by = SOV
+						}
+					}
+					SOV = { remove_state_claim = 147 }
+				}
+				if = {
+					limit = {
+						722 = {
+							is_claimed_by = SOV
+						}
+					}
+					SOV = { remove_state_claim = 722 }
+				}
+				if = {
+					limit = {
+						GER = {
+							is_subject = no
+							not = { is_in_faction_with = SOV}
+						}
+					}
+				}
+				FIN = {
+					transfer_state = 146
+					transfer_state = 147
+					transfer_state = 213
+					transfer_state = 215
+					transfer_state = 216
+					transfer_state = 722
+				}
+			}
+		}
+	}
+
+	SOV_sue_for_peace_FIN_2 = {
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			has_war_with = GER
+			has_war_with = FIN
+			controls_state = 195
+			hidden_trigger = {
+				NOT = {
+					has_idea = state_of_chock
+					has_idea = state_of_chock_2
+					has_idea = state_of_chock_3
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_sue_for_peace_FIN_2_TT
+				NOT = {
+					has_idea = state_of_chock
+					has_idea = state_of_chock_2
+					has_idea = state_of_chock_3
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FIN_not_fights_on_TT
+			}
+		}
+
+
+		visible = {
+			original_tag = SOV
+			any_enemy_country = {
+				tag = FIN
+			}
+			NOT = { has_global_flag = FIN_fights_on }
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_global_flag = SOV_sued_for_Peace
+				FIN = {
+					country_event = { id = finland.102 days = 1 }
+				}
+			}
+			custom_effect_tooltip = SOV_sue_for_peace_FIN_1_TT
+			effect_tooltip = {
+				SOV = {
+					white_peace = {
+						tag = FIN 
+					}
+					add_stability = -0.1
+				}
+				if = {
+					limit = {
+						146 = {
+							is_claimed_by = SOV
+						}
+					}
+					SOV = { remove_state_claim = 146 }
+				}
+				if = {
+					limit = {
+						147 = {
+							is_claimed_by = SOV
+						}
+					}
+					SOV = { remove_state_claim = 147 }
+				}
+				if = {
+					limit = {
+						722 = {
+							is_claimed_by = SOV
+						}
+					}
+					SOV = { remove_state_claim = 722 }
+				}
+				FIN = {
+					transfer_state = 146
+					transfer_state = 147
+					transfer_state = 722
+				}
+			}
+		}
+	}
+
+	continuation_war_timer = {
+		available = {
+			hidden_trigger = { has_global_flag = SOV_sued_for_Peace }
+			custom_trigger_tooltip = {
+				tooltip = SOV_sued_for_peace_TT
+			}
+		}
+
+		activation = {
+			NOT = { has_global_flag = SOV_sued_for_Peace }
+			NOT = { has_global_flag = FIN_fights_on }
+			SOV = {
+				has_war_with = GER
+				has_war_with = FIN
+				NOT = {
+					has_idea = state_of_chock
+					has_idea = state_of_chock_2
+					has_idea = state_of_chock_3
+				}
+			}
+
+		}
+
+		days_mission_timeout = 30
+
+		timeout_effect = {
+			set_global_flag = FIN_fights_on
+			custom_effect_tooltip = FIN_fights_on_TT
 		}
 	}
 
