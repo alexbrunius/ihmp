@@ -1077,6 +1077,9 @@ country_event = {
 	}
 	option = { # Support the Czechs
 		name = germany.40.b	
+		trigger = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -1306,7 +1309,10 @@ country_event = {
 	}
 	option = { # Support the Czechs alone
 		name = germany.41.b	
-		trigger = { is_puppet = no }
+		trigger = {
+			is_puppet = no
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
 		ai_chance = {
 			factor = 5
 			modifier = {
@@ -2548,6 +2554,9 @@ country_event = {
 	
 	option = { # This means war!
 		name = germany.60.a
+		trigger = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
 		ai_chance = { 
 			factor = 1 
 			modifier = {
