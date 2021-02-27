@@ -28,6 +28,11 @@ continuous_focus_palette = {
 				NOT = { has_global_flag = scw_over }
 				factor = 0
 			}
+			modifier = {
+				original_tag = MAN
+				NOT = { has_political_power > 300 }
+				factor = 0
+			}
 		}
 		
 		supports_ai_strategy = ai_focus_naval
@@ -52,6 +57,11 @@ continuous_focus_palette = {
 			modifier = {
 				original_tag = SPR
 				NOT = { has_global_flag = scw_over }
+				factor = 0
+			}
+			modifier = {
+				original_tag = MAN
+				NOT = { has_political_power > 300 }
 				factor = 0
 			}
 		}
@@ -94,6 +104,11 @@ continuous_focus_palette = {
 				NOT = { has_global_flag = scw_over }
 				factor = 0
 			}
+			modifier = {
+				original_tag = MAN
+				NOT = { has_political_power > 300 }
+				factor = 0
+			}
 		}
 		
 		supports_ai_strategy = ai_focus_defense
@@ -120,6 +135,11 @@ continuous_focus_palette = {
 			modifier = {
 				original_tag = SPR
 				NOT = { has_global_flag = scw_over }
+				factor = 0
+			}
+			modifier = {
+				original_tag = MAN
+				NOT = { has_political_power > 300 }
 				factor = 0
 			}
 		}
@@ -155,6 +175,11 @@ continuous_focus_palette = {
 				NOT = { has_global_flag = scw_over }
 				factor = 0
 			}
+			modifier = {
+				original_tag = MAN
+				NOT = { has_political_power > 300 }
+				factor = 0
+			}
 		}
 		
 		supports_ai_strategy = ai_focus_military_advancements
@@ -187,6 +212,11 @@ continuous_focus_palette = {
 			modifier = {
 				original_tag = SPR
 				NOT = { has_global_flag = scw_over }
+				factor = 0
+			}
+			modifier = {
+				original_tag = MAN
+				NOT = { has_political_power > 300 }
 				factor = 0
 			}
 		}
