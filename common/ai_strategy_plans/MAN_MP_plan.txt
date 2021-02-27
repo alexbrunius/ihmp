@@ -43,6 +43,8 @@ MAN_MP_1 = {
 		MAN_national_cooperation_government = 0
 		MAN_the_two_emperors = 0
 		CHI_one_china_policy = 0
+		CHI_overlordship_over_indochina = 0
+		CHI_dominate_japan = 0
 	}
 
 	research = {
@@ -123,6 +125,8 @@ MAN_MP_2 = {
 		MAN_national_cooperation_government = 0
 		MAN_the_two_emperors = 0
 		CHI_one_china_policy = 0
+		CHI_overlordship_over_indochina = 0
+		CHI_dominate_japan = 0
 	}
 
 	research = {
