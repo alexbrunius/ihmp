@@ -57,6 +57,9 @@ BUL_historical_plan = {
 		BUL_expand_varna_naval_base
 		BUL_develop_burgas_shipyards
 		BUL_steel_plant_in_pernik
+		BUL_peaceful_development
+		BUL_bulgarian_administration_of_the_balkans
+		BUL_restore_the_bulgarian_patriarchate
 		BUL_restore_the_tarnovo_constitution
 		BUL_freedom_of_press
 		#BUL_crush_the_communists
@@ -64,8 +67,7 @@ BUL_historical_plan = {
 		#BUL_mineral_extraction_in_the_rhodopes
 		#BUL_national_military_academy
 		#BUL_war_logistics
-		#BUL_cooperation_with_italy		
-		#BUL_peaceful_development
+		#BUL_cooperation_with_italy
 		#BUL_increase_industry_investments
 		#BUL_contract_foreign_companies
 		#1941
@@ -83,7 +85,8 @@ BUL_historical_plan = {
 
 	focus_factors = {
 		BUL_plot_against_boris = 0
-		#BUL_total_war = 0
+		BUL_total_war = 0
+		BUL_the_third_bulgarian_empire = 0
 		BUL_dissolve_the_military_union = 0
 		BUL_condemn_macedonian_organizations = 0
 	}
@@ -98,6 +101,22 @@ BUL_historical_plan = {
 		id = ITA
 		value = 50
 	}
+	ai_strategy = {
+		type = declare_war
+		id = YUG			
+		value = -1000 
+	}
+	ai_strategy = {
+		type = declare_war
+		id = GRE			
+		value = -1000 
+	}
+	ai_strategy = {
+		type = declare_war
+		id = TUR			
+		value = -1000 
+	}
+
 
 	research = {
 
