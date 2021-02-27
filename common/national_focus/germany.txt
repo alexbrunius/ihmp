@@ -3397,6 +3397,18 @@ focus_tree = {
 					original_tag = POL
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = { rule = IHMP_HISTORY option = BLOCKED }
+				}
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = ger_sov_treaty_not_accepted
+						NOT = { has_country_flag = ger_sov_treaty_accepted }
+					}
+					has_completed_focus = GER_mol_rib_pact
+				}
+			}
 			OR = {
 				POL = {
 					has_civil_war = no

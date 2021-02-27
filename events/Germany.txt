@@ -240,6 +240,9 @@ country_event = {
 	
 	option = {
 		name = germany.11.b	#no way 
+		trigger = {
+			GER = { NOT = { has_country_flag = ger_sov_treaty_accepted } }
+		}
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -3376,6 +3379,7 @@ country_event = {
 		name = germany.76.a	#bah
 		# REVISIT Balance research bonus
 		give_SOV_armor_research_bonuses = yes
+		set_country_flag = ger_sov_treaty_accepted
 		SOV = {
 			add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
 			add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
