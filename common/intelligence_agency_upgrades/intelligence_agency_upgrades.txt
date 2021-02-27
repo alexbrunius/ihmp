@@ -21,6 +21,7 @@ branch_intelligence = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -54,6 +55,7 @@ branch_intelligence = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -122,6 +124,7 @@ branch_intelligence = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -198,6 +201,7 @@ branch_defense = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -240,6 +244,7 @@ branch_operation = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -273,6 +278,7 @@ branch_operation = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -310,6 +316,7 @@ branch_operation = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -344,6 +351,7 @@ branch_operation = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -378,6 +386,7 @@ branch_operation = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -416,6 +425,7 @@ branch_operative = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 			modifier = {
@@ -481,6 +491,7 @@ branch_operative = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -536,6 +547,7 @@ branch_operative = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -569,6 +581,7 @@ branch_operative = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -607,6 +620,7 @@ branch_crypto = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -683,6 +697,7 @@ branch_crypto = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -733,6 +748,7 @@ branch_crypto = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
@@ -775,6 +791,7 @@ branch_crypto = {
 					tag = HUN
 					tag = ROM
 					tag = SIA
+					tag = POR
 				}
 			}
 		}
