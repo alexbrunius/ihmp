@@ -3397,6 +3397,8 @@ leader_traits = {
 	
 	industrial_concern = {
 		random = no
+
+		industrial_concern_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -3405,6 +3407,8 @@ leader_traits = {
 
 	construction_company = {
 		random = no
+
+		industrial_concern_cost_factor = -0.33
 
 		production_speed_infrastructure_factor = 0.1
 		
@@ -3415,6 +3419,8 @@ leader_traits = {
 	
 	refinery_concern = {
 		random = no
+
+		industrial_concern_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -3423,6 +3429,8 @@ leader_traits = {
 	
 	electronics_concern = {
 		random = no
+
+		industrial_concern_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -3431,6 +3439,8 @@ leader_traits = {
 
 	electronics_developer = {
 		random = no
+
+		industrial_concern_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 1
@@ -3439,6 +3449,8 @@ leader_traits = {
 
 	british_industrial_benefactor = {
 		random = no
+
+		industrial_concern_cost_factor = -0.33
 
 		production_speed_infrastructure_factor = 0.05
 		industrial_capacity_dockyard = 0.05
@@ -3450,6 +3462,8 @@ leader_traits = {
 
 	german_technological_patron = {
 		random = no
+
+		industrial_concern_cost_factor = -0.33
 
 		industrial_capacity_factory = 0.1
 		
@@ -3485,6 +3499,8 @@ leader_traits = {
 	linchpin_of_infrastructure = {
 		random = no
 
+		industrial_concern_cost_factor = -0.33
+
 		production_speed_infrastructure_factor = 0.15
 		industry_repair_factor = 0.2
 		
@@ -3495,6 +3511,8 @@ leader_traits = {
 
 	industrial_monopoly = {
 		random = no
+
+		industrial_concern_cost_factor = -0.33
 
 		min_export = 0.15
 		political_power_gain = -0.05
@@ -3508,6 +3526,8 @@ leader_traits = {
 
 	inventive_genius = {
 		random = no
+
+		industrial_concern_cost_factor = -0.33
 
 		political_power_gain = 0.05
 		opinion_gain_monthly_factor = 0.05
