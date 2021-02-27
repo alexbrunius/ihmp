@@ -114,7 +114,7 @@ political_actions = {
 			set_capital = 16
 		}
 	}
-	SOV_move_government_to_Sverdlowsk = {
+	SOV_move_government_to_Sverdlovsk = {
 		icon = generic_nationalism
 		available = {
 			tag = SOV
