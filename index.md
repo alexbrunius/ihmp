@@ -1,5 +1,106 @@
 # Changelog:
 
+## 1.10.4.0
+New features:
+- Integrated Topbar Resources Mod by Lennard.
+- Allowed support batallion count increased from 5 to 6.
+- Renamed ship hull types to use short abbreviations to better show in TF UI.
+- Made all NFs that rely on WT, WS or congress not cancel if it drops down below the required threshold.
+- Defence of Canada Regulations NF now gives positive ruling party support instead of negative opposition party support (which did not do anything).
+- French NF tweaks: factory spawning: Half in Paris, half in Algier if it's a core (Blum-Violette-Proposal). Many NFs made avaliable when capitulated (if Germany doesn't form Vichy).
+- Added new submarine specialist trait which doubles XP gain towards seawolf.
+- Scientist haven NF requires actually giving refuge to some scientists.
+- All recon companies give 2 entrenchment and initiative (20% LARM, 15% AC, 10% MOT/CAV).
+- New agent levels: 2 gives 20% network gain, 0.25 counterintel and 5% operation outcome at 400 XP, 3 gives 40% network gain, 0.5 counterintel and 10% operation outcome at 1000 XP. Previous level 2 gave 25% network gain, 0.25 counterintel and 10% operation outcome at 1000 XP.
+- Added a new strategic region for Strait of Gibraltar.
+- Improved Continuation War feature by adding decisions for SOV to sue for peace (keeping the previous 2 options).
+- FRA and ENG can no longer deny Rhineland or Munich under IHMP historical game rule.
+- Added Operation Robin for capitulated UK to take over Canada.
+- Added decisions for SOV to move their capital behing the Urals and another to move it back.
+- Integrated Sov-Ger treaty/MR pact houserule under IHMP historical game rule.
+- Industrial designers now also give industrial designer cost reduction to encourage swapping.
+- Added Influence Spain missions to visualize the possible diplomatic outcomes; visible for UK/GER/SPA.
+- Added News Event for UK, if Iraq revolts.
+
+Balance:
+- Rescue operative mission now takes 15 base days (from 35).
+- First naval invasion tech is now twice as expensive.
+- Only majors (and Spain, because SCW reasons) now start with naval invasion tech.
+- Canada's and Australia's last Naval NF now gives invasion tech boost. SAF and Romania already got such boosts from NFs.
+- Coastal designer captial/screen cost reduction 25/25% -> 15/20%.
+- Italian CRDA naval designer changed to Mediterranean designer.
+- Lend Lease Act NF now takes 35 days (from 70).
+- Snorkel toned down from -40/20% visibility down to -10/20%.
+- Snorkel research cost multipliers changed from 1/2 to 1.5/1.5.
+- Division type specific traits (cavalry/panzer/infantry) standardised to give 10% defence at first level and 10% attack at second.
+- XP required for skilled staffer lowered from 2000 to 1500.
+- Destroyer surface visibility changed from 10/10/10/10 to 9/9.5/10/10.5.
+- Increased torpedo hit profile 135->140 (decreasing hit chance).
+- Increased cruiser sub visibility 10->11.
+- Increased cruiser sub fuel tank range 1000->1250.
+- Decreased depth charge hit profile 130->120 (increasing hit chance).
+- Indian Autonomy NF now gives 200 independence points instantly and 0.5 daily (for 1460 days).
+- No Garrison occupation law doubles resistance growth.
+- Replaced all existing seawolf traits on admirals with the new submarine specialist trait.
+- Replaced all existing panzer leader traits on generals with armour officer trait (increasing xp gain on panzer leader).
+- Adaptable terrain penalty reduction 30->15.
+- Fortress buster fort attack 15->10%.
+- Siege artillery fort attack 20->15%.
+- Extra supplies command ability duration 7->3 days, cooldown 21->9.
+- Halved impact of admiral attack and defense skills.
+- Arsenal of Democracy WS threshold 35->30.
+- Giant wakes WS threshold 50->45.
+- Blocked "Iberian Bloc" and "Cooperate with Communists" Focus for AI Spains.
+- All minor's NFs giving +100% research -2y AoT for fighters limited to 1940 models. If you already have it, you get -1y AoT only - for 1944 models.
+- AC and LARM recon now only give 50% of its equipment armour.
+- Experience multiplier for convoy raiding 0.4->0.35.
+- Land combat modifier from experience 0.05->0.04 (max now at 60%).
+- SCW volunteer NFs add possible divisions for GER/ITA 2->1, for SOV 2->3 (it's much later in the tree).
+- LSPART models now unlocked at +3 years from the base model (37/39/44).
+- LTD/LSPAA models now unlocked at +2 years from the base model (36/38/43).
+- MSPART models now unlocked at +2 years from the base model (41/43/45).
+- MTD/MSPAA models now unlocked at +1 years from the base model (40/42/44).
+- Bulgarian factory decision caps 10/5/3->4/2/1.
+- Nerfed most of the CG bonuses Bulgaria gets.
+- US NF Military construction WT threshold 30->35.
+- USACE NF WS threshold 30->40. Adds 3 more MIC.
+- Changed Soryu Carrier Engine to Level 2.
+- Changed volunteer cap per own divisions from 25 to 50. (Normally, for SCW, this means GER/ITA can send 1 and SOV 3 divisions).
+
+Fixes:
+- Fix historical borders of Vichy France near the Spanish border.
+- Removed CP cost for airwing training to prevent an exploit to generate CP out of thin air.
+- Fixed Case Anton not considering new Bayonne state.
+- Case Anton now unlocks when Spain is at war with Germany.
+- Exploit Southern Ressource Area NF now available when subjects control some of the required states.
+- Full control of Indonesia is not longer needed for DEI Oil decisions.
+- Chinese warlords now demoted to minors after peace conference.
+- Cosmetic layout tweaks to UK NF tree.
+- US can only declare war during the Panay Incident if they're out of economic isolation.
+- Changed XP gain modifier given by traits that change command limit so that the XP gain rate is constant regardless of the command limit.
+- Shock now applies immedatly when Germany attacks Soviet Union, not when Soviet selects the option in the event.
+- Non-fascist axis members can only can use harsh occupation laws, same as Germany.
+- Operation Fork is now available even if Norway isn't in the Allies.
+- Made RAJ NF 'Great Indian Peninsula Railway' more predictable in where it spawns infrastructure, with Bombay always included.
+- Disabled UK/US' DoW on Mexico over oil nationalisation unless Global Defense/Limited Intervention was taken, respectively.
+- Added another possible trigger for the Iraqi revolt (Alexandria not fully controlled).
+
+AI:
+- Updated Chinese garrision and frontline script.
+- AI no longer promotes generals to field marshalls.
+- Reduced AI send volunteer desire from Soviet to China.
+- AI should reevaluate bad combats 4 times as often.
+- AI should always accept request for state control.
+- AI always makes Edward abdicate under IHMP historical game rule.
+- Bulgaria goes for the Patriarch NF now and doesn't go Total War NF. It also doesn't DoW YUG or TUR if get a wargoal.
+- Portugal now builds and invests in a spy agency.
+- Improved Manchuko NF choices.
+- Small tweak to French AI script to not waste PP.
+- Various small fixes to AI scripts.
+
+Other:
+- Updated changelog format with categories: AI/Fix/New Feature/Balance.
+
 ## 1.10.3.7
 - Reverted halving of LL weight in equipment files while halving the global define. This should result in the same values, but fix the bug of infantry and support eq costing no convoys to LL.
 - Add back up/down buttons on production lines.
