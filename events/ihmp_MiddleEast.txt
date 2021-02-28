@@ -23,10 +23,19 @@ add_namespace = ihmp_middleast
 		desc = ihmp_middleast.1.d
 		picture = GFX_report_event_dead_soldiers
 		fire_only_once = yes
+
 		trigger = {
-		 447 = { #Alexandria
-				NOT = {
-					is_fully_controlled_by = ENG
+			447 = { #Alexandria
+				OR = {
+					NOT = {
+						is_fully_controlled_by = ENG
+					}
+					AND = {
+						NOT = {
+							is_fully_controlled_by = EGY
+						}
+						EGY = { is_in_faction_with = ENG }
+					}
 				}
 			}
 		}
@@ -34,13 +43,15 @@ add_namespace = ihmp_middleast
 			days = 1
 		}
 
-		
+		hidden = yes
+
+		immediate = {
+			country_event = { id = ihmp_middleast.2 }
+		}
+
 		option = { 
 			name = ihmp_middleast.1.a
 			ai_chance = { factor = 100 }
-			hidden_effect = {
-				country_event = { id = ihmp_middleast.2 }
-			}
 		}
 	}
 
@@ -51,20 +62,44 @@ add_namespace = ihmp_middleast
 		picture = GFX_report_event_dead_soldiers
 		fire_only_once = yes
 		is_triggered_only = yes
+
 		trigger = {
 			IRQ = {
 				fascism > 0.15
 			}
-			452 = {
-				NOT = {
-					is_controlled_by = ENG
+			OR = {
+				452 = { #Marsa Matruh
+					OR = {
+						NOT = {
+							is_controlled_by = ENG
+						}
+						AND = {
+							NOT = {
+								is_controlled_by = EGY
+							}
+							EGY = { is_in_faction_with = ENG }
+						}
+					}
+				}
+				447 = { #Alexandria
+					OR = {
+						NOT = {
+							is_fully_controlled_by = ENG
+						}
+						AND = {
+							NOT = {
+								is_fully_controlled_by = EGY
+							}
+							EGY = { is_in_faction_with = ENG }
+						}
+					}
 				}
 			}
 		}
 		
-		option = { 
-			name = ihmp_middleast.2.a
-			ai_chance = { factor = 100 }
+		hidden = yes
+		
+		immediate = {
 			set_global_flag = iraq_coup
 			IRQ = {
 				set_politics = {
@@ -83,6 +118,10 @@ add_namespace = ihmp_middleast
 					active = no
 				}
 			}
+		}
+		option = {
+			name = ihmp_middleast.2.a
+			ai_chance = { factor = 100 }
 		}
 	}
 
@@ -105,11 +144,14 @@ add_namespace = ihmp_middleast
 		mean_time_to_happen = { days = 1 }
 
 		fire_only_once = yes
+		hidden = yes
 		
+		immediate = { 
+			SOV = { country_event = ihmp_middleast.4 }
+		}
 		option = { 
 			name = ihmp_middleast.3.a
 			ai_chance = { factor = 100 }
-			SOV = { country_event = ihmp_middleast.4 }
 		}
 	}
 	country_event = {
