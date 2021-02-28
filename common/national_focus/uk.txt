@@ -2020,6 +2020,7 @@ focus_tree = {
 						original_tag = SPR
 					}
 					set_country_flag = eng_spa_alliance_focus
+					activate_mission = ENG_SPA_Alliance
 					add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
 					add_timed_idea = { idea = democratic_influence days = 1095 }
 					country_event = { id = generic.1 }
@@ -2031,6 +2032,8 @@ focus_tree = {
 						add_opinion_modifier = { target = PREV modifier = democratic_leanings_bad }
 					}
 				}
+				ROOT = { activate_mission = ENG_SPA_Alliance }
+				GER = { activate_mission = ENG_SPA_Alliance }
 			}
 			if = {
 				limit = {

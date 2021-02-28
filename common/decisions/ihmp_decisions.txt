@@ -786,12 +786,67 @@ foreign_politics = {
 
 		}
 
+		fire_only_once = yes
 		days_mission_timeout = 30
 
 		timeout_effect = {
 			set_global_flag = FIN_fights_on
 			custom_effect_tooltip = FIN_fights_on_TT
 		}
+	}
+
+	GER_SPA_Alliance = {
+		available = {
+			hidden_trigger = { SPA = { has_country_flag = eng_spa_alliance_focus } }
+			custom_trigger_tooltip = {
+				SPA = { has_country_flag = eng_spa_alliance_focus }
+				tooltip = eng_spa_alliance_focus_TT
+			}
+		}
+
+		activation = {
+			SPA = {
+				has_country_flag = ger_spa_alliance_focus
+				NOT = { has_country_flag = eng_spa_alliance_focus }
+			}
+		}
+
+		fire_only_once = yes
+		days_mission_timeout = 140
+
+		timeout_effect = {
+			custom_effect_tooltip = GER_SPA_Alliance_TT
+		}
+		complete_effect = {
+			custom_effect_tooltip = SPA_Neutrality_TT
+        }
+	}
+
+	ENG_SPA_Alliance = {
+		available = {
+			hidden_trigger = { SPA = { has_country_flag = ger_spa_alliance_focus } }
+			custom_trigger_tooltip = {
+				SPA = { has_country_flag = ger_spa_alliance_focus }
+				tooltip = ger_spa_alliance_focus_TT
+			}
+		}
+
+		activation = {
+			SPA = {
+				has_country_flag = eng_spa_alliance_focus
+				NOT = { has_country_flag = ger_spa_alliance_focus }
+			}
+		}
+
+		fire_only_once = yes
+		days_mission_timeout = 350
+
+		timeout_effect = {
+			custom_effect_tooltip = ENG_SPA_Alliance_TT
+		}
+		complete_effect = {
+			custom_effect_tooltip = SPA_Neutrality_TT
+        }
 	}
 
 #	defend_Kresy = {
