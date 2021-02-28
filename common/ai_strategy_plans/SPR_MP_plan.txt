@@ -79,11 +79,6 @@ SPR_MP_1 = {
 		SPA_defenses_against_invasion
 	}
 
-	focus_factors = {
-		SPA_the_iberian_pact = 0
-	}
-
-
 	ideas = {
 		civilian_economy = 0
 		low_economic_mobilisation = 0
@@ -527,10 +522,6 @@ SPR_MP_Neutrality = {
 		SPA_defenses_against_invasion
 	}
 
-	focus_factors = {
-		SPA_the_iberian_pact = 0
-	}
-
 	ideas = {
 		civilian_economy = 0
 		low_economic_mobilisation = 0
@@ -565,6 +556,23 @@ SPR_MP_Neutrality = {
 		modifier = {
 			factor = 1.0
 		}
+	}
+}
+
+SPR_MP_1_No_Iberian_Pact_Ever = {
+	name = "No Iberian Pact"
+	desc = ""
+
+	enable = {
+		tag = SPR
+		has_game_rule = {
+			rule = SPR_ai_behavior
+			option = SPR_MP_1
+		}
+
+	}
+	focus_factors = {
+		SPA_the_iberian_pact = 0
 	}
 }
 
@@ -611,7 +619,7 @@ SPR_MP_1_Trade_Axis = {
 }
 
 SPR_MP_1_Theorist = {
-	name = "Spanish Trade in Peacetime"
+	name = "Spanish Theorist"
 	desc = ""
 
 	enable = {
@@ -630,7 +638,7 @@ SPR_MP_1_Theorist = {
 }
 
 SPR_MP_1_Carlist_Theorist = {
-	name = "Spanish Trade with Axis"
+	name = "Carlist Theorist"
 	desc = ""
 
 	enable = {
@@ -649,8 +657,8 @@ SPR_MP_1_Carlist_Theorist = {
 }
 
 SPR_MP_Get_PP = {
-	name = "Spanish Nationalist MP plan"
-	desc = "Multiplayer behavior for Nationalist Spain"
+	name = "Save up PP"
+	desc = ""
 
 	enable = {
 		OR = {
