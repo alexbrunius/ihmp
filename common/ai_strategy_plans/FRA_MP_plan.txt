@@ -23,6 +23,7 @@ FRA_MP_1 = {
 		FRA_strengthen_government_support
 		#1937
 		FRA_defensive_strategems
+		#FRA_intervention_in_spain
 		FRA_begin_rearmament
 		FRA_nationalize_key_industry
 		FRA_the_blum_viollette_proposal
@@ -163,6 +164,48 @@ FRA_MP_2 = {
 		modifier = {
 			factor = 1.0
 		}
+	}
+}
+
+FRA_MP_Block_Partial_War = {
+	name = "Block Partial Mob just before a war"
+	desc = "If Germany does Danzig or War, then don't switch from Early Mob to Partial Mob. You can go the War Eco soon, saving PP."
+
+	enable = {
+		tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		has_war = no
+		GER = {
+			OR = {
+				focus_progress = {
+					focus = GER_danzig_or_war
+					progress > 0.1
+				}
+				has_completed_focus = GER_danzig_or_war
+			}
+
+		}
+	}
+
+	abort = {
+		OR = {
+			has_war = yes
+			NOT = { has_government = democratic }
+		}
+	}
+
+	ideas = {
+		partial_economic_mobilisation = 0
 	}
 }
 
@@ -1018,7 +1061,7 @@ FRA_MP_Civilian_1 = {
 			NOT = { infrastructure < 10 }
 			free_building_slots = {
 				building = industrial_complex
-				size > 0
+				size > 1
 				include_locked = no
 			}
 		}
@@ -1032,7 +1075,7 @@ FRA_MP_Civilian_1 = {
 					NOT = { is_controlled_by = FRA }
 					free_building_slots = {
 						building = industrial_complex
-						size < 1
+						size < 2
 						include_locked = no
 					}
 				}
