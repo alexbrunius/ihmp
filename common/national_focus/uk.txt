@@ -582,7 +582,7 @@ focus_tree = {
 				}
 				OR = {
 					date > 1937.07.01
-					threat > 0.05
+					NOT = { threat < 0.05 }
 					has_war = yes
 					has_idea = ENG_no_further_appeasement_idea
 					NOT = { has_government = democratic }
@@ -593,7 +593,7 @@ focus_tree = {
 					NOT = { has_dlc = "Man the Guns" }
 				}
 				OR = {
-					threat > 0.05
+					NOT = { threat < 0.05 }
 					has_war = yes
 					NOT = { has_government = democratic }
 				}
@@ -669,7 +669,7 @@ focus_tree = {
 					has_dlc = "Man the Guns"
 				}
 				OR = {
-					threat > 0.1 
+					NOT = { threat < 0.1 } 
 					has_war = yes
 					has_idea = ENG_no_further_appeasement_idea
 					NOT = { has_government = democratic }
@@ -680,7 +680,7 @@ focus_tree = {
 					NOT = { has_dlc = "Man the Guns" }
 				}
 				OR = {
-					threat > 0.1 
+					NOT = { threat < 0.1 } 
 					has_war = yes
 					NOT = { has_government = democratic }
 				}
@@ -2020,6 +2020,7 @@ focus_tree = {
 						original_tag = SPR
 					}
 					set_country_flag = eng_spa_alliance_focus
+					activate_mission = ENG_SPA_Alliance
 					add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
 					add_timed_idea = { idea = democratic_influence days = 1095 }
 					country_event = { id = generic.1 }
@@ -2031,6 +2032,8 @@ focus_tree = {
 						add_opinion_modifier = { target = PREV modifier = democratic_leanings_bad }
 					}
 				}
+				ROOT = { activate_mission = ENG_SPA_Alliance }
+				GER = { activate_mission = ENG_SPA_Alliance }
 			}
 			if = {
 				limit = {

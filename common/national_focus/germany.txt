@@ -4360,7 +4360,10 @@ focus_tree = {
 					}
 					add_opinion_modifier = { target = GER modifier = ger_spa_alliance_focus }
 					set_country_flag = ger_spa_alliance_focus
+					activate_mission = GER_SPA_Alliance
 				}
+				ROOT = { activate_mission = GER_SPA_Alliance }
+				ENG = { activate_mission = GER_SPA_Alliance }
 			}
 			if = {
 				limit = {
@@ -4369,7 +4372,10 @@ focus_tree = {
 				SPA = {
 					add_opinion_modifier = { target = GER modifier = ger_spa_alliance_focus }
 					set_country_flag = ger_spa_alliance_focus
+					activate_mission = GER_SPA_Alliance
 				}
+				ROOT = { activate_mission = GER_SPA_Alliance }
+				ENG = { activate_mission = GER_SPA_Alliance }
 			}
 		}
 	}
