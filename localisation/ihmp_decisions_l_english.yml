@@ -1,7 +1,7 @@
 ﻿l_english:
  GER_pressure_Sweden_for_ressources:0 "Pressures Sweden for exclusive ressource concessions." 
  FRA_move_government_to_Algier:0 "Move your capital to Algiers"
- FRA_move_government_to_Algier:desc:0 "Moves your capital to Algiers. Possible as long as Algiers is controlled by France and France itself capitulated."
+ FRA_move_government_to_Algier_desc:0 "Moves your capital to Algiers. Possible as long as Algiers is controlled by France and France itself capitulated."
  FRA_move_government_to_Casablanca:0 "Move your capital to Casablanca"
  FRA_move_government_to_Casablanca_desc:0 "Moves your capital to Casablanca. Possible as long as Casablanca is controlled by France and France itself capitulated."
  FRA_move_government_to_Brazzaville:0 "Move your capital to Brazzaville"
