@@ -335,7 +335,7 @@ SIA_MP_Airbase_2 = {
 		289 = {
 			is_controlled_by = SIA
 			NOT = { infrastructure < 10	}
-			air_base < 6
+			air_base < 5
 		}
 	}
 
@@ -343,7 +343,7 @@ SIA_MP_Airbase_2 = {
 		289 = {
 			OR ={
 				NOT = { is_controlled_by = SIA }
-				NOT = { air_base < 6 }
+				NOT = { air_base < 5 }
 			}
 		}
 	}
@@ -394,7 +394,7 @@ SIA_MP_Infrastructure_3 = {
 		type = build_building
 		id = infrastructure
 		target = 670
-		value = 5
+		value = 1
 	}
 }
 

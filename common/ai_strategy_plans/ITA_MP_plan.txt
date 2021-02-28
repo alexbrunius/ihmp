@@ -18,14 +18,14 @@ ITA_MP_1 = {
 		ITA_industrial_effort						#May 20 1936
 		ITA_industrial_effort_2						#July 30 1936
 		ITA_extra_tech_slot							#October 10 1936
-		ITA_italian_highways 						#October 10 1936
-		ITA_army_primacy							#December 20 1936
-		ITA_air_innovation							#February 30 1937
-		ITA_victoryinETH							#May 10 1937
-		ITA_support_nationalist_spain
-		ITA_mare_nostrum							
-		ITA_yugoslavia_friend
+		ITA_army_primacy 							#October 10 1936
+		ITA_mare_nostrum							#December 20 1936
+		ITA_victoryinETH							#February 30 1937
+		ITA_support_nationalist_spain				#May 10 1937
+		ITA_yugoslavia_friend					
 		ITA_albania_war_goal
+		ITA_italian_highways
+		ITA_air_innovation
 		ITA_bulgaria_friend
 		ITA_pact_of_steel
 		ITA_demand_balearic_islands
@@ -36,6 +36,7 @@ ITA_MP_1 = {
 		ITA_bomber_effort
 		ITA_air_innovation_2
 		ITA_german_rd_treaty
+		ITA_claims_on_france
 		#ITA_fortification_effort					#November 20 1939	
 		#ITA_romania_friend							#January 30 1940
 		#ITA_light_ship_effort  					#April 10 1940
@@ -48,7 +49,7 @@ ITA_MP_1 = {
 		#ITA_marines_and_landing_craft 				#August 20 1941
 		#ITA_capital_ships 							#October 30 1941	
  		#ITA_armored_effort 						#January 10
- 		#ITA_claims_on_france 						#March 20 1942
+													#March 20 1942
  		#ITA_sea_wolves 							#May 30 1942	
  		#ITA_secret_weapons 						#August 10 1942
 													#October 20 1942	
