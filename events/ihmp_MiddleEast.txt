@@ -5,6 +5,18 @@
 add_namespace = ihmp_middleast
 
 
+	news_event = {
+		id = ihmp_middleast.0
+		title = ihmp_middleast.0.t
+		desc = ihmp_middleast.0.d
+		picture = GFX_report_event_dead_soldiers
+		is_triggered_only = yes
+
+		option = {
+			name = ihmp_middleast.0.a
+		}
+	}
+
 	country_event = {
 		id = ihmp_middleast.1
 		title = ihmp_middleast.1.t
@@ -60,6 +72,9 @@ add_namespace = ihmp_middleast
 				}
 			}
 			ENG = {
+				news_event = {
+					id = ihmp_middleast.0
+				}
 				remove_resource_rights = 291
 				remove_resource_rights = 676
 				diplomatic_relation = {
