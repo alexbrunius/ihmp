@@ -184,7 +184,7 @@ MP_Befriend_Everyone = {
 	ai_strategy = {
 		type = pp_spend_priority
 		id = relation	
-		value = -200
+		value = -400
 	}	
 }
 

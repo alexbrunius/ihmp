@@ -34,13 +34,13 @@ ROM_MP_1 = {
 		ROM_hunedoara_steel_works
 		ROM_invest_in_the_iar
 		ROM_expand_ploiesti_oil_production
-		ROM_a_deal_with_the_devil
-		ROM_form_peasant_militias
 		ROM_expand_the_university_of_bucharest
 		ROM_expand_the_air_force
 		ROM_trade_treaty_with_germany
 		ROM_invite_german_advisors
 		ROM_join_axis
+		ROM_a_deal_with_the_devil
+		ROM_form_peasant_militias
 		ROM_german_romanian_oil_exploitation_company
 		#ROM_army_maneuvers
 		#ROM_expand_the_air_force

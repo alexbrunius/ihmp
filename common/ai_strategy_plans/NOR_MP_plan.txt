@@ -94,7 +94,7 @@ NOR_MP_1 = {
 }
 
 NOR_MP_Garrision_SWE = {
-	name = "Garrision the Mainland"
+	name = "No Front towards Sweden"
 	desc = ""
 
 	enable = {
@@ -124,7 +124,7 @@ NOR_MP_Garrision_SWE = {
 }
 
 NOR_MP_Garrision_SOV = {
-	name = "Garrision the Mainland"
+	name = "No Front towards Soviet Union"
 	desc = ""
 
 	enable = {
@@ -154,7 +154,7 @@ NOR_MP_Garrision_SOV = {
 }
 
 NOR_MP_Garrision_FIN = {
-	name = "Garrision the Mainland"
+	name = "No Front towards Finland"
 	desc = ""
 
 	enable = {
@@ -183,7 +183,7 @@ NOR_MP_Garrision_FIN = {
 	}	
 	ai_strategy = {
 		type = put_unit_buffers
-		ratio = 1.0
+		ratio = 2.0
 		states = { 
 			110
 			142
