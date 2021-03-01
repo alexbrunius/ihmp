@@ -1,5 +1,14 @@
 # Changelog:
 
+## 1.10.4.1
+Fixes:
+- Demand Overlordship of Slovakia NF no longer requires the target (CZE/GER) owning Zaolzie (which goes to Poland on Sudetenland and isn't a part of Slovakia either way).
+
+AI:
+- Hungarian AI now does democratic raids to unlock Renouncing Trianon earlier.
+- Hungarian AI no longer goes Service by Requirement too early.
+- Spanish AI no longer restores the monarchy when Nationalists win SCW.
+
 ## 1.10.4.0
 New features:
 - Integrated Topbar Resources Mod by Lennard.
