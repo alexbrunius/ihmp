@@ -42,9 +42,10 @@ HUN_MP_1 = {
 
 	research = {
 		armor = -100
-		cat_mobile_warfare = -1000
+		#cat_mobile_warfare = -1000
 		cat_superior_firepower = -1000
 		cat_grand_battle_plan = -1000
+		cat_mass_assault = -1000
 		cat_strategic_destruction = -1000
 		cat_operational_integrity = -1000
 		synth_resources = -1000
@@ -127,8 +128,10 @@ HUN_MP_2 = {
 
 	research = {
 		armor = -100
-		cat_mobile_warfare = -1000
+		#cat_mobile_warfare = -1000
+		cat_superior_firepower = -1000
 		cat_grand_battle_plan = -1000
+		cat_mass_assault = -1000
 		cat_strategic_destruction = -1000
 		cat_operational_integrity = -1000
 		synth_resources = -1000
@@ -168,7 +171,7 @@ HUN_MP_2 = {
 }
 
 HUN_MP_Ideas = {
-	name = "Hungarian-German Alliance"
+	name = "Hungarian Ideas"
 	desc = ""
 
 	enable = {
@@ -305,7 +308,7 @@ HUN_MP_Alliance = {
 	ai_strategy = {
 		type = pp_spend_priority
 		id = relation	
-		value = -200
+		value = -400
 	}
 }
 
@@ -345,7 +348,7 @@ HUN_MP_Infrastructure_1 = {
 		type = build_building
 		id = infrastructure
 		target = 43
-		value = 10
+		value = 1
 	}
 }
 
