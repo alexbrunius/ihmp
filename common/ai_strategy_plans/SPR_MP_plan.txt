@@ -573,6 +573,7 @@ SPR_MP_1_No_Iberian_Pact_Ever = {
 	}
 	focus_factors = {
 		SPA_the_iberian_pact = 0
+		SPA_restore_the_monarchy = 0
 	}
 }
 
