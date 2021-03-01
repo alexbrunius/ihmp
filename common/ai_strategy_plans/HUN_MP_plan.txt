@@ -34,9 +34,11 @@ HUN_MP_1 = {
 		HUN_war_games
 		#HUN_theoretical_air_efforts
 		HUN_bled_agreement
-		HUN_establish_the_air_force
-		HUN_indigenous_designs
-		HUN_light_fighter_effort
+		#HUN_establish_the_air_force
+		#HUN_indigenous_designs
+		#HUN_light_fighter_effort
+		HUN_army_maneuvers
+		HUN_mobile_focus
 		HUN_joint_aluminum_mining_company
 	}
 
@@ -57,7 +59,7 @@ HUN_MP_1 = {
 		export_focus = 0
 		limited_exports = 0
 		closed_economy = 0
-		HUN_lajos_remenyi_schneller = 20
+		HUN_lajos_remenyi_schneller = 1
 		HUN_mavag = 10
 		HUN_gyorgy_jendrassik = 3
 		civilian_economy = 0
@@ -119,8 +121,10 @@ HUN_MP_2 = {
 		#HUN_theoretical_air_efforts
 		HUN_bled_agreement
 		HUN_establish_the_air_force
-		HUN_indigenous_designs
-		HUN_light_fighter_effort
+		#HUN_indigenous_designs
+		#HUN_light_fighter_effort
+		HUN_army_maneuvers
+		HUN_mobile_focus
 		HUN_trade_deal_with_germany
 		HUN_joint_aluminum_mining_company
 		
@@ -143,7 +147,7 @@ HUN_MP_2 = {
 		export_focus = 0
 		limited_exports = 0
 		closed_economy = 0
-		HUN_lajos_remenyi_schneller = 20
+		HUN_lajos_remenyi_schneller = 1
 		HUN_mavag = 10
 		HUN_gyorgy_jendrassik = 3
 		civilian_economy = 0
@@ -206,6 +210,8 @@ HUN_MP_Ideas = {
 		generic_electronics_concern = 0
 		generic_motorized_equipment_manufacturer = 0
 		HUN_ferenc_szombathelyi = 0
+		HUN_sandor_magyarossy = 0
+		HUN_bela_rakosi = 0
 	}
 }
 
@@ -226,10 +232,24 @@ HUN_MP_Advisors = {
 			}
 		}
 		NOT = { has_idea = limited_conscription }
+		NOT = {	has_idea = extensive_conscription }
+		NOT = {	has_idea = service_by_requirement }
+		NOT = {	has_idea = massive_draft }
+		NOT = {	has_idea = all_adults_serve }
+		NOT = {	has_idea = all_adults_serve }
+		NOT = {	has_idea = scraping_the_barrel }
 	}
 
 	abort = {
-		has_idea = limited_conscription
+		OR = {
+			has_idea = limited_conscription
+			has_idea = extensive_conscription
+			has_idea = service_by_requirement
+			has_idea = massive_draft
+			has_idea = all_adults_serve
+			has_idea = all_adults_serve
+			has_idea = scraping_the_barrel
+		}
 	}
 
 	ideas = {
