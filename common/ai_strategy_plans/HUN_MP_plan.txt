@@ -235,6 +235,7 @@ HUN_MP_Advisors = {
 		HUN_mavag = 0
 		HUN_vilmos_roder = 0
 		HUN_shvoy_kalman = 0
+		HUN_gyorgy_jendrassik = 0
 		HUN_reszo_kastner = 0
 		HUN_gusztav_jany = 0
 		HUN_dezso_laszlo = 0
