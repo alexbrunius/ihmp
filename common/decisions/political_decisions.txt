@@ -1933,6 +1933,19 @@ political_actions = {
 		
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				tag = HUN
+				has_game_rule = {
+					rule = HUN_ai_behavior
+					option = HUN_MP_1
+				}
+				HUN = {
+					NOT = { has_completed_focus = HUN_renounce_the_treaty_of_trianon }
+					NOT = { fascism > 0.4 }
+					has_idea = HUN_zoltan_tildy
+				}
+				add = 3
+			}
 		}
     }
 
