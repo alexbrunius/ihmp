@@ -363,12 +363,34 @@ HUN_MP_Infrastructure_1 = {
 			}
 		}
 	}
+}
 
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		target = 43
-		value = 1
+HUN_Service_by_Requirment = {
+	name = "Service by Requirment later"
+	desc = ""
+
+	enable = {
+		tag = HUN
+		OR = {
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_1
+			}
+			has_game_rule = {
+				rule = HUN_ai_behavior
+				option = HUN_MP_2
+			}
+		}
+		has_manpower > 1000
+	}
+
+	abort = {
+		NOT = { has_manpower > 1000 }
+	}
+
+	ideas = {
+		service_by_requirement = -200
+		massive_draft = -200
 	}
 }
 
