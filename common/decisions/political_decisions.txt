@@ -1935,9 +1935,15 @@ political_actions = {
 			factor = 0
 			modifier = {
 				tag = HUN
-				has_game_rule = {
-					rule = HUN_ai_behavior
-					option = HUN_MP_1
+				OR = {
+					has_game_rule = {
+						rule = HUN_ai_behavior
+						option = HUN_MP_1
+					}
+					has_game_rule = {
+						rule = HUN_ai_behavior
+						option = HUN_MP_2
+					}
 				}
 				HUN = {
 					NOT = { has_completed_focus = HUN_renounce_the_treaty_of_trianon }
