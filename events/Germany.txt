@@ -2152,7 +2152,8 @@ country_event = {
 			limit = {
 				is_historical_focus_on = yes
 			}
-			ENG = { add_to_faction = FRA }
+			custom_effect_tooltip = end_of_czechoslovakia_france_join_allies
+			hidden_effect = { ENG = { add_to_faction = FRA } }
 		}
 	}
 	
@@ -2169,6 +2170,7 @@ country_event = {
 				}
 			}
 			SLO = { transfer_state = 70 }
+			GER = { set_country_flag = SLO_puppeted }
 		}
 		if = {
 			limit = {
@@ -2213,7 +2215,18 @@ country_event = {
 				}
 			}
 			SLO = { transfer_state = 73 }
-			GER = { set_country_flag = SLO_puppeted }
+		}
+		if = {
+			limit = {
+				72 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
+				country_exists = POL
+			}
+			POL = { transfer_state = 72 } # Give Poland Zaolzie
 		}
 		
 		if = {
@@ -2227,6 +2240,7 @@ country_event = {
 			}
 			SLO = { transfer_state = 664 }
 		}
+		puppet = SLO
 		if = {
 			limit = { country_exists = CZE }
 			SLO = {
@@ -2235,10 +2249,20 @@ country_event = {
 			annex_country = { target = CZE }
 			add_war_support = 0.1
 		}
-		puppet = SLO
+		effect_tooltip = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 9
+						state = 75
+					}
+				}
+				set_compliance = 50
+			}
+		}
 		if = {
 			limit = {
-				has_country_flag = SLO_puppeted
+				GER = { has_country_flag = SLO_puppeted }
 			}
 			every_state = {
 				limit = {
@@ -2247,18 +2271,6 @@ country_event = {
 				}
 				set_compliance = 50
 			}
-		}
-		if = {
-			limit = {
-				72 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
-					}
-				}
-				country_exists = POL
-			}
-			POL = { transfer_state = 72 } # Give Poland Zaolzie
 		}
 
 		if = {

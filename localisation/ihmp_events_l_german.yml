@@ -40,4 +40,4 @@
  ihmp_middleast.4.d:0 "Iran ist besiegt und bietet uns einen strategischen Frieden an, um als Nation weiterhin zu bestehen."
  ihmp_middleast.4.a:0 "Nun gut."
  ihmp_middleast.4.b:0 "Wir machen unseren eigenen Frieden."
- 
+ end_of_czechoslovakia_france_join_allies:0 "[FRA.GetName] joins [ENG.GetFactionName]."

@@ -40,4 +40,5 @@
  ihmp_middleast.4.d:0 "Iran is defeated and offers us a strategic peace, where they continue to exist as a nation."
  ihmp_middleast.4.a:0 "Well ok."
  ihmp_middleast.4.b:0 "We dictate our own peace."
+ end_of_czechoslovakia_france_join_allies:0 "[FRA.GetName] joins [ENG.GetFactionName]."
  
