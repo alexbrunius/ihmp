@@ -6114,6 +6114,13 @@ BUL_rearmament = {
 				factor = 0.5
 				has_government = fascism
 			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = BUL_ai_behavior
+					option = BUL_MP_1
+				}
+			}
 		}
 
 		allowed = { 
