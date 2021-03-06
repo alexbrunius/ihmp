@@ -14174,15 +14174,28 @@ political_actions = {
 		available = {
 			if = {
 				limit = {
+					hidden_trigger = { tag = SPA }
 					has_completed_focus = SPA_the_phalanx_ascendant
 				}
 				hidden_trigger = { always = no }
 			}
 			if = {
 				limit = {
+					hidden_trigger = { tag = SPA }
 					has_completed_focus = SPA_unify_the_nationalist_front
 				}
 				has_completed_focus = SPA_fuse_the_parties
+			}
+			if = {
+				limit = {
+					hidden_trigger = {
+						OR = {
+							tag = GER
+							tag = ITA
+						}
+					}
+				}
+				hidden_trigger = { always = no }
 			}
 		}
 
@@ -14201,15 +14214,23 @@ political_actions = {
 		}
 
 		visible = {
-			tag = SPA
+			hidden_trigger = {
+				OR = {
+					tag = SPA
+					tag = GER
+					tag = ITA
+				}
+			}
 			if = {
 				limit = {
+					tag = SPA
 					has_completed_focus = SPA_the_phalanx_ascendant
 				}
 				NOT = { has_completed_focus = SPA_eliminate_the_carlists }
 			}
 			if = {
 				limit = {
+					tag = SPA
 					has_completed_focus = SPA_unify_the_nationalist_front
 				}
 				NOT = { has_completed_focus = SPA_fuse_the_parties }
@@ -14219,17 +14240,23 @@ political_actions = {
 		timeout_effect = {
 			if = {
 				limit = {
+					tag = SPA
 					num_of_controlled_states > 4
 				}
 				country_event = lar_spain.7
 			}
-			else = {
+			if = {
+				limit = {
+					tag = SPA
+					NOT = { num_of_controlled_states > 4 }
+				}
 				activate_mission = SPA_carlist_uprising_mission
 				add_days_mission_timeout = {
 					mission = SPA_carlist_uprising_mission
 					days = -316
 				}
 			}
+
 		}
 	}
 
@@ -14260,18 +14287,33 @@ political_actions = {
 		}
 
 		visible = {
-			tag = SPD
-			NOT = { has_completed_focus = SPR_crush_the_revolution }
+			hidden_trigger = {
+				OR = {
+					tag = SPD
+					tag = SOV
+				}
+			}
+			if = {
+				limit = {
+					tag = SPD
+				}
+				NOT = { has_completed_focus = SPR_crush_the_revolution }
+			}
 		}
 
 		timeout_effect = {
 			if = {
 				limit = {
+					tag = SPD
 					num_of_controlled_states > 1
 				}
 				country_event = lar_spain.9
 			}
-			else = {
+			if = {
+				limit = {
+					tag = SPD
+					NOT = { num_of_controlled_states > 1 }
+				}
 				activate_mission = SPR_anarchist_uprising_mission
 				add_days_mission_timeout = {
 					mission = SPR_anarchist_uprising_mission
@@ -14388,7 +14430,7 @@ political_actions = {
 		}
 
 		available = {
-			controls_province = 858
+			SPA = { controls_province = 858 }
 		}
 
 		fire_only_once = yes
@@ -14402,19 +14444,30 @@ political_actions = {
 		}
 
 		visible = {
-			tag = SPA
-			has_global_flag = spanish_civil_war
-			has_completed_focus = SPA_save_the_alcazar
+			hidden_trigger = {
+				OR = {
+					tag = SPA
+					tag = GER
+					tag = ITA
+				}
+				has_global_flag = spanish_civil_war
+				SPA = { has_completed_focus = SPA_save_the_alcazar }
+			}
 		}
 
 		complete_effect = {
-			add_war_support = 0.1
-			add_stability = 0.1
-			add_political_power = 100
-			complete_national_focus = SPA_caudillo_of_spain
-			add_days_mission_timeout = {
-				mission = SPA_carlist_uprising_mission
-				days = 70
+			if = {
+				limit = {
+					tag = SPA
+				}
+				add_war_support = 0.1
+				add_stability = 0.1
+				add_political_power = 100
+				complete_national_focus = SPA_caudillo_of_spain
+				add_days_mission_timeout = {
+					mission = SPA_carlist_uprising_mission
+					days = 70
+				}
 			}
 		}
 
