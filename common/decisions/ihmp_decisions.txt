@@ -812,10 +812,16 @@ foreign_politics = {
 		}
 
 		fire_only_once = yes
-		days_mission_timeout = 140
+		days_mission_timeout = 210
 
 		timeout_effect = {
 			custom_effect_tooltip = GER_SPA_Alliance_TT
+			if = {
+				limit = {
+					tag = SPA
+				}
+				complete_national_focus = SPA_join_the_axis
+			}
 		}
 		complete_effect = {
 			custom_effect_tooltip = SPA_Neutrality_TT
@@ -839,10 +845,16 @@ foreign_politics = {
 		}
 
 		fire_only_once = yes
-		days_mission_timeout = 350
+		days_mission_timeout = 420
 
 		timeout_effect = {
 			custom_effect_tooltip = ENG_SPA_Alliance_TT
+			if = {
+				limit = {
+					tag = SPA
+				}
+				complete_national_focus = SPA_join_the_allies
+			}
 		}
 		complete_effect = {
 			custom_effect_tooltip = SPA_Neutrality_TT
