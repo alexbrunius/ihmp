@@ -26,6 +26,19 @@ on_actions = {
 					clr_country_flag = IRQ_resource_rights
 				}
 			}
+			if = {
+				limit = {
+					FROM = { tag = VEN }
+				}
+				ENG = {
+					remove_resource_rights = 489
+					clr_country_flag = VEN_resource_rights
+				}
+				USA = {
+					remove_resource_rights = 307
+					clr_country_flag = VEN_resource_rights
+				}
+			}
 		}
 	}
 	
@@ -55,6 +68,21 @@ on_actions = {
 				}
 				ENG = {
 					set_country_flag = PER_resource_rights
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				VEN = {
+					give_resource_rights = { receiver = ENG state = 489 } #Zuila (West)
+					give_resource_rights = { receiver = USA state = 307 } #Miranda (East)
+				}
+				USA = {
+					set_country_flag = VEN_resource_rights
+				}
+				ENG = {
+					set_country_flag = VEN_resource_rights
 				}
 			}
 			#Military Access UK-Iraq
@@ -122,6 +150,21 @@ on_actions = {
 				CAN = {
 					delete_units = { 
 						division_template = "Cavalry Militia"
+						disband = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = SPR_ai_behavior
+						option = SPR_MP_1
+					}
+					SPR = { is_ai = yes }
+				}
+				SPR = {
+					delete_units = {
+						division_template = "División de Caballería"
 						disband = yes
 					}
 				}
@@ -525,16 +568,6 @@ on_actions = {
 				FRA = { remove_ideas = FRA_surrender }
 			}
 		}
-#		effect = {
-#			if = {
-#				limit = {
-#					FROM = { is_in_faction_with = CHI }
-#				}
-#				CHI = {
-#					CHI_unity_level_down = yes #adds surrender defense
-#				}					
-#			}
-#		}
 	}
 
 	# ROOT is previously capitulated country
@@ -554,17 +587,6 @@ on_actions = {
 				}
 			}
 		}
-
-#		effect = {
-#			if = {
-#				limit = {
-#					FROM = { is_in_faction_with = event_target:WTT_current_china_leader }
-#				}
-#				event_target:WTT_current_china_leader = {
-#					CHI_unity_level_up = yes #adds surrender defense
-#				}					
-#			}
-#		}
 	}
 	
 	#ROOT is winner #FROM is loser
