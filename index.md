@@ -1,5 +1,11 @@
 # Changelog:
 
+## 1.10.4.2
+
+Fixes:
+- Fix Fate of Czechoslovakia not giving compliance in Bohemia on the historical option (releasing Slovakia).
+- Fixed some Raj focuses spawning factories in non-core states.
+
 ## 1.10.4.1
 Fixes:
 - Demand Overlordship of Slovakia NF no longer requires the target (CZE/GER) owning Zaolzie (which goes to Poland on Sudetenland and isn't a part of Slovakia either way).
