@@ -58,6 +58,19 @@ political_actions = {
 					modifier = embargo
 				}
 				set_country_flag = USA_Embargo_JAP
+				every_other_country = {
+					limit = {
+						is_subject_of = PREV
+					}
+					add_opinion_modifier = {
+						target = JAP
+						modifier = embargo
+					}
+					reverse_add_opinion_modifier = {
+						target = JAP
+						modifier = embargo
+					}
+				}
 			}
 		}
 	}
@@ -211,6 +224,19 @@ political_actions = {
 					modifier = embargo
 				}
 				set_country_flag = USA_Embargo
+				every_other_country = {
+					limit = {
+						is_subject_of = PREV
+					}
+					add_opinion_modifier = {
+						target = GER
+						modifier = embargo
+					}
+					reverse_add_opinion_modifier = {
+						target = GER
+						modifier = embargo
+					}
+				}
 			}
 		}
 	}
