@@ -453,7 +453,6 @@
 	focus = {
 		id = CAN_retool_angus_shops
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = CAN_canada_pacific_railway }
 		prerequisite = { focus = CAN_bits_and_pieces_program }
 		x = 5
 		y = 4
@@ -624,43 +623,42 @@
 		}
 	}
 
-	focus = {
-		id = CAN_war_bonds
-		icon = GFX_goal_generic_consumer_goods
-		x = 2
-		y = 0
-		relative_position_id = CAN_crown_corporations
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			has_war = yes
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			add_ideas = CAN_war_bonds_1
-		}
-	}
+#	focus = {
+#		id = CAN_war_bonds
+#		icon = GFX_goal_generic_consumer_goods
+#		x = 2
+#		y = 0
+#		relative_position_id = CAN_crown_corporations
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 80
+#		}
+#
+#		available = {
+#			has_war = yes
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = { FOCUS_FILTER_INDUSTRY }
+#
+#		completion_reward = {
+#			add_ideas = CAN_war_bonds_1
+#		}
+#	}
 
 	focus = {
 		id = CAN_department_of_munitions_and_supply
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = CAN_crown_corporations }
 		prerequisite = { focus = CAN_defence_of_canada_regulations }
-		prerequisite = { focus = CAN_war_bonds }
 		x = -3
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1019,7 +1017,7 @@
 		}
 
 		available = {
-
+			has_war = yes
 		}
 		
 		bypass = {
@@ -1385,7 +1383,7 @@
 
 	focus = {
 		id = CAN_polymer_corporation
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = CAN_crown_corporations }
 		x = 2
 		y = 0
@@ -1715,10 +1713,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = CAN_war_bonds_1
-				add_idea = CAN_war_bonds_2
-			}
+			add_ideas = CAN_victory_bonds
 		}
 	}
 
@@ -2693,7 +2688,7 @@
 		id = CAN_aluminium_company_of_canada
 		icon = GFX_goal_generic_positive_trade_relations 
 		prerequisite = { focus = CAN_canada_pacific_railway }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = CAN_canada_pacific_railway
 
