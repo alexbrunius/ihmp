@@ -3733,7 +3733,7 @@ focus_tree = {
 		bypass = {
 			has_global_flag = SPR_carlist_uprising_flag
 		}
-		prerequisite = { focus = SPA_consolidate_the_north }
+		prerequisite = { focus = SPA_unify_the_nationalist_front }
 		
 		icon = GFX_goal_generic_military_deal
 		x = 0
