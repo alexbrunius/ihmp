@@ -16,6 +16,7 @@ SPD_MP_1 = {
 	}
 
 	ai_national_focuses = {
+		#PreSCW
 		SPR_the_popular_front
 		SPR_secure_the_guardia_de_asalto
 		SPR_train_the_union_youth
@@ -23,23 +24,24 @@ SPD_MP_1 = {
 		SPR_distribute_arms_to_the_people
 		SPR_disband_the_army
 		SPR_maintain_the_second_republic
-		#SPR_strengthen_the_euzko_gudarostea
+		#SCW
+		SPR_strengthen_the_euzko_gudarostea
 		#SPR_fortify_the_iron_ring
 		SPR_new_leadership
 		SPR_the_future_of_the_republic
-		SPR_reaffirm_the_popular_front_strategy
-		SPR_anti_fascist_unity
-		SPR_ensure_loyalty
-		SPR_enlist_the_carabineros
-		SPR_the_popular_army
 		SPR_relocate_the_gold_reserves
-		SPR_no_pasaran
-		SPR_a_frontline_suited_for_intellectuals
-		SPR_take_the_initiative
+		SPR_reaffirm_the_popular_front_strategy
 		SPR_crush_the_revolution
 		SPR_expand_soviet_aid
 		SPR_soviet_equipment_shipments
+		#SPR_anti_fascist_unity
+		SPR_ensure_loyalty
+		SPR_enlist_the_carabineros
+		SPR_the_popular_army
 		SPR_soviet_industrial_aid
+		SPR_no_pasaran
+		SPR_a_frontline_suited_for_intellectuals
+		SPR_take_the_initiative
 		SPR_soviet_recovery_aid
 		SPR_strengthen_the_anti_fascist_coalition
 		SPR_oppose_the_communists
@@ -181,9 +183,9 @@ SPD_MP_No_Anarchist = {
 		}
 	}
 
-	focus_factors = {
-		SPR_crush_the_revolution = 0
-	}
+	#focus_factors = {
+	#	SPR_crush_the_revolution = 0
+	#}
 }
 
 SPD_MP_Wait = {
