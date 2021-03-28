@@ -2331,6 +2331,10 @@ focus_tree = {
 		cost = 10
 		mutually_exclusive = { focus = BUL_power_to_the_tsar }
 
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
+
 		available = {
 
 		}
@@ -5078,6 +5082,10 @@ focus_tree = {
 			}
 		}
 
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
+
 		available = {
 			country_exists = ENG
 			NOT = { has_war_with = ENG }
@@ -5987,6 +5995,10 @@ focus_tree = {
 		cost = 5
 		mutually_exclusive = { focus = BUL_support_macedonian_organizations }
 
+		allow_branch = {
+			always = yes
+		}
+
 		available = {
 
 		}
@@ -6035,6 +6047,10 @@ focus_tree = {
 		cost = 5
 
 		mutually_exclusive = { focus = BUL_condemn_macedonian_organizations }
+
+		allow_branch = {
+			always = yes
+		}
 
 		available = {
 
@@ -6115,6 +6131,10 @@ focus_tree = {
 
 		mutually_exclusive = { focus = BUL_cooperate_with_the_zveno }
 
+		allow_branch = {
+			always = yes
+		}
+
 		available = {
 			NOT = {	has_country_flag = BUL_zveno_destroyed_flag } #Zveno is not destroyed
 			hidden_trigger = {
@@ -6145,6 +6165,10 @@ focus_tree = {
 		cost = 5
 
 		mutually_exclusive = { focus = BUL_dissolve_the_military_union }
+
+		allow_branch = {
+			always = yes
+		}
 
 		available = {
 			NOT = {	has_country_flag = BUL_zveno_destroyed_flag } #Zveno is not destroyed
@@ -6210,6 +6234,10 @@ focus_tree = {
 
 		mutually_exclusive = { focus = BUL_ban_far_right_organizations }
 
+		allow_branch = {
+			always = yes
+		}
+
 		available = {
 
 		}
@@ -6245,6 +6273,10 @@ focus_tree = {
 		cost = 5
 
 		mutually_exclusive = { focus = BUL_restrained_paramilitary_organizations }
+
+		allow_branch = {
+			always = yes
+		}
 
 		available = {
 
@@ -6652,6 +6684,10 @@ focus_tree = {
 		y = 1
 		cost = 10
 
+		allow_branch = {
+			always = yes
+		}
+
 		available = {
 
 		}
@@ -6856,6 +6892,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
+
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
 
 		available = {
 			has_country_leader = {
@@ -8734,6 +8774,10 @@ focus_tree = {
 		x = -1
 		y = 2
 		cost = 10
+
+		allow_branch = {
+			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+		}
 
 		available = {
 			is_subject = no
