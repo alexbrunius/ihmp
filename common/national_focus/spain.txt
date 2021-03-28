@@ -3616,7 +3616,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 		
 		icon = GFX_goal_generic_position_armies
-		x = 0
+		x = 3
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front
 		cost = 10
@@ -3737,8 +3737,8 @@ focus_tree = {
 		
 		icon = GFX_goal_generic_military_deal
 		x = 0
-		y = 2
-		relative_position_id = SPA_consolidate_the_north
+		y = 3
+		relative_position_id = SPA_unify_the_nationalist_front
 		cost = 10
 
 		available_if_capitulated = yes
@@ -3765,7 +3765,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 		
 		icon = GFX_goal_generic_more_territorial_claims
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front
 		cost = 5
@@ -3788,7 +3788,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_a_methodical_approach }
 		
 		icon = GFX_goal_generic_major_war
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = SPA_a_methodical_approach
 		cost = 5
@@ -3877,7 +3877,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_a_methodical_approach }
 		
 		icon = GFX_focus_generic_befriend_portugal
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SPA_a_methodical_approach
 		cost = 5
@@ -3992,7 +3992,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_integrate_the_requetes focus = SPA_confirm_the_fueros }
 		
 		icon = GFX_focus_research
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = SPA_integrate_the_requetes
 		cost = 10
@@ -9202,7 +9202,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_the_stalinist_doctrine focus = SPR_the_future_of_the_republic }
 		
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = SPR_the_stalinist_doctrine
 		cost = 5
@@ -9231,7 +9231,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_the_stalinist_doctrine focus = SPR_the_future_of_the_republic }
 		
 		icon = GFX_goal_generic_propaganda
-		x = 5
+		x = 6
 		y = 1
 		relative_position_id = SPR_the_stalinist_doctrine
 		cost = 5
@@ -9255,7 +9255,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_reaffirm_the_popular_front_strategy }
 		
 		icon = GFX_goal_generic_improve_relations
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = SPR_reaffirm_the_popular_front_strategy
 		cost = 5
@@ -9821,7 +9821,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_crush_the_revolution }
 		
 		icon = GFX_goal_support_communism
-		x = 1
+		x = 0
 		y = 2
 		relative_position_id = SPR_relocate_the_gold_reserves
 		cost = 5
@@ -11778,7 +11778,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_the_popular_army }
 
 		icon = GFX_goal_generic_major_war
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = SPR_the_popular_army
 		cost = 5
@@ -11801,7 +11801,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_the_popular_army }
 
 		icon = GFX_focus_spr_no_pasaran
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = SPR_the_popular_army
 		cost = 10
@@ -11904,7 +11904,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_no_pasaran }
 
 		icon = GFX_goal_generic_national_unity
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = SPR_crush_the_revolution
 		cost = 10
