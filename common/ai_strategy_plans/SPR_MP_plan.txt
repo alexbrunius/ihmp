@@ -133,6 +133,32 @@ SPR_MP_1 = {
 
 }
 
+SPR_MP_Electronics_1 = {
+	name = "Research Radio"
+	desc = "Research Radio for reinforcment chance"
+
+	enable = {
+		original_tag = SPR
+		has_game_rule = {
+			rule = SPR_ai_behavior
+			option = SPR_MP_1
+		}
+		NOT = { has_tech = radio }
+		NOT = { is_researching_technology = radio }
+	}
+	
+	abort = {
+		OR = {
+			has_tech = radio
+			is_researching_technology = radio
+		}
+	}
+
+	research = {
+		electronics = 10000
+	}
+}
+
 SPR_MP_1 = {
 	name = "Spanish MP plan 1"
 	desc = "Multiplayer behavior for Nationalist Spain after SCW"
