@@ -91,6 +91,51 @@ SPD_MP_1 = {
 	}
 }
 
+SPD_MP_No_Naval_Missions = {
+	name = "No Ship Missions in SCW"
+	desc = ""
+
+	enable = {
+		tag = SPD
+		has_game_rule = {
+			rule = SPR_ai_behavior 
+			option = SPR_MP_1
+		}
+		NOT = { has_global_flag = scw_over }
+	}
+
+	abort = {
+		has_global_flag = scw_over
+	}
+
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = MISSION_PATROL
+		value = 1000000
+	}
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = MISSION_CONVOY_ESCORT
+		value = 1000000
+	}
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = MISSION_CONVOY_RAIDING
+		value = 1000000
+	}
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = MISSION_MINES_PLANTING
+		value = 1000000
+	}
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = MISSION_MINES_SWEEPING
+		value = 1000000
+	}
+
+}
+
 SPD_MP_No_Anarchist = {
 	name = "Spanish No Anarchist"
 	desc = "Don't provoke anarchist revolution early"

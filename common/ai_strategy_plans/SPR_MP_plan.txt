@@ -90,6 +90,38 @@ SPR_MP_1 = {
 		SPA_ramon_serrano_suner = 100
 	}
 
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = MISSION_PATROL
+		value = 1000000
+	}
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = MISSION_NAVAL_INVASION_SUPPORT
+		value = 1000000
+	}
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = MISSION_CONVOY_ESCORT
+		value = 1000000
+	}
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = MISSION_CONVOY_RAIDING
+		value = 1000000
+	}
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = MISSION_MINES_PLANTING
+		value = 1000000
+	}
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = MISSION_MINES_SWEEPING
+		value = 1000000
+	}
+
+
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
