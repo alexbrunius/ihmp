@@ -6429,6 +6429,12 @@ focus_tree = {
 			divide_variable = { BUL_faction_interaction_cost_standard = 2 }
 			divide_variable = { BUL_broad_socialist_opression_cost_standard = 2 }
 			custom_effect_tooltip = BUL_reduced_faction_interaction_cost_tt
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				remove_ideas = BUL_dimitrana_ivanova
+			}
 		}
 	}
 
