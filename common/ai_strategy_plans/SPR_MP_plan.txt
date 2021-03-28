@@ -90,6 +90,10 @@ SPR_MP_1 = {
 		SPA_ramon_serrano_suner = 100
 	}
 
+	research = {
+		cat_battlefield_support = 1000
+	}
+
 	ai_strategy = {
 		type = naval_mission_threshold
 		id = MISSION_PATROL
@@ -156,6 +160,30 @@ SPR_MP_Electronics_1 = {
 
 	research = {
 		electronics = 10000
+	}
+}
+
+SPR_MP_BattlefieldSupport = {
+	name = "Research Formation Flying"
+	desc = "Research Formation Flying for better Fighters"
+
+	enable = {
+		original_tag = SPR
+		has_game_rule = {
+			rule = SPR_ai_behavior
+			option = SPR_MP_1
+		}
+		OR = {
+			has_tech = formation_flying
+			is_researching_technology = formation_flying
+		}
+	}
+	
+	abort = {
+	}
+
+	research = {
+		cat_battlefield_support = -10000
 	}
 }
 
@@ -749,49 +777,54 @@ MP_1_No_AirUnits = {
 	abort = {
 	}
 
+	research = {
+		air_equipment = -1000
+		cat_strategic_destruction = -1000
+		cat_operational_integrity = -1000
+	}
 	ai_strategy = {
 		type = air_factory_balance
-		value = -1000
+		value = -100
 	}
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
-		value = -1000
+		value = -100
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
-		value = -1000
+		value = -100
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = cas
-		value = -10000
+		value = -100
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = naval_bomber
-		value = -10000
+		value = -100
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = tactical_bomber
-		value = -10000
+		value = -100
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = strategic_bomber
-		value = -10000
+		value = -100
 	}
 	ai_strategy = {
 		type = unit_ratio
 		id = scout_plane
-		value = -1000
+		value = -100
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = scout_plane
-		value = -1000
+		value = -100
 	}
 	ai_strategy = {
 		type = unit_ratio
