@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -3472,6 +3472,10 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			activate_mission = SPA_carlist_uprising_mission
+			hidden_effect = {
+				GER = { activate_mission = SPA_carlist_uprising_mission }
+				ITA = { activate_mission = SPA_carlist_uprising_mission }
+			}
 		}
 	}
 
@@ -3497,6 +3501,10 @@ focus_tree = {
 
 		completion_reward = {
 			activate_mission = SPA_save_the_alcazar_mission
+			hidden_effect = {
+				GER = { activate_mission = SPA_save_the_alcazar_mission }
+				ITA = { activate_mission = SPA_save_the_alcazar_mission }
+			}
 		}
 	}
 
@@ -11526,6 +11534,11 @@ focus_tree = {
 			activate_mission = SPR_anarchist_uprising_mission
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = SPR_antonio_escobar_huerta
+			hidden_effect = {
+				SOV = {
+					activate_mission = SPR_anarchist_uprising_mission
+				}
+			}
 		}
 	}
 
