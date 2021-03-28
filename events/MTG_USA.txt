@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # USA Events
 ###########################
 
@@ -4498,6 +4498,10 @@ country_event = {
 	}
 	option = {
 		name = panay_incident.5.b
+		trigger = { 
+			NOT = { has_idea = undisturbed_isolation }
+			NOT = { has_idea = isolation }
+		}
 		ai_chance = {
 			factor = 40
 		}
