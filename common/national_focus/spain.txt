@@ -9286,12 +9286,12 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = remove_political_advisor
 			show_ideas_tooltip = SPR_jesus_hernandez_tomas
-			add_timed_idea = { idea = SPR_crush_the_revolution days = 60 }
+			#add_timed_idea = { idea = SPR_crush_the_revolution days = 60 }
 			swap_ideas = {
 				remove_idea = SPR_popular_front_1
 				add_idea = SPR_popular_front_2
 			}
-			custom_effect_tooltip = SPR_crush_the_revolution_tt
+			custom_effect_tooltip = SPR_crush_the_revolution_tt #TODO Rewrite Tooltip, no uprising/civil war, but just retiring 10% of Army with 20% stockpile
 			if = {
 				limit = {
 					NOT = { has_war_with = SPC }
