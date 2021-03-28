@@ -1,4 +1,4 @@
-###########################
+﻿###########################
 # USA Events
 ###########################
 
@@ -4360,6 +4360,13 @@ country_event = {
 				factor = 0
 				USA_is_on_historical_plan_trigger = yes
 			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = USA_ai_behavior
+					option = USA_MP_1
+				}
+			}
 		}
 		add_war_support = -0.05
 		add_stability = 0.05
@@ -4381,6 +4388,13 @@ country_event = {
 			modifier = {
 				factor = 0
 				USA_is_on_historical_plan_trigger = yes
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = USA_ai_behavior
+					option = USA_MP_1
+				}
 			}
 		}
 		add_war_support = -0.05
@@ -4408,6 +4422,13 @@ country_event = {
 			modifier = {
 				factor = 0
 				USA_is_on_historical_plan_trigger = yes
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = USA_ai_behavior
+					option = USA_MP_1
+				}
 			}
 		}
 		if = {
@@ -4455,6 +4476,13 @@ country_event = {
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = USA_ai_behavior
+					option = USA_MP_1
+				}
 			}
 		}
 		add_political_power = 100
