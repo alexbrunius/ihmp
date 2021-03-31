@@ -1405,6 +1405,6 @@ MP_Economy_2 = {
 	ideas = {
 		civilian_economy = 0
 		low_economic_mobilisation = 0
-		partial_economic_mobilisation = 0
+		partial_economic_mobilisation = -1000
 	}
 }
