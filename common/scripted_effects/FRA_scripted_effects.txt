@@ -185,13 +185,19 @@ FRA_transfer_indochina_effect = {
 		}
 		puppet = VIN
 	}
-	else_if = {
-		limit = {
-			671 = { CONTROLLER = { original_tag = FRA } }
-			286 = { CONTROLLER = { original_tag = FRA } }
+	else = {
+		if = {
+			limit = {
+				671 = { CONTROLLER = { original_tag = FRA } }
+			}
+			transfer_state = 671
 		}
-		transfer_state = 671
-		transfer_state = 286
+		if = {
+			limit = {
+				286 = { CONTROLLER = { original_tag = FRA } }
+			}
+			transfer_state = 286
+		}
 	}
 	if = {
 		limit = {
@@ -256,15 +262,25 @@ FRA_transfer_syria_effect = {
 		}
 		puppet = SYR
 	}
-	else_if = {
-		limit = {
-			680 = { CONTROLLER = { original_tag = FRA } }
-			677 = { CONTROLLER = { original_tag = FRA } }
-			554 = { CONTROLLER = { original_tag = FRA } }
+	else = {
+		if = {
+			limit = {
+				680 = { CONTROLLER = { original_tag = FRA } }
+			}
+			transfer_state = 680
 		}
-		transfer_state = 680
-		transfer_state = 677
-		transfer_state = 554
+		if = {
+			limit = {
+				677 = { CONTROLLER = { original_tag = FRA } }
+			}
+			transfer_state = 677
+		}
+		if = {
+			limit = {
+				554 = { CONTROLLER = { original_tag = FRA } }
+			}
+			transfer_state = 554
+		}
 	}
 }
 
@@ -281,13 +297,19 @@ FRA_transfer_north_africa_effect = {
 		}
 		puppet = TUN
 	}
-	else_if = {
-		limit = { 
-			458 = { CONTROLLER = { original_tag = FRA } } 
-			665 = { CONTROLLER = { original_tag = FRA } } 
+	else = {
+		if = {
+			limit = { 
+				458 = { CONTROLLER = { original_tag = FRA } } 
+			}
+			transfer_state = 458
 		}
-		transfer_state = 458
-		transfer_state = 665
+		if = {
+			limit = { 
+				665 = { CONTROLLER = { original_tag = FRA } } 
+			}
+			transfer_state = 665
+		}
 	}
 	if = {
 		limit = {
@@ -301,13 +323,19 @@ FRA_transfer_north_africa_effect = {
 		}
 		puppet = MOR
 	}
-	else_if = {
-		limit = { 
-			461 = { CONTROLLER = { original_tag = FRA } } 
-			462 = { CONTROLLER = { original_tag = FRA } } 
+	else = {
+		if = {
+			limit = { 
+				461 = { CONTROLLER = { original_tag = FRA } } 
+			}
+			transfer_state = 461
 		}
-		transfer_state = 461
-		transfer_state = 462
+		if = {
+			limit = { 
+				462 = { CONTROLLER = { original_tag = FRA } } 
+			}
+			transfer_state = 462
+		}
 	}
 	if = {
 		limit = {
@@ -321,15 +349,25 @@ FRA_transfer_north_africa_effect = {
 		}
 		puppet = ALG
 	}
-	else_if = {
-		limit = {
-			513 = { CONTROLLER = { original_tag = FRA } }
-			459 = { CONTROLLER = { original_tag = FRA } }
-			460 = { CONTROLLER = { original_tag = FRA } }
+	else = {
+		if = {
+			limit = {
+				513 = { CONTROLLER = { original_tag = FRA } }
+			}
+			transfer_state = 513
 		}
-		transfer_state = 513
-		transfer_state = 459
-		transfer_state = 460
+		if = {
+			limit = {
+				459 = { CONTROLLER = { original_tag = FRA } }
+			}
+			transfer_state = 459
+		}
+		if = {
+			limit = {
+				460 = { CONTROLLER = { original_tag = FRA } }
+			}
+			transfer_state = 460
+		}
 	}
 }
 
@@ -418,11 +456,40 @@ FRA_transfer_central_africa_effect = {
 		}
 		puppet = CHA
 	}
-	else_if = {
-		limit = {
-			774 = { CONTROLLER = { original_tag = FRA } }	
+	else = {
+		if = {
+			limit = {
+				774 = { CONTROLLER = { original_tag = FRA } }	
+			}
+			transfer_state = 774
 		}
-		transfer_state = 774
+		if = {
+			limit = {
+				775 = { CONTROLLER = { original_tag = FRA } }	
+			}
+			transfer_state = 775
+		}
+	}
+	#IHMP Addition
+	if = {
+		limit = {
+			DJI = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = DJI
+	}
+	else = {
+		if = {
+			limit = {
+				268 = { CONTROLLER = { original_tag = FRA } }	
+			}
+			transfer_state = 268
+		}
 	}
 }
 FRA_transfer_western_africa_effect = {
@@ -438,11 +505,19 @@ FRA_transfer_western_africa_effect = {
 		}
 		puppet = NGR
 	}
-	else_if = {
-		limit = { 
-			781 = { CONTROLLER = { original_tag = FRA } } 
+	else = {
+		if = {
+			limit = { 
+				781 = { CONTROLLER = { original_tag = FRA } } 
+			}
+			transfer_state = 781
 		}
-		transfer_state = 781
+		if = {
+			limit = { 
+				515 = { CONTROLLER = { original_tag = FRA } } 
+			}
+			transfer_state = 515
+		}
 	}
 	if = {
 		limit = {
@@ -528,11 +603,19 @@ FRA_transfer_western_africa_effect = {
 		}
 		puppet = MLI
 	}
-	else_if = {
-		limit = {
-			556 = { CONTROLLER = { original_tag = FRA } }	
+	else = {
+		if = {
+			limit = {
+				556 = { CONTROLLER = { original_tag = FRA } }	
+			}
+			transfer_state = 556
 		}
-		transfer_state = 556
+		if = {
+			limit = {
+				782 = { CONTROLLER = { original_tag = FRA } }	
+			}
+			transfer_state = 782
+		}
 	}
 	if = {
 		limit = {
@@ -582,10 +665,60 @@ FRA_transfer_western_africa_effect = {
 		}
 		puppet = MRT
 	}
-	else_if = {
-		limit = {
-			557 = { CONTROLLER = { original_tag = FRA } }	
+	else = {
+		if = {
+			limit = {
+				557 = { CONTROLLER = { original_tag = FRA } }	
+			}
+			transfer_state = 557
 		}
-		transfer_state = 557
+		if = {
+			limit = {
+				786 = { CONTROLLER = { original_tag = FRA } }	
+			}
+			transfer_state = 786
+		}
+	}
+}
+
+#IHMP Added
+FRA_transfer_madagascar_effect = {
+	if = {
+		limit = {
+			MAD = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = MAD
+	}
+	else = {
+		if = {
+			limit = {
+				543 = { CONTROLLER = { original_tag = FRA } }
+			}
+			transfer_state = 543
+		}
+		if = {
+			limit = {
+				706 = { CONTROLLER = { original_tag = FRA } }
+			}
+			transfer_state = 706
+		}
+		if = {
+			limit = {
+				708 = { CONTROLLER = { original_tag = FRA } }
+			}
+			transfer_state = 708
+		}
+	}
+	if = {
+		limit = {
+			713 = { CONTROLLER = { original_tag = FRA } }
+		}
+		transfer_state = 713
 	}
 }
