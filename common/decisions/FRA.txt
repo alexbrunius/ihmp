@@ -57,7 +57,6 @@ FRA_vichy_france = {
 
 		available = {
 			is_subject = no
-			has_war_with = GER
 		}
 
 		days_mission_timeout = 7
@@ -2780,8 +2779,17 @@ FRA_intervention_in_overseas_territories = {
 			random_list = {
 				30 = {
 					VIC = { country_event = LaR_france_vichy_notification_events.6 }
-					transfer_state = 543
-					543 = {
+					FRA_transfer_madagascar_effect = yes
+					every_owned_state = {
+						limit = {
+							is_controlled_by = ROOT
+							OR = {
+								state = 543
+								state = 706
+								state = 708
+								state = 713
+							}
+						}
 						add_compliance = 5
 					}
 				}
