@@ -1884,20 +1884,10 @@ country_event = {
 					original_tag = FRA
 					has_government = democratic
 				}
-				if = {
-					limit = { ROOT = { owns_state = 554 } }
-					transfer_state = 554
-				}
-				if = {
-					limit = { ROOT = { owns_state = 677 } }
-					transfer_state = 677
-				}
-				if = {
-					limit = { ROOT = { owns_state = 680 } }
-					transfer_state = 680
-				}
+				FRA_transfer_syria_effect = yes
 				country_event = france.28
 			}
+			ENG = { country_event = france.28 }
 		}
 	}
 
