@@ -958,8 +958,20 @@ focus_tree = {
 			y = 0
 			trigger = {
 				OR = {
-					not = { has_dlc = "Man the Guns" }
-					NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+					NOT = { has_dlc = "Man the Guns" }
+					AND = {
+						NOT = {
+							has_game_rule = {
+								rule = IHMP_HISTORY
+								option = ALLOWED
+							}
+						}
+						NOT = {
+							ROOT = {
+								has_government = democratic
+							}
+						}
+					}
 				}
 			}
 		}
@@ -3411,7 +3423,12 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "Waking the Tiger"
-			has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+			OR = {
+				has_game_rule = { rule = IHMP_HISTORY option = ALLOWED }
+				ROOT = {
+					has_government = democratic
+				}
+			}
 		}
 
 		available = {
@@ -3789,7 +3806,7 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			is_in_faction_with = ENG
 		}
 
 		cancel_if_invalid = yes
@@ -4167,8 +4184,20 @@ focus_tree = {
 			y = 0
 			trigger = {
 				OR = {
-					not = { has_dlc = "Man the Guns" }
-					NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+					NOT = { has_dlc = "Man the Guns" }
+					AND = {
+						NOT = {
+							has_game_rule = {
+								rule = IHMP_HISTORY
+								option = ALLOWED
+							}
+						}
+						NOT = {
+							ROOT = {
+								has_government = democratic
+							}
+						}
+					}
 				}
 			}
 		}
