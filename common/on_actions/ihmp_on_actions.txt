@@ -592,7 +592,7 @@ on_actions = {
 	#ROOT is winner #FROM is loser
 	on_peaceconference_ended = {
 		effect = {
-			if = { 
+			if = {
 				limit = {
 					ROOT = { tag = JAP }
 					has_dlc = "Waking the Tiger"
@@ -623,6 +623,13 @@ on_actions = {
 						set_compliance = JAP.chi_compl
 					}
 				}
+			}
+			if = {
+				limit = {
+					ROOT = { tag = JAP }
+					FROM = { tag = CHI }
+					has_dlc = "Waking the Tiger"
+				}
 				PRC = {
 					set_major = no
 				}
@@ -640,6 +647,25 @@ on_actions = {
 				}
 				GXC = {
 					set_major = no
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = JAP
+						has_government = democratic
+						NOT = {
+							has_completed_focus = JAP_strengthen_civilian_government
+						}
+					}
+					has_dlc = "Waking the Tiger"
+				}
+				JAP = {
+					mark_focus_tree_layout_dirty = yes
+					complete_national_focus = JAP_strengthen_civilian_government
+					unlock_national_focus = JAP_ally_with_the_zaibatsus
+					unlock_national_focus = JAP_research_spending
+					unlock_national_focus = JAP_pre_emptive_coup
 				}
 			}
 		}
