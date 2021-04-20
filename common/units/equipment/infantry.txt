@@ -118,7 +118,7 @@ equipments = {
 		ap_attack = 10
 		air_attack = 0
 		
-		reliability = 0.8
+		reliability = 0.9
 		build_cost_ic = 0.8
 		resources = {
 			steel = 4
