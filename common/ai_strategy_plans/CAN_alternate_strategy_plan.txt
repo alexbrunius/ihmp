@@ -33,7 +33,6 @@ CAN_democratic_alternate = {
 		CAN_canadian_infantry_corps
 		#1938						
 		CAN_the_walkie_talkie							
-		CAN_war_bonds									
 		CAN_department_of_munitions_and_supply			
 		CAN_destroyer_effort							
 		CAN_we_have_the_hurricane						
@@ -155,7 +154,6 @@ CAN_fascist = {
 		CAN_canadian_infantry_corps
 		#1938						
 		CAN_the_walkie_talkie							
-		CAN_war_bonds									
 		CAN_department_of_munitions_and_supply			
 		CAN_patriation			
 		CAN_swastika_clubs							
@@ -278,7 +276,6 @@ CAN_communist = {
 		CAN_canadian_infantry_corps
 		#1938						
 		CAN_the_walkie_talkie							
-		CAN_war_bonds									
 		CAN_department_of_munitions_and_supply			
 		CAN_patriation			
 		CAN_burn_the_royal_portraits							

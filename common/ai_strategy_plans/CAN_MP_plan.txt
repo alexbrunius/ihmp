@@ -33,7 +33,6 @@ CAN_MP_1 = {
 		CAN_strengthen_the_commonwealth_ties
 		CAN_shadow_factories
 		CAN_montreal_laboratory_collaboration
-		CAN_war_bonds
 		CAN_department_of_munitions_and_supply
 		CAN_victory_aircraft_limited
 		CAN_bits_and_pieces_program
@@ -167,7 +166,6 @@ CAN_MP_2 = {
 		CAN_strengthen_the_commonwealth_ties
 		CAN_shadow_factories
 		CAN_montreal_laboratory_collaboration
-		CAN_war_bonds
 		CAN_department_of_munitions_and_supply
 		CAN_victory_aircraft_limited
 		CAN_bits_and_pieces_program
