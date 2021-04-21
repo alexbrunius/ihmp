@@ -24,7 +24,7 @@ ideas = {
 				send_volunteers_tension = 0.20
 				guarantee_tension = 0.75
 				max_fuel_factor = -0.45
-				fuel_gain_factor = -0.9
+				fuel_gain_factor = -0.95
 				agency_upgrade_time = 1.0
 			}
 			
