@@ -3313,10 +3313,10 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			capital_ship = {
-				naval_range = -0.25 naval_speed = 0.1
+				naval_range = -0.1 naval_speed = 0.2
 			}
 			screen_ship = {
-				naval_range = -0.25 naval_speed = 0.1 
+				naval_range = -0.1 naval_speed = 0.2
 			}
 		}
 
