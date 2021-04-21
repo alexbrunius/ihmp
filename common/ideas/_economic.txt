@@ -446,7 +446,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.20
-				conscription_factor = -0.15
+				conscription_factor = -0.35
 				production_speed_arms_factory_factor = 0.3
 				production_speed_dockyard_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
