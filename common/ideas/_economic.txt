@@ -27,6 +27,10 @@ ideas = {
 				fuel_gain_factor = -0.95
 				agency_upgrade_time = 1.0
 			}
+
+			research_bonus = {
+				synth_resources = -0.5
+			}
 			
 			allowed_to_remove = {
 				OR = {
