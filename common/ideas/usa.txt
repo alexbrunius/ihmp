@@ -19,7 +19,7 @@ ideas = {
 				consumer_goods_factor = 0.3
 				conscription_factor = -0.5
 				join_faction_tension = 0.20
-				local_resources_factor = -0.2
+				local_resources_factor = -0.25
 				training_time_factor = 2.0
 			}
 		}
@@ -41,7 +41,7 @@ ideas = {
 				consumer_goods_factor = 0.25
 				conscription_factor = -0.4
 				join_faction_tension = 0.20
-				local_resources_factor = -0.15
+				local_resources_factor = -0.20
 				training_time_factor = 1.5
 			}
 		}
@@ -63,7 +63,7 @@ ideas = {
 				consumer_goods_factor = 0.175
 				conscription_factor = -0.2
 				join_faction_tension = 0.20
-				local_resources_factor = -0.1
+				local_resources_factor = -0.15
 				training_time_factor = 1.0
 			}
 		}
