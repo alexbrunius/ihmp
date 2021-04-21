@@ -3334,13 +3334,13 @@ leader_traits = {
 				carrier_size = -0.2
 			}
 			capital_ship = {
-				build_cost_ic = -0.15 armor_value = -0.2 hg_attack = -0.2 naval_range = -0.2
+				build_cost_ic = -0.05 armor_value = -0.2 hg_attack = -0.2 naval_range = -0.2
 			}
 			screen_ship = {
-				build_cost_ic = -0.20 naval_range = -0.2
+				build_cost_ic = -0.10 naval_range = -0.2
 			}
 			submarine = {
-				build_cost_ic = -0.25 naval_range = -0.2
+				build_cost_ic = -0.20 naval_range = -0.2
 			}
 		}
 
