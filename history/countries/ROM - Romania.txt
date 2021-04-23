@@ -240,11 +240,6 @@ set_convoys = 5
 			basic_submarine = 1
 		}
 	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-		}
-	}
 }
 
 set_politics = {

@@ -373,11 +373,6 @@ if = {
 			basic_submarine = 1
 		}
 	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-		}
-	}
 }
 
 set_politics = {

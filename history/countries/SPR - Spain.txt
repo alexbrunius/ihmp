@@ -313,11 +313,6 @@ set_stability = 0.5
 		dispersed_industry3 = 1
 	}
 	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-		}
-	}
-	if = {
 		limit = { has_dlc = "Man the Guns" }
 		set_technology = {
 			basic_light_battery = 1
