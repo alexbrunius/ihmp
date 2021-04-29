@@ -5591,7 +5591,7 @@ focus_tree = {
 				name = JAP_Ultimate_Battleship
 				bonus = 1.00
 				uses = 3
-				category = cat_fleet_in_being
+				category = naval_doctrine
 			}
 		}
 	}
