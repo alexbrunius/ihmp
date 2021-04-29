@@ -562,7 +562,7 @@ leader_traits = {
 		}
 		custom_gain_xp_trigger_tooltip = fighting_with_max_capacity
 		
-		cost = 1500
+		cost = 1000
 		
 		corps_commander_modifier = {
 			max_commander_army_size = 6
