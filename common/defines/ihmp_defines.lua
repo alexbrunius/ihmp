@@ -134,6 +134,7 @@ NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.10						-- was 0.05	- Base chance % (0 - 
 
 NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0.000						-- was 0.003, disabled -- Base chance % for ace pilot die when an airplane is shot down in the Ace wing.
 NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.000						-- was 0.003, disabled -- Base chance % for ace pilot to be created. Happens only when successfully kill airplane/ship or damage the buildings.
+NDefines.NAir.FIELD_EXPERIENCE_MAX_PER_DAY = 1.5					-- was 2 -- Most xp you can gain per day
 NDefines.NAir.CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.0004			-- was 0.0005-- How much the experinence gained by CAS is scaled
 
 NDefines.NAir.DETECT_CHANCE_FROM_RADARS = 0.3							-- was 0.5 -- How much the radars in area affects detection chance.
