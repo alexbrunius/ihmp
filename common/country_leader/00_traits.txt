@@ -3109,7 +3109,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			armor = {
-				maximum_speed = 0.05 reliability = 0.1 
+				maximum_speed = 0.05 reliability = 0.5 
 			}
 		}
 
