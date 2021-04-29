@@ -607,33 +607,33 @@ GER_MOT_03 = {
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { GER_MOT_03 }
 
-	fallback_name = "%d Infanterie-Brigade (mot.)"
+	fallback_name = "%d. Infanterie-Brigade (mot.)"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		100 = { "%dst Infanterie-Brigade (mot.)" }
-		101 = { "%dnd Infanterie-Brigade (mot.)" }
-		102 = { "%drd Infanterie-Brigade (mot.)" }
-		103 = { "%dth Infanterie-Brigade (mot.)" }
-		104 = { "%dth Infanterie-Brigade (mot.)" }
-		105 = { "%dth Infanterie-Brigade (mot.)" }
-		106 = { "%dth Infanterie-Brigade (mot.)" }
-		107 = { "%dth Infanterie-Brigade (mot.)" }
-		108 = { "%dth Infanterie-Brigade (mot.)" }
-		109 = { "%dth Infanterie-Brigade (mot.)" }
-		110 = { "%dth Infanterie-Brigade (mot.)" }
-		111 = { "%dth Infanterie-Brigade (mot.)" }
-		112 = { "%dth Infanterie-Brigade (mot.)" }
-		113 = { "%dth Infanterie-Brigade (mot.)" }
-		114 = { "%dth Infanterie-Brigade (mot.)" }
-		115 = { "%dth Infanterie-Brigade (mot.)" }
-		116 = { "%dth Infanterie-Brigade (mot.)" }
-		117 = { "%dth Infanterie-Brigade (mot.)" }
-		118 = { "%dth Infanterie-Brigade (mot.)" }
-		119 = { "%dth Infanterie-Brigade (mot.)" }
-		120 = { "%dst Infanterie-Brigade (mot.)" }
+		100 = { "%d. Infanterie-Brigade (mot.)" }
+		101 = { "%d. Infanterie-Brigade (mot.)" }
+		102 = { "%d. Infanterie-Brigade (mot.)" }
+		103 = { "%d. Infanterie-Brigade (mot.)" }
+		104 = { "%d. Infanterie-Brigade (mot.)" }
+		105 = { "%d. Infanterie-Brigade (mot.)" }
+		106 = { "%d. Infanterie-Brigade (mot.)" }
+		107 = { "%d. Infanterie-Brigade (mot.)" }
+		108 = { "%d. Infanterie-Brigade (mot.)" }
+		109 = { "%d. Infanterie-Brigade (mot.)" }
+		110 = { "%d. Infanterie-Brigade (mot.)" }
+		111 = { "%d. Infanterie-Brigade (mot.)" }
+		112 = { "%d. Infanterie-Brigade (mot.)" }
+		113 = { "%d. Infanterie-Brigade (mot.)" }
+		114 = { "%d. Infanterie-Brigade (mot.)" }
+		115 = { "%d. Infanterie-Brigade (mot.)" }
+		116 = { "%d. Infanterie-Brigade (mot.)" }
+		117 = { "%d. Infanterie-Brigade (mot.)" }
+		118 = { "%d. Infanterie-Brigade (mot.)" }
+		119 = { "%d. Infanterie-Brigade (mot.)" }
+		120 = { "%d. Infanterie-Brigade (mot.)" }
 		
 	}
 }
@@ -689,33 +689,33 @@ GER_MEC_02 = {
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { GER_MEC_02 }
 
-	fallback_name = "%d Panzer-Grenadier-Brigade"
+	fallback_name = "%d. Panzer-Grenadier-Brigade"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		100 = { "%dst Panzer-Grenadier-Brigade" }
-		101 = { "%dnd Panzer-Grenadier-Brigade" }
-		102 = { "%drd Panzer-Grenadier-Brigade" }
-		103 = { "%dth Panzer-Grenadier-Brigade" }
-		104 = { "%dth Panzer-Grenadier-Brigade" }
-		105 = { "%dth Panzer-Grenadier-Brigade" }
-		106 = { "%dth Panzer-Grenadier-Brigade" }
-		107 = { "%dth Panzer-Grenadier-Brigade" }
-		108 = { "%dth Panzer-Grenadier-Brigade" }
-		109 = { "%dth Panzer-Grenadier-Brigade" }
-		110 = { "%dth Panzer-Grenadier-Brigade" }
-		111 = { "%dth Panzer-Grenadier-Brigade" }
-		112 = { "%dth Panzer-Grenadier-Brigade" }
-		113 = { "%dth Panzer-Grenadier-Brigade" }
-		114 = { "%dth Panzer-Grenadier-Brigade" }
-		115 = { "%dth Panzer-Grenadier-Brigade" }
-		116 = { "%dth Panzer-Grenadier-Brigade" }
-		117 = { "%dth Panzer-Grenadier-Brigade" }
-		118 = { "%dth Panzer-Grenadier-Brigade" }
-		119 = { "%dth Panzer-Grenadier-Brigade" }
-		120 = { "%dst Panzer-Grenadier-Brigade" }
+		100 = { "%d. Panzer-Grenadier-Brigade" }
+		101 = { "%d. Panzer-Grenadier-Brigade" }
+		102 = { "%d. Panzer-Grenadier-Brigade" }
+		103 = { "%d. Panzer-Grenadier-Brigade" }
+		104 = { "%d. Panzer-Grenadier-Brigade" }
+		105 = { "%d. Panzer-Grenadier-Brigade" }
+		106 = { "%d. Panzer-Grenadier-Brigade" }
+		107 = { "%d. Panzer-Grenadier-Brigade" }
+		108 = { "%d. Panzer-Grenadier-Brigade" }
+		109 = { "%d. Panzer-Grenadier-Brigade" }
+		110 = { "%d. Panzer-Grenadier-Brigade" }
+		111 = { "%d. Panzer-Grenadier-Brigade" }
+		112 = { "%d. Panzer-Grenadier-Brigade" }
+		113 = { "%d. Panzer-Grenadier-Brigade" }
+		114 = { "%d. Panzer-Grenadier-Brigade" }
+		115 = { "%d. Panzer-Grenadier-Brigade" }
+		116 = { "%d. Panzer-Grenadier-Brigade" }
+		117 = { "%d. Panzer-Grenadier-Brigade" }
+		118 = { "%d. Panzer-Grenadier-Brigade" }
+		119 = { "%d. Panzer-Grenadier-Brigade" }
+		120 = { "%d. Panzer-Grenadier-Brigade" }
 		
 	}
 }
@@ -988,6 +988,7 @@ GER_Arm_01 =
 
 	}
 }
+
 GER_ARM_02 = {
 	name = "Panzer Brigade"
 
@@ -995,42 +996,91 @@ GER_ARM_02 = {
 
 	can_use = { always = yes }
 
-	division_types = { "infantry" }
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { GER_ARM_02 }
 
-	fallback_name = "%d Panzer Brigade"
+	fallback_name = "%d. Panzer-Brigade"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		100 = { "%dst Panzer Brigade" }
-		101 = { "%dnd Panzer Brigade" }
-		102 = { "%drd Panzer Brigade" }
-		103 = { "%dth Panzer Brigade" }
-		104 = { "%dth Panzer Brigade" }
-		105 = { "%dth Panzer Brigade" }
-		106 = { "%dth Panzer Brigade" }
-		107 = { "%dth Panzer Brigade" }
-		108 = { "%dth Panzer Brigade" }
-		109 = { "%dth Panzer Brigade" }
-		110 = { "%dth Panzer Brigade" }
-		111 = { "%dth Panzer Brigade" }
-		112 = { "%dth Panzer Brigade" }
-		113 = { "%dth Panzer Brigade" }
-		114 = { "%dth Panzer Brigade" }
-		115 = { "%dth Panzer Brigade" }
-		116 = { "%dth Panzer Brigade" }
-		117 = { "%dth Panzer Brigade" }
-		118 = { "%dth Panzer Brigade" }
-		119 = { "%dth Panzer Brigade" }
-		120 = { "%dst Panzer Brigade" }
+		100 = { "%d. Panzer-Brigade" }
+		101 = { "%d. Panzer-Brigade" }
+		102 = { "%d. Panzer-Brigade" }
+		103 = { "%d. Panzer-Brigade" }
+		104 = { "%d. Panzer-Brigade" }
+		105 = { "%d. Panzer-Brigade" }
+		106 = { "%d. Panzer-Brigade" }
+		107 = { "%d. Panzer-Brigade" }
+		108 = { "%d. Panzer-Brigade" }
+		109 = { "%d. Panzer-Brigade" }
+		110 = { "%d. Panzer-Brigade" }
+		111 = { "%d. Panzer-Brigade" }
+		112 = { "%d. Panzer-Brigade" }
+		113 = { "%d. Panzer-Brigade" }
+		114 = { "%d. Panzer-Brigade" }
+		115 = { "%d. Panzer-Brigade" }
+		116 = { "%d. Panzer-Brigade" }
+		117 = { "%d. Panzer-Brigade" }
+		118 = { "%d. Panzer-Brigade" }
+		119 = { "%d. Panzer-Brigade" }
+		120 = { "%d. Panzer-Brigade" }
 		
 	}
 }
 
+GER_Arm_03 = 
+{
+	name = "Norse Panzer Divisions"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%d. Panzer-Division"
+
+	unordered =
+	{
+		#Norse
+		901 = { "Panzer-Division 'Wotan'" }
+		902 = { "Panzer-Division 'Donar'" }
+		903 = { "Panzer-Division 'Loki'" }
+		904 = { "Panzer-Division 'Heimdall'" }
+		905 = { "Panzer-Division 'Ragnarök'" }
+		906 = { "Panzer-Division 'Walhalla'" }
+		907 = { "Panzer-Division 'Valkyria'" }
+		908 = { "Panzer-Division 'Wiking'" }
+		909 = { "Panzer-Division 'Nordland'" }
+		910 = { "Panzer-Division 'Fafnir'" }
+		911 = { "Panzer-Division 'Sleipnir'" }
+		912 = { "Panzer-Division 'Hugin'" }
+		913 = { "Panzer-Division 'Munin'" }
+		914 = { "Panzer-Division 'Jörmundgandr'" }
+		915 = { "Panzer-Division 'Fenrir'" }
+		916 = { "Panzer-Division 'Garm'" }
+		917 = { "Panzer-Division 'Surtr'" }
+		918 = { "Panzer-Division 'Gungnir'" }
+		919 = { "Panzer-Division 'Mjölnir'" }
+		920 = { "Panzer-Division 'Muspelheim'" }
+		
+		#Wagner
+		921 = { "Panzer-Division 'Siegfried'" }
+		922 = { "Panzer-Division 'Lohengrin'" }
+		923 = { "Panzer-Division 'Parsifal'" }
+		924 = { "Panzer-Division 'Tannhäuser'" }
+		925 = { "Panzer-Division 'Nibelungen'" }
+		926 = { "Panzer-Division 'Winterstürme'" }
+		927 = { "Panzer-Division 'Hunding'" }
+		928 = { "Panzer-Division 'Wölfing'" }
+		929 = { "Panzer-Division Götterdämmerung'" }
+		930 = { "Panzer-Division 'Nothung'" }
+	}
+}
 
 
 GER_LTARM_01 = 
@@ -1155,33 +1205,33 @@ GER_SS_02 = {
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { GER_SS_02 }
 
-	fallback_name = "%d SS -Brigade"
+	fallback_name = "%d. SS-Brigade"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		100 = { "%dst SS-Brigade" }
-		101 = { "%dnd SS-Brigade" }
-		102 = { "%drd SS-Brigade" }
-		103 = { "%dth SS-Brigade" }
-		104 = { "%dth SS-Brigade" }
-		105 = { "%dth SS-Brigade" }
-		106 = { "%dth SS-Brigade" }
-		107 = { "%dth SS-Brigade" }
-		108 = { "%dth SS-Brigade" }
-		109 = { "%dth SS-Brigade" }
-		110 = { "%dth SS-Brigade" }
-		111 = { "%dth SS-Brigade" }
-		112 = { "%dth SS-Brigade" }
-		113 = { "%dth SS-Brigade" }
-		114 = { "%dth SS-Brigade" }
-		115 = { "%dth SS-Brigade" }
-		116 = { "%dth SS-Brigade" }
-		117 = { "%dth SS-Brigade" }
-		118 = { "%dth SS-Brigade" }
-		119 = { "%dth SS-Brigade" }
-		120 = { "%dst SS-Brigade" }
+		100 = { "%d. SS-Brigade" }
+		101 = { "%d. SS-Brigade" }
+		102 = { "%d. SS-Brigade" }
+		103 = { "%d. SS-Brigade" }
+		104 = { "%d. SS-Brigade" }
+		105 = { "%d. SS-Brigade" }
+		106 = { "%d. SS-Brigade" }
+		107 = { "%d. SS-Brigade" }
+		108 = { "%d. SS-Brigade" }
+		109 = { "%d. SS-Brigade" }
+		110 = { "%d. SS-Brigade" }
+		111 = { "%d. SS-Brigade" }
+		112 = { "%d. SS-Brigade" }
+		113 = { "%d. SS-Brigade" }
+		114 = { "%d. SS-Brigade" }
+		115 = { "%d. SS-Brigade" }
+		116 = { "%d. SS-Brigade" }
+		117 = { "%d. SS-Brigade" }
+		118 = { "%d. SS-Brigade" }
+		119 = { "%d. SS-Brigade" }
+		120 = { "%d. SS-Brigade" }
 		
 	}
 }
