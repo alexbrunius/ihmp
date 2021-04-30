@@ -623,7 +623,16 @@ country_event = {
 							navy_ratio = 0.85
 							air_ratio = 1.0
 						}
+						every_other_country = {
+							limit = {
+								is_in_faction_with = PREV
+							}
+							event_target:vichy_france = {
+								give_military_access = PREV
+							}
+						}
 					}
+
 					if = {
 						limit = { FRA = { has_country_flag = become_vichy } }
 						change_tag_from = FRA
@@ -633,6 +642,11 @@ country_event = {
 			random_country = {
 				limit = {
 					has_focus_tree = vichy_french_focus
+				}
+				set_country_flag = Vichy_Allied_MA
+				country_event = {
+					id = france.145
+					days = 7
 				}
 				GER = {
 					give_guarantee = PREV
@@ -1316,7 +1330,9 @@ country_event = {
 			}
 			country_event = { hours = 6 id = news.34 }
 			hidden_effect =  {
-				FRA = { news_event = { id = france.20 days = 1 } }
+				FRA = {
+					news_event = { id = france.20 days = 1 }
+				}
 			}
 		}
 	}
@@ -1327,6 +1343,38 @@ country_event = {
 			factor = 50
 		}
 	}
+}
+
+# Vichy France retracts militay access
+country_event = {
+	id = france.145
+	title = france.145.t
+	desc = france.145.d
+		picture = GFX_report_event_dead_soldiers
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		hidden = yes
+
+		immediate = {
+			clr_country_flag = Vichy_Allied_MA
+			FRA = {
+				every_other_country = {
+					limit = {
+						is_in_faction_with = PREV
+					}
+					diplomatic_relation = {
+						country = VIC
+						relation = military_access
+						active = no
+					}
+				}
+			}
+		}
+		option = {
+			name = france.145.a
+			ai_chance = { factor = 100 }
+		}
 }
 
 # Germany refuses armistice! (France)
