@@ -124,6 +124,26 @@ SPR_MP_Pre_SCW = {
 		id = MISSION_MINES_SWEEPING
 		value = 1000000
 	}
+	ai_strategy = {
+		type = befriend
+		id = GER
+		value = 100
+	}
+	ai_strategy = {
+		type = befriend
+		id = ITA
+		value = 100
+	}
+	ai_strategy = {
+		type = befriend
+		id = RAJ
+		value = -100
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation	
+		value = -400
+	}
 
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
