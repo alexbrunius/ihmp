@@ -5579,15 +5579,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			362 = { 
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			363 = { 
+			every_state = {
+				limit = { has_state_flag = USA_second_vinson_act_2NIC }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -5605,43 +5598,43 @@ focus_tree = {
 				}
 				USA_congress_medium_opposition = yes
 			}
-			if = { 
-				limit = { 
-					362 = {
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
+			random_owned_controlled_state = {
+				prioritize = { 362 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
 					}
 				}
-				362 = { 
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
 				}
+				set_state_flag = USA_second_vinson_act_2NIC
 			}
-			if = { 
-				limit = { 
-					363 = {
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
+			random_owned_controlled_state = {
+				prioritize = { 363 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
 					}
 				}
-				363 = { 
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
 				}
+				set_state_flag = USA_second_vinson_act_2NIC
 			}
 			swap_ideas = {
 				remove_idea = sleeping_navy
@@ -5702,15 +5695,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			378 = { 
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = dockyard
-					level = 5
-					instant_build = yes
-				}
-			}
-			358 = { 
+			every_state = {
+				limit = { has_state_flag = USA_two_ocean_navy_act_5NIC }
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
@@ -5727,43 +5713,43 @@ focus_tree = {
 				}
 				USA_congress_medium_opposition = yes
 			}
-			if = { 
-				limit = { 
-					378 = {
-						free_building_slots = {
-							building = dockyard
-							size > 4
-							include_locked = yes
-						}
+			random_owned_controlled_state = {
+				prioritize = { 378 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 4
+						include_locked = yes
 					}
 				}
-				378 = { 
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = dockyard
-						level = 5
-						instant_build = yes
-					}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
 				}
+				set_state_flag = USA_two_ocean_navy_act_5NIC
 			}
-			if = { 
-				limit = { 
-					358 = {
-						free_building_slots = {
-							building = dockyard
-							size > 4
-							include_locked = yes
-						}
+			random_owned_controlled_state = {
+				prioritize = { 358 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 4
+						include_locked = yes
 					}
 				}
-				358 = { 
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = dockyard
-						level = 5
-						instant_build = yes
-					}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
 				}
+				set_state_flag = USA_two_ocean_navy_act_5NIC
 			}
 			swap_ideas = {
 				remove_idea = sleeping_navy_2
