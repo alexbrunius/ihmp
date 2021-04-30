@@ -1,0 +1,55 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+# building_target
+
+
+POL_MP_INF_Production = {
+
+	enable = {
+		tag = POL
+		has_game_rule = {
+			rule = POL_ai_behavior
+			option = POL_MP_1
+		}
+	}
+
+	abort = {
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = infantry_equipment
+		value = 1000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = artillery_equipment
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = support_equipment
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = anti_tank_equipment
+		value = -1000
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = anti_air
+		value = 3
+	}
+}
