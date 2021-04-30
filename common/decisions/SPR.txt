@@ -14469,6 +14469,24 @@ political_actions = {
 					days = 70
 				}
 			}
+			if = {
+				limit = {
+					tag = GER
+				}
+				add_days_mission_timeout = {
+					mission = SPA_carlist_uprising_mission
+					days = 70
+				}
+			}
+			if = {
+				limit = {
+					tag = ITA
+				}
+				add_days_mission_timeout = {
+					mission = SPA_carlist_uprising_mission
+					days = 70
+				}
+			}
 		}
 
 		timeout_effect = {
