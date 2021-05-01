@@ -107,6 +107,25 @@ MTG_naval_treaties = {
 				add = 1
 			}
 			modifier = {
+				OR = {
+					AND = {
+						tag = ITA
+						has_game_rule = {
+							rule = ITA_ai_behavior
+							option = ITA_MP_1
+						}
+					}
+					AND = {
+						tag = JAP
+						has_game_rule = {
+							rule = JAP_ai_behavior
+							option = JAP_MP_1
+						}
+					}
+				}
+				factor = 0
+			}
+			modifier = {
 				tag = USA
 				has_civil_war = no
 				add = 5
@@ -200,6 +219,25 @@ MTG_naval_treaties = {
 			modifier = {
 				tag = JAP
 				factor = 5 #The Yamato is a 35,000 ton ship what are you talking about
+			}
+			modifier = {
+				OR = {
+					AND = {
+						tag = ITA
+						has_game_rule = {
+							rule = ITA_ai_behavior
+							option = ITA_MP_1
+						}
+					}
+					AND = {
+						tag = JAP
+						has_game_rule = {
+							rule = JAP_ai_behavior
+							option = JAP_MP_1
+						}
+					}
+				}
+				factor = 0
 			}
 		}
 	
