@@ -65,6 +65,7 @@ NDefines.NMilitary.SPEED_REINFORCEMENT_BONUS = 0.02          -- was 0.01    -- c
 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.4          -- was -0.5 - effect on defense due to enemy air superiorty
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3     -- was -0.5 - effect on speed due to enemy air superiority
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.05			-- was 0.07 -- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
 
 -- Below from More Unit Ranks ( modified to fit scale of AMM )
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
