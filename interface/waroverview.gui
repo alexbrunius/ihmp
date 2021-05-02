@@ -400,12 +400,12 @@ guiTypes = {
 			font = "hoi_16mbs"
 			buttonText = "CALL"
 		}
-		
-		iconType ={
-			name ="wargoal"
-			quadTextureSprite = "GFX_wargoal_icon"
-			position = { x= 237 y = 7 }
-		}
+		# IHMP
+		# iconType ={
+		# 	name ="wargoal"
+		# 	quadTextureSprite = "GFX_wargoal_icon"
+		# 	position = { x= 237 y = 7 }
+		# }
 		
 		instantTextboxType = {
 			name = "warscore"
