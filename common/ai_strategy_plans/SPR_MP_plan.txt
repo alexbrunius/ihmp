@@ -1,5 +1,5 @@
-SPR_MP_1 = {
-	name = "Spanish MP plan 1"
+SPR_MP_Pre_SCW = {
+	name = "Spanish MP before SCW plan"
 	desc = "Multiplayer behavior for Nationalist Spain before SCW"
 
 	enable = {
@@ -37,11 +37,11 @@ SPR_MP_1 = {
 		SPA_con_paquito
 		SPA_unify_the_nationalist_front
 		#SCW
-		SPA_save_the_alcazar
 		SPA_the_condor_legion
 		SPA_the_corpo_truppe_volontarie
-		SPA_consolidate_the_north
 		SPA_foment_a_carlist_split
+		SPA_save_the_alcazar
+		SPA_consolidate_the_north
 		SPA_martyrdom_for_primo_de_rivera
 		SPA_caudillo_of_spain
 		SPA_extol_the_martyrs_of_the_war
@@ -187,8 +187,8 @@ SPR_MP_BattlefieldSupport = {
 	}
 }
 
-SPR_MP_1 = {
-	name = "Spanish MP plan 1"
+SPR_MP_After_SCW = {
+	name = "Spanish MP after SCW plan"
 	desc = "Multiplayer behavior for Nationalist Spain after SCW"
 
 	enable = {
@@ -983,6 +983,6 @@ MP_Economy_2 = {
 	ideas = {
 		civilian_economy = 0
 		low_economic_mobilisation = 0
-		partial_economic_mobilisation = 0
+		partial_economic_mobilisation = -1000
 	}
 }
