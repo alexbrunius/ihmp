@@ -1,0 +1,151 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_SOV_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/ITA_naval_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ITA_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/ITA_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ITA_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/ITA_naval_bomber3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FRA_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/FRA_naval_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/FRA_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/FRA_naval_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber1_cv.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_ENG_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber2_cv.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_ENG_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber3_cv.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_cv_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/early_fighter.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_cv_fighter1_medium"
+		texturefile = "gfx/interface/technologies/fighter1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_cv_fighter2_medium"
+		texturefile = "gfx/interface/technologies/fighter2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_cv_fighter3_medium"
+		texturefile = "gfx/interface/technologies/fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cv_CAS1_medium"
+		texturefile = "gfx/interface/technologies/CAS1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cv_CAS2_medium"
+		texturefile = "gfx/interface/technologies/CAS2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cv_CAS3_medium"
+		texturefile = "gfx/interface/technologies/CAS3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/naval_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/naval_bomber2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/naval_bomber3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/GER_naval_bomber1_cv.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_GER_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/GER_naval_bomber2_cv.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_GER_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/GER_naval_bomber3_cv.dds"
+	}		
+
+	SpriteType = {
+		name = "GFX_commonwealth_2d_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber1_cv.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_commonwealth_2d_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber2_cv.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_commonwealth_2d_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber3_cv.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_advanced_sonar_medium"
+		texturefile = "gfx/interface/technologies/advanced_sonar.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_latewar_sonar_medium"
+		texturefile = "gfx/interface/technologies/latewar_sonar.dds"
+	}
+}

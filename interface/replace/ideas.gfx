@@ -1,0 +1,16 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_amphibious_operations"
+		texturefile = "gfx/interface/ideas/liberty_ships_focus.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_massive_draft"
+		texturefile = "gfx/interface/ideas/idea_massive_draft.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ansaldo"
+		texturefile = "gfx/interface/ideas/idea_ansaldo.dds"
+	}
+}
