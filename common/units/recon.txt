@@ -45,7 +45,7 @@ sub_units = {
 
 		# Important Ability
 		initiative = 0.1
-		entrenchment = 2
+		entrenchment = 1
 
 		maximum_speed = 0.6 # move at horsie speeds
 		
@@ -133,7 +133,7 @@ sub_units = {
 
 		# Important Ability
 		initiative = 0.1
-		entrenchment = 2
+		entrenchment = 1
 		
 		essential = {
 			infantry_equipment
@@ -223,7 +223,7 @@ sub_units = {
 
 		# Important Ability
 		initiative = 0.15
-		entrenchment = 2
+		entrenchment = 1
 		
 		essential = {
 			armored_car_equipment
@@ -309,7 +309,7 @@ sub_units = {
 
 		# Important Ability
 		initiative = 0.2
-		entrenchment = 2
+		entrenchment = 1
 		
 		essential = {
 			light_tank_equipment
