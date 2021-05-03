@@ -542,20 +542,6 @@ FRA_coup_in_north_africa = { ### 1/50
 			original_tag = FRA
 			original_tag = ENG
 		}
-		all_enemy_country = {
-			NOT = {
-				any_state = {
-					OR = {
-						region = 231 #Rio de Oro
-						region = 182 #Marocco
-						region = 212 #Algier
-						region = 126 #Libya
-						region = 128 #Egypt
-					}
-					is_controlled_by = PREV
-				}
-			}
-		}
 	}
 	visible = {
 		FRA = { has_country_flag = FRA_coup_in_north_africa_flag }
@@ -570,6 +556,7 @@ FRA_coup_in_north_africa = { ### 1/50
 		}
 		FROM = {
 			NOT = { has_war_with = ROOT }
+			NOT = { is_in_faction_with = ROOT }
 			OR = {
 				controls_state = 461
 				controls_state = 462
@@ -581,8 +568,21 @@ FRA_coup_in_north_africa = { ### 1/50
 			}
 		}
 	}
-	available = { 
-		
+	available = {
+		NOT = {
+			any_enemy_country = {
+				any_state = {
+					OR = {
+						region = 231 #Rio de Oro
+						region = 182 #Marocco
+						region = 212 #Algier
+						region = 126 #Libya
+						region = 128 #Egypt
+					}
+					is_controlled_by = PREV
+				}
+			}
+		}
 	}
 
 	selection_target = {
@@ -643,6 +643,7 @@ FRA_coup_in_north_africa = { ### 1/50
 	# outcome is an effect that runs when the operation has completed
 	outcome_execute = { # SCOPE_OPERATION
 		VIC = { country_event = LaR_france_vichy_notification_events.11 }
+		GER = { country_event = LaR_france_vichy_notification_events.11 }
 		every_state = {
 			limit = {
 				OR = {
