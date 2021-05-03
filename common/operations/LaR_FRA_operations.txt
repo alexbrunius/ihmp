@@ -538,18 +538,47 @@ FRA_coup_in_north_africa = { ### 1/50
 	days = 90
 
 	allowed = {
-		original_tag = FRA
+		OR = {
+			original_tag = FRA
+			original_tag = ENG
+		}
+		all_enemy_country = {
+			NOT = {
+				any_state = {
+					OR = {
+						region = 231 #Rio de Oro
+						region = 182 #Marocco
+						region = 212 #Algier
+						region = 126 #Libya
+						region = 128 #Egypt
+					}
+					is_controlled_by = PREV
+				}
+			}
+		}
 	}
 	visible = {
-		has_country_flag = FRA_coup_in_north_africa_flag
+		FRA = { has_country_flag = FRA_coup_in_north_africa_flag }
+		NOT = { has_global_flag = Coup_in_North_Africa }
+		OR = {
+			AND = {
+				tag = FRA
+				NOT = { has_focus_tree = vichy_french_focus }
+				NOT = { is_subject_of = GER }
+			}
+			tag = ENG
+		}
 		FROM = {
-			controls_state = 461
-			controls_state = 462
-			controls_state = 459
-			controls_state = 513
-			controls_state = 460
-			controls_state = 458
-			controls_state = 665
+			NOT = { has_war_with = ROOT }
+			OR = {
+				controls_state = 461
+				controls_state = 462
+				controls_state = 459
+				controls_state = 513
+				controls_state = 460
+				controls_state = 458
+				controls_state = 665
+			}
 		}
 	}
 	available = { 
@@ -576,7 +605,7 @@ FRA_coup_in_north_africa = { ### 1/50
 	cost_modifiers = { operation_cost }
 	risk_modifiers = { operation_risk }
 
-	operatives = 1
+	operatives = 2
 
 	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
 	network_strength = 50
@@ -587,7 +616,7 @@ FRA_coup_in_north_africa = { ### 1/50
 	}
 
 	on_start = {  # SCOPE_OPERATION
-		
+		set_global_flag = Coup_in_North_Africa
 	}
 	outcome_potential = {
 		every_state = {
@@ -602,10 +631,10 @@ FRA_coup_in_north_africa = { ### 1/50
 					state = 665
 				}
 				CONTROLLER = {
-					not = { tag = ROOT }
+					tag = FROM
 				}
 			}
-			ROOT = {
+			FRA = {
 				transfer_state = PREV
 			}
 		}
@@ -626,10 +655,10 @@ FRA_coup_in_north_africa = { ### 1/50
 					state = 665
 				}
 				CONTROLLER = {
-					not = { tag = ROOT }
+					tag = FROM
 				}
 			}
-			ROOT = {
+			FRA = {
 				transfer_state = PREV
 			}
 		}
