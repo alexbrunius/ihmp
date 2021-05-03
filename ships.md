@@ -2,12 +2,17 @@ Ship rework, based on forum thread: https://forum.paradoxplaza.com/forum/threads
 
 No new ships or classes added yet, just changed existing classes
     * AST:
-        * Starts with Fire Control 1 researched
-        * Sydney Class
-            * Fire Control 0->1
-        * Canberra Class
-            * CL1->CL2
-            * Both CL batteries 2->1
+        * Added Classes:
+            *Albatross class AV: early cruiser hull. Modules: engine I, fire control, light battery I, 2xAA I, 2x catapult I
+        * Added Ships:
+            * HMAS Albatross (Albatross class AV)
+        * Modified:
+            * Starts with Fire Control 1 researched
+            * Sydney Class
+                * Fire Control 0->1
+            * Canberra Class
+                * CL1->CL2
+                * Both CL batteries 2->1
     * CAN:
         * Sanguenay Class 
             * Renamed Saugenay Class
