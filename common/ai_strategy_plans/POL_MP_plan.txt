@@ -24,9 +24,9 @@ POL_MP_1 = {
 		POL_warsaw_main_railway_station
 		#1937
 		POL_invest_in_the_old_polish_region
+		POL_polish_militarism
 		POL_additional_research_slot1
-		POL_develop_upper_silesia	
-		POL_polish_militarism		
+		POL_develop_upper_silesia
 		POL_central_region_strategy
 		#1938
 		POL_expansion_of_new_towns
