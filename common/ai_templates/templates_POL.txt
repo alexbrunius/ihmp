@@ -6,6 +6,7 @@ infantry_POL = {
 	
 	roles = {
 		infantry
+		garrison
 	}
 	
 	upgrade_prio = {
@@ -24,7 +25,7 @@ infantry_POL = {
 			factor = 2
 
 			modifier = {
-				factor = 1
+				factor = 2
 			}
 		}
 		
@@ -44,7 +45,7 @@ infantry_POL = {
 			}
 			
 			regiments = {
-				infantry = 9
+				infantry = 12
 			}
 		}
 		
@@ -81,7 +82,7 @@ cavalry_POL = {
 	}
 	
 	upgrade_prio = {
-		factor = 1
+		factor = 0
 	}
 	
 	match_to_count = 0.60
