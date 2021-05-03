@@ -3,11 +3,12 @@ Ship rework, based on forum thread: https://forum.paradoxplaza.com/forum/threads
 No new ships or classes added yet, just changed existing classes
     * AST:
         * Added Classes:
-            *Albatross class AV: early cruiser hull. Modules: engine I, fire control, light battery I, 2xAA I, 2x catapult I
+            * Albatross class AV: early cruiser hull. Modules: engine I, fire control, light battery I, 2xAA I, 2x catapult I
         * Added Ships:
             * HMAS Albatross (Albatross class AV)
-        * Modified:
+        * Tech:
             * Starts with Fire Control 1 researched
+        * Modified Classes:
             * Sydney Class
                 * Fire Control 0->1
             * Canberra Class
@@ -19,47 +20,82 @@ No new ships or classes added yet, just changed existing classes
             * Engine 2->1
             * Added depth charges 1
     * ENG:
-        * Starts with 1936 BB/BC tech researched
-        * Starts with 1936 torpedo tech researched
-        * O/P/R Class
-            * Torpedo 1 added
-        * S Class
-            * Torpedo 1 removed
-            * Engine 1->2
-        * A/B/C/D Class
-            * DD1->DD2
-            * Engine 2->1
-        * E/F/G/H Class
-            * Renamed to E/F/G/H/I Class
-        * Danae Class
-            * Engine 1->2
-        * Leander Class
-            * Fire Control 0->1
-        * Town Class
-            * Fire Control 0->1
-            * Added CL battery 2
-        * County Class
-            * CA1->CA2
-            * Fire Control 0->1
-            * Both CA batteries 2->1
-            * Armour 1->2
-        * York Class
-            * Fire Control 0->1
-            * Cruser armour 1->2
-            * Added secondaries 1
-        * Renown Class
-            * Fire Control 0->1
-            * BB batery 1->2
-        * Admiral Class
-            * Fire Control 0->1
-            * Both BB bateries 1->2
-        * Nelson Class
-            * Fire Control 0->1
-            * Engine 2->1
-        * Queen Elizabeth Class
-            * Fire Control 0->1
-        * Revenge Class
-            * Fire Control 0->1
+        * Added Classes:
+            * Queen Elizabeth (modernised) class BB: Heavy ship hull I. 2xHeavy Battery II. 2xAA II. Engine I. Fire control I. Secondaries II. BB Armour II. Catapult.
+            * Queen Elizabeth (semi-modernised) class BB: Heavy ship hull I. 2xHeavy Battery II. 2xAA II. Engine I. Fire control I. Secondaries II. BB Armour I. Catapult.
+            * Renown (modernised) class BC: Heavy ship hull I. 1xHeavy Battery II 1xHeavy Battery I. 2xAA II. Engine II. Fire control I. Secondaries II. BC Armour II. Catapult.
+            * Arethusa class CL: Cruiser hull II. 2x light cruiser battery I, AA I Engine II. Fire control I. Armour I. Torpedo I. Catapult.
+            * Albatross class AV: early cruiser hull. Modules: engine I, fire control, light battery I, 2xAA I, 2x catapult I
+            * Plover class MM: (light ship hull I. Modules: engine I, fire control, light battery I, AA I, 2x minelaying rails)
+            * H/L class SS: sub hull I. Torpedo I. Engine I.
+            * River class SS: sub hull II. Torpedo I. Engine I.
+        * Added Ships:
+            * HMAS Albatross (Albatross class AV)
+        * Techs:
+            * Starts with 1936 BB/BC tech researched
+            * Starts with 1936 torpedo tech researched
+        * Modified Classes:
+            * O/P/R Class
+                * Torpedo 1 added
+            * S Class
+                * Torpedo 1 removed
+                * Engine 1->2
+            * A/B/C/D Class
+                * DD1->DD2
+                * Engine 2->1
+            * E/F/G/H Class
+                * Renamed to E/F/G/H/I Class
+            * Danae Class
+                * Engine 1->2
+            * Leander Class
+                * Fire Control 0->1
+            * Town Class
+                * Fire Control 0->1
+                * Added CL battery 2
+            * County Class
+                * CA1->CA2
+                * Fire Control 0->1
+                * Both CA batteries 2->1
+                * Armour 1->2
+            * York Class
+                * Fire Control 0->1
+                * Cruser armour 1->2
+                * Added secondaries 1
+            * Renown Class
+                * Fire Control 0->1
+                * BB batery 1->2
+            * Admiral Class
+                * Fire Control 0->1
+                * Both BB bateries 1->2
+            * Nelson Class
+                * Fire Control 0->1
+                * Engine 2->1
+            * Queen Elizabeth Class
+                * Fire Control 0->1
+            * Revenge Class
+                * Fire Control 0->1
+        * Modified Ships:
+            * Queen Elizabeth class to Queen Elizabeth (modernised) class
+                * HMS Warspite. Moved from active Fleet to construction queue at about 60% completion
+            * County class to York class 2 ships:
+                * HMS York
+                * HMS Exeter
+            * Leander class to Arethusa class 4 ships:
+                * HMS Arethusa
+                * HMS Galatea
+                * HMS Penelope (under construction in 36)
+                * HMS Aurora (under construction in 36)
+            * V/W class to S class (Destroyer) 1 ship:
+                * HMS Sturdy
+            * O/P/R class to H/L class 12 subs:
+               * All submarines with H or L numbers
+            * O/P/R class to River class 3 ships:
+                * HMS Thames
+                * HMS Severn
+                * HMS Clyde
+            * S class (submarine) to Garmpus class (36 scenario)
+                * HMS Propoise
+                * HMS Narwhal (under construction)
     * FRA:
         * Starts with 1936 CL/CA tech researched
         * Starts with 1936 CL/CA armor tech researched
