@@ -22,9 +22,11 @@ POL_MP_INF_Production = {
 			rule = POL_ai_behavior
 			option = POL_MP_1
 		}
+		has_capitulated = no
 	}
 
 	abort = {
+		has_capitulated = yes
 	}
 
 	ai_strategy = {
@@ -50,6 +52,6 @@ POL_MP_INF_Production = {
 	ai_strategy = {
 		type = equipment_production_min_factories
 		id = anti_air
-		value = 3
+		value = 4
 	}
 }
