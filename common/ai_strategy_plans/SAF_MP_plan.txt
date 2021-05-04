@@ -102,6 +102,56 @@ SAF_MP_1 = {
 	}
 }
 
+SAF_MP_Concentrated_Industry = {
+	name = "No Dispersed"
+	desc = ""
+
+	enable = {
+		tag = SAF
+		has_game_rule = {
+			rule = SAF_ai_behavior
+			option = SAF_MP_1
+		}
+		ENG = { NOT = { has_tech = concentrated_industry } }
+	}
+	
+	abort = {
+		OR = {
+			ENG = { has_tech = concentrated_industry }
+			ENG = { is_researching_technology = concentrated_industry }
+		}
+	}
+
+	research = {
+		concentrated_industry_category = -10000
+	}
+}
+
+SAF_MP_Dispersed_Industry = {
+	name = "No Concentrated"
+	desc = ""
+
+	enable = {
+		tag = SAF
+		has_game_rule = {
+			rule = SAF_ai_behavior
+			option = SAF_MP_1
+		}
+		ENG = { NOT = { has_tech = dispersed_industry } }
+	}
+	
+	abort = {
+		OR = {
+			ENG = { has_tech = dispersed_industry }
+			ENG = { is_researching_technology = dispersed_industry }
+		}
+	}
+
+	research = {
+		dispersed_industry_category = -10000
+	}
+}
+
 SAF_MP_Advisors = {
 	name = "Blocked Advisors till capitulated or Mid-1940"
 	desc = ""

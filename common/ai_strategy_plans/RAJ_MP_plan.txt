@@ -127,6 +127,56 @@ RAJ_MP_1 = {
 
 }
 
+RAJ_MP_Concentrated_Industry = {
+	name = "No Dispersed"
+	desc = ""
+
+	enable = {
+		tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+		ENG = { NOT = { has_tech = concentrated_industry } }
+	}
+	
+	abort = {
+		OR = {
+			ENG = { has_tech = concentrated_industry }
+			ENG = { is_researching_technology = concentrated_industry }
+		}
+	}
+
+	research = {
+		concentrated_industry_category = -10000
+	}
+}
+
+RAJ_MP_Dispersed_Industry = {
+	name = "No Concentrated"
+	desc = ""
+
+	enable = {
+		tag = RAJ
+		has_game_rule = {
+			rule = RAJ_ai_behavior
+			option = RAJ_MP_1
+		}
+		ENG = { NOT = { has_tech = dispersed_industry } }
+	}
+	
+	abort = {
+		OR = {
+			ENG = { has_tech = dispersed_industry }
+			ENG = { is_researching_technology = dispersed_industry }
+		}
+	}
+
+	research = {
+		dispersed_industry_category = -10000
+	}
+}
+
 No_PP_For_Relation = {
 	name = ""
 	desc = ""
@@ -145,7 +195,7 @@ No_PP_For_Relation = {
 	ai_strategy = {
 		type = pp_spend_priority
 		id = relation	
-		value = -200
+		value = -400
 	}	
 }
 

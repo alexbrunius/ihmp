@@ -33,6 +33,7 @@ CAN_MP_1 = {
 		CAN_strengthen_the_commonwealth_ties
 		CAN_shadow_factories
 		CAN_montreal_laboratory_collaboration
+		CAN_war_bonds
 		CAN_department_of_munitions_and_supply
 		CAN_victory_aircraft_limited
 		CAN_bits_and_pieces_program
@@ -70,7 +71,7 @@ CAN_MP_1 = {
 
 	research = {
 		cat_strategic_destruction = -1000
-		#cat_battlefield_support = -1000
+		cat_battlefield_support = -1000
 		cat_operational_integrity = -1000
 		#cat_superior_firepower = -1000
 		#cat_grand_battle_plan = -1000
@@ -166,6 +167,7 @@ CAN_MP_2 = {
 		CAN_strengthen_the_commonwealth_ties
 		CAN_shadow_factories
 		CAN_montreal_laboratory_collaboration
+		CAN_war_bonds
 		CAN_department_of_munitions_and_supply
 		CAN_victory_aircraft_limited
 		CAN_bits_and_pieces_program
@@ -242,6 +244,56 @@ CAN_MP_2 = {
 		
 	}
 
+}
+
+CAN_MP_Concentrated_Industry = {
+	name = "No Dispersed"
+	desc = ""
+
+	enable = {
+		tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+		ENG = { NOT = { has_tech = concentrated_industry } }
+	}
+	
+	abort = {
+		OR = {
+			ENG = { has_tech = concentrated_industry }
+			ENG = { is_researching_technology = concentrated_industry }
+		}
+	}
+
+	research = {
+		concentrated_industry_category = -10000
+	}
+}
+
+CAN_MP_Dispersed_Industry = {
+	name = "No Concentrated"
+	desc = ""
+
+	enable = {
+		tag = CAN
+		has_game_rule = {
+			rule = CAN_ai_behavior
+			option = CAN_MP_1
+		}
+		ENG = { NOT = { has_tech = dispersed_industry } }
+	}
+	
+	abort = {
+		OR = {
+			ENG = { has_tech = dispersed_industry }
+			ENG = { is_researching_technology = dispersed_industry }
+		}
+	}
+
+	research = {
+		dispersed_industry_category = -10000
+	}
 }
 
 CAN_MP_Infrastructure_1 = {
