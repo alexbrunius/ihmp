@@ -102,6 +102,56 @@ AST_MP_1 = {
 	}
 }
 
+AST_MP_Concentrated_Industry = {
+	name = "No Dispersed"
+	desc = ""
+
+	enable = {
+		tag = AST
+		has_game_rule = {
+			rule = AST_ai_behavior
+			option = AST_MP_1
+		}
+		ENG = { NOT = { has_tech = concentrated_industry } }
+	}
+	
+	abort = {
+		OR = {
+			ENG = { has_tech = concentrated_industry }
+			ENG = { is_researching_technology = concentrated_industry }
+		}
+	}
+
+	research = {
+		concentrated_industry_category = -10000
+	}
+}
+
+AST_MP_Dispersed_Industry = {
+	name = "No Concentrated"
+	desc = ""
+
+	enable = {
+		tag = AST
+		has_game_rule = {
+			rule = AST_ai_behavior
+			option = AST_MP_1
+		}
+		ENG = { NOT = { has_tech = dispersed_industry } }
+	}
+	
+	abort = {
+		OR = {
+			ENG = { has_tech = dispersed_industry }
+			ENG = { is_researching_technology = dispersed_industry }
+		}
+	}
+
+	research = {
+		dispersed_industry_category = -10000
+	}
+}
+
 AST_MP_Electronics_1 = {
 	name = "Australian Multiplayer Plan Electronics 1"
 	desc = ""
@@ -116,7 +166,10 @@ AST_MP_Electronics_1 = {
 	}
 	
 	abort = {
-		has_tech = electronic_mechanical_engineering 
+		OR = {
+			has_tech = electronic_mechanical_engineering 
+			is_researching_technology = electronic_mechanical_engineering
+		}
 	}
 
 	research = {
@@ -139,7 +192,10 @@ AST_MP_Electronics_2 = {
 	}
 	
 	abort = {
-		has_tech = mechanical_computing 
+		OR = {
+			has_tech = mechanical_computing 
+			is_researching_technology = mechanical_computing
+		}
 	}
 
 	research = {
@@ -202,7 +258,12 @@ AST_MP_1_NoShips = {
 
 	abort = {
 	}
-	
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = capital_ship
+		value = -10000
+	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = screen_ship

@@ -132,6 +132,68 @@ CAN_MP_1 = {
 
 }
 
+CAN_MP_Concentrated_Industry = { 
+	name = "No Dispersed" 
+	desc = "" 
+ 
+	enable = { 
+		tag = CAN 
+		OR = {
+			has_game_rule = { 
+				rule = CAN_ai_behavior 
+				option = CAN_MP_1 
+			} 
+			has_game_rule = { 
+				rule = CAN_ai_behavior 
+				option = CAN_MP_2
+			} 
+		}
+		ENG = { NOT = { has_tech = concentrated_industry } } 
+	} 
+	 
+	abort = { 
+		OR = { 
+			ENG = { has_tech = concentrated_industry } 
+			ENG = { is_researching_technology = concentrated_industry } 
+		} 
+	} 
+ 
+	research = { 
+		concentrated_industry_category = -10000 
+	} 
+} 
+ 
+CAN_MP_Dispersed_Industry = { 
+	name = "No Concentrated" 
+	desc = "" 
+ 
+	enable = { 
+		tag = CAN 
+		OR = {
+			has_game_rule = { 
+				rule = CAN_ai_behavior 
+				option = CAN_MP_1 
+			} 
+			has_game_rule = { 
+				rule = CAN_ai_behavior 
+				option = CAN_MP_2
+			} 
+		}
+		ENG = { NOT = { has_tech = dispersed_industry } } 
+	} 
+	 
+	abort = { 
+		OR = { 
+			ENG = { has_tech = dispersed_industry } 
+			ENG = { is_researching_technology = dispersed_industry } 
+		} 
+	} 
+ 
+	research = { 
+		dispersed_industry_category = -10000 
+	} 
+} 
+
 CAN_MP_2 = {
 	name = "Canada MP Plan 2"
 	desc = "Destroyer Focus Canada"

@@ -75,6 +75,56 @@ NZL_MP_plan = {
 
 }
 
+NZL_MP_Concentrated_Industry = {
+	name = "No Dispersed"
+	desc = ""
+
+	enable = {
+		tag = NZL
+		has_game_rule = {
+			rule = NZL_ai_behavior
+			option = NZL_MP_1
+		}
+		ENG = { NOT = { has_tech = concentrated_industry } }
+	}
+	
+	abort = {
+		OR = {
+			ENG = { has_tech = concentrated_industry }
+			ENG = { is_researching_technology = concentrated_industry }
+		}
+	}
+
+	research = {
+		concentrated_industry_category = -10000
+	}
+}
+
+NZL_MP_Dispersed_Industry = {
+	name = "No Concentrated"
+	desc = ""
+
+	enable = {
+		tag = NZL
+		has_game_rule = {
+			rule = NZL_ai_behavior
+			option = NZL_MP_1
+		}
+		ENG = { NOT = { has_tech = dispersed_industry } }
+	}
+	
+	abort = {
+		OR = {
+			ENG = { has_tech = dispersed_industry }
+			ENG = { is_researching_technology = dispersed_industry }
+		}
+	}
+
+	research = {
+		dispersed_industry_category = -10000
+	}
+}
+
 MP_Conscription_0 = {
 	name = "Conscription Plan"
 	desc = ""
