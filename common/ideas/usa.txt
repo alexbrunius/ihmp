@@ -81,9 +81,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_dockyard = -0.6
-				production_speed_air_base_factor = -1.05
-				production_speed_naval_base_factor = -1.05
+				industrial_capacity_dockyard = -0.7
+				production_speed_air_base_factor = -1.1
+				production_speed_naval_base_factor = -1.1
 				production_speed_bunker_factor = -1.1
 				production_speed_coastal_bunker_factor = -1.1
 				production_speed_anti_air_building_factor = -1.1
@@ -95,6 +95,7 @@ ideas = {
 				experience_gain_battle_cruiser_training_factor = -0.7
 				experience_gain_battleship_training_factor = -0.7
 				experience_gain_carrier_training_factor = -0.7
+				experience_gain_navy_factor = -0.7
 			}
 			research_bonus = {
 				naval_doctrine = -0.9
@@ -114,24 +115,24 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_dockyard = -0.4
-				production_speed_air_base_factor = -0.90
-				production_speed_naval_base_factor = -0.90
-				production_speed_bunker_factor = -1.05
-				production_speed_coastal_bunker_factor = -1.05
+				industrial_capacity_dockyard = -0.5
+				production_speed_air_base_factor = -1.0
+				production_speed_naval_base_factor = -1.0
+				production_speed_bunker_factor = -1.0
+				production_speed_coastal_bunker_factor = -1.0
 				production_speed_anti_air_building_factor = -1.0
 				production_speed_radar_station_factor = -1.0
-				experience_gain_submarine_training_factor = -0.47
-				experience_gain_destroyer_training_factor = -0.47
-				experience_gain_light_cruiser_training_factor = -0.47
-				experience_gain_heavy_cruiser_training_factor = -0.47
-				experience_gain_battle_cruiser_training_factor = -0.47
-				experience_gain_battleship_training_factor = -0.47
-				experience_gain_carrier_training_factor = -0.47
-				experience_gain_navy_factor = -0.4
+				experience_gain_submarine_training_factor = -0.5
+				experience_gain_destroyer_training_factor = -0.5
+				experience_gain_light_cruiser_training_factor = -0.5
+				experience_gain_heavy_cruiser_training_factor = -0.5
+				experience_gain_battle_cruiser_training_factor = -0.5
+				experience_gain_battleship_training_factor = -0.5
+				experience_gain_carrier_training_factor = -0.5
+				experience_gain_navy_factor = -0.5
 			}
 			research_bonus = {
-				naval_doctrine = -0.6
+				naval_doctrine = -0.7
 			}
 		}
 		sleeping_navy_3 = {
@@ -148,24 +149,24 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_dockyard = -0.2
-				production_speed_air_base_factor = -0.75
-				production_speed_naval_base_factor = -0.75
-				production_speed_bunker_factor = -1.0
-				production_speed_coastal_bunker_factor = -1.0
+				industrial_capacity_dockyard = -0.3
+				production_speed_air_base_factor = -0.9
+				production_speed_naval_base_factor = -0.9
+				production_speed_bunker_factor = -0.9
+				production_speed_coastal_bunker_factor = -0.9
 				production_speed_anti_air_building_factor = -0.9
 				production_speed_radar_station_factor = -0.9
-				experience_gain_submarine_training_factor = -0.23
-				experience_gain_destroyer_training_factor = -0.23
-				experience_gain_light_cruiser_training_factor = -0.23
-				experience_gain_heavy_cruiser_training_factor = -0.23
-				experience_gain_battle_cruiser_training_factor = -0.23
-				experience_gain_battleship_training_factor = -0.23
-				experience_gain_carrier_training_factor = -0.23
-				experience_gain_navy_factor = -0.2
+				experience_gain_submarine_training_factor = -0.3
+				experience_gain_destroyer_training_factor = -0.3
+				experience_gain_light_cruiser_training_factor = -0.3
+				experience_gain_heavy_cruiser_training_factor = -0.3
+				experience_gain_battle_cruiser_training_factor = -0.3
+				experience_gain_battleship_training_factor = -0.3
+				experience_gain_carrier_training_factor = -0.3
+				experience_gain_navy_factor = -0.3
 			}
 			research_bonus = {
-				naval_doctrine = -0.3
+				naval_doctrine = -0.5
 			}
 		}
 		
