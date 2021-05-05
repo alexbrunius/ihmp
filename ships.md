@@ -175,42 +175,122 @@ No new ships or classes added yet, just changed existing classes
         * Zerstörer 1936 Class
             * Torpedo 1->2
     * JAP:
-        * Starts with 1936 DD tech researched
-        * Soryu Class
-            * Engine 1->2
-        * Nagato Class
-            * Engine 1->2
-        * Kongo Class
-            * Added secondaries 1
-        * Fuso/Ise Class
-            * Added BB battery 1
-            * Added secondaries 1
-        * Myoko Class
-            * 2x torpedo 1->1x torpedo 2
-        * Aoba Class
-            * Renamed Furutaka/Aoba CLass
-            * CL battery 1->2
-        * Tone Class
-            * Both CA batteries 2->1
-        * Mogami Class
-            * CA2->CL2
-            * Both CA batteries 2 -> CL batteries 2
-        * Sendai Class
-            * Engine 1->2
-            * Added secondaries 1
-        * Tenryu Class
-            * Engine 1->2
-        * Kuma/Nagara Class
-            * Engine 1->2
-            * Removed CL battery 1
-            * Added secondaries 1
-        * Fubuki Class
-            * DD1->DD2
-        * Kaidai III Class
-            * SS1->SS2
-        * I-121 Class
-            * Renamed Kiraisen Class
-            * SS1->SS2
+        * Techs:
+            * Starts with 1936 DD tech researched
+        * Added Classes:
+            * Takao class CA: use the design currently named Myoko class.
+            * Tokiwa class CM: like Izumo class but add 1 mining rails module.
+            * Chitose/Mizuho class AV: cruiser hull II. Modules: engine I, fire control, light battery I, AA I, 3x catapult I
+            * Hatsuharu class DD: light ship hull II. Modules: engine II, light battery II, fire control 0, 2x torpedo I, 1x Depth charges.
+            * Shiratsuyu class DD: light ship hull II. Modules: engine II, light battery II, fire control 0, torpedo II AND torpedo I, 1x Depth charges.
+            * Chidori/Otori class TB: (light ship hull I. Modules: engine I, light battery I, fire control, torpedo I, 1x depth charges.)
+        * Added Ships:
+            * 4 Izumo class (similar old CA used as coastal defense ships):
+                * Asama
+                * Azuma
+                * Kassuga
+                * Yakumo
+            * Tokiwa class CM:
+                * Tokiwa
+            * Chidori/Otori class (4 ships Chidori class. Deployment according to Combined Fleet. in-game TF unclear):
+                * Chidori (21st Torpedo Boat Division, 2nd Base Force, Third Fleet)
+                * Manazuru (21st Torpedo Boat Division, 2nd Base Force, Third Fleet)
+                * Tomozuru (21st Torpedo Boat Division, 2nd Base Force, Third Fleet)
+                * Hatsukari (21st Torpedo Boat Division, 2nd Base Force, Third Fleet)
+            * Nitto Kuchikukan class DD (Historical Momo class):
+                * Momo
+                * Kashi
+                * Hinoki
+                * Yanagi
+            3 coastal submarines Kaichu IV c:
+                * Ro-53
+                * Ro-54
+                * Ro-55
+            * Added to 36 scenario construction queue:
+                * Zuiho class CV (1 ship):
+                    * Shoho
+                * Chitose/Mizuho class AV (2 ships):
+                    * Chitose
+                    * Chiyoda
+                * Rest of Shiratsuyu class (5 ships):
+                    * Harusame
+                    * Samidare
+                    * Umikaze
+                    * Yamakaze
+                    * Suzukaze
+                * First three Asashio class (3 ships):
+                    * Asashio
+                    * Michishio
+                    * Arashio
+                * Chidori/Otori class (first 4 Otori class ships):
+                    * Otori
+                    * Hiyodori
+                    * Hayabusa
+                    * Kasasagi
+        * Modified Classes:
+            * Soryu Class
+                * Engine 1->2
+            * Nagato Class
+                * Engine 1->2
+            * Kongo Class
+                * Added secondaries 1
+            * Fuso/Ise Class
+                * Added BB battery 1
+                * Added secondaries 1
+            * Myoko Class
+                * 2x torpedo 1->1x torpedo 2
+            * Aoba Class
+                * Renamed Furutaka/Aoba CLass
+                * CL battery 1->2
+            * Tone Class
+                * Both CA batteries 2->1
+            * Mogami Class
+                * CA2->CL2
+                * Both CA batteries 2 -> CL batteries 2
+            * Sendai Class
+                * Engine 1->2
+                * Added secondaries 1
+            * Tenryu Class
+                * Engine 1->2
+            * Kuma/Nagara Class
+                * Engine 1->2
+                * Removed CL battery 1
+                * Added secondaries 1
+            * Fubuki Class
+                * DD1->DD2
+            * Kaidai III Class
+                * SS1->SS2
+            * I-121 Class
+                * Renamed Kiraisen Class
+                * SS1->SS2
+            * Momi Class:
+                * Rename to Nitto Kuchikukan Class
+            * Mutsuki Class
+                * Rename to Minekaze Class
+            * Ro-26 Class
+                * Rename to Kaichu IV Class
+        * Modified Ships:
+            * The submarine hull numbers were changed (increased by 100) in 1942. In both scenarios, all boats with an I prefix should have two-digit numbers (just remove the first 1 in all three digit-numbers)
+            Myoko class to Takao class (4 ships):
+                * Takao
+                * Atago
+                * Maya
+                * Chokai
+            Mutsuki class to Nitto Kuchikukan class (currently called Momi class):
+                * Yugao
+            Fubuki class to Hatsuharu class (6 ships):
+                * Hatsuharu
+                * Nenohi
+                * Wakaba
+                * Hatsushimo
+                * Ariake
+                * Yugure
+            Fubuki class to Shiratsuyu class (5 under construction):
+                * Shiratsuyu (under construction in 36)
+                * Shigure (under construction in 36)
+                * Murasame (under construction in 36)
+                * Yudachi (under construction in 36)
+                * Kawakaze (under construction in 36)
     * SOV:
         * Starts with 1936 CA/CL tech researched
         * Starts with 1936 torpedo tech researched
