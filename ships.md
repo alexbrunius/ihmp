@@ -15,10 +15,15 @@ No new ships or classes added yet, just changed existing classes
                 * CL1->CL2
                 * Both CL batteries 2->1
     * CAN:
-        * Sanguenay Class 
-            * Renamed Saugenay Class
-            * Engine 2->1
-            * Added depth charges 1
+        * Modified Classes:
+            * Sanguenay Class 
+                * Renamed Saugenay Class
+                * Engine 2->1
+                * Added depth charges 1
+            * Added Ships:
+                * 2 old S-class DD (they were in commission until November 36 and scrapped in 1937.):
+                    * HCMS Vancouver
+                    * HCMS Champlain
     * ENG:
         * Added Classes:
             * Queen Elizabeth (modernised) class BB: Heavy ship hull I. 2xHeavy Battery II. 2xAA II. Engine I. Fire control I. Secondaries II. BB Armour II. Catapult.
@@ -93,7 +98,7 @@ No new ships or classes added yet, just changed existing classes
                 * HMS Thames
                 * HMS Severn
                 * HMS Clyde
-            * S class (submarine) to Garmpus class (36 scenario)
+            * S class (submarine) to Garmpus class (36 scenario):
                 * HMS Propoise
                 * HMS Narwhal (under construction)
     * FRA:
