@@ -230,19 +230,129 @@ No new ships or classes added yet, just changed existing classes
         * Kirov Class
             * CA1->CA2
     * USA:
-        * Starts with Fire Control 1 researched
-        * Starts with 1936 torpedo tech researched
-        * Farragut Class
-            * DD1->DD2
-        * Pensacola Class
-            * Renamed Pensacola/Northhampton Class
-            * Both CA batteries 1->2
-        * Portland Class
-            * Both CA batteries 1->2
-        * New York Class
-            * Added BB battery 1
-        * Pennsylvania Class
-            * Added BB battery 1
-            * Removed secondaries 1
-        * Colorado Class
-            * Removed secondaries 1
+        * Techs:
+            * Starts with Fire Control 1 researched
+            * Starts with 1936 torpedo tech researched
+        * Added Classes:
+            * Wyoming class BB: use the design currently used for New York class BB
+            * Wright class AV: early cruiser hull. Modules: engine I, fire control, light battery I, AA I, 3x catapult I, tagged as obsolete.
+            * Langley class AV: early cruiser hull. Modules: engine I, fire control, light battery I, 3x catapult II
+            * Porter class DD: light ship hull II. Modules: engine II, 2xlight battery II, AA I, fire control 0, sonar I, torpedo II, 1x Depth Charges)
+            * Mahan class DD: light ship hull II. Modules: engine II, light battery II, AA I, fire control 0, sonar I, torpedo II AND Torpedo I, 1x Depth Charges.
+            * Flush decker DM class DM: light ship hull I. Modules: engine I, light battery I, fire control 0, 2x minelaying rails.
+            * Argonaut class SM: Submarine hull II. Torpedo I. Engine I. Mine tubes.
+        * Added Ships:
+            * 9 Clemson class DD
+                * USS Lea should be in the Pacific Reserve Destroyers TF.
+                * USS Gwin: In reserve at Philadelphia (Atlantic Reserve Destroyers TF).
+                * USS Kimberly: In reserve at Philadelphia (Atlantic Reserve Destroyers TF).
+                * USS Charles V. Gridley: In reserve at Philadelphia (Atlantic Reserve Destroyers TF). (actual name was USS Gridley, same as the new Gridley class destroyer not yet laid down)
+                * USS Taylor: active: TF unclear. part of the Atlantic fleet in 36, later served in the Caribbean in 1937)
+                * USS Bell: In reserve at Philadelphia (Atlantic Reserve Destroyers TF).
+                * USS Champlin: In reserve at San Diego (Pacific Reserve Destroyers TF).
+                * USS Seth Thompson: active, part of the Asiatic Fleet TF in the Philippines.
+                * USS James K. Paulding: In reserve at Philadelphia (Atlantic Reserve Destroyers TF).
+            * 15 O/R/S class (current name: S class) SS, 14 in reserve at Philadelphia (Atlantic Reserve Submarines TF):
+                * USS R-8
+                * USS R-12
+                * USS R-14
+                * USS R-15
+                * USS R-16
+                * USS R-17
+                * USS R-18
+                * USS O-1
+                * USS S-3
+                * USS S-6
+                * USS S-7
+                * USS S-8
+                * USS S-9
+                * USS S-10
+                * USS S-19: In reserve at Pearl Harbor (the 4th Submarine Squadron TF)
+            * Mine force:
+                * 10 ships total (6 old ones in reserve):
+                    * 4 in the Pacific Reserve Fleet TF:
+                        * USS Stribling
+                        * USS Ingraham
+                        * USS Anthony
+                        * USS Sproston
+                    * 2 in Atlantic Reserve Destroyers TF
+                        * USS Israel
+                        * USS Lansdale
+                    * 4 newest form a New TF: Mine Squadron 1 (part of the Battle Force fleet accprding to destroyer history):
+                        * USS Gamble
+                        * USS Ramsay
+                        * USS Montgomery
+                        * USS Breese
+                        * USS Oglala (Oglala class CM) should be in this TF as well.
+            * Added to 36 scenario construction queue:
+                *Brooklyn class CL (7 ships):
+                    * USS Brooklyn
+                    * USS Philadelphia
+                    * USS Savannah
+                    * USS Nashville
+                    * USS Phoenix
+                    * USS Boise
+                    * USS Honolulu
+                *Rest of Porter class DD (4 ships):
+                    * USS Selfridge
+                    * USS McDougal
+                    * USS Winslow
+                    * USS Balch
+                *Rest of Mahan class DD (9 ships):
+                    * USS Drayton
+                    * USS Lamson
+                    * USS Reid
+                    * USS Tucker
+                    * USS Downes
+                    * USS Smith
+                    * USS Preston
+                    * USS Dunlap
+                    * USS Fanning
+                *Rest of Porpoise class SS (6 ships):
+                    * USS Perch
+                    * USS Pickerel
+                    * USS Permit
+                    * USS Plunger
+                    * USS Pollack
+                    * USS Pompano
+        * Modified Classes:
+            * Farragut Class
+                * DD1->DD2
+            * Pensacola Class
+                * Renamed Pensacola/Northhampton Class
+                * Both CA batteries 1->2
+            * Portland Class
+                * Both CA batteries 1->2
+            * New Orleans Class
+                * Engine 1->2
+                * Renamed Astoria Class
+            * New York Class
+                * Added BB battery 1
+            * Pennsylvania Class
+                * Added BB battery 1
+                * Removed secondaries 1
+                * Renamed Standard Class
+            * Colorado Class
+                * Removed secondaries 1
+            * S Class
+                * Renamed O/R/S class
+        * Modified Ships:
+            * New York class to Wyoming class:
+                * USS Arkansas
+            * Farragut class to Porter class (4 ships under construction):
+                * USS Porter
+                * USS Phelps
+                * USS Clark
+                * USS Moffett
+            * Farragut class to Mahan class (9 ships under construction):
+                * USS Mahan
+                * USS Cummings
+                * USS Flusser
+                * USS Case
+                * USS Conyngham
+                * USS Cassin
+                * USS Shaw
+                * USS Cushing
+                * USS Perkins
+            * Barracuda class to Argonaut class:
+                * USS Argonaut
