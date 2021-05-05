@@ -102,32 +102,98 @@ No new ships or classes added yet, just changed existing classes
                 * HMS Propoise
                 * HMS Narwhal (under construction)
     * FRA:
-        * Starts with 1936 CL/CA tech researched
-        * Starts with 1936 CL/CA armor tech researched
-        * 630 Series
-            * Engine 1->2
-        * Chacal Class
-            * DD1->DD2
-            * Battery 1->2
-        * Le Fantasque Class
-            * DD1->DD2
-        * Duguay-Trouin Class
-            * Engine 1->2
-            * Torpedo 1->2
-        * Émile Bertin Class
-            * Engine 1->2
-            * Added floatplane launcher 1
-        * La Galissonnière
-            * CL1->CL2
-            * Added torpedo 1
-        * Suffren Class
-            * Engine 1->2
-        * Algerie Class
-            * CA1->CA2
-            * Engine 1->2
-            * Armor 1->2
-        * Bretagne Class
-            * BB battery 1 added
+        * Tech:
+            * Starts with 1936 CL/CA tech researched
+            * Starts with 1936 CL/CA armor tech researched
+        * Added Classes:
+            * Commandant Teste class AV: cruiser hull I. Modules: engine I, fire control, light battery II, AA II, secondaries I, armor I, 3x catapult I.
+            * Bougainville class Aviso: coastal defense ship hull. Modules: engine I, fire control, light battery I, AA I. armor I. minelaying rails. catapult.
+            Alternative design for Bougainville class proposed by @Caeric : light ship hull I. Modules: engine I, fire control, light battery I, AA I. armor I. minelaying rails.
+            * Castor class MM: coastal defense ship hull. Modules: engine I, fire control, light battery I, 2x minelaying rail.
+            * Duquesne class CA: cruiser hull I. Modules: engine II. fire control. 2x Medium Battery I. AA I. torpedo I. catapult. NO armor module.
+            * Jeanne d’Arc-class CL: use the design currently named Duguay-Trouin class.
+            * Pluton class CM (from Duguay-Trouin class): same design as the existing British Adventure Class CM.
+            * La Melpomène class TB: hull I. Modules: engine II, Fire control, light battery I, AA I, torpedo I depth charges. Names: Historical Light Destroyers.
+            * Requin class SS: submarine hull II. Modules: engine I. 2x torpedo I.
+        * Added Ships:
+            * Bougainville class (first 7 units) (Apparently all in Mediterranean Sea):
+                - Bougainville
+                - Amiral Charner
+                - Dumont d'Urville
+                - D'Entrecasteaux
+                - D'Iberville
+                - Rigault de Genouilly
+                - Savorgnan de Brazza
+            * Added to 36 scenario construction queue:
+                * La Melpomène class
+                    * La Melpomène
+                    * La Pomone
+                    * La Flore
+                    * L'Iphigénie
+                    * La Bayonnaise
+                    * La Bombarde
+                    * L'Incomprise
+                    * La Poursuivante
+                    * La Cordelière
+                    * Baliste
+                    * Branlebas
+                    * Bouclier
+                * Commandant Teste class AV:
+                    * Commandant Teste (80% ready, was a minor refit until August 1936)
+                * Dunkerque class BC:
+                    * Strassbourg
+                * La Galissonnière class CL:
+                    * Georges Leygues
+                Redoutable Class SS (set production amount of Le Conquérant, Sfax and Casabianca all to 1):
+                    * Le Héros
+                    * Agosta
+                    * Le Tonnant
+                    * Bévéziers
+                    * Ouessant
+                    * Sidi-Ferruch
+        * Modified Classes:
+            * 630 Series
+                * Engine 1->2
+            * Chacal Class
+                * DD1->DD2
+                * Battery 1->2
+            * Le Fantasque Class
+                * DD1->DD2
+            * Duguay-Trouin Class
+                * Engine 1->2
+                * Torpedo 1->2
+            * Émile Bertin Class
+                * Engine 1->2
+                * Added floatplane launcher 1
+            * La Galissonnière
+                * CL1->CL2
+                * Added torpedo 1
+            * Suffren Class
+                * Engine 1->2
+            * Algerie Class
+                * CA1->CA2
+                * Engine 1->2
+                * Armor 1->2
+            * Bretagne Class
+                * BB battery 1 added
+        * Modified Ships:
+            * Suffren class to Duquesne class:
+                * Duquesne
+                * Tourville
+            * Duguay-Trouin class to Jeanne d'Arc class:
+                * Jeanne d'Arc
+            * Duguay-Trouin class to Pluton class:
+                * Pluton
+            * 600 Series class to Requin class:
+                * Requin
+                * Souffleur
+                * Morse
+                * Narval
+                * Marsouin
+                * Dauphin
+                * Caïman
+                * Phoque
+                * Espadon
     * ITA:
         * Trento CLass
             * CA1->CA2
