@@ -162,18 +162,23 @@ No new ships or classes added yet, just changed existing classes
         * Sirena CLass
             * SS2->SS1
     * GER:
-        * Königsberg Class
-            * CL1->CL2
-        * Leipzig Class
-            * 2x AA 1-> 1x AA 2
-            * Added minelaying rails
-        * Admiral Hipper Class
-            * 2x AA 1-> 1x AA 2
-            * Engine 1->2
-            * Added 2x secondaries 1
-            * Torpedo 1
-        * Zerstörer 1936 Class
-            * Torpedo 1->2
+        * Tech:
+            * Starts with 1936 BB/BC armor tech researched
+        * Modified Classes:
+            * Königsberg Class
+                * CL1->CL2
+            * Leipzig Class
+                * 2x AA 1-> 1x AA 2
+                * Added minelaying rails
+            * Admiral Hipper Class
+                * 2x AA 1-> 1x AA 2
+                * Engine 1->2
+                * Added 2x secondaries 1
+                * Torpedo 1
+            * Zerstörer 1936 Class
+                * Torpedo 1->2
+        * Modified Ships:
+            * Changed Pride of the Fleet from Admiral Scheer to Deutschland
     * JAP:
         * Techs:
             * Starts with 1936 DD tech researched
