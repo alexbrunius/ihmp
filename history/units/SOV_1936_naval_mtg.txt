@@ -17,6 +17,10 @@ units= {
 			# 2ya Flotiliya Esmintsev
 			ship = { name = "Izyaslav" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Fidonisi Class" } } }
 			ship = { name = "Kalinin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Fidonisi Class" } } }
+			# Uragan Class
+			ship = { name = "Uragan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Uragan Class" } } }
+			ship = { name = "Smerch" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Uragan Class" } } }
+			ship = { name = "Groza" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Uragan Class" } } }
 		}	
 		task_force = {	
 			name = "Severnyy Podvodniy Flot"
@@ -51,7 +55,11 @@ units= {
 			ship = { name = "Lenin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Orfey Class" } } }		
 			ship = { name = "Voykov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Orfey Class" } } }		
 			ship = { name = "Rykov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Orfey Class" } } }		
-			ship = { name = "Karl Libknekht" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Orfey Class" } } }		
+			ship = { name = "Karl Libknekht" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Orfey Class" } } }
+			# Uragan Class
+			ship = { name = "Taifun" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Uragan Class" } } }
+			ship = { name = "Tsiklon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Uragan Class" } } }
+			ship = { name = "Vikhr'" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Uragan Class" } } }		
 		}	
 		task_force = {	
 			name = "Baltiyskiy Podvodniy Flot"
@@ -103,6 +111,10 @@ units= {
 			ship = { name = "Chervona Ukraina" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Chervona Ukraina Class" } } }
 			ship = { name = "Komintern" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Komintern Class" } } }
 			ship = { name = "Bug" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Bug Class" } } }
+			# Uragan Class
+			ship = { name = "Shkval" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Uragan Class" } } }
+			ship = { name = "Shtorm" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Uragan Class" } } }
+			ship = { name = "Metel'" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Uragan Class" } } }	
 		}	
 		task_force = {	
 			name = "Chernomorskiy Podvodniy Flot"
@@ -135,6 +147,10 @@ units= {
 			# 8ya Flotiliya Esmintsev
 			ship = { name = "Uritskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Orfey Class" } } }
 			ship = { name = "Stalin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Orfey Class" } } }
+			# Uragan Class
+			ship = { name = "V'yuga" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Uragan Class" } } }
+			ship = { name = "Buran" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Uragan Class" } } }
+			ship = { name = "Grom" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Uragan Class" } } }	
 		}	
 		task_force = {	
 			name = "Tihookyeanskiy Podvodniy Flot"
@@ -188,6 +204,73 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.60
+		amount = 2
+	}
+	# Uragan Class
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "SOV"
+			version_name = "Uragan Class"
+		}
+		name = "Burya"
+		requested_factories = 1
+		progress = 0.60
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "SOV"
+			version_name = "Uragan Class"
+		}
+		name = "Molniya"
+		requested_factories = 1
+		progress = 0.60
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "SOV"
+			version_name = "Uragan Class"
+		}
+		name = "Purga"
+		requested_factories = 1
+		progress = 0.60
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "SOV"
+			version_name = "Uragan Class"
+		}
+		name = "Zarnitsa"
+		requested_factories = 1
+		progress = 0.60
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "SOV"
+			version_name = "Uragan Class"
+		}
+		name = "Sneg"
+		requested_factories = 1
+		progress = 0.20
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "SOV"
+			version_name = "Uragan Class"
+		}
+		name = "Tucha"
+		requested_factories = 1
+		progress = 0.20
 		amount = 2
 	}
 	#CA Kirov Class (Kirov)

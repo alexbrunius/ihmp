@@ -363,23 +363,49 @@ No new ships or classes added yet, just changed existing classes
                 * Yudachi (under construction in 36)
                 * Kawakaze (under construction in 36)
     * SOV:
-        * Starts with 1936 CA/CL tech researched
-        * Starts with 1936 torpedo tech researched
-        * Series II Leninets
-            * SS2-> SS1
-        * Orfey Class
-            * Added minelaying rails
-        * Leningrad & Minsk Class
-            * Added torpedo 2
-            * Added minelaying rails
-        * Chervona Ukraina Class
-            * Added armour 1
-            * Added secondaries 1
-            * Added floatplane launcher 1
-        * Marti Class
-            * Added 2x minelaying rails
-        * Kirov Class
-            * CA1->CA2
+        * Tech
+            * Starts with 1936 CA/CL tech researched
+            * Starts with 1936 torpedo tech researched
+        * Added Classes:
+            * Uragan class: light ship hull I. Modules: engine I, light battery I, fire control, torpedo I, depth charges, minelaying rail.
+        * Added Ships:
+            12x Uragan class (deployment according to Wikipedia entry about them):
+                * Uragan (appartently, Severnyy Flot TF)
+                * Smerch (appartently, Severnyy Flot TF)
+                * Groza (appartently, Severnyy Flot TF)
+                * Taifun (appartently, Baltiyskiy Flot TF)
+                * Tsiklon (appartently, Baltiyskiy Flot TF)
+                * Vikhr' (appartently, Baltiyskiy Flot TF)
+                * Shkval (appartently, Chernomorskiy Flot TF)
+                * Shtorm (appartently, Chernomorskiy Flot TF)
+                * Metel' (appartently, Tikhookeanskiy Flot TF)
+                * V'yuga (appartently, Tikhookeanskiy Flot TF)
+                * Buran (appartently, Tikhookeanskiy Flot TF)
+                * Grom (appartently, Tikhookeanskiy Flot TF)
+            * Added to 36 scenario construction queue:
+                * 6x Uragan class:
+                    * Burya
+                    * Molniya
+                    * Purga
+                    * Zarnitsa
+                    * Sneg
+                    * Tucha
+        * Modified Classes:
+            * Series II Leninets
+                * SS2-> SS1
+            * Orfey Class
+                * Added minelaying rails
+            * Leningrad & Minsk Class
+                * Added torpedo 2
+                * Added minelaying rails
+            * Chervona Ukraina Class
+                * Added armour 1
+                * Added secondaries 1
+                * Added floatplane launcher 1
+            * Marti Class
+                * Added 2x minelaying rails
+            * Kirov Class
+                * CA1->CA2
     * USA:
         * Techs:
             * Starts with Fire Control 1 researched
