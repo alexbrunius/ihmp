@@ -1,4 +1,5 @@
 ﻿l_english:
+ DEFAULT_DESC:0 "Vanilla Setting"
  ALT_HISTORY_FOCUS:0 "Alternative History National Focus"
  ALT_HISTORY_ALLOWED_DESC:0 "Alternative History National Focuses are allowed"
  ALT_HISTORY_BLOCKED_DESC:0 "Alternative History National Focuses are blocked"
@@ -127,5 +128,9 @@
  AI_DISBAND_DIVISIONS:0 "Disband AI Divisions"
  RULE_OPTION_DISBAND:0 "Disband AI Divisions"
  DISBAND_DESC:0 "Disband uselss AI divisions on startup (equipment and manpower gets refunded), like cavalary and Light Tanks of minors. Keep the small AIs simple with mostly infantry."
+ EASTERN_OCCUPAITONS:0 "Eastern occupation"
  EASTERN_OCCUPAITONS_HISTORICAL_DESC:0 "Only the harshest occupation laws are allowed on Soviet cores for fascist nations"
  EASTERN_OCCUPAITONS_FREE_DESC:0 "Any occupation laws are allowed on Soviet cores"
+ AGRARIAN_SOCIETY:0 "Agrarian Societies"
+ RULE_OPTION_ADDED_AGRARIAN_SOCIETY:0 "Activated Agrarian Societies"
+ ADDED_AGRARIAN_SOCIETY_DESC:0 "Various asiatic and some western nations get the agrarian society modifier, which reduces manpower and production of those nations."t."
