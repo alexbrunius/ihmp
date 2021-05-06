@@ -36,6 +36,43 @@ No new ships or classes added yet, just changed existing classes
             * River class SS: sub hull II. Torpedo I. Engine I.
         * Added Ships:
             * HMAS Albatross (Albatross class AV)
+            * S-class DD (5 ships scrapped in 1937-38:
+                * HMS Rowena was scrapped 1937. In 1936 she was part of the Nore Fleet.
+                * HMS Torrid was scrapped 1937. In 1936 she was part of the Nore Fleet.
+                * HMS Thruster was scrapped 1937. In 1936 she was part of the Nore Fleet.
+                * HMS Searcher was scrapped in 1938. In 1936 she was part of the Reserve fleet at Portsmouth.
+                * HMS Tyrant was scrapped in 1938. In 1936 she was part of the Reserve fleet at Portsmouth.
+                V/W class DD (1 ship):
+                * HMS Walrus (V/W class DD) was damaged beyond repair by a storm in 1938. In 1936 she was part of the Rosyth Escort Force.
+            8 H/L class SS: 8 L class-submarines (O/P/R class in the game) were scrapped at various points between 1936 and 1939 (They should be part of one of the submarine task forces, 2nd Submarine Flotilla OR 5th Submarine Flotilla that have H/L class boats)
+                * HMS L18
+                * HMS L19
+                * HMS L21
+                * HMS L53
+                * HMS L54
+                * HMS L56
+                * HMS L69
+                * HMS L71
+            * Added to 36 scenario construction queue:
+                * Add HMS Malaya to Queen Elizabeth (Semi-Modernized) class in refit at around 90% complete in '36 (Remove her from the fleet)
+                * 2 more Town class CL:
+                    * HMS Newcastle
+                    * HMS Sheffield
+                * 9 more E/F/G/H/I class DD:
+                    * HMS Hardy
+                    * HMS Hasty
+                    * HMS Havock
+                    * HMS Hereward
+                    * HMS Hero
+                    * HMS Hostile
+                    * HMS Hotspur
+                    * HMS Hunter
+                    * HMS Hyperion
+                * 2 more S-class SS:
+                    * HMS Spearfish
+                    * HMS Sunfish
+                * 1 more Grampus class SS:
+                    * HMS Rorqual
         * Techs:
             * Starts with 1936 BB/BC tech researched
             * Starts with 1936 torpedo tech researched
