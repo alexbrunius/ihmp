@@ -232,38 +232,169 @@ No new ships or classes added yet, just changed existing classes
                 * Phoque
                 * Espadon
     * ITA:
-        * Trento CLass
-            * CA1->CA2
-            * Engine 1->2
-            * Added torpedo 1
-        * Zara CLass
-            * CA1->CA2
-        * Bolzano CLass
-            * CA1->CA2
-            * Added torpedo 1
-            * Floatplane launcher 1->2
-        * Giussano CLass
-            * CL1->CL2
-        * Montecuccoli CLass
-            * Armour 0->1
-        * Duca degli Abruzzi CLass
-            * Armour 1->2
-        * Curatone CLass
-            * Added minelaying rails
-        * Navigatori CLass
-            * DD1->DD2
-            * DD Battery 1->2
-            * Engine 1->2
-        * Maestrale CLass
-            * DD1->DD2
-            * Added minelaying rails
-        * Mameli CLass
-            * SS1->SS2
-        * Bandiera CLass
-            * SS1->SS2
-            * 2x Torpedo 1->1x Torpedo 2
-        * Sirena CLass
-            * SS2->SS1
+        * Added Classes:
+            * Giuseppe Miraglia class AV: cruiser hull I. Modules: engine I, light battery I, AA I, fire control, 2x catapult I.
+            * Eritrea class SL: cruiser hull I. Modules: engine I, fire control, light battery I, AA I.
+            * Sella class DD: light ship hull I. Modules: engine I. fire control. light battery I. AA I. torpedo I. minelaying rails. depth charges.
+            * Mirabello/Leone class DD: light ship hull II. Modules: engine I. fire control. 2x light battery I. AA I. torpedo I. Minelaying rails.
+            * Freccia/Folgore class DD: light ship hull I. Modules: engine II. fire control. light battery I. AA I. torpedo I. depth charges. Minelaying rails.
+            * Spica class TB: light ship hull I. Modules: engine I. fire control. light battery I. AA II. torpedo I. minelaying rails. depth charge
+            * Pegaso class TB: light ship hull I. Modules: engine I. fire control. light battery I. AA II. torpedo I. depth charge module.
+            * Aquila/Poerio class DD: exactly the same design as the existing Spanish Melilla class and Romanian Marasti Class.
+            * Albatros class sub-chaser: light ship hull I. Modules: engine I, light battery I, fire control, depth charges.
+            * H class SS: same design as the existing Mameli class.
+            * Archimede class SS: same design as the existing Spanish General Mola class.
+            * X class SM: Level I hull with torpedo I and minelaying tubes. Obsolete.
+            * Bragadin class SM: Level II hull with torpedo I and minelaying tubes.
+        * Added Ships:
+            * Added to 36 scenario construction queue:
+                * Spica Class:
+                    * RCT Vega
+                    * RCT Sagittario  
+                    * RCT Canopo
+                    * RCT Aldebaran
+                    * RCT Altair
+                    * RCT Andromeda
+                    * RCT Antares
+                    * RCT Castore
+                    * RCT Centauro
+                    * RCT Cigno
+                    * RCT Climene
+                    * RCT Cassiopea
+                * Orsa class:
+                    * RCT Procione
+                    * RCT Orione
+                    * RCT Orsa
+                    * RCT Pegaso
+                * Sirena class (Historically Perla, Argo and Adua classes coastal Subs):
+                    * RSmg Ambra
+                    * RSmg Berillo
+                    * RSmg Corallo
+                    * RSmg Diaspro
+                    * RSmg Gemma
+                    * RSmg Iride
+                    * RSmg Malachite
+                    * RSmg Onice
+                    * RSmg Perla
+                    * RSmg Turchese
+                    * RSmg Velella
+                    * RSmg Adua
+                    * RSmg Alagi
+                    * RSmg Argo
+                    * RSmg Aradam
+                    * RSmg Axum
+                    * RSmg Dagabur
+                    * RSmg Dessiè
+                    * RSmg Macallè
+            * 2 Archimede class SS:
+                * Galileo Ferraris
+                * Galileo Galilei
+            * ships delivered to the Nationalists in SCW:
+                * 2 Aquila/Poerio class DD:
+                    * RCT Aquila
+                    * RCT Falco
+                * 2 Archimede class SS:
+                    * Archimede
+                    * Evangelista Torricelli
+            * 1 Giuseppe Miraglia class
+                * RN Giuseppe Miraglia
+            * 1 Mirabello/Leone class (old destroyer Premuda with similar armament):
+                * RCT Premuda (probably same TF as Carlo Mirabello and Augusto Riboty).
+            * 4 Curatone class (formerly AH navy) destroyers that were scrapped between 1937 and 39):
+                * RCT Zenson
+                * RCT Grado
+                * RCT Cortelazzo
+                * RCT Monfalcone
+            Albatros class Sub-chaser:
+                * RCT Albatros
+            H-class SS (including 2 larger but also old Pietro Micca class) :
+                * RSmg H3. She should be still in the I Gruppo Sommergibili TF.
+                * RSmg Lazzaro Mocenigo (Probably also in the I Gruppo Sommergibili TF)
+                * RSmg Luigi Galvani (Probably also in the I Gruppo Sommergibili TF)
+            Bragadin class SM:
+                * RSmg Marcantonio Bragadin
+                * RSmg Filippo Corridoni
+                * RSmg Pietro Micca
+        * Modified Classes:
+            * Trento CLass
+                * CA1->CA2
+                * Engine 1->2
+                * Added torpedo 1
+            * Zara CLass
+                * CA1->CA2
+            * Bolzano CLass
+                * CA1->CA2
+                * Added torpedo 1
+                * Floatplane launcher 1->2
+            * Giussano CLass
+                * CL1->CL2
+            * Montecuccoli CLass
+                * Armour 0->1
+            * Duca degli Abruzzi CLass
+                * Armour 1->2
+            * Curatone Class
+                * Added minelaying rails
+                * Renamed Curtatone clas
+            * Navigatori CLass
+                * DD1->DD2
+                * DD Battery 1->2
+                * Engine 1->2
+            * Maestrale CLass
+                * DD1->DD2
+                * Added minelaying rails
+                * Renamed Maestrale/Oriani Class
+            * Mameli CLass
+                * SS1->SS2
+            * Bandiera CLass
+                * SS1->SS2
+                * 2x Torpedo 1->1x Torpedo 2
+            * Sirena CLass
+                * SS2->SS1
+                * Added Torpedo 1
+        * Modified Ships:
+            * Curtatoni class to Sella class:
+                * RCT Generale Antonio Cantore
+                * RCT Generale Antonio Cascino
+                * RCT Generale Antonio Chinotto
+                * RCT Generale Carlo Montanari
+                * RCT Generale Marcello Prestinari
+                * RCT Generale Achille Papa
+                * RCT Quintino Sella
+                * RCT Francesco Crispi
+                * RCT Bettino Ricasoli
+                * RCT Giovanni Nicotera
+                * RCT Nazario Sauro
+                * RCT Francesco Nullo
+                * RCT Cesare Battisti
+                * RCT Daniele Manin
+                * RCT Aquilone
+                * RCT Euro
+                * RCT Nembo
+                * RCT Turbine
+                * RCT Espero
+                * RCT Borea
+                * RCT Zeffiro
+                * RCT Ostro
+            * Navigatori class to Mirabello/Leone class:
+                * RCT Carlo Mirabello
+                * RCT Augusto Riboty
+                * RCT Leone
+                * RCT Pantera
+                * RCT Tigre
+            * Maestrale class to Freccia/Folgore class:
+                * RCT Dardo
+                * RCT Freccia
+                * RCT Saetta
+                * RCT Strale
+                * RCT Baleno
+                * RCT Folgore
+                * RCT Fulmine
+                * RCT Lampo
+            * Maestrale class to Spica class:
+                * RCT Spica
+                * RCT Astore
+                * RCT Perseo (in construction)
+                * RCT Sirio (in construction)
     * GER:
         * Tech:
             * Starts with 1936 BB/BC armor tech researched
