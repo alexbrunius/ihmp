@@ -1803,6 +1803,28 @@ focus_tree = {
 					has_dlc = "La Resistance"
 				}
 				SPA = { add_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war } }
+				custom_effect_tooltip = ITA_transfer_ships_tt
+				set_variable = { transfer_target = SPA }
+				transfer_ship = {
+					prefer_name = "RSmg Archimede"
+					type = submarine
+					target = transfer_target
+				}
+				transfer_ship = {
+					prefer_name = "RSmg Evangelista Torricelli"
+					type = submarine
+					target = transfer_target
+				}
+				transfer_ship = {
+					prefer_name = "RCT Aquila"
+					type = destroyer
+					target = transfer_target
+				}
+				transfer_ship = {
+					prefer_name = "RCT Falco"
+					type = destroyer
+					target = transfer_target
+				}
 			}
 		}
 	}

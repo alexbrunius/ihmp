@@ -14,3 +14,4 @@
  SOV_reduce_purge_3:0 "Significantly reduces penalty from §YOfficers Purged§!"
  USA_scientist_haven_tt:0 "Has given refuge to German or Italian scientists"
  ger_sov_treaty_not_accepted:0 "Soviets rejected the German treaty"
+ ITA_transfer_ships_tt:0 "Transfer 2 §YAquila/Poerio§! class §Ydestroyers§! and 2 §YArchimede§! class §Ysubmarines§! to §Y[SPA.GetNameDefCap]§!"
