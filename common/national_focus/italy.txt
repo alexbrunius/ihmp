@@ -1773,6 +1773,13 @@ focus_tree = {
 		cancel_if_invalid = no
 		x = 5
 		y = 1
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+			}
+		}
 		relative_position_id = ITA_victoryinETH
 		cost = 4.4
 		ai_will_do = {
@@ -1850,6 +1857,13 @@ focus_tree = {
 		}
 		x = 1
 		y = 3
+		offset = {
+			x = -1
+			y = -2
+			trigger = {
+				NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+			}
+		}
 		relative_position_id = ITA_support_nationalist_spain
 		cost = 10
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -2191,6 +2205,13 @@ focus_tree = {
 		prerequisite = { focus = ITA_bulgaria_friend }
 		x = 3
 		y = 1
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				NOT = { has_game_rule = { rule = IHMP_HISTORY option = ALLOWED } }
+			}
+		}
 		relative_position_id = ITA_bulgaria_friend
 		cost = 10
 		ai_will_do = {
