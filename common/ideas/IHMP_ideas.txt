@@ -1,5 +1,112 @@
+############################################################################################################
+#	IHMP mod - ideas
+############################################################################################################
+
 ideas = {
-	country = {		
+
+	country = {
+
+		#Agrarian Society
+		western_agrarian_society = {
+
+			picture = generic_agrarian_society
+
+			allowed = {
+				original_tag = ALB
+				original_tag = MEX
+				original_tag = NZL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				conscription_factor = -0.4
+				industrial_capacity_factory	= -0.3
+			}
+		}
+		asian_agrarian_society = {
+
+			picture = generic_agrarian_society
+
+			allowed = {
+				original_tag = PHI
+				original_tag = SIA
+				original_tag = MAL
+				original_tag = INS
+				original_tag = BHU
+				original_tag = NEP
+				original_tag = TIB
+				original_tag = SIK
+				original_tag = MON
+				original_tag = TAN
+				original_tag = AFG
+				original_tag = PER
+				original_tag = IRQ
+				original_tag = SAU
+				original_tag = YEM
+				original_tag = OMA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				conscription_factor = -0.5
+				industrial_capacity_factory = -0.4
+			}
+		}
+		
+		# Surrender Mechanic
+		POL_surrender = {
+			
+			allowed = {
+				tag = POL
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				surrender_limit = -1.0
+			}
+		}
+		
+		FRA_surrender = {
+			
+			allowed = {
+				tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				surrender_limit = -1.0
+			}
+		}
+
+		# Soviet Shock
 		state_of_chock = {
 			removal_cost = -1
 
@@ -153,5 +260,5 @@ ideas = {
 				planning_speed = -0.2
 			}
 		}
-	}	
+	}
 }

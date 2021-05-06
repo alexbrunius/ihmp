@@ -74,3 +74,18 @@ EASTERN_OCCUPAITONS = {
 		desc = "EASTERN_OCCUPAITONS_FREE_DESC"
 	}
 }
+
+AGRARIAN_SOCIETY = {
+	name = "AGRARIAN_SOCIETY"
+	group = "RULE_GROUP_GAME_SETUP"
+	option = {
+		name = DEFAULT
+		text = "DEFAULT"
+		desc = "DEFAULT_DESC"
+	}
+	default = {
+		name = "ADDED_AGRARIAN_SOCIETY"
+		text = "RULE_OPTION_ADDED_AGRARIAN_SOCIETY"
+		desc = "ADDED_AGRARIAN_SOCIETY_DESC"
+	}
+}

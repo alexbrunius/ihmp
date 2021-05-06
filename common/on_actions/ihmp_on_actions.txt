@@ -498,6 +498,56 @@ on_actions = {
 					}
 				}
 			}
+			#Agrarian Society
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = Agrarian_Society
+						option = Added_Agrarian_Society
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							tag = ALB
+							tag = MEX
+							tag = NZL
+						}
+					}
+					add_ideas = western_agrarian_society
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = Agrarian_Society
+						option = Added_Agrarian_Society
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							tag = PHI
+							tag = SIA
+							tag = MAL
+							tag = INS
+							tag = BHU
+							tag = NEP
+							tag = TIB
+							tag = SIK
+							tag = MON
+							tag = TAN
+							tag = AFG
+							tag = PER
+							tag = IRQ
+							tag = SAU
+							tag = YEM
+							tag = OMA
+						}
+					}
+					add_ideas = asian_agrarian_society
+				}
+			}
 		}
 	}
 
@@ -568,6 +618,16 @@ on_actions = {
 				FRA = { remove_ideas = FRA_surrender }
 			}
 		}
+#		effect = {
+#			if = {
+#				limit = {
+#					FROM = { is_in_faction_with = CHI }
+#				}
+#				CHI = {
+#					CHI_unity_level_down = yes #adds surrender defense
+#				}					
+#			}
+#		}
 	}
 
 	# ROOT is previously capitulated country
@@ -587,6 +647,17 @@ on_actions = {
 				}
 			}
 		}
+
+#		effect = {
+#			if = {
+#				limit = {
+#					FROM = { is_in_faction_with = event_target:WTT_current_china_leader }
+#				}
+#				event_target:WTT_current_china_leader = {
+#					CHI_unity_level_up = yes #adds surrender defense
+#				}					
+#			}
+#		}
 	}
 	
 	#ROOT is winner #FROM is loser
@@ -615,7 +686,6 @@ on_actions = {
 							is_owned_by = JAP
 						}
 						remove_core_of = SHX
-						remove_core_of = PRC
 						remove_core_of = GXC
 						remove_core_of = YUN
 						remove_core_of = XSM
