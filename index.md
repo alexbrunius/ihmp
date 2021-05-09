@@ -1,7 +1,810 @@
 # Changelog:
 
-## 1.10.4.2
+## 1.10.5.0
+### Ship rework:
+    * AST:
+        * Added Classes:
+            * Albatross class AV: early cruiser hull. Modules: engine I, fire control, light battery I, 2xAA I, 2x catapult I
+        * Added Ships:
+            * HMAS Albatross (Albatross class AV)
+        * Tech:
+            * Starts with Fire Control 1 researched
+        * Modified Classes:
+            * Sydney Class
+                * Fire Control 0->1
+            * Canberra Class
+                * CL1->CL2
+                * Both CL batteries 2->1
+    * CAN:
+        * Modified Classes:
+            * Sanguenay Class 
+                * Renamed Saugenay Class
+                * Engine 2->1
+                * Added depth charges 1
+            * Added Ships:
+                * 2 old S-class DD (they were in commission until November 36 and scrapped in 1937.):
+                    * HCMS Vancouver
+                    * HCMS Champlain
+    * ENG:
+        * Added Classes:
+            * Queen Elizabeth (modernised) class BB: Heavy ship hull I. 2xHeavy Battery II. 2xAA II. Engine I. Fire control I. Secondaries II. BB Armour II. Catapult.
+            * Queen Elizabeth (semi-modernised) class BB: Heavy ship hull I. 2xHeavy Battery II. 2xAA II. Engine I. Fire control I. Secondaries II. BB Armour I. Catapult.
+            * Renown (modernised) class BC: Heavy ship hull I. 1xHeavy Battery II 1xHeavy Battery I. 2xAA II. Engine II. Fire control I. Secondaries II. BC Armour II. Catapult.
+            * Arethusa class CL: Cruiser hull II. 2x light cruiser battery I, AA I Engine II. Fire control I. Armour I. Torpedo I. Catapult.
+            * Albatross class AV: early cruiser hull. Modules: engine I, fire control, light battery I, 2xAA I, 2x catapult I
+            * Plover class MM: (light ship hull I. Modules: engine I, fire control, light battery I, AA I, 2x minelaying rails)
+            * H/L class SS: sub hull I. Torpedo I. Engine I.
+            * River class SS: sub hull II. Torpedo I. Engine I.
+        * Added Ships:
+            * HMAS Albatross (Albatross class AV)
+            * S-class DD (5 ships scrapped in 1937-38:
+                * HMS Rowena was scrapped 1937. In 1936 she was part of the Nore Fleet.
+                * HMS Torrid was scrapped 1937. In 1936 she was part of the Nore Fleet.
+                * HMS Thruster was scrapped 1937. In 1936 she was part of the Nore Fleet.
+                * HMS Searcher was scrapped in 1938. In 1936 she was part of the Reserve fleet at Portsmouth.
+                * HMS Tyrant was scrapped in 1938. In 1936 she was part of the Reserve fleet at Portsmouth.
+                V/W class DD (1 ship):
+                * HMS Walrus (V/W class DD) was damaged beyond repair by a storm in 1938. In 1936 she was part of the Rosyth Escort Force.
+            8 H/L class SS: 8 L class-submarines (O/P/R class in the game) were scrapped at various points between 1936 and 1939 (They should be part of one of the submarine task forces, 2nd Submarine Flotilla OR 5th Submarine Flotilla that have H/L class boats)
+                * HMS L18
+                * HMS L19
+                * HMS L21
+                * HMS L53
+                * HMS L54
+                * HMS L56
+                * HMS L69
+                * HMS L71
+            * Added to 36 scenario construction queue:
+                * Add HMS Malaya to Queen Elizabeth (Semi-Modernized) class in refit at around 90% complete in '36 (Remove her from the fleet)
+                * 2 more Town class CL:
+                    * HMS Newcastle
+                    * HMS Sheffield
+                * 9 more E/F/G/H/I class DD:
+                    * HMS Hardy
+                    * HMS Hasty
+                    * HMS Havock
+                    * HMS Hereward
+                    * HMS Hero
+                    * HMS Hostile
+                    * HMS Hotspur
+                    * HMS Hunter
+                    * HMS Hyperion
+                * 2 more S-class SS:
+                    * HMS Spearfish
+                    * HMS Sunfish
+                * 1 more Grampus class SS:
+                    * HMS Rorqual
+        * Techs:
+            * Starts with 1936 BB/BC tech researched
+            * Starts with 1936 torpedo tech researched
+        * Modified Classes:
+            * O/P/R Class
+                * Torpedo 1 added
+            * S Class
+                * Torpedo 1 removed
+                * Engine 1->2
+            * A/B/C/D Class
+                * DD1->DD2
+                * Engine 2->1
+            * E/F/G/H Class
+                * Renamed to E/F/G/H/I Class
+            * Danae Class
+                * Engine 1->2
+            * Leander Class
+                * Fire Control 0->1
+            * Town Class
+                * Fire Control 0->1
+                * Added CL battery 2
+            * County Class
+                * CA1->CA2
+                * Fire Control 0->1
+                * Both CA batteries 2->1
+                * Armour 1->2
+            * York Class
+                * Fire Control 0->1
+                * Cruser armour 1->2
+                * Added secondaries 1
+            * Renown Class
+                * Fire Control 0->1
+                * BB batery 1->2
+            * Admiral Class
+                * Fire Control 0->1
+                * Both BB bateries 1->2
+            * Nelson Class
+                * Fire Control 0->1
+                * Engine 2->1
+            * Queen Elizabeth Class
+                * Fire Control 0->1
+            * Revenge Class
+                * Fire Control 0->1
+        * Modified Ships:
+            * Queen Elizabeth class to Queen Elizabeth (modernised) class
+                * HMS Warspite. Moved from active Fleet to construction queue at about 60% completion
+            * County class to York class 2 ships:
+                * HMS York
+                * HMS Exeter
+            * Leander class to Arethusa class 4 ships:
+                * HMS Arethusa
+                * HMS Galatea
+                * HMS Penelope (under construction in 36)
+                * HMS Aurora (under construction in 36)
+            * V/W class to S class (Destroyer) 1 ship:
+                * HMS Sturdy
+            * O/P/R class to H/L class 12 subs:
+               * All submarines with H or L numbers
+            * O/P/R class to River class 3 ships:
+                * HMS Thames
+                * HMS Severn
+                * HMS Clyde
+            * S class (submarine) to Garmpus class (36 scenario):
+                * HMS Propoise
+                * HMS Narwhal (under construction)
+    * FRA:
+        * Tech:
+            * Starts with 1936 CL/CA tech researched
+            * Starts with 1936 CL/CA armor tech researched
+        * Added Classes:
+            * Commandant Teste class AV: cruiser hull I. Modules: engine I, fire control, light battery II, AA II, secondaries I, armor I, 3x catapult I.
+            * Bougainville class Aviso: coastal defense ship hull. Modules: engine I, fire control, light battery I, AA I. armor I. minelaying rails. catapult.
+            Alternative design for Bougainville class proposed by @Caeric : light ship hull I. Modules: engine I, fire control, light battery I, AA I. armor I. minelaying rails.
+            * Castor class MM: coastal defense ship hull. Modules: engine I, fire control, light battery I, 2x minelaying rail.
+            * Duquesne class CA: cruiser hull I. Modules: engine II. fire control. 2x Medium Battery I. AA I. torpedo I. catapult. NO armor module.
+            * Jeanne d’Arc-class CL: use the design currently named Duguay-Trouin class.
+            * Pluton class CM (from Duguay-Trouin class): same design as the existing British Adventure Class CM.
+            * La Melpomène class TB: hull I. Modules: engine II, Fire control, light battery I, AA I, torpedo I depth charges. Names: Historical Light Destroyers.
+            * Requin class SS: submarine hull II. Modules: engine I. 2x torpedo I.
+        * Added Ships:
+            * Bougainville class (first 7 units) (Apparently all in Mediterranean Sea):
+                - Bougainville
+                - Amiral Charner
+                - Dumont d'Urville
+                - D'Entrecasteaux
+                - D'Iberville
+                - Rigault de Genouilly
+                - Savorgnan de Brazza
+            * Added to 36 scenario construction queue:
+                * La Melpomène class
+                    * La Melpomène
+                    * La Pomone
+                    * La Flore
+                    * L'Iphigénie
+                    * La Bayonnaise
+                    * La Bombarde
+                    * L'Incomprise
+                    * La Poursuivante
+                    * La Cordelière
+                    * Baliste
+                    * Branlebas
+                    * Bouclier
+                * Commandant Teste class AV:
+                    * Commandant Teste (80% ready, was a minor refit until August 1936)
+                * Dunkerque class BC:
+                    * Strassbourg
+                * La Galissonnière class CL:
+                    * Georges Leygues
+                Redoutable Class SS (set production amount of Le Conquérant, Sfax and Casabianca all to 1):
+                    * Le Héros
+                    * Agosta
+                    * Le Tonnant
+                    * Bévéziers
+                    * Ouessant
+                    * Sidi-Ferruch
+        * Modified Classes:
+            * 630 Series
+                * Engine 1->2
+            * Chacal Class
+                * DD1->DD2
+                * Battery 1->2
+            * Le Fantasque Class
+                * DD1->DD2
+            * Duguay-Trouin Class
+                * Engine 1->2
+                * Torpedo 1->2
+            * Émile Bertin Class
+                * Engine 1->2
+                * Added floatplane launcher 1
+            * La Galissonnière
+                * CL1->CL2
+                * Added torpedo 1
+            * Suffren Class
+                * Engine 1->2
+            * Algerie Class
+                * CA1->CA2
+                * Engine 1->2
+                * Armor 1->2
+            * Bretagne Class
+                * BB battery 1 added
+        * Modified Ships:
+            * Suffren class to Duquesne class:
+                * Duquesne
+                * Tourville
+            * Duguay-Trouin class to Jeanne d'Arc class:
+                * Jeanne d'Arc
+            * Duguay-Trouin class to Pluton class:
+                * Pluton
+            * 600 Series class to Requin class:
+                * Requin
+                * Souffleur
+                * Morse
+                * Narval
+                * Marsouin
+                * Dauphin
+                * Caïman
+                * Phoque
+                * Espadon
+    * ITA:
+        * Added Classes:
+            * Giuseppe Miraglia class AV: cruiser hull I. Modules: engine I, light battery I, AA I, fire control, 2x catapult I.
+            * Eritrea class SL: cruiser hull I. Modules: engine I, fire control, light battery I, AA I.
+            * Sella class DD: light ship hull I. Modules: engine I. fire control. light battery I. AA I. torpedo I. minelaying rails. depth charges.
+            * Mirabello/Leone class DD: light ship hull II. Modules: engine I. fire control. 2x light battery I. AA I. torpedo I. Minelaying rails.
+            * Freccia/Folgore class DD: light ship hull I. Modules: engine II. fire control. light battery I. AA I. torpedo I. depth charges. Minelaying rails.
+            * Spica class TB: light ship hull I. Modules: engine I. fire control. light battery I. AA II. torpedo I. minelaying rails. depth charge
+            * Pegaso class TB: light ship hull I. Modules: engine I. fire control. light battery I. AA II. torpedo I. depth charge module.
+            * Aquila/Poerio class DD: exactly the same design as the existing Spanish Melilla class and Romanian Marasti Class.
+            * Albatros class sub-chaser: light ship hull I. Modules: engine I, light battery I, fire control, depth charges.
+            * H class SS: same design as the existing Mameli class.
+            * Archimede class SS: same design as the existing Spanish General Mola class.
+            * X class SM: Level I hull with torpedo I and minelaying tubes. Obsolete.
+            * Bragadin class SM: Level II hull with torpedo I and minelaying tubes.
+        * Added Ships:
+            * Added to 36 scenario construction queue:
+                * Spica Class:
+                    * RCT Vega
+                    * RCT Sagittario  
+                    * RCT Canopo
+                    * RCT Aldebaran
+                    * RCT Altair
+                    * RCT Andromeda
+                    * RCT Antares
+                    * RCT Castore
+                    * RCT Centauro
+                    * RCT Cigno
+                    * RCT Climene
+                    * RCT Cassiopea
+                * Orsa class:
+                    * RCT Procione
+                    * RCT Orione
+                    * RCT Orsa
+                    * RCT Pegaso
+                * Sirena class (Historically Perla, Argo and Adua classes coastal Subs):
+                    * RSmg Ambra
+                    * RSmg Berillo
+                    * RSmg Corallo
+                    * RSmg Diaspro
+                    * RSmg Gemma
+                    * RSmg Iride
+                    * RSmg Malachite
+                    * RSmg Onice
+                    * RSmg Perla
+                    * RSmg Turchese
+                    * RSmg Velella
+                    * RSmg Adua
+                    * RSmg Alagi
+                    * RSmg Argo
+                    * RSmg Aradam
+                    * RSmg Axum
+                    * RSmg Dagabur
+                    * RSmg Dessiè
+                    * RSmg Macallè
+            * 2 Archimede class SS:
+                * Galileo Ferraris
+                * Galileo Galilei
+            * ships delivered to the Nationalists in SCW:
+                * 2 Aquila/Poerio class DD:
+                    * RCT Aquila
+                    * RCT Falco
+                * 2 Archimede class SS:
+                    * Archimede
+                    * Evangelista Torricelli
+            * 1 Giuseppe Miraglia class
+                * RN Giuseppe Miraglia
+            * 1 Mirabello/Leone class (old destroyer Premuda with similar armament):
+                * RCT Premuda (probably same TF as Carlo Mirabello and Augusto Riboty).
+            * 4 Curatone class (formerly AH navy) destroyers that were scrapped between 1937 and 39):
+                * RCT Zenson
+                * RCT Grado
+                * RCT Cortelazzo
+                * RCT Monfalcone
+            Albatros class Sub-chaser:
+                * RCT Albatros
+            H-class SS (including 2 larger but also old Pietro Micca class) :
+                * RSmg H3. She should be still in the I Gruppo Sommergibili TF.
+                * RSmg Lazzaro Mocenigo (Probably also in the I Gruppo Sommergibili TF)
+                * RSmg Luigi Galvani (Probably also in the I Gruppo Sommergibili TF)
+            Bragadin class SM:
+                * RSmg Marcantonio Bragadin
+                * RSmg Filippo Corridoni
+                * RSmg Pietro Micca
+        * Modified Classes:
+            * Trento CLass
+                * CA1->CA2
+                * Engine 1->2
+                * Added torpedo 1
+            * Zara CLass
+                * CA1->CA2
+            * Bolzano CLass
+                * CA1->CA2
+                * Added torpedo 1
+                * Floatplane launcher 1->2
+            * Giussano CLass
+                * CL1->CL2
+            * Montecuccoli CLass
+                * Armour 0->1
+            * Duca degli Abruzzi CLass
+                * Armour 1->2
+            * Curatone Class
+                * Added minelaying rails
+                * Renamed Curtatone clas
+            * Navigatori CLass
+                * DD1->DD2
+                * DD Battery 1->2
+                * Engine 1->2
+            * Maestrale CLass
+                * DD1->DD2
+                * Added minelaying rails
+                * Renamed Maestrale/Oriani Class
+            * Mameli CLass
+                * SS1->SS2
+            * Bandiera CLass
+                * SS1->SS2
+                * 2x Torpedo 1->1x Torpedo 2
+            * Sirena CLass
+                * SS2->SS1
+                * Added Torpedo 1
+        * Modified Ships:
+            * Curtatoni class to Sella class:
+                * RCT Generale Antonio Cantore
+                * RCT Generale Antonio Cascino
+                * RCT Generale Antonio Chinotto
+                * RCT Generale Carlo Montanari
+                * RCT Generale Marcello Prestinari
+                * RCT Generale Achille Papa
+                * RCT Quintino Sella
+                * RCT Francesco Crispi
+                * RCT Bettino Ricasoli
+                * RCT Giovanni Nicotera
+                * RCT Nazario Sauro
+                * RCT Francesco Nullo
+                * RCT Cesare Battisti
+                * RCT Daniele Manin
+                * RCT Aquilone
+                * RCT Euro
+                * RCT Nembo
+                * RCT Turbine
+                * RCT Espero
+                * RCT Borea
+                * RCT Zeffiro
+                * RCT Ostro
+            * Navigatori class to Mirabello/Leone class:
+                * RCT Carlo Mirabello
+                * RCT Augusto Riboty
+                * RCT Leone
+                * RCT Pantera
+                * RCT Tigre
+            * Maestrale class to Freccia/Folgore class:
+                * RCT Dardo
+                * RCT Freccia
+                * RCT Saetta
+                * RCT Strale
+                * RCT Baleno
+                * RCT Folgore
+                * RCT Fulmine
+                * RCT Lampo
+            * Maestrale class to Spica class:
+                * RCT Spica
+                * RCT Astore
+                * RCT Perseo (in construction)
+                * RCT Sirio (in construction)
+    * GER:
+        * Tech:
+            * Starts with 1936 BB/BC armor tech researched
+        * Modified Classes:
+            * Königsberg Class
+                * CL1->CL2
+            * Leipzig Class
+                * 2x AA 1-> 1x AA 2
+                * Added minelaying rails
+            * Admiral Hipper Class
+                * 2x AA 1-> 1x AA 2
+                * Engine 1->2
+                * Added 2x secondaries 1
+                * Torpedo 1
+            * Zerstörer 1936 Class
+                * Torpedo 1->2
+        * Modified Ships:
+            * Changed Pride of the Fleet from Admiral Scheer to Deutschland
+    * JAP:
+        * Techs:
+            * Starts with 1936 DD tech researched
+        * Added Classes:
+            * Takao class CA: use the design currently named Myoko class.
+            * Tokiwa class CM: like Izumo class but add 1 mining rails module.
+            * Chitose/Mizuho class AV: cruiser hull II. Modules: engine I, fire control, light battery I, AA I, 3x catapult I
+            * Hatsuharu class DD: light ship hull II. Modules: engine II, light battery II, fire control 0, 2x torpedo I, 1x Depth charges.
+            * Shiratsuyu class DD: light ship hull II. Modules: engine II, light battery II, fire control 0, torpedo II AND torpedo I, 1x Depth charges.
+            * Chidori/Otori class TB: (light ship hull I. Modules: engine I, light battery I, fire control, torpedo I, 1x depth charges.)
+        * Added Ships:
+            * 4 Izumo class (similar old CA used as coastal defense ships):
+                * Asama
+                * Azuma
+                * Kassuga
+                * Yakumo
+            * Tokiwa class CM:
+                * Tokiwa
+            * Chidori/Otori class (4 ships Chidori class. Deployment according to Combined Fleet. in-game TF unclear):
+                * Chidori (21st Torpedo Boat Division, 2nd Base Force, Third Fleet)
+                * Manazuru (21st Torpedo Boat Division, 2nd Base Force, Third Fleet)
+                * Tomozuru (21st Torpedo Boat Division, 2nd Base Force, Third Fleet)
+                * Hatsukari (21st Torpedo Boat Division, 2nd Base Force, Third Fleet)
+            * Nitto Kuchikukan class DD (Historical Momo class):
+                * Momo
+                * Kashi
+                * Hinoki
+                * Yanagi
+            3 coastal submarines Kaichu IV c:
+                * Ro-53
+                * Ro-54
+                * Ro-55
+            * Added to 36 scenario construction queue:
+                * Zuiho class CV (1 ship):
+                    * Shoho
+                * Chitose/Mizuho class AV (2 ships):
+                    * Chitose
+                    * Chiyoda
+                * Rest of Shiratsuyu class (5 ships):
+                    * Harusame
+                    * Samidare
+                    * Umikaze
+                    * Yamakaze
+                    * Suzukaze
+                * First three Asashio class (3 ships):
+                    * Asashio
+                    * Michishio
+                    * Arashio
+                * Chidori/Otori class (first 4 Otori class ships):
+                    * Otori
+                    * Hiyodori
+                    * Hayabusa
+                    * Kasasagi
+        * Modified Classes:
+            * Soryu Class
+                * Engine 1->2
+            * Nagato Class
+                * Engine 1->2
+            * Kongo Class
+                * Added secondaries 1
+            * Fuso/Ise Class
+                * Added BB battery 1
+                * Added secondaries 1
+            * Myoko Class
+                * 2x torpedo 1->1x torpedo 2
+            * Aoba Class
+                * Renamed Furutaka/Aoba CLass
+                * CL battery 1->2
+            * Tone Class
+                * Both CA batteries 2->1
+            * Mogami Class
+                * CA2->CL2
+                * Both CA batteries 2 -> CL batteries 2
+            * Sendai Class
+                * Engine 1->2
+                * Added secondaries 1
+            * Tenryu Class
+                * Engine 1->2
+            * Kuma/Nagara Class
+                * Engine 1->2
+                * Removed CL battery 1
+                * Added secondaries 1
+            * Fubuki Class
+                * DD1->DD2
+            * Kaidai III Class
+                * SS1->SS2
+            * I-121 Class
+                * Renamed Kiraisen Class
+                * SS1->SS2
+            * Momi Class:
+                * Rename to Nitto Kuchikukan Class
+            * Mutsuki Class
+                * Rename to Minekaze Class
+            * Ro-26 Class
+                * Rename to Kaichu IV Class
+        * Modified Ships:
+            * The submarine hull numbers were changed (increased by 100) in 1942. In both scenarios, all boats with an I prefix should have two-digit numbers (just remove the first 1 in all three digit-numbers)
+            Myoko class to Takao class (4 ships):
+                * Takao
+                * Atago
+                * Maya
+                * Chokai
+            Mutsuki class to Nitto Kuchikukan class (currently called Momi class):
+                * Yugao
+            Fubuki class to Hatsuharu class (6 ships):
+                * Hatsuharu
+                * Nenohi
+                * Wakaba
+                * Hatsushimo
+                * Ariake
+                * Yugure
+            Fubuki class to Shiratsuyu class (5 under construction):
+                * Shiratsuyu (under construction in 36)
+                * Shigure (under construction in 36)
+                * Murasame (under construction in 36)
+                * Yudachi (under construction in 36)
+                * Kawakaze (under construction in 36)
+    * SOV:
+        * Tech
+            * Starts with 1936 CA/CL tech researched
+            * Starts with 1936 torpedo tech researched
+        * Added Classes:
+            * Uragan class: light ship hull I. Modules: engine I, light battery I, fire control, torpedo I, depth charges, minelaying rail.
+        * Added Ships:
+            12x Uragan class (deployment according to Wikipedia entry about them):
+                * Uragan (appartently, Severnyy Flot TF)
+                * Smerch (appartently, Severnyy Flot TF)
+                * Groza (appartently, Severnyy Flot TF)
+                * Taifun (appartently, Baltiyskiy Flot TF)
+                * Tsiklon (appartently, Baltiyskiy Flot TF)
+                * Vikhr' (appartently, Baltiyskiy Flot TF)
+                * Shkval (appartently, Chernomorskiy Flot TF)
+                * Shtorm (appartently, Chernomorskiy Flot TF)
+                * Metel' (appartently, Tikhookeanskiy Flot TF)
+                * V'yuga (appartently, Tikhookeanskiy Flot TF)
+                * Buran (appartently, Tikhookeanskiy Flot TF)
+                * Grom (appartently, Tikhookeanskiy Flot TF)
+            * Added to 36 scenario construction queue:
+                * 6x Uragan class:
+                    * Burya
+                    * Molniya
+                    * Purga
+                    * Zarnitsa
+                    * Sneg
+                    * Tucha
+        * Modified Classes:
+            * Series II Leninets
+                * SS2-> SS1
+            * Orfey Class
+                * Added minelaying rails
+            * Leningrad & Minsk Class
+                * Added torpedo 2
+                * Added minelaying rails
+            * Chervona Ukraina Class
+                * Added armour 1
+                * Added secondaries 1
+                * Added floatplane launcher 1
+            * Marti Class
+                * Added 2x minelaying rails
+            * Kirov Class
+                * CA1->CA2
+    * USA:
+        * Techs:
+            * Starts with Fire Control 1 researched
+            * Starts with 1936 torpedo tech researched
+        * Added Classes:
+            * Wyoming class BB: use the design currently used for New York class BB
+            * Wright class AV: early cruiser hull. Modules: engine I, fire control, light battery I, AA I, 3x catapult I, tagged as obsolete.
+            * Langley class AV: early cruiser hull. Modules: engine I, fire control, light battery I, 3x catapult II
+            * Porter class DD: light ship hull II. Modules: engine II, 2xlight battery II, AA I, fire control 0, sonar I, torpedo II, 1x Depth Charges)
+            * Mahan class DD: light ship hull II. Modules: engine II, light battery II, AA I, fire control 0, sonar I, torpedo II AND Torpedo I, 1x Depth Charges.
+            * Flush decker DM class DM: light ship hull I. Modules: engine I, light battery I, fire control 0, 2x minelaying rails.
+            * Argonaut class SM: Submarine hull II. Torpedo I. Engine I. Mine tubes.
+        * Added Ships:
+            * 9 Clemson class DD
+                * USS Lea should be in the Pacific Reserve Destroyers TF.
+                * USS Gwin: In reserve at Philadelphia (Atlantic Reserve Destroyers TF).
+                * USS Kimberly: In reserve at Philadelphia (Atlantic Reserve Destroyers TF).
+                * USS Charles V. Gridley: In reserve at Philadelphia (Atlantic Reserve Destroyers TF). (actual name was USS Gridley, same as the new Gridley class destroyer not yet laid down)
+                * USS Taylor: active: TF unclear. part of the Atlantic fleet in 36, later served in the Caribbean in 1937)
+                * USS Bell: In reserve at Philadelphia (Atlantic Reserve Destroyers TF).
+                * USS Champlin: In reserve at San Diego (Pacific Reserve Destroyers TF).
+                * USS Seth Thompson: active, part of the Asiatic Fleet TF in the Philippines.
+                * USS James K. Paulding: In reserve at Philadelphia (Atlantic Reserve Destroyers TF).
+            * 15 O/R/S class (current name: S class) SS, 14 in reserve at Philadelphia (Atlantic Reserve Submarines TF):
+                * USS R-8
+                * USS R-12
+                * USS R-14
+                * USS R-15
+                * USS R-16
+                * USS R-17
+                * USS R-18
+                * USS O-1
+                * USS S-3
+                * USS S-6
+                * USS S-7
+                * USS S-8
+                * USS S-9
+                * USS S-10
+                * USS S-19: In reserve at Pearl Harbor (the 4th Submarine Squadron TF)
+            * Mine force:
+                * 10 ships total (6 old ones in reserve):
+                    * 4 in the Pacific Reserve Fleet TF:
+                        * USS Stribling
+                        * USS Ingraham
+                        * USS Anthony
+                        * USS Sproston
+                    * 2 in Atlantic Reserve Destroyers TF
+                        * USS Israel
+                        * USS Lansdale
+                    * 4 newest form a New TF: Mine Squadron 1 (part of the Battle Force fleet accprding to destroyer history):
+                        * USS Gamble
+                        * USS Ramsay
+                        * USS Montgomery
+                        * USS Breese
+                        * USS Oglala (Oglala class CM) should be in this TF as well.
+            * Added to 36 scenario construction queue:
+                *Brooklyn class CL (7 ships):
+                    * USS Brooklyn
+                    * USS Philadelphia
+                    * USS Savannah
+                    * USS Nashville
+                    * USS Phoenix
+                    * USS Boise
+                    * USS Honolulu
+                *Rest of Porter class DD (4 ships):
+                    * USS Selfridge
+                    * USS McDougal
+                    * USS Winslow
+                    * USS Balch
+                *Rest of Mahan class DD (9 ships):
+                    * USS Drayton
+                    * USS Lamson
+                    * USS Reid
+                    * USS Tucker
+                    * USS Downes
+                    * USS Smith
+                    * USS Preston
+                    * USS Dunlap
+                    * USS Fanning
+                *Rest of Porpoise class SS (6 ships):
+                    * USS Perch
+                    * USS Pickerel
+                    * USS Permit
+                    * USS Plunger
+                    * USS Pollack
+                    * USS Pompano
+        * Modified Classes:
+            * Farragut Class
+                * DD1->DD2
+            * Pensacola Class
+                * Renamed Pensacola/Northhampton Class
+                * Both CA batteries 1->2
+            * Portland Class
+                * Both CA batteries 1->2
+            * New Orleans Class
+                * Engine 1->2
+                * Renamed Astoria Class
+            * New York Class
+                * Added BB battery 1
+            * Pennsylvania Class
+                * Added BB battery 1
+                * Removed secondaries 1
+                * Renamed Standard Class
+            * Colorado Class
+                * Removed secondaries 1
+            * S Class
+                * Renamed O/R/S class
+        * Modified Ships:
+            * New York class to Wyoming class:
+                * USS Arkansas
+            * Farragut class to Porter class (4 ships under construction):
+                * USS Porter
+                * USS Phelps
+                * USS Clark
+                * USS Moffett
+            * Farragut class to Mahan class (9 ships under construction):
+                * USS Mahan
+                * USS Cummings
+                * USS Flusser
+                * USS Case
+                * USS Conyngham
+                * USS Cassin
+                * USS Shaw
+                * USS Cushing
+                * USS Perkins
+            * Barracuda class to Argonaut class:
+                * USS Argonaut
 
+New features:
+- Made Spanish missions visible to Germany, Italy and Soviet Union without them aborting immediately. Effects still only affect the Spains.
+- Added Norse and Wagnerian panzer division names for Germany.
+- Increased low/medium fuel icon saturation, should now be more easily discernible.
+- Added 7 day military access from Vichy to Allies.
+- Removed the collaboration icon from war overview to prevent intel leaking.
+- World tension should now show 1 decimal place where relevant.
+- UK now can run the coup in North Africa operation. Free France still needs to do the NF and decision to unlock it. The operation is gated that not a single state from Rio di Oro to Egypt is controlled by an Enemy of UK Vichy isn't allowed to be at war with UK for that operation (then just conquer it).
+- Added agrarian society ideas for several Asiatic and some western countries.
+- Support Nat. Spain NF now transfers 2 DDs and 2 submarines from ITA to Nat. Spain.
+
+Balance:
+- Increased Embargo Strength to -150 trade influence.
+- Removed Anarchist Uprising as a separate nation (SPC) and instead transfer 10% army and 20% stockpile to Bhutan where it gets deleted.
+- Lengthen the timer for Influence Spain to Axis or Allies by 70 days, in return Spain auto completes the Focus if the missions runs trough..
+- Made Consolidate the North not a prerequisite of Forment a Carlist split, so Nat. Spain can always prevent the Carlist uprising.
+- Lengthend the timers for switching ai_strategy_plans by 70 days for Nat. Spain, according to the changed missions lengths.
+- 1942 infantry weapons reliability 80->90%.
+- NAV bonuses movet from naval air designer to medium air designer (10% reliability and naval attack). Aichi gets additional 10% range on top of that.
+- Marco Polo Incident just creates level 3 spirit with -30% attack for Japan, instead -50%..
+- Mediterranean naval designer range penalty 25->10% and speed bonus 10->20%.
+- Removed cost increase from escort naval designer.
+- Lowered range penalty on coastal designer 50->20%.
+- Decreased cost reduction on coastal designer for capital/screen/sub 15/20/25 -> 5/10/15%.
+- Increased fuel gain penalty from undisturbed isolation 90->95%.
+- Resource extraction penalty from US great depression 20/15/10->25/20/15%.
+- Undisturbed Isolation now gives -50% research speed for synthetic resources.
+- Total Mobilisation and Women in Workforce conscription factor 15->35%.
+- Two ports north of Manilla increased from level 1 to 3.
+- Tank upgrades streamlined to have speed/SA in multiples of 2.5%.
+- Mobile tank designer: reliability 10->5%.
+- Infantry Tank Designer: SA 5->2.5%.
+- Medium Tank Designer: SA 5->2.5%.
+- Heavy Tank Designer: HA 2.5->5%, added 5% piercing.
+- HARM 1/2/3 speed 3.3/4/4->4.3/5/5.7.
+- Japanese NF carrier and battleship paths are no longer exclusive.
+- Ultimate Battleship NF now gives generic naval doctrine bonuses instead of fleet in being.
+- All Japanese Manchu NFs now take 35 days.
+- Polish militarism idea now gives 10% resistance target.
+- Claims on Yugoslavia WT 4->3, now also gives 5% stability to Italy.
+- Skilled staffer XP requirement lowered 1500->1000.
+- CAS mission XP multiplier lowered 0.0005->0.0004.
+- Max air XP per day lowered 2->1.5.
+- Hit chance for land AA against planes on CAS mission lowered from 7 to 5%.
+- Entrenchment given by recon companies lowered from 2 to 1.
+- Selective Training Act NF now only gives volunteer only, instead of limited conscription.
+- USA can go above Volunteer Only conscription only at war.
+- US Isolationist Navy penalties increased to -70/50/30% NIC output, -110/100/90% military installation construction speed, -70/50/30 naval XP gain and -90/70/50 naval doctrine research.
+- Increased starting/NF-given NIC: UK +6/+3, ITA +4/+2, JAP +4/+6, USA +2/+9.
+- Reworked the decision to blow Suez. Removed total destruction and limited damage levels to 5 stages.
+- Reduced base Panzerschiff visibility from 19.5 to 16.5, to make Deutschland Class visibility match that of Admiral Hipper (similar dimensions IRL).
+
+Fixes:
+- US can only declare war during the Panay Incident if they’re out of economic isolation, even if Japan doesn't pay compensation. They still get their Two Ocean Navy Act.
+- Fixed german localisation file for naval equipment.
+- Reworked Canada NF tree: Removed War Bonds NF. Rebranded the bonus from IF Day to "Victory Bonds". Victory Aircraft Limited requires being at war. Improved tree layout.
+- Added Oil ressource rights in Venezuela for USA and UK, which get removed if Venezuela goes to war.
+- Disabled ahistorical branches of Bulgaria Focus Tree under IHMP game rule.
+- Made the USA embargo against Japan and Germany include its subjects, so Phillipines.
+- Added new activate missions effects, so Germany, Italy and Soviet see Carlist Uprising Mission, Save Alcazar Mission, and Anarchist Uprising Mission respectively themselfs.
+- Layout improvements of Spanish NF tree.
+- Made that Pre-SCW Spain starts research Radio so both Spains have it for the SCW.
+- Changed Idea and Research Priorities for the Spains, no airplane construction for Nat. Spain anymore, but they research Formation Flying Air Doctrine to improve Lend-Leased Fighters.
+- Added changed tooltip localisation for Crush Revolution Focus.
+- Fix missing description of submarine specialist trait.
+- Fixed Transfer French Africa effects.
+- Fixed the transfer of Madagascar to Free France.
+- Fixed the transfer of Syria to Free France.
+- Made Strengthen Civilian Government visible, if Japan is democratic (by peace conference).
+- Moved minorisation of warlords to a seperate on_action, if Japan doesn't take Shanghai when capitulating China.
+- Fixed some of UK's County class cruisers being CA1 instead of CA2.
+- Fix missing localisation of Mediterranean designer.
+- Fixed one of the Australian Canberra classes being CA1 instead of CA2.
+- Germany can't do Ally Spain Focus anymore, if Italy owns Baleraric Islands. Italy still always can give back the territory to Spain, effectivly just occuping it for a while. But if Axis wants Spain in the Axis they need to give back the territory first.
+- Added back Polish Support Equipment to stockpile, after removing reco company from their starting division.
+- Two Ocean Navy and Second Vinson Act should no longer break if there are no free slots in the states they target.
+- Removed Raj starting tank tempale, as they have no tanks researched or fielded.
+- Finland always rejects Soviet demands on historical setting, starting Winter War.
+- Added 10 World Tension generated by Vichy in their first focus, so Allies can do Operation Torch against them by fabricating a wargoal.
+- Layout tweaks to Italian NF tree when Italy First branch is disabled (which it is, by default).
+- Rearranged ship modules in some designs to allow for more efficient refitting (ITA DDs, GER CLs, UK CA&BCs, US DD&BBs, JAP CL&DDs).
+
+AI:
+- Stopped AI abandoning the Naval Treaty.
+- Blocked UK/GER AI picking influence Netherlands decision.
+- US will demand compensation during the Panay Incident, Japan will pay it.
+- Made neutral support advisor avaible for the AI to pick earlier.
+- Stopped Bulgarian AI to try to pressure UK lifting their rearment-ban..
+- Since AI can't replace advisors on it's own, remove democratic advisor, after done the focus that needed democratic support, so AI can replace it with neutral support for next focus.
+- Restricted Nat. Spain AI to only building Infantry Equipment after the SCW to root out the Resistance and core back their territory.
+- Added ai_strategy_plan so the Spains don't use their fleets in the SCW to preserve fuel for lend-leased airplanes.
+- Slightly rearranged Focus Sequence for the Spains, after their reworked Focus Trees (Crush Anarchists early).
+- France will no longer go to Partial Mobilisation when on War Economy.
+- For Nationalist Spain AI, pulled "Carlist Split" focus earlier in ai_strategy_plan, because of the changed Focus Tree layout. Also with weaker initial Axis powers making Alcazar mission harder to fulfill, so start the mission after GER/ITA can send more volunteers.
+- Made Nationalist Spain accept attache from Germany and Italy directly, stopped it accepting one from Raj.
+- Removed Engineer from Polish Infantry AI Template, so AI won't aim to include that company with army xp anymore.
+- Removed Recon from starting Polish Infantry.
+- Added production ai_strategy for Poland.
+- Updated Trade Priorities for Poland.
+- Commonwealth AI now simply always follows UK to decide going for Concentrated or Dispersed Industry.
+
+## 1.10.4.2
 Fixes:
 - Fix Fate of Czechoslovakia not giving compliance in Bohemia on the historical option (releasing Slovakia).
 - Fixed some Raj focuses spawning factories in non-core states.
