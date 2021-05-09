@@ -3192,19 +3192,13 @@ focus_tree = {
 				}
 				remove_country_leader_trait = warrior_code
 			}
+			set_rule = { can_create_factions = yes }
+			create_faction = "Imperial Way"
 			random_country = {
 				limit = {
 					original_tag = GER
 					has_government = fascism
 					is_faction_leader = yes
-				}
-				if = {
-					limit = {
-						not = {
-							is_in_faction_with = ROOT
-						}
-					}
-					country_event = generic.2
 				}
 				if = {
 					limit = {
