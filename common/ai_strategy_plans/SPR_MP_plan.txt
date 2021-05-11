@@ -804,67 +804,52 @@ MP_1_No_AirUnits = {
 	}
 	ai_strategy = {
 		type = air_factory_balance
-		value = -100
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = fighter
-		value = -100
+		value = -1000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
-		value = -100
+		value = -1000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = cas
-		value = -100
+		value = -1000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = naval_bomber
-		value = -100
+		value = -1000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = tactical_bomber
-		value = -100
+		value = -1000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = strategic_bomber
-		value = -100
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = scout_plane
-		value = -100
+		value = -1000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = scout_plane
-		value = -100
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = capital_ship
-		value = -100
+		value = -1000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = capital_ship
-		value = -100
+		value = -1000
 	}
 	ai_strategy = {
-		type = unit_ratio
-		id = submarine
-		value = -100
+		type = equipment_production_factor
+		id = screen_ship
+		value = -1000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = submarine
-		value = -100
+		value = -1000
 	}
 }
 
