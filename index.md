@@ -1,5 +1,16 @@
 # Changelog:
 
+## 1.10.5.1
+New features:
+- Japanese Technological Exchange NF no longer joins Axis but creates a new faction instead.
+
+Balance:
+- Finishing Japanese Technological Exchange NF now allows licenses and LL between Axis and Japan.
+
+Fixes:
+- Spain should stop now producing planes in the SCW.
+- Soviet shock only triggers if MR pact was honoured.
+
 ## 1.10.5.0
 ### Ship rework:
     * AST:
