@@ -123,7 +123,10 @@ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 				FROM = {
 					tag = JAP
 				}
-				has_global_flag = falkenhausen_recalled
+				OR = {
+					has_global_flag = falkenhausen_recalled
+					JAP = { has_completed_focus = JAP_technological_exchange }
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = RULE_ALLOW_LICENSING_SAME_FACTION_SOVIET_ALLIES_JAP_GER_ITA
@@ -136,7 +139,10 @@ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 						is_in_faction_with = GER
 					}
 				}
-				has_global_flag = tripartite_pact
+				OR = {
+					has_global_flag = tripartite_pact
+					JAP = { has_completed_focus = JAP_technological_exchange }
+				}
 			}
 		}
 	}
@@ -260,7 +266,10 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 				FROM = {
 					tag = JAP
 				}
-				has_global_flag = falkenhausen_recalled
+				OR = {
+					has_global_flag = falkenhausen_recalled
+					JAP = { has_completed_focus = JAP_technological_exchange }
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = RULE_ALLOW_LEND_LEASE_JAPAN_AXIS
@@ -273,7 +282,10 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 						is_in_faction_with = GER
 					}
 				}
-				has_global_flag = tripartite_pact
+				OR = {
+					has_global_flag = tripartite_pact
+					JAP = { has_completed_focus = JAP_technological_exchange }
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = RULE_ALLOW_LEND_LEASE_USA_ALLIES
