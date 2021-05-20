@@ -982,6 +982,9 @@ focus_tree = {
 				NOT = { tag = SIA }
 				NOT = { tag = ALB }
 				NOT = { tag = LUX }
+				NOT = { tag = LIT }
+				NOT = { tag = LAT }
+				NOT = { tag = EST }
 			}
 		}
 	}
