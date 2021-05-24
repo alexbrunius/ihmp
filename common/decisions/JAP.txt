@@ -174,16 +174,28 @@ JAP_interservice_rivalry = {
 			factor = 1
 			modifier = {
 				factor = 10
-				has_game_rule = {
-					rule = JAP_ai_behavior
-					option = JAP_MP_1
+				OR = {
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_1
+					}
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_2
+					}
 				}
 			}
 			modifier = {
 				factor = 0
-				has_game_rule = {
-					rule = JAP_ai_behavior
-					option = JAP_MP_1
+				OR = {
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_1
+					}
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_2
+					}
 				}
 				NOT = { has_idea = JAP_mitsumasa_yonai }
 			}
@@ -256,9 +268,15 @@ JAP_interservice_rivalry = {
 			factor = 5
 			modifier = {
 				factor = 0
-				has_game_rule = {
-					rule = JAP_ai_behavior
-					option = JAP_MP_1
+				OR = {
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_1
+					}
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_2
+					}
 				}
 			}
 		}
@@ -412,19 +430,17 @@ JAP_interservice_rivalry = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 5
-				has_game_rule = {
-					rule = JAP_ai_behavior
-					option = JAP_MP_1
-				}
-			}
-			modifier = {
 				factor = 0
-				has_game_rule = {
-					rule = JAP_ai_behavior
-					option = JAP_MP_1
+				OR = {
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_1
+					}
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_2
+					}
 				}
-				NOT = { has_idea = JAP_mitsumasa_yonai }
 			}
 		}
 
@@ -461,11 +477,31 @@ JAP_interservice_rivalry = {
 		ai_will_do = {
 			factor = 3
 			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = JAP_ai_behavior
-					option = JAP_MP_1
+				factor = 2
+				OR = {
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_1
+					}
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_2
+					}
 				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_1
+					}
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_2
+					}
+				}
+				NOT = { has_idea = JAP_mitsumasa_yonai }
 			}
 		}
 
@@ -503,9 +539,15 @@ JAP_interservice_rivalry = {
 			factor = 1
 			modifier = {
 				factor = 0
-				has_game_rule = {
-					rule = JAP_ai_behavior
-					option = JAP_MP_1
+				OR = {
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_1
+					}
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_2
+					}
 				}
 				NOT = { has_idea = JAP_mitsumasa_yonai }
 			}
@@ -544,9 +586,15 @@ JAP_interservice_rivalry = {
 			factor = 1
 			modifier = {
 				factor = 0
-				has_game_rule = {
-					rule = JAP_ai_behavior
-					option = JAP_MP_1
+				OR = {
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_1
+					}
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_2
+					}
 				}
 			}
 		}
