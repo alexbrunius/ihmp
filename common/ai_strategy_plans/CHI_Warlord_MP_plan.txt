@@ -183,6 +183,76 @@ MP_Weapons_1 = {
 	}
 }
 
+SHX_focus_MAN_script = {
+	name = "Focus Mandschukuo and Mengoku"
+	desc = ""
+
+	enable = {
+		tag = SHX
+		has_game_rule = {
+			rule = WL_ai_behavior
+			option = WL_MP_1
+		}
+		has_war = no
+		PRC = {
+			is_ai = yes
+		}
+		OR = {
+			country_exists = MEN
+			country_exists = MAN
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = MEN
+		value = 200
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = MAN
+		value = 200
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = CHI
+		value = 200
+	}
+}
+
+XSM_focus_CHI_script = {
+	name = "Focus Mandschukuo and Mengoku"
+	desc = ""
+
+	enable = {
+		tag = SHX
+		has_game_rule = {
+			rule = WL_ai_behavior
+			option = WL_MP_1
+		}
+		has_war = no
+		PRC = {
+			is_ai = yes
+		}
+		country_exists = CHI
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = CHI
+		value = 200
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = PRC
+		value = -200
+	}
+}
+
 GXC_ignore_FRA_script = {
 	name = "Ignore French Border"
 	desc = "Guanxi ignores their French colonial border"

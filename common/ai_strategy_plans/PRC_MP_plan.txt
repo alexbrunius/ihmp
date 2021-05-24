@@ -15,45 +15,34 @@ PRC_MP_1 = {
 	}
 
 	ai_national_focuses = {
-		PRC_strengthen_the_central_secretariat #March 10 1936
-		PRC_agrarian_socialism #May 20 1936
-		PRC_rectification_campaign #July 30 1936
-		PRC_land_redistribution #October 10 1936
-		PRC_literacy_programs #December 20 1936
+		PRC_strengthen_the_central_secretariat
+		PRC_agrarian_socialism
+		PRC_rectification_campaign
+		PRC_land_redistribution
+		PRC_literacy_programs
 		PRC_china_medical_university
-		PRC_enforce_the_three_rules #February 30 1937
-		PRC_the_yanan_base_area #May 10 1937
-		PRC_prepare_for_war_with_japan #July 20 1937
-		PRC_ban_the_opium_trade #September 30 1937
-		PRC_abolish_the_land_rent #December 10 1937
-		PRC_protracted_warfare #February 20 1938
-		PRC_peoples_war #April 30 1938
-		PRC_maoism #July 10 1938
-		CHI_invite_foreign_investors #September 20 1938
-		PRC_revolutionary_military_commission #November 30 1938
-		PRC_central_military_commission #February 10 1939
-		PRC_peoples_liberation_army #April 20 1939
-		PRC_focus_on_china #June 30 1939
-		PRC_infiltration #September 10 1939
-		CHI_mission_to_the_soviet_union #November 20 1939
-		CHI_rapprochement_with_soviet_union #January 30 1940
-		CHI_purchase_tanks #April 10 1940
-		CHI_experimental_mechanised_unit #June 20 1940
-		CHI_combined_arms_warfare #August 30 1940
-		 #November 10 1940	
-		 #January 20 1941	
-		 #March 30 1941	
-		 #June 10 1941	
-		 #August 20 1941	
-		 #October 30 1941	
-		 #January 10	
-		 #March 20 1942	
-		 #May 30 1942	
-		 #August 10 1942	
-		 #October 20 1942	
-		 #December 30 1942	
-		 #March 10 1943	
-		 #May 20 1943	
+		PRC_the_yanan_base_area
+		PRC_focus_on_china
+		PRC_exploit_the_weak_neighbours
+		PRC_enforce_the_three_rules
+		PRC_prepare_for_war_with_japan
+		PRC_ban_the_opium_trade
+		PRC_abolish_the_land_rent
+		PRC_protracted_warfare
+		PRC_peoples_war
+		PRC_maoism
+		PRC_socialism_with_chinese_characteristics
+		CHI_invite_foreign_investors
+		PRC_revolutionary_military_commission
+		PRC_central_military_commission
+		PRC_peoples_liberation_army
+		
+		PRC_infiltration
+		CHI_mission_to_the_soviet_union
+		CHI_rapprochement_with_soviet_union
+		CHI_purchase_tanks
+		CHI_experimental_mechanised_unit
+		CHI_combined_arms_warfare
 	}
 
 	ideas = {
@@ -89,14 +78,6 @@ PRC_MP_1 = {
 		PRC_otto_braun = 0
 	}
 
-	focus_factors = {
-		CHI_one_china_policy = 0
-		PRC_socialism_with_chinese_characteristics = 0
-		PRC_proclaim_the_peoples_republic = 0
-		PRC_socialist_market_economy = 0
-		PRC_exploit_the_weak_neighbours = 0
-	}
-
 	ai_strategy = {
 		type = alliance
 		id = "JAP"
@@ -113,9 +94,107 @@ PRC_MP_1 = {
 	}
 }
 
+PRC_MP_No_War_with_Neighbours = {
+	name = "Don't attack Neighbours"
+	desc = "Don't attack Neighbours if Japan is threatening"
+
+	enable = {
+		original_tag = PRC
+		has_game_rule = {
+			rule = PRC_ai_behavior 
+			option = PRC_MP_1
+		}
+		NOT = { has_completed_focus = PRC_peoples_liberation_army }
+		JAP = { NOT = { has_completed_focus = JAP_support_the_kodoha_faction } }
+	}
+	
+	abort_when_not_enabled = yes
+
+	focus_factors = {
+		PRC_focus_on_china = 0
+	}
+}
+
+PRC_MP_Attack_Shanxi_First = {
+	name = "One war at a time"
+	desc = "First defeat Shanxi, only then attack Xibei San Ma"
+
+	enable = {
+		original_tag = PRC
+		has_game_rule = {
+			rule = PRC_ai_behavior 
+			option = PRC_MP_1
+		}
+		country_exists = SHX
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = declare_war
+		id = XSM
+		value = -999
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = XSM
+		value = -999
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = CHI
+		value = -999
+	}
+}
+
+PRC_MP_No_Own_Faction = {
+	name = "Join China against Japan"
+	desc = "Don't form your own faction, but join China against Japan"
+
+	enable = {
+		original_tag = PRC
+		has_game_rule = {
+			rule = PRC_ai_behavior 
+			option = PRC_MP_1
+		}
+		JAP = { NOT = { has_completed_focus = JAP_support_the_kodoha_faction } }
+	}
+	
+	abort_when_not_enabled = yes
+
+	focus_factors = {
+		CHI_one_china_policy = 0
+		PRC_socialism_with_chinese_characteristics = 0
+		PRC_proclaim_the_peoples_republic = 0
+		PRC_socialist_market_economy = 0
+		PRC_exploit_the_weak_neighbours = 0
+	}
+}
+
+PRC_MP_No_Japanese_Provocation = {
+	name = "No Japanese Provocation"
+	desc = "Don't provoke Japan if they are neutral, kill China first"
+
+	enable = {
+		original_tag = PRC
+		has_game_rule = {
+			rule = PRC_ai_behavior 
+			option = PRC_MP_1
+		}
+		JAP = { has_completed_focus = JAP_support_the_kodoha_faction }
+		country_exists = CHI
+	}
+	
+	abort_when_not_enabled = yes
+
+	focus_factors = {
+		PRC_anti_japanese_expedition = 0
+	}
+}
+
 PRC_MP_Silent_Worhorse = {
-	name = "PRC MP Silent Workhorse"
-	desc = "research electronic_mechanical_engineering"
+	name = "Get Silent Workhorse"
+	desc = "Get Silent Workhorse"
 
 	enable = {
 		original_tag = PRC
@@ -196,6 +275,7 @@ PRC_MP_1_Alliance = {
 			rule = PRC_ai_behavior
 			option = PRC_MP_1
 		}
+		JAP = { NOT = { has_completed_focus = JAP_support_the_kodoha_faction } }
 		is_subject = no
 	}
 

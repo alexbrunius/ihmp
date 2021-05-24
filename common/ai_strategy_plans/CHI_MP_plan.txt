@@ -28,8 +28,11 @@ CHI_MP_1_Fight = {
 		CHI_nationalism
 		CHI_foreign_threats
 		#CHI_united_front
+		CHI_prioritize_the_interior #Kodoha
+		CHI_subjugate_the_warlords # Kodoha
 		CHI_military_affairs_commission
 		CHI_army_reform
+		CHI_anti_communism #Kodoha
 		CHI_war_of_resistance
 		CHI_war_of_national_liberation
 		CHI_war_of_anti_imperialism
@@ -41,13 +44,14 @@ CHI_MP_1_Fight = {
 		CHI_the_soviet_volunteer_group
 		CHI_mining_commission
 		CHI_develop_the_hanyan_arsenal
-		CHI_mission_to_the_us
-		CHI_hire_chennault
-		CHI_invite_the_flying_tigers
+		CHI_taiyuan_arsenal
 		CHI_financial_policy
 		CHI_price_controls
 		CHI_reform_the_national_bank
 		CHI_forced_loans
+		CHI_mission_to_the_us
+		CHI_hire_chennault
+		CHI_invite_the_flying_tigers
 		CHI_french_military_mission
 		CHI_french_drill
 		CHI_rapprochement_with_soviet_union
@@ -95,6 +99,7 @@ CHI_MP_1_Fight = {
 		CHI_taiyuan_arsenal = 0
 		CHI_liaoning_arsenal = 0
 		CHI_mukden_arsenal = 0
+		CHI_mining_commission = 10
 	}
 	
 	ai_strategy = {
@@ -120,6 +125,214 @@ CHI_MP_1_Fight = {
 
 }
 
+CHI_MP_Subjugate_Warlords = {
+	name = "We must unite China again"
+	desc = "Japan is looking north, time to subjugate the broken away warlords"
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior 
+			option = CHI_MP_1
+		}
+		JAP = { has_completed_focus = JAP_support_the_kodoha_faction }
+	}
+	
+	abort_when_not_enabled = yes
+
+	focus_factors = {
+		CHI_foreign_threats = 0
+		CHI_mission_to_the_soviet_union = 0
+	}
+	ai_strategy = {
+		type = befriend
+		id = PRC
+		value = -200
+	}
+	ai_strategy = {
+		type = befriend
+		id = SHX
+		value = -200
+	}
+	ai_strategy = {
+		type = befriend
+		id = XSM
+		value = -200
+	}
+	ai_strategy = {
+		type = befriend
+		id = SIK
+		value = -200
+	}
+	ai_strategy = {
+		type = befriend
+		id = YUN
+		value = -200
+	}
+	ai_strategy = {
+		type = befriend
+		id = GXC
+		value = -200
+	}
+}
+
+CHI_MP_Attack_Guanxi_First = {
+	name = "One war at a time"
+	desc = "Attack Guanxi"
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior 
+			option = CHI_MP_1
+		}
+		JAP = { has_completed_focus = JAP_support_the_kodoha_faction }
+		country_exists = GXC
+		NOT = { has_war_with = PRC }
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = JAP
+		value = -999
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = MAN
+		value = -999
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = MEN
+		value = -999
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = PRC
+		value = -999
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = SHX
+		value = -999
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = XSM
+		value = -999
+	}
+	ai_strategy = {
+		type = declare_war
+		id = YUN
+		value = -999
+	}
+	ai_strategy = {
+		type = declare_war
+		id = SHX
+		value = -999
+	}
+	ai_strategy = {
+		type = declare_war
+		id = XSM
+		value = -999
+	}
+	ai_strategy = {
+		type = declare_war
+		id = SIK
+		value = -999
+	}
+	ai_strategy = {
+		type = declare_war
+		id = PRC
+		value = -999
+	}
+	ai_strategy = {
+		type = front_control
+		tag = GXC 
+		ratio = 1.0
+		ordertype = front
+		execution_type = rush_weak
+	}
+}
+
+CHI_MP_Attack_PRC_Second = {
+	name = "One war at a time"
+	desc = "Attack PRC"
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior 
+			option = CHI_MP_1
+		}
+		JAP = { has_completed_focus = JAP_support_the_kodoha_faction }
+		OR = {
+			NOT = { country_exists = GXC }
+			GXC = { is_subject_of = CHI }
+		}
+		country_exists = PRC
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = JAP
+		value = -999
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = SHX
+		value = -999
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = XSM
+		value = -999
+	}
+	ai_strategy = {
+		type = declare_war
+		id = SHX
+		value = -999
+	}
+	ai_strategy = {
+		type = declare_war
+		id = XSM
+		value = -999
+	}
+	ai_strategy = {
+		type = declare_war
+		id = SIK
+		value = -999
+	}
+}
+
+CHI_MP_Attack_SIK_last = {
+	name = "One war at a time"
+	desc = "Attack Xinjiang after Xibei San Ma is integrated"
+
+	enable = {
+		original_tag = CHI
+		has_game_rule = {
+			rule = CHI_ai_behavior 
+			option = CHI_MP_1
+		}
+		JAP = { has_completed_focus = JAP_support_the_kodoha_faction }
+		755 = { NOT = { is_owned_by = CHI } }
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = declare_war
+		id = SIK
+		value = -999
+	}
+}
+
+
 CHI_Japanese_Front_0 = {
 	name = "Japanese Front Bejing"
 	desc = ""
@@ -131,11 +344,10 @@ CHI_Japanese_Front_0 = {
 			option = CHI_MP_1
 		}
 		608 = { is_controlled_by = CHI }
+		JAP = { NOT = { has_completed_focus = JAP_support_the_kodoha_faction } }
 	}
 
-	abort = {
-		608 = { NOT = { is_controlled_by = CHI } }
-	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = put_unit_buffers
@@ -183,11 +395,10 @@ CHI_Japanese_Front_1 = {
 			option = CHI_MP_1
 		}
 		608 = { NOT = { is_controlled_by = CHI } }
+		JAP = { NOT = { has_completed_focus = JAP_support_the_kodoha_faction } }
 	}
 
-	abort = {
-		608 = { is_controlled_by = CHI }
-	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 	 	type = front_unit_request
@@ -220,13 +431,10 @@ CHI_Guard_Forward_Coast = {
 		609 = {
 			is_fully_controlled_by = CHI
 		}
+		JAP = { NOT = { has_completed_focus = JAP_support_the_kodoha_faction } }
 	}
 
-	abort = {
-		609 = {
-			NOT = { is_fully_controlled_by = CHI }
-		}
-	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = put_unit_buffers
@@ -255,6 +463,7 @@ CHI_Garrision_Bejing = {
 				is_fully_controlled_by = JAP
 			}
 		}
+		JAP = { NOT = { has_completed_focus = JAP_support_the_kodoha_faction } }
 	}
 
 	abort = {
@@ -264,6 +473,7 @@ CHI_Garrision_Bejing = {
 			609 = {
 				is_fully_controlled_by = JAP
 			}
+			JAP = { has_completed_focus = JAP_support_the_kodoha_faction }
 		}
 	}
 
@@ -295,6 +505,7 @@ CHI_Garrision_Shandong = {
 		743 = {
 			is_controlled_by = CHI	
 		}
+		JAP = { NOT = { has_completed_focus = JAP_support_the_kodoha_faction } }
 	}
 
 	abort = {
@@ -307,6 +518,7 @@ CHI_Garrision_Shandong = {
 			743 = {
 				NOT = { is_controlled_by = CHI }
 			}
+			JAP = { has_completed_focus = JAP_support_the_kodoha_faction }
 		}
 	}
 
@@ -336,6 +548,7 @@ CHI_Garrision_Shanghai = {
 		613 = {
 			is_controlled_by = CHI	
 		}
+		JAP = { NOT = { has_completed_focus = JAP_support_the_kodoha_faction } }
 	}
 
 	abort = {
@@ -345,6 +558,7 @@ CHI_Garrision_Shanghai = {
 			613 = {
 				NOT = { is_controlled_by = CHI }
 			}
+			JAP = { has_completed_focus = JAP_support_the_kodoha_faction }
 		}
 	}
 
@@ -371,11 +585,15 @@ CHI_MP_1_Alliance = {
 		CHI = {
 			is_subject = no
 		}
+		JAP = { NOT = { has_completed_focus = JAP_support_the_kodoha_faction } }
 	}
 
 	abort = {
-		CHI = {
-			is_subject = yes
+		OR = {
+			CHI = {
+				is_subject = yes
+			}
+			JAP = { has_completed_focus = JAP_support_the_kodoha_faction }
 		}
 	}
 
@@ -488,6 +706,24 @@ CHI_MP_Befriend_FRA = {
 				NOT = { has_completed_focus = CHI_guarantee_the_hanoi_route }
 			}
 		}
+		325 = { #Yunnan
+			CONTROLLER = {
+				OR = {
+					tag = ROOT
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		671 = { #Tonkin
+			CONTROLLER = {
+				NOT = { has_war_with = ROOT }
+				OR = {
+					original_tag = FRA
+					is_subject_of = FRA
+				}
+			}
+		}
 	}
 
 	abort = {
@@ -498,7 +734,7 @@ CHI_MP_Befriend_FRA = {
 		type = befriend
 		id = FRA
 		value = 200
-	}	
+	}
 }
 
 CHI_MP_Befriend_SOV = {
@@ -521,6 +757,7 @@ CHI_MP_Befriend_SOV = {
 				NOT = { has_completed_focus = CHI_the_soviet_volunteer_group }
 			}
 		}
+		JAP = { NOT = { has_completed_focus = JAP_support_the_kodoha_faction } }
 	}
 
 	abort = {
@@ -531,7 +768,7 @@ CHI_MP_Befriend_SOV = {
 		type = befriend
 		id = SOV
 		value = 200
-	}	
+	}
 }
 
 CHI_MP_Befriend_USA = {
@@ -564,7 +801,7 @@ CHI_MP_Befriend_USA = {
 		type = befriend
 		id = USA
 		value = 200
-	}	
+	}
 }
 
 MP_Early_PP = {
