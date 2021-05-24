@@ -1,5 +1,5 @@
 JAP_MP_1 = {
-	name = "Japan MP Plan 1"
+	name = "Japan MP Purge Kodoha"
 	desc = ""
 
 	enable = {
@@ -20,12 +20,12 @@ JAP_MP_1 = {
 		JAP_national_research_policy #October 10 1936	
 		JAP_nationalize_war_industry #December 20 1936	
 		#1937
-		#JAP_national_defense_state #February 30 1937	
+		JAP_national_defense_state #February 30 1937	
 		JAP_new_naval_estimates #May 10 1937	
 		JAP_liaison_conference #July 20 1937	
 		JAP_greater_east_asian_co_prosperity_sphere #September 30 1937
+		JAP_intervene_in_china #December 10 1937
 		JAP_army_expansion_law		
-		JAP_intervene_in_china #December 10 1937	
 		#1938
 		JAP_army_expansion
 		JAP_supremacy_of_will
@@ -63,6 +63,7 @@ JAP_MP_1 = {
 		hisaichi_terauchi = 30
 		mitsubishi = 50
 		JAP_chiune_sugihara = 0
+		JAP_hiroshi_oshima = 0
 		free_trade = 0
 		export_focus = 0
 		limited_exports = 1
@@ -89,12 +90,122 @@ JAP_MP_1 = {
 
 }
 
+JAP_MP_2 = {
+	name = "Japan MP Support Kodoha"
+	desc = ""
+
+	enable = {
+		tag = JAP
+		has_game_rule = {
+			rule = JAP_ai_behavior
+			option = JAP_MP_2
+		}
+	}
+
+	abort = {
+	}
+
+	ai_national_focuses = {
+		JAP_support_the_kodoha_faction
+		JAP_challenge_the_zaibatsus
+		JAP_national_mobilization_law
+		JAP_showa_restoration
+		JAP_imperial_arsenals
+		JAP_national_defense_state
+		JAP_national_research_policy
+		JAP_new_naval_estimates
+		JAP_prepare_for_war_with_the_soviet_union
+		JAP_join_the_london_naval_treaty
+		JAP_the_manchurian_project
+		JAP_expand_the_showa_steel_works
+		JAP_expand_manchurian_railways
+		JAP_light_industry_development
+		JAP_heavy_industry_development
+		JAP_fighter_modernization
+		JAP_range_focus
+		JAP_army_expansion_law
+		JAP_army_expansion
+		JAP_build_up_the_manchurian_army
+		JAP_create_a_manchurian_imperial_air_force
+		JAP_non_aggression_pact_with_china
+		JAP_technological_exchange
+		JAP_supremacy_of_will
+		JAP_preemptive_war
+		JAP_spiritual_mobilization
+		JAP_warrior_spirit
+		JAP_establish_the_northern_resource_area
+	}
+	
+	research = {
+		bb_tech = -500
+		cat_mobile_warfare = -1000
+		#cat_grand_battle_plan = -1000
+		cat_mass_assault = -1000
+	}
+
+	ideas = {
+		JAP_mitsumasa_yonai = 1000
+		kawasaki = 40
+		hisaichi_terauchi = 30
+		mitsubishi = 50
+		JAP_chiune_sugihara = 0
+		JAP_hiroshi_oshima = 0
+		free_trade = 0
+		export_focus = 0
+		limited_exports = 1
+		closed_economy = 0
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 0
+		war_economy = -1000
+		tot_economic_mobilisation = 1
+		disarmed_nation = 0
+		volunteer_only = 0
+		limited_conscription = 0
+	}
+
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+JAP_wants_civ = {
+	name = "Industrialize with Civs"
+	desc = ""
+	
+	enable = {
+		tag = JAP
+		has_game_rule = {
+			rule = JAP_ai_behavior
+			option = JAP_MP_2
+		}
+		date < 1938.1.1
+		has_war = no
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 40
+	}
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = -50
+	}
+}
+
 JAP_MP_IgnoreSoviet = {
 	name = "Ignore Soviets"
 	desc = ""
 
 	enable = {
-		original_tag = JAP
+		tag = JAP
 		has_game_rule = {
 			rule = JAP_ai_behavior
 			option = JAP_MP_1
@@ -114,11 +225,11 @@ JAP_MP_IgnoreSoviet = {
 }
 
 JAP_MP_Conquer_Shanxi = {
-	name = ""
+	name = "Conquer Shanxi"
 	desc = ""
 
 	enable = {
-		original_tag = JAP
+		tag = JAP
 		has_game_rule = {
 			rule = JAP_ai_behavior
 			option = JAP_MP_1
@@ -149,7 +260,7 @@ JAP_MP_Conquer_Shanxi = {
 }
 
 JAP_MP_Conquer_China = {
-	name = ""
+	name = "Conquer CHina"
 	desc = ""
 
 	enable = {
@@ -237,27 +348,27 @@ JAP_MP_Befriend_Axis = {
 		tag = JAP
 		has_game_rule = {
 			rule = JAP_ai_behavior
-			option = JAP_MP_1
+			option = JAP_MP_2
 		}
 	}
 
 	abort = {
 	}
 
-	#ai_strategy = {
-	#	type = befriend
-	#	id = GER
-	#	value = 200
-	#}
-	#ai_strategy = {
-	#	type = befriend
-	#	id = ITA
-	#	value = 200
-	#}
+	ai_strategy = {
+		type = befriend
+		id = GER
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = ITA
+		value = 200
+	}
 	ai_strategy = {
 		type = pp_spend_priority
 		id = relation	
-		value = -400
+		value = -600
 	}
 }
 
@@ -267,9 +378,15 @@ JAP_MP_1_No_LT1 = {
 
 	enable = {
 		tag = JAP
-		has_game_rule = {
-			rule = JAP_ai_behavior
-			option = JAP_MP_1
+		OR = {
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_1
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_2
+			}
 		}
 		NOT = { has_tech = improved_light_tank }
 	}
@@ -291,23 +408,28 @@ JAP_MP_1_No_IW_Fighter = {
 
 	enable = {
 		tag = JAP
-		has_game_rule = {
-			rule = JAP_ai_behavior
-			option = JAP_MP_1
+		OR = {
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_1
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_2
+			}
 		}
 		NOT = { has_tech = fighter2 }
 	}
 	abort = {
 		has_tech = fighter2
 	}
-	
+
 	ai_strategy = {
-		type = equipment_production_factor
-		id = fighter
-		value = -1000
+		type = air_factory_balance
+		value = -100
 	}
 	ai_strategy = {
-		type = unit_ratio
+		type = equipment_production_factor
 		id = fighter
 		value = -1000
 	}
@@ -319,9 +441,15 @@ JAP_MP_1_Fighter2 = {
 
 	enable = {
 		tag = JAP
-		has_game_rule = {
-			rule = JAP_ai_behavior
-			option = JAP_MP_1
+		OR = {
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_1
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_2
+			}
 		}
 		NOT = { has_tech = fighter2 }
 		date > 1939.6.1
@@ -345,26 +473,31 @@ JAP_MP_1_No_IW_Tac = {
 	desc = ""
 
 	enable = {
-		original_tag = JAP
-		has_game_rule = {
-			rule = JAP_ai_behavior
-			option = JAP_MP_1
+		tag = JAP
+		OR = {
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_1
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_2
+			}
 		}
 		NOT = { has_tech = tactical_bomber1 }
 	}
 	abort = {
 		has_tech = tactical_bomber1
 	}
-	
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = -100
+	}	
 	ai_strategy = {
 		type = equipment_production_factor
 		id = tactical_bomber
 		value = -10000
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = tactical_bomber
-		value = -1000
 	}
 }
 
@@ -373,10 +506,16 @@ JAP_MP_1_No_Bomber = {
 	desc = ""
 
 	enable = {
-		original_tag = JAP
-		has_game_rule = {
-			rule = JAP_ai_behavior
-			option = JAP_MP_1
+		tag = JAP
+		OR = {
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_1
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_2
+			}
 		}
 	}
 
@@ -390,18 +529,8 @@ JAP_MP_1_No_Bomber = {
 	}
 	ai_strategy = {
 		type = equipment_production_factor
-		id = strategic_bomber
+		id = scout_plane
 		value = -10000
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = scout_plane
-		value = -1000
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = scout_plane
-		value = -1000
 	}
 }
 
@@ -411,9 +540,15 @@ JAP_MP_No_Capitals = {
 
 	enable = {
 		tag = JAP
-		has_game_rule = {
-			rule = JAP_ai_behavior
-			option = JAP_MP_1
+		OR = {
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_1
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_2
+			}
 		}
 	}
 
@@ -421,28 +556,13 @@ JAP_MP_No_Capitals = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
-		id = capital_ship
-		value = -1000
-	}
-	ai_strategy = {
 		type = equipment_production_factor
 		id = capital_ship
 		value = -1000
 	}
 	ai_strategy = {
-		type = unit_ratio
-		id = carrier
-		value = -1000
-	}
-	ai_strategy = {
 		type = equipment_production_factor
 		id = carrier
-		value = -1000
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = submarine
 		value = -1000
 	}
 	ai_strategy = {
@@ -462,12 +582,10 @@ JAP_MP_Attack_USA_Later = {
 			rule = JAP_ai_behavior
 			option = JAP_MP_1
 		}
-		date < 1941.9.1
+		date < 1941.12.1
 	}
 
-	abort = {
-
-	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = declare_war
@@ -480,15 +598,91 @@ JAP_MP_Attack_USA_Later = {
 	}
 }
 
+JAP_MP_Attack_SOV_with_GER = {
+	name = "Attack Soviet Union with Germany"
+	desc = "Only attack Soviet Union if they are already fighting Germany"
+
+	enable = {
+		tag = JAP
+		has_game_rule = {
+			rule = JAP_ai_behavior
+			option = JAP_MP_2
+		}
+		SOV = {
+			NOT = { has_war_with = GER }
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = declare_war
+		id = SOV
+		value = -999
+	}
+	ai_strategy = {
+		type = declare_war
+		id = MON
+		value = -999
+	}
+}
+
+JAP_MP_Attack_South_Later = {
+	name = "Attack South Later"
+	desc = "Only attack Allies/China after Soviet is defeated"
+
+	enable = {
+		tag = JAP
+		has_game_rule = {
+			rule = JAP_ai_behavior
+			option = JAP_MP_2
+		}
+		SOV = {
+			exists = yes
+			is_subject = no
+			has_capitulated = no
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = declare_war
+		id = USA
+		value = -999
+	}
+	ai_strategy = {
+		type = declare_war
+		id = CHI
+		value = -999
+	}
+	ai_strategy = {
+		type = declare_war
+		id = PRC
+		value = -999
+	}
+	ai_strategy = {
+		type = declare_war
+		id = SHX
+		value = -999
+	}
+}
+
 MP_Conscription_0 = {
 	name = "Conscription Plan"
 	desc = ""
 
 	enable = {
 		tag = JAP
-		has_game_rule = {
-			rule = JAP_ai_behavior
-			option = JAP_MP_1
+		OR = {
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_1
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_2
+			}
 		}
 		has_idea = volunteer_only
 	}
@@ -508,9 +702,15 @@ MP_Conscription_1 = {
 
 	enable = {
 		tag = JAP
-		has_game_rule = {
-			rule = JAP_ai_behavior
-			option = JAP_MP_1
+		OR = {
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_1
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_2
+			}
 		}
 		has_idea = limited_conscription
 	}
@@ -531,9 +731,15 @@ MP_Conscription_2 = {
 
 	enable = {
 		tag = JAP
-		has_game_rule = {
-			rule = JAP_ai_behavior
-			option = JAP_MP_1
+		OR = {
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_1
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_2
+			}
 		}
 		has_idea = extensive_conscription
 	}
@@ -555,9 +761,15 @@ MP_Economy_0 = {
 
 	enable = {
 		tag = JAP
-		has_game_rule = {
-			rule = JAP_ai_behavior
-			option = JAP_MP_1
+		OR = {
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_1
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_2
+			}
 		}
 		has_idea = low_economic_mobilisation
 	}
@@ -577,9 +789,15 @@ MP_Economy_1 = {
 
 	enable = {
 		tag = JAP
-		has_game_rule = {
-			rule = JAP_ai_behavior
-			option = JAP_MP_1
+		OR = {
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_1
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_2
+			}
 		}
 		has_idea = partial_economic_mobilisation
 	}
@@ -600,9 +818,15 @@ MP_Economy_2 = {
 
 	enable = {
 		tag = JAP
-		has_game_rule = {
-			rule = JAP_ai_behavior
-			option = JAP_MP_1
+		OR = {
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_1
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_2
+			}
 		}
 		has_idea = war_economy
 	}
@@ -615,5 +839,36 @@ MP_Economy_2 = {
 		civilian_economy = 0
 		low_economic_mobilisation = 0
 		partial_economic_mobilisation = 0
+	}
+}
+
+MP_Economy_3 = {
+	name = "Economy Plan"
+	desc = ""
+
+	enable = {
+		tag = JAP
+		OR = {
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_1
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = JAP_MP_2
+			}
+		}
+		has_idea = tot_economic_mobilisation
+	}
+
+	abort = {
+		NOT = { has_idea = tot_economic_mobilisation }
+	}
+
+	ideas = {
+		civilian_economy = 0
+		low_economic_mobilisation = 0
+		partial_economic_mobilisation = 0
+		war_economy = -300
 	}
 }
