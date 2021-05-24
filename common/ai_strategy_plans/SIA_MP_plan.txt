@@ -15,6 +15,13 @@ SIA_MP_1 = {
 
 	ai_national_focuses = {
 		industrial_effort
+		production_effort
+		production_effort_2
+		production_effort_3
+		naval_effort
+		political_effort
+		collectivist_ethos
+		nationalism_focus
 		construction_effort
 		construction_effort_2
 		infrastructure_effort
@@ -22,13 +29,10 @@ SIA_MP_1 = {
 		extra_tech_slot
 		extra_tech_slot_2
 		construction_effort_3
-		political_effort
-		collectivist_ethos
-		nationalism_focus
 		militarism
-		production_effort
-		production_effort_2
-		production_effort_3
+		liberty_ethos
+		neutrality_focus
+		deterrence
 		aviation_effort
 		fighter_focus
 		aviation_effort_2
@@ -36,7 +40,6 @@ SIA_MP_1 = {
 		paramilitarism
 		ideological_fanaticism
 		technology_sharing
-		naval_effort
 	}
 
 	research = {
@@ -51,7 +54,7 @@ SIA_MP_1 = {
 		SIA_phot_bhahalyodin = 0
 		partial_economic_mobilisation = 25
 		war_economy = 100
-		generic_light_aircraft_manufacturer = 5
+		#generic_light_aircraft_manufacturer = 5
 		free_trade = 100
 		export_focus = 0
 		limited_exports = 0
@@ -81,6 +84,26 @@ SIA_MP_1 = {
 		submarine_effort = 0
 		cruiser_effort = 0
 		nuclear_effort = 0
+	}
+}
+
+SIA_MP_Stay_Neutral = {
+	name = "Stay Neutral"
+	desc = "Japan is looking north, so we stay neutral"
+
+	enable = {
+		tag = SIA
+		has_game_rule = {
+			rule = SIA_ai_behavior
+			option = SIA_MP_1
+		}
+		JAP = { has_completed_focus = JAP_support_the_kodoha_faction }
+	}
+	
+	abort_when_not_enabled = yes
+
+	focus_factors = {
+		collectivist_ethos = 0
 	}
 }
 
