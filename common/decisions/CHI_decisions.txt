@@ -5040,6 +5040,13 @@ CHI_integrate_the_warlords = {
 				factor = 0
 				#TODO_WTT_CODE need a trigger for daily increase of PP to see if it's okay to reduce
 			}
+			modifier = {
+				has_game_rule = {
+					rule = CHI_ai_behavior
+					option = CHI_MP_1
+				}
+				factor = 10
+			}
 		}
 
 		days_remove = 90
@@ -5106,7 +5113,14 @@ CHI_integrate_the_warlords = {
 		}
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 10			
+			factor = 10
+			modifier = {
+				has_game_rule = {
+					rule = CHI_ai_behavior
+					option = CHI_MP_1
+				}
+				factor = 50
+			}			
 		}
 	}
 }
