@@ -683,6 +683,11 @@ JAP_ai_behavior = {
 		text = "RULE_OPTION_JAP_MP_1"
 		desc = "RULE_OPTION_JAP_MP_1_DESC"
 	}
+	option = {
+		name = JAP_MP_2
+		text = "RULE_OPTION_JAP_MP_2"
+		desc = "RULE_OPTION_JAP_MP_2_DESC"
+	}
 }
 
 ITA_ai_behavior = {
