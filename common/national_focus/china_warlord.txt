@@ -1449,6 +1449,7 @@
 			random_owned_controlled_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
+					NOT = { state = 810 }
 					free_building_slots = {
 						building = industrial_complex
 						size > 0
@@ -1543,6 +1544,7 @@
 			random_owned_controlled_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
+					NOT = { state = 810 }
 					free_building_slots = {
 						building = arms_factory
 						size > 0
