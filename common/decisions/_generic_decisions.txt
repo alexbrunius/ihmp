@@ -111,8 +111,27 @@ political_actions = {
 			modifier = {
 				add = 1
 				tag = CHI
-				date > 1938.1.1
+				OR = {
+					date > 1938.1.1
+					JAP = { has_completed_focus = JAP_purge_the_kodoha_faction }
+				}
 				has_stability < 1.0
+			}
+			modifier = {
+				add = 1
+				tag = JAP
+				has_idea = JAP_mitsumasa_yonai
+				OR = {
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_1
+					}
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = JAP_MP_2
+					}
+				}
+				has_stability < 0.89
 			}
 			modifier = {
 				add = 1
