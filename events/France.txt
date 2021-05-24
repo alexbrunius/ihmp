@@ -1918,9 +1918,14 @@ country_event = {
 
 		if = {
 			limit = {
-				has_global_flag = ITA_claims_on_france_735
-				has_global_flag = ITA_claims_on_france_1
 				OR = {
+					has_global_flag = ITA_claims_on_france_735
+					has_global_flag = ITA_claims_on_france_1
+					has_global_flag = ITA_claims_on_france_21
+					has_global_flag = ITA_claims_on_france_32
+				}
+				OR = {
+					owns_state = 553
 					owns_state = 554
 					owns_state = 677
 					owns_state = 680
