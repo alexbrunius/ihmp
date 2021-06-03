@@ -762,7 +762,7 @@ on_actions = {
 			if = {
 				limit = {
 					FROM = { tag = ENG }
-					FROM.FROM = { state = 447 } #Alexandra Matruh
+					FROM.FROM = { state = 447 } #Alexandria
 					NOT = { has_global_flag = iraq_coup }
 				}
 				IRQ = {
@@ -787,6 +787,7 @@ on_actions = {
 			if = { #destroys and damages Soviet infrastructure to simulate different railway gauges
 				limit = {
 					FROM = { original_tag = SOV }
+					NOT = { ROOT = { original_tag = SOV } }
 					FROM.FROM = { is_owned_by = SOV }
 					FROM.FROM = { NOT = { has_state_flag = sov_infra_destruction } }
 				}
