@@ -11,8 +11,10 @@
 # influence
 
 less_trucks_4_u_JAP = {
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		date < 1939.1.1
 	}
 	abort = { 
@@ -31,13 +33,6 @@ less_trucks_4_u_JAP = {
 		value = 12
 	}
 	
-	# Old garrison system against resistance
-	# ai_strategy = { 
-	# 	type = role_ratio
-	# 	id = suppression
-	# 	value = 8
-	# }
-
 	ai_strategy = {
 		type = template_prio
 		id = motorized
@@ -82,8 +77,10 @@ less_trucks_4_u_JAP = {
 }
 	
 JAP_build_some_factories_jeez = {
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		date > 1939.1.2
 	}
 	abort = { 
@@ -105,13 +102,6 @@ JAP_build_some_factories_jeez = {
 		value = 12
 	}
 	
-	# Old garrison system against resistance
-	# ai_strategy = { 
-	# 	type = role_ratio
-	# 	id = suppression
-	# 	value = 8
-	# }
-
 	ai_strategy = {
 		type = template_prio
 		id = motorized
@@ -185,8 +175,10 @@ JAP_build_some_factories_jeez = {
 }
 
 JAP_glorious_nippon_steel_has_triumphed = {
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		OR = {
 			num_of_military_factories > 50
 			CHI = { is_subject_of = JAP }
@@ -201,13 +193,6 @@ JAP_glorious_nippon_steel_has_triumphed = {
 		id = infantry
 		value = 80
 	}
-	
-	# Old garrison system against resistance
-	# ai_strategy = { 
-	# 	type = role_ratio
-	# 	id = garrison
-	# 	value = 12
-	# }
 	
 	ai_strategy = { 
 		type = role_ratio
@@ -280,8 +265,10 @@ JAP_glorious_nippon_steel_has_triumphed = {
 	}
 }
 southern_expansion = {
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		has_completed_focus = JAP_strike_south_doctrine
 		OR = {
 			country_exists = HOL
@@ -308,8 +295,10 @@ southern_expansion = {
 }
 
 northern_expansion = {
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		has_completed_focus = JAP_prepare_for_war_with_the_soviet_union
 		country_exists = SOV
 	}
@@ -327,8 +316,10 @@ northern_expansion = {
 }
 
 chinese_war = {
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		has_completed_focus = JAP_intervene_in_china
 		country_exists = CHI
 	}
@@ -346,8 +337,10 @@ chinese_war = {
 }
 
 strike_usa = {
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		has_completed_focus = JAP_secure_the_philippines
 		country_exists = USA
 	}
@@ -372,8 +365,10 @@ strike_usa = {
 
 # "I can run wild for six months… after that, I have no expectation of success"
 jap_hush_yamamoto_its_gonna_be_ok = {
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		has_completed_focus = JAP_secure_the_philippines
 		country_exists = USA
 		NOT = { has_war_with = USA }
@@ -396,8 +391,10 @@ jap_hush_yamamoto_its_gonna_be_ok = {
 }
 
 jap_conserve_fuel_for_usa_fight = {
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		date < 1941.1.1
 		NOT = { has_war_with = USA }
 	}
@@ -417,8 +414,10 @@ jap_conserve_fuel_for_usa_fight = {
 }
 
 germany_ally = {
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		has_completed_focus = JAP_technological_exchange
 		country_exists = GER
 	}
@@ -440,8 +439,10 @@ germany_ally = {
 
 
 JAP_template_design = {
-	enable = {
+	allowed = {
 		original_tag = JAP
+	}
+	enable = {
 		date > 1940.1.1				
 	}
 	
@@ -503,10 +504,10 @@ JAP_template_design = {
 
 # hey dynamic targets would be swole as f*
 all_china_must_prosper_in_my_prosperity_sphere_SIK = {
-
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
-		
 		OR = {
 			NOT = { country_exists = CHI }
 			CHI = {
@@ -516,7 +517,7 @@ all_china_must_prosper_in_my_prosperity_sphere_SIK = {
 		}
 		country_exists = SIK
 		NOT = { 
-			YUN = {
+			SIK = {
 				OR = {
 					is_in_faction_with = JAP
 					is_puppet_of = JAP
@@ -542,10 +543,10 @@ all_china_must_prosper_in_my_prosperity_sphere_SIK = {
 	}
 }
 all_china_must_prosper_in_my_prosperity_sphere_XSM = {
-
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
-		
 		OR = {
 			NOT = { country_exists = CHI }
 			CHI = {
@@ -555,7 +556,7 @@ all_china_must_prosper_in_my_prosperity_sphere_XSM = {
 		}
 		country_exists = XSM
 		NOT = { 
-			YUN = {
+			XSM = {
 				OR = {
 					is_in_faction_with = JAP
 					is_puppet_of = JAP
@@ -581,10 +582,10 @@ all_china_must_prosper_in_my_prosperity_sphere_XSM = {
 	}
 }
 all_china_must_prosper_in_my_prosperity_sphere_GXC = {
-
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
-		
 		OR = {
 			NOT = { country_exists = CHI }
 			CHI = {
@@ -594,7 +595,7 @@ all_china_must_prosper_in_my_prosperity_sphere_GXC = {
 		}
 		country_exists = GXC
 		NOT = { 
-			YUN = {
+			GXC = {
 				OR = {
 					is_in_faction_with = JAP
 					is_puppet_of = JAP
@@ -620,10 +621,10 @@ all_china_must_prosper_in_my_prosperity_sphere_GXC = {
 	}
 }
 all_china_must_prosper_in_my_prosperity_sphere_SHX = {
-
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
-		
 		OR = {
 			NOT = { country_exists = CHI }
 			CHI = {
@@ -633,7 +634,7 @@ all_china_must_prosper_in_my_prosperity_sphere_SHX = {
 		}
 		country_exists = SHX
 		NOT = { 
-			YUN = {
+			SHX = {
 				OR = {
 					is_in_faction_with = JAP
 					is_puppet_of = JAP
@@ -659,10 +660,10 @@ all_china_must_prosper_in_my_prosperity_sphere_SHX = {
 	}
 }
 all_china_must_prosper_in_my_prosperity_sphere_YUN = {
-
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
-		
 		OR = {
 			NOT = { country_exists = CHI }
 			CHI = {
@@ -699,10 +700,10 @@ all_china_must_prosper_in_my_prosperity_sphere_YUN = {
 
 }
 all_china_must_prosper_in_my_prosperity_sphere_PRC = {
-
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
-		
 		OR = {
 			NOT = { country_exists = CHI }
 			CHI = {
@@ -712,7 +713,7 @@ all_china_must_prosper_in_my_prosperity_sphere_PRC = {
 		}
 		country_exists = PRC
 		NOT = { 
-			YUN = {
+			PRC = {
 				OR = {
 					is_in_faction_with = JAP
 					is_puppet_of = JAP
@@ -739,9 +740,11 @@ all_china_must_prosper_in_my_prosperity_sphere_PRC = {
 }
 
 jap_china_is_weak = {
+	allowed = {
+		original_tag = JAP
+	}
 
 	enable = {
-		tag = JAP
 		date < 1939.10.1
 		NOT = { has_war_with = CHI } # only underestimate the japanese before the war
 	}
@@ -762,9 +765,10 @@ jap_china_is_weak = {
 
 
 jap_building_boats_is_great = {
-	
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		num_of_civilian_factories_available_for_projects > 15
 	}
 
@@ -815,9 +819,12 @@ JAP_dont_mess_with_volunteers = { # Reverse strategy
 }
 
 JAP_naval_role_ratios_historical = {
-	enable = {
+	allowed = {
 		has_dlc = "Man the Guns"
 		original_tag = JAP
+	}
+	enable = {
+		always = yes
 	}
 	abort = {
 		num_of_naval_factories > 60
@@ -921,9 +928,11 @@ JAP_naval_role_ratios_historical = {
 }
 
 JAP_naval_role_ratios_historical_late = {
-	enable = {
-		has_dlc = "Man the Guns"
+	allowed = {
 		original_tag = JAP
+		has_dlc = "Man the Guns"
+	}
+	enable = {
 		num_of_naval_factories > 60
 	}
 
@@ -1025,8 +1034,10 @@ JAP_naval_role_ratios_historical_late = {
 }
 
 jap_invasions_of_gxc_are_super_tough_and_waste_manpower = {
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		date < 1942.1.1 #if we still stuck we might need a trick
 
 		has_war_with = CHI
@@ -1047,8 +1058,10 @@ jap_invasions_of_gxc_are_super_tough_and_waste_manpower = {
 }
 
 jap_early_invasions_are_risky_and_best_wait_for_later = {
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		date < 1939.1.1
 		has_war_with = CHI
 		CHI = { is_ai = yes }
@@ -1064,9 +1077,10 @@ jap_early_invasions_are_risky_and_best_wait_for_later = {
 }
 
 jap_doesnt_care_about_relation = {
-
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		OR = {
 			has_war = yes
 			date < 1940.1.1
@@ -1088,8 +1102,10 @@ jap_doesnt_care_about_relation = {
 # if china has fallen and we are going for USA we will end up at war with allies suddenly while maybe bordering them,
 # but thats hard to guess for AI considering all the steps. So we warn it so it can prep vs the allies
 jap_early_part_beware_allies = {
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
 		USA = { is_in_faction = no }
 		focus_progress = {
 			focus = JAP_secure_the_philippines
@@ -1134,11 +1150,13 @@ jap_early_part_beware_allies = {
 }
 
 JAP_USA_we_love_islands = {
-	enable = {
+	allowed = {
 		OR = { 
-			tag = JAP
-			tag = USA
+			original_tag = JAP
+			original_tag = USA
 		}
+		}
+	enable = {
 		OR = {
 			JAP = { has_war_with = USA }
 			CHI = { is_subject_of = JAP }
@@ -1155,12 +1173,47 @@ JAP_USA_we_love_islands = {
 }
 
 JAP_we_will_mostly_fight_on_subjects = {
+	allowed = {
+		original_tag = JAP
+	}
 	enable = {
-		tag = JAP
+		always = yes
 	}
 	
 	ai_strategy = {
 		type = produce_unit_for_subject_supply_chunks
 		value = 50
+	}
+}
+
+JAP_watch_SHX_front = {
+	allowed = {
+		OR = { 
+			original_tag = JAP
+			original_tag = MEN
+		}
+	}
+
+	enable = {
+		date < 1937.12.1
+		JAP = {			
+			OR = {
+				focus_progress = {
+		  			focus = JAP_intervene_in_china
+		  			progress > 0.5
+		  		}
+		  		has_completed_focus = JAP_intervene_in_china
+		  	}		
+		}
+		MEN = { is_subject_of = JAP }
+		NOT = {	has_war_with = SHX }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = "SHX"
+		value = 100
 	}
 }

@@ -112,7 +112,6 @@ SPR_the_inevitable_civil_war = {
 		}
 
 		visible = {
-			tag = SPR
 			has_country_flag = SPR_spanish_elections_flag
 			has_completed_focus = SPA_a_great_spain
 			NOT = { has_global_flag = spanish_civil_war }
@@ -173,7 +172,6 @@ SPR_the_inevitable_civil_war = {
 		}
 
 		visible = {
-			tag = SPR
 			has_country_flag = SPR_spanish_elections_flag
 			has_completed_focus = SPR_the_popular_front
 			NOT = { has_global_flag = spanish_civil_war }
@@ -226,7 +224,7 @@ SPR_the_inevitable_civil_war = {
 		}
 
 		visible = {
-			tag = SPR
+
 			has_country_flag = SPR_spanish_elections_flag
 			has_completed_focus = SPA_a_great_spain
 			NOT = { has_global_flag = spanish_civil_war }
@@ -279,7 +277,6 @@ SPR_the_inevitable_civil_war = {
 		}
 
 		visible = {
-			tag = SPR
 			has_country_flag = SPR_spanish_elections_flag
 			has_completed_focus = SPR_the_popular_front
 			NOT = { has_global_flag = spanish_civil_war }
@@ -331,7 +328,6 @@ SPR_the_inevitable_civil_war = {
 		}
 
 		visible = {
-			tag = SPR
 			has_country_flag = SPR_spanish_elections_flag
 			has_completed_focus = SPA_a_great_spain
 			NOT = { has_global_flag = spanish_civil_war }
@@ -391,7 +387,6 @@ SPR_the_inevitable_civil_war = {
 		}
 
 		visible = {
-			tag = SPR
 			has_country_flag = SPR_spanish_elections_flag
 			has_completed_focus = SPR_the_popular_front
 			NOT = { has_global_flag = spanish_civil_war }
@@ -451,7 +446,6 @@ SPR_the_inevitable_civil_war = {
 		}
 
 		visible = {
-			tag = SPR
 			has_country_flag = SPR_spanish_elections_flag
 			has_completed_focus = SPR_the_popular_front
 			NOT = { has_global_flag = spanish_civil_war }
@@ -517,7 +511,6 @@ SPR_the_inevitable_civil_war = {
 		}
 
 		visible = {
-			tag = SPR
 			has_country_flag = SPR_spanish_elections_flag
 			has_completed_focus = SPA_a_great_spain
 			NOT = { has_global_flag = spanish_civil_war }
@@ -573,7 +566,6 @@ SPR_the_inevitable_civil_war = {
 		}
 
 		visible = {
-			tag = SPR
 			has_country_flag = SPR_spanish_elections_flag
 			has_completed_focus = SPR_the_popular_front
 			NOT = { has_global_flag = spanish_civil_war }
@@ -14350,7 +14342,6 @@ political_actions = {
 		}
 
 		visible = {
-			tag = SPA
 			NOT = { has_completed_focus = SPA_no_compromise_on_carlist_ideals }
 		}
 
@@ -17259,32 +17250,29 @@ SPR_the_seeds_of_revolution = {
 		available = {
 			FROM = {
 				has_civil_war = no
+				any_controlled_state = {
+					is_in_home_area = yes
+					is_capital = no
+				}
 			}
 			has_equipment = {
 			    infantry_equipment > 19999
 			}
-			any_state = {
-				is_controlled_by = FROM
-				is_in_home_area = yes
-				is_capital = no
-				any_state = {
-					is_controlled_by = ROOT
+			any_controlled_state = {
 					NOT = { has_state_flag = anarchist_uprising }
 				}
 			}
-		}
 
 		target_trigger = {
-			any_state = {
-				is_controlled_by = FROM
-				is_in_home_area = yes
-				any_neighbor_state = {
-					is_controlled_by = ROOT
-				}
-			}
 			FROM = {
 				exists = yes
 				has_war_with = ROOT
+				any_controlled_state = {
+					is_in_home_area = yes
+					any_neighbor_state = {
+						is_controlled_by = ROOT
+					}
+				}
 			}
 		}
 
@@ -17322,17 +17310,18 @@ SPR_the_seeds_of_revolution = {
 		remove_effect = {
 			if = {
 				limit = {
-					any_state = {
-						is_controlled_by = FROM
-						is_in_home_area = yes
-						is_capital = no
-						NOT = { has_state_flag = anarchist_uprising }
-						any_state = {
-							is_controlled_by = ROOT
+					FROM = {
+						any_controlled_state = {
+							is_in_home_area = yes
+							is_capital = no
 							NOT = { has_state_flag = anarchist_uprising }
-							distance_to = {
-								target = PREV
-								value < 750
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = anarchist_uprising }
+								distance_to = {
+									target = PREV
+									value < 750
+								}
 							}
 						}
 					}
@@ -17372,17 +17361,18 @@ SPR_the_seeds_of_revolution = {
 			}
 			else_if = {
 				limit = {
-					any_state = {
-						is_controlled_by = FROM
-						is_in_home_area = yes
-						is_capital = no
-						NOT = { has_state_flag = anarchist_uprising }
-						any_state = {
-							is_controlled_by = ROOT
+					FROM = {
+						any_controlled_state = {
+							is_in_home_area = yes
+							is_capital = no
 							NOT = { has_state_flag = anarchist_uprising }
-							distance_to = {
-								target = PREV
-								value < 1500
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = anarchist_uprising }
+								distance_to = {
+									target = PREV
+									value < 1500
+								}
 							}
 						}
 					}
@@ -17457,17 +17447,18 @@ SPR_the_seeds_of_revolution = {
 				}
 				if = {
 					limit = {
-						any_state = {
-							is_controlled_by = FROM
-							is_in_home_area = yes
-							is_capital = no
-							NOT = { has_state_flag = anarchist_uprising }
-							any_state = {
-								is_controlled_by = ROOT
+						FROM = {
+							any_controlled_state = {
+								is_in_home_area = yes
+								is_capital = no
 								NOT = { has_state_flag = anarchist_uprising }
-								distance_to = {
-									target = PREV
-									value < 750
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = anarchist_uprising }
+									distance_to = {
+										target = PREV
+										value < 750
+									}
 								}
 							}
 						}
@@ -17507,17 +17498,18 @@ SPR_the_seeds_of_revolution = {
 				}
 				else_if = {
 					limit = {
-						any_state = {
-							is_controlled_by = FROM
-							is_in_home_area = yes
-							is_capital = no
-							NOT = { has_state_flag = anarchist_uprising }
-							any_state = {
-								is_controlled_by = ROOT
+						FROM = {
+							any_controlled_state = {
+								is_in_home_area = yes
+								is_capital = no
 								NOT = { has_state_flag = anarchist_uprising }
-								distance_to = {
-									target = PREV
-									value < 1500
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = anarchist_uprising }
+									distance_to = {
+										target = PREV
+										value < 1500
+									}
 								}
 							}
 						}
@@ -17592,17 +17584,18 @@ SPR_the_seeds_of_revolution = {
 				}
 				if = {
 					limit = {
-						any_state = {
-							is_controlled_by = FROM
-							is_in_home_area = yes
-							is_capital = no
-							NOT = { has_state_flag = anarchist_uprising }
-							any_state = {
-								is_controlled_by = ROOT
+						FROM = {
+							any_controlled_state = {
+								is_in_home_area = yes
+								is_capital = no
 								NOT = { has_state_flag = anarchist_uprising }
-								distance_to = {
-									target = PREV
-									value < 750
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = anarchist_uprising }
+									distance_to = {
+										target = PREV
+										value < 750
+									}
 								}
 							}
 						}
@@ -17642,17 +17635,18 @@ SPR_the_seeds_of_revolution = {
 				}
 				else_if = {
 					limit = {
-						any_state = {
-							is_controlled_by = FROM
-							is_in_home_area = yes
-							is_capital = no
-							NOT = { has_state_flag = anarchist_uprising }
-							any_state = {
-								is_controlled_by = ROOT
+						FROM = {
+							any_controlled_state = {
+								is_in_home_area = yes
+								is_capital = no
 								NOT = { has_state_flag = anarchist_uprising }
-								distance_to = {
-									target = PREV
-									value < 1500
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = anarchist_uprising }
+									distance_to = {
+										target = PREV
+										value < 1500
+									}
 								}
 							}
 						}
@@ -17727,17 +17721,18 @@ SPR_the_seeds_of_revolution = {
 				}
 				if = {
 					limit = {
-						any_state = {
-							is_controlled_by = FROM
-							is_in_home_area = yes
-							is_capital = no
-							NOT = { has_state_flag = anarchist_uprising }
-							any_state = {
-								is_controlled_by = ROOT
+						FROM = {
+							any_controlled_state = {
+								is_in_home_area = yes
+								is_capital = no
 								NOT = { has_state_flag = anarchist_uprising }
-								distance_to = {
-									target = PREV
-									value < 750
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = anarchist_uprising }
+									distance_to = {
+										target = PREV
+										value < 750
+									}
 								}
 							}
 						}
@@ -17809,17 +17804,18 @@ SPR_the_seeds_of_revolution = {
 				}
 				else_if = {
 					limit = {
-						any_state = {
-							is_controlled_by = FROM
-							is_in_home_area = yes
-							is_capital = no
-							NOT = { has_state_flag = anarchist_uprising }
-							any_state = {
-								is_controlled_by = ROOT
+						FROM = {
+							any_controlled_state = {
+								is_in_home_area = yes
+								is_capital = no
 								NOT = { has_state_flag = anarchist_uprising }
-								distance_to = {
-									target = PREV
-									value < 1500
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = anarchist_uprising }
+									distance_to = {
+										target = PREV
+										value < 1500
+									}
 								}
 							}
 						}
@@ -17954,17 +17950,18 @@ SPR_the_seeds_of_revolution = {
 				}
 				if = {
 					limit = {
-						any_state = {
-							is_controlled_by = FROM
-							is_in_home_area = yes
-							is_capital = no
-							NOT = { has_state_flag = anarchist_uprising }
-							any_state = {
-								is_controlled_by = ROOT
+						FROM = {
+							any_controlled_state = {
+								is_in_home_area = yes
+								is_capital = no
 								NOT = { has_state_flag = anarchist_uprising }
-								distance_to = {
-									target = PREV
-									value < 750
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = anarchist_uprising }
+									distance_to = {
+										target = PREV
+										value < 750
+									}
 								}
 							}
 						}
@@ -18036,17 +18033,18 @@ SPR_the_seeds_of_revolution = {
 				}
 				else_if = {
 					limit = {
-						any_state = {
-							is_controlled_by = FROM
-							is_in_home_area = yes
-							is_capital = no
-							NOT = { has_state_flag = anarchist_uprising }
-							any_state = {
-								is_controlled_by = ROOT
+						FROM = {
+							any_controlled_state = {
+								is_in_home_area = yes
+								is_capital = no
 								NOT = { has_state_flag = anarchist_uprising }
-								distance_to = {
-									target = PREV
-									value < 1500
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = anarchist_uprising }
+									distance_to = {
+										target = PREV
+										value < 1500
+									}
 								}
 							}
 						}
@@ -18237,7 +18235,6 @@ SPR_anti_fascist_unity = {
 		}
 
 		visible = {
-			tag = SPR
 			has_completed_focus = SPR_anti_fascist_unity
 			NOT = { has_global_flag = scw_over }
 			NOT = { has_global_flag = scw_early_end }

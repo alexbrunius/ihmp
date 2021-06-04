@@ -8245,25 +8245,19 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_the_fate_of_the_balkans focus = BUL_join_the_allies }
 
 		bypass = {
+			OR = {
+				is_subject = yes
+				AND = {
 			is_in_faction_with = GER
 			OR = {
 				has_government = fascism
 				has_government = neutrality
 			}
 		}
+			}
+		}
 
 		available = {
-			if = {
-				limit = {
-					is_in_faction_with = GER
-					OR = {
-						has_government = fascism
-						has_government = neutrality
-					}
-				}
-				#This is intended so that the focus does not look unavailable when it can actually be bypassed
-			}
-			else = {
 				threat > 0.35
 				OR = {
 					AND = {
@@ -8296,7 +8290,6 @@ focus_tree = {
 				is_in_faction = no
 				is_subject = no
 			}
-		}
 		
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
