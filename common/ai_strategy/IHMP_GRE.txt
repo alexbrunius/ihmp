@@ -1,0 +1,105 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+# building_target
+
+
+GRE_MP_Join_War = {
+
+	reversed = yes
+
+	enable = {
+		OR = {
+			tag = ENG
+			is_in_faction_with = ENG
+		}
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}
+		GRE = {
+			has_war = no
+			has_completed_focus = GRE_our_traditional_allies_in_the_aegean
+		}
+	}
+
+	abort = {
+		OR = {
+			GRE = { has_war = yes }
+			ITA = {
+				AND = {
+					has_government = fascism
+					has_war_with = ENG
+					surrender_progress > 0.5
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = GRE
+		target = join_allies
+		value = -99999
+	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = GRE
+		target = call_allies
+		value = -99999
+	}
+}
+
+GRE_MP_Call_GRE_War = {
+
+	enable = {
+		OR = {
+			tag = ENG
+			is_in_faction_with = ENG
+		}
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}
+		GRE = {
+			has_war = no
+			has_completed_focus = GRE_our_traditional_allies_in_the_aegean
+		}
+	}
+
+	abort = {
+		OR = {
+			GRE = { has_war = yes }
+			ITA = {
+				AND = {
+					has_government = fascism
+					has_war_with = ENG
+					surrender_progress > 0.5
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = GRE
+		target = join_allies
+		value = -99999
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = GRE
+		target = call_allies
+		value = -99999
+	}
+}
