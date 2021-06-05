@@ -41,6 +41,16 @@ GRE_MP_1 = {
 		GRE_lignite_liquefaction
 		GRE_extracting_more_from_our_soil
 		GRE_prepare_against_the_mediterranean_threat
+		GRE_our_traditional_allies_in_the_aegean #join Allies
+		GRE_hellenic_armed_forces
+		GRE_the_hellenic_navy
+		GRE_the_hellenic_air_force
+		GRE_the_hellenic_army
+		GRE_the_greater_enosis #Cyprus
+		GRE_expansion_of_athens_university
+		GRE_securing_the_bulgarian_menace
+		GRE_open_up_the_country
+		GRE_british_docking_rights
 	}
 
 	research = {
@@ -64,8 +74,97 @@ GRE_MP_1 = {
 	}
 
 	focus_factors = {
-		GRE_securing_the_bulgarian_menace = 0
+		GRE_bolster_the_schachtplan = 0
+		GRE_renegotiate_debt_with_france = 0
+		GRE_appeal_to_the_soviet_union = 0
+	}
+}
+
+GRE_MP_Neutral_Bulgaria = {
+	name = "GRE Neutral Bulgaria"
+	desc = "Even with wargoal don't attack Bulgaria"
+
+	enable = {
+		tag = GRE
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}
+	}
+
+	abort = {
+		has_war_with = BUL
+	}
+
+	ai_strategy = {
+		type = declare_war
+		id = BUL			
+		value = -1000 
+	}
+}
+
+GRE_MP_Join_Allies = {
+	name = "GRE Join Allies"
+	desc = "Only join Allies willingly after Albania and Yugo are threatend"
+
+	enable = {
+		tag = GRE
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}
+		OR = {
+			YUG = { has_war = no }
+			ALB = { exists = yes }
+		}
+	}
+
+	abort = {
+		AND = {
+			YUG = { has_war = yes }
+			ALB = { exists = no }
+		}
+	}
+
+	focus_factors = {
 		GRE_our_traditional_allies_in_the_aegean = 0
+	}
+}
+
+GRE_MP_Cyprus = {
+	name = "GRE Demand Cyprus"
+	desc = "Only Demand Cyprus if Africa is secure"
+
+	enable = {
+		tag = GRE
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}
+		ENG = { has_war_with = ITA }
+	}
+
+	abort = {
+		NOT = {
+			ENG = {
+				any_enemy_country = {
+					any_state = {
+						OR = {
+							region = 231 #Rio de Oro
+							region = 182 #Marocco
+							region = 212 #Algier
+							region = 126 #Libya
+							region = 128 #Egypt
+						}
+						is_controlled_by = PREV
+					}
+				}
+			}
+		}
+	}
+
+	focus_factors = {
+		GRE_the_greater_enosis = 0
 	}
 }
 
