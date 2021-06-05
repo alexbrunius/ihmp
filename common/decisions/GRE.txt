@@ -415,6 +415,13 @@ GRE_investment_decisions_category = {
 				factor = 30
 				has_completed_focus = GRE_following_in_the_footsteps_of_giants
 			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = GRE_ai_behavior
+					option = GRE_MP_1
+				}
+			}
 		}
 
 		visible = {
@@ -488,6 +495,13 @@ GRE_investment_decisions_category = {
 			modifier = {
 				factor = 30
 				has_completed_focus = GRE_following_in_the_footsteps_of_giants
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = GRE_ai_behavior
+					option = GRE_MP_1
+				}
 			}
 		}
 
@@ -709,6 +723,13 @@ GRE_investment_decisions_category = {
 				factor = 20
 				has_completed_focus = GRE_british_docking_rights
 			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = GRE_ai_behavior
+					option = GRE_MP_1
+				}
+			}
 		}
 
 		visible = {
@@ -774,6 +795,13 @@ GRE_investment_decisions_category = {
 				factor = 20
 				has_completed_focus = GRE_british_docking_rights
 			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = GRE_ai_behavior
+					option = GRE_MP_1
+				}
+			}
 		}
 
 		visible = {
@@ -838,6 +866,13 @@ GRE_investment_decisions_category = {
 			modifier = {
 				factor = 30
 				has_completed_focus = GRE_british_docking_rights
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = GRE_ai_behavior
+					option = GRE_MP_1
+				}
 			}
 		}
 
@@ -1005,6 +1040,13 @@ GRE_investment_decisions_category = {
 				has_completed_focus = GRE_renegotiate_debt_with_france
 				has_country_flag = GRE_go_to_paris_to_negotiate_investment_talks_AI_flag
 			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = GRE_ai_behavior
+					option = GRE_MP_1
+				}
+			}
 		}
 
 		visible = {
@@ -1068,6 +1110,13 @@ GRE_investment_decisions_category = {
 			modifier = {
 				factor = 20
 				has_completed_focus = GRE_renegotiate_debt_with_france
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = GRE_ai_behavior
+					option = GRE_MP_1
+				}
 			}
 		}
 
@@ -1134,6 +1183,13 @@ GRE_investment_decisions_category = {
 			modifier = {
 				factor = 30
 				has_completed_focus = GRE_renegotiate_debt_with_france
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = GRE_ai_behavior
+					option = GRE_MP_1
+				}
 			}
 		}
 
@@ -1283,6 +1339,13 @@ GRE_investment_decisions_category = {
 			modifier = {
 				factor = 30
 				has_completed_focus = GRE_recruit_the_fascists
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = GRE_ai_behavior
+					option = GRE_MP_1
+				}
 			}
 		}
 
@@ -1513,6 +1576,13 @@ GRE_investment_decisions_category = {
 				factor = 20
 				has_completed_focus = GRE_appeal_to_the_soviet_union
 			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = GRE_ai_behavior
+					option = GRE_MP_1
+				}
+			}
 		}
 
 		visible = { 
@@ -1576,6 +1646,13 @@ GRE_investment_decisions_category = {
 			modifier = {
 				factor = 20
 				has_completed_focus = GRE_appeal_to_the_soviet_union
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = GRE_ai_behavior
+					option = GRE_MP_1
+				}
 			}
 		}
 
