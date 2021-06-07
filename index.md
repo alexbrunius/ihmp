@@ -1,5 +1,28 @@
 # Changelog:
 
+## 1.10.7.0
+New features:
+- Compatibility with 1.10.7 vanilla.
+
+Fixes:
+- Fix Renown (modernised) class having incorrect module layout.
+- Made Italian Claims on France Focus more consistently transfer Vichy Syria to Free France.
+- Soviet civil war no longer destroys infrastructure due to re-gauging.
+- Warlord focus not spawning factories in Shanxi impassable state anymore.
+- Added Chinese and PRC cores to new impassable East-Suiyan state, which allows full annexation in peacedeals by the AI.
+- Removed randomness which warlords willingly becomes a puppet of China, if China uses subjugate warlord focus.
+
+AI:
+- Latvia and Estonia no longer blocked from doing generic industry focuses.
+- Added new Japanese ai strategy plan going down the support Kodoha branch.
+- Siam reacts if Japan goes Support Kodoha, and stays neutral themselves instead of going fascist.
+- The Chinas reacting to Japan supporting Kodoha/Striking North and activating the Chinese civil war again.
+- Added ai_weight for Japan to improve workers conditions once if going Kodoha (going from 88% to 100% stability in peacetime).
+- Increased weights to integrating puppet warlords as China.
+- Stopped Greece AI to ask for investments.
+- Greece AI won't join a war willingly on the Allies side, they are neutral after all!
+- Added some more foci to pick later on for Greece. Added join Allies Focus pick to Greece, which is blocked until Greece's borders are threatend (Albania gone and Yugo in war).
+
 ## 1.10.5.1
 New features:
 - Japanese Technological Exchange NF no longer joins Axis but creates a new faction instead.
