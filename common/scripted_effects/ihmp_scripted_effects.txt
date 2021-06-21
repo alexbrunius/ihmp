@@ -83,3 +83,52 @@ reduce_purge = {
 		}
 	}
 }
+
+sleeping_navy_level_down = {
+	if = {
+		limit = {
+			has_idea = sleeping_navy_3
+		}
+		remove_ideas = sleeping_navy_3
+	}
+	else_if = {
+		limit = {
+			has_idea = sleeping_navy_2
+		}
+		swap_ideas = {
+			remove_idea = sleeping_navy_2
+			add_idea = sleeping_navy_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = sleeping_navy
+		}
+		
+		swap_ideas = {
+			remove_idea = sleeping_navy
+			add_idea = sleeping_navy_2
+		}
+	}
+}
+
+sleeping_navy_remove = {
+	if = {
+		limit = {
+			has_idea = sleeping_navy
+		}
+		remove_ideas = sleeping_navy
+	}
+	if = {
+		limit = {
+			has_idea = sleeping_navy_2
+		}
+		remove_ideas = sleeping_navy_2
+	}
+	if = {
+		limit = {
+			has_idea = sleeping_navy_3
+		}
+		remove_ideas = sleeping_navy_3
+	}
+}

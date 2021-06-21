@@ -5633,15 +5633,9 @@ focus_tree = {
 				}
 				set_state_flag = USA_second_vinson_act_2NIC
 			}
-			swap_ideas = {
-				remove_idea = sleeping_navy
-				add_idea = sleeping_navy_2
-			}
+			sleeping_navy_level_down = yes
 			PHI = {
-				swap_ideas = {
-					remove_idea = sleeping_navy
-					add_idea = sleeping_navy_2
-				}
+				sleeping_navy_level_down = yes
 			}
 		}
 	}
@@ -5811,15 +5805,9 @@ focus_tree = {
 				}
 				set_state_flag = USA_two_ocean_navy_act_3NIC
 			}
-			swap_ideas = {
-				remove_idea = sleeping_navy_2
-				add_idea = sleeping_navy_3
-			}
+			sleeping_navy_level_down = yes
 			PHI = {
-				swap_ideas = {
-					remove_idea = sleeping_navy_2
-					add_idea = sleeping_navy_3
-				}
+				sleeping_navy_level_down = yes
 			}
 		}
 	}
