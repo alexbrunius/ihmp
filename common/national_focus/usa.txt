@@ -5556,12 +5556,17 @@ focus_tree = {
 			else = {
 				congress_low_support_trigger = yes
 			}
-			AND = {
-				JAP = {
-					has_offensive_war = yes
-					}
+			OR = {
 				GER = {
-					has_completed_focus = GER_anschluss
+					has_offensive_war = yes
+				}
+				AND = {
+					JAP = {
+						has_offensive_war = yes
+					}
+					GER = {
+						has_completed_focus = GER_anschluss
+					}
 				}
 			}
 			controls_state = 362
