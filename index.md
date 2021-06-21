@@ -1,5 +1,11 @@
 # Changelog:
 
+## 1.10.7.1
+Fixes:
+- Fixed army division list selection lag.
+- Fixed wonkiness with USA getting rid of isolationist navy.
+- Second Vinson Act now also avaliable if Germany is in an offensive war.
+
 ## 1.10.7.0
 New features:
 - Compatibility with 1.10.7 vanilla.
