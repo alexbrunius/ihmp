@@ -477,55 +477,6 @@ operations = {
 		}
 	}
 
-	nonisolation_navy_2 = {
-		# temporary addition to fix a bug, remove after 21.06.2021 session.
-		
-		icon = generic_operation
-
-		days_mission_timeout = 2
-
-		is_good = no
-
-		allowed = {
-			tag = USA
-		}
-		
-		available = {
-			tag = USA
-			has_war = yes
-			OR = {
-				has_idea = sleeping_navy
-				has_idea = sleeping_navy_2
-				has_idea = sleeping_navy_3
-			}
-		}
-
-		activation = {
-			tag = USA
-			has_war = yes
-			OR = {
-				has_idea = sleeping_navy
-				has_idea = sleeping_navy_2
-				has_idea = sleeping_navy_3
-			}
-		}
-
-		visible = {
-			tag = USA
-		}
-		
-		complete_effect = {
-			sleeping_navy_remove = yes
-			PHI = {
-				sleeping_navy_remove = yes
-			}
-			add_operation_token = {
-				tag = JAP
-				token = token_navy
-			}
-		}
-	}
-
 	occupy_greenland = {
 		
 		icon = generic_operation
