@@ -453,6 +453,21 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MEX_ai_behavior
+						option = MEX_MP_1
+					}
+					MEX = { is_ai = yes }
+				}
+				MEX = {
+					delete_units = { 
+						division_template = "División de Caballería"
+						disband = yes
+					}
+				}
+			}
 			#Major Warlords
 			if = {
 				limit = {
