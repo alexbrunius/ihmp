@@ -321,6 +321,31 @@ BUL_MP_Democratic_Ideas = {
 	}
 }
 
+BUL_MP_Neutral_Ideas = {
+	name = "BUL Democratic Ideas over"
+	desc = ""
+
+	enable = {
+		tag = BUL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+		
+	}
+
+	abort = {
+		OR = {
+			has_completed_focus = BUL_strengthen_the_royal_dictatorship
+			has_war = yes
+		}
+	}
+
+	ideas = {
+		BUL_aleksandar_tsankov = 0 #statism_adept
+	}
+}
+
 BUL_MP_Peace_Ideas = {
 	name = "BUL Democratic Ideas over"
 	desc = ""
