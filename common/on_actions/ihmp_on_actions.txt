@@ -453,32 +453,19 @@ on_actions = {
 					}
 				}
 			}
-			#Major Warlords
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = WL_ai_behavior
-						option = WL_MP_1
+						rule = MEX_ai_behavior
+						option = MEX_MP_1
 					}
-					CHI = { is_ai = yes }
+					MEX = { is_ai = yes }
 				}
-				PRC = {
-					set_major = yes
-				}
-				SHX = {
-					set_major = yes
-				}
-				XSM = {
-					set_major = yes
-				}
-				SIK = {
-					set_major = yes
-				}
-				YUN = {
-					set_major = yes
-				}
-				GXC = {
-					set_major = yes
+				MEX = {
+					delete_units = { 
+						division_template = "División de Caballería"
+						disband = yes
+					}
 				}
 			}
 			#Military Police for AIs
@@ -555,6 +542,33 @@ on_actions = {
 					add_ideas = asian_agrarian_society
 				}
 			}
+		}
+	}
+
+	#ROOT = attacking side
+	#FROM = defending side
+	#fired when two countries end up at war with each other (on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first)
+	on_war_relation_added = {
+		effect = {
+			#Major Warlords
+			if = {
+				limit = {
+					ROOT = { tag = JAP }
+					FROM = {
+						OR = {
+							tag = PRC
+							tag = SHX
+							tag = XSM
+							tag = SIK
+							tag = YUN
+							tag = GXC
+						}
+					}
+				}
+				FROM = {
+					set_major = yes
+				}
+			}			
 		}
 	}
 
@@ -768,7 +782,7 @@ on_actions = {
 			if = {
 				limit = {
 					FROM = { tag = ENG }
-					FROM.FROM = { state = 447 } #Alexandria
+					FROM.FROM = { state = 447 } #Alexandra Matruh
 					NOT = { has_global_flag = iraq_coup }
 				}
 				IRQ = {
@@ -786,14 +800,15 @@ on_actions = {
 					FROM.FROM = { state = 16 }
 					NOT = { has_global_flag = achievement_france_surrender }
 				}
-				FRA = { country_event = { id = france.10 } }
+				FRA = {
+					country_event = { id = france.10 }
+				}
 			}
 		}
 		effect = {
 			if = { #destroys and damages Soviet infrastructure to simulate different railway gauges
 				limit = {
 					FROM = { original_tag = SOV }
-					NOT = { ROOT = { original_tag = SOV } }
 					FROM.FROM = { is_owned_by = SOV }
 					FROM.FROM = { NOT = { has_state_flag = sov_infra_destruction } }
 				}
