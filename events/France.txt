@@ -434,10 +434,23 @@ country_event = {
 			factor = 50 
 		}
 		set_global_flag = vichy_yes
-		FRA = {
-			add_timed_idea = {
-				idea = FRA_surrender
-				days = 30
+		hidden_effect = {
+			FRA = {
+				add_timed_idea = {
+					idea = FRA_surrender
+					days = 30
+				}
+				if = {
+					limit = {
+						26 = {
+							is_controlled_by = FRA
+						}
+						capital_scope = {
+							NOT = { state = 26 }
+						}
+					}
+					set_capital = 26
+				}
 			}
 		}
 	}
@@ -464,8 +477,10 @@ country_event = {
 		FRA = {
 			country_event = { hours = 6 id = france.15 }
 		}
-		ENG = {
-			country_event = { hours = 6 id = france.15 }
+		hidden_effect = {
+			ENG = {
+				country_event = { hours = 6 id = france.15 }
+			}
 		}
 	}
 }
@@ -616,6 +631,15 @@ country_event = {
 					load_focus_tree = vichy_french_focus
 					FRA = {
 						transfer_units_fraction = {
+							target = GER
+							size = 0.0
+							stockpile_ratio = 0.4
+							army_ratio = 0.0
+							navy_ratio = 0.0
+							air_ratio = 0.0
+							keep_unit_leaders_trigger = { always = yes }
+						}
+						transfer_units_fraction = {
 							target = event_target:vichy_france
 							size = 0.9
 							stockpile_ratio = 0.7
@@ -632,7 +656,40 @@ country_event = {
 							}
 						}
 					}
-
+					GER = {
+						delete_unit_template_and_units = { 
+							division_template = "Division d'Infanterie"
+							disband = yes
+						}
+						delete_unit_template_and_units = { 
+							division_template = "Division Coloniale"
+							disband = yes
+						}
+						delete_unit_template_and_units = { 
+							division_template = "Division d'Infanterie Motorisée"
+							disband = yes
+						}
+						delete_unit_template_and_units = { 
+							division_template = "Division d'Infanterie Alpine"
+							disband = yes
+						}
+						delete_unit_template_and_units = { 
+							division_template = "Division de Cavalerie"
+							disband = yes
+						}
+						delete_unit_template_and_units = { 
+							division_template = "Division Légère Mécanique"
+							disband = yes
+						}
+						delete_unit_template_and_units = { 
+							division_template = "Brigade de Chars de Combat"
+							disband = yes
+						}
+						delete_unit_template_and_units = { 
+							division_template = "Brigade Coloniale"
+							disband = yes
+						}
+					}
 					if = {
 						limit = { FRA = { has_country_flag = become_vichy } }
 						change_tag_from = FRA
