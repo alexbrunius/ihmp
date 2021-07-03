@@ -189,7 +189,6 @@ NOR_MP_Garrision_FIN = {
 			142
 			143
 		}
-		area = europe
 	}
 }
 
