@@ -2,8 +2,11 @@ FREE_FRA_MP_1 = {
 	name = "Free France Multiplayer 1"
 	desc = ""
 
-	enable = {
+	allowed = {
 		original_tag = FRA
+	}
+
+	enable = {
 		has_game_rule = {
 			rule = FREE_FRA_ai_behavior
 			option = FREE_FRA_MP_1
@@ -14,7 +17,6 @@ FREE_FRA_MP_1 = {
 
 	abort = {
 		OR = {
-			has_capitulated = no
 			has_completed_focus = FRA_form_the_provisional_government_of_the_republic
 			NOT = { has_government = democratic }
 		}
@@ -22,9 +24,9 @@ FREE_FRA_MP_1 = {
 
 	ai_national_focuses = {
 		FRA_refus_absurde
-		FRA_the_maquis
 		FRA_appeal_to_the_french_nation
 		FRA_appeal_to_overseas_territories
+		FRA_the_maquis
 		FRA_connections_to_industrialists
 		FRA_continue_the_fight
 		FRA_intervention_in_syria
@@ -38,6 +40,7 @@ FREE_FRA_MP_1 = {
 		FRA_cooperation_with_the_communists
 		FRA_the_civil_and_military_organization
 		FRA_national_council_of_the_resistance
+		FRA_the_free_french_navy
 	}
 
 	research = {
@@ -72,6 +75,46 @@ FREE_FRA_MP_1 = {
 		georges_bonnet = 0
 		FRA_panhard = 0
 		FRA_roger_salengro = 0
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+FREE_FRA_MP_1 = {
+	name = "Free France Multiplayer 1"
+	desc = ""
+
+	allowed = {
+		original_tag = FRA
+	}
+
+	enable = {
+		has_game_rule = {
+			rule = FREE_FRA_ai_behavior
+			option = FREE_FRA_MP_1
+		}
+		controls_state = 16
+		has_capitulated = yes
+		has_government = democratic
+	}
+
+	abort = {
+		OR = {
+			NOT = { controls_state = 16 }
+			has_completed_focus = FRA_form_the_provisional_government_of_the_republic
+			NOT = { has_government = democratic }
+		}
+	}
+
+	focus_factors = {
+		
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
