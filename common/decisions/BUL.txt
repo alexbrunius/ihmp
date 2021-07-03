@@ -35,6 +35,25 @@ BUL_internal_factions = {
 					rule = BUL_ai_behavior
 					option = BUL_MP_1
 				}
+				OR = {
+					NOT = { has_country_flag = BUL_zveno_integrated_flag }
+					NOT = { has_country_flag = BUL_nsm_integrated_flag }
+					NOT = { has_country_flag = BUL_bzns_destroyed_flag }
+					NOT = { has_country_flag = BUL_bs_destroyed_flag }
+					has_completed_focus = BUL_strengthen_the_royal_dictatorship
+				}
+			}
+			modifier = {
+				add = 100
+				has_game_rule = {
+					rule = BUL_ai_behavior
+					option = BUL_MP_1
+				}
+				has_country_flag = BUL_zveno_integrated_flag
+				has_country_flag = BUL_nsm_integrated_flag
+				has_country_flag = BUL_bzns_destroyed_flag
+				has_country_flag = BUL_bs_destroyed_flag
+				NOT = { has_completed_focus = BUL_strengthen_the_royal_dictatorship }
 			}
 		}
 
