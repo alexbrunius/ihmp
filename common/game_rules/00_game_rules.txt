@@ -1499,7 +1499,7 @@ MEX_ai_behavior = {
 	name = "MEX_AI_BEHAVIOR"
 	required_dlc = "Man the Guns"
 	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
+	option = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
@@ -1539,6 +1539,11 @@ MEX_ai_behavior = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+	default = {
+		name = MEX_MP_1
+		text = "RULE_OPTION_MEX_MP_1"
+		desc = "RULE_OPTION_MEX_MP_1_DESC"
 	}
 }
 
