@@ -2,8 +2,11 @@ PHI_MP_1 = {
 	name = "Phillipines Multiplayer 1"
 	desc = ""
 
-	enable = {
+	allowed = {
 		original_tag = PHI
+	}
+
+	enable = {
 		has_game_rule = {
 			rule = PHI_ai_behavior
 			option = PHI_MP_1
@@ -80,12 +83,44 @@ PHI_MP_1 = {
 	}
 }
 
+PHI_MP_AT = {
+	name = "Philipines Multiplayer Plan Anti-Tank"
+	desc = ""
+
+	allowed = {
+		original_tag = PHI
+	}
+
+	enable = {
+		has_game_rule = {
+			rule = PHI_ai_behavior
+			option = PHI_MP_1
+		}	
+		has_war = no
+		NOT = { date > 1942.1.1 }
+	}
+	
+	abort = {
+		OR = {
+			has_war = yes
+			date > 1942.1.1
+		}
+	}
+
+	research = {
+		cat_anti_tank = -10000
+	}
+}
+
 PHI_MP_Doctrine = {
 	name = "Philipines Multiplayer Plan Doctinres"
 	desc = ""
 
-	enable = {
+	allowed = {
 		original_tag = PHI
+	}
+
+	enable = {
 		has_game_rule = {
 			rule = PHI_ai_behavior
 			option = PHI_MP_1
@@ -108,8 +143,11 @@ PHI_MP_Electronics_1 = {
 	name = "Philipines Multiplayer Plan Electronics 2"
 	desc = ""
 
-	enable = {
+	allowed = {
 		original_tag = PHI
+	}
+
+	enable = {
 		has_game_rule = {
 			rule = PHI_ai_behavior
 			option = PHI_MP_1
@@ -130,8 +168,11 @@ PHI_MP_Radar_Research = {
 	name = "Radar Research"
 	desc = ""
 
-	enable = {
+	allowed = {
 		original_tag = PHI
+	}
+
+	enable = {
 		has_game_rule = {
 			rule = PHI_ai_behavior
 			option = PHI_MP_1
@@ -152,8 +193,11 @@ MP_Conscription_0 = {
 	name = "Conscription Plan"
 	desc = ""
 
+	allowed = {
+		original_tag = PHI
+	}
+
 	enable = {
-		tag = PHI
 		has_game_rule = {
 			rule = PHI_ai_behavior
 			option = PHI_MP_1
@@ -174,8 +218,11 @@ MP_Conscription_1 = {
 	name = "Conscription Plan"
 	desc = ""
 
+	allowed = {
+		original_tag = PHI
+	}
+
 	enable = {
-		tag = PHI
 		has_game_rule = {
 			rule = PHI_ai_behavior
 			option = PHI_MP_1
@@ -197,8 +244,11 @@ MP_Conscription_2 = {
 	name = "Conscription Plan"
 	desc = ""
 
+	allowed = {
+		original_tag = PHI
+	}
+
 	enable = {
-		tag = PHI
 		has_game_rule = {
 			rule = PHI_ai_behavior
 			option = PHI_MP_1
@@ -221,8 +271,11 @@ MP_Economy_0 = {
 	name = "Economy Plan"
 	desc = ""
 
+	allowed = {
+		original_tag = PHI
+	}
+
 	enable = {
-		tag = PHI
 		has_game_rule = {
 			rule = PHI_ai_behavior
 			option = PHI_MP_1
@@ -243,8 +296,11 @@ MP_Economy_1 = {
 	name = "Economy Plan"
 	desc = ""
 
+	allowed = {
+		original_tag = PHI
+	}
+
 	enable = {
-		tag = PHI
 		has_game_rule = {
 			rule = PHI_ai_behavior
 			option = PHI_MP_1
@@ -266,8 +322,11 @@ MP_Economy_2 = {
 	name = "Economy Plan"
 	desc = ""
 
+	allowed = {
+		original_tag = PHI
+	}
+
 	enable = {
-		tag = PHI
 		has_game_rule = {
 			rule = PHI_ai_behavior
 			option = PHI_MP_1
