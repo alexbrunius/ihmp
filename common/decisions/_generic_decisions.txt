@@ -192,7 +192,7 @@ political_actions = {
 			modifier = {
 				factor = 0
 				original_tag = SPR
-				NOT = { has_global_flag = spanish_civil_war }
+				NOT = { has_global_flag = scw_over }
 			}
 		}
 	}
