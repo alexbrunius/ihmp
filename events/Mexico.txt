@@ -237,7 +237,6 @@ country_event = {
 				id = mexico.3
 			}
 		}
-
 		ai_chance = {
 			factor = 80
 			modifier = {
@@ -279,14 +278,6 @@ country_event = {
 				id = mexico.3
 			}
 		}
-
-		trigger = {
-			OR = {
-				has_completed_focus = USA_limited_intervention
-				has_completed_focus = ENG_global_defense
-			}
-		}
-
 		ai_chance = {
 			factor = 10
 			modifier = {
