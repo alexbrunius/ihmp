@@ -1,0 +1,63 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+# building_target
+
+
+YUG_MP_Join_Faction = {
+
+	reversed = yes
+
+	allowed = {
+		has_game_rule = {
+			rule = YUG_ai_behavior
+			option = YUG_MP_1
+		}	
+	}
+
+	enable = {
+		OR = {
+			AND = {
+				GER = { has_government = fascism }
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+			}
+			AND = {
+				ITA = { has_government = fascism }
+				OR = {
+					tag = ITA
+					is_in_faction_with = ITA
+				}
+			}
+			OR = {
+				tag = JAP
+				is_in_faction_with = JAP
+			}
+		}
+		YUG = {
+			has_war = no
+		}
+	}
+
+	abort = {
+		YUG = { has_war = yes }
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = YUG
+		value = -999
+	}
+}
