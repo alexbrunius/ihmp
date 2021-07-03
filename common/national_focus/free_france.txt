@@ -623,6 +623,19 @@
 		available_if_capitulated = yes
 		completion_reward = {
 			remove_ideas = { FRA_defeatism }
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_leader = {
+								name = "Charles de Gaulle"
+								ruling_only = yes
+							}
+						}
+					}
+					country_event = france.20
+				}
+			}
 		}
 	}
 	focus = {
