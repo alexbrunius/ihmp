@@ -8885,18 +8885,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 171 }
+			OR = {
+				NOT = { has_full_control_of_state = 171 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 171 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			171 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				171 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					171 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -8920,7 +8943,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			171 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -9019,18 +9048,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 790 }
+			OR = {
+				NOT = { has_full_control_of_state = 790 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 790 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			790 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				790 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					790 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -9054,7 +9106,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			790 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -9172,18 +9230,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 174 }
+			OR = {
+				NOT = { has_full_control_of_state = 174 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 174 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			174 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				174 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					174 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -9207,7 +9288,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			174 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -9293,18 +9380,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 791 }
+			OR = {
+				NOT = { has_full_control_of_state = 791 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 791 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			791 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				791 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					791 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -9328,7 +9438,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			791 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -9414,18 +9530,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 176 }
+			OR = {
+				NOT = { has_full_control_of_state = 176 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 176 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			176 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				176 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					176 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -9449,7 +9588,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			176 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -9567,18 +9712,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 792 }
+			OR = {
+				NOT = { has_full_control_of_state = 792 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 792 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			792 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				792 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					792 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -9602,7 +9770,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			792 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -9720,18 +9894,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 172 }
+			OR = {
+				NOT = { has_full_control_of_state = 172 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 172 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			172 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				172 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					172 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -9755,7 +9952,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			172 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -9873,18 +10076,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 166 }
+			OR = {
+				NOT = { has_full_control_of_state = 166 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 166 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			166 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				166 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					166 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -9908,7 +10134,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			166 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -10026,18 +10258,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 794 }
+			OR = {
+				NOT = { has_full_control_of_state = 794 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 794 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			794 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				794 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					794 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -10061,7 +10316,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			794 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -10147,18 +10408,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 165 }
+			OR = {
+				NOT = { has_full_control_of_state = 165 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 165 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			165 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				165 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					165 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -10182,7 +10466,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			165 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -10279,18 +10569,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 788 }
+			OR = {
+				NOT = { has_full_control_of_state = 788 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 788 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			788 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				788 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					788 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -10314,7 +10627,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			788 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -10400,18 +10719,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 41 }
+			OR = {
+				NOT = { has_full_control_of_state = 41 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 41 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			41 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				41 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					41 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -10435,7 +10777,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			41 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -10532,18 +10880,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 793 }
+			OR = {
+				NOT = { has_full_control_of_state = 793 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 793 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			793 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				793 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					793 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -10567,7 +10938,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			793 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -10653,18 +11030,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 167 }
+			OR = {
+				NOT = { has_full_control_of_state = 167 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 167 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			167 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				167 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					167 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -10688,7 +11088,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			167 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -10774,18 +11180,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 170 }
+			OR = {
+				NOT = { has_full_control_of_state = 170 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 170 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			170 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				170 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					170 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -10809,7 +11238,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			170 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -10903,18 +11338,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 175 }
+			OR = {
+				NOT = { has_full_control_of_state = 175 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 175 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			175 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				175 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					175 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -10938,7 +11396,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			175 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -11024,18 +11488,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 168 }
+			OR = {
+				NOT = { has_full_control_of_state = 168 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 168 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			168 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				168 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					168 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -11059,7 +11546,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			168 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -11145,18 +11638,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 169 }
+			OR = {
+				NOT = { has_full_control_of_state = 169 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 169 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			169 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				169 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					169 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -11180,7 +11696,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			169 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -11266,18 +11788,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 789 }
+			OR = {
+				NOT = { has_full_control_of_state = 789 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 789 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			789 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				789 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					789 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -11301,7 +11846,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			789 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -11387,18 +11938,41 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SOV
+			}
 		}
 
 		available = {
-			NOT = { has_full_control_of_state = 173 }
+			OR = {
+				NOT = { has_full_control_of_state = 173 }
+				AND = {
+					tag = SOV
+					SPD = { NOT = { has_full_control_of_state = 173 } }
+				}
+			}
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			173 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				173 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				AND = {
+					tag = SOV
+					173 = {
+						has_state_flag = SPR_unplanned_offensive_flag
+						OR = {
+							is_controlled_by = SPD
+							any_neighbor_state = {
+								is_controlled_by = SPD
+							}
+						}
 					}
 				}
 			}
@@ -11422,7 +11996,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			173 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -11514,7 +12094,13 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 		}
 
 		available = {
@@ -11534,7 +12120,13 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				AND = {
+					original_tag = SPR
+					NOT = { tag = SPD }
+				}
+				original_tag = SOV
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			has_country_flag = SPR_preparing_offensive_in_progress_flag
