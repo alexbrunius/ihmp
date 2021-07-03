@@ -434,12 +434,12 @@ RAJ_MP_Civilian_2 = {
 			is_controlled_by = RAJ
 			NOT = { infrastructure < 10 }
 		}
-		date < 1939.1.1
+		date < 1938.6.1
 	}
 
 	abort = {
 		OR = {
-			date > 1939.1.1
+			date > 1938.6.1
 			429 = {
 				OR ={
 					NOT = { is_controlled_by = RAJ }
@@ -457,7 +457,7 @@ RAJ_MP_Civilian_2 = {
 		type = build_building
 		id = industrial_complex
 		target = 429
-		value = 5
+		value = 1
 	}
 }
 
@@ -472,19 +472,19 @@ RAJ_MP_Civilian = {
 			option = RAJ_MP_1
 		}
 		date > 1937.1.1
-		date < 1939.1.1
+		date < 1938.6.1
 	}
 
 	abort = {
 		OR = {
-			date > 1939.1.1
+			date > 1938.6.1
 		}
 	}
 
 	ai_strategy = {
 		type = building_target
 		id = industrial_complex
-		value = 50
+		value = 35
 	}
 }
 
