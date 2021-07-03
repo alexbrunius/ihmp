@@ -334,92 +334,91 @@ BUL_befriend_SOV = {
 	}
 }
 
-BUL_occupying_instead_of_dieing = {
+BUL_MP_Join_War = {
+
+	reversed = yes
+
 	allowed = {
-		original_tag = BUL
 		has_dlc = "Battle for the Bosporus"
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
+	}
+
+	enable = {
+		OR = {
+			tag = GER
+			is_in_faction_with = GER
+		}
+	}
+
+	abort = {
+		OR = {
+			BUL = { has_war = yes }
+			AND = {
+				BUL = {
+					has_full_control_of_state = 77
+					has_full_control_of_state = 803
+					has_full_control_of_state = 106
+					has_full_control_of_state = 184
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = BUL
+		target = join_allies
+		value = -99999
+	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = BUL
+		target = call_allies
+		value = -99999
+	}
+}
+
+BUL_MP_Call_to_War = {
+	allowed = {
+		has_dlc = "Battle for the Bosporus"
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = BUL_MP_1
+		}
 	}
 	enable = {
-		is_historical_focus_on = yes
-		country_exists = GER
+		OR = {
+			tag = GER
+			is_in_faction_with = GER
+		}
 	}
+
 	abort = {
-		has_full_control_of_state = 77
-		has_full_control_of_state = 803
-		has_full_control_of_state = 106
-		has_full_control_of_state = 184
-	}
-
-	ai_strategy = {
-		type = diplo_action_desire
-		id = GER
-		target = join_allies
-		value = -99999
-	}
-	ai_strategy = {
-		type = diplo_action_desire
-		id = ITA
-		target = join_allies
-		value = -99999
-	}
-	ai_strategy = {
-		type = diplo_action_desire
-		id = ROM
-		target = join_allies
-		value = -99999
-	}
-	ai_strategy = {
-		type = diplo_action_desire
-		id = HUN
-		target = join_allies
-		value = -99999
-	}
-	ai_strategy = {
-		type = diplo_action_desire
-		id = SPA
-		target = join_allies
-		value = -99999
-	}
-	ai_strategy = {
-		type = diplo_action_desire
-		id = VIC
-		target = join_allies
-		value = -99999
+		OR = {
+			BUL = { has_war = yes }
+			AND = {
+				BUL = {
+					has_full_control_of_state = 77
+					has_full_control_of_state = 803
+					has_full_control_of_state = 106
+					has_full_control_of_state = 184
+				}
+			}
+		}
 	}
 
 	ai_strategy = {
 		type = diplo_action_acceptance
-		id = GER
-		target = call_allies
+		id = BUL
+		target = join_allies
 		value = -99999
 	}
 	ai_strategy = {
-		type = diplo_action_acceptance
-		id = ITA
-		target = call_allies
-		value = -99999
-	}
-	ai_strategy = {
-		type = diplo_action_acceptance
-		id = ROM
-		target = call_allies
-		value = -99999
-	}
-	ai_strategy = {
-		type = diplo_action_acceptance
-		id = HUN
-		target = call_allies
-		value = -99999
-	}
-	ai_strategy = {
-		type = diplo_action_acceptance
-		id = SPA
-		target = call_allies
-		value = -99999
-	}
-	ai_strategy = {
-		type = diplo_action_acceptance
-		id = VIC
+		type = diplo_action_desire
+		id = BUL
 		target = call_allies
 		value = -99999
 	}
