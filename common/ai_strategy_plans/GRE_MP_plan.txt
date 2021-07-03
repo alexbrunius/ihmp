@@ -568,7 +568,7 @@ GRE_MP_Ignore_TUR = {
 	}
 }
 
-GRE_MP_Ignore_GRE = {
+GRE_MP_Ignore_BUL = {
 	name = "Ignore Bulgaria, shorten Front"
 	desc = ""
 
@@ -577,15 +577,19 @@ GRE_MP_Ignore_GRE = {
 		has_game_rule = {
 			rule = GRE_ai_behavior
 			option = GRE_MP_1
-		}
-		NOT = { has_war_with = GRE }
+		}	
+		NOT = { has_war_with = BUL }
 		731 = {
 			is_fully_controlled_by = GRE
+		}
+		BUL = {
+			owns_state = 211
+			owns_state = 212
 		}
 	}
 
 	abort = {
-		has_war_with = GRE
+		has_war_with = BUL
 		731 = {
 			NOT = {
 				is_fully_controlled_by = GRE
@@ -598,6 +602,31 @@ GRE_MP_Ignore_GRE = {
 		state = 211
 		state = 212
 		value = -200
+	}
+}
+
+
+GRE_MP_Stay_Home = {
+	name = "Stay Home"
+	desc = ""
+
+	enable = {
+		tag = GRE
+		has_game_rule = {
+			rule = GRE_ai_behavior
+			option = GRE_MP_1
+		}	
+		has_war = no
+	}
+
+	abort = {
+		has_war = yes
+	}
+	
+	ai_strategy = {
+	 	type = front_unit_request
+		strategic_region = 226
+		value = 200
 	}
 }
 
