@@ -468,34 +468,6 @@ on_actions = {
 					}
 				}
 			}
-			#Major Warlords
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = WL_ai_behavior
-						option = WL_MP_1
-					}
-					CHI = { is_ai = yes }
-				}
-				PRC = {
-					set_major = yes
-				}
-				SHX = {
-					set_major = yes
-				}
-				XSM = {
-					set_major = yes
-				}
-				SIK = {
-					set_major = yes
-				}
-				YUN = {
-					set_major = yes
-				}
-				GXC = {
-					set_major = yes
-				}
-			}
 			#Military Police for AIs
 			if = {
 				limit = {
@@ -570,6 +542,33 @@ on_actions = {
 					add_ideas = asian_agrarian_society
 				}
 			}
+		}
+	}
+
+	#ROOT = attacking side
+	#FROM = defending side
+	#fired when two countries end up at war with each other (on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first)
+	on_war_relation_added = {
+		effect = {
+			#Major Warlords
+			if = {
+				limit = {
+					ROOT = { tag = JAP }
+					FROM = {
+						OR = {
+							tag = PRC
+							tag = SHX
+							tag = XSM
+							tag = SIK
+							tag = YUN
+							tag = GXC
+						}
+					}
+				}
+				FROM = {
+					set_major = yes
+				}
+			}			
 		}
 	}
 
