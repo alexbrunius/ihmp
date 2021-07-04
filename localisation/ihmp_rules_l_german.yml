@@ -75,6 +75,8 @@
  RULE_OPTION_ENG_MP_1_DESC:0 "Rudimentäres Schwerpunktbaum und Politische Macht Skript für UK"
  RULE_OPTION_USA_MP_1:0 "Amerikanisches MP Skript"
  RULE_OPTION_USA_MP_1_DESC:0 "Rudimentäres Schwerpunktbaum und Politische Macht Skript für USA"
+ RULE_OPTION_MEX_MP_1:0 "Mexican MP Skript"
+ RULE_OPTION_MEX_MP_1_DESC:0 "Rudimentäres Schwerpunktbaum Skript welches die Armee in Mexiko belässt."
  RULE_OPTION_SPR_MP_1:0 "Spanisches MP Skript"
  RULE_OPTION_SPR_MP_1_DESC:0 "Skript für beide Spanische Nationen. Verbesserte Wahl im Schwerpunktbaum und Beraterwahl"
  RULE_OPTION_POR_MP_1:0 "Portugiesisches MP Skript"
