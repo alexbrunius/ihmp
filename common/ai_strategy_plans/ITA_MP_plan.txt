@@ -271,9 +271,54 @@ ITA_MP_Befriend_Axis = {
 		value = 200
 	}
 	ai_strategy = {
+		type = befriend
+		id = SIA
+		value = 50
+	}
+	ai_strategy = {
+		type = antagonize
+		id = FRA
+		value = 1000
+	}
+	ai_strategy = {
+		type = befriend
+		id = FRA
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = ENG
+		value = 1000
+	}
+	ai_strategy = {
+		type = befriend
+		id = ENG
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = RAJ
+		value = 1000
+	}
+	ai_strategy = {
+		type = befriend
+		id = RAJ
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = MAL
+		value = 1000
+	}
+	ai_strategy = {
+		type = befriend
+		id = MAL
+		value = -1000
+	}
+	ai_strategy = {
 		type = pp_spend_priority
 		id = relation	
-		value = -200
+		value = -400
 	}	
 }
 
