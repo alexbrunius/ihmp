@@ -3167,9 +3167,135 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	option = { # Yaplx
 		name = wtt_germany.72.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				tag = BUL
+			}
+		}
+		effect_tooltip = {
+			GER = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = GER
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+						NOT = { has_state_flag = GER_integrate_war_economies }
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GER_integrate_war_economies
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = GER
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+						NOT = { has_state_flag = GER_integrate_war_economies }
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GER_integrate_war_economies
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_integrate_war_economies_1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_integrate_war_economies_2
+			}
+			if = {
+				limit = {
+					has_dlc = "Death or Dishonor" 
+					is_in_faction_with = FROM
+					FROM = { is_subject = no }
+				}
+				FROM = {
+					set_autonomy = { target = ROOT autonomy_state = autonomy_satellite }
+				}
+			}
+			if = {
+				limit = { 
+					has_dlc = "Together for Victory"
+					NOT = { has_dlc = "Death or Dishonor" } 
+					is_in_faction_with = FROM
+					FROM = { is_subject = no }
+				}
+				FROM = {
+					set_autonomy = { target = ROOT autonomy_state = autonomy_dominion }
+				}
+			}
+			if = {
+				limit = { 
+					NOT = { has_dlc = "Together for Victory" }
+					NOT = { has_dlc = "Death or Dishonor" }
+					is_in_faction_with = FROM
+					FROM = { is_subject = no }
+				}
+				FROM = { puppet = ROOT }
+			}
+		}
+		custom_effect_tooltip = wtt_germany.72_tt
+		FROM = {
+			country_event = { id = wtt_germany.73 days = 1 }
+		}
+	}
+	option = { # Only Factories please
+		name = wtt_germany.72.a
+		set_country_flag = Only_Integrate_Economy
+		ai_chance = {
+			factor = 0
+			modifier = {
+				add = 1
+				tag = BUL
+			}
+		}
 		effect_tooltip = {
 			GER = {
 				random_owned_controlled_state = {
@@ -3349,11 +3475,76 @@ country_event = {
 				set_state_flag = GER_integrate_war_economies_2
 			}
 		}
-		FROM = {
-			add_popularity = {
-			ideology = fascism
-			popularity = 0.2
+		if = {
+			limit = { 
+				is_in_faction_with = FROM
+				has_government = fascism
+				FROM = {
+					is_subject = no
+					has_country_flag = Only_Integrate_Economy
+				}
 			}
+			FROM = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.2
+				}
+			}
+		}
+		if = {
+			limit = { 
+				is_in_faction_with = FROM
+				has_government = neutrality
+				FROM = {
+					is_subject = no
+					has_country_flag = Only_Integrate_Economy
+				}
+			}
+			FROM = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.2
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Death or Dishonor" 
+				is_in_faction_with = FROM
+				FROM = {
+					is_subject = no
+					NOT = { has_country_flag = Only_Integrate_Economy }
+				}
+			}
+			FROM = {
+				set_autonomy = { target = ROOT autonomy_state = autonomy_satellite }
+			}
+		}
+		if = {
+			limit = { 
+				has_dlc = "Together for Victory"
+				NOT = { has_dlc = "Death or Dishonor" } 
+				is_in_faction_with = FROM
+				FROM = {
+					is_subject = no
+					NOT = { has_country_flag = Only_Integrate_Economy }
+				}
+			}
+			FROM = {
+				set_autonomy = { target = ROOT autonomy_state = autonomy_dominion }
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { has_dlc = "Together for Victory" }
+				NOT = { has_dlc = "Death or Dishonor" }
+				is_in_faction_with = FROM
+				FROM = {
+					is_subject = no
+					NOT = { has_country_flag = Only_Integrate_Economy }
+				}
+			}
+			FROM = { puppet = ROOT }
 		}
 	}
 }
