@@ -8861,7 +8861,13 @@ operations = {
 			tag = ENG
 			has_government = democratic
 			has_war_with = GER
-			ICE = { exists = yes }
+			OR = {
+				ICE = { exists = yes }
+				AND = {
+					100 = { is_controlled_by = DEN }
+					FRA = { has_capitulated = yes }
+				}
+			}
 			#NOR = { has_capitulated = yes }
 			#is_in_faction_with = NOR
 		}
@@ -8877,12 +8883,26 @@ operations = {
 		visible = {
 			tag = ENG
 			has_war_with = GER
-			ICE = { exists = yes }
+			OR = {
+				ICE = { exists = yes }
+				AND = {
+					100 = { is_controlled_by = DEN }
+					FRA = { has_capitulated = yes }
+				}
+			}
 			NOT = { ICE = { is_in_faction_with = ROOT } }
 		}
 		
 		complete_effect = {
-			annex_country = { target = ICE transfer_troops = no }
+			if = {
+				limit = {
+					ICE = { exists = yes }
+				}
+				annex_country = { target = ICE transfer_troops = no }
+			}
+			else_if = {
+				transfer_state = 100
+			}
 			add_war_support = -0.05
 			add_popularity = { ideology = democratic popularity = -0.05 }
 		}
