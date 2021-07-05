@@ -1,4 +1,4 @@
-﻿capital = 2
+capital = 2
 
 oob = "ITA_1936"
 
@@ -43,7 +43,6 @@ set_technology = {
 	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
 	early_bomber = 1
-	naval_bomber1 = 1
 	CAS1 = 1
 	scout_plane1 = 1
 	trench_warfare = 1

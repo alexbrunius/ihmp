@@ -542,6 +542,15 @@ on_actions = {
 					add_ideas = asian_agrarian_society
 				}
 			}
+			# Italy unique NAV
+			ITA = {
+				add_ideas = savoia_marchetti
+				set_technology = {
+					naval_bomber1 = 1
+				}
+				load_oob = "ITA_1936_nav_bombers"
+				remove_ideas = savoia_marchetti
+			}
 		}
 	}
 
