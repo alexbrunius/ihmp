@@ -215,6 +215,11 @@ GER_MP_Alliance = {
 	}
 	ai_strategy = {
 		type = befriend
+		id = SIA
+		value = 50
+	}
+	ai_strategy = {
+		type = befriend
 		id = ITA
 		value = 200
 	}
@@ -226,22 +231,42 @@ GER_MP_Alliance = {
 	ai_strategy = {
 		type = antagonize
 		id = FRA
-		value = 400
+		value = 1000
+	}
+	ai_strategy = {
+		type = befriend
+		id = FRA
+		value = -1000
 	}
 	ai_strategy = {
 		type = antagonize
 		id = ENG
-		value = 400
+		value = 1000
+	}
+	ai_strategy = {
+		type = befriend
+		id = ENG
+		value = -1000
 	}
 	ai_strategy = {
 		type = antagonize
 		id = RAJ
-		value = 400
+		value = 1000
+	}
+	ai_strategy = {
+		type = befriend
+		id = RAJ
+		value = -1000
 	}
 	ai_strategy = {
 		type = antagonize
 		id = MAL
-		value = 400
+		value = 1000
+	}
+	ai_strategy = {
+		type = befriend
+		id = MAL
+		value = -1000
 	}
 	ai_strategy = {
 		type = alliance
