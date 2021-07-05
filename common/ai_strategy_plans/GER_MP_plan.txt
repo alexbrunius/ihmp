@@ -224,6 +224,26 @@ GER_MP_Alliance = {
 		value = 200
 	}
 	ai_strategy = {
+		type = antagonize
+		id = FRA
+		value = 400
+	}
+	ai_strategy = {
+		type = antagonize
+		id = ENG
+		value = 400
+	}
+	ai_strategy = {
+		type = antagonize
+		id = RAJ
+		value = 400
+	}
+	ai_strategy = {
+		type = antagonize
+		id = MAL
+		value = 400
+	}
+	ai_strategy = {
 		type = alliance
 		id = YUG
 		value = -200
@@ -248,7 +268,7 @@ Do_Befriend_But_No_PP = {
 	ai_strategy = {
 		type = pp_spend_priority
 		id = relation	
-		value = -200
+		value = -400
 	}
 }
 
@@ -263,7 +283,7 @@ GER_MP_1_Fighter2 = {
 			option = GER_MP_1
 		}
 		NOT = { has_tech = fighter2 }
-		date > 1938.6.1
+		date > 1939.1.1
 	}
 
 	abort = {
@@ -547,6 +567,37 @@ GER_MP_No_Eth = {
 		state = 559 #Somaliland (ITA)
 		value = -600
 	}	
+}
+
+GER_MP_Attack_SOV_Later = {
+	name = "Attack SOV in Summer"
+	desc = ""
+
+	enable = {
+		tag = GER
+		has_game_rule = {
+			rule = GER_ai_behavior
+			option = GER_MP_1
+		}
+		OR = {
+			AND = {
+				date > 1939.7.1
+				date < 1940.5.1
+			}
+			AND = {
+				date > 1940.7.1
+				date < 1941.5.1
+			}
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = declare_war
+		id = SOV
+		value = -999
+	}
 }
 
 MP_Conscription_0 = {

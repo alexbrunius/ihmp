@@ -154,9 +154,29 @@ ROM_MP_1_Alliance = {
 		value = 200
 	}
 	ai_strategy = {
+		type = antagonize
+		id = FRA
+		value = 400
+	}
+	ai_strategy = {
+		type = antagonize
+		id = ENG
+		value = 400
+	}
+	ai_strategy = {
+		type = antagonize
+		id = RAJ
+		value = 400
+	}
+	ai_strategy = {
+		type = antagonize
+		id = MAL
+		value = 400
+	}
+	ai_strategy = {
 		type = pp_spend_priority
 		id = relation	
-		value = -200
+		value = -400
 	}
 }
 
