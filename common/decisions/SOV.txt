@@ -380,8 +380,8 @@ SOV_industry_relocation = {
 		available = {
 			202 = { #Kiev
 				is_owned_and_controlled_by = SOV
-				arms_factory > 1
-				industrial_complex > 2
+				arms_factory > 0
+				industrial_complex > 1
 			}
 			573 = { is_owned_and_controlled_by = SOV } #Zlatoust
 			582 = { is_owned_and_controlled_by = SOV } #Magnitogorsk
@@ -449,18 +449,18 @@ SOV_industry_relocation = {
 				202 = { #Kiev
 					remove_building = {
 						type = industrial_complex
-						level = 3
+						level = 2
 					}
 					remove_building = {
 						type = arms_factory
-						level = 2
+						level = 1
 					}
 				}
 				573 = { #Zlatoust
-					add_extra_state_shared_building_slots = 2				
+					add_extra_state_shared_building_slots = 1				
 					add_building_construction = {
 						type = arms_factory
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 	
@@ -469,10 +469,10 @@ SOV_industry_relocation = {
 					}
 				}
 				582 = { #Magnitogorsk
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 2
 						instant_build = yes
 					}
 				
