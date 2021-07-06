@@ -8,7 +8,7 @@ FRA_MP_1 = {
 			rule = FRA_ai_behavior
 			option = FRA_MP_1
 		}
-		has_capitulated = no
+		has_focus_tree = french_focus
 	}
 
 	abort = {
@@ -19,12 +19,12 @@ FRA_MP_1 = {
 		FRA_form_the_popular_front
 		FRA_reform_the_labour_laws
 		FRA_review_foreign_policy
+		FRA_begin_rearmament
 		FRA_buy_time
 		FRA_strengthen_government_support
 		#1937
 		FRA_defensive_strategems
 		#FRA_intervention_in_spain
-		FRA_begin_rearmament
 		FRA_nationalize_key_industry
 		FRA_the_blum_viollette_proposal
 		FRA_form_the_state_arsenals
@@ -61,6 +61,7 @@ FRA_MP_1 = {
 	research = {
 		synth_resources = -1000
 		air_doctrine = -1000
+		air_equipment = -1000
 		naval_equipment = -1000
 		naval_doctrine = -1000
 	}
@@ -94,7 +95,7 @@ FRA_MP_2 = {
 			rule = FRA_ai_behavior
 			option = FRA_MP_2
 		}
-		has_capitulated = no
+		has_focus_tree = french_focus
 	}
 
 	abort = {
@@ -144,6 +145,7 @@ FRA_MP_2 = {
 	research = {
 		synth_resources = -1000
 		air_doctrine = -1000
+		air_equipment = -1000
 		naval_equipment = -1000
 		naval_doctrine = -1000
 	}
@@ -206,6 +208,57 @@ FRA_MP_Block_Partial_War = {
 
 	ideas = {
 		partial_economic_mobilisation = 0
+	}
+}
+
+FRA_MP_Mil_Construction = {
+	name = "France Military Construction"
+	desc = ""
+
+	enable = {
+		tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		OR = {
+			has_war = yes
+			date > 1937.1.1
+			459 = {
+				OR = {
+					NOT = { is_controlled_by = FRA }
+					AND = {
+						NOT = { infrastructure < 10 }
+						free_building_slots = {
+							building = industrial_complex
+							size < 1
+							include_locked = no
+						}
+					}
+				}
+			}
+		
+		}
+	}
+
+	abort = {
+		has_capitulated = yes
+	}
+
+
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 100
+	}
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = -1000
 	}
 }
 
@@ -345,7 +398,7 @@ FRA_MP_Advisors = {
 }
 
 FRA_MP_NoPlanes = {
-	name = "No Plane Production"
+	name = "No Plane or Ship Production"
 	desc = ""
 
 	enable = {
@@ -397,67 +450,27 @@ FRA_MP_NoPlanes = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = scout_plane
-		value = -1000
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = fighter
-		value = -1000
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = cas
-		value = -1000
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = tactical_bomber
-		value = -1000
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = strategic_bomber
-		value = -1000
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = naval_bomber
-		value = -1000
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = scout_plane
-		value = -1000
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = screen_ship
-		value = -100
+		value = -10000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = screen_ship
-		value = -100
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = capital_ship
-		value = -100
+		value = -10000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = capital_ship
-		value = -100
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = submarine
-		value = -100
+		value = -10000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = submarine
-		value = -100
+		value = -10000
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = convoy
+		value = 100
 	}
 }
 
@@ -792,7 +805,7 @@ FRA_MP_Allies = {
 	ai_strategy = {
 		type = pp_spend_priority
 		id = relation	
-		value = -200
+		value = -400
 	}
 }
 
@@ -998,12 +1011,15 @@ MP_Spy_Defense_3 = {
 	}
 }
 
-FRA_MP_Algier_Infrastructure = {
-	name = "Algier Infrastructure"
-	desc = "Build Level 10 Infrastructure in Algier"
+FRA_MP_Civilian = {
+	name = "Build Civ in Algier"
+	desc = "Build 2 Civs in Algier"
+
+	allowed = {
+		original_tag = FRA
+	}
 
 	enable = {
-		original_tag = FRA
 		OR = {
 			has_game_rule = {
 				rule = FRA_ai_behavior
@@ -1014,19 +1030,77 @@ FRA_MP_Algier_Infrastructure = {
 				option = FRA_MP_2
 			}
 		}
-		has_capitulated = no
 		459 = {
 			is_controlled_by = FRA
-			infrastructure < 10
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = no
+			}
+			industrial_complex < 2
 		}
 	}
 
 	abort = {
-		has_capitulated = yes
+		OR = {
+			459 = {
+				OR = {
+					NOT = { is_controlled_by = FRA }
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = no
+					}
+					industrial_complex > 1
+				}
+			}
+		}
+	}
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 459
+		value = 2
+	}
+}
+
+FRA_MP_Algier_Infrastructure = {
+	name = "Algier Infrastructure"
+	desc = "Build Level 10 Infrastructure in Algier"
+
+	allowed = {
+		original_tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
 		459 = {
-			OR ={
-				NOT = { is_controlled_by = FRA }
-				NOT = { infrastructure < 10 }
+			is_controlled_by = FRA
+			infrastructure < 10
+		}
+		NOT = { date < 1936.1.2 }
+		
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			NOT = { date < 1938.1.1 }
+			459 = {
+				OR ={
+					NOT = { is_controlled_by = FRA }
+					NOT = { infrastructure < 10 }
+					industrial_complex > 1
+				}
 			}
 		}
 	}
@@ -1035,16 +1109,19 @@ FRA_MP_Algier_Infrastructure = {
 		type = build_building
 		id = infrastructure
 		target = 459
-		value = 1
+		value = 6
 	}
 }
 
-FRA_MP_Civilian_1 = {
-	name = "Build Civ in Algier"
-	desc = "If Algier has Level 10 Infra, build Civ there"
+FRA_MP_Concentrated = {
+	name = "Research 1937 concentrated"
+	desc = ""
+
+	allowed = {
+		original_tag = FRA
+	}
 
 	enable = {
-		original_tag = FRA
 		OR = {
 			has_game_rule = {
 				rule = FRA_ai_behavior
@@ -1055,41 +1132,75 @@ FRA_MP_Civilian_1 = {
 				option = FRA_MP_2
 			}
 		}
-		date < 1938.6.1
+		NOT = { has_tech = concentrated_industry2 }
+	}
+
+	abort = {
+		has_tech = concentrated_industry2
+	}
+	research = {
+		concentrated_industry_category = 200
+	}
+
+}
+
+FRA_MP_ArmsFactory = {
+	name = "Build Mil in Algier"
+	desc = ""
+
+	allowed = {
+		original_tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_tech = concentrated_industry
 		459 = {
 			is_controlled_by = FRA
-			NOT = { infrastructure < 10 }
 			free_building_slots = {
-				building = industrial_complex
-				size > 1
+				building = arms_factory
+				size > 0
 				include_locked = no
 			}
+			industrial_complex > 1
 		}
 	}
 
 	abort = {
 		OR = {
-			date > 1939.1.1
 			459 = {
-				OR ={
+				OR = {
 					NOT = { is_controlled_by = FRA }
 					free_building_slots = {
-						building = industrial_complex
-						size < 2
+						building = arms_factory
+						size < 1
 						include_locked = no
+					}
+					OR = {
+						industrial_complex > 2
+						arms_factory > 0
 					}
 				}
 			}
 		}
 	}
-
 	ai_strategy = {
 		type = build_building
-		id = industrial_complex
+		id = arms_factory
 		target = 459
 		value = 1
 	}
 }
+
 
 FRA_MP_No_Europe_Factories = {
 	name = "No Factories in Europe"
@@ -1115,123 +1226,153 @@ FRA_MP_No_Europe_Factories = {
 
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  1
+        target = 1
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  14
+        target = 14
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  15
+        target = 15
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  16
+        target = 16
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  17
+        target = 17
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  18
+        target = 18
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  19
+        target = 19
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  20
+        target = 20
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  21
+        target = 21
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  22
+        target = 22
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  23
+        target = 23
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  24
+        target = 24
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  25
+        target = 25
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  26
+        target = 26
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  27
+        target = 27
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  28
+        target = 28
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  29
+        target = 29
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  30
+        target = 30
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  31
+        target = 31
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  32
+        target = 32
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  33
+        target = 33
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  735
+        target = 735
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  785
+        target = 785
         value = -1000
     }
 	ai_strategy = {
         type = factory_build_score_factor
-        target =  459
+        target = 806
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target = 286 #Indochina
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target = 671
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target = 741
+        value = -1000
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target = 458 #Tunis
+        value = -50
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  459 #Algier
         value = 100
+    }
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  460 #Constantine
+        value = 50
     }
 }
 
