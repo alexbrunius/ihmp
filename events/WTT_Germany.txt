@@ -3290,10 +3290,10 @@ country_event = {
 		name = wtt_germany.72.a
 		set_country_flag = Only_Integrate_Economy
 		ai_chance = {
-			factor = 0
+			factor = 1
 			modifier = {
-				add = 1
-				tag = BUL
+				factor = 0
+				NOT = { tag = BUL }
 			}
 		}
 		effect_tooltip = {
@@ -3516,8 +3516,8 @@ country_event = {
 					NOT = { has_country_flag = Only_Integrate_Economy }
 				}
 			}
-			FROM = {
-				set_autonomy = { target = ROOT autonomy_state = autonomy_satellite }
+			THIS = {
+				set_autonomy = { target = FROM autonomy_state = autonomy_satellite }
 			}
 		}
 		if = {
@@ -3530,8 +3530,8 @@ country_event = {
 					NOT = { has_country_flag = Only_Integrate_Economy }
 				}
 			}
-			FROM = {
-				set_autonomy = { target = ROOT autonomy_state = autonomy_dominion }
+			THIS = {
+				set_autonomy = { target = FROM autonomy_state = autonomy_dominion }
 			}
 		}
 		if = {
@@ -3544,7 +3544,7 @@ country_event = {
 					NOT = { has_country_flag = Only_Integrate_Economy }
 				}
 			}
-			FROM = { puppet = ROOT }
+			THIS = { puppet = FROM }
 		}
 	}
 }
