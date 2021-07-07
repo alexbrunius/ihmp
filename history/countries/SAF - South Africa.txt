@@ -148,9 +148,6 @@ create_country_leader = {
 	picture = "GFX_SAF_james_hertzog"
 	expire = "1965.1.1"
 	ideology = conservatism
-	traits = {
-		#
-	}
 }
 
 1939.1.1 = {
@@ -171,9 +168,6 @@ create_country_leader = {
 		picture = "Portrait_SouthAfrica_Jan_Smuts.dds"
 		expire = "1965.1.1"
 		ideology = conservatism
-		traits = {
-			#
-		}
 	}
 }
 
@@ -183,9 +177,6 @@ create_country_leader = {
 	picture = "GFX_SAF_daniel_malan"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -194,9 +185,6 @@ create_country_leader = {
 	picture = "GFX_SAF_moses_kotane"
 	expire = "1965.1.1"
 	ideology = marxism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -205,9 +193,6 @@ create_country_leader = {
 	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
 	expire = "1965.1.1"
 	ideology = centrism
-	traits = {
-		#
-	}
 }
 
 create_corps_commander = {

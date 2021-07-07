@@ -3614,17 +3614,13 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				AND = {
-					tag = ENG
-					BUL_has_some_sort_of_bogdan_filov = yes
-				}
+				tag = ENG
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 			modifier = {
 				factor = 0.5
-				AND = {
-					tag = GER
-					BUL_has_some_sort_of_bogdan_filov = yes
-				}
+				tag = GER
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 		}
 
@@ -3746,17 +3742,13 @@ country_event = {
 			}
 			modifier = {
 				factor = 2.5
-				AND = {
-					tag = ENG
-					BUL_has_some_sort_of_bogdan_filov = yes
-				}
+				tag = ENG
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 			modifier = {
 				factor = 0.25
-				AND = {
-					tag = GER
-					BUL_has_some_sort_of_bogdan_filov = yes
-				}
+				tag = GER
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 		}
 
@@ -3878,17 +3870,13 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				AND = {
-					tag = ENG
-					BUL_has_some_sort_of_bogdan_filov = yes
-				}
+				tag = ENG
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 			modifier = {
 				factor = 0.5
-				AND = {
-					tag = GER
-					BUL_has_some_sort_of_bogdan_filov = yes
-				}
+				tag = GER
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 		}
 
@@ -4387,11 +4375,9 @@ country_event = {
 			}
 			modifier = {
 				factor = 5
-				AND = {
-					tag = GER
-					is_historical_focus_on = yes
-					FROM.FROM = { is_core_of = YUG }
-				}
+				tag = GER
+				is_historical_focus_on = yes
+				FROM.FROM = { is_core_of = YUG }
 			}
 			modifier = {
 				factor = 5
@@ -4409,10 +4395,8 @@ country_event = {
 			}
 			modifier = {
 				factor = 5
-				AND = {
-					tag = GER
-					BUL_has_some_sort_of_bogdan_filov = yes
-				}
+				tag = GER
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 		}
 
@@ -8848,10 +8832,8 @@ country_event = {
 			}
 			modifier = {
 				factor = 5
-				AND = {
-					tag = ENG
-					BUL_has_some_sort_of_bogdan_filov = yes
-				}
+				tag = ENG
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 		}
 

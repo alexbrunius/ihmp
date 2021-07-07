@@ -307,9 +307,6 @@ if = {
 			picture = "Portrait_Turkey_Ismet_Inonu.dds"
 			expire = "1965.1.1"
 			ideology = despotism
-			traits = {
-				
-			}
 		}
 	}
 
@@ -445,9 +442,6 @@ if = {
 		picture = "Portrait_Turkey_Ismet_Inonu.dds"
 		expire = "1965.1.1"
 		ideology = despotism
-		traits = {
-			#
-		}
 	}
 	
 	create_country_leader = {
@@ -456,9 +450,6 @@ if = {
 		picture = "gfx/leaders/TUR/Portrait_Turkey_Mustafa_Kemal_Ataturk.dds"
 		expire = "1938.11.10"
 		ideology = despotism
-		traits = {
-			#
-		}
 	}
 	
 	create_country_leader = {
@@ -467,9 +458,6 @@ if = {
 		picture = "gfx/leaders/TUR/Portrait_Turkey_Sefik_Husnu.dds"
 		expire = "1965.1.1"
 		ideology = stalinism
-		traits = {
-			#
-		}
 	}
 	
 	create_country_leader = {
@@ -478,9 +466,6 @@ if = {
 		picture = "GFX_portrait_tur_celal_bayar"
 		expire = "1965.1.1"
 		ideology = conservatism
-		traits = {
-			#
-		}
 	}
 	create_country_leader = {
 		name = "Fevzi Çakmak"
@@ -488,9 +473,6 @@ if = {
 		picture = "GFX_portrait_tur_fevzi_cakmak"
 		expire = "1965.1.1"
 		ideology = fascism_ideology
-		traits = {
-			#
-		}
 	}
 }
 
@@ -715,10 +697,8 @@ if = {
 
 if = {
 	limit = {
-		AND = {
-			has_dlc = "La Resistance"
-			has_dlc = "Battle for the Bosporus"
-		}
+		has_dlc = "La Resistance"
+		has_dlc = "Battle for the Bosporus"
 	}
 	create_operative_leader = {
 		name = "Ruzi Nazar"
@@ -882,10 +862,6 @@ if = {
 
 # 1939 Start #
 1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Submarines #

@@ -209,9 +209,6 @@ create_country_leader = {
 	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -220,9 +217,6 @@ create_country_leader = {
 	picture = "Portrait_Poland_Ignacy_Moscicki.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -231,9 +225,6 @@ create_country_leader = {
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
 	ideology = leninism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -242,9 +233,6 @@ create_country_leader = {
 	picture = "GFX_POL_wincenty_witos"
 	expire = "1965.1.1"
 	ideology = conservatism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -253,9 +241,6 @@ create_country_leader = {
 	picture = "GFX_POL_boleslaw_piasecki"
 	expire = "1965.1.1"
 	ideology = falangism
-	traits = {
-		#
-	}
 }
 
 create_field_marshal = {
@@ -362,10 +347,6 @@ create_equipment_variant = {
 ### VARIANTS ###
 # 1936 Start #
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-}
-if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
@@ -401,10 +382,6 @@ if = {
 
 # 1939 Start #
 1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Submarines #

@@ -388,8 +388,6 @@ create_country_leader = {
 	picture = "GFX_Portrait_kyuichi_tokuda"
 	expire = "1989.1.1"
 	ideology = marxism
-	traits = {
-	}
 }
 
 create_country_leader = {
@@ -398,8 +396,6 @@ create_country_leader = {
 	picture = "GFX_Portrait_tetsu_katayama"
 	expire = "1989.1.1"
 	ideology = liberalism
-	traits = {
-	}
 }
 
 create_corps_commander = {

@@ -450,7 +450,6 @@ country_event = {
 
 	option = {
 		name = lar_france_french_union.1.a 
-		
 	}
 }
 #north africa agrees

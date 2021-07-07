@@ -326,9 +326,6 @@ if = {
 		picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 		expire = "1965.1.1"
 		ideology = marxism
-		traits = {
-			#
-		}
 	}
 	
 	create_country_leader = {
@@ -337,9 +334,6 @@ if = {
 		picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
 		expire = "1965.1.1"
 		ideology = fascism_ideology
-		traits = {
-			#
-		}
 	}
 	
 	
@@ -358,10 +352,6 @@ if = {
 
 ### VARIANTS ###
 # 1936 Start #
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-}
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #

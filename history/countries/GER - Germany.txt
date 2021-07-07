@@ -163,11 +163,7 @@ set_war_support = 0.3
 
 	#Soviet treaty
 	unlock_national_focus = GER_soviet_treaty
-	add_tech_bonus = {
-		bonus = 1.0
-		uses = 2
-		category = armor
-	}
+	give_SOV_armor_research_bonuses = yes
 	SOV = {
 		add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
 		add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
@@ -328,8 +324,6 @@ create_country_leader = {
 	picture = "Portrait_Germany_Konrad_Adenauer.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
-	traits = {
-	}
 }
 
 create_country_leader = {

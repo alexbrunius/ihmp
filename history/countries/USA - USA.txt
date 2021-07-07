@@ -316,9 +316,6 @@ create_country_leader = {
 	picture = "Portrait_USA_William_Dudley_Pelley.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		
-	}
 }
 
 create_country_leader = {
@@ -327,9 +324,6 @@ create_country_leader = {
 	picture = "portrait_USA_earl_browder.dds"
 	expire = "1965.1.1"
 	ideology = marxism
-	traits = {
-		
-	}
 }
 
 create_corps_commander = {

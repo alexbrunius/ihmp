@@ -240,9 +240,6 @@ create_country_leader = {
 	picture = "GFX_portrait_chi_wang_jingwei"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -251,9 +248,6 @@ create_country_leader = {
 	picture = "GFX_portrait_chi_weng_wenhao"
 	expire = "1965.1.1"
 	ideology = socialism
-	traits = {
-		#
-	}
 }
 
 add_opinion_modifier = { target = PRC modifier = hostile_status }
@@ -370,9 +364,6 @@ create_field_marshal = {
 
 ### VARIANTS ###
 # 1936 Start #
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-}
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Destroyers #

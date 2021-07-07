@@ -403,9 +403,6 @@ if = { #DLC
 			picture = "Portrait_Bulgaria_Boris_III.dds"
 			expire = "1965.1.1"
 			ideology = despotism
-			traits = {
-				#
-			}
 		}
 
 		create_country_leader = { #VANILLA
@@ -414,9 +411,6 @@ if = { #DLC
 			picture = "Portrait_Bulgaria_Georgi_Dimitrov.dds"
 			expire = "1965.1.1"
 			ideology = leninism
-			traits = {
-				#
-			}
 		}
 
 		create_country_leader = { #VANILLA
@@ -425,9 +419,6 @@ if = { #DLC
 			picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 			expire = "1965.1.1"
 			ideology = socialism
-			traits = {
-				#
-			}
 		}
 
 		create_country_leader = { #VANILLA
@@ -436,9 +427,6 @@ if = { #DLC
 			picture = "GFX_Portrait_bulgaria_hristo_lukov"
 			expire = "1965.1.1"
 			ideology = fascism_ideology
-			traits = {
-				#
-			}
 		}
 
 		create_corps_commander = { #VANILLA

@@ -2251,9 +2251,6 @@ ENG_appeal_to_imperial_loyalists = {
 						picture = "gfx/leaders/ENG/portrait_eng_william_birdwood.dds"
 						expire = "1965.1.1"
 						ideology = centrism
-						traits = {
-							
-						}
 					}
 				}
 				AST = { hidden_effect = { news_event = { id = mtg_news.26 days = 1 } } }
@@ -7992,27 +7989,13 @@ ENG_imperial_conference_decision = {
 			custom_effect_tooltip = imperial_conference_ends_tt
 			every_country = {
 				limit = {
+					is_subject_of = ENG
 					OR = {
-						AND = {
-							is_subject_of = ENG
-							tag = CAN
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = SAF
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = RAJ
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = AST
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = NZL
-						}
+						tag = CAN
+						tag = SAF
+						tag = RAJ
+						tag = AST
+						tag = NZL
 					}
 				}
 				remove_opinion_modifier = { target = ENG modifier = ENG_imperial_conference_opinion }

@@ -15698,10 +15698,6 @@ SPA_preparing_the_carlist_insurrection = {
 			171 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
 		}
-
-		ai_will_do = {
-
-		}
 	}
 
 	SPA_establish_asturias_carlist_cell = {
@@ -15749,10 +15745,6 @@ SPA_preparing_the_carlist_insurrection = {
 		remove_effect = {
 			790 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
-		}
-
-		ai_will_do = {
-
 		}
 	}
 
@@ -15802,10 +15794,6 @@ SPA_preparing_the_carlist_insurrection = {
 			174 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
 		}
-
-		ai_will_do = {
-
-		}
 	}
 
 	SPA_establish_valladolid_carlist_cell = {
@@ -15853,10 +15841,6 @@ SPA_preparing_the_carlist_insurrection = {
 		remove_effect = {
 			791 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
-		}
-
-		ai_will_do = {
-
 		}
 	}
 
@@ -15906,10 +15890,6 @@ SPA_preparing_the_carlist_insurrection = {
 			176 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
 		}
-
-		ai_will_do = {
-
-		}
 	}
 
 	SPA_establish_pais_vasco_carlist_cell = {
@@ -15957,10 +15937,6 @@ SPA_preparing_the_carlist_insurrection = {
 		remove_effect = {
 			792 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
-		}
-
-		ai_will_do = {
-
 		}
 	}
 
@@ -16010,10 +15986,6 @@ SPA_preparing_the_carlist_insurrection = {
 			172 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
 		}
-
-		ai_will_do = {
-
-		}
 	}
 
 	SPA_establish_western_aragon_carlist_cell = {
@@ -16061,10 +16033,6 @@ SPA_preparing_the_carlist_insurrection = {
 		remove_effect = {
 			166 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
-		}
-
-		ai_will_do = {
-
 		}
 	}
 
@@ -16114,10 +16082,6 @@ SPA_preparing_the_carlist_insurrection = {
 			794 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
 		}
-
-		ai_will_do = {
-
-		}
 	}
 
 	SPA_establish_catalunya_carlist_cell = {
@@ -16165,10 +16129,6 @@ SPA_preparing_the_carlist_insurrection = {
 		remove_effect = {
 			165 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
-		}
-
-		ai_will_do = {
-
 		}
 	}
 
@@ -16218,10 +16178,6 @@ SPA_preparing_the_carlist_insurrection = {
 			788 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
 		}
-
-		ai_will_do = {
-
-		}
 	}
 
 	SPA_establish_madrid_carlist_cell = {
@@ -16269,10 +16225,6 @@ SPA_preparing_the_carlist_insurrection = {
 		remove_effect = {
 			41 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
-		}
-
-		ai_will_do = {
-
 		}
 	}
 
@@ -16322,10 +16274,6 @@ SPA_preparing_the_carlist_insurrection = {
 			793 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
 		}
-
-		ai_will_do = {
-
-		}
 	}
 
 	SPA_establish_valencia_carlist_cell = {
@@ -16373,10 +16321,6 @@ SPA_preparing_the_carlist_insurrection = {
 		remove_effect = {
 			167 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
-		}
-
-		ai_will_do = {
-
 		}
 	}
 
@@ -16426,10 +16370,6 @@ SPA_preparing_the_carlist_insurrection = {
 			170 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
 		}
-
-		ai_will_do = {
-
-		}
 	}
 
 	SPA_establish_ciudad_real_carlist_cell = {
@@ -16477,10 +16417,6 @@ SPA_preparing_the_carlist_insurrection = {
 		remove_effect = {
 			175 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
-		}
-
-		ai_will_do = {
-
 		}
 	}
 
@@ -16530,10 +16466,6 @@ SPA_preparing_the_carlist_insurrection = {
 			168 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
 		}
-
-		ai_will_do = {
-
-		}
 	}
 
 	SPA_establish_sevilla_carlist_cell = {
@@ -16581,10 +16513,6 @@ SPA_preparing_the_carlist_insurrection = {
 		remove_effect = {
 			169 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
-		}
-
-		ai_will_do = {
-
 		}
 	}
 
@@ -16634,10 +16562,6 @@ SPA_preparing_the_carlist_insurrection = {
 			789 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
 		}
-
-		ai_will_do = {
-
-		}
 	}
 
 	SPA_establish_granada_carlist_cell = {
@@ -16686,10 +16610,6 @@ SPA_preparing_the_carlist_insurrection = {
 		remove_effect = {
 			173 = { set_state_flag = SPA_carlist_cell_flag }
 			clr_country_flag = SPA_already_establishing_carlist_cell_flag
-		}
-
-		ai_will_do = {
-
 		}
 	}
 
@@ -18821,10 +18741,6 @@ SPR_anti_fascist_unity = {
 		cost = 150
 
 		fire_only_once = no
-
-		modifier = {
-			
-		}
 
 		visible = {
 			has_completed_focus = SPR_anti_fascist_unity

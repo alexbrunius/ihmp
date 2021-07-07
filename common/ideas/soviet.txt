@@ -1769,11 +1769,8 @@ ideas = {
 				original_tag = SOV # Unlocked via focus
 
 			}
-			available = 
-			{
-				NOT = { has_country_flag = counter_purge }
-			}
 			available = {
+				NOT = { has_country_flag = counter_purge }
 				has_completed_focus = SOV_positive_heroism
 			}
 			

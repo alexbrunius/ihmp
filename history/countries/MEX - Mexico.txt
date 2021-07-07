@@ -204,9 +204,6 @@ create_country_leader = {
 	picture = "Portrait_Mexico_Lazaro_Cardenas.dds"
 	expire = "1965.1.1"
 	ideology = moderatism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -226,9 +223,6 @@ create_country_leader = { # Exiled until 1935 following a rebellion attempt, all
 	picture = "GFX_Portrait_MEX_Adolfo_de_la_Huerta"
 	expire = "1965.1.1"
 	ideology = conservatism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = { # Stalinist, took over after assassination of Trotsky. 1940-1959

@@ -120,9 +120,6 @@ create_country_leader = {
 	picture = "GFX_Portrait_peru_oscar_benavides"
 	expire = "1965.1.1"
 	ideology = despotism
-	traits = {
-		#
-	}
 }
 
 1939.1.1 = {
@@ -132,19 +129,12 @@ create_country_leader = {
 		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 		expire = "1965.1.1"
 		ideology = despotism
-		traits = {
-			#
-		}
 	}
 }
 
 
 ### VARIANTS ###
 # 1936 Start #
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-}
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #

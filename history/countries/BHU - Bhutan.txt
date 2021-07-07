@@ -69,9 +69,6 @@ create_country_leader = {
 	picture = "GFX_portrait_buthan_jigme_wangchuk"
 	expire = "1965.1.1"
 	ideology = despotism
-	traits = {
-		#
-	}
 }
 
 1939.1.1 = {

@@ -335,9 +335,6 @@ if = {
 		picture = "GFX_portrait_SPR_niceto_alcala_zamora"
 		expire = "1965.1.1"
 		ideology = conservatism
-		traits = {
-
-		}
 	}
 	
 	create_country_leader = {
@@ -346,9 +343,6 @@ if = {
 		picture = "portrait_spr_jose_diaz.dds"
 		expire = "1965.1.1"
 		ideology = stalinism
-		traits = {
-
-		}
 	}
 	create_country_leader = {
 		name = "Alejandro Lerroux"
@@ -357,9 +351,6 @@ if = {
 		picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 		expire = "1965.1.1"
 		ideology = centrism
-		traits = {
-			#
-		}
 	}
 	create_country_leader = {
 		name = "Francisco Franco"
@@ -367,9 +358,6 @@ if = {
 		picture = "GFX_portrait_spain_francisco_franco"
 		expire = "1965.1.1"
 		ideology = fascism_ideology
-		traits = {
-
-		}
 	}
 }
 
@@ -875,10 +863,6 @@ if = {
 
 # 1939 Start #
 1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Submarines #

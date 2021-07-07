@@ -98,10 +98,6 @@ CAN_historical = {
 		dd_tech = 5
 	}
 
-	ideas = {
-		
-	}
-
 	traits = {
 		captain_of_industry = 5
 		war_industrialist = 5

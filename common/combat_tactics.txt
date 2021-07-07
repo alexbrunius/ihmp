@@ -255,7 +255,6 @@ tactic_shock = { #counters delay
 	}
 	picture = shock
 	countered_by = tactic_ambush
-	countered_by = tactic_motti_tactic	
 	defender = -0.25
 }
 

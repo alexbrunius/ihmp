@@ -286,9 +286,6 @@ create_country_leader = {
 	picture = "GFX_portrait_fra_maurice_thorez"
 	expire = "1965.1.1"
 	ideology = 	stalinism
-	traits = {
-		
-	}
 }
 
 create_country_leader = {
@@ -297,9 +294,6 @@ create_country_leader = {
 	picture = "Portrait_France_Philippe_Petain.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		
-	}
 }
 
 create_corps_commander = {

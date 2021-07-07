@@ -87,7 +87,6 @@ guiTypes = {
 				spriteType = "GFX_resources_strip"
 				frame = 3
 				scale=1
-				pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
 				alwaystransparent=yes
 			}
 			instantTextboxType = {
@@ -119,7 +118,6 @@ guiTypes = {
 				frame = 4
 				scale=0.9
 				alwaystransparent=yes
-				pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
 			}
 			instantTextboxType = {
 				name = "tungsten_value"
@@ -133,7 +131,6 @@ guiTypes = {
 				fixedsize = yes
 				format = center
 				alwaystransparent=yes
-				#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
 			}
 			#steel			
 			iconType ={
@@ -151,7 +148,6 @@ guiTypes = {
 				frame = 5
 				scale=0.9
 				alwaystransparent=yes
-				pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
 			}
 			instantTextboxType = {
 				name = "steel_value"
@@ -165,7 +161,6 @@ guiTypes = {
 				fixedsize = yes
 				format = center
 				alwaystransparent=yes
-				#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
 			}
 			iconType ={
 				name ="chromium_value_bg"
@@ -181,7 +176,6 @@ guiTypes = {
 				spriteType = "GFX_resources_strip"
 				frame = 6
 				scale=0.9
-				pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
 				alwaystransparent=yes
 			}
 			instantTextboxType = {
@@ -196,7 +190,6 @@ guiTypes = {
 				fixedsize = yes
 				format = center
 				alwaystransparent=yes
-				#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
 			}
 		}
 	}

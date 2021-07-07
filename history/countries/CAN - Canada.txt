@@ -181,9 +181,6 @@ create_country_leader = {
 	picture = "Portrait_Canada_Mackenzie_King.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -192,9 +189,6 @@ create_country_leader = {
 	picture = "GFX_CAN_adrien_arcand"
 	expire = "1965.1.1"
 	ideology = nazism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -203,9 +197,6 @@ create_country_leader = {
     picture = "Portrait_Canada_Tim_Buck.dds"
     expire = "1965.1.1"
     ideology = marxism
-    traits = {
-        #
-    }
 }
 
 create_country_leader = {
@@ -214,9 +205,6 @@ create_country_leader = {
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	expire = "1965.1.1"
 	ideology = centrism
-	traits = {
-		#
-	}
 }
 
 set_convoys = 50

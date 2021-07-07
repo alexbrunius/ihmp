@@ -187,9 +187,6 @@ create_country_leader = {
 	picture = "Portrait_Australia_John_Curtin.dds"
 	expire = "1965.1.1"
 	ideology = socialism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -198,9 +195,6 @@ create_country_leader = {
 	picture = "GFX_AST_eric_campbell"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -209,9 +203,6 @@ create_country_leader = {
 	picture = "GFX_AST_richard_dixon"
 	expire = "1965.1.1"
 	ideology = stalinism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -220,9 +211,6 @@ create_country_leader = {
 	picture = "GFX_AST_earle_page"
 	expire = "1965.1.1"
 	ideology = centrism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -231,9 +219,6 @@ create_country_leader = {
 	picture = "Portrait_Australia_Rod_Hull.dds"
 	expire = "1965.1.1"
 	ideology = despotism
-	traits = {
-		#
-	}
 }
 
 set_convoys = 50

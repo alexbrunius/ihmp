@@ -115,9 +115,6 @@ create_country_leader = {
 	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -126,9 +123,6 @@ create_country_leader = {
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 	expire = "1965.1.1"
 	ideology = anarchist_communism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -137,9 +131,6 @@ create_country_leader = {
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
 	ideology = rexism
-	traits = {
-		#
-	}
 }
 
 create_corps_commander = {

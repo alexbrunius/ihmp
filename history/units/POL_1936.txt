@@ -13,9 +13,6 @@
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 	}
-	support = {
-        #recon = { x = 0 y = 0 }
-	}
 }
 division_template = {
 	name = "Dywizja Piechoty Górskiej"
@@ -31,9 +28,6 @@ division_template = {
 		mountaineers = { x = 2 y = 0 }	
 		mountaineers = { x = 2 y = 1 }	
 		mountaineers = { x = 2 y = 2 }	
-	}
-	support = {
-        #recon = { x = 0 y = 0 }
 	}
 }
 division_template = {

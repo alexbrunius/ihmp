@@ -155,10 +155,6 @@ ideas = {
 
 	}
 
-	political_advisor = {
-
-	}	
-
 	army_chief = {
 		
 		CHI_alexander_von_falkenhausen = {
@@ -217,18 +213,6 @@ ideas = {
 	
 	}
 	
-	navy_chief = {
-		
-
-	}
-
-	high_command = {
-
-	
-	}
-	
-
-
 	theorist = {
 
 		CHI_claire_lee_chennault_air_theorist = {

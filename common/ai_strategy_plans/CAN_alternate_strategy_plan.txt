@@ -95,10 +95,6 @@ CAN_democratic_alternate = {
 		dd_tech = 5
 	}
 
-	ideas = {
-		
-	}
-
 	traits = {
 		captain_of_industry = 5
 		war_industrialist = 5
@@ -217,10 +213,6 @@ CAN_fascist = {
 		dd_tech = 5
 	}
 
-	ideas = {
-		
-	}
-
 	traits = {
 		captain_of_industry = 5
 		war_industrialist = 5
@@ -337,10 +329,6 @@ CAN_communist = {
 		artillery = 8.0
 		support_tech = 6.5
 		dd_tech = 5
-	}
-
-	ideas = {
-		
 	}
 
 	traits = {

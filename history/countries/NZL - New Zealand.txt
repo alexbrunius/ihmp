@@ -161,9 +161,6 @@ create_country_leader = {
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
 	ideology = socialism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -172,9 +169,6 @@ create_country_leader = {
 	picture = "GFX_NZL_sidney_holland"
 	expire = "1965.1.1"
 	ideology = centrism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -183,9 +177,6 @@ create_country_leader = {
 	picture = "GFX_NZL_john_ormond"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -195,9 +186,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = marxism
 	female = yes
-	traits = {
-		#
-	}
 }
 
 set_convoys = 35
@@ -217,9 +205,6 @@ set_convoys = 35
 		picture = "Portrait_NewZealand_Peter_Fraser.dds"
 		expire = "1965.1.1"
 		ideology = socialism
-		traits = {
-			#
-		}
 	}
 	set_convoys = 40
 }
@@ -319,10 +304,6 @@ if = {
 
 # 1939 Start #
 1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Light Cruisers #

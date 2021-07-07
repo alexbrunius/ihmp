@@ -253,9 +253,6 @@ create_country_leader = {
 	picture = "Portrait_Italy_Benito_Mussolini.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		
-	}
 }
 
 create_country_leader = {
@@ -264,9 +261,6 @@ create_country_leader = {
 	picture = "GFX_portrait_italy_ferruccio_parri"
 	expire = "1965.1.1"
 	ideology = socialism
-	traits = {
-		
-	}
 }
 
 create_country_leader = {
@@ -275,9 +269,6 @@ create_country_leader = {
 	picture = "GFX_portrait_italy_victor_emmanuel_iii"
 	expire = "1965.1.1"
 	ideology = despotism
-	traits = {
-
-	}
 }
 
 create_country_leader = {
@@ -286,9 +277,6 @@ create_country_leader = {
 	picture = "GFX_portrait_ita_palmiro_togliatti"
 	expire = "1965.1.1"
 	ideology = marxism
-	traits = {
-		
-	}
 }
 
 create_field_marshal = {

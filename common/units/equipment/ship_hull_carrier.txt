@@ -301,6 +301,7 @@ equipments = {
 		module_slots = {
 			fixed_ship_deck_slot_1 = inherit
 			fixed_ship_deck_slot_2 = { 
+				required = no
 				allowed_module_categories = { ship_deck_space ship_carrier_armor ship_airplane_launcher }
 			}
 			fixed_ship_anti_air_slot = inherit
