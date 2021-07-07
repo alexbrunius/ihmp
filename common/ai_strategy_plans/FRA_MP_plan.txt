@@ -153,6 +153,141 @@ FRA_MP_2 = {
 	}
 }
 
+FRA_MP_Ideas = {
+	name = "France Ideas"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+	}
+
+	abort = {
+	}
+
+	ideas = {
+		war_economy = 0
+		civilian_economy = 0
+		free_trade = 0
+		export_focus = 1
+		limited_exports = 0
+		closed_economy = 0
+		disarmed_nation = 0
+		volunteer_only = 0
+		FRA_gaston_henry_haye = 200
+		henri_giraud = 5
+		maxime_weygand = 5
+		FRA_zivony_peshkov = 1
+		FRA_paul_baudouin = 0
+		FRA_charles_tillon = 0
+		charles_de_gaulle = 0
+		louis_kahn = 0
+		jean_decoux = 0
+		victor_denain = 0
+		jean_marie_bergeret = 0
+		frederic_irene_joliot_curie = 0
+		georges_bonnet = 0
+		FRA_panhard = 0
+		FRA_roger_salengro = 0
+	}
+}
+
+
+FRA_MP_Advisors = {
+	name = "Blocked Advisors till capitulated or Mid-1940"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		OR = {
+			FRA = { has_capitulated = no }
+			date < 1940.6.1
+		}
+	}
+
+	abort = {
+		OR = {
+			FRA = { has_capitulated = yes }
+			date > 1940.6.1
+		}
+	}
+
+	ideas = {
+		FRA_zivony_peshkov = 0
+		FRA_felix_gouin = 0
+		FRA_paul_reynaud = 0
+		francois_darlan = 0
+		marcel_gensoul = 0
+		jean_marie_abrial = 0
+		joseph_vuillemin = 0
+		robert_odic = 0
+		philippe_fequant = 0
+		rene_prioux = 0
+		charles_huntziger = 0
+		philippe_leclerc = 0
+		alfred_heurtaux = 0
+		martial_valin = 0
+		jean_francois_jannekeyn = 0
+		jean_de_laborde = 0
+		emile_muselier = 0
+		rene_emile_godfroy = 0
+		renault_fra = 0
+		FRA_AMX = 0
+		FRA_APX = 0
+		somua = 0
+		mas = 0
+		schneider = 0
+		morane_saulnier = 0
+		bloch = 0
+		amiot = 0
+		levasseur = 0
+		fcm = 0
+		aeb = 0
+		acl = 0
+		acf = 0
+		famh = 0
+		FRA_vincent_auriol = 0
+		FRA_pierre_pucheu = 0
+		FRA_maurice_gauche = 0
+		generic_head_of_intelligence = 0
+		#army chief
+		FRA_henri_marie_auguste_bineau = 0
+		FRA_pierre_alombert_goget = 0
+		alphonse_georges = 0
+	}
+	
+	ai_strategy = {
+		type = pp_spend_priority
+		id = general
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = -1000
+	}
+}
+
 FRA_MP_Defend_Paris = {
 	name = "Defend Paris"
 	desc = ""
@@ -181,15 +316,19 @@ FRA_MP_Defend_Paris = {
 
 	ai_strategy = {
 		type = put_unit_buffers
-		ratio = 0.02
+		ratio = 0.03
 		states = {
 			16
 		}
 	}
+	ai_strategy = {
+		type = garrison
+		value = -100
+	}
 }
 
 FRA_MP_Stay_on_Maginot = {
-	name = "Defend Paris"
+	name = "Stay on Maginot"
 	desc = ""
 
 	allowed = {
@@ -217,7 +356,118 @@ FRA_MP_Stay_on_Maginot = {
 		strategic_region = 7
 		manual_attack = no
 	}
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 7
+		value = -50
+	}
 }
+
+FRA_MP_Stay_on_Beglian_Border = {
+	name = "Stay on Belgian Border"
+	desc = ""
+
+	allowed = {
+		tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		NOT = { is_in_faction_with = BEL }
+		BEL = {
+			has_full_control_of_state = 6
+			has_full_control_of_state = 34
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		strategic_region = 5
+		execution_type = careful
+		execute_order = no
+	}
+}
+
+FRA_MP_Stay_on_Corsica = {
+	name = "Stay dug in on Corsica"
+	desc = ""
+
+	allowed = {
+		tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		ITA = {
+			has_full_control_of_state = 114
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		state = 114
+		execution_type = careful
+		execute_order = no
+	}
+}
+
+FRA_MP_Be_Careful_in_Alps = {
+	name = "Be careful in Alps against Italy"
+	desc = ""
+
+	allowed = {
+		tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		ITA = {
+			surrender_progress < 0.1
+			has_full_control_of_state = 158
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		state = 158
+		execution_type = careful
+		execute_order = no
+	}
+}
+
 
 FRA_MP_Block_Partial_PreWar = {
 	name = "Block Partial Mob just before a war"
@@ -355,141 +605,6 @@ FRA_MP_Mil_Construction = {
 	}
 	ai_strategy = {
 		type = dockyard_to_military_factory_ratio
-		value = -1000
-	}
-}
-
-FRA_MP_Ideas = {
-	name = "France Ideas"
-	desc = ""
-
-	enable = {
-		original_tag = FRA
-		OR = {
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_1
-			}
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_2
-			}
-		}
-	}
-
-	abort = {
-	}
-
-	ideas = {
-		war_economy = 0
-		civilian_economy = 0
-		free_trade = 0
-		export_focus = 1
-		limited_exports = 0
-		closed_economy = 0
-		disarmed_nation = 0
-		volunteer_only = 0
-		FRA_gaston_henry_haye = 1000
-		henri_giraud = 30
-		maxime_weygand = 20
-		FRA_zivony_peshkov = 1
-		FRA_paul_baudouin = 0
-		FRA_charles_tillon = 0
-		charles_de_gaulle = 0
-		louis_kahn = 0
-		jean_decoux = 0
-		victor_denain = 0
-		jean_marie_bergeret = 0
-		frederic_irene_joliot_curie = 0
-		georges_bonnet = 0
-		FRA_panhard = 0
-		FRA_roger_salengro = 0
-	}
-}
-
-
-FRA_MP_Advisors = {
-	name = "Blocked Advisors till capitulated or Mid-1940"
-	desc = ""
-
-	enable = {
-		original_tag = FRA
-		OR = {
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_1
-			}
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_2
-			}
-		}
-		OR = {
-			FRA = { has_capitulated = no }
-			date < 1940.6.1
-		}
-	}
-
-	abort = {
-		OR = {
-			FRA = { has_capitulated = yes }
-			date > 1940.6.1
-		}
-	}
-
-	ideas = {
-		FRA_zivony_peshkov = 0
-		FRA_felix_gouin = 0
-		FRA_paul_reynaud = 0
-		francois_darlan = 0
-		marcel_gensoul = 0
-		jean_marie_abrial = 0
-		joseph_vuillemin = 0
-		robert_odic = 0
-		philippe_fequant = 0
-		rene_prioux = 0
-		charles_huntziger = 0
-		philippe_leclerc = 0
-		alfred_heurtaux = 0
-		martial_valin = 0
-		jean_francois_jannekeyn = 0
-		jean_de_laborde = 0
-		emile_muselier = 0
-		rene_emile_godfroy = 0
-		renault_fra = 0
-		FRA_AMX = 0
-		FRA_APX = 0
-		somua = 0
-		mas = 0
-		schneider = 0
-		morane_saulnier = 0
-		bloch = 0
-		amiot = 0
-		levasseur = 0
-		fcm = 0
-		aeb = 0
-		acl = 0
-		acf = 0
-		famh = 0
-		FRA_vincent_auriol = 0
-		FRA_pierre_pucheu = 0
-		FRA_maurice_gauche = 0
-		generic_head_of_intelligence = 0
-		#army chief
-		FRA_henri_marie_auguste_bineau = 0
-		FRA_pierre_alombert_goget = 0
-		alphonse_georges = 0
-	}
-	
-	ai_strategy = {
-		type = pp_spend_priority
-		id = general
-		value = -1000
-	}
-
-	ai_strategy = {
-		type = pp_spend_priority
-		id = admiral
 		value = -1000
 	}
 }
