@@ -66,15 +66,6 @@ FRA_MP_1 = {
 		naval_doctrine = -1000
 	}
 	
-	ai_strategy = {
-		type = put_unit_buffers
-		ratio = 0.2
-		states = {
-			16
-		}
-		area = europe
-	}
-
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -150,14 +141,7 @@ FRA_MP_2 = {
 		naval_doctrine = -1000
 	}
 
-	ai_strategy = {
-		type = put_unit_buffers
-		ratio = 0.2
-		states = {
-			16
-		}
-		area = europe
-	}
+
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
@@ -169,12 +153,50 @@ FRA_MP_2 = {
 	}
 }
 
-FRA_MP_Block_Partial_War = {
+FRA_MP_Defend_Paris = {
+	name = "Defend Paris"
+	desc = ""
+
+	allowed = {
+		tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		controls_state = 16 
+	}
+
+	abort = {
+		NOT = { controls_state = 16 }
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.02
+		states = {
+			16
+		}
+	}
+}
+
+FRA_MP_Block_Partial_PreWar = {
 	name = "Block Partial Mob just before a war"
 	desc = "If Germany does Danzig or War, then don't switch from Early Mob to Partial Mob. You can go the War Eco soon, saving PP."
 
-	enable = {
+	allowed = {
 		tag = FRA
+	}
+
+	enable = {
 		OR = {
 			has_game_rule = {
 				rule = FRA_ai_behavior
@@ -195,7 +217,6 @@ FRA_MP_Block_Partial_War = {
 				}
 				has_completed_focus = GER_danzig_or_war
 			}
-
 		}
 	}
 
@@ -204,6 +225,51 @@ FRA_MP_Block_Partial_War = {
 			has_war = yes
 			NOT = { has_government = democratic }
 		}
+	}
+
+	ideas = {
+		partial_economic_mobilisation = 0
+	}
+}
+
+FRA_MP_Block_Partial_War = {
+	name = "Block Partial Mob in a war"
+	desc = ""
+
+	allowed = {
+		tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_war_support > 0.5
+		OR = {
+			has_government = fascism
+			has_government = communism
+			custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
+			AND = {
+				has_war = yes
+				any_enemy_country = {
+					ic_ratio = { 
+						tag = ROOT 
+						ratio > 0.4
+					}
+				}
+			}
+		}
+	}
+
+	abort = {
+		NOT = { has_war_support > 0.5 }
 	}
 
 	ideas = {
@@ -526,41 +592,6 @@ FRA_MP_AT_Research = {
 
 	research = {
 		cat_anti_tank = 10000
-	}
-
-}
-
-FRA_MP_AT_Production = {
-	name = "Produce Anti-Tank Guns"
-	desc = ""
-
-	enable = {
-		original_tag = FRA
-		OR = {
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_1
-			}
-			has_game_rule = {
-				rule = FRA_ai_behavior
-				option = FRA_MP_2
-			}
-		}
-		has_tech = antitank2
-	}
-
-	abort = {
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = anti_tank
-		value = 200
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = armor
-		value = -100
 	}
 
 }
