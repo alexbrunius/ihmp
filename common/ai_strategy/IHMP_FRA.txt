@@ -87,6 +87,42 @@ FRA_MP_Recruitment = {
 	}
 }
 
+FRA_MP_Tank_Recruitment = {
+
+	allowed = {
+		tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		has_focus_tree = french_focus
+		NOT = { num_of_military_factories > 20 }
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			num_of_military_factories > 20
+		}
+		
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = light_armor
+		value = 4
+	}
+}
+
 FRA_MP_Arty_Production = {
 
 	allowed = {
@@ -130,13 +166,13 @@ FRA_MP_Arty_Production = {
 			has_capitulated = yes
 			OR = {
 				has_equipment = {
-					artillery_equipment_1 > 100
+					artillery_equipment_1 > 300
 				}
 				has_equipment = {
-					artillery_equipment_2 > 100
+					artillery_equipment_2 > 300
 				}
 				has_equipment = {
-					artillery_equipment_3 > 100
+					artillery_equipment_3 > 300
 				}
 			}
 		}
@@ -149,7 +185,84 @@ FRA_MP_Arty_Production = {
 	}
 }
 
-FRA_MP_Early_Production = {
+FRA_MP_Tank_Production = {
+
+	allowed = {
+		tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		has_focus_tree = french_focus
+		NOT = { num_of_military_factories > 20 }
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			num_of_military_factories > 20
+		}
+		
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = -200
+	}
+}
+
+FRA_MP_Truck_Production = {
+
+	allowed = {
+		tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		has_focus_tree = french_focus
+		OR = {
+			NOT = { num_of_military_factories > 25 }
+			has_equipment = { motorized_equipment_1 > 400 }
+		}
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			num_of_military_factories > 25
+			has_equipment = { motorized_equipment_1 < 100 }
+		}
+		
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = -200
+	}
+}
+
+FRA_MP_Support_Production = {
 
 	allowed = {
 		tag = FRA
@@ -180,10 +293,11 @@ FRA_MP_Early_Production = {
 		}
 		
 	}
+
 	ai_strategy = {
 		type = equipment_variant_production_factor
 		id = support_equipment_1
-		value = 50
+		value = 60
 	}
 }
 
@@ -215,13 +329,13 @@ FRA_MP_Later_Production = {
 			has_capitulated = yes
 			NOT = { num_of_military_factories > 14 }
 			has_equipment = {
-				anti_tank_equipment_1 > 100
+				anti_tank_equipment_1 > 300
 			}
 			has_equipment = {
-				anti_tank_equipment_2 > 100
+				anti_tank_equipment_2 > 300
 			}
 			has_equipment = {
-				anti_tank_equipment_3 > 100
+				anti_tank_equipment_3 > 300
 			}
 		}
 	}
