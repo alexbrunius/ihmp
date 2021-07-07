@@ -1,0 +1,5 @@
+﻿l_german:
+ water_ocean:0 "Ozean" # Localisation for ocean terrain addition
+ water_ocean_desc:0 ""
+ water_deep_ocean:0 "Tiefe Ozean"
+ water_deep_ocean_desc:0 ""
