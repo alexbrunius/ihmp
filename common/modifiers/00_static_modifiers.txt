@@ -443,7 +443,7 @@ diff_strong_ai_generic = {
 
 naval_mines_effect = {
 	naval_accidents_chance = 0.15
-	naval_speed_factor = -0.3 # was -0.8
+	#naval_speed_factor = -0.3 # was -0.8 # Removed, you either know where mines are and avoid them, or don't know they're there and hit them.
 	naval_invasion_penalty = 0.5
 }
 
