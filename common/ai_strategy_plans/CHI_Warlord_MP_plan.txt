@@ -444,7 +444,6 @@ XSM_Garrision_Bejing = {
 		states = { 
 			608
 		}
-		area = asia
 	}
 }
 
@@ -527,7 +526,6 @@ YUN_Garrision_Shanghai = {
 		states = {
 			613
 		}
-		area = asia
 	}
 }
 
@@ -588,7 +586,6 @@ GXC_Garrision_1 = {
 			592
 			593
 		}
-		area = asia
 	}
 }
 
@@ -651,7 +648,6 @@ GXC_Garrision_Extended = {
 			595
 			596
 		}
-		area = asia
 	}
 }
 

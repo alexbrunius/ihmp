@@ -356,7 +356,6 @@ CHI_Japanese_Front_0 = {
 			607
 			615
 		}
-		area = asia
 	}
 	ai_strategy = {
 	 	type = front_unit_request
@@ -442,7 +441,6 @@ CHI_Guard_Forward_Coast = {
 		states = { 
 			609
 		}
-		area = asia
 	}
 }
 
@@ -483,7 +481,6 @@ CHI_Garrision_Bejing = {
 		states = { 
 			608
 		}
-		area = asia
 	}
 }
 
@@ -529,7 +526,6 @@ CHI_Garrision_Shandong = {
 			597
 			743
 		}
-		area = asia
 	}
 }
 
@@ -568,7 +564,6 @@ CHI_Garrision_Shanghai = {
 		states = {
 			613
 		}
-		area = asia
 	}
 }
 
