@@ -135,10 +135,6 @@ on_actions = {
 						disband = yes
 					}
 					delete_units = { 
-						division_template = "Division Légère Mécanique"
-						disband = yes
-					}
-					delete_units = { 
 						division_template = "Division d'Infanterie Motorisée"
 						disband = yes
 					}
