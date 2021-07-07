@@ -188,6 +188,37 @@ FRA_MP_Defend_Paris = {
 	}
 }
 
+FRA_MP_Stay_on_Maginot = {
+	name = "Defend Paris"
+	desc = ""
+
+	allowed = {
+		tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_full_control_of_state = 28 
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		strategic_region = 7
+		manual_attack = no
+	}
+}
+
 FRA_MP_Block_Partial_PreWar = {
 	name = "Block Partial Mob just before a war"
 	desc = "If Germany does Danzig or War, then don't switch from Early Mob to Partial Mob. You can go the War Eco soon, saving PP."
