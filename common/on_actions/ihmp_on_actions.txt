@@ -134,6 +134,22 @@ on_actions = {
 						division_template = "Brigade de Chars de Combat"
 						disband = yes
 					}
+					delete_units = { 
+						division_template = "Division Légère Mécanique"
+						disband = yes
+					}
+					delete_units = { 
+						division_template = "Division d'Infanterie Motorisée"
+						disband = yes
+					}
+					delete_units = { 
+						division_template = "Division d'Infanterie Alpine"
+						disband = yes
+					}
+					delete_units = { 
+						division_template = "Brigade Coloniale"
+						disband = yes
+					}
 				}
 			}
 			if = {
