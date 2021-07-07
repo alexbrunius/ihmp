@@ -172,6 +172,20 @@ political_actions = {
 				}
 			}
 			modifier = {
+				add = 100
+				tag = FRA
+				FRA = {
+					has_idea = FRA_gaston_henry_haye
+					NOT = { has_idea = henri_giraud }
+					has_completed_focus = FRA_strengthen_government_support
+					OR = {
+						NOT = { has_completed_focus = FRA_begin_rearmament }
+						NOT = { has_war_support > 0.12 }
+					}
+					has_stability  < 0.9
+				}
+			}
+			modifier = {
 				add = 1
 				tag = SIA
 				SIA = {
