@@ -426,7 +426,6 @@ CAN_MP_Garrision = {
 		states = { 
 			127
 		}
-		area = europe
 	}
 }
 

@@ -180,7 +180,6 @@ POR_MP_Garrision = {
 			181
 			795
 		}
-		area = europe
 	}
 }
 
