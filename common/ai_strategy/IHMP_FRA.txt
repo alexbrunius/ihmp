@@ -1,0 +1,244 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+# building_target
+
+
+FRA_MP_Recruitment = {
+
+	allowed = {
+		tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		has_focus_tree = french_focus
+		
+		
+	}
+
+	abort = {
+		has_capitulated = yes
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = mountaineers
+		value = -100
+	}
+	ai_strategy = {
+		type = template_prio
+		id = garrison
+		value = -100
+	}
+	ai_strategy = {
+		type = template_prio
+		id = suppression
+		value = -100
+	}
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 100
+	}
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = -100
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = -100
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 100
+	}
+	ai_strategy = {
+		type = spare_unit_factor
+		value = 200
+	}
+}
+
+FRA_MP_Arty_Production = {
+
+	allowed = {
+		tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		has_focus_tree = french_focus
+		OR = {
+			NOT = {
+				has_equipment = {
+					artillery_equipment_1 > 0
+				}
+			}
+			NOT = {
+				has_equipment = {
+					artillery_equipment_2 > 0
+				}
+			}
+			NOT = {
+				has_equipment = {
+					artillery_equipment_3 > 0
+				}
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			OR = {
+				has_equipment = {
+					artillery_equipment_1 > 100
+				}
+				has_equipment = {
+					artillery_equipment_2 > 100
+				}
+				has_equipment = {
+					artillery_equipment_3 > 100
+				}
+			}
+		}
+		
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = artillery
+		value = 2
+	}
+}
+
+FRA_MP_Early_Production = {
+
+	allowed = {
+		tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		has_focus_tree = french_focus
+		num_of_military_factories > 12
+		
+		
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			NOT = { num_of_military_factories > 12 }
+		}
+		
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = support_equipment_1
+		value = 50
+	}
+}
+
+FRA_MP_Later_Production = {
+
+	allowed = {
+		tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		has_capitulated = no
+		has_focus_tree = french_focus
+		has_tech = interwar_antitank
+		num_of_military_factories > 14
+	}
+
+	abort = {
+		OR = {
+			has_capitulated = yes
+			NOT = { num_of_military_factories > 14 }
+			has_equipment = {
+				anti_tank_equipment_1 > 100
+			}
+			has_equipment = {
+				anti_tank_equipment_2 > 100
+			}
+			has_equipment = {
+				anti_tank_equipment_3 > 100
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = anti_tank
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = infantry_equipment_1
+		value = -50
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = artillery_equipment_1
+		value = -50
+	}
+}
