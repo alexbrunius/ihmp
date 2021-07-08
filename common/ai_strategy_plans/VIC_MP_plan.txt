@@ -4,7 +4,7 @@ VIC_MP_1 = {
 
 	enable = {
 		original_tag = FRA
-		tag = VIC
+		has_focus_tree = vichy_french_focus
 		has_game_rule = {
 			rule = VIC_ai_behavior
 			option = VIC_MP_1
@@ -48,6 +48,8 @@ VIC_MP_1 = {
 		air_doctrine = -1000
 		naval_equipment = -1000
 		naval_doctrine = -1000
+		motorized_equipment = -1000
+		cat_mechanized_equipment = 1000
 	}
 
 	ideas = {
@@ -55,15 +57,15 @@ VIC_MP_1 = {
 		export_focus = 1
 		limited_exports = 0
 		closed_economy = 0
-		war_economy = 2000
-		partial_economic_mobilisation = 100
+		war_economy = 1
+		partial_economic_mobilisation = 0
 		civilian_economy = 0
 		disarmed_nation = 0
 		volunteer_only = 0
 		FRA_gaston_henry_haye = 1000
-		henri_giraud = 30
-		maxime_weygand = 20
-		FRA_zivony_peshkov = 5
+		henri_giraud = 0
+		maxime_weygand = 1
+		FRA_zivony_peshkov = 1
 		FRA_paul_baudouin = 0
 		FRA_charles_tillon = 0
 		charles_de_gaulle = 0
@@ -75,6 +77,22 @@ VIC_MP_1 = {
 		georges_bonnet = 0
 		FRA_panhard = 0
 		FRA_roger_salengro = 0
+		FRA_paul_reynaud = 0
+		alfred_heurtaux = 0
+		martial_valin = 0
+		jean_francois_jannekeyn = 0
+		#Vichy
+		VIC_pierre_laval = 0
+		VIC_rene_bousquet = 0
+		VIC_lucien_lacaze = 0
+		VIC_pierre_le_gloan = 0
+		VIC_jean_francois_jannekeyn = 0
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = -1000
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -86,6 +104,44 @@ VIC_MP_1 = {
 		}
 	}
 }
+
+VIC_MP_War_Eco = {
+	name = "Vichy France Multiplayer 1"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		has_focus_tree = vichy_french_focus
+		has_game_rule = {
+			rule = VIC_ai_behavior
+			option = VIC_MP_1
+		}
+		NOT = { has_idea = war_economy }
+		has_war_support > 0.5
+		OR = {
+			has_government = fascism
+			has_government = communism
+			custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
+			AND = {
+				has_war = yes
+				any_enemy_country = {
+					ic_ratio = { 
+						tag = ROOT 
+						ratio > 0.4
+					}
+				}
+			}
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ideas = {
+		VIC_charles_huntziger = 0
+		FRA_zivony_peshkov = 0
+	}
+}
+
 
 VIC_MP_NoPlanes = {
 	name = "No Plane Production"
