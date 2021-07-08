@@ -249,7 +249,7 @@ FRA_MP_Truck_Production = {
 	abort = {
 		OR = {
 			has_capitulated = yes
-			num_of_military_factories > 25
+			num_of_military_factories > 30
 			has_equipment = { motorized_equipment_1 < 100 }
 		}
 		
@@ -297,7 +297,7 @@ FRA_MP_Support_Production = {
 	ai_strategy = {
 		type = equipment_variant_production_factor
 		id = support_equipment_1
-		value = 60
+		value = 70
 	}
 }
 
@@ -343,7 +343,7 @@ FRA_MP_Later_Production = {
 	ai_strategy = {
 		type = equipment_production_min_factories
 		id = anti_tank
-		value = 5
+		value = 6
 	}
 	ai_strategy = {
 		type = equipment_variant_production_factor
