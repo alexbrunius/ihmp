@@ -64,6 +64,8 @@ FRA_MP_1 = {
 		air_equipment = -1000
 		naval_equipment = -1000
 		naval_doctrine = -1000
+		motorized_equipment = -1000
+		cat_mechanized_equipment = 1000
 	}
 	
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -139,6 +141,8 @@ FRA_MP_2 = {
 		air_equipment = -1000
 		naval_equipment = -1000
 		naval_doctrine = -1000
+		motorized_equipment = -1000
+		cat_mechanized_equipment = 1000
 	}
 
 
@@ -316,7 +320,7 @@ FRA_MP_Defend_Paris = {
 
 	ai_strategy = {
 		type = put_unit_buffers
-		ratio = 0.03
+		ratio = 0.04
 		states = {
 			16
 		}
@@ -347,6 +351,7 @@ FRA_MP_Stay_on_Maginot = {
 			}
 		}
 		has_full_control_of_state = 28 
+		LUX = { has_capitulated = no }
 	}
 
 	abort_when_not_enabled = yes
@@ -1290,7 +1295,7 @@ FRA_MP_Algier_Infrastructure = {
 	}
 }
 
-FRA_MP_Concentrated = {
+FRA_MP_Concentrated_1937 = {
 	name = "Research 1937 concentrated"
 	desc = ""
 
@@ -1317,6 +1322,38 @@ FRA_MP_Concentrated = {
 	}
 	research = {
 		concentrated_industry_category = 200
+	}
+
+}
+
+FRA_MP_Concentrated_1939 = {
+	name = "Research 1939 concentrated"
+	desc = ""
+
+	allowed = {
+		original_tag = FRA
+	}
+
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_1
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FRA_MP_2
+			}
+		}
+		NOT = { has_tech = concentrated_industry3 }
+		date > 1938.6.1
+	}
+
+	abort = {
+		has_tech = concentrated_industry3
+	}
+	research = {
+		concentrated_industry_category = 1000
 	}
 
 }
