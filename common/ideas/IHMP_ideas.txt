@@ -64,6 +64,21 @@ ideas = {
 				industrial_capacity_factory = -0.4
 			}
 		}
+
+		#USA mk14 torpedo in early war giving limited torpedo attacking, preventing them shutting down landings with subs
+		mk14_torpedo = {
+			removal_cost = -1
+
+			picture = the_long_lance
+			
+			allowed = {
+				always = no # Added via mission
+			}
+	
+			modifier = {
+				naval_torpedo_hit_chance_factor = -0.7
+		}	
+		}
 		
 		# Surrender Mechanic
 		POL_surrender = {
