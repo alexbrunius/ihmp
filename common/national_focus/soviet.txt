@@ -104,7 +104,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war = yes
+			has_war_with = GER
 			573 = {
 				is_owned_and_controlled_by = SOV
 			}
