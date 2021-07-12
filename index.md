@@ -1,5 +1,74 @@
 # Changelog:
 
+## 1.10.7.2
+New features:
+- Added game_rule option for Mexico, activating script and disbanding starting cav divisions.
+- Italy now gets an unique Mediterranean plane designer that increases NAV naval attack and agility at the cost of range.
+- Italy starts with their unique Med designer applied to 1936 NAV.
+- Added third option to integrate war economy change, Hungary and Romania choose to become puppets, Bulgaria just gets fascist support but stays independent. Human can decide themselves.
+- Region name changes: Arafura Sea -> Banda Sea, Gulf of Carp -> Arafura Sea.
+- USA torpedo hit chance -70% added for first 6 months at war, representing the MK14 torpedo problems.
+
+Balance:
+- Reduced factory added from various NZL foci to 1 level each, to reduce ahistorical equipment numbers of NZL.
+- Moved Torpedo Tubes of VII Submarine Class into the front instead of the rear.
+- Operation Fork is now available when France has fallen as alternative condition to Iceland existing.
+- US automatically occupies Greenland 2 days after Denmark capitulates.
+- Moved republican spain prepare offensive decisions into the hand of Soviet Union, letting them decide where and if they want to remove an unplanned offensive state modifier.
+- Added fallback logic to install Charles de Gaulle as Free French country leader for Refus Absurde Focus, if the event around French capitulation didn't work out for some reason (save loading).
+- Fjords removed due to having no impact at the strategic scale the game is played at.
+- Adriatic, Aegean,  Baltic, Java Seas, Norwegian Coast and Danish Belts are now shallow seas.
+- Northwest Coast, Denmark Strait, Labrador, Celebes, Solomon and Arafura Seas are now oceans.
+- Barents and Okhotsk Seas are now shallow seas.
+- Shallow seas: spotting 0 -> +25%, positioning -5% -> 0, sub speed 0 -> -50%.
+- Ocean now has -99% mine hit chance.
+- Deep ocean now has -100% mine hit chance. Submarine visibility -15% changed to global ship visibility due vastness of deep ocean, and issues tracking ships when subs could be around.
+- Mines speed penalty -30% -> 0, the penalty made little sense in vast oceans.
+- Increased size of Arabian Sea and decreased West Indian Ocean, so the shallowest parts of India's coast aren't deep ocean terrain.
+- Gulf of Carpentaria sea zone size increased to fully encompass shallow ocean.
+- Java, Arafura, and Gulf of Carpentaria sea zones edited to better reflect ocean depth and provide better air zone zone shapes.
+- South China Sea zone reduced in size, so shallowest areas are now in Straits of Malacca and Gulf of Thailand.
+- Two sea provinces of Malacca Straits given to Java Sea, making the Malacca Straits air zone a better shape.
+- On French capitulation roughly 50% of the convoys in french stockpile go to UK, 25 % to Germany, 20% to Vichy and 5% to Free France.
+- Added script for Poland, Netherlands and Belgium that transfers roughly 50% of the convoys in stockpile to UK, while Germany and the capitulated country split the rest to 25% each.
+
+Fixes:
+- Fixed Women in Workforce not offsetting manpower loss from Total Mobilisation correctly.
+- Changed position of existing historical German CL2 modules to make the ships more similar for refitting purpose.
+- Small Fix to Norway, removed superfluous area definition for garrison script.
+- Changed on_action for majorisation of warlords to be only if they are in war with Japan, preventing neutral sinkiang being major weirdness.
+- Made Bulgarias not joining war script more robust and flexible, to check for all nations in faction, and not just a certain list.
+- Fixed Kiev industry relocation decision now moves one less CIC and MIC meaning it no longer requires new factories to be built in Kiev to be available.
+- Made Spain only take improve workers conditions after the SCW has ended, before they need the PP.
+- Capital of France should already move to Vichy, just before they capitulate after Paris has fallen. To prevent capital in encircled Metz reducing disbanded and then distributed equipment on capitulaton.
+- Fix for various garrison scripts, removing superfluous "area" condition (ai tried to garrison all of europe instead of just the few states I said they should e.g.).
+- No longer possible to evacuate Soviet industry during the Winter War.
+
+AI:
+- Stopped Phillipines researching AT guns till 1942 or till they are at war, making Phillipine divisions historically weaker.
+- Tone down the amount of Civs that Raj wants to build before starting building Mils.
+- Added Mexico MP plan (which just follows the historical plan for now), but puts all Mexican divisions on port garrision duty in Mexico.
+- Greece dislikes Germany and its faction members, and nations that occupy their cores or Cyprus cores.
+- If Germany or Italy are fascist, Yugo won't join their faction, even if they are influenced by Italy.
+- Greece in peacetime should now put all its division in Greece defending itself, and not send troops elsewhere, hogging supply.
+- Bulgaria tries to stay a Zarist dictatorship longer, to try to get the strengthen dictatorship focus. Not picking an advisor with fascist influence.
+- Bulgaria now takes decision visiting various states, if they finished all other faction related stuff to boost neutral tsarist support.
+- Added Antagonize script of Axis against Allied rubber exporter. They should now import rubber from Siam or somewhat neutral Dutch East Indies.
+- With consistent region change of appeal to overseas territory, changed sequence of focus picks. France should want a base in central-africa sooner for supply reasons.
+- Improved early French construction effort, made sure France researches 1937 concentrated industry in a timely fashion to get more buildingslots.
+- Tweaked French AI templates mosty what they should aim for as light tank template.
+- Removed engineer support from generic garrison ai template, pure 6 Bn Inf is good enough for most generic AI and much less expensive. Also less army xp wasteage for AI.
+- More French AI divisions get disbanded on game_start. Simplifying production and template design for the AI.
+- Tweaked French AI production and template prio. They now should roughly their historical 90 divisions in mid-1939 all with support AT to slow down the german tanks.
+- Fixed the French AI Paris defence script, now Paris but nothing should be consistently by garrisoned by a division.
+- Stopped AI manually attacking from Maginot into Germany. They should keep their entrenchment there, never works either way.
+- Further French AI nudging to be more defensive against Axis (Phoney War, and keep entrenchement).
+- Added two-step French light tank template, now they consistently design a good tank template for their situation, even with the constricted template area of the mod.
+- France does Improve Workers condition a bit earlier to get over 70% stability to be able to do Blum-Violette-Proposal without protests (preventing 50PP loss).
+- Helped AI Vichy France get to War Economy and stay there, blocked some useless advisors for them.
+- Stopped French AI picking desperate defense, if they already capitulated. It is to late now, your 3 divisions in the pacific are fine as they are.
+- Tweaked French AI to research 1939 concentrated industry instead of quite useless Armoured Cars.
+- Stopped Free French AI escalating their manpower law, your 400k manpower are fine with the 2 Mils you have, better use PP for something else.
 
 ## 1.10.7.1
 Fixes:
@@ -758,12 +827,12 @@ New features:
 Balance:
 - Increased Embargo Strength to -150 trade influence.
 - Removed Anarchist Uprising as a separate nation (SPC) and instead transfer 10% army and 20% stockpile to Bhutan where it gets deleted.
-- Lengthen the timer for Influence Spain to Axis or Allies by 70 days, in return Spain auto completes the Focus if the missions runs trough..
+- Lengthen the timer for Influence Spain to Axis or Allies by 70 days, in return Spain auto completes the Focus if the missions runs trough.
 - Made Consolidate the North not a prerequisite of Forment a Carlist split, so Nat. Spain can always prevent the Carlist uprising.
 - Lengthend the timers for switching ai_strategy_plans by 70 days for Nat. Spain, according to the changed missions lengths.
 - 1942 infantry weapons reliability 80->90%.
 - NAV bonuses movet from naval air designer to medium air designer (10% reliability and naval attack). Aichi gets additional 10% range on top of that.
-- Marco Polo Incident just creates level 3 spirit with -30% attack for Japan, instead -50%..
+- Marco Polo Incident just creates level 3 spirit with -30% attack for Japan, instead -50%.
 - Mediterranean naval designer range penalty 25->10% and speed bonus 10->20%.
 - Removed cost increase from escort naval designer.
 - Lowered range penalty on coastal designer 50->20%.
@@ -831,7 +900,7 @@ AI:
 - Blocked UK/GER AI picking influence Netherlands decision.
 - US will demand compensation during the Panay Incident, Japan will pay it.
 - Made neutral support advisor avaible for the AI to pick earlier.
-- Stopped Bulgarian AI to try to pressure UK lifting their rearment-ban..
+- Stopped Bulgarian AI to try to pressure UK lifting their rearment-ban.
 - Since AI can't replace advisors on it's own, remove democratic advisor, after done the focus that needed democratic support, so AI can replace it with neutral support for next focus.
 - Restricted Nat. Spain AI to only building Infantry Equipment after the SCW to root out the Resistance and core back their territory.
 - Added ai_strategy_plan so the Spains don't use their fleets in the SCW to preserve fuel for lend-leased airplanes.
