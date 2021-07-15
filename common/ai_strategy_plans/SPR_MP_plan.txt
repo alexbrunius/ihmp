@@ -233,12 +233,8 @@ SPR_MP_After_SCW = {
 		OR = {
 			tag = SPD
 			tag = SPC
-			OR = {
-				has_war_with = ENG
-				has_war_with = GER
-			}
-		}
-		OR = {
+			has_war_with = ENG
+			has_war_with = GER
 			AND = {
 				GER = { has_completed_focus = GER_nationalist_spain_ally }
 				ENG = { has_completed_focus = uk_spain_focus }
@@ -262,7 +258,6 @@ SPR_MP_After_SCW = {
 				ENG = { has_completed_focus = uk_spain_focus }
 			}
 		}
-		
 	}
 
 	ai_national_focuses = {
@@ -326,7 +321,7 @@ SPR_MP_After_SCW = {
 	}
 }
 
-SPR_MP_plan_war_with_allies = {
+SPR_MP_war_with_allies = {
 	name = "Spanish anti-Allied plan"
 	desc = "Multiplayer behavior for Nationalist Spain at war with the Allies"
 
@@ -427,7 +422,7 @@ SPR_MP_plan_war_with_allies = {
 
 }
 
-SPR_historical_plan_war_with_axis = {
+SPR_MP_war_with_axis = {
 	name = "Spanish anti-Axis plan"
 	desc = "Multiplayer behavior for Nationalist Spain at war with the Axis"
 
@@ -663,10 +658,10 @@ SPR_MP_Neutrality = {
 
 SPR_MP_1_No_Iberian_Pact_Ever = {
 	name = "No Iberian Pact"
-	desc = "Never pick Iberian Pact or Restoer Monarchy"
+	desc = "Never pick Iberian Pact or Restore Monarchy"
 
 	enable = {
-		tag = SPR
+		tag = SPA
 		has_game_rule = {
 			rule = SPR_ai_behavior
 			option = SPR_MP_1
@@ -684,7 +679,7 @@ SPR_MP_1_Trade_Peace = {
 	desc = "Don't switch Tradelaws"
 
 	enable = {
-		tag = SPR
+		tag = SPA
 		has_game_rule = {
 			rule = SPR_ai_behavior
 			option = SPR_MP_1
@@ -705,7 +700,7 @@ SPR_MP_1_Trade_Axis = {
 	desc = "Switch to Export Focus for Axis Tungsten"
 
 	enable = {
-		tag = SPR
+		tag = SPA
 		has_game_rule = {
 			rule = SPR_ai_behavior
 			option = SPR_MP_1
@@ -726,7 +721,7 @@ SPR_MP_1_Theorist = {
 	desc = ""
 
 	enable = {
-		tag = SPR
+		tag = SPA
 		has_game_rule = {
 			rule = SPR_ai_behavior
 			option = SPR_MP_1
@@ -745,7 +740,7 @@ SPR_MP_1_Carlist_Theorist = {
 	desc = ""
 
 	enable = {
-		tag = SPR
+		tag = SPA
 		has_game_rule = {
 			rule = SPR_ai_behavior
 			option = SPR_MP_1
@@ -794,8 +789,8 @@ MP_1_No_AirUnits = {
 			option = SPR_MP_1
 		}
 	}
-	abort = {
-	}
+	
+	abort_when_not_enabled = yes
 
 	research = {
 		air_equipment = -1000
