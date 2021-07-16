@@ -53,9 +53,9 @@ NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 4			-- Max width of regiments in
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 3			-- Max height of regiments in division designer.
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2			-- Max width of support in division designer.
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 3			-- Max height of support in division designer.
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 14	-- was 20 --Base cost to unlock a regiment slot,
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 7	-- was 5  --Base cost to change a regiment column.
-NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 7		-- was 10 --Base cost to unlock a support slot
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 12	-- was 20 --Base cost to unlock a regiment slot,
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 6	-- was 5  --Base cost to change a regiment column.
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 6		-- was 10 --Base cost to unlock a support slot
 
 NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 70	     -- was 60 ( 70 = x3 instead of x4 dmg bonus if attack > DEF/BRK) - chance to avoid hit if no defences left.
 
