@@ -5433,7 +5433,7 @@ focus_tree = {
 				name = JAP_carrier_warfare_experiments
 				bonus = 1.00
 				uses = 2
-				category = cat_base_strike
+				category = carrier_doctrine
 			}
 		}
 	}

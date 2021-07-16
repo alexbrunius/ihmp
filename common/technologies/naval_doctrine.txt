@@ -156,6 +156,7 @@ technologies = {
 			naval_doctrine
 			fleet_in_being_tree
 			cat_fleet_in_being
+			carrier_doctrine
 		}
 		
 		folder = {
@@ -343,6 +344,7 @@ technologies = {
 			naval_doctrine
 			fleet_in_being_tree
 			cat_fleet_in_being
+			carrier_doctrine
 		}
 		
 		folder = {
@@ -582,6 +584,7 @@ technologies = {
 			fleet_in_being_tree
 			convoy_defense_tree
 			cat_fleet_in_being
+			carrier_doctrine
 		}
 		
 		folder = {
@@ -655,6 +658,7 @@ technologies = {
 			fleet_in_being_tree
 			convoy_defense_tree
 			cat_fleet_in_being
+			carrier_doctrine
 		}
 		
 		folder = {
@@ -1557,6 +1561,7 @@ technologies = {
 			naval_doctrine
 			trade_interdiction_tree
 			cat_trade_interdiction
+			carrier_doctrine
 		}
 
 		folder = {
@@ -1610,6 +1615,7 @@ technologies = {
 			naval_doctrine
 			trade_interdiction_tree
 			cat_trade_interdiction
+			carrier_doctrine
 		}
 		
 		folder = {
@@ -1705,6 +1711,7 @@ technologies = {
 			naval_doctrine
 			trade_interdiction_tree
 			cat_trade_interdiction
+			carrier_doctrine
 		}
 		
 		folder = {
@@ -1750,6 +1757,7 @@ technologies = {
 			naval_doctrine
 			trade_interdiction_tree
 			cat_trade_interdiction
+			carrier_doctrine
 		}
 		
 		folder = {
@@ -1807,6 +1815,7 @@ technologies = {
 		categories = {
 			naval_doctrine
 			cat_base_strike
+			carrier_doctrine
 		}
 		
 		folder = {
@@ -1868,6 +1877,7 @@ technologies = {
 			naval_doctrine
 			base_strike_main
 			cat_base_strike
+			carrier_doctrine
 		}
 		
 		folder = {
@@ -1938,6 +1948,7 @@ technologies = {
 			naval_doctrine
 			base_strike_main
 			cat_base_strike
+			carrier_doctrine
 		}
 		
 		folder = {
@@ -2009,6 +2020,7 @@ technologies = {
 			naval_doctrine
 			base_strike_main
 			cat_base_strike
+			carrier_doctrine
 		}
 		
 		folder = {
@@ -2087,6 +2099,7 @@ technologies = {
 			naval_doctrine
 			base_strike_main
 			cat_base_strike
+			carrier_doctrine
 		}
 
 		
@@ -2232,6 +2245,7 @@ technologies = {
 			naval_doctrine
 			base_strike_main
 			cat_base_strike
+			carrier_doctrine
 		}
 
 		folder = {
@@ -2733,6 +2747,7 @@ technologies = {
 			naval_doctrine
 			convoy_defense_tree
 			cat_base_strike
+			carrier_doctrine
 		}
 		
 		folder = {
