@@ -121,7 +121,7 @@ equipments = {
 		reliability = 0.9
 		build_cost_ic = 0.8
 		resources = {
-			steel = 4
+			steel = 3
 		}
 	}
 }
