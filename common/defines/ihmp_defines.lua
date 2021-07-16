@@ -263,6 +263,12 @@ NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.02			-- w
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 30000			-- was 100000 -- How many deployment lines minimum can be training
 NDefines.NProduction.MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 0.30	-- was 0.75 -- Ratio which % of army in field can be trained
 
+NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 2.5					-- was 5.0 -- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 3.0				-- was 6.0 -- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 1.5				-- was 3.0 -- XP cost for converting one equipment module to a related module when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.5				-- was 1.0 -- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
+
+
 -- OPERATIVES STUFF
 -- used for calculating how many operatives will a spy master gain from its faction members
 	-- first number in every now is number of operatives gained
