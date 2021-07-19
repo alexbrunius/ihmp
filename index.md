@@ -1,5 +1,11 @@
 # Changelog:
 
+## 1.10.7.3
+Fixes:
+- Made sure certain ai_strategies are only active for Nationalist Spain, preventing various bugs.
+- Made sure multiple ai_strategy_plans don't have the same name, so their effects don't overwrite eachother.
+- Made the Spains also save up ArmyXP for fighting the guerillas to core back their territory..
+
 ## 1.10.7.2
 New features:
 - Added game_rule option for Mexico, activating script and disbanding starting cav divisions.
